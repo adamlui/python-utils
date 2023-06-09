@@ -20,54 +20,18 @@ jobs:
           target_repos=("adamlui/userscripts" "adamlui/chatgpt-apps" "adamlui/autoclear-chatgpt-history" "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" "kudoai/bravegpt" "kudoai/duckduckgpt")
           echo "::set-output name=repos::${target_repos[@]}" > target_repos.txt
 
-      - name: Push changes to target repos
-        run: |
-          target_repos=(${{ steps.init_repos.outputs.repos }})
-
-          for repo in "${target_repos[@]}"; do
-            echo "::group::Pushing changes to $repo"
-            echo "Running: stefanzweifel/git-auto-commit-action@v4 with repository=$repo"
-
-            # Clone the target repository
-            git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo
-
-            # Set the repository as the working directory
-            cd $GITHUB_WORKSPACE/$repo
-
-            # Run the git-auto-commit-action for each target repository
-            echo "COMMIT_MESSAGE='${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]'" >> $GITHUB_ENV
-            echo "COMMIT_EMAIL=auto-sync@chatgptevo.com" >> $GITHUB_ENV
-            echo "FILE_PATTERN=**" >> $GITHUB_ENV
-
-            # Run the git-auto-commit-action for each target repository
-            echo "::set-output name=needs-commit::$(echo 'true')"
-
-            echo "::endgroup::"
-          done
-
-      - name: Commit and push changes in target repos
+      - name: Replace translate-en-messages.py in target repos
         run: |
           target_repos=(${{ steps.init_repos.outputs.repos }})
 
           for repo in "${target_repos[@]}"; do
             if [[ "$repo" != "adamlui/python-utils" ]]; then
-              echo "::group::Committing and pushing changes in $repo"
-
-              # Set the repository as the working directory
+              echo "::group::Replacing translate-en-messages.py in $repo"
+              git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo
               cd $GITHUB_WORKSPACE/$repo
-
-              # Commit and push changes if needed
-              needs_commit=$(echo "::get-output name=needs-commit::")
-              if [[ "$needs_commit" == "true" ]]; then
-                git config user.email "auto-sync@chatgptevo.com"
-                git config user.name "auto-sync"
-                git add .
-                git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]"
-                git push --force
-              else
-                echo "No changes to commit."
-              fi
-
+              find . -name "translate-en-messages.py" -exec sed -i 's|adamlui/userscripts/translate-en-messages.py|$repo/translate-messages/translate-en-messages.py|g' {} \;
+              git add .
+              git diff-index --quiet HEAD || git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@chatgptevo.com" && git push --force
               echo "::endgroup::"
             fi
           done
