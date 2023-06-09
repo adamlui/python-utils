@@ -26,8 +26,8 @@ jobs:
           for repo in "${repositories[@]}"; do
             repo_path=$(echo "$repo" | sed 's/\//_/g')
             echo "::group::Checking out $repo"
-            echo "Running: git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path"
-            git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path
+            echo "Running: actions/checkout@v2 with token: ${{ secrets.REPO_SYNC_PAT }}, repository: $repo, path: $GITHUB_WORKSPACE/$repo_path"
+            actions/checkout@v2
             echo "::endgroup::"
           done
 
@@ -39,15 +39,14 @@ jobs:
             # Exclude the triggering repository
             if [[ "$repo" != "adamlui/python-utils" ]]; then
               repo_path=$(echo "$repo" | sed 's/\//_/g')
-              cd "$GITHUB_WORKSPACE/$repo_path"
-              find . -name "translate-en-messages.py" -print0 | while IFS= read -r -d $'\0' file; do
+              find "$GITHUB_WORKSPACE/$repo_path" -name "translate-en-messages.py" -print0 | while IFS= read -r -d $'\0' file; do
                 new_path="${repo//\//\\/}/translate-messages/translate-en-messages.py"
                 sed -i "s|adamlui/userscripts/translate-en-messages.py|$new_path|g" "$file"
-                git add "$file"
+                git -C "$GITHUB_WORKSPACE/$repo_path" add "$file"
               done
 
               # Commit and push changes only if replacements occurred
-              git diff-index --quiet HEAD || git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com"
-              git push origin HEAD
+              git -C "$GITHUB_WORKSPACE/$repo_path" diff-index --quiet HEAD || git -C "$GITHUB_WORKSPACE/$repo_path" commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com"
+              git -C "$GITHUB_WORKSPACE/$repo_path" push --force
             fi
           done
