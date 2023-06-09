@@ -66,7 +66,7 @@ jobs:
               GIT_COMMITTER_NAME="auto-sync-bot" \
               GIT_COMMITTER_EMAIL="auto-sync@kudoai.com" \
               git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from adamlui/python-utils]")
-            git remote set-url --push origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
+            git remote set-url --push origin "https://auto-sync-bot:${{ secrets.REPO_SYNC_PAT }}@github.com/$repo"
             echo "Pushing changes"
             git push --force
             echo "::endgroup::"
