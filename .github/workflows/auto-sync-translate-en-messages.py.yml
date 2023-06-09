@@ -25,7 +25,7 @@ jobs:
         run: |
           target_repos=(${{ steps.init_repos.outputs.repos }})
           for repo in "${target_repos[@]}"; do
-            repo_path=$(echo "$repo" | sed 's/\//_/g')
+            repo_path=$(echo "$repo" | sed 's#/#_#g')
             echo "::group::Checking out $repo"
             git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path
             cd $GITHUB_WORKSPACE/$repo_path
