@@ -18,7 +18,7 @@ jobs:
         id: init_repos
         run: |
           target_repos=("adamlui/userscripts" "adamlui/chatgpt-apps" "adamlui/autoclear-chatgpt-history" "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" "kudoai/bravegpt" "kudoai/duckduckgpt")
-          echo "::set-output name=repos::${target_repos[@]}" > target_repos.txt
+          echo "::set-output name=repos::${target_repos[*]}"
 
       - name: Replace translate-en-messages.py in target repos
         run: |
