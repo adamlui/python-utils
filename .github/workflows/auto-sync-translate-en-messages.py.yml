@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ master, main ]
+    branches: [master, main]
     paths: '**/translate-en-messages.py'
 
 jobs:
@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      # Checkout adamlui/python-utils
       - name: Checkout adamlui/python-utils
         uses: actions/checkout@v2
         with:
@@ -15,84 +16,31 @@ jobs:
           repository: adamlui/python-utils
           path: adamlui/python-utils
 
-      - name: Checkout adamlui/userscripts
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.REPO_SYNC_PAT }}
-          repository: adamlui/userscripts
-          path: adamlui/userscripts
+      # Get repository names
+      - name: Get repository names
+        id: get_repos
+        run: |
+          target_repos=("adamlui/userscripts" "adamlui/chatgpt-apps" "adamlui/autoclear-chatgpt-history" "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" "kudoai/bravegpt" "kudoai/duckduckgpt")
+          echo "::set-output name=repos::${target_repos[@]}"
 
-      - name: Checkout adamlui/chatgpt-apps
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.REPO_SYNC_PAT }}
-          repository: adamlui/chatgpt-apps
-          path: adamlui/chatgpt-apps
+      # Checkout other repositories
+      - name: Checkout other repositories
+        run: |
+          repositories=(${{ steps.get_repos.outputs.repos }})
+          for repo in "${repositories[@]}"; do
+            repo_path=$(echo "$repo" | sed 's/\//_/g')
+            checkout_command="actions/checkout@v2"
+            checkout_params="{ \"token\": \${{ secrets.REPO_SYNC_PAT }}, \"repository\": \"$repo\", \"path\": \"$GITHUB_WORKSPACE/$repo_path\" }"
+            echo "::group::Checking out $repo"
+            echo "Running: $checkout_command $checkout_params"
+            eval "npx -q $checkout_command $checkout_params"
+            echo "::endgroup::"
+          done
 
-      - name: Checkout adamlui/autoclear-chatgpt-history
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.REPO_SYNC_PAT }}
-          repository: adamlui/autoclear-chatgpt-history
-          path: adamlui/autoclear-chatgpt-history
-
-      - name: Checkout adamlui/chatgpt-auto-continue
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.REPO_SYNC_PAT }}
-          repository: adamlui/chatgpt-auto-continue
-          path: adamlui/chatgpt-auto-continue
-
-      - name: Checkout adamlui/chatgpt-auto-refresh
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.REPO_SYNC_PAT }}
-          repository: adamlui/chatgpt-auto-refresh
-          path: adamlui/chatgpt-auto-refresh
-
-      - name: Checkout adamlui/chatgpt-infinity
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.REPO_SYNC_PAT }}
-          repository: adamlui/chatgpt-infinity
-          path: adamlui/chatgpt-infinity
-
-      - name: Checkout adamlui/chatgpt-widescreen
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.REPO_SYNC_PAT }}
-          repository: adamlui/chatgpt-widescreen
-          path: adamlui/chatgpt-widescreen
-
-      - name: Checkout adamlui/youtube-classic
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.REPO_SYNC_PAT }}
-          repository: adamlui/youtube-classic
-          path: adamlui/youtube-classic
-
-      - name: Checkout kudoai/bravegpt
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.REPO_SYNC_PAT }}
-          repository: kudoai/bravegpt
-          path: kudoai/bravegpt
-
-      - name: Checkout kudoai/duckduckgpt
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.REPO_SYNC_PAT }}
-          repository: kudoai/duckduckgpt
-          path: kudoai/duckduckgpt
-
+      # Sync translate-en-messages.py to all checked out repos
       - name: Sync translate-en-messages.py to all checked out repos
         run: |
-          repositories=()
-
-          # Extract repository names from previous checkout steps
-          echo "$GITHUB_EVENT_PATH" | jq -r '.check_suite.pull_requests[].head.repo.full_name' | while IFS= read -r repo; do
-            repositories+=("$repo")
-          done
+          repositories=(${{ steps.get_repos.outputs.repos }})
 
           for repo in "${repositories[@]}"; do
             # Exclude the triggering repository
