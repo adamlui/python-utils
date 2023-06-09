@@ -28,8 +28,6 @@ jobs:
             repo_path="${repo//\//_}"
             echo "::group::Checking out $repo"
             git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path
-            cd $GITHUB_WORKSPACE/$repo_path
-            git fetch --depth=2 origin # Fetching with a deeper history
             echo "::endgroup::"
           done
 
@@ -38,10 +36,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.REPO_SYNC_PAT }}
         run: |
           target_repos=(${{ steps.init_repos.outputs.repos }})
-
           source_file="${{ github.workspace }}/adamlui/python-utils/translate-messages/translate-en-messages.py"
           source_timestamp=$(git log -1 --format="%ct" -- "$source_file")
-
           for repo in "${target_repos[@]}"; do
             if [[ "$repo" != "adamlui/python-utils" ]]; then
               echo "::group::Replacing translate-en-messages.py in $repo"
@@ -49,7 +45,12 @@ jobs:
               target_dir="$GITHUB_WORKSPACE/$repo_path"
 
               echo "Navigating to $target_dir"
-              cd "$target_dir"
+              cd "$target_dir" || exit 1
+
+              echo "Initializing git repository"
+              git init
+              git remote add origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
+              git fetch --depth=2 origin
 
               target_files=$(find . -name "translate-en-messages.py" -type f)
 
@@ -64,8 +65,6 @@ jobs:
               done
 
               git diff-index --quiet HEAD || (echo "Committing changes" && git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com")
-              echo "Setting remote URL for pushing"
-              git remote set-url --push origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
               echo "Pushing changes"
               git push --force
               echo "::endgroup::"
