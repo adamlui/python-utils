@@ -10,7 +10,7 @@ jobs:
       - name: Init target repos
         id: init_repos
         run: |
-          target_repos=("adamlui/userscripts" "adamlui/chatgpt-apps" "adamlui/autoclear-chatgpt-history" "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" "kudoai/bravegpt" "kudoai/duckduckgpt")
+          target_repos=("adamlui/userscripts" "adamlui/chatgpt-widescreen")
           echo "::set-output name=repos::${target_repos[*]}"
 
       - name: Checkout adamlui/python-utils
@@ -35,44 +35,48 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_SYNC_PAT }}
         run: |
-          echo "Running replace step"
           target_repos=(${{ steps.init_repos.outputs.repos }})
           source_file="${{ github.workspace }}/adamlui/python-utils/translate-messages/translate-en-messages.py"
           source_timestamp=$(git log -1 --format="%ct" -- "$source_file")
 
+          echo "Running replace step"
           for repo in "${target_repos[@]}"; do
-            if [[ "$repo" != "adamlui/python-utils" ]]; then
-              echo "::group::Replacing translate-en-messages.py in $repo"
-              repo_path="${repo//\//_}"
-              target_dir="$GITHUB_WORKSPACE/$repo_path"
+            echo "::group::Replacing translate-en-messages.py in $repo"
+            repo_path="${repo//\//_}"
+            target_dir="$GITHUB_WORKSPACE/$repo_path"
 
-              echo "Navigating to $target_dir"
-              cd "$target_dir" || exit 1
+            echo "Navigating to $target_dir"
+            cd "$target_dir" || exit 1
 
-              echo "Initializing git repository"
-              git init
-              git remote add origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
-              git fetch --depth=2 origin
+            echo "Initializing git repository"
+            git init
+            git remote add origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
+            git fetch --depth=2 origin
 
-              target_files=$(find . -name "translate-en-messages.py" -type f)
+            echo "Target directory content:"
+            ls -la
 
-              for target_file in $target_files; do
-                target_timestamp=$(git log -1 --format="%ct" -- "$target_file")
+            target_files=$(find . -name "translate-en-messages.py" -type f)
 
-                if [[ $source_timestamp -gt $target_timestamp ]]; then
-                  echo "Copying $source_file to $target_file"
-                  cp -f "$source_file" "$target_file"
-                  git add "$target_file"
-                fi
-              done
+            echo "Target files:"
+            echo "$target_files"
 
-              git diff-index --quiet HEAD || (echo "Committing changes" && git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com")
+            for target_file in $target_files; do
+              target_timestamp=$(git log -1 --format="%ct" -- "$target_file")
 
-              echo "Setting remote URL"
-              git remote set-url --push origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
+              if [[ $source_timestamp -gt $target_timestamp ]]; then
+                echo "Copying $source_file to $target_file"
+                cp -f "$source_file" "$target_file"
+                git add "$target_file"
+              fi
+            done
 
-              echo "Pushing changes"
-              git push --force
-              echo "::endgroup::"
-            fi
+            git diff-index --quiet HEAD || (echo "Committing changes" && git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com")
+
+            echo "Setting remote URL"
+            git remote set-url --push origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
+
+            echo "Pushing changes"
+            git push --force
+            echo "::endgroup::"
           done
