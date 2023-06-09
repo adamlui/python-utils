@@ -46,7 +46,10 @@ jobs:
             if [[ "$repo" != "adamlui/python-utils" ]]; then
               echo "::group::Replacing translate-en-messages.py in $repo"
               repo_path="${repo//\//_}"
-              cd $GITHUB_WORKSPACE/$repo_path
+              target_dir="$GITHUB_WORKSPACE/$repo_path"
+
+              echo "Navigating to $target_dir"
+              cd "$target_dir"
 
               target_files=$(find . -name "translate-en-messages.py" -type f)
 
@@ -54,13 +57,16 @@ jobs:
                 target_timestamp=$(git log -1 --format="%ct" -- "$target_file")
 
                 if [[ $source_timestamp -gt $target_timestamp ]]; then
+                  echo "Copying $source_file to $target_file"
                   cp -f "$source_file" "$target_file"
                   git add "$target_file"
                 fi
               done
 
-              git diff-index --quiet HEAD || git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com"
-              git remote set-url --push origin https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo
+              git diff-index --quiet HEAD || (echo "Committing changes" && git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com")
+              echo "Setting remote URL for pushing"
+              git remote set-url --push origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
+              echo "Pushing changes"
               git push --force
               echo "::endgroup::"
             fi
