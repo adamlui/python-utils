@@ -29,8 +29,7 @@ jobs:
             echo "::group::Checking out $repo"
             git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path
             cd $GITHUB_WORKSPACE/$repo_path
-            rm -rf .git/refs/remotes/origin
-            git remote add origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
+            git init
             echo "::endgroup::"
           done
 
@@ -50,6 +49,8 @@ jobs:
               echo "Navigating to $target_dir"
               cd "$target_dir" || exit 1
 
+              git fetch --depth=2 origin
+
               target_files=$(find . -name "translate-en-messages.py" -type f)
 
               for target_file in $target_files; do
@@ -63,6 +64,8 @@ jobs:
               done
 
               git diff-index --quiet HEAD || (echo "Committing changes" && git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com")
+              echo "Setting remote URL"
+              git remote set-url --push origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
               echo "Pushing changes"
               git push --force
               echo "::endgroup::"
