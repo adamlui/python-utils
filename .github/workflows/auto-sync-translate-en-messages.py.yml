@@ -28,6 +28,9 @@ jobs:
             repo_path="${repo//\//_}"
             echo "::group::Checking out $repo"
             git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path
+            cd $GITHUB_WORKSPACE/$repo_path
+            git init
+            git remote add origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
             echo "::endgroup::"
           done
 
@@ -46,11 +49,6 @@ jobs:
 
               echo "Navigating to $target_dir"
               cd "$target_dir" || exit 1
-
-              echo "Initializing git repository"
-              git init
-              git remote add origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
-              git fetch --depth=2 origin
 
               target_files=$(find . -name "translate-en-messages.py" -type f)
 
