@@ -7,11 +7,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Init target repos
-        id: init_repos
-        run: |
-          target_repos=("adamlui/userscripts" "adamlui/chatgpt-widescreen")
-          echo "::set-output name=repos::${target_repos[*]}"
 
       - name: Checkout adamlui/python-utils
         uses: actions/checkout@v2
@@ -21,9 +16,15 @@ jobs:
           path: adamlui/python-utils
           fetch-depth: 2
 
+      - name: Build list of target repos
+        id: list_repos
+        run: |
+          target_repos=("adamlui/userscripts" "adamlui/chatgpt-apps" "adamlui/autoclear-chatgpt-history" "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" "kudoai/bravegpt" "kudoai/duckduckgpt")
+          echo "::set-output name=repos::${target_repos[*]}"
+
       - name: Checkout target repos
         run: |
-          target_repos=(${{ steps.init_repos.outputs.repos }})
+          target_repos=(${{ steps.list_repos.outputs.repos }})
           for repo in "${target_repos[@]}"; do
             repo_path="${repo//\//_}"
             echo "::group::Checking out $repo"
@@ -31,41 +32,28 @@ jobs:
             echo "::endgroup::"
           done
 
-      - name: Replace outdated translate-en-messages.py in target repos
-        env:
-          GITHUB_TOKEN: ${{ secrets.REPO_SYNC_PAT }}
+      - name: Replace outdated files in target repos, push changes
         run: |
           target_repos=("adamlui/userscripts" "adamlui/chatgpt-widescreen")
           source_file="${{ github.workspace }}/adamlui/python-utils/translate-messages/translate-en-messages.py"
           source_timestamp=$(cd "${{ github.workspace }}/adamlui/python-utils" && git log -1 --format="%ct" -- "translate-messages/translate-en-messages.py")
-
-          echo "Running replace step"
           for repo in "${target_repos[@]}"; do
             echo "::group::Replacing translate-en-messages.py in $repo"
             repo_path="${repo//\//_}"
             target_dir="$GITHUB_WORKSPACE/$repo_path"
-
-            echo "Navigating to $target_dir"
             cd "$target_dir" || exit 1
-
             target_files=$(find . -name "translate-en-messages.py" -type f)
-
             for target_file in $target_files; do
               target_timestamp=$(git log -1 --format="%ct" -- "$target_file")
-
               if [[ $source_timestamp -gt $target_timestamp ]]; then
                 echo "Copying $source_file to $target_file"
                 cp -f "$source_file" "$target_file"
                 git add "$target_file"
               fi
             done
-
             git diff-index --quiet HEAD || (echo "Committing changes" && \
-              GIT_AUTHOR_NAME="Adam Lui" \
-              GIT_AUTHOR_EMAIL="adamlui@pm.me" \
-              GIT_COMMITTER_NAME="auto-sync-bot" \
-              GIT_COMMITTER_EMAIL="auto-sync@kudoai.com" \
-              git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from adamlui/python-utils]")
+              GIT_AUTHOR_NAME="Adam Lui" GIT_AUTHOR_EMAIL="adamlui@pm.me" GIT_COMMITTER_NAME="auto-sync-bot" GIT_COMMITTER_EMAIL="auto-sync@kudoai.com" \
+              git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from \`adamlui/python-utils\`]")
             git remote set-url --push origin "https://auto-sync-bot:${{ secrets.REPO_SYNC_PAT }}@github.com/$repo"
             echo "Pushing changes"
             git push --force
