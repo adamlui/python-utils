@@ -27,15 +27,28 @@ jobs:
         run: |
           target_repos=(${{ steps.init_repos.outputs.repos }})
 
+          source_file="${{ github.workspace }}/adamlui/python-utils/translate-messages/translate-en-messages.py"
+          source_timestamp=$(git log -1 --format="%ct" -- "$source_file")
+
           for repo in "${target_repos[@]}"; do
             if [[ "$repo" != "adamlui/python-utils" ]]; then
               echo "::group::Replacing translate-en-messages.py in $repo"
               git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo
               cd $GITHUB_WORKSPACE/$repo
-              git fetch --depth=2 origin # Fetching with a deeper history
+              git fetch --depth=2 origin # fetching with a deeper history
               git remote set-url --push origin https://auto-sync-bot:$GITHUB_TOKEN@github.com/$repo
-              find . -name "translate-en-messages.py" -exec sed -i 's|adamlui/userscripts/translate-en-messages.py|$repo/translate-messages/translate-en-messages.py|g' {} \;
-              git add .
+
+              target_files=$(find . -name "translate-en-messages.py" -type f)
+
+              for target_file in $target_files; do
+                target_timestamp=$(git log -1 --format="%ct" -- "$target_file")
+
+                if [[ $source_timestamp -gt $target_timestamp ]]; then
+                  cp -f "$source_file" "$target_file"
+                  git add "$target_file"
+                fi
+              done
+
               git diff-index --quiet HEAD || git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com" && git push --force
               echo "::endgroup::"
             fi
