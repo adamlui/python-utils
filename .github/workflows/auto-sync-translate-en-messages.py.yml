@@ -34,7 +34,7 @@ jobs:
 
       - name: Replace outdated files in target repos, push changes
         run: |
-          target_repos=("adamlui/userscripts" "adamlui/chatgpt-widescreen")
+          target_repos=(${{ steps.list_repos.outputs.repos }})
           source_file="${{ github.workspace }}/adamlui/python-utils/translate-messages/translate-en-messages.py"
           source_timestamp=$(cd "${{ github.workspace }}/adamlui/python-utils" && git log -1 --format="%ct" -- "translate-messages/translate-en-messages.py")
           for repo in "${target_repos[@]}"; do
