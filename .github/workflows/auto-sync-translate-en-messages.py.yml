@@ -13,6 +13,7 @@ jobs:
           token: ${{ secrets.REPO_SYNC_PAT }}
           repository: adamlui/python-utils
           path: adamlui/python-utils
+          fetch-depth: 2
 
       - name: Init target repos
         id: init_repos
@@ -31,6 +32,7 @@ jobs:
               echo "::group::Replacing translate-en-messages.py in $repo"
               git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo
               cd $GITHUB_WORKSPACE/$repo
+              git fetch --depth=2 origin # Fetching with a deeper history
               git remote set-url --push origin https://auto-sync-bot:$GITHUB_TOKEN@github.com/$repo
               find . -name "translate-en-messages.py" -exec sed -i 's|adamlui/userscripts/translate-en-messages.py|$repo/translate-messages/translate-en-messages.py|g' {} \;
               git add .
