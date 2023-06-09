@@ -20,33 +20,30 @@ jobs:
           target_repos=("adamlui/userscripts" "adamlui/chatgpt-apps" "adamlui/autoclear-chatgpt-history" "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" "kudoai/bravegpt" "kudoai/duckduckgpt")
           echo "::set-output name=repos::${target_repos[@]}"
 
-      - name: Checkout target repositories
+      - name: Push changes to target repos
         run: |
-          repositories=(${{ steps.init_repos.outputs.repos }})
-          for repo in "${repositories[@]}"; do
-            repo_path=$(echo "$repo" | sed 's/\//_/g')
-            echo "::group::Checking out $repo"
-            echo "Running: git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path"
-            git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path
+          target_repos=(${{ steps.init_repos.outputs.repos }})
+
+          for repo in "${target_repos[@]}"; do
+            echo "::group::Pushing changes to $repo"
+            echo "Running: stefanzweifel/git-auto-commit-action@v4 with repository=$repo"
+
+            # Clone the target repository
+            git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo
+
+            # Run the git-auto-commit-action for each target repository
+            echo "::set-env name=REPO_PATH::$GITHUB_WORKSPACE/$repo"
+            echo "::set-env name=COMMIT_MESSAGE::${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]"
+            echo "::set-env name=COMMIT_EMAIL::auto-sync@chatgptevo.com"
+            echo "::set-env name=FILE_PATTERN::.eslintrc.js"
+
+            - name: Run git-auto-commit-action
+              uses: stefanzweifel/git-auto-commit-action@v4
+              env:
+                REPO_PATH: $GITHUB_WORKSPACE/$repo
+                COMMIT_MESSAGE: ${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]
+                COMMIT_EMAIL: auto-sync@chatgptevo.com
+                FILE_PATTERN: .eslintrc.js
+
             echo "::endgroup::"
-          done
-
-      - name: Sync translate-en-messages.py to all checked out repos
-        run: |
-          repositories=(${{ steps.init_repos.outputs.repos }})
-
-          for repo in "${repositories[@]}"; do
-            # Exclude the triggering repository
-            if [[ "$repo" != "adamlui/python-utils" ]]; then
-              repo_path=$(echo "$repo" | sed 's/\//_/g')
-              find "$GITHUB_WORKSPACE/$repo_path" -name "translate-en-messages.py" -print0 | while IFS= read -r -d $'\0' file; do
-                new_path="${repo//\//\\/}/translate-messages/translate-en-messages.py"
-                sed -i "s|adamlui/userscripts/translate-en-messages.py|$new_path|g" "$file"
-                git -C "$GITHUB_WORKSPACE/$repo_path" add "$file"
-              done
-
-              # Commit and push changes only if replacements occurred
-              git -C "$GITHUB_WORKSPACE/$repo_path" diff-index --quiet HEAD || git -C "$GITHUB_WORKSPACE/$repo_path" commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com"
-              git -C "$GITHUB_WORKSPACE/$repo_path" push --force "https://auto-sync-bot@github.com/$repo.git"
-            fi
           done
