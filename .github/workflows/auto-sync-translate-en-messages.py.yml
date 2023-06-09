@@ -60,7 +60,12 @@ jobs:
               fi
             done
 
-            git diff-index --quiet HEAD || (echo "Committing changes" && git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from adamlui/python-utils]" --author "Adam Lui <adamlui@pm.me>" --committer "auto-sync-bot <auto-sync@kudoai.com>")
+            git diff-index --quiet HEAD || (echo "Committing changes" && \
+              GIT_AUTHOR_NAME="Adam Lui" \
+              GIT_AUTHOR_EMAIL="adamlui@pm.me" \
+              GIT_COMMITTER_NAME="auto-sync-bot" \
+              GIT_COMMITTER_EMAIL="auto-sync@kudoai.com" \
+              git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from adamlui/python-utils]")
             git remote set-url --push origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
             echo "Pushing changes"
             git push --force
