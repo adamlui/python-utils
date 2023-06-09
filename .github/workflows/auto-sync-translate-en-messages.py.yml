@@ -29,7 +29,7 @@ jobs:
             echo "::group::Checking out $repo"
             git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path
             cd $GITHUB_WORKSPACE/$repo_path
-            git init
+            rm -rf .git/refs/remotes/origin
             git remote add origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
             echo "::endgroup::"
           done
