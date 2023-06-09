@@ -48,35 +48,40 @@ jobs:
             echo "Navigating to $target_dir"
             cd "$target_dir" || exit 1
 
-            echo "Initializing git repository"
-            git init
-            git remote add origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
-            git fetch --depth=2 origin
+            # Check if the current directory is a Git repository
+            if git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+              echo "Initializing git repository"
+              git remote add origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
+              git fetch --depth=2 origin
 
-            echo "Target directory content:"
-            ls -la
+              echo "Target directory content:"
+              ls -la
 
-            target_files=$(find . -name "translate-en-messages.py" -type f)
+              target_files=$(find . -name "translate-en-messages.py" -type f)
 
-            echo "Target files:"
-            echo "$target_files"
+              echo "Target files:"
+              echo "$target_files"
 
-            for target_file in $target_files; do
-              target_timestamp=$(git log -1 --format="%ct" -- "$target_file")
+              for target_file in $target_files; do
+                target_timestamp=$(git log -1 --format="%ct" -- "$target_file")
 
-              if [[ $source_timestamp -gt $target_timestamp ]]; then
-                echo "Copying $source_file to $target_file"
-                cp -f "$source_file" "$target_file"
-                git add "$target_file"
-              fi
-            done
+                if [[ $source_timestamp -gt $target_timestamp ]]; then
+                  echo "Copying $source_file to $target_file"
+                  cp -f "$source_file" "$target_file"
+                  git add "$target_file"
+                fi
+              done
 
-            git diff-index --quiet HEAD || (echo "Committing changes" && git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com")
+              git diff-index --quiet HEAD || (echo "Committing changes" && git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com")
 
-            echo "Setting remote URL"
-            git remote set-url --push origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
+              echo "Setting remote URL"
+              git remote set-url --push origin "https://auto-sync-bot:${{ secrets.GITHUB_TOKEN }}@github.com/$repo"
 
-            echo "Pushing changes"
-            git push --force
+              echo "Pushing changes"
+              git push --force
+            else
+              echo "Skipping $repo: Not a Git repository"
+            fi
+
             echo "::endgroup::"
           done
