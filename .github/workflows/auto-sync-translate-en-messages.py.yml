@@ -1,19 +1,52 @@
-- name: Sync translate-en-messages.py to all checked out repos
-  run: |
-    repositories=(${{ steps.init_repos.outputs.repos }})
+on:
+  push:
+    branches: [master, main]
+    paths: '**/translate-en-messages.py'
 
-    for repo in "${repositories[@]}"; do
-      # Exclude the triggering repository
-      if [[ "$repo" != "adamlui/python-utils" ]]; then
-        repo_path=$(echo "$repo" | sed 's/\//_/g')
-        find "$GITHUB_WORKSPACE/$repo_path" -name "translate-en-messages.py" -print0 | while IFS= read -r -d $'\0' file; do
-          new_path="${repo//\//\\/}/translate-messages/translate-en-messages.py"
-          sed -i "s|adamlui/userscripts/translate-en-messages.py|$new_path|g" "$file"
-          git -C "$GITHUB_WORKSPACE/$repo_path" add "$file"
-        done
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout adamlui/python-utils
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/python-utils
+          path: adamlui/python-utils
 
-        # Commit and push changes only if replacements occurred
-        git -C "$GITHUB_WORKSPACE/$repo_path" diff-index --quiet HEAD || git -C "$GITHUB_WORKSPACE/$repo_path" commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com"
-        git -C "$GITHUB_WORKSPACE/$repo_path" push --force "https://auto-sync@github.com/$repo.git"
-      fi
-    done
+      - name: Init target repos
+        id: init_repos
+        run: |
+          target_repos=("adamlui/userscripts" "adamlui/chatgpt-apps" "adamlui/autoclear-chatgpt-history" "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" "kudoai/bravegpt" "kudoai/duckduckgpt")
+          echo "::set-output name=repos::${target_repos[@]}"
+
+      - name: Checkout target repositories
+        run: |
+          repositories=(${{ steps.init_repos.outputs.repos }})
+          for repo in "${repositories[@]}"; do
+            repo_path=$(echo "$repo" | sed 's/\//_/g')
+            echo "::group::Checking out $repo"
+            echo "Running: git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path"
+            git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path
+            echo "::endgroup::"
+          done
+
+      - name: Sync translate-en-messages.py to all checked out repos
+        run: |
+          repositories=(${{ steps.init_repos.outputs.repos }})
+
+          for repo in "${repositories[@]}"; do
+            # Exclude the triggering repository
+            if [[ "$repo" != "adamlui/python-utils" ]]; then
+              repo_path=$(echo "$repo" | sed 's/\//_/g')
+              find "$GITHUB_WORKSPACE/$repo_path" -name "translate-en-messages.py" -print0 | while IFS= read -r -d $'\0' file; do
+                new_path="${repo//\//\\/}/translate-messages/translate-en-messages.py"
+                sed -i "s|adamlui/userscripts/translate-en-messages.py|$new_path|g" "$file"
+                git -C "$GITHUB_WORKSPACE/$repo_path" add "$file"
+              done
+
+              # Commit and push changes only if replacements occurred
+              git -C "$GITHUB_WORKSPACE/$repo_path" diff-index --quiet HEAD || git -C "$GITHUB_WORKSPACE/$repo_path" commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com"
+              git -C "$GITHUB_WORKSPACE/$repo_path" push --force "https://auto-sync@github.com/$repo.git"
+            fi
+          done
