@@ -21,6 +21,8 @@ jobs:
           echo "::set-output name=repos::${target_repos[*]}"
 
       - name: Replace translate-en-messages.py in target repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPO_SYNC_PAT }}
         run: |
           target_repos=(${{ steps.init_repos.outputs.repos }})
 
@@ -29,9 +31,10 @@ jobs:
               echo "::group::Replacing translate-en-messages.py in $repo"
               git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo
               cd $GITHUB_WORKSPACE/$repo
+              git remote set-url --push origin https://auto-sync-bot:$GITHUB_TOKEN@github.com/$repo
               find . -name "translate-en-messages.py" -exec sed -i 's|adamlui/userscripts/translate-en-messages.py|$repo/translate-messages/translate-en-messages.py|g' {} \;
               git add .
-              git diff-index --quiet HEAD || git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@chatgptevo.com" && git push --force
+              git diff-index --quiet HEAD || git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com" && git push --force
               echo "::endgroup::"
             fi
           done
