@@ -39,14 +39,15 @@ jobs:
             # Exclude the triggering repository
             if [[ "$repo" != "adamlui/python-utils" ]]; then
               repo_path=$(echo "$repo" | sed 's/\//_/g')
-              find "$GITHUB_WORKSPACE/$repo_path" -name "translate-en-messages.py" -print0 | while IFS= read -r -d $'\0' file; do
+              cd "$GITHUB_WORKSPACE/$repo_path"
+              find . -name "translate-en-messages.py" -print0 | while IFS= read -r -d $'\0' file; do
                 new_path="${repo//\//\\/}/translate-messages/translate-en-messages.py"
                 sed -i "s|adamlui/userscripts/translate-en-messages.py|$new_path|g" "$file"
-                git -C "$GITHUB_WORKSPACE/$repo_path" add "$file"
+                git add "$file"
               done
 
               # Commit and push changes only if replacements occurred
-              git -C "$GITHUB_WORKSPACE/$repo_path" diff-index --quiet HEAD || git -C "$GITHUB_WORKSPACE/$repo_path" commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com"
-              git -C "$GITHUB_WORKSPACE/$repo_path" push --force
+              git diff-index --quiet HEAD || git commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com"
+              git push origin HEAD
             fi
           done
