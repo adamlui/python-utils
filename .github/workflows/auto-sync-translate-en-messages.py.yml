@@ -47,6 +47,6 @@ jobs:
 
               # Commit and push changes only if replacements occurred
               git -C "$GITHUB_WORKSPACE/$repo_path" diff-index --quiet HEAD || git -C "$GITHUB_WORKSPACE/$repo_path" commit -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `adamlui/python-utils`]" --author "auto-sync@kudoai.com"
-              git -C "$GITHUB_WORKSPACE/$repo_path" push --force "https://auto-sync@github.com/$repo.git"
+              git -C "$GITHUB_WORKSPACE/$repo_path" push --force "https://auto-sync-bot@github.com/$repo.git"
             fi
           done
