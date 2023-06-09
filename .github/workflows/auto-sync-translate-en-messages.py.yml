@@ -7,6 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Init target repos
+        id: init_repos
+        run: |
+          target_repos=("adamlui/userscripts" "adamlui/chatgpt-apps" "adamlui/autoclear-chatgpt-history" "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" "kudoai/bravegpt" "kudoai/duckduckgpt")
+          echo "::set-output name=repos::${target_repos[*]}"
+
       - name: Checkout adamlui/python-utils
         uses: actions/checkout@v2
         with:
@@ -15,13 +21,20 @@ jobs:
           path: adamlui/python-utils
           fetch-depth: 2
 
-      - name: Init target repos
-        id: init_repos
+      - name: Checkout target repos
         run: |
-          target_repos=("adamlui/userscripts" "adamlui/chatgpt-apps" "adamlui/autoclear-chatgpt-history" "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" "kudoai/bravegpt" "kudoai/duckduckgpt")
-          echo "::set-output name=repos::${target_repos[*]}"
+          target_repos=(${{ steps.init_repos.outputs.repos }})
+          for repo in "${target_repos[@]}"; do
+            repo_path=$(echo "$repo" | sed 's/\//_/g')
+            echo "::group::Checking out $repo"
+            git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path
+            cd $GITHUB_WORKSPACE/$repo_path
+            git fetch --depth=2 origin # Fetching with a deeper history
+            git remote set-url --push origin https://auto-sync-bot:$GITHUB_TOKEN@github.com/$repo
+            echo "::endgroup::"
+          done
 
-      - name: Replace translate-en-messages.py in target repos
+      - name: Replace outdated translate-en-messages.py in target repos
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_SYNC_PAT }}
         run: |
@@ -33,12 +46,8 @@ jobs:
           for repo in "${target_repos[@]}"; do
             if [[ "$repo" != "adamlui/python-utils" ]]; then
               echo "::group::Replacing translate-en-messages.py in $repo"
-              target_dir="$GITHUB_WORKSPACE/$repo"
-              mkdir -p "$target_dir"
-              git clone https://github.com/$repo.git $target_dir
-              cd $target_dir
-              git fetch --depth=2 origin # fetching with a deeper history
-              git remote set-url --push origin https://auto-sync-bot:$GITHUB_TOKEN@github.com/$repo
+              repo_path=$(echo "$repo" | sed 's/\//_/g')
+              cd $GITHUB_WORKSPACE/$repo_path
 
               target_files=$(find . -name "translate-en-messages.py" -type f)
 
