@@ -25,7 +25,7 @@ jobs:
         run: |
           target_repos=(${{ steps.init_repos.outputs.repos }})
           for repo in "${target_repos[@]}"; do
-            repo_path="${repo/\//-}"
+            repo_path="${repo//\//_}"
             echo "::group::Checking out $repo"
             git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path
             cd $GITHUB_WORKSPACE/$repo_path
@@ -46,7 +46,7 @@ jobs:
           for repo in "${target_repos[@]}"; do
             if [[ "$repo" != "adamlui/python-utils" ]]; then
               echo "::group::Replacing translate-en-messages.py in $repo"
-              repo_path="${repo/\//-}"
+              repo_path="${repo//\//_}"
               cd $GITHUB_WORKSPACE/$repo_path
 
               target_files=$(find . -name "translate-en-messages.py" -type f)
