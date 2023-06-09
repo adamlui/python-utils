@@ -33,15 +33,15 @@ jobs:
           for repo in "${target_repos[@]}"; do
             if [[ "$repo" != "adamlui/python-utils" ]]; then
               echo "::group::Replacing translate-en-messages.py in $repo"
-              git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo
-              cd $GITHUB_WORKSPACE/$repo
+              target_dir="$GITHUB_WORKSPACE/$repo"
+              git clone https://github.com/$repo.git $target_dir
+              cd $target_dir
               git fetch --depth=2 origin # fetching with a deeper history
               git remote set-url --push origin https://auto-sync-bot:$GITHUB_TOKEN@github.com/$repo
 
               target_files=$(find . -name "translate-en-messages.py" -type f)
 
               for target_file in $target_files; do
-                cd $GITHUB_WORKSPACE/$repo # Navigate to the appropriate repository directory
                 target_timestamp=$(git log -1 --format="%ct" -- "$target_file")
 
                 if [[ $source_timestamp -gt $target_timestamp ]]; then
