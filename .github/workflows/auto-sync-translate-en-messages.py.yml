@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [master, main]
+    branches: main
     paths: '**/translate-en-messages.py'
 
 jobs:
