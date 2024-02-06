@@ -2,15 +2,17 @@
 
 ## 💻 Contributing
 
-To set up linting:
+To set up linting, after forking/cloning:
 
-1. Install dev dependencies (ruff + pre-commit):
+1. Navigate to project root
+
+2. Install dev dependencies (ruff + pre-commit):
    
    ```
    pip install -r requirements-dev.txt
    ```
 
-2. Set up pre-commit hook:
+3. Set up pre-commit hook:
   
    ```
    pre-commit install
