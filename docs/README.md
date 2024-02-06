@@ -1,6 +1,6 @@
 # 🐍 Python Utilities
 
-## Contributing
+## 💻 Contributing
 
 To set up linting:
 
@@ -16,9 +16,9 @@ To set up linting:
    pre-commit install
    ```
 
-## License
+## 🏛️ License
 
-### 🏛️ [MIT License](../LICENSE.md)
+#### [MIT License](../LICENSE.md)
 
 **Copyright (c) 2023–2024 [Adam Lui](https://github.com/adamlui)**
 
