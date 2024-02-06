@@ -1,4 +1,4 @@
-# 🐍 Python Utilities
+# 🐍 Python utilities
 
 ## 💻 Contributing
 
