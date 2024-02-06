@@ -2,7 +2,7 @@
 
 ## Contributing
 
-To set up the development environment:
+To set up linting:
 
 1. Install dev dependencies (ruff + pre-commit):
    
@@ -10,7 +10,7 @@ To set up the development environment:
    pip install -r requirements-dev.txt
    ```
 
-2. Set up pre-commit hook for linting:
+2. Set up pre-commit hook:
   
    ```
    pre-commit install
