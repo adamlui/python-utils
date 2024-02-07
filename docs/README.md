@@ -5,7 +5,7 @@
 
 ## 💻 Contributing
 
-To set up linting, after forking/cloning:
+Before contributing, to optionally set up pre-commit linting, after forking/cloning:
 
 1. Navigate to project root
 
