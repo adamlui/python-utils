@@ -4,24 +4,6 @@
 <a href="https://app.codacy.com/gh/adamlui/python-utils/commits?utm_source=adamlui-python-utils&utm_content=github_shield"><img height=25 src="https://img.shields.io/codacy/grade/c86518b1ca8548d3a8a2cabfc36c6054?label=Code+Quality&logo=codacy&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
 <br><br>
 
-## 💻 Contributing
-
-(Optional) To enable pre-commit linting, after forking/cloning:
-
-1. Navigate to project root
-
-2. Install dev dependencies ([Ruff](https://github.com/astral-sh/ruff) + [yamllint](https://github.com/adrienverge/yamllint) + [pre-commit](https://github.com/pre-commit/pre-commit)):
-
-   ```
-   pip install -r requirements-dev.txt
-   ```
-
-3. Install git hook scripts:
-
-   ```
-   pre-commit install
-   ```
-
 ## 🏛️ MIT License
 
 **Copyright (c) 2023–2024 [Adam Lui](https://github.com/adamlui)**
@@ -43,6 +25,24 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## 💻 Contributing
+
+(Optional) To enable pre-commit linting, after forking/cloning:
+
+1. Navigate to project root
+
+2. Install dev dependencies ([Ruff](https://github.com/astral-sh/ruff) + [yamllint](https://github.com/adrienverge/yamllint) + [pre-commit](https://github.com/pre-commit/pre-commit)):
+
+   ```
+   pip install -r requirements-dev.txt
+   ```
+
+3. Install git hook scripts:
+
+   ```
+   pre-commit install
+   ```
 
 <img height=6px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
 
