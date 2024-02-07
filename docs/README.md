@@ -10,7 +10,7 @@
 
 1. Navigate to project root
 
-2. Install dev dependencies (Ruff + pre-commit):
+2. Install dev dependencies ([Ruff](https://astral.sh/ruff) + [pre-commit](https://pre-commit.com/)):
    
    ```
    pip install -r requirements-dev.txt
