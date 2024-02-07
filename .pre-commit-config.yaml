@@ -1,6 +1,11 @@
 repos:
-- repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.2.0
-  hooks:
-    - id: ruff
-    
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.2.0
+    hooks:
+      - id: ruff
+
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.10.0
+    hooks:
+      - id: yamllint
+        args: [-c, .yamllint-config.yaml]
