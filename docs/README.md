@@ -1,7 +1,7 @@
 # 🐍 Python utilities
 
-<a href="#%EF%B8%8F-license"><img height=26 src="https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://app.codacy.com/gh/adamlui/python-utils/commits?utm_source=adamlui-python-utils&utm_content=github_shield"><img height=26 src="https://img.shields.io/codacy/grade/29b89647254f49c2bc09f05fc25bcb53?label=Code+Quality&logo=codacy&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
+<a href="#%EF%B8%8F-license"><img height=25 src="https://img.shields.io/badge/License-MIT-fcde7b.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://app.codacy.com/gh/adamlui/python-utils/commits?utm_source=adamlui-python-utils&utm_content=github_shield"><img height=25 src="https://img.shields.io/codacy/grade/29b89647254f49c2bc09f05fc25bcb53?label=Code+Quality&logo=codacy&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
 <br><br>
 
 ## 💻 Contributing
