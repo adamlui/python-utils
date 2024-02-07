@@ -16,7 +16,7 @@
    pip install -r requirements-dev.txt
    ```
 
-3. Install pre-commit hook:
+3. Install git hook scripts:
   
    ```
    pre-commit install
