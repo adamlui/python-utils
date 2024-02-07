@@ -10,7 +10,7 @@ Before contributing, to optionally set up pre-commit linting, after forking/clon
 
 1. Navigate to project root
 
-2. Install dev dependencies (ruff + pre-commit):
+2. Install dev dependencies (Ruff + pre-commit):
    
    ```
    pip install -r requirements-dev.txt
