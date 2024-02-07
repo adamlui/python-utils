@@ -16,7 +16,7 @@
    pip install -r requirements-dev.txt
    ```
 
-3. Set up pre-commit hook:
+3. Install pre-commit hook:
   
    ```
    pre-commit install
