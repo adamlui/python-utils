@@ -45,6 +45,8 @@ SOFTWARE.
    pre-commit install
    ```
 
+<br>
+
 <img height=6px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
 
 <a href="https://github.com/adamlui">**Home**</a> /
