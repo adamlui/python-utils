@@ -21,7 +21,6 @@ Before contributing, to optionally set up pre-commit linting, after forking/clon
    ```
    pre-commit install
    ```
-<br><br>
 
 ## 🏛️ License
 
