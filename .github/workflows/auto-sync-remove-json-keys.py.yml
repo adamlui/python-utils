@@ -1,7 +1,7 @@
 on:
   push:
     branches: main
-    paths: '**/remove-json-keys.py'
+    paths: "**/remove-json-keys.py"
 
 jobs:
   build:
