@@ -35,15 +35,15 @@ SOFTWARE.
 
 2. Install dev dependencies ([Ruff](https://github.com/astral-sh/ruff) + [yamllint](https://github.com/adrienverge/yamllint) + [pre-commit](https://github.com/pre-commit/pre-commit)):
 
-   ```
-   pip install -r requirements-dev.txt
-   ```
+    ```
+    pip install -r requirements-dev.txt
+    ```
 
 3. Install git hook scripts:
 
-   ```
-   pre-commit install
-   ```
+    ```
+    pre-commit install
+    ```
 
 <br>
 
