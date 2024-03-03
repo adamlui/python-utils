@@ -28,28 +28,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 <br><br>
 
-## 💻 Contributing
+## 🛡️ Security Policy
 
-(Optional) To enable pre-commit linting, after forking/cloning:
+If you find a vulnerability, please open a [draft security advisory](https://github.com/adamlui/python-utils/security/advisories/new).
 
-1. Navigate to project root
-
-2. Install dev dependencies ([Ruff](https://github.com/astral-sh/ruff) + [yamllint](https://github.com/adrienverge/yamllint) + [pre-commit](https://github.com/pre-commit/pre-commit)):
-
-    ```
-    pip install -r requirements-dev.txt
-    ```
-
-3. Install git hook scripts:
-
-    ```
-    pre-commit install
-    ```
-
-<br>
-
-<img height=6px width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png">
-
-<a href="https://github.com/adamlui">**Home**</a> /
-<a href="https://github.com/adamlui/python-utils/discussions">Discuss</a> /
-<a href="#-python-utilities">Back to top ↑</a>
+Pull requests are also welcome, but for safety reasons, send an email to <adam@kudoai.com> and wait for a response before making it public.
