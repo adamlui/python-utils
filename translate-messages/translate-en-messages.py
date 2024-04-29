@@ -1,6 +1,6 @@
 '''
 Script:       translate-en-messages.py
-Version:      2024.4.29.2
+Version:      2024.4.29.3
 Description:  Translate msg's from en/messages.json to [[output_langs]/messages.json]
 Author:       Adam Lui
 URL:          https://github.com/adamlui/python-utils
@@ -16,7 +16,7 @@ target_langs = ['af', 'am', 'ar', 'az', 'be', 'bem', 'bg', 'bn', 'bo', 'bs', 'ca
 # UI initializations
 terminal_width = os.get_terminal_size()[0]
 def print_trunc(msg, end='\n') : print(msg if len(msg) < terminal_width else msg[0:terminal_width-4] + '...', end=end)
-def overwritePrint(msg) : stdout.write('\r' + msg.ljust(terminal_width)[:terminal_width])
+def overwrite_print(msg) : stdout.write('\r' + msg.ljust(terminal_width)[:terminal_width])
 
 print('')
 
@@ -125,7 +125,7 @@ for lang_code in output_langs:
     if translated_msgs == messages : langs_skipped.append(lang_code) ; lang_skipped = True
     elif translated_msgs != messages : langs_translated.append(lang_code) ; lang_translated = True
     if not lang_translated : langs_not_translated.append(lang_code)
-    overwritePrint(f"{ 'Added' if lang_added else 'Skipped' if lang_skipped else 'Updated' } { folder }/messages.json")
+    overwrite_print(f"{ 'Added' if lang_added else 'Skipped' if lang_skipped else 'Updated' } { folder }/messages.json")
 
 # Print final summary
 print_trunc('\nAll messages.json files updated successfully!\n')
