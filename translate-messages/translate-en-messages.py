@@ -1,9 +1,9 @@
 '''
 Script:       translate-en-messages.py
-Version:      2024.4.29.3
+Version:      2024.4.29.4
 Description:  Translate msg's from en/messages.json to [[output_langs]/messages.json]
 Author:       Adam Lui
-URL:          https://github.com/adamlui/python-utils
+Homepage:     https://github.com/adamlui/python-utils
 '''
 
 import os, json
