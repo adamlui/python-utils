@@ -22,9 +22,9 @@ jobs:
         run: |
           target_repos=( \
             "adamlui/userscripts" "adamlui/chatgpt-apps" "adamlui/autoclear-chatgpt-history" \
-            "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-infinity" \
-            "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" "KudoAI/chatgpt.js" \
-            "KudoAI/bravegpt" "KudoAI/duckduckgpt" "KudoAI/googlegpt")
+            "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-auto-talk" \
+            "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" \
+            "KudoAI/amazongpt" "KudoAI/bravegpt" "KudoAI/chatgpt.js" "KudoAI/duckduckgpt" "KudoAI/googlegpt")
           echo "::set-output name=repos::${target_repos[*]}"
 
       - name: Checkout target repos
