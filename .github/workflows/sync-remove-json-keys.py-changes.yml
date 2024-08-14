@@ -37,6 +37,12 @@ jobs:
             echo "::endgroup::"
           done
 
+      - name: Escape backticks in commit msg
+        env:
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+        run: |
+          echo "ESCAPED_MSG=$(echo "$COMMIT_MSG" | sed 's/`/\`/g')" >> $GITHUB_ENV
+
       - name: Replace outdated files in target repos, push changes
         run: |
           target_repos=(${{ steps.list_repos.outputs.repos }})
@@ -58,7 +64,7 @@ jobs:
             done
             git diff-index --quiet HEAD || (echo "Committing changes" && \
               GIT_AUTHOR_NAME="Adam Lui" GIT_AUTHOR_EMAIL="adam@kudoai.com" GIT_COMMITTER_NAME="kudo-sync-bot" GIT_COMMITTER_EMAIL="auto-sync@kudoai.com" \
-              git commit -m "$(echo '${{ github.event.head_commit.message }}' | sed 's/`/\`/g') ↞ [auto-sync from \`adamlui/python-utils\`]")
+              git commit -m "$ESCAPED_MSG ↞ [auto-sync from \`adamlui/python-utils\`]")
             git remote set-url --push origin "https://kudo-sync-bot:${{ secrets.REPO_SYNC_PAT }}@github.com/$repo"
             echo "Pushing changes"
             git push --force
