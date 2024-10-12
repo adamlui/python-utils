@@ -51,6 +51,7 @@ jobs:
       - name: Config committer
         run: |
           gpg --batch --import <(echo "${{ secrets.GPG_PRIVATE_KEY }}")
+          git config --global commit.gpgsign true
           git config --global user.name "kudo-sync-bot"
           git config --global user.email "auto-sync@kudoai.com"
           git config --global user.signingkey  "${{ secrets.GPG_PRIVATE_ID }}"
@@ -75,7 +76,7 @@ jobs:
               fi
             done
             git diff-index --quiet HEAD || (echo "Committing changes" && \
-              git commit -S -m "$ESCAPED_MSG ↞ [auto-sync from \`adamlui/python-utils\`]")
+              git commit -m "$ESCAPED_MSG ↞ [auto-sync from \`adamlui/python-utils\`]")
             git remote set-url --push origin "https://kudo-sync-bot:${{ secrets.REPO_SYNC_PAT }}@github.com/$repo"
             echo "Pushing changes"
             git push --force
