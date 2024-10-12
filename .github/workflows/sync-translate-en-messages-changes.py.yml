@@ -7,6 +7,9 @@ jobs:
   build:
     if: (github.repository == 'adamlui/python-utils') && (github.event.commits[0].committer.username != 'kudo-sync-bot')
     runs-on: ubuntu-latest
+    env:
+      TZ: PST8PDT
+
     steps:
 
       - name: Checkout adamlui/python-utils
