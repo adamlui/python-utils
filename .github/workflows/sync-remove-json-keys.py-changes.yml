@@ -28,11 +28,11 @@ jobs:
             "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-auto-talk" \
             "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" \
             "KudoAI/amazongpt" "KudoAI/bravegpt" "KudoAI/chatgpt.js" "KudoAI/duckduckgpt" "KudoAI/googlegpt")
-          echo "::set-output name=repos::${target_repos[*]}"
+          echo "::set-output name=REPOS::${target_repos[*]}"
 
       - name: Checkout target repos
         run: |
-          target_repos=(${{ steps.list_repos.outputs.repos }})
+          target_repos=(${{ steps.list_repos.outputs.REPOS }})
           for repo in "${target_repos[@]}"; do
             repo_path="${repo//\//_}"
             echo "::group::Checking out $repo"
@@ -58,7 +58,7 @@ jobs:
 
       - name: Replace outdated files in target repos, push changes
         run: |
-          target_repos=(${{ steps.list_repos.outputs.repos }})
+          target_repos=(${{ steps.list_repos.outputs.REPOS }})
           source_file="${{ github.workspace }}/adamlui/python-utils/remove-json-keys/remove-json-keys.py"
           source_timestamp=$(cd "${{ github.workspace }}/adamlui/python-utils" && git log -1 --format="%ct" -- "remove-json-keys/remove-json-keys.py")
           for repo in "${target_repos[@]}"; do
