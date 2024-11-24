@@ -24,7 +24,7 @@ jobs:
         id: list_repos
         run: |
           target_repos=( \
-            "adamlui/userscripts" "adamlui/chatgpt-apps" "adamlui/autoclear-chatgpt-history" \
+            "adamlui/userscripts" "adamlui/ai-web-extensions" "adamlui/autoclear-chatgpt-history" \
             "adamlui/chatgpt-auto-continue" "adamlui/chatgpt-auto-refresh" "adamlui/chatgpt-auto-talk" \
             "adamlui/chatgpt-infinity" "adamlui/chatgpt-widescreen" "adamlui/youtube-classic" \
             "KudoAI/amazongpt" "KudoAI/bravegpt" "KudoAI/chatgpt.js" "KudoAI/duckduckgpt" "KudoAI/googlegpt")
