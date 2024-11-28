@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        run: |
+      - run: |
           pip install yamllint
           yamllint . -c .yamllint-config.yaml
