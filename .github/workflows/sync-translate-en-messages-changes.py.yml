@@ -23,7 +23,7 @@ jobs:
       - name: Build list of target repos
         id: list_repos
         run: |
-          target_repos=(
+          TARGET_REPOS=(
             "adamlui/userscripts"
             "adamlui/ai-web-extensions"
             "adamlui/js-utils"
@@ -41,12 +41,12 @@ jobs:
             "KudoAI/duckduckgpt"
             "KudoAI/googlegpt"
           )
-          echo "::set-output name=REPOS::${target_repos[*]}"
+          echo "::set-output name=REPOS::${TARGET_REPOS[*]}"
 
       - name: Checkout target repos
         run: |
-          target_repos=(${{ steps.list_repos.outputs.REPOS }})
-          for repo in "${target_repos[@]}"; do
+          TARGET_REPOS=(${{ steps.list_repos.outputs.REPOS }})
+          for repo in "${TARGET_REPOS[@]}"; do
             repo_path="${repo//\//_}"
             echo "::group::Checking out $repo"
             git clone https://github.com/$repo.git $GITHUB_WORKSPACE/$repo_path
@@ -71,10 +71,10 @@ jobs:
 
       - name: Replace outdated files in target repos, push changes
         run: |
-          target_repos=(${{ steps.list_repos.outputs.REPOS }})
+          TARGET_REPOS=(${{ steps.list_repos.outputs.REPOS }})
           source_file="${{ github.workspace }}/adamlui/python-utils/translate-messages/translate-en-messages.py"
           source_timestamp=$(cd "${{ github.workspace }}/adamlui/python-utils" && git log -1 --format="%ct" -- "translate-messages/translate-en-messages.py")
-          for repo in "${target_repos[@]}"; do
+          for repo in "${TARGET_REPOS[@]}"; do
             echo "::group::Replacing translate-en-messages.py in $repo"
             repo_path="${repo//\//_}"
             target_dir="$GITHUB_WORKSPACE/$repo_path"
