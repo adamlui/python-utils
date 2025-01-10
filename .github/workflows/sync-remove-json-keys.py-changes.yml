@@ -32,6 +32,7 @@ jobs:
             "adamlui/chatgpt-auto-refresh"
             "adamlui/chatgpt-auto-talk"
             "adamlui/chatgpt-infinity"
+            "adamlui/chatgpt-omnibox"
             "adamlui/chatgpt-widescreen"
             "adamlui/perplexity-omnibox"
             "adamlui/phind-omnibox"
