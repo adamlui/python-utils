@@ -3,6 +3,9 @@ on:
     branches: main
     paths: "**/translate-en-messages.py"
 
+permissions:
+  contents: write
+
 jobs:
   build:
     if: (github.repository == 'adamlui/python-utils') && (github.event.commits[0].committer.username != 'kudo-sync-bot')
