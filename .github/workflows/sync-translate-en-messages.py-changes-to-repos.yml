@@ -97,7 +97,7 @@ jobs:
               fi
             done
             git diff-index --quiet HEAD || (echo "Committing changes" && \
-              git commit -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/python-utils]")
+              git commit -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/python-utils/tree/main/translate-messages]")
             git remote set-url --push origin "https://kudo-sync-bot:${{ secrets.REPO_SYNC_PAT }}@github.com/$repo"
             echo "Pushing changes"
             git push --force
