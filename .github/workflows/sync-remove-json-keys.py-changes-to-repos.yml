@@ -29,6 +29,7 @@ jobs:
           TARGET_REPOS=(
             "adamlui/userscripts"
             "adamlui/ai-web-extensions"
+            "adamlui/js-utils"
             "adamlui/autoclear-chatgpt-history"
             "adamlui/brave-omnibox"
             "adamlui/chatgpt-auto-continue"
@@ -37,6 +38,7 @@ jobs:
             "adamlui/chatgpt-infinity"
             "adamlui/chatgpt-omnibox"
             "adamlui/chatgpt-widescreen"
+            "adamlui/minify.js"
             "adamlui/perplexity-omnibox"
             "adamlui/phind-omnibox"
             "adamlui/you.com-omnibox"
