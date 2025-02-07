@@ -27,9 +27,7 @@ jobs:
         id: list_repos
         run: |
           TARGET_REPOS=(
-            "adamlui/userscripts"
             "adamlui/ai-web-extensions"
-            "adamlui/js-utils"
             "adamlui/autoclear-chatgpt-history"
             "adamlui/brave-omnibox"
             "adamlui/chatgpt-auto-continue"
@@ -38,14 +36,16 @@ jobs:
             "adamlui/chatgpt-infinity"
             "adamlui/chatgpt-omnibox"
             "adamlui/chatgpt-widescreen"
+            "adamlui/js-utils"
             "adamlui/minify.js"
             "adamlui/perplexity-omnibox"
             "adamlui/phind-omnibox"
+            "adamlui/userscripts"
             "adamlui/you.com-omnibox"
             "adamlui/youtube-classic"
-            "KudoAI/chatgpt.js"
             "KudoAI/amazongpt"
             "KudoAI/bravegpt"
+            "KudoAI/chatgpt.js"
             "KudoAI/duckduckgpt"
             "KudoAI/googlegpt"
           )
