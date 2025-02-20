@@ -36,6 +36,7 @@ jobs:
             "adamlui/chatgpt-infinity"
             "adamlui/chatgpt-omnibox"
             "adamlui/chatgpt-widescreen"
+            "adamlui/deepseek-omnibox"
             "adamlui/js-utils"
             "adamlui/minify.js"
             "adamlui/perplexity-omnibox"
