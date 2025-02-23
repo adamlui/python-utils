@@ -80,8 +80,8 @@ for lang_code in output_langs:
     lang_added, lang_skipped, lang_translated = False, False, False
     folder = lang_code.replace('-', '_') ; translated_msgs = {}
     if '-' in lang_code: # cap suffix
-        sep_index = folder.index('_')
-        folder = folder[:sep_index] + '_' + folder[sep_index+1:].upper()
+        sep_idx = folder.index('_')
+        folder = folder[:sep_idx] + '_' + folder[sep_idx+1:].upper()
 
     # Skip English locales
     if lang_code.startswith('en'):
@@ -124,11 +124,11 @@ for lang_code in output_langs:
 
     # Format messages
     formatted_msgs = '{\n'
-    for index, (key, message_data) in enumerate(translated_msgs.items()):
+    for idx, (key, message_data) in enumerate(translated_msgs.items()):
         formatted_msg = json.dumps(message_data, ensure_ascii=False) \
                             .replace('{', '{ ').replace('}', ' }') # add spacing
         formatted_msgs += ( f'  "{key}": {formatted_msg}'
-                        + ( ',\n' if index < len(translated_msgs) - 1 else '\n' )) # terminate line
+                        + ( ',\n' if idx < len(translated_msgs) - 1 else '\n' )) # terminate line
     formatted_msgs += '}'
     with open(msgs_path, 'w', encoding='utf-8') as output_file : output_file.write(formatted_msgs + '\n')
 
