@@ -71,14 +71,19 @@ jobs:
           echo "EOF" >> $GITHUB_ENV
 
       - name: Config committer
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PRIVATE_ID: ${{ secrets.GPG_PRIVATE_ID }}
         run: |
-          gpg --batch --import <(echo "${{ secrets.GPG_PRIVATE_KEY }}")
+          gpg --batch --import <(echo "$GPG_PRIVATE_KEY")
           git config --global commit.gpgsign true
           git config --global user.name "kudo-sync-bot"
           git config --global user.email "auto-sync@kudoai.com"
-          git config --global user.signingkey  "${{ secrets.GPG_PRIVATE_ID }}"
+          git config --global user.signingkey "$GPG_PRIVATE_ID"
 
       - name: Replace outdated files in target repos, push changes
+        env:
+          REPO_SYNC_PAT: ${{ secrets.REPO_SYNC_PAT }}
         run: |
           TARGET_REPOS=(${{ steps.list_repos.outputs.REPOS }})
           source_file="${{ github.workspace }}/adamlui/python-utils/translate-messages/translate-en-messages.py"
@@ -99,7 +104,7 @@ jobs:
             done
             git diff-index --quiet HEAD || (echo "Committing changes" && \
               git commit -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/python-utils/tree/main/translate-messages]")
-            git remote set-url --push origin "https://kudo-sync-bot:${{ secrets.REPO_SYNC_PAT }}@github.com/$repo"
+            git remote set-url --push origin "https://kudo-sync-bot:$REPO_SYNC_PAT@github.com/$repo"
             echo "Pushing changes"
             git push --force
             echo "::endgroup::"
