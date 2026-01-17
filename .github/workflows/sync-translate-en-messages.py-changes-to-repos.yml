@@ -3,13 +3,12 @@ on:
     branches: main
     paths: "**/translate-en-messages.py"
 
-permissions:
-  contents: read
-
 jobs:
   build:
     if: (github.repository == 'adamlui/python-utils') && (github.event.commits[0].committer.username != 'kudo-sync-bot')
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     env:
       TZ: PST8PDT
 

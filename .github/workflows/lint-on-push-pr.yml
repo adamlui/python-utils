@@ -1,14 +1,13 @@
 name: Lint pushes + PRs
 on: [push, pull_request]
 
-permissions:
-  contents: read
-
 jobs:
 
   python-lint:
     name: Python lint
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
 
       - name: Checkout repository code
@@ -20,6 +19,8 @@ jobs:
   yaml-lint:
     name: YAML lint
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
 
       - name: Checkout repository code
