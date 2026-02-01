@@ -40,6 +40,7 @@ jobs:
             "adamlui/minify.js"
             "adamlui/perplexity-omnibox"
             "adamlui/phind-omnibox"
+            "adamlui/scss-to-css"
             "adamlui/userscripts"
             "adamlui/you.com-omnibox"
             "KudoAI/amazongpt"
