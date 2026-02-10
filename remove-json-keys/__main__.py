@@ -1,6 +1,6 @@
 '''
 Name:         remove-json-keys
-Version:      2026.2.10.18
+Version:      2026.2.10.19
 Author:       Adam Lui
 Description:  Remove key/value pairs from json_dir/**.json
 Homepage:     https://github.com/adamlui/python-utils
@@ -10,7 +10,7 @@ Notes:        Use --help to print CLI arguments.
 '''
 
 import argparse, os, re
-import lib.init as init
+from lib import init
 
 cli = init.cli()
 
