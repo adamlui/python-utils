@@ -1,6 +1,6 @@
 '''
 Name:         remove-json-keys.py
-Version:      2026.2.10.6
+Version:      2026.2.10.7
 Author:       Adam Lui
 Description:  Remove key/value pairs from json_folder/**.json
 Homepage:     https://github.com/adamlui/python-utils
@@ -33,12 +33,12 @@ print('')
 
 # Prompt user for keys to remove
 def parse_csv_str(str) : return [lang.strip() for lang in str.split(',') if lang.strip()]
-keys_to_remove = parse_csv_str(args.remove_keys or '')
+remove_keys = parse_csv_str(args.remove_keys or '')
 while True:
-    if keys_to_remove : print('Key(s) to remove:', keys_to_remove)
+    if remove_keys : print('Key(s) to remove:', remove_keys)
     key = input("Enter key to remove (or ENTER if done): ")
     if not key : break
-    keys_to_remove.append(key)
+    remove_keys.append(key)
 
 # Determine closest JSON dir
 print_trunc(f'Searching for { json_folder }...')
@@ -72,7 +72,7 @@ for root, _, files in os.walk(json_dir):
 
             # Remove keys
             modified = False
-            for key in keys_to_remove:
+            for key in remove_keys:
                 re_key = fr'"{re.escape(key)}".*?[,\n]+.*?(?="|$)'
                 data, count = re.subn(re_key, '', data)
                 if count > 0:
