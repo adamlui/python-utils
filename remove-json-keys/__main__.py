@@ -61,5 +61,5 @@ summary = {
     'removed': [f'{key} ({file_path})' for key, file_path in keys_removed],
     'skipped': [f'{key} ({file_path})' for key, file_path in keys_skipped],
 }
-log.finalSummary(summary)
+log.final_summary(summary)
 log.trunc(f'Total JSON files processed: {processed_cnt}\n')
