@@ -2,5 +2,6 @@
   "include_langs": "",
   "exclude_langs": "",
   "ignore_keys": "",
-  "locales_dir": "_locales"
+  "locales_dir": "_locales",
+  "provider": ""
 }
