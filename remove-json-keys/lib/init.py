@@ -4,7 +4,7 @@ from types import SimpleNamespace as sns
 def cli():
     cli = sns(
         name='remove-json-keys',
-        version='2026.2.10.24',
+        version='2026.2.10.25',
         author=sns(name='Adam Lui', email='adam@kudoa.com', url='https://github.com/adamlui'),
         description='Remove key/value pairs from json_dir/**.json',
         urls=sns(
@@ -23,12 +23,3 @@ def cli():
     cli.json_dir = cli.args.json_dir or '_locales'
 
     return cli
-
-def env():
-    env = sns()
-    try:
-        env.terminal_width = os.get_terminal_size()[0]
-    except OSError:
-        env.terminal_width = 80
-
-    return env

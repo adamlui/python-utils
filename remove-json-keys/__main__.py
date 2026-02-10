@@ -1,14 +1,7 @@
 import os, re
-from lib import data, init
+from lib import data, init, log
 
-env = init.env()
 cli = init.cli()
-
-# UI initializations
-def print_trunc(msg, end='\n'):
-    truncated_lines = [
-        line if len(line) < env.terminal_width else line[:env.terminal_width -4] + '...' for line in msg.splitlines() ]
-    print('\n'.join(truncated_lines), end=end)
 
 print('')
 
@@ -21,7 +14,7 @@ while True:
     remove_keys.append(key)
 
 # Determine closest locales dir
-print_trunc(f'\nSearching for {cli.json_dir}...')
+log.trunc(f'\nSearching for {cli.json_dir}...')
 script_dir = os.path.abspath(os.path.dirname(__file__))
 for root, dirs, files in os.walk(script_dir): # search script dir recursively
     if cli.json_dir in dirs:
@@ -37,8 +30,8 @@ else: # search script parent dirs recursively
     else : cli.json_dir = None
 
 # Print result
-if cli.json_dir : print_trunc(f'JSON directory found!\n\n>> {cli.json_dir}\n')
-else : print_trunc(f'Unable to locate a {cli.json_dir} directory.') ; exit()
+if cli.json_dir : log.trunc(f'JSON directory found!\n\n>> {cli.json_dir}\n')
+else : log.trunc(f'Unable to locate a {cli.json_dir} directory.') ; exit()
 
 # Process JSON files and remove specified keys
 keys_removed, keys_skipped, processed_count = [], [], 0
@@ -64,17 +57,9 @@ for root, _, files in os.walk(cli.json_dir):
             processed_count += 1
 
 # Print file summaries
-if keys_removed:
-    print_trunc('\nKeys removed successfully!\n')
-    for key, file_path in keys_removed:
-        print(f'Removed key "{key}" in {file_path}')
-if keys_skipped:
-    print_trunc('\nKeys skipped (not found)!\n')
-    for key, file_path in keys_skipped:
-        print(f'Skipped key "{key}" in {file_path}')
-
-# Print final summary
-print_trunc('\nKey removal process completed!\n')
-print(f'Processed JSON Files: {processed_count}')
-print(f'Keys Removed: {len(keys_removed)}')
-print(f'Keys Skipped: {len(keys_skipped)}')
+summary = {
+    'removed': [f'{key} ({file_path})' for key, file_path in keys_removed],
+    'skipped': [f'{key} ({file_path})' for key, file_path in keys_skipped],
+}
+log.finalSummary(summary)
+log.trunc(f'Total JSON files processed: {processed_count}\n')

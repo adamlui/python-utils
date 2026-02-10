@@ -1,0 +1,20 @@
+import os
+from sys import stdout
+
+try:
+    terminal_width = os.get_terminal_size()[0]
+except OSError:
+    terminal_width = 80
+
+def finalSummary(summary_dict):
+    trunc('\nAll JSON files updated successfully!\n\n')
+    for name, file_set in summary_dict.items():
+        if file_set:
+            status = name.replace('_', ' ')
+            print(f'Keys {status}: {len(file_set)}')
+            print(f"[ {', '.join(file_set)} ]")
+
+def trunc(msg, end='\n'):
+    truncated_lines = [
+        line if len(line) < terminal_width else line[:terminal_width -4] + '...' for line in msg.splitlines() ]
+    print('\n'.join(truncated_lines), end=end)
