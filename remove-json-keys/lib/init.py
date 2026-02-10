@@ -2,9 +2,10 @@ import argparse
 from types import SimpleNamespace as sns
 
 def cli():
+
     cli = sns(
         name='remove-json-keys',
-        version='2026.2.10.27',
+        version='2026.2.10.28',
         author=sns(name='Adam Lui', email='adam@kudoa.com', url='https://github.com/adamlui'),
         description='Remove key/value pairs from json_dir/**.json',
         urls=sns(
@@ -17,7 +18,7 @@ def cli():
 
     # Parse CLI args
     parser = argparse.ArgumentParser(description='Remove key/value pairs from JSON files')
-    parser.add_argument('--remove-keys', type=str, help='Keys to remove')
+    parser.add_argument('--remove-keys', type=str, help='Keys to remove (e.g. "appName,author")')
     parser.add_argument('--json-dir', type=str, help='Name of folder containing JSON files')
     cli.args = parser.parse_args()
     cli.json_dir = cli.args.json_dir or '_locales'
