@@ -1,5 +1,4 @@
 import os
-from sys import stdout
 
 try:
     terminal_width = os.get_terminal_size()[0]
