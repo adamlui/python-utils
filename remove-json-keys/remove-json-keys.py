@@ -1,6 +1,6 @@
 '''
 Name:         remove-json-keys.py
-Version:      2026.2.10.14
+Version:      2026.2.10.15
 Author:       Adam Lui
 Description:  Remove key/value pairs from json_dir/**.json
 Homepage:     https://github.com/adamlui/python-utils
@@ -34,8 +34,8 @@ def print_trunc(msg, end='\n'):
 print('')
 
 # Prompt user for keys to remove
-def parse_csv_str(str) : return [lang.strip() for lang in str.split(',') if lang.strip()]
-remove_keys = parse_csv_str(args.remove_keys or '')
+def parse_csv_val(val) : return [item.strip() for item in val.split(',') if item.strip()]
+remove_keys = parse_csv_val(args.remove_keys or '')
 while True:
     if remove_keys : print('Key(s) to remove:', remove_keys)
     key = input("Enter key to remove (or ENTER if done): ")
