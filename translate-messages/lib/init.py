@@ -24,4 +24,3 @@ def configFile(cli, caller_file):
     if os.path.exists(cli.config_path):
         with open(cli.config_path, 'r', encoding='utf-8') as f:
             cli.config_data.update(json.load(f))
-
