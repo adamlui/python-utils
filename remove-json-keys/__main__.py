@@ -16,10 +16,8 @@ while True:
 # Determine closest locales dir
 log.trunc(f'\nSearching for {cli.json_dir}...')
 cli.json_dir = init.json_dir(cli.json_dir)
-if cli.json_dir:
-    log.trunc(f'JSON directory found!\n\n>> {cli.json_dir}\n')
-else:
-    log.trunc(f'Unable to locate a {cli.json_dir} directory.') ; exit()
+if cli.json_dir : log.trunc(f'JSON directory found!\n\n>> {cli.json_dir}\n')
+else : log.trunc(f'Unable to locate a {cli.json_dir} directory.') ; exit()
 
 # Process JSON files and remove specified keys
 keys_removed, keys_skipped, processed_cnt = [], [], 0
