@@ -83,37 +83,32 @@ jobs:
           git config --global user.email "auto-sync@kudoai.com"
           git config --global user.signingkey "$GPG_PRIVATE_ID"
 
-      - name: Replace outdated files in target repos, push changes
+      - name: Replace translate-messages/ in target repos, push changes
         env:
           REPO_SYNC_PAT: ${{ secrets.REPO_SYNC_PAT }}
         run: |
           TARGET_REPOS=(${{ steps.list_repos.outputs.REPOS }})
           SOURCE_DIR="${{ github.workspace }}/adamlui/python-utils/translate-messages"
+
           for repo in "${TARGET_REPOS[@]}"; do
-            echo "::group::Replacing translate-en-messages.py in $repo"
+            echo "::group::Syncing translate-messages/ in $repo"
             repo_path="${repo//\//_}"
             target_dir="$GITHUB_WORKSPACE/$repo_path"
             cd "$target_dir" || exit 1
-            find "$SOURCE_DIR" -type f ! -name "*.config.json" | while read source_file; do
-              rel_path="${source_file#$SOURCE_DIR/}"
-              target_file="$target_dir/translate-messages/$rel_path"
-              mkdir -p "$(dirname "$target_file")"
-              if [ ! -f "$target_file" ]; then
-                echo "Adding $target_file"
-                cp "$source_file" "$target_file"
-                git add "$target_file"
-              else
-                source_ts=$(cd "$SOURCE_DIR" && git log -1 --format="%ct" -- "$rel_path")
-                target_ts=$(git log -1 --format="%ct" -- "$target_file")
-                if [[ $source_ts -gt $target_ts ]]; then
-                  echo "Updating $target_file"
-                  cp "$source_file" "$target_file"
-                  git add "$target_file"
-                fi
-              fi
+
+            # Copy src files to each target translate-messages/ dir
+            mapfile -t TARGET_DIRS < <(find . -type d -name "translate-messages")
+            for tdir in "${TARGET_DIRS[@]}" ; do
+              echo "Copying files to $tdir..."
+              rsync -av --delete --filter='P *.config.json' --exclude '*.config.json' "$SOURCE_DIR/" "$tdir/"
+              git add "$tdir"
             done
-            git diff-index --quiet HEAD || (echo "Committing changes" && \
-              git commit -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/python-utils/tree/main/translate-messages]")
+
+            # Commit & push if any changes
+            git diff-index --quiet HEAD || (
+              echo "Committing changes"
+              git commit -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/adamlui/python-utils/tree/main/translate-messages]"
+            )
             git remote set-url --push origin "https://kudo-sync-bot:$REPO_SYNC_PAT@github.com/$repo"
             echo "Pushing changes"
             git push --force
