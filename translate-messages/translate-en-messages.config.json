@@ -1,5 +1,6 @@
 {
   "include_langs": "",
   "exclude_langs": "",
-  "ignore_keys": ""
+  "ignore_keys": "",
+  "locales_dir": ""
 }
