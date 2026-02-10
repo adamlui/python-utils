@@ -1,6 +1,6 @@
 '''
-Name:         remove-json-keys.py
-Version:      2026.2.10.15
+Name:         remove-json-keys
+Version:      2026.2.10.16
 Author:       Adam Lui
 Description:  Remove key/value pairs from json_dir/**.json
 Homepage:     https://github.com/adamlui/python-utils

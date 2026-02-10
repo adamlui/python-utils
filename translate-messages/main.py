@@ -1,6 +1,6 @@
 '''
-Name:         translate-en-messages.py
-Version:      2026.2.10.27
+Name:         translate-en-messages
+Version:      2026.2.10.28
 Author:       Adam Lui
 Description:  Translate en/messages.json to other locales
 Homepage:     https://github.com/adamlui/python-utils
