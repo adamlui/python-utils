@@ -1,5 +1,5 @@
 import os, re
-from lib import init
+from lib import data, init
 
 env = init.env()
 cli = init.cli()
@@ -13,8 +13,7 @@ def print_trunc(msg, end='\n'):
 print('')
 
 # Prompt user for keys to remove
-def parse_csv_val(val) : return [item.strip() for item in val.split(',') if item.strip()]
-remove_keys = parse_csv_val(cli.args.remove_keys or '')
+remove_keys = data.parse_csv_val(cli.args.remove_keys or '')
 while True:
     if remove_keys : print('Key(s) to remove:', remove_keys)
     key = input("Enter key to remove (or ENTER if done): ")
