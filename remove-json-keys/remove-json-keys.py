@@ -1,15 +1,12 @@
 '''
 Name:         remove-json-keys.py
-Version:      2026.2.10.3
+Version:      2026.2.10.4
 Author:       Adam Lui
 Description:  Remove key/value pairs from json_folder/**.json
 Homepage:     https://github.com/adamlui/python-utils
 Support:      https://github.com/adamlui/python-utils/issues
 Sponsor:      https://github.com/sponsors/adamlui
-
-CLI arguments:
- --json-folder="name"     Name of folder containing JSON files
- --help                   Print help screen
+Notes:        Use --help to print CLI arguments.
 '''
 
 import argparse
