@@ -1,6 +1,6 @@
 '''
 Name:         remove-json-keys.py
-Version:      2026.2.10.11
+Version:      2026.2.10.12
 Author:       Adam Lui
 Description:  Remove key/value pairs from json_dir/**.json
 Homepage:     https://github.com/adamlui/python-utils
@@ -14,8 +14,8 @@ import os, re
 from types import SimpleNamespace
 
 cli = SimpleNamespace(
-    name='remove-json-keys',
-    urls=SimpleNamespace(jsdelivr='https://cdn.jsdelivr.net/gh/adamlui/python-utils')
+    name = 'remove-json-keys',
+    urls = SimpleNamespace(jsdelivr = 'https://cdn.jsdelivr.net/gh/adamlui/python-utils')
 )
 
 # Parse CLI args
