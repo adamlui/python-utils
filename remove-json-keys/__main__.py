@@ -15,23 +15,11 @@ while True:
 
 # Determine closest locales dir
 log.trunc(f'\nSearching for {cli.json_dir}...')
-script_dir = os.path.abspath(os.path.dirname(__file__))
-for root, dirs, files in os.walk(script_dir): # search script dir recursively
-    if cli.json_dir in dirs:
-        cli.json_dir = os.path.join(root, cli.json_dir) ; break
-else: # search script parent dirs recursively
-    parent_dir = os.path.dirname(script_dir)
-    while parent_dir and parent_dir != script_dir:
-        for root, dirs, files in os.walk(parent_dir):
-            if cli.json_dir in dirs:
-                cli.json_dir = os.path.join(root, cli.json_dir) ; break
-        if cli.json_dir : break
-        parent_dir = os.path.dirname(parent_dir)
-    else : cli.json_dir = None
-
-# Print result
-if cli.json_dir : log.trunc(f'JSON directory found!\n\n>> {cli.json_dir}\n')
-else : log.trunc(f'Unable to locate a {cli.json_dir} directory.') ; exit()
+cli.json_dir = init.json_dir(cli.json_dir)
+if cli.json_dir:
+    log.trunc(f'JSON directory found!\n\n>> {cli.json_dir}\n')
+else:
+    log.trunc(f'Unable to locate a {cli.json_dir} directory.') ; exit()
 
 # Process JSON files and remove specified keys
 keys_removed, keys_skipped, processed_cnt = [], [], 0
