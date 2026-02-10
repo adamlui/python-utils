@@ -15,3 +15,12 @@ def cli():
     cli.json_dir = cli.args.json_dir or '_locales'
 
     return cli
+
+def env():
+    env = sns()
+    try:
+        env.terminal_width = os.get_terminal_size()[0]
+    except OSError:
+        env.terminal_width = 80
+
+    return env
