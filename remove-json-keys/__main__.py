@@ -34,7 +34,7 @@ if cli.json_dir : log.trunc(f'JSON directory found!\n\n>> {cli.json_dir}\n')
 else : log.trunc(f'Unable to locate a {cli.json_dir} directory.') ; exit()
 
 # Process JSON files and remove specified keys
-keys_removed, keys_skipped, processed_count = [], [], 0
+keys_removed, keys_skipped, processed_cnt = [], [], 0
 for root, _, files in os.walk(cli.json_dir):
     for filename in files:
         if filename.endswith('.json'):
@@ -54,7 +54,7 @@ for root, _, files in os.walk(cli.json_dir):
                 else : keys_skipped.append((key, os.path.relpath(file_path, cli.json_dir)))
             if modified:
                 with open(file_path, 'w', encoding='utf-8') as f : f.write(data)
-            processed_count += 1
+            processed_cnt += 1
 
 # Print file summaries
 summary = {
@@ -62,4 +62,4 @@ summary = {
     'skipped': [f'{key} ({file_path})' for key, file_path in keys_skipped],
 }
 log.finalSummary(summary)
-log.trunc(f'Total JSON files processed: {processed_count}\n')
+log.trunc(f'Total JSON files processed: {processed_cnt}\n')
