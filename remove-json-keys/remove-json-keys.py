@@ -1,8 +1,8 @@
 '''
 Name:         remove-json-keys.py
-Version:      2026.2.10.9
+Version:      2026.2.10.10
 Author:       Adam Lui
-Description:  Remove key/value pairs from json_folder/**.json
+Description:  Remove key/value pairs from json_dir/**.json
 Homepage:     https://github.com/adamlui/python-utils
 Support:      https://github.com/adamlui/python-utils/issues
 Sponsor:      https://github.com/sponsors/adamlui
@@ -17,7 +17,7 @@ parser = argparse.ArgumentParser(description='Remove key/value pairs from JSON f
 parser.add_argument('--remove-keys', type=str, help='Keys to remove')
 parser.add_argument('--json-dir', type=str, help='Name of folder containing JSON files')
 args = parser.parse_args()
-json_folder = args.json_folder or '_locales'
+json_dir = args.json_dir or '_locales'
 
 # UI initializations
 try:
@@ -41,24 +41,24 @@ while True:
     remove_keys.append(key)
 
 # Determine closest JSON dir
-print_trunc(f'Searching for { json_folder }...')
+print_trunc(f'Searching for { json_dir }...')
 script_dir = os.path.abspath(os.path.dirname(__file__))
 for root, dirs, files in os.walk(script_dir): # search script dir recursively
-    if json_folder in dirs:
-        json_dir = os.path.join(root, json_folder) ; break
+    if json_dir in dirs:
+        json_dir = os.path.join(root, json_dir) ; break
 else: # search script parent dirs recursively
     parent_dir = os.path.dirname(script_dir)
     while parent_dir and parent_dir != script_dir:
         for root, dirs, files in os.walk(parent_dir):
-            if json_folder in dirs:
-                json_dir = os.path.join(root, json_folder) ; break
+            if json_dir in dirs:
+                json_dir = os.path.join(root, json_dir) ; break
         if json_dir : break
         parent_dir = os.path.dirname(parent_dir)
     else : json_dir = None
 
 # Print result
 if json_dir : print_trunc(f'JSON directory found!\n\n>> { json_dir }\n')
-else : print_trunc(f'Unable to locate a { json_folder } directory.') ; exit()
+else : print_trunc(f'Unable to locate a { json_dir } directory.') ; exit()
 
 # Process JSON files and remove specified keys
 keys_removed, keys_skipped, processed_count = [], [], 0
