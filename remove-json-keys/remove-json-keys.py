@@ -1,6 +1,6 @@
 '''
 Name:         remove-json-keys.py
-Version:      2026.2.10.12
+Version:      2026.2.10.13
 Author:       Adam Lui
 Description:  Remove key/value pairs from json_dir/**.json
 Homepage:     https://github.com/adamlui/python-utils
@@ -9,8 +9,7 @@ Sponsor:      https://github.com/sponsors/adamlui
 Notes:        Use --help to print CLI arguments.
 '''
 
-import argparse
-import os, re
+import argparse, os, re
 from types import SimpleNamespace as sns
 
 cli = sns(
