@@ -1,6 +1,6 @@
 '''
 Name:         remove-json-keys
-Version:      2026.2.10.17
+Version:      2026.2.10.18
 Author:       Adam Lui
 Description:  Remove key/value pairs from json_dir/**.json
 Homepage:     https://github.com/adamlui/python-utils
@@ -18,8 +18,8 @@ cli = init.cli()
 parser = argparse.ArgumentParser(description='Remove key/value pairs from JSON files')
 parser.add_argument('--remove-keys', type=str, help='Keys to remove')
 parser.add_argument('--json-dir', type=str, help='Name of folder containing JSON files')
-args = parser.parse_args()
-json_dir = args.json_dir or '_locales'
+cli.args = parser.parse_args()
+cli.json_dir = cli.args.json_dir or '_locales'
 
 # UI initializations
 try:
@@ -35,36 +35,36 @@ print('')
 
 # Prompt user for keys to remove
 def parse_csv_val(val) : return [item.strip() for item in val.split(',') if item.strip()]
-remove_keys = parse_csv_val(args.remove_keys or '')
+remove_keys = parse_csv_val(cli.args.remove_keys or '')
 while True:
     if remove_keys : print('Key(s) to remove:', remove_keys)
     key = input("Enter key to remove (or ENTER if done): ")
     if not key : break
     remove_keys.append(key)
 
-# Determine closest JSON dir
-print_trunc(f'Searching for { json_dir }...')
+# Determine closest locales dir
+print_trunc(f'\nSearching for {cli.json_dir}...')
 script_dir = os.path.abspath(os.path.dirname(__file__))
 for root, dirs, files in os.walk(script_dir): # search script dir recursively
-    if json_dir in dirs:
-        json_dir = os.path.join(root, json_dir) ; break
+    if cli.json_dir in dirs:
+        cli.json_dir = os.path.join(root, cli.json_dir) ; break
 else: # search script parent dirs recursively
     parent_dir = os.path.dirname(script_dir)
     while parent_dir and parent_dir != script_dir:
         for root, dirs, files in os.walk(parent_dir):
-            if json_dir in dirs:
-                json_dir = os.path.join(root, json_dir) ; break
-        if json_dir : break
+            if cli.json_dir in dirs:
+                cli.json_dir = os.path.join(root, cli.json_dir) ; break
+        if cli.json_dir : break
         parent_dir = os.path.dirname(parent_dir)
-    else : json_dir = None
+    else : cli.json_dir = None
 
 # Print result
-if json_dir : print_trunc(f'JSON directory found!\n\n>> { json_dir }\n')
-else : print_trunc(f'Unable to locate a { json_dir } directory.') ; exit()
+if cli.json_dir : print_trunc(f'JSON directory found!\n\n>> {cli.json_dir}\n')
+else : print_trunc(f'Unable to locate a {cli.json_dir} directory.') ; exit()
 
 # Process JSON files and remove specified keys
 keys_removed, keys_skipped, processed_count = [], [], 0
-for root, _, files in os.walk(json_dir):
+for root, _, files in os.walk(cli.json_dir):
     for filename in files:
         if filename.endswith('.json'):
 
@@ -78,9 +78,9 @@ for root, _, files in os.walk(json_dir):
                 re_key = fr'"{re.escape(key)}".*?[,\n]+.*?(?="|$)'
                 data, count = re.subn(re_key, '', data)
                 if count > 0:
-                    keys_removed.append((key, os.path.relpath(file_path, json_dir)))
+                    keys_removed.append((key, os.path.relpath(file_path, cli.json_dir)))
                     modified = True
-                else : keys_skipped.append((key, os.path.relpath(file_path, json_dir)))
+                else : keys_skipped.append((key, os.path.relpath(file_path, cli.json_dir)))
             if modified:
                 with open(file_path, 'w', encoding='utf-8') as f : f.write(data)
             processed_count += 1
