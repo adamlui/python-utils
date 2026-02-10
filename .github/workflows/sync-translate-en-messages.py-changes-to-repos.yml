@@ -1,7 +1,9 @@
 on:
   push:
     branches: main
-    paths: "**/translate-en-messages.py"
+    paths:
+      - "translate-messages/**"
+      - "!translate-messages/*.config.json"
 
 jobs:
   build:
@@ -86,20 +88,28 @@ jobs:
           REPO_SYNC_PAT: ${{ secrets.REPO_SYNC_PAT }}
         run: |
           TARGET_REPOS=(${{ steps.list_repos.outputs.REPOS }})
-          source_file="${{ github.workspace }}/adamlui/python-utils/translate-messages/translate-en-messages.py"
-          source_timestamp=$(cd "${{ github.workspace }}/adamlui/python-utils" && git log -1 --format="%ct" -- "translate-messages/translate-en-messages.py")
+          SOURCE_DIR="${{ github.workspace }}/adamlui/python-utils/translate-messages"
           for repo in "${TARGET_REPOS[@]}"; do
             echo "::group::Replacing translate-en-messages.py in $repo"
             repo_path="${repo//\//_}"
             target_dir="$GITHUB_WORKSPACE/$repo_path"
             cd "$target_dir" || exit 1
-            target_files=$(find . -name "translate-en-messages.py" -type f)
-            for target_file in $target_files; do
-              target_timestamp=$(git log -1 --format="%ct" -- "$target_file")
-              if [[ $source_timestamp -gt $target_timestamp ]]; then
-                echo "Copying $source_file to $target_file"
-                cp -f "$source_file" "$target_file"
+            find "$SOURCE_DIR" -type f ! -name "*.config.json" | while read source_file; do
+              rel_path="${source_file#$SOURCE_DIR/}"
+              target_file="$target_dir/translate-messages/$rel_path"
+              mkdir -p "$(dirname "$target_file")"
+              if [ ! -f "$target_file" ]; then
+                echo "Adding $target_file"
+                cp "$source_file" "$target_file"
                 git add "$target_file"
+              else
+                source_ts=$(cd "$SOURCE_DIR" && git log -1 --format="%ct" -- "$rel_path")
+                target_ts=$(git log -1 --format="%ct" -- "$target_file")
+                if [[ $source_ts -gt $target_ts ]]; then
+                  echo "Updating $target_file"
+                  cp "$source_file" "$target_file"
+                  git add "$target_file"
+                fi
               fi
             done
             git diff-index --quiet HEAD || (echo "Committing changes" && \
