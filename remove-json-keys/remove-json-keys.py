@@ -1,6 +1,6 @@
 '''
 Name:         remove-json-keys.py
-Version:      2026.2.10.5
+Version:      2026.2.10.6
 Author:       Adam Lui
 Description:  Remove key/value pairs from json_folder/**.json
 Homepage:     https://github.com/adamlui/python-utils
@@ -14,12 +14,12 @@ import os, re
 
 # Parse CLI args
 parser = argparse.ArgumentParser(description='Remove key/value pairs from JSON files')
+parser.add_argument('--remove-keys', type=str, help='Comma-separated list of keys to remove')
 parser.add_argument('--json-folder', type=str, help='Name of folder containing JSON files')
 args = parser.parse_args()
 json_folder = args.json_folder or '_locales'
 
 # UI initializations
-os.system('color') ; print('\033[0;92m') # set font to bright green
 try:
     terminal_width = os.get_terminal_size()[0]
 except OSError:
@@ -32,8 +32,10 @@ def print_trunc(msg, end='\n'):
 print('')
 
 # Prompt user for keys to remove
-keys_to_remove = []
+def parse_csv_str(str) : return [lang.strip() for lang in str.split(',') if lang.strip()]
+keys_to_remove = parse_csv_str(args.remove_keys or '')
 while True:
+    if keys_to_remove : print('Key(s) to remove:', keys_to_remove)
     key = input("Enter key to remove (or ENTER if done): ")
     if not key : break
     keys_to_remove.append(key)
