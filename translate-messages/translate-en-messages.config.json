@@ -2,5 +2,5 @@
   "include_langs": "",
   "exclude_langs": "",
   "ignore_keys": "",
-  "locales_dir": ""
+  "locales_dir": "_locales"
 }
