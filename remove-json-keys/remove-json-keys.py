@@ -1,9 +1,11 @@
 '''
-Script:       remove-json-keys.py
-Version:      2026.1.26
-Description:  Remove key/value pairs from json_folder/**.json
+Name:         remove-json-keys.py
+Version:      2026.2.10
 Author:       Adam Lui
-URL:          https://github.com/adamlui/python-utils
+Description:  Remove key/value pairs from json_folder/**.json
+Homepage:     https://github.com/adamlui/python-utils
+Support:      https://github.com/adamlui/python-utils/issues
+Sponsor:      https://github.com/sponsors/adamlui
 '''
 
 import os, re
