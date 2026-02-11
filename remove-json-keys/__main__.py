@@ -1,4 +1,4 @@
-from lib import data, init, log, process
+from lib import data, init, log
 
 cli = init.cli()
 
@@ -16,7 +16,7 @@ cli.json_dir = init.json_dir(cli.json_dir)
 if cli.json_dir : log.trunc(f'JSON directory found!\n\n>> {cli.json_dir}\n')
 else : log.trunc(f'Unable to locate a {cli.json_dir} directory.') ; exit()
 
-keys_removed, keys_skipped, processed_cnt = process.json(cli)
+keys_removed, keys_skipped, processed_cnt = data.removeJSONkeys(cli)
 
 summary = {
     'removed': [f'{key} ({file_path})' for key, file_path in keys_removed],
