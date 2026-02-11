@@ -5,7 +5,7 @@ def cli():
 
     cli = sns(
         name='remove-json-keys',
-        version='2026.2.10.39',
+        version='2026.2.10.40',
         author=sns(name='Adam Lui', email='adam@kudoa.com', url='https://github.com/adamlui'),
         description='Remove key/value pairs from json_dir/**.json',
         urls=sns(
