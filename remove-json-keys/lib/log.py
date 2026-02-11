@@ -11,7 +11,7 @@ def final_summary(summary_dict):
         if file_set:
             status = name.replace('_', ' ')
             print(f'Keys {status}: {len(file_set)}')
-            print(f"[ {', '.join(file_set)} ]")
+            print('[\n' + '\n'.join(file_set) + '\n]')
 
 def trunc(msg, end='\n'):
     truncated_lines = [
