@@ -4,7 +4,7 @@ cli = init.cli()
 
 print('')
 
-cli.remove_keys = data.parse_csv_val(cli.args.remove_keys or '')
+cli.remove_keys = data.csv.parse_val(cli.args.remove_keys or '')
 while True: # prompt user for keys to remove
     if cli.remove_keys : print('Key(s) to remove:', cli.remove_keys)
     key = input("Enter key to remove (or ENTER if done): ")
@@ -16,7 +16,7 @@ cli.json_dir = init.json_dir(cli.json_dir)
 if cli.json_dir : log.trunc(f'JSON directory found!\n\n>> {cli.json_dir}\n')
 else : log.trunc(f'Unable to locate a {cli.json_dir} directory.') ; exit()
 
-keys_removed, keys_skipped, processed_cnt = data.removeJSONkeys(cli)
+keys_removed, keys_skipped, processed_cnt = data.json.removeKeys(cli)
 
 summary = {
     'removed': [f'{key} ({file_path})' for key, file_path in keys_removed],

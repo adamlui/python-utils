@@ -1,8 +1,6 @@
 import os, re
 
-def parse_csv_val(val) : return [item.strip() for item in val.split(',') if item.strip()]
-
-def removeJSONkeys(cli):
+def removeKeys(cli):
     keys_removed, keys_skipped, processed_cnt = [], [], 0
     for root, _, files in os.walk(cli.json_dir):
         for filename in files:
