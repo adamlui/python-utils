@@ -2,8 +2,6 @@ from lib import data, init, log
 
 cli = init.cli()
 
-cli.remove_keys = data.csv.parse(cli.args.remove_keys or '')
-print('')
 while True: # prompt user for keys to remove
     if cli.remove_keys : print('Key(s) to remove:', cli.remove_keys)
     key = input("Enter key to remove (or ENTER if done): ")

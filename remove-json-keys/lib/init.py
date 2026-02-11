@@ -1,11 +1,12 @@
 import argparse, os
+from lib import data
 from types import SimpleNamespace as sns
 
 def cli():
 
     cli = sns(
         name='remove-json-keys',
-        version='2026.2.10.40',
+        version='2026.2.10.41',
         author=sns(name='Adam Lui', email='adam@kudoa.com', url='https://github.com/adamlui'),
         description='Remove key/value pairs from json_dir/**.json',
         urls=sns(
@@ -22,6 +23,9 @@ def cli():
     parser.add_argument('--json-dir', type=str, help='Name of folder containing JSON files')
     cli.args = parser.parse_args()
     cli.json_dir = cli.args.json_dir or '_locales'
+    cli.remove_keys = data.csv.parse(cli.args.remove_keys or '')
+
+    print('')
 
     return cli
 
