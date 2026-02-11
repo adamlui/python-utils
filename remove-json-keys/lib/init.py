@@ -5,7 +5,7 @@ def cli():
 
     cli = sns(
         name='remove-json-keys',
-        version='2026.2.10.35',
+        version='2026.2.10.36',
         author=sns(name='Adam Lui', email='adam@kudoa.com', url='https://github.com/adamlui'),
         description='Remove key/value pairs from json_dir/**.json',
         urls=sns(
@@ -26,13 +26,13 @@ def cli():
     return cli
 
 def json_dir(json_dir):
-    script_dir = os.path.abspath(os.path.dirname(__file__))
-    for root, dirs, files in os.walk(script_dir): # search script dir recursively
+    lib_dir = os.path.abspath(os.path.dirname(__file__))
+    for root, dirs, files in os.walk(lib_dir): # search lib dir recursively
         if json_dir in dirs:
             json_dir = os.path.join(root, json_dir) ; break
-    else: # search script parent dirs recursively
-        parent_dir = os.path.dirname(script_dir)
-        while parent_dir and parent_dir != script_dir:
+    else: # search lib parent dirs recursively
+        parent_dir = os.path.dirname(lib_dir)
+        while parent_dir and parent_dir != lib_dir:
             for root, dirs, files in os.walk(parent_dir):
                 if json_dir in dirs:
                     json_dir = os.path.join(root, json_dir) ; break
