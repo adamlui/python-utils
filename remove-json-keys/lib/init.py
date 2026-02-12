@@ -15,7 +15,7 @@ def cli():
     cli.config.__dict__.update({ key:val for key,val in vars(parser.parse_args()).items() if val is not None })
 
     # Init cli.config vals
-    cli.config.remove_keys = data.csv.parse(getattr(cli.config, 'remove_keys', None)) or []
+    cli.config.remove_keys = data.csv.parse(getattr(cli.config, 'remove_keys', None))
     cli.config.json_dir = getattr(cli.config, 'json_dir', '_locales')
     cli.config.no_wizard = getattr(cli.config, 'no_wizard', False)
 
