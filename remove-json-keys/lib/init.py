@@ -21,18 +21,15 @@ def cli():
 
     return cli
 
-def json_dir(json_dir):
+def json_dir(target_dir):
     lib_dir = os.path.abspath(os.path.dirname(__file__))
-    for root, dirs, _ in os.walk(lib_dir): # search lib dir recursively
-        if json_dir in dirs:
-           json_dir = os.path.join(root, json_dir) ; break
-    else: # search lib parent dirs recursively
-        parent_dir = os.path.dirname(lib_dir)
-        while parent_dir and parent_dir != lib_dir:
-            for root, dirs, _ in os.walk(parent_dir):
-                if json_dir in dirs:
-                   json_dir = os.path.join(root, json_dir) ; break
-            if json_dir : break
-            parent_dir = os.path.dirname(parent_dir)
-        else : json_dir = None
-    return json_dir
+    for root, dirs, _ in os.walk(lib_dir): # search lib_dir recursively
+        if target_dir in dirs:
+            return os.path.join(root, target_dir)
+    parent_dir = os.path.dirname(lib_dir)
+    while parent_dir and parent_dir != os.path.dirname(parent_dir):
+        for root, dirs, _ in os.walk(parent_dir): # search parent dirs recursively
+            if target_dir in dirs:
+                return os.path.join(root, target_dir)
+        parent_dir = os.path.dirname(parent_dir)
+    return None
