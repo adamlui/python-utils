@@ -1,18 +1,18 @@
 import argparse, os
-from lib import data
+from . import data
 from types import SimpleNamespace as sns
 
 def cli():
 
-    cli = data.sns.from_dict(data.json.read(os.path.join(os.path.dirname(__file__), '../cli.json')))
+    cli = data.sns.from_dict(data.json.read(os.path.join(os.path.dirname(__file__), '../package-data.json')))
 
     # Parse CLI args
-    parser = argparse.ArgumentParser(description='Remove key/value pairs from JSON files')
-    parser.add_argument('--remove-keys', type=str, help='Keys to remove (e.g. "appName,author")')
-    parser.add_argument('--json-dir', type=str, help='Name of folder containing JSON files')
-    parser.add_argument('--no-wizard', action='store_true', default=None, help='Skip start-up prompts')
+    argp = argparse.ArgumentParser(description='Remove key/value pairs from JSON files')
+    argp.add_argument('--remove-keys', type=str, help='Keys to remove (e.g. "appName,author")')
+    argp.add_argument('--json-dir', type=str, help='Name of folder containing JSON files')
+    argp.add_argument('--no-wizard', action='store_true', default=None, help='Skip start-up prompts')
     cli.config=sns()
-    cli.config.__dict__.update({ key:val for key,val in vars(parser.parse_args()).items() if val is not None })
+    cli.config.__dict__.update({ key:val for key,val in vars(argp.parse_args()).items() if val is not None })
 
     # Init cli.config vals
     cli.config.remove_keys = data.csv.parse(getattr(cli.config, 'remove_keys', None))

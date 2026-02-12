@@ -1,0 +1,12 @@
+[project]
+name = "remove-json-keys"
+version = "0.0.1"
+description = "Remove key/value pairs from json_dir/**/*.json. Type remove-json-keys --help to view options."
+authors = [{name = "Adam Lui", email = "adam@kudoai.com"}]
+include = ["LICENSE.md"]
+
+[project.scripts]
+remove-json-keys = "remove_json_keys.__main__:main"
+
+[tool.setuptools.package-data]
+remove_json_keys = ["package-data.json"]
