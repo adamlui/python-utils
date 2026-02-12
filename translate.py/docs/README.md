@@ -1,18 +1,18 @@
-# translate-messages
+# translate.py
 
 Translate `en/messages.json` to other locales automatically.  
 
 ## Installation
 
 ```bash
-pip install translate-messages
+pip install translate.py
 ```
 
 ## Usage
 
 Run the CLI:
 ```bash
-translate-messages
+translate-py
 ```
 
 If no options are provided, the CLI will:
@@ -26,22 +26,21 @@ Customize behavior using command-line arguments:
 
 | Option            | Description                                                      |
 | ----------------- | ---------------------------------------------------------------- |
-| `--include-langs` | Comma-separated list of languages to include (e.g. `en,es,fr") |
-| `--exclude-langs` | Comma-separated list of languages to exclude (e.g. `"en,es"`)    |
-| `--ignore-keys`   | Comma-separated list of keys to ignore (e.g. `"appName,author"`) |
+| `--include-langs` | Comma-separated list of languages to include (e.g. `en,es,fr")   |
+| `--exclude-langs` | Comma-separated list of languages to exclude (e.g. `en,es`)    |
+| `--ignore-keys`   | Comma-separated list of keys to ignore (e.g. `appName,author`) |
 | `--locales-dir`   | Name of the folder containing locale files (default: `_locales`) |
 | `--provider`      | Translation provider to use                                      |
-| `--init`          | Create a .config.json file to store your defaults              |
-| `--no-wizard`     | Skip interactive prompts during start-up                              |
+| `--init`          | Create a .config.json file to store your defaults                |
+| `--no-wizard`     | Skip interactive prompts during start-up                         |
 
 ## Config file
 
-- Place `translate-messages.config.json` in your project root to set default options
-- Use `--init` to create it automatically
+- Use `--init` to create `translate.py.config.json` in your project root to set default options
 - CLI arguments always override config file
 
 ## Example
 
 ```bash
-translate-messages --include-langs=fr,es --ignore-keys=appName,author
+translate-py --include-langs=fr,es --ignore-keys=appName,author
 ```
