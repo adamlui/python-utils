@@ -4,18 +4,7 @@ from types import SimpleNamespace as sns
 
 def cli():
 
-    cli = sns(
-        name='remove-json-keys',
-        version='2026.2.12',
-        author=sns(name='Adam Lui', email='adam@kudoai.com', url='https://github.com/adamlui'),
-        description='Remove key/value pairs from json_dir/**/*.json. Type --help to view options',
-        urls=sns(
-            github='https://github.com/adamlui/python-utils',
-            jsdelivr='https://cdn.jsdelivr.net/gh/adamlui/python-utils',
-            sponsor='https://github.com/sponsors/adamlui',
-            support='https://github.com/adamlui/python-utils/issues'
-        ),
-    )
+    cli = data.sns.from_dict(data.json.read(os.path.join(os.path.dirname(__file__), '../cli.json')))
 
     # Parse CLI args
     parser = argparse.ArgumentParser(description='Remove key/value pairs from JSON files')
