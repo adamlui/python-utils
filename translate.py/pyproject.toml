@@ -8,5 +8,8 @@ dependencies = ["requests>=2.32.0,<3.0.0", "translate>=3.8.0,<4.0.0"]
 [project.scripts]
 translate-py = "translate.__main__:main"
 
+[tool.setuptools.packages.find]
+where = ["."]
+
 [tool.setuptools.package-data]
-translate_py = ["package-data.json", "LICENSE.md", "docs/*"]
+"*" = ["*.md"]
