@@ -1,7 +1,7 @@
 [project]
 name = "remove-json-keys"
-version = "0.0.6"
-description = "Remove key/value pairs from json_dir/**/*.json. Type remove-json-keys --help to view options."
+version = "0.0.7"
+description = "Remove key/value pairs from json_dir/**/*.json."
 authors = [{name = "Adam Lui", email = "adam@kudoai.com"}]
 
 [project.scripts]
