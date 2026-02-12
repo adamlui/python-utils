@@ -21,6 +21,7 @@ def cli():
     parser = argparse.ArgumentParser(description='Remove key/value pairs from JSON files')
     parser.add_argument('--remove-keys', type=str, help='Keys to remove (e.g. "appName,author")')
     parser.add_argument('--json-dir', type=str, help='Name of folder containing JSON files')
+    parser.add_argument('--no-wizard', action='store_true', default=None, help='Skip start-up prompts')
     cli.config=sns()
     cli.config.__dict__.update({ key:val for key,val in vars(parser.parse_args()).items() if val is not None })
 
@@ -29,6 +30,7 @@ def cli():
         cli.config.remove_keys = set(data.csv.parse(cli.config.remove_keys))
     if (not getattr(cli.config, 'json_dir', '')):
         cli.config.json_dir = '_locales'
+    if not hasattr(cli.config, 'no_wizard') : cli.config.no_wizard = False
 
     return cli
 

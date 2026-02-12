@@ -3,11 +3,12 @@ from lib import data, init, log
 
 cli = init.cli()
 
-while True: # prompt user for keys to remove
-    if getattr(cli.config, 'remove_keys', '') : print('Key(s) to remove:', cli.config.remove_keys)
-    input_key = input("Enter key to remove (or ENTER if done): ")
-    if not input_key : break
-    cli.config.remove_keys.append(input_key)
+if not cli.config.no_wizard:
+    while True: # prompt user for keys to remove
+        if getattr(cli.config, 'remove_keys', '') : print('Key(s) to remove:', cli.config.remove_keys)
+        input_key = input("Enter key to remove (or ENTER if done): ")
+        if not input_key : break
+        cli.config.remove_keys.append(input_key)
 
 log.trunc(f'\nSearching for {cli.config.json_dir}...')
 cli.config.json_dir = init.json_dir(cli.config.json_dir)

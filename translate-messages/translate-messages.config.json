@@ -3,5 +3,6 @@
   "exclude_langs": "",
   "ignore_keys": "",
   "locales_dir": "_locales",
-  "provider": ""
+  "provider": "",
+  "no_wizard": false
 }
