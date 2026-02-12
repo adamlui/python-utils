@@ -1,2 +1,4 @@
 *cache*
 *sandbox*
+*.egg-info/
+dist/
