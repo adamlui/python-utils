@@ -6,11 +6,11 @@ except OSError:
     terminal_width = 80
 
 def final_summary(summary_dict):
-    trunc('\nAll JSON files updated successfully!\n\n')
+    trunc('\nAll JSON files updated successfully!\n')
     for name, file_set in summary_dict.items():
         if file_set:
             status = name.replace('_', ' ')
-            print(f'Keys {status}: {len(file_set)}')
+            print(f'\nKeys {status}: {len(file_set)}')
             print('[\n' + '\n'.join(file_set) + '\n]')
 
 def trunc(msg, end='\n'):
