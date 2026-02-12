@@ -22,7 +22,7 @@ If no options are provided, the CLI will:
 
 ## Options
 
-Customize behavior using command-line arguments:
+Options can be set using command-line arguments:
 
 | Option            | Description                                                      |
 | ----------------- | ---------------------------------------------------------------- |
