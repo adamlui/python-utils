@@ -11,7 +11,7 @@ translate-msgs = "translate_messages.__main__:main"
 translate-messages = "translate_messages.__main__:main"
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["src"]
 
 [tool.setuptools.package-data]
 "*" = ["package-data.json", "*.md"]
