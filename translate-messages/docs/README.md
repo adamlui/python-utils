@@ -12,7 +12,7 @@ pip install translate.py
 
 Run the CLI:
 ```bash
-translate-py
+translate-msgs
 ```
 
 If no options are provided, the CLI will:
@@ -42,5 +42,5 @@ Options can be set using command-line arguments:
 ## Example
 
 ```bash
-translate-py --include-langs=fr,es --ignore-keys=appName,author
+translate-msgs --include-langs=fr,es --ignore-keys=appName,author
 ```

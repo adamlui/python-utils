@@ -9,7 +9,7 @@ updates:
   - package-ecosystem: pip
     directories:
       - /
-      - /translate.py
+      - /translate-messages
       - /remove-json-keys
     schedule:
       interval: daily
