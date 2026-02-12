@@ -4,7 +4,7 @@ def read(path):
     if not os.path.exists(path) : return {}
     with open(path, 'r', encoding='utf-8') as file : return json.load(file)
 
-def removeKeys(cli):
+def remove_keys(cli):
     keys_removed, keys_skipped, files_processed_cnt = [], [], 0
     for root, _, files in os.walk(cli.config.json_dir):
         for filename in files:
