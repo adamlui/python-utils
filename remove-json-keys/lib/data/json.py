@@ -1,4 +1,8 @@
-import os, re
+import json, os, re
+
+def read(path):
+    if not os.path.exists(path) : return {}
+    with open(path, 'r', encoding='utf-8') as file : return json.load(file)
 
 def removeKeys(cli):
     keys_removed, keys_skipped, files_processed_cnt = [], [], 0
