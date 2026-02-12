@@ -1,0 +1,13 @@
+[project]
+name = "translate.py"
+version = "0.0.3"
+description = "Translate en/messages.json to other locales. Type translate-py --help to view options."
+authors = [{name = "Adam Lui", email = "adam@kudoai.com"}]
+include = ["LICENSE.md"]
+dependencies = ["requests>=2.32.0,<3.0.0", "translate>=3.8.0,<4.0.0"]
+
+[project.scripts]
+translate-py = "translate.__main__:main"
+
+[tool.setuptools.package-data]
+translate_py = ["package-data.json"]
