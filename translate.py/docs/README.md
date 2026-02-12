@@ -1,4 +1,4 @@
-# translate.py
+# > translate.py
 
 Translate `en/messages.json` to other locales automatically.  
 
