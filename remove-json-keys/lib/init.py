@@ -6,9 +6,9 @@ def cli():
 
     cli = sns(
         name='remove-json-keys',
-        version='2026.2.10.41',
+        version='2026.2.11',
         author=sns(name='Adam Lui', email='adam@kudoa.com', url='https://github.com/adamlui'),
-        description='Remove key/value pairs from json_dir/**.json',
+        description='Remove key/value pairs from json_dir/**/*.json. Type --help for cmds',
         urls=sns(
             github='https://github.com/adamlui/python-utils',
             jsdelivr='https://cdn.jsdelivr.net/gh/adamlui/python-utils',
@@ -21,11 +21,14 @@ def cli():
     parser = argparse.ArgumentParser(description='Remove key/value pairs from JSON files')
     parser.add_argument('--remove-keys', type=str, help='Keys to remove (e.g. "appName,author")')
     parser.add_argument('--json-dir', type=str, help='Name of folder containing JSON files')
-    cli.args = parser.parse_args()
-    cli.json_dir = cli.args.json_dir or '_locales'
-    cli.remove_keys = data.csv.parse(cli.args.remove_keys or '')
+    cli.config=sns()
+    cli.config.__dict__.update({ key:val for key,val in vars(parser.parse_args()).items() if val is not None })
 
-    print('')
+    # Init cli.config vals
+    if (getattr(cli.config, 'remove_keys', '')):
+        cli.config.remove_keys = set(data.csv.parse(cli.config.remove_keys))
+    if (not getattr(cli.config, 'json_dir', '')):
+        cli.config.json_dir = '_locales'
 
     return cli
 
@@ -33,13 +36,13 @@ def json_dir(json_dir):
     lib_dir = os.path.abspath(os.path.dirname(__file__))
     for root, dirs, _ in os.walk(lib_dir): # search lib dir recursively
         if json_dir in dirs:
-            json_dir = os.path.join(root, json_dir) ; break
+           json_dir = os.path.join(root, json_dir) ; break
     else: # search lib parent dirs recursively
         parent_dir = os.path.dirname(lib_dir)
         while parent_dir and parent_dir != lib_dir:
             for root, dirs, _ in os.walk(parent_dir):
                 if json_dir in dirs:
-                    json_dir = os.path.join(root, json_dir) ; break
+                   json_dir = os.path.join(root, json_dir) ; break
             if json_dir : break
             parent_dir = os.path.dirname(parent_dir)
         else : json_dir = None
