@@ -7,8 +7,8 @@ readme = 'README.md'
 dependencies = ["requests>=2.32.0,<3.0.0", "translate>=3.8.0,<4.0.0"]
 
 [project.scripts]
-translate-msgs = "translate.__main__:main"
-translate-messages = "translate.__main__:main"
+translate-msgs = "translate_messages.__main__:main"
+translate-messages = "translate_messages.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
