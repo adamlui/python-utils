@@ -10,7 +10,7 @@ def cli():
     argp = argparse.ArgumentParser(description='Remove key/value pairs from JSON files')
     argp.add_argument('--remove-keys', type=str, help='Keys to remove (e.g. "appName,author")')
     argp.add_argument('--json-dir', type=str, help='Name of folder containing JSON files')
-    argp.add_argument('--no-wizard', action='store_true', default=None, help='Skip start-up prompts')
+    argp.add_argument('--no-wizard', action='store_true', default=None, help='Skip interactive prompts during start-up')
     cli.config=sns()
     cli.config.__dict__.update({ key:val for key,val in vars(argp.parse_args()).items() if val is not None })
 
