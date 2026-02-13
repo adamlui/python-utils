@@ -52,10 +52,10 @@ Example defaults:
 
 ```json
 {
+  "locales_dir": "_locales",
   "include_langs": "",
   "exclude_langs": "",
   "ignore_keys": "",
-  "locales_dir": "_locales",
   "no_wizard": false
 }
 ```
