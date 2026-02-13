@@ -60,7 +60,7 @@ Example defaults:
 }
 ```
 
-###### _Note: CLI arguments always override config file._
+_Note: CLI arguments always override config file._
 
 ## MIT License
 
