@@ -1,6 +1,6 @@
 [project]
 name = "remove-json-keys"
-version = "0.0.8"
+version = "0.0.9"
 description = "Remove key/value pairs from json_dir/**/*.json."
 authors = [{name = "Adam Lui", email = "adam@kudoai.com"}]
 

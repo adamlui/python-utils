@@ -7,10 +7,14 @@ def cli():
     cli = data.sns.from_dict(data.json.read(os.path.join(os.path.dirname(__file__), '../package-data.json')))
 
     # Parse CLI args
-    argp = argparse.ArgumentParser(description='Remove key/value pairs from JSON files')
+    argp = argparse.ArgumentParser(
+        description="Remove key/value pairs from JSON files",
+        add_help=False  # disable default --help arg to re-create last
+    )
     argp.add_argument('--remove-keys', type=str, help='Keys to remove (e.g. "appName,author")')
     argp.add_argument('--json-dir', type=str, help='Name of folder containing JSON files')
     argp.add_argument('--no-wizard', action='store_true', default=None, help='Skip interactive prompts during start-up')
+    argp.add_argument('-h', '--help', action='help', help="Show help screen")
     cli.config=sns()
     cli.config.__dict__.update({ key:val for key,val in vars(argp.parse_args()).items() if val is not None })
 
