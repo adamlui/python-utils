@@ -4,7 +4,7 @@ from types import SimpleNamespace as sns
 
 def cli():
 
-    cli = data.sns.from_dict(data.json.read(os.path.join(os.path.dirname(__file__), '../package-data.json')))
+    cli = data.sns.from_dict(data.json.read(os.path.join(os.path.dirname(__file__), '../package_data.json')))
 
     # Parse CLI args
     argp = argparse.ArgumentParser(
