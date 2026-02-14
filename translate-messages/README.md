@@ -44,6 +44,7 @@ Options can be set by using command-line arguments:
 | `-d`, `--locales-dir`  | Name of the folder containing locale files (default: `_locales`)                                     | `--locales-dir=_messages`
 | `-t`, `--target-langs` | Comma-separated list of languages to include (default: all [`supported_locales`][supported-locales]) | `--target-langs=en,es,fr`
 | `--exclude-langs`      | Comma-separated list of languages to exclude                                                         | `--exclude-langs=en,es`
+| `-k`, `--keys`         | Comma-separated list of keys to translate                                                            | `--keys=appDesc,err_notFound`
 | `--exclude-keys`       | Comma-separated list of keys to ignore                                                               | `--exclude-keys=appName,author`
 | `-i`, `--init`         | Create .translate-msgs.config.json in project root to store defaults                                 |
 | `-W`, `--no-wizard`    | Skip interactive prompts during start-up                                                             |
@@ -68,6 +69,7 @@ Example defaults:
   "locales_dir": "_locales",
   "target_langs": "",
   "exclude_langs": "",
+  "keys": "",
   "exclude_keys": "",
   "no_wizard": false
 }

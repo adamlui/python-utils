@@ -31,6 +31,8 @@ def cli(caller_file):
     argp.add_argument('-t', '--target-langs', '--target-lang', '--include-langs', '--include-lang',
         type=str, help='Languages to include (e.g. "en,es,fr") (default: all supported locales)')
     argp.add_argument('--exclude-langs', '--exclude-lang', type=str, help='Languages to exclude (e.g. "en,es")')
+    argp.add_argument('-k', '--keys', '--key', '--include-keys', '--include-key',
+        type=str, help='Keys to translate (e.g. "appDesc,err_notFound")')
     argp.add_argument('--exclude-keys', '--ignore-keys', type=str, help='Keys to ignore (e.g. "appName,author")')
     argp.add_argument('-i', '--init', action='store_true', help=f'Create {cli.name}.config.json file to store defaults')
     argp.add_argument('-W', '--no-wizard', '--skip-wizard',
@@ -42,6 +44,7 @@ def cli(caller_file):
     cli.config.target_langs = data.csv.parse(getattr(cli.config, 'target_langs', None))
     cli.config.target_locales = cli.config.target_langs or cli.supported_locales
     cli.config.exclude_langs = data.csv.parse(getattr(cli.config, 'exclude_langs', None))
+    cli.config.keys = data.csv.parse(getattr(cli.config, 'keys', None))
     cli.config.exclude_keys = data.csv.parse(getattr(cli.config, 'exclude_keys', None))
     cli.config.locales_dir = getattr(cli.config, 'locales_dir', '_locales')
     if cli.config.exclude_langs:

@@ -4,7 +4,8 @@ from translate import Translator
 
 def create_translations(cli, target_msgs, lang_code):
     fail_flags = ['INVALID TARGET LANGUAGE', 'TOO MANY REQUESTS', 'MYMEMORY']
-    src_keys = list(cli.config.en_msgs.keys())
+    src_keys = cli.config.keys or list(cli.config.en_msgs.keys())
+    src_keys = [key for key in src_keys if key in cli.config.en_msgs]
     translated_msgs = {}
 
     for key in src_keys:

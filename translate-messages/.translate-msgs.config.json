@@ -2,6 +2,7 @@
   "locales_dir": "_locales",
   "target_langs": "",
   "exclude_langs": "",
+  "keys": "",
   "exclude_keys": "",
   "no_wizard": false
 }
