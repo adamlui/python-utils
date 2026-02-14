@@ -14,7 +14,7 @@ dependencies = ["colorama>=0.4.6,<1.0.0"]
 requires-python = ">=3.6,<4.0"
 keywords = ["json", "data"]
 classifiers = [
-  "Development Status :: 4 - Beta",
+  "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Developers",
   "Natural Language :: English",
   "Topic :: File Formats :: JSON",
