@@ -10,7 +10,11 @@ def cli(caller_file):
     cli.config = sns()
     cli.project_root = os.path.join(os.path.dirname(caller_file),
         f"{ '' if 'src' in os.path.dirname(caller_file) else '../../' }../../")
-    for filename in [f'{cli.name}.config.json', f'{cli.name.replace("messages", "msgs")}.config.json']:
+    possile_filenames = [
+         '.translate-msgs.config.json', 'translate-msgs.config.json',
+        f'.{cli.name}.config.json', f'{cli.name}.config.json'
+    ]
+    for filename in possile_filenames:
         cli.config_path = os.path.join(cli.project_root, filename)
         if os.path.exists(cli.config_path):
             cli.config = data.sns.from_dict(data.json.read(cli.config_path))
@@ -48,7 +52,7 @@ def cli(caller_file):
 
 def config_file(cli):
     if os.path.exists(cli.config_path) : return print(f'Config already exists at {cli.config_path}')
-    cli.config_filename = 'translate-msgs.config.json'
+    cli.config_filename = '.translate-msgs.config.json'
     cli.config_path = os.path.join(cli.project_root, cli.config_filename)
     try:
         jsd_url = f'{cli.urls.jsdelivr}/{cli.name}/{cli.config_filename}'

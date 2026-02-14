@@ -45,7 +45,7 @@ Options can be set by using command-line arguments:
 | `--target-langs`  | Comma-separated list of languages to include (default: all [`supported_locales`][supported-locales]) | `--target-langs=en,es,fr`
 | `--exclude-langs` | Comma-separated list of languages to exclude                                                         | `--exclude-langs=en,es`
 | `--exclude-keys`  | Comma-separated list of keys to ignore                                                               | `--exclude-keys=appName,author`
-| `--init`          | Create translate-messages.config.json in project root to store defaults                              |
+| `--init`          | Create .translate-msgs.config.json in project root to store defaults                              |
 | `--no-wizard`     | Skip interactive prompts during start-up                                                             |
 | `-h`, `--help`    | Show help screen                                                                                     |
 
@@ -59,7 +59,7 @@ translate-msgs --include-langs=fr,es --ignore-keys=appName,author
 
 ## Config file
 
-Use `--init` to create `translate-messages.config.json` in your project root to set default options.
+Use `--init` to create `.translate-msgs.config.json` in your project root to set default options.
 
 Example defaults:
 
