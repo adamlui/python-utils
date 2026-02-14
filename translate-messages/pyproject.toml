@@ -4,6 +4,8 @@ version = "1.0.4"
 description = "Translate en/messages.json (chrome.i18n format) to other locales."
 authors = [{name = "Adam Lui", email = "adam@kudoai.com"}]
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE.md"]
 dependencies = ["requests>=2.32.0,<3.0.0", "translate>=3.8.0,<4.0.0"]
 
 [project.scripts]
