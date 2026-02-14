@@ -17,14 +17,18 @@ def remove_keys(cli):
                 # Remove keys
                 modified = False
                 for key in cli.config.remove_keys:
-                    re_key = fr'"{re.escape(key)}".*?[,\n]+.*?(?="|$)'
-                    data, count = re.subn(re_key, '', data)
-                    if count > 0:
+                    re_key = fr'"{re.escape(key)}"\s*:\s*(?:\{{[^}}]*\}}|"[^"]*"|\d+|true|false|null)\s*,?\s*'
+                    data, cnt = re.subn(re_key, '', data)
+                    if cnt > 0:
                         keys_removed.append((key, os.path.relpath(file_path, cli.config.json_dir)))
                         modified = True
-                    else : keys_skipped.append((key, os.path.relpath(file_path, cli.config.json_dir)))
+                    else:
+                        keys_skipped.append((key, os.path.relpath(file_path, cli.config.json_dir)))
+
+                # Save modified JSON
                 if modified:
                     with open(file_path, 'w', encoding='utf-8') as f : f.write(data)
+
                 files_processed_cnt += 1
 
     return keys_removed, keys_skipped, files_processed_cnt
