@@ -7,7 +7,6 @@ try:
 except OSError:
     terminal_width = 80
 
-colorama.init() # enable compatibility w/ Windows
 colors = sns(
     nc='\x1b[0m',        # no color
     br='\x1b[1;91m',     # bright red
@@ -19,15 +18,16 @@ colors = sns(
     dy='\x1b[33m',       # dark yellow
     gry='\x1b[90m'       # gray
 )
+colorama.init() # enable compatibility w/ Windows
 
-def data(msg) : print(f'\n{colors.bw}{msg}{colors.nc}')
-def dim(msg) : print(f'\n{colors.gry}{msg}{colors.nc}')
-def error(msg) : print(f'\n{colors.br}ERROR: {msg}{colors.nc}')
-def info(msg, end='') : print(f'\n{colors.by}{msg}{colors.nc}', end=end)
-def overwrite_print(msg) : sys.stdout.write('\r' + msg.ljust(terminal_width)[:terminal_width])
-def tip(msg) : print(f'\n{colors.by}TIP: {msg}{colors.nc}')
-def success(msg) : print(f'\n{colors.bg}{msg}{colors.nc}')
-def warn(msg) : print(f'\n{colors.bo}WARNING: {msg}{colors.nc}')
+def data(msg, *args, **kwargs):
+    print(f'\n{colors.bw}{msg.format(*args, **kwargs)}{colors.nc}')
+
+def dim(msg, *args, **kwargs):
+    print(f'\n{colors.gry}{msg.format(*args, **kwargs)}{colors.nc}')
+
+def error(msg, *args, **kwargs):
+    print(f'\n{colors.br}ERROR: {msg.format(*args, **kwargs)}{colors.nc}')
 
 def final_summary(summary_dict):
     success('\nAll JSON files updated successfully!')
@@ -38,7 +38,19 @@ def final_summary(summary_dict):
             data(f'Languages {status}: {len(lang_set)}')
             print(f"{status_color}[ {', '.join(lang_set)} ]{colors.nc}")
 
+def info(msg, *args, end='', **kwargs):
+    print(f'\n{colors.by}{msg.format(*args, **kwargs)}{colors.nc}', end=end)
+
+def overwrite_print(msg, *args, **kwargs):
+    sys.stdout.write('\r' + msg.format(*args, **kwargs).ljust(terminal_width)[:terminal_width])
+
+def success(msg, *args, **kwargs):
+    print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')
+
 def trunc(msg, end='\n'):
     truncated_lines = [
         line if len(line) < terminal_width else line[:terminal_width -4] + '...' for line in msg.splitlines()]
     print('\n'.join(truncated_lines), end=end)
+
+def warn(msg, *args, **kwargs):
+    print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
