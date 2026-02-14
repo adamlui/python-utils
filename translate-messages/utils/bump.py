@@ -26,9 +26,9 @@ def bump_pyproject_versions(bump_type): # project.version + .urls['Changelog']
     # Bump project.version
     current_ver = project.version
     major, minor, patch = map(int, current_ver.split('.'))
-    if   bump_type == 'major' : major += 1 ; minor =  0 ; patch =  0
-    elif bump_type == 'minor' :              minor += 1 ; patch =  0
-    elif bump_type == 'patch' :                           patch += 1
+    if   bump_type == 'major' : patch =  0 ; minor =  0 ; major += 1
+    elif bump_type == 'minor' : patch =  0 ; minor += 1 ; 
+    elif bump_type == 'patch' : patch += 1
     else : raise ValueError(msgs.err_invalid_arg)
     new_ver = f'{major}.{minor}.{patch}'
     pyproject['project']['version'] = new_ver
