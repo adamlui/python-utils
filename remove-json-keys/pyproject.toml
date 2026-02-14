@@ -39,6 +39,7 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#readme"
+Documentation = "https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#readme"
 Repository = "https://github.com/adamlui/python-utils"
 Issues = "https://github.com/adamlui/python-utils/issues"
 Releases = "https://github.com/adamlui/python-utils/releases"
