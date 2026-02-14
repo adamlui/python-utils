@@ -4,7 +4,7 @@ from types import SimpleNamespace as sns
 import tomli, tomli_w
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Bump versions in pyproject.toml + README.md")
+    parser = argparse.ArgumentParser(description='Bump versions in pyproject.toml + README.md')
     parser.add_argument('-M', '--major', action='store_true', help='Bump the major (\033[1mx\033[0m.y.z) version')
     parser.add_argument('-m', '--minor', action='store_true', help='Bump the minor (x.\033[1my\033[0m.z) version')
     parser.add_argument('-p', '--patch', action='store_true', help='Bump the patch (x.y.\033[1mz\033[0m) version')
@@ -33,7 +33,7 @@ def bump_pyproject_versions(bump_type): # project.version + .urls['Changelog']
     new_ver = f'{major}.{minor}.{patch}'
     pyproject['project']['version'] = new_ver
     with open(pyproject_path, 'wb') as file : tomli_w.dump(pyproject, file)
-    log.success(f"Bumped project.version in pyproject.toml from [{current_ver}] to [{new_ver}]")
+    log.success(f'Bumped project.version in pyproject.toml from [{current_ver}] to [{new_ver}]')
 
     # Bump version tag in Changelog URL
     new_ver_tag = f'{project.name}-{new_ver}'
