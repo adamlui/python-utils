@@ -23,16 +23,16 @@ def main():
 
     cli.config.msgs_filename = 'messages.json'
     cli.config.en_msgs = data.json.read(os.path.join(cli.config.locales_dir, 'en', cli.config.msgs_filename))
-    cli.config.output_langs = list(set(cli.config.target_locales)) # remove dupes
+    cli.config.target_langs = list(set(cli.config.target_langs)) # remove dupes
 
-    if not cli.config.target_langs: # merge discovered locales w/ output_langs
+    if not cli.config.target_langs: # merge discovered locales w/ target_langs
         for root, dirs, _ in os.walk(cli.config.locales_dir):
             for lang_folder in dirs:
                 msgs_path = os.path.join(root, lang_folder, cli.config.msgs_filename)
                 discovered_lang = lang_folder.replace('_', '-')
-                if os.path.exists(msgs_path) and discovered_lang not in cli.config.output_langs:
-                    cli.config.output_langs.append(discovered_lang)
-    cli.config.output_langs.sort()
+                if os.path.exists(msgs_path) and discovered_lang not in cli.config.target_langs:
+                    cli.config.target_langs.append(discovered_lang)
+    cli.config.target_langs.sort()
 
     langs_translated, langs_skipped, langs_added, langs_not_translated = language.write_translations(cli)
 

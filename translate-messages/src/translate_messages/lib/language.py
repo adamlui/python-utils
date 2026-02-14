@@ -35,12 +35,12 @@ def create_translations(cli, target_msgs, lang_code):
 def write_translations(cli):
 
     langs_added, langs_skipped, langs_translated, langs_not_translated = [], [], [], []
-    for lang_code in cli.config.output_langs:
+    for lang_code in cli.config.target_langs:
         lang_added, lang_skipped, lang_translated = False, False, False
         lang_folder = lang_code.replace('-', '_')
 
         if lang_code.startswith('en'): # skip EN locales
-            log.trunc(f'Skipped {lang_folder}/{cli.config.msgs_filename}...')
+            print(f'\n{log.colors.gry}Skipped {lang_folder}/{cli.config.msgs_filename}...{log.colors.nc}', end='')
             langs_skipped.append(lang_code) ; langs_not_translated.append(lang_code) ; continue
 
         if '-' in lang_code: # cap suffix
