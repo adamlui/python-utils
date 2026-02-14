@@ -1,8 +1,8 @@
 import json, os
 
-def read(path):
-    if not os.path.exists(path) : return {}
-    with open(path, 'r', encoding='utf-8') as file : return json.load(file)
+def read(json_path):
+    if not os.path.exists(json_path) : return {}
+    with open(json_path, 'r', encoding='utf-8') as file : return json.load(file)
 
 def write(src_data, target_path):
     os.makedirs(os.path.dirname(target_path), exist_ok=True)
