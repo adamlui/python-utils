@@ -26,9 +26,9 @@ def bump_pyproject_versions(bump_type): # project.version + .urls['Changelog']
     # Bump project.version
     current_ver = project.version
     major, minor, patch = map(int, current_ver.split('.'))
-    if   bump_type == 'major' : major += 1 ; minor = 0 ; patch = 0
-    elif bump_type == 'minor' : minor += 1 ; patch = 0
-    elif bump_type == 'patch' : patch += 1
+    if   bump_type == 'major' : major += 1 ; minor =  0 ; patch =  0
+    elif bump_type == 'minor' :              minor += 1 ; patch =  0
+    elif bump_type == 'patch' :                           patch += 1
     else : raise ValueError(msgs.err_invalid_arg)
     new_ver = f'{major}.{minor}.{patch}'
     pyproject['project']['version'] = new_ver
@@ -46,7 +46,7 @@ def bump_pyproject_versions(bump_type): # project.version + .urls['Changelog']
 
     return new_ver
 
-def update_readme_versions(new_ver): # in shield URLs
+def update_readme_versions(new_ver): # in shield + supported_locales URLs
     readme_path = path.join(path.dirname(__file__), '../README.md')
     log.info('Updating versions in README.md...')
     with open(readme_path, 'r', encoding='utf-8') as file : readme_content = file.read()
