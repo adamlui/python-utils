@@ -11,9 +11,9 @@ def cli():
         description="Remove key/value pairs from JSON files",
         add_help=False  # disable default --help arg to re-create last
     )
-    argp.add_argument('-k', '--remove-keys', type=str, help='Keys to remove (e.g. "appName,author")')
     argp.add_argument('-d', '--json-dir', '--json-folder',
         type=str, help='Name of the folder containing JSON files (default: "_locales")')
+    argp.add_argument('-k', '--keys', '--remove-keys', type=str, help='Keys to remove (e.g. "appName,author")')
     argp.add_argument('-W', '--no-wizard', '--skip-wizard',
         action='store_true', default=None, help='Skip interactive prompts during start-up')
     argp.add_argument('-h', '--help', action='help', help="Show help screen")
@@ -21,7 +21,7 @@ def cli():
     cli.config.__dict__.update({ key:val for key,val in vars(argp.parse_args()).items() if val is not None })
 
     # Init cli.config vals
-    cli.config.remove_keys = data.csv.parse(getattr(cli.config, 'remove_keys', None))
+    cli.config.keys = data.csv.parse(getattr(cli.config, 'keys', None))
     cli.config.json_dir = getattr(cli.config, 'json_dir', '_locales')
     cli.config.no_wizard = getattr(cli.config, 'no_wizard', False)
 
