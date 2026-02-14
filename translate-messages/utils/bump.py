@@ -1,11 +1,11 @@
 import os, logging
 import tomli, tomli_w
 
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+
 pyproject_path = os.path.join(os.path.dirname(__file__), '../pyproject.toml')
 with open(pyproject_path, 'rb') as file:
     pkg_name = tomli.load(file)['project']['name']
-
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def update_changelog_url():
 
