@@ -17,16 +17,14 @@ def update_changelog_url():
     logging.debug(f'Generated changelog URL: {changelog_url}')
     
     if 'urls' not in pyproject['project']:
-        logging.debug('Adding [project.urls] section to pyproject.toml...')
+        logging.debug('Creating [project.urls] section...')
         pyproject['project']['urls'] = {}
 
-    if 'Changelog' in pyproject['project']['urls']:
-        logging.debug('Replacing existing Changelog URL...')
-    else:
-        logging.debug('Adding new Changelog URL...')
-
+    logging.debug(
+        f"{'Replacing existing' if 'Changelog' in pyproject['project']['urls'] else 'Adding new '} Changelog URL...")
     pyproject['project']['urls']['Changelog'] = changelog_url
     with open(pyproject_path, 'wb') as file : tomli_w.dump(pyproject, file)
-    logging.info(f"Bumped changelog URL ver tag to '{ver_tag}'!")
+
+    logging.info(f"Bumped changelog URL ver tag to [{ver_tag}]!")
 
 update_changelog_url()
