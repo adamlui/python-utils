@@ -4,7 +4,7 @@ from types import SimpleNamespace as sns
 import tomli, tomli_w
 
 sys.path.insert(0, path.join(path.dirname(__file__), '../src'))
-from translate_messages.lib import log # type: ignore
+from translate_messages.lib import data, log # type: ignore
 
 msgs = sns(
     pkg_DESC='Bump versions in pyproject.toml + README.md',
@@ -58,9 +58,8 @@ def bump_pyproject_vers(pyproject_path, pyproject, project, new_ver): # project.
 def update_readme_vers(new_ver): # in URLs
     log.info(f'{msgs.log_UPDATING_VERS_IN} README.md...')
     readme_path = path.join(path.dirname(__file__), '../README.md')
-    with open(readme_path, 'r', encoding='utf-8') as file : readme_content = file.read()
-    updated_readme_content = re.sub(r'\b(?>\d{1,3}\.\d{1,3}\.\d{1,3})\b', new_ver, readme_content)
-    with open(readme_path, 'w', encoding='utf-8') as file : file.write(updated_readme_content)
+    updated_readme_content = re.sub(r'\b(?>\d{1,3}\.\d{1,3}\.\d{1,3})\b', new_ver, data.file.read(readme_path))
+    data.file.write(readme_path, updated_readme_content)
     log.success(msgs.log_UPDATED_README_VERS.format(new_ver=new_ver))
 
 def main():
