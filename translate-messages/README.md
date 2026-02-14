@@ -54,7 +54,7 @@ Options can be set by using command-line arguments:
 
 ## Examples
 
-Translate everything except `appName` from `_locales/en/messages.json` to French and Spanish
+Translate everything except `appName` from `_locales/en/messages.json` to French and Spanish:
 
 ```bash
 translate-msgs --include-langs=fr,es --ignore-keys=appName -W
