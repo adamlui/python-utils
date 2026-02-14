@@ -30,9 +30,9 @@ def cli(caller_file):
         type=str, help='Name of the folder containing locale files (default: "_locales")')
     argp.add_argument('-t', '--target-langs', '--target-lang', '--include-langs', '--include-lang',
         type=str, help='Languages to include (e.g. "en,es,fr") (default: all supported locales)')
-    argp.add_argument('--exclude-langs', '--exclude-lang', type=str, help='Languages to exclude (e.g. "en,es")')
     argp.add_argument('-k', '--keys', '--key', '--include-keys', '--include-key',
         type=str, help='Keys to translate (e.g. "appDesc,err_notFound")')
+    argp.add_argument('--exclude-langs', '--exclude-lang', type=str, help='Languages to exclude (e.g. "en,es")')
     argp.add_argument('--exclude-keys', '--ignore-keys', type=str, help='Keys to ignore (e.g. "appName,author")')
     argp.add_argument('-i', '--init', action='store_true', help=f'Create {cli.name}.config.json file to store defaults')
     argp.add_argument('-W', '--no-wizard', '--skip-wizard',

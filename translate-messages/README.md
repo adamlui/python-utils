@@ -68,8 +68,8 @@ Example defaults:
 {
   "locales_dir": "_locales",
   "target_langs": "",
-  "exclude_langs": "",
   "keys": "",
+  "exclude_langs": "",
   "exclude_keys": "",
   "no_wizard": false
 }
