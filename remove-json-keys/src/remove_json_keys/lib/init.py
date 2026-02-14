@@ -28,14 +28,8 @@ def cli():
     return cli
 
 def json_dir(target_dir):
-    lib_dir = os.path.abspath(os.path.dirname(__file__))
-    for root, dirs, _ in os.walk(lib_dir): # search lib_dir recursively
+    start_dir = os.getcwd()
+    for root, dirs, _ in os.walk(start_dir):
         if target_dir in dirs:
             return os.path.join(root, target_dir)
-    parent_dir = os.path.dirname(lib_dir)
-    while parent_dir and parent_dir != os.path.dirname(parent_dir):
-        for root, dirs, _ in os.walk(parent_dir): # search parent dirs recursively
-            if target_dir in dirs:
-                return os.path.join(root, target_dir)
-        parent_dir = os.path.dirname(parent_dir)
     return None
