@@ -16,8 +16,6 @@ argp.add_argument('-m', '--minor', action='store_true', help='Bump the minor (x.
 argp.add_argument('-p', '--patch', action='store_true', help='Bump the patch (x.y.\033[1mz\033[0m) version')
 argp.add_argument('-h', '--help',  action='help',       help='Show help screen')
 args = argp.parse_args()
-
-# Init bump_type
 bump_type = 'major' if args.major else 'minor' if args.minor else 'patch' if args.patch else None
 if not bump_type:
     log.error('You must pass --<major|minor|patch> as an argument.')
