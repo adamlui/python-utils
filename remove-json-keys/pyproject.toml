@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "remove-json-keys"
-version = "0.0.15"
+version = "0.0.16"
 description = "Remove key/value pairs from json_dir/**/*.json."
 authors = [{name = "Adam Lui", email = "adam@kudoai.com"}]
 license = "MIT"
@@ -14,7 +14,6 @@ keywords = ["json", "data"]
 classifiers = [
   "Development Status :: 4 - Beta",
   "Intended Audience :: Developers",
-  "License :: OSI Approved :: MIT License",
   "Natural Language :: English",
   "Topic :: File Formats :: JSON",
   "Programming Language :: Python :: 3",
