@@ -1,10 +1,11 @@
 [project]
 name = "remove-json-keys"
-version = "0.0.12"
+version = "0.0.13"
 description = "Remove key/value pairs from json_dir/**/*.json."
 authors = [{name = "Adam Lui", email = "adam@kudoai.com"}]
 license = "MIT"
 license-files = ["LICENSE.md"]
+keywords = ["json", "data"]
 
 [project.scripts]
 remove-json-keys = "remove_json_keys.__main__:main"
