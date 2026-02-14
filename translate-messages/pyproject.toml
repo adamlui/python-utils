@@ -11,6 +11,7 @@ readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE.md"]
 dependencies = ["requests>=2.32.0,<3.0.0", "translate>=3.8.0,<4.0.0"]
+requires-python = ">=3.6"
 keywords = ["translate", "translation", "messages", "i18n", "chrome", "mymemory"]
 
 [project.scripts]
