@@ -47,7 +47,7 @@ Options can be set by using command-line arguments:
 | `--no-wizard`     | Skip interactive prompts during start-up                                                             |
 | `-h`, `--help`    | Show help screen                                                                                     |
 
-[supported-locales]: https://github.com/adamlui/python-utils/blob/translate-messages-1.0.4/translate-messages/src/translate_messages/package-data.json#L10-L17
+[supported-locales]: https://github.com/adamlui/python-utils/blob/translate-messages-1.0.4/translate-messages/src/translate_messages/package-data.json#L11-L16
 
 ## Example
 
