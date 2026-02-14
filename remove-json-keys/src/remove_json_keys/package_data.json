@@ -4,6 +4,7 @@
   "urls": {
     "github": "https://github.com/adamlui/python-utils",
     "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/python-utils",
+    "pypi": "https://pypi.org/project/remove-json-keys/",
     "sponsor": "https://github.com/sponsors/adamlui",
     "support": "https://github.com/adamlui/python-utils/issues"
   }
