@@ -3,6 +3,13 @@ from os import path
 from types import SimpleNamespace as sns
 import tomli, tomli_w
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Bump versions in pyproject.toml + README.md")
+    parser.add_argument('-M', '--major', action='store_true', help='Bump the major (\033[1mx\033[0m.y.z) version')
+    parser.add_argument('-m', '--minor', action='store_true', help='Bump the minor (x.\033[1my\033[0m.z) version')
+    parser.add_argument('-p', '--patch', action='store_true', help='Bump the patch (x.y.\033[1mz\033[0m) version')
+    return parser.parse_args()
+
 # Init logger
 sys.path.insert(0, path.join(path.dirname(__file__), '../src'))
 from translate_messages.lib import log # type: ignore
@@ -13,13 +20,6 @@ pyproject_path = path.join(path.dirname(__file__), '../pyproject.toml')
 log.info(f'Loading {pyproject_path}...')
 with open(pyproject_path, 'rb') as file : pyproject = tomli.load(file)
 project = sns(**pyproject['project'])
-
-def parse_args():
-    parser = argparse.ArgumentParser(description="Bump versions in pyproject.toml + README.md")
-    parser.add_argument('--major', action='store_true', help='Bump the major version')
-    parser.add_argument('--minor', action='store_true', help='Bump the minor version')
-    parser.add_argument('--patch', action='store_true', help='Bump the patch version')
-    return parser.parse_args()
 
 def bump_pyproject_versions(bump_type): # project.version + .urls['Changelog']
 
