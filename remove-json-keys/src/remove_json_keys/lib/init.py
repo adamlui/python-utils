@@ -11,10 +11,10 @@ def cli():
         description="Remove key/value pairs from JSON files",
         add_help=False  # disable default --help arg to re-create last
     )
-    argp.add_argument('--remove-keys', type=str, help='Keys to remove (e.g. "appName,author")')
-    argp.add_argument('--json-dir', '--json-folder',
+    argp.add_argument('-k', '--remove-keys', type=str, help='Keys to remove (e.g. "appName,author")')
+    argp.add_argument('-d', '--json-dir', '--json-folder',
         type=str, help='Name of the folder containing JSON files (default: "_locales")')
-    argp.add_argument('--no-wizard', '--skip-wizard',
+    argp.add_argument('-W', '--no-wizard', '--skip-wizard',
         action='store_true', default=None, help='Skip interactive prompts during start-up')
     argp.add_argument('-h', '--help', action='help', help="Show help screen")
     cli.config=sns()
