@@ -18,9 +18,9 @@ license-files = [
     "LICENSE.md",
 ]
 dependencies = [
+    "colorama>=0.4.6,<1.0.0",
     "requests>=2.32.0,<3.0.0",
     "translate>=3.8.0,<4.0.0",
-    "colorama>=0.4.6,<1.0.0",
 ]
 requires-python = ">=3.6,<4.0"
 keywords = [
@@ -35,6 +35,7 @@ classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "Natural Language :: English",
+    "Topic :: File Formats :: JSON",
     "Topic :: Software Development :: Build Tools",
     "Topic :: Software Development :: Localization",
     "Programming Language :: Python :: 3",
