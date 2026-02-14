@@ -20,8 +20,7 @@ def update_changelog_url():
         logging.debug('Creating [project.urls] section...')
         pyproject['project']['urls'] = {}
 
-    logging.debug(
-        f"{'Replacing existing' if 'Changelog' in pyproject['project']['urls'] else 'Adding new '} Changelog URL...")
+    logging.debug(f"{'Updating' if 'Changelog' in pyproject['project']['urls'] else 'Adding new '} Changelog URL...")
     pyproject['project']['urls']['Changelog'] = changelog_url
     with open(pyproject_path, 'wb') as file : tomli_w.dump(pyproject, file)
 
