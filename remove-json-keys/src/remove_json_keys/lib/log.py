@@ -47,6 +47,9 @@ def overwrite_print(msg, *args, **kwargs):
 def success(msg, *args, **kwargs):
     print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')
 
+def tip(msg, *args, **kwargs):
+    print(f'\n{colors.bo}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
+
 def trunc(msg, end='\n'):
     truncated_lines = [
         line if len(line) < terminal_width else line[:terminal_width -4] + '...' for line in msg.splitlines()]
