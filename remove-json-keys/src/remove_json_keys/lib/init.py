@@ -8,7 +8,7 @@ def cli():
 
     # Parse CLI args
     argp = argparse.ArgumentParser(
-        description="Remove key/value pairs from JSON files",
+        description="Simply remove JSON keys via CLI command",
         add_help=False  # disable default --help arg to re-create last
     )
     argp.add_argument('-d', '--json-dir', '--json-folder',
