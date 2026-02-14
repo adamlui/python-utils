@@ -3,6 +3,7 @@ from types import SimpleNamespace as sns
 import sys
 import tomli, tomli_w
 
+# Init logger
 sys.path.insert(0, path.join(path.dirname(__file__), '../src'))
 from remove_json_keys.lib import log # type: ignore
 

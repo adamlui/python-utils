@@ -3,6 +3,7 @@ from types import SimpleNamespace as sns
 import sys
 import tomli, tomli_w
 
+# Init logger
 sys.path.insert(0, path.join(path.dirname(__file__), '../src'))
 from translate_messages.lib import log # type: ignore
 
