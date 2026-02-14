@@ -46,7 +46,7 @@ def load(cli, caller_file):
     # Load from config file
     cli.config = sns()
     cli.project_root = os.path.join(os.path.dirname(caller_file),
-        f"{ '' if 'src' in os.path.dirname(caller_file) else '../../' }../../")
+        f"../../{ '' if 'src' in os.path.dirname(caller_file) else '../../' }")
     possile_config_filenames = [
          '.translate-msgs.config.json', 'translate-msgs.config.json',
         f'.{cli.name}.config.json', f'{cli.name}.config.json'
