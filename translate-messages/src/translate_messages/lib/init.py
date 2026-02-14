@@ -35,6 +35,7 @@ def cli(caller_file):
     argp.add_argument('--exclude-langs', '--exclude-lang', type=str, help='Languages to exclude (e.g. "en,es")')
     argp.add_argument('--exclude-keys', '--ignore-keys', type=str, help='Keys to ignore (e.g. "appName,author")')
     argp.add_argument('-i', '--init', action='store_true', help=f'Create {cli.name}.config.json file to store defaults')
+    argp.add_argument('-f', '--force', action='store_true', help='Force overwrite existing config file when using --init')
     argp.add_argument('-W', '--no-wizard', '--skip-wizard',
         action='store_true', default=None, help='Skip interactive prompts during start-up')
     argp.add_argument('-h', '--help', action='help', help="Show help screen")
@@ -49,12 +50,19 @@ def cli(caller_file):
     cli.config.locales_dir = getattr(cli.config, 'locales_dir', '_locales')
     if cli.config.exclude_langs:
        cli.config.target_locales = [lang for lang in cli.config.target_locales if lang not in cli.config.exclude_langs]
+    cli.config.force = getattr(cli.config, 'force', False)
     cli.config.no_wizard = getattr(cli.config, 'no_wizard', False)
 
     return cli
 
 def config_file(cli):
-    if os.path.exists(cli.config_path) : return print(f'Config already exists at {cli.config_path}')
+    if os.path.exists(cli.config_path):
+        if cli.config.force:
+            print(f'Overwriting existing config at {cli.config_path}...')
+        else:
+            print(f'Config already exists at {cli.config_path}.Skipping --init.')
+            print('\nTIP: Pass --force to overwrite.')
+            return
     cli.config_filename = '.translate-msgs.config.json'
     cli.config_path = os.path.join(cli.project_root, cli.config_filename)
     try:
