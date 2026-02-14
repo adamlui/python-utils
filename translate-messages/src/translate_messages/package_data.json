@@ -2,10 +2,16 @@
   "name": "translate-messages",
   "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
   "urls": {
+    "funding": {
+      "cashapp": "https://cash.app/$adamlui",
+      "github": "https://github.com/sponsors/adamlui",
+      "kofi": "https://ko-fi.com/adamlui",
+      "paypal": "https://paypal.me/adamlui"
+    },
     "github": "https://github.com/adamlui/python-utils",
     "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/python-utils",
     "pypi": "https://pypi.org/project/translate-messages/",
-    "sponsor": "https://github.com/sponsors/adamlui",
+    "pypistats": "https://pypistats.org/packages/translate-messages",
     "support": "https://github.com/adamlui/python-utils/issues"
   },
   "supported_locales": [
