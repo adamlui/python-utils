@@ -1,6 +1,6 @@
 import os, sys
-from . import data, log
 from translate import Translator
+from . import data, log
 
 def create_translations(cli, target_msgs, lang_code):
     fail_flags = ['INVALID TARGET LANGUAGE', 'TOO MANY REQUESTS', 'MYMEMORY']

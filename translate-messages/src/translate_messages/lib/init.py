@@ -1,6 +1,6 @@
 import argparse, os, requests
-from . import data
 from types import SimpleNamespace as sns
+from . import data
 
 def cli(caller_file):
 

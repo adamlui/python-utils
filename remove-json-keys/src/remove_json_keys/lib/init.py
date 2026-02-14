@@ -1,6 +1,6 @@
 import argparse, os
-from . import data
 from types import SimpleNamespace as sns
+from . import data
 
 def cli():
 
