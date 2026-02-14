@@ -12,6 +12,7 @@ with open(pyproject_path, 'rb') as file : pyproject = tomli.load(file)
 project = sns(**pyproject['project'])
 
 def update_changelog_url():
+
     ver_tag = f'{project.name}-{project.version}'
     changelog_url = f'https://github.com/adamlui/python-utils/releases/tag/{ver_tag}'
     log.data(f'Generated changelog URL: {changelog_url}')
