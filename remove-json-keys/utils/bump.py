@@ -23,7 +23,7 @@ def update_changelog_url():
     log.info(f"{ 'Updating' if 'Changelog' in project.urls else 'Adding new' } Changelog URL...")
     project.urls['Changelog'] = changelog_url
 
-    pyproject['project'] = vars(project) # convert sns back to dict for dumping
+    pyproject['project'] = vars(project) # update og dict for dumping
     with open(pyproject_path, 'wb') as file : tomli_w.dump(pyproject, file)
 
     log.success(f"Bumped changelog URL ver tag to [{ver_tag}]!")
