@@ -4,11 +4,11 @@ from types import SimpleNamespace as sns
 import tomli, tomli_w
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Bump versions in pyproject.toml + README.md')
-    parser.add_argument('-M', '--major', action='store_true', help='Bump the major (\033[1mx\033[0m.y.z) version')
-    parser.add_argument('-m', '--minor', action='store_true', help='Bump the minor (x.\033[1my\033[0m.z) version')
-    parser.add_argument('-p', '--patch', action='store_true', help='Bump the patch (x.y.\033[1mz\033[0m) version')
-    return parser.parse_args()
+    argp = argparse.ArgumentParser(description='Bump versions in pyproject.toml + README.md')
+    argp.add_argument('-M', '--major', action='store_true', help='Bump the major (\033[1mx\033[0m.y.z) version')
+    argp.add_argument('-m', '--minor', action='store_true', help='Bump the minor (x.\033[1my\033[0m.z) version')
+    argp.add_argument('-p', '--patch', action='store_true', help='Bump the patch (x.y.\033[1mz\033[0m) version')
+    return argp.parse_args()
 
 # Init logger
 sys.path.insert(0, path.join(path.dirname(__file__), '../src'))
