@@ -54,7 +54,7 @@ Remove `author` key from JSON files found in default `_locales` dir:
 remove-json-keys --keys=author -W
 ```
 
-Remove `appDesc` + `err_notFound` keys from JSON files found in default `data` dir:
+Remove `appDesc` + `err_notFound` keys from JSON files found in `data` dir:
 
 ```bash
 remove-json-keys -d data -k appDesc,err_notFound -W
