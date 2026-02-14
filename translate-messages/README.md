@@ -4,8 +4,8 @@
 
 <a href="#">
     <img height=31 src="https://img.shields.io/pypi/dm/translate-messages?logo=pypi&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
-<a href="https://github.com/adamlui/python-utils/releases/tag/translate-messages-1.0.5">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.5-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/python-utils/releases/tag/translate-messages-1.1.0">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.1.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
@@ -49,7 +49,7 @@ Options can be set by using command-line arguments:
 | `--no-wizard`     | Skip interactive prompts during start-up                                                             |
 | `-h`, `--help`    | Show help screen                                                                                     |
 
-[supported-locales]: https://github.com/adamlui/python-utils/blob/translate-messages-1.0.5/translate-messages/src/translate_messages/package_data.json#L11-L16
+[supported-locales]: https://github.com/adamlui/python-utils/blob/translate-messages-1.1.0/translate-messages/src/translate_messages/package_data.json#L11-L16
 
 ## Example
 
