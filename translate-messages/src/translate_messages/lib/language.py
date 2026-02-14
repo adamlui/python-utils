@@ -9,7 +9,7 @@ def create_translations(cli, target_msgs, lang_code):
 
     for key in src_keys:
 
-        if key in cli.config.ignore_keys:
+        if key in cli.config.exclude_keys:
             translated_msg = cli.config.en_msgs[key]['message']
             translated_msgs[key] = { 'message': translated_msg }
             continue

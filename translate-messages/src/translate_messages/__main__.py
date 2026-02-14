@@ -7,10 +7,10 @@ def main():
 
     if not cli.config.no_wizard:
         while True: # prompt user for keys to ignore
-            if getattr(cli.config, 'ignore_keys', '') : print('Ignored key(s):', cli.config.ignore_keys)
+            if getattr(cli.config, 'exclude_keys', '') : print('Ignored key(s):', cli.config.exclude_keys)
             input_key = input('Enter key to ignore (or ENTER if done): ')
             if not input_key : break
-            cli.config.ignore_keys.append(input_key)
+            cli.config.exclude_keys.append(input_key)
 
     log.trunc(f'\nSearching for {cli.config.locales_dir}...')
     cli.config.locales_dir = init.locales_dir(cli.config.locales_dir)
@@ -21,7 +21,7 @@ def main():
     cli.config.en_msgs = data.json.read(os.path.join(cli.config.locales_dir, 'en', cli.config.msgs_filename))
     cli.config.output_langs = list(set(cli.config.target_locales)) # remove dupes
 
-    if not cli.config.include_langs: # merge discovered locales w/ output_langs
+    if not cli.config.target_langs: # merge discovered locales w/ output_langs
         for root, dirs, _ in os.walk(cli.config.locales_dir):
             for lang_folder in dirs:
                 msgs_path = os.path.join(root, lang_folder, cli.config.msgs_filename)

@@ -53,9 +53,9 @@ Example defaults:
 ```json
 {
   "locales_dir": "_locales",
-  "include_langs": "",
+  "target_langs": "",
   "exclude_langs": "",
-  "ignore_keys": "",
+  "exclude_keys": "",
   "no_wizard": false
 }
 ```
