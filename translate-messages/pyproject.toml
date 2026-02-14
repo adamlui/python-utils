@@ -57,6 +57,12 @@ Changelog = "https://github.com/adamlui/python-utils/releases/tag/translate-mess
 translate-msgs = "translate_messages.__main__:main"
 translate-messages = "translate_messages.__main__:main"
 
+[project.optional-dependencies]
+dev = [
+    "tomli>=2.0.0,<3.0.0",
+    "tomli-w>=0.1.0,<2.0.0",
+]
+
 [tool.setuptools.packages.find]
 where = [
     "src",
