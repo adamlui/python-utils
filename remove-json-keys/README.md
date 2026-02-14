@@ -57,7 +57,7 @@ remove-json-keys --keys=author -W
 Remove `appDesc` + `err_notFound` keys from JSON files found in `data` dir:
 
 ```bash
-remove-json-keys -d data -k appDesc,err_notFound -W
+remove-json-keys -k appDesc,err_notFound -d data -W
 ```
 
 ## MIT License
