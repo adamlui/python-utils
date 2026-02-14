@@ -22,29 +22,29 @@ dependencies = [
 ]
 requires-python = ">=3.6,<4.0"
 keywords = [
-    "json",
     "data",
+    "json",
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "Natural Language :: English",
-    "Topic :: File Formats :: JSON",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
+    "Topic :: File Formats :: JSON",
 ]
 
 [project.urls]
-Homepage = "https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#readme"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/remove-json-keys-1.0.0"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#readme"
-Repository = "https://github.com/adamlui/python-utils"
+Funding = "https://github.com/sponsors/adamlui"
+Homepage = "https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#readme"
 Issues = "https://github.com/adamlui/python-utils/issues"
 Releases = "https://github.com/adamlui/python-utils/releases"
-Funding = "https://github.com/sponsors/adamlui"
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/remove-json-keys-1.0.0"
+Repository = "https://github.com/adamlui/python-utils"
 
 [project.scripts]
 remove-json-keys = "remove_json_keys.__main__:main"
