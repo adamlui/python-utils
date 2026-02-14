@@ -10,11 +10,11 @@ def cli(caller_file):
     cli.config = sns()
     cli.project_root = os.path.join(os.path.dirname(caller_file),
         f"{ '' if 'src' in os.path.dirname(caller_file) else '../../' }../../")
-    possile_filenames = [
+    possile_config_filenames = [
          '.translate-msgs.config.json', 'translate-msgs.config.json',
         f'.{cli.name}.config.json', f'{cli.name}.config.json'
     ]
-    for filename in possile_filenames:
+    for filename in possile_config_filenames:
         cli.config_path = os.path.join(cli.project_root, filename)
         if os.path.exists(cli.config_path):
             cli.config = data.sns.from_dict(data.json.read(cli.config_path))
