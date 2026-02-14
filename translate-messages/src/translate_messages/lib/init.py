@@ -7,15 +7,15 @@ def cli(caller_file):
     return cli
 
 def config_file(cli):
-    if os.path.exists(cli.config_path):
+    if os.path.exists(cli.config_filepath):
         if cli.config.force:
-            log.info(f'Overwriting existing config at {cli.config_path}...')
+            log.info(f'Overwriting existing config at {cli.config_filepath}...')
         else:
-            log.warn(f'Config already exists at {cli.config_path}.Skipping --init.')
-            log.tip('TIP: Pass --force to overwrite.')
+            log.warn(f'Config already exists at {cli.config_filepath}. Skipping --init.')
+            log.tip('Pass --force to overwrite.')
             return
     cli.config_filename = '.translate-msgs.config.json'
-    cli.config_path = os.path.join(cli.project_root, cli.config_filename)
+    cli.config_filepath = os.path.join(cli.project_root, cli.config_filename)
     try:
         jsd_url = f'{cli.urls.jsdelivr}/{cli.name}/{cli.config_filename}'
         resp = requests.get(jsd_url, timeout=5)
@@ -23,8 +23,8 @@ def config_file(cli):
         cli.file_config = resp.json()
     except (requests.RequestException, ValueError) as err:
         raise RuntimeError(f"Failed to fetch default config from {jsd_url}: {err}")
-    data.json.write(cli.file_config, cli.config_path)
-    log.success(f'Default config created at {cli.config_path}')
+    data.json.write(cli.file_config, cli.config_filepath)
+    log.success(f'Default config created at {cli.config_filepath}')
 
 def locales_dir(target_dir):
     for root, dirs, _ in os.walk(os.getcwd()):

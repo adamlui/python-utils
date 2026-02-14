@@ -53,9 +53,9 @@ def load(cli, caller_file):
         f'.{cli.name}.config.json', f'{cli.name}.config.json'
     ]
     for filename in possile_config_filenames:
-        cli.config_path = path.join(cli.project_root, filename)
-        if path.exists(cli.config_path):
-            cli.config = data.sns.from_dict(data.json.read(cli.config_path))
+        cli.config_filepath = path.join(cli.project_root, filename)
+        if path.exists(cli.config_filepath):
+            cli.config = data.sns.from_dict(data.json.read(cli.config_filepath))
             cli.config_filename = filename
             break
 
@@ -70,7 +70,7 @@ def load(cli, caller_file):
         for forbidden in ('default_val', 'parser'): # remove custom attrs
             kwargs.pop(forbidden, None)
         argp.add_argument(*args, **kwargs)
-    cli.config.__dict__.update({ key:val for key,val in vars(argp.parse_args()).items() if val is not None})
+    cli.config.__dict__.update({ key:val for key,val in vars(argp.parse_args()).items() if val is not None })
 
     # Init cli.config vals
     for name, ctrl in vars(controls).items():
@@ -83,5 +83,5 @@ def load(cli, caller_file):
             val = ctrl.default_val
         setattr(cli.config, name, val)
 
-    if cli.config.exclude_langs:
+    if cli.config.exclude_langs: # trim cli.config.target_langs
        cli.config.target_langs = [lang for lang in cli.config.target_langs if lang not in cli.config.exclude_langs]
