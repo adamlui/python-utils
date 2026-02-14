@@ -80,6 +80,7 @@ Example defaults:
   "keys": "",
   "exclude_langs": "",
   "exclude_keys": "",
+  "force": false,
   "no_wizard": false
 }
 ```
