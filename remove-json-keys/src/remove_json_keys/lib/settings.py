@@ -35,7 +35,7 @@ def load(cli):
         for forbidden in ('default_val', 'parser'): # remove custom attrs
             kwargs.pop(forbidden, None)
         argp.add_argument(*args, **kwargs)
-    cli.config.__dict__.update({ key:val for key,val in vars(argp.parse_args()).items() if val is not None})
+    cli.config.__dict__.update({ key:val for key,val in vars(argp.parse_args()).items() if val is not None })
 
     # Init cli.config vals
     for name, ctrl in vars(controls).items():
