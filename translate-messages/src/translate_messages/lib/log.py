@@ -1,5 +1,4 @@
-import os
-from sys import stdout
+import os, sys
 from types import SimpleNamespace as sns
 import colorama
 
@@ -25,7 +24,7 @@ def data(msg) : print(f'\n{colors.bw}{msg}{colors.nc}')
 def dim(msg) : print(f'\n{colors.gry}{msg}{colors.nc}')
 def error(msg) : print(f'\n{colors.br}ERROR: {msg}{colors.nc}')
 def info(msg, end='') : print(f'\n{colors.by}{msg}{colors.nc}', end=end)
-def overwrite_print(msg) : stdout.write('\r' + msg.ljust(terminal_width)[:terminal_width])
+def overwrite_print(msg) : sys.stdout.write('\r' + msg.ljust(terminal_width)[:terminal_width])
 def tip(msg) : print(f'\n{colors.by}TIP: {msg}{colors.nc}')
 def success(msg) : print(f'\n{colors.bg}{msg}{colors.nc}')
 def warn(msg) : print(f'\n{colors.bo}WARNING: {msg}{colors.nc}')
