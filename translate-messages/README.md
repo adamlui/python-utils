@@ -30,7 +30,7 @@ translate-msgs
 
 If no options are provided, the CLI will:
 1. Prompt for message keys to ignore 
-2. Auto-discover closest `_locales` dir
+2. Auto-discover closest child `_locales` dir
 3. Translate `en/messages.json` to target languages
 
 _Note: Any messages.json in the [`chrome.i18n`](https://developer.chrome.com/docs/extensions/how-to/ui/localization-message-formats) format can be used as a source file._
@@ -52,10 +52,18 @@ Options can be set by using command-line arguments:
 
 [supported-locales]: https://github.com/adamlui/python-utils/blob/translate-messages-1.1.0/translate-messages/src/translate_messages/package_data.json#L11-L16
 
-## Example
+## Examples
+
+Translate everything except `appName` from `_locales/en/messages.json` to French and Spanish
 
 ```bash
-translate-msgs --include-langs=fr,es --ignore-keys=appName,author
+translate-msgs --include-langs=fr,es --ignore-keys=appName -W
+```
+
+Translate `appDesc` + `err_notFound` keys from `_msgs/en/messages.json`:
+
+```bash
+translate-msgs -k appDesc,err_notFound -d _msgs -W
 ```
 
 ## Config file
