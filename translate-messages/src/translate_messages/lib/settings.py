@@ -1,4 +1,5 @@
-import argparse, os
+import argparse
+from os import path
 from types import SimpleNamespace as sns
 from . import data
 
@@ -45,15 +46,15 @@ def load(cli, caller_file):
 
     # Load from config file
     cli.config = sns()
-    cli.project_root = os.path.join(os.path.dirname(caller_file),
-        f"../../{ '' if 'src' in os.path.dirname(caller_file) else '../../' }")
+    cli.project_root = path.join(path.dirname(caller_file),
+        f"../../{ '' if 'src' in path.dirname(caller_file) else '../../' }")
     possile_config_filenames = [
          '.translate-msgs.config.json', 'translate-msgs.config.json',
         f'.{cli.name}.config.json', f'{cli.name}.config.json'
     ]
     for filename in possile_config_filenames:
-        cli.config_path = os.path.join(cli.project_root, filename)
-        if os.path.exists(cli.config_path):
+        cli.config_path = path.join(cli.project_root, filename)
+        if path.exists(cli.config_path):
             cli.config = data.sns.from_dict(data.json.read(cli.config_path))
             cli.config_filename = filename
             break

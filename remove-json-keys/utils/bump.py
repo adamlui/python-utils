@@ -1,9 +1,11 @@
-import os, sys
+from os import path
+import sys
 import tomli, tomli_w
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../src'))
+
+sys.path.insert(0, path.join(path.dirname(__file__), '../src'))
 from remove_json_keys.lib import log # type: ignore
 
-pyproject_path = os.path.join(os.path.dirname(__file__), '../pyproject.toml')
+pyproject_path = path.join(path.dirname(__file__), '../pyproject.toml')
 with open(pyproject_path, 'rb') as file:
     pkg_name = tomli.load(file)['project']['name']
 
