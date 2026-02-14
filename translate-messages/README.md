@@ -29,9 +29,9 @@ Options can be set by using command-line arguments:
 | Option            | Description                                                                                          | Example
 | ----------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------
 | `--locales-dir`   | Name of the folder containing locale files (default: `_locales`)                                     | `--locales-dir=_messages`
-| `--include-langs` | Comma-separated list of languages to include (default: all [`supported_locales`][supported-locales]) | `--include-langs=en,es,fr`
+| `--target-langs`  | Comma-separated list of languages to include (default: all [`supported_locales`][supported-locales]) | `--target-langs=en,es,fr`
 | `--exclude-langs` | Comma-separated list of languages to exclude                                                         | `--exclude-langs=en,es`
-| `--ignore-keys`   | Comma-separated list of keys to ignore                                                               | `--ignore-keys=appName,author`
+| `--exclude-keys`  | Comma-separated list of keys to ignore                                                               | `--exclude-keys=appName,author`
 | `--init`          | Create translate-messages.config.json in project root to store defaults                              |
 | `--no-wizard`     | Skip interactive prompts during start-up                                                             |
 | `-h`, `--help`    | Show help screen                                                                                     |
