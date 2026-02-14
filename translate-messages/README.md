@@ -33,7 +33,7 @@ If no options are provided, the CLI will:
 2. Auto-discover closest `_locales` dir
 3. Translate `en/messages.json` to target languages
 
-_Note: Any messages.json that fits the [`chrome.i18n`](https://developer.chrome.com/docs/extensions/how-to/ui/localization-message-formats) spec can be used as a source file._
+_Note: Any messages.json in the [`chrome.i18n`](https://developer.chrome.com/docs/extensions/how-to/ui/localization-message-formats) format can be used as a source file._
 
 ## Options
 
