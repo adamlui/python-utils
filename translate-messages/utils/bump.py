@@ -4,7 +4,7 @@ import sys
 import tomli, tomli_w
 
 sys.path.insert(0, path.join(path.dirname(__file__), '../src'))
-from translate_messages.lib import log  # type: ignore
+from translate_messages.lib import log # type: ignore
 
 pyproject_path = path.join(path.dirname(__file__), '../pyproject.toml')
 log.info(f'Loading {pyproject_path}...')

@@ -4,7 +4,7 @@ import sys
 import tomli, tomli_w
 
 sys.path.insert(0, path.join(path.dirname(__file__), '../src'))
-from remove_json_keys.lib import log  # type: ignore
+from remove_json_keys.lib import log # type: ignore
 
 pyproject_path = path.join(path.dirname(__file__), '../pyproject.toml')
 log.info(f'Loading {pyproject_path}...')
