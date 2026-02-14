@@ -1,29 +1,47 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
+requires = [
+    "setuptools>=61.0",
+    "wheel",
+]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "translate-messages"
 version = "1.1.0"
 description = "Translate en/messages.json (chrome.i18n format) to other locales."
-authors = [{name = "Adam Lui", email = "adam@kudoai.com"}]
+authors = [
+    { name = "Adam Lui", email = "adam@kudoai.com" },
+]
 readme = "README.md"
 license = "MIT"
-license-files = ["LICENSE.md"]
-dependencies = ["requests>=2.32.0,<3.0.0", "translate>=3.8.0,<4.0.0", "colorama>=0.4.6,<1.0.0"]
+license-files = [
+    "LICENSE.md",
+]
+dependencies = [
+    "requests>=2.32.0,<3.0.0",
+    "translate>=3.8.0,<4.0.0",
+    "colorama>=0.4.6,<1.0.0",
+]
 requires-python = ">=3.6,<4.0"
-keywords = ["translate", "translation", "messages", "i18n", "chrome", "mymemory"]
+keywords = [
+    "translate",
+    "translation",
+    "messages",
+    "i18n",
+    "chrome",
+    "mymemory",
+]
 classifiers = [
-  "Development Status :: 5 - Production/Stable",
-  "Intended Audience :: Developers",
-  "Natural Language :: English",
-  "Topic :: Software Development :: Build Tools",
-  "Topic :: Software Development :: Localization",
-  "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.6",
-  "Programming Language :: Python :: 3.7",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Localization",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
 ]
 
 [project.urls]
@@ -33,13 +51,20 @@ Repository = "https://github.com/adamlui/python-utils"
 Issues = "https://github.com/adamlui/python-utils/issues"
 Releases = "https://github.com/adamlui/python-utils/releases"
 Funding = "https://github.com/sponsors/adamlui"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/translate-messages-1.1.0"
 
 [project.scripts]
 translate-msgs = "translate_messages.__main__:main"
 translate-messages = "translate_messages.__main__:main"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = [
+    "src",
+]
 
 [tool.setuptools.package-data]
-"*" = ["package_data.json", "*.md", "assets/ascii/*.txt"]
+"*" = [
+    "package_data.json",
+    "*.md",
+    "assets/ascii/*.txt",
+]
