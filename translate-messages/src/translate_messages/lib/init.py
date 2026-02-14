@@ -11,9 +11,11 @@ def cli(caller_file):
     cli.project_root = os.path.join(os.path.dirname(caller_file),
         f"{ '' if 'src' in os.path.dirname(caller_file) else '../../' }../../")
     for filename in [f'{cli.name}.config.json', f'{cli.name.replace("messages", "msgs")}.config.json']:
-        config_path = os.path.join(cli.project_root, filename)
-        if os.path.exists(config_path):
-            cli.config = data.sns.from_dict(data.json.read(config_path)) ; break
+        cli.config_path = os.path.join(cli.project_root, filename)
+        if os.path.exists(cli.config_path):
+            cli.config = data.sns.from_dict(data.json.read(cli.config_path))
+            cli.config_filename = filename
+            break
 
     # Parse CLI args
     argp = argparse.ArgumentParser(
@@ -45,18 +47,18 @@ def cli(caller_file):
     return cli
 
 def config_file(cli):
-    if os.path.exists(cli.config.path):
-        return print(f'Config already exists at {cli.config.path}')
+    if os.path.exists(cli.config_path) : return print(f'Config already exists at {cli.config_path}')
+    cli.config_filename = 'translate-msgs.config.json'
+    cli.config_path = os.path.join(cli.project_root, cli.config_filename)
     try:
-        jsd_url = f'{cli.urls.jsdelivr}/{cli.name}/{cli.config.filename}'
+        jsd_url = f'{cli.urls.jsdelivr}/{cli.name}/{cli.config_filename}'
         resp = requests.get(jsd_url, timeout=5)
         resp.raise_for_status()
         cli.file_config = resp.json()
     except (requests.RequestException, ValueError):
         cli.file_config = {}
-
-    data.json.write(cli.file_config, cli.config.path)
-    print(f'Default config created at {cli.config.path}')
+    data.json.write(cli.file_config, cli.config_path)
+    print(f'Default config created at {cli.config_path}')
 
 def locales_dir(target_dir):
     lib_dir = os.path.abspath(os.path.dirname(__file__))
