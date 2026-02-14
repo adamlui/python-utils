@@ -1,6 +1,6 @@
 import argparse, os, requests
 from types import SimpleNamespace as sns
-from . import data
+from . import data, log
 
 def cli(caller_file):
 
@@ -58,10 +58,10 @@ def cli(caller_file):
 def config_file(cli):
     if os.path.exists(cli.config_path):
         if cli.config.force:
-            print(f'Overwriting existing config at {cli.config_path}...')
+            log.info(f'Overwriting existing config at {cli.config_path}...')
         else:
-            print(f'Config already exists at {cli.config_path}.Skipping --init.')
-            print('\nTIP: Pass --force to overwrite.')
+            log.warn(f'Config already exists at {cli.config_path}.Skipping --init.')
+            log.tip('TIP: Pass --force to overwrite.')
             return
     cli.config_filename = '.translate-msgs.config.json'
     cli.config_path = os.path.join(cli.project_root, cli.config_filename)
@@ -73,7 +73,7 @@ def config_file(cli):
     except (requests.RequestException, ValueError) as err:
         raise RuntimeError(f"Failed to fetch default config from {jsd_url}: {err}")
     data.json.write(cli.file_config, cli.config_path)
-    print(f'Default config created at {cli.config_path}')
+    log.success(f'Default config created at {cli.config_path}')
 
 def locales_dir(target_dir):
     for root, dirs, _ in os.walk(os.getcwd()):

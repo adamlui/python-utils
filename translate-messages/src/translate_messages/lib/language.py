@@ -51,7 +51,7 @@ def write_translations(cli):
         msgs_path = os.path.join(lang_folder_path, cli.config.msgs_filename)
         msgs = data.json.read(msgs_path)
 
-        log.trunc(f"{ 'Adding' if not msgs else 'Updating' } {lang_folder}/{cli.config.msgs_filename}...", end='')
+        log.info(f"{ 'Adding' if not msgs else 'Updating' } {lang_folder}/{cli.config.msgs_filename}...", end='')
         sys.stdout.flush()
         translated_msgs = create_translations(cli, msgs, lang_code)
         data.json.write(translated_msgs, msgs_path)
@@ -59,9 +59,11 @@ def write_translations(cli):
         if translated_msgs == msgs : langs_skipped.append(lang_code) ; lang_skipped = True
         elif translated_msgs != msgs : langs_translated.append(lang_code) ; lang_translated = True
         if not lang_translated : langs_not_translated.append(lang_code)
-        log.overwrite_print(
-            f"{'Added' if lang_added else 'Skipped' if lang_skipped else 'Updated'} "
-            f"{lang_folder}/{cli.config.msgs_filename}"
+        status = (
+            f"{log.colors.dg}Added" if lang_added else
+            f"{log.colors.gry}Skipped" if lang_skipped else
+            f"{log.colors.dy}Updated"
         )
+        log.overwrite_print(f"{status} {lang_folder}/{cli.config.msgs_filename}{log.colors.nc}")
 
     return langs_translated, langs_skipped, langs_added, langs_not_translated

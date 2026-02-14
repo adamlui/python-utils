@@ -10,6 +10,7 @@ authors = [{name = "Adam Lui", email = "adam@kudoai.com"}]
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE.md"]
+dependencies = ["colorama>=0.4.6,<1.0.0"]
 requires-python = ">=3.6,<4.0"
 keywords = ["json", "data"]
 classifiers = [

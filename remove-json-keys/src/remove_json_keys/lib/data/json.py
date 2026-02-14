@@ -16,7 +16,7 @@ def remove_keys(cli):
 
                 # Remove keys
                 modified = False
-                for key in cli.config.remove_keys:
+                for key in cli.config.keys:
                     re_key = fr'"{re.escape(key)}"\s*:\s*(?:\{{[^}}]*\}}|"[^"]*"|\d+|true|false|null)\s*,?\s*'
                     data, cnt = re.subn(re_key, '', data)
                     if cnt > 0:

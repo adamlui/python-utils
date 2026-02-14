@@ -7,15 +7,19 @@ def main():
 
     if not cli.config.no_wizard:
         while True: # prompt user for keys to ignore
-            if getattr(cli.config, 'exclude_keys', '') : print('Ignored key(s):', cli.config.exclude_keys)
-            input_key = input('Enter key to ignore (or ENTER if done): ')
+            if getattr(cli.config, 'exclude_keys', '') : print('\nIgnored key(s):', cli.config.exclude_keys)
+            input_key = input(f'\n{log.colors.bw}Enter key to ignore (or ENTER if done): {log.colors.nc}')
             if not input_key : break
             cli.config.exclude_keys.append(input_key)
 
-    log.trunc(f'\nSearching for {cli.config.locales_dir}...')
+    log.info(f'Searching for {cli.config.locales_dir}...')
     cli.config.locales_dir = init.locales_dir(cli.config.locales_dir)
-    if cli.config.locales_dir : log.trunc(f'_locales directory found!\n\n>> {cli.config.locales_dir}\n')
-    else : log.trunc('Unable to locate directory.') ; sys.exit(1)
+    if cli.config.locales_dir:
+        log.success('Directory found!')
+        print(f'\n>> {cli.config.locales_dir}')
+    else:
+        log.warn('Unable to locate directory.')
+        sys.exit(1)
 
     cli.config.msgs_filename = 'messages.json'
     cli.config.en_msgs = data.json.read(os.path.join(cli.config.locales_dir, 'en', cli.config.msgs_filename))
