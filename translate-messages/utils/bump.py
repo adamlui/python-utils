@@ -24,9 +24,9 @@ def update_changelog_url():
         logging.debug('Replacing existing Changelog URL...')
     else:
         logging.debug('Adding new Changelog URL...')
+
     pyproject['project']['urls']['Changelog'] = changelog_url
     with open(pyproject_path, 'wb') as file : tomli_w.dump(pyproject, file)
-
     logging.info(f"Bumped changelog URL ver tag to '{ver_tag}'!")
 
 update_changelog_url()
