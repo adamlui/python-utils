@@ -26,7 +26,7 @@ def load(cli):
     # Parse CLI args
     argp = argparse.ArgumentParser(
         description="Simply remove JSON keys via CLI command",
-        add_help=False # disable default --help arg to re-create last
+        add_help=False # disable default --help to re-create last
     )
     cli.config=sns()
     for attr_name in vars(controls):

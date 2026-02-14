@@ -9,7 +9,7 @@ from remove_json_keys.lib import log # type: ignore
 # Parse args
 argp = argparse.ArgumentParser(
     description='Bump versions in pyproject.toml + README.md',
-    add_help=False # disable default --help arg to re-create last
+    add_help=False # disable default --help to re-create last
 )
 argp.add_argument('-M', '--major', action='store_true', help='Bump the major (\033[1mx\033[0m.y.z) version')
 argp.add_argument('-m', '--minor', action='store_true', help='Bump the minor (x.\033[1my\033[0m.z) version')
