@@ -1,7 +1,7 @@
 import os, sys
 import tomli, tomli_w
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../src'))
-from translate_messages.lib import log # type: ignore
+from remove_json_keys.lib import log # type: ignore
 
 pyproject_path = os.path.join(os.path.dirname(__file__), '../pyproject.toml')
 with open(pyproject_path, 'rb') as file:
