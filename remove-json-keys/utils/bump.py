@@ -12,21 +12,13 @@ with open(pyproject_path, 'rb') as file : pyproject = tomli.load(file)
 project = sns(**pyproject['project'])
 
 def update_changelog_url():
-
     ver_tag = f'{project.name}-{project.version}'
     changelog_url = f'https://github.com/adamlui/python-utils/releases/tag/{ver_tag}'
     log.data(f'Generated changelog URL: {changelog_url}')
-
-    if not hasattr(project, 'urls'):
-        log.info('Creating [project.urls] section...')
-        project.urls = {}
-
     log.info(f"{ 'Updating' if 'Changelog' in project.urls else 'Adding new' } Changelog URL...")
     project.urls['Changelog'] = changelog_url
-
     pyproject['project'] = vars(project) # update og dict for dumping
     with open(pyproject_path, 'wb') as file : tomli_w.dump(pyproject, file)
-
     log.success(f'Bumped changelog URL ver tag to [{ver_tag}]!')
 
 update_changelog_url()
