@@ -9,11 +9,12 @@ def cli():
     # Parse CLI args
     argp = argparse.ArgumentParser(
         description="Simply remove JSON keys via CLI command",
-        add_help=False  # disable default --help arg to re-create last
+        add_help=False # disable default --help arg to re-create last
     )
     argp.add_argument('-d', '--json-dir', '--json-folder',
         type=str, help='Name of the folder containing JSON files (default: "_locales")')
-    argp.add_argument('-k', '--keys', '--remove-keys', type=str, help='Keys to remove (e.g. "appName,author")')
+    argp.add_argument('-k', '--keys', '--key', '--remove-keys', '--remove-key', '--delete-keys', '--delete-key',
+        type=str, help='Keys to remove (e.g. "appName,author")')
     argp.add_argument('-W', '--no-wizard', '--skip-wizard',
         action='store_true', default=None, help='Skip interactive prompts during start-up')
     argp.add_argument('-h', '--help', action='help', help="Show help screen")
