@@ -77,7 +77,7 @@ def main():
     project = sns(**pyproject['project'])
 
     # Update files
-    prev_ver, new_ver = init_vers(project, bump_type)
+    _, new_ver = init_vers(project, bump_type)
     bump_pyproject_vers(pyproject_path, pyproject, project, new_ver)    
     update_readme_vers(new_ver)
 
