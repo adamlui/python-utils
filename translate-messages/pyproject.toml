@@ -27,6 +27,14 @@ classifiers = [
   "Programming Language :: Python :: 3.9",
 ]
 
+[project.urls]
+Homepage = "https://github.com/adamlui/python-utils/tree/main/translate-messages/#readme"
+Documentation = "https://github.com/adamlui/python-utils/tree/main/translate-messages/#readme"
+Repository = "https://github.com/adamlui/python-utils"
+Issues = "https://github.com/adamlui/python-utils/issues"
+Releases = "https://github.com/adamlui/python-utils/releases"
+Funding = "https://github.com/sponsors/adamlui"
+
 [project.scripts]
 translate-msgs = "translate_messages.__main__:main"
 translate-messages = "translate_messages.__main__:main"
