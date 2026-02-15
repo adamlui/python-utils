@@ -1,6 +1,6 @@
 {
   "name": "remove-json-keys",
-  "cli_cmd": ["remove-json-keys"],
+  "cli_cmd": ["remove-json-keys", "remove-json"],
   "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
   "urls": {
     "docs": "https://github.com/adamlui/python-utils/tree/main/remove-json-keys/docs",
