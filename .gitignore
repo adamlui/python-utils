@@ -2,3 +2,4 @@
 *sandbox*
 *.egg-info/
 dist/
+publish.sh
