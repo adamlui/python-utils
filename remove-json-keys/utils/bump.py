@@ -7,23 +7,23 @@ sys.path.insert(0, path.join(path.dirname(__file__), '../src'))
 from remove_json_keys.lib import data, log # type: ignore
 
 msgs = sn(
-    pkg_DESC='Bump versions in pyproject.toml + README.md',
+    app_DESC='Bump versions in pyproject.toml + README.md',
     help_MAJOR='Bump the major (\033[1mx\033[0m.y.z) version',
     help_MINOR='Bump the minor (x.\033[1my\033[0m.z) version',
     help_PATCH='Bump the patch (x.y.\033[1mz\033[0m) version',
     help_HELP='Show help screen',
-    err_INVALID_ARG='You must pass --<major|minor|patch> as an argument.',
+    err_MISSING_BUMP_TYPE_ARG='You must pass --<major|minor|patch> as an argument.',
     log_LOADING_PYPROJECT='Loading {pyproject_path}',
     log_BUMPED_PROJECT_VER='Bumped project.version in pyproject.toml from [{prev_ver}] to [{new_ver}]',
-    log_CREATED_CHANGELOG_URL='Generated Changelog URL',
-    log_UPDATING_CHANGELOG_URL_IN='Updating Changelog URL in',
-    log_BUMPED_CHANGELOG_URL_VER_TAG='Bumped Changelog URL version tag to [{ver_tag}]',
+    log_GENERATED_CLOG_URL='Generated Changelog URL',
+    log_UPDATING_CLOG_URL_IN='Updating Changelog URL in',
+    log_BUMPED_CLOG_URL_VER_TAG='Bumped Changelog URL version tag to [{new_ver_tag}]',
     log_UPDATING_VERS_IN='Updating versions in',
     log_UPDATED_README_VERS='Updated versions in README URLs to [{new_ver}]!'
 )
 
 def parse_args():
-    argp = argparse.ArgumentParser(description=msgs.pkg_DESC, add_help=False)
+    argp = argparse.ArgumentParser(description=msgs.app_DESC, add_help=False)
     argp.add_argument('-M', '--major', action='store_true', help=msgs.help_MAJOR)
     argp.add_argument('-m', '--minor', action='store_true', help=msgs.help_MINOR)
     argp.add_argument('-p', '--patch', action='store_true', help=msgs.help_PATCH)
@@ -47,13 +47,13 @@ def bump_pyproject_vers(pyproject_path, pyproject, project, new_ver): # project.
     log.success(msgs.log_BUMPED_PROJECT_VER.format(prev_ver=project.version, new_ver=new_ver))
 
     # Bump project.urls['Releases']
-    ver_tag = f'{project.name}-{new_ver}'
-    changelog_url = f"{project.urls['Releases']}/tag/{ver_tag}"
-    log.data(f'{msgs.log_CREATED_CHANGELOG_URL}: {changelog_url}')
-    log.info(f'{msgs.log_UPDATING_CHANGELOG_URL_IN} pyproject.toml...')
+    new_ver_tag = f'{project.name}-{new_ver}'
+    changelog_url = f"{project.urls['Releases']}/tag/{new_ver_tag}"
+    log.data(f'{msgs.log_GENERATED_CLOG_URL}: {changelog_url}')
+    log.info(f'{msgs.log_UPDATING_CLOG_URL_IN} pyproject.toml...')
     pyproject['project']['urls']['Changelog'] = changelog_url
     toml.write(pyproject_path, pyproject)
-    log.success(msgs.log_BUMPED_CHANGELOG_URL_VER_TAG.format(ver_tag=ver_tag))
+    log.success(msgs.log_BUMPED_CLOG_URL_VER_TAG.format(new_ver_tag=new_ver_tag))
 
 def update_readme_vers(new_ver): # in URLs
     log.info(f'{msgs.log_UPDATING_VERS_IN} docs/README.md...')
@@ -67,7 +67,7 @@ def main():
     # Parse args
     args = parse_args()
     bump_type = 'major' if args.major else 'minor' if args.minor else 'patch' if args.patch else None
-    if not bump_type : log.error(msgs.err_INVALID_ARG) ; sys.exit(1)
+    if not bump_type : log.error(msgs.err_MISSING_BUMP_TYPE_ARG) ; sys.exit(1)
 
     # Init project data
     pyproject_path = path.join(path.dirname(__file__), '../pyproject.toml')
