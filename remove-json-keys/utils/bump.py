@@ -56,7 +56,7 @@ def bump_pyproject_vers(pyproject_path, pyproject, project, new_ver): # project.
     log.success(msgs.log_BUMPED_CHANGELOG_URL_VER_TAG.format(ver_tag=ver_tag))
 
 def update_readme_vers(new_ver): # in URLs
-    log.info(f'{msgs.log_UPDATING_VERS_IN} README.md...')
+    log.info(f'{msgs.log_UPDATING_VERS_IN} docs/README.md...')
     readme_path = path.join(path.dirname(__file__), '../docs/README.md')
     updated_readme_content = re.sub(r'\b(?>\d{1,3}\.\d{1,3}\.\d{1,3})\b', new_ver, data.file.read(readme_path))
     data.file.write(readme_path, updated_readme_content)
