@@ -32,6 +32,7 @@ def main():
 
     log.info(f'Searching for {cli.config.json_dir}...')
     cli.config.json_dir = init.json_dir(cli.config.json_dir)
+
     if cli.config.json_dir:
         log.success('Directory found!')
         print(f'\n>> {cli.config.json_dir}')

@@ -28,6 +28,7 @@ def main():
 
     log.info(f'Searching for {cli.config.locales_dir}...')
     cli.config.locales_dir = init.locales_dir(cli.config.locales_dir)
+
     if cli.config.locales_dir:
         log.success('Directory found!')
         print(f'\n>> {cli.config.locales_dir}')
