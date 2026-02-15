@@ -12,10 +12,10 @@ description = "Simply remove JSON keys via CLI command."
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
 ]
-readme = "README.md"
+readme = "docs/README.md"
 license = "MIT"
 license-files = [
-    "LICENSE.md",
+    "docs/LICENSE.md",
 ]
 dependencies = [
     "colorama>=0.4.6,<1.0.0",
@@ -51,7 +51,7 @@ classifiers = [
 
 [project.urls]
 Changelog = "https://github.com/adamlui/python-utils/releases/tag/remove-json-keys-1.0.0"
-Documentation = "https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#readme"
+Documentation = "https://github.com/adamlui/python-utils/tree/main/remove-json-keys/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#readme"
 Issues = "https://github.com/adamlui/python-utils/issues"

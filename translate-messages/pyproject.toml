@@ -12,10 +12,10 @@ description = "Translate en/messages.json (in chrome.i18n format) to other local
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
 ]
-readme = "README.md"
+readme = "docs/README.md"
 license = "MIT"
 license-files = [
-    "LICENSE.md",
+    "docs/LICENSE.md",
 ]
 dependencies = [
     "colorama>=0.4.6,<1.0.0",
@@ -59,7 +59,7 @@ classifiers = [
 
 [project.urls]
 Changelog = "https://github.com/adamlui/python-utils/releases/tag/translate-messages-1.1.0"
-Documentation = "https://github.com/adamlui/python-utils/tree/main/translate-messages/#readme"
+Documentation = "https://github.com/adamlui/python-utils/tree/main/translate-messages/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/translate-messages/#readme"
 Issues = "https://github.com/adamlui/python-utils/issues"
