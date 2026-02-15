@@ -1,42 +1,42 @@
 import argparse
 from os import path
-from types import SimpleNamespace as sns
+from types import SimpleNamespace as sn
 from . import data
 
-controls = sns(
-    locales_dir=sns(
+controls = sn(
+    locales_dir=sn(
         args=['-d', '--locales-dir', '--locales-folder', '--json-dir', '--json-folder'],
         type=str, default_val='_locales', help='Name of the folder containing locale files (default: "_locales")'
     ),
-    target_langs=sns(
+    target_langs=sn(
         args=['-t', '--target-langs', '--target-lang', '--include-langs', '--include-lang'],
         type=str, parser='csv', help='Languages to include (e.g. "en,es,fr") (default: all supported locales)'
     ),
-    keys=sns(
+    keys=sn(
         args=['-k', '--keys', '--key', '--include-keys', '--include-key', '--translate-keys', '--translate-key'],
         type=str, parser='csv', help='Keys to translate (e.g. "appDesc,err_notFound")'
     ),
-    exclude_langs=sns(
+    exclude_langs=sn(
         args=['--exclude-langs', '--exclude-lang', '--ignore-langs', '--ignore-lang'],
         type=str, parser='csv', help='Languages to exclude (e.g. "en,es")'
     ),
-    exclude_keys=sns(
+    exclude_keys=sn(
         args=['--exclude-keys', '--exclude-key', '--ignore-keys', '--ignore-key'],
         type=str, parser='csv', help='Keys to ignore (e.g. "appName,author")'
     ),
-    init=sns(
+    init=sn(
         args=['-i', '--init'],
         action='store_true', help='Create .translate-msgs.config.jsonc file to store defaults'
     ),
-    force=sns(
+    force=sn(
         args=['-f', '--force', '--overwrite'],
         action='store_true', help='Force overwrite existing config file when using --init'
     ),
-    no_wizard=sns(
+    no_wizard=sn(
         args=['-W', '--no-wizard', '--skip-wizard'],
         action='store_true', default=None, help='Skip interactive prompts during start-up'
     ),
-    help=sns(
+    help=sn(
         args=['-h', '--help'],
         action='help', help='Show help screen'
     )
@@ -45,7 +45,7 @@ controls = sns(
 def load(cli, caller_file):
 
     # Load from config file
-    cli.config = sns()
+    cli.config = sn()
     cli.project_root = path.join(path.dirname(caller_file),
         f"../../{ '' if 'src' in path.dirname(caller_file) else '../../' }")
     possile_config_filenames = [

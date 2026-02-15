@@ -1,12 +1,12 @@
 import argparse, re, sys
 from os import path
-from types import SimpleNamespace as sns
+from types import SimpleNamespace as sn
 import tomli, tomli_w
 
 sys.path.insert(0, path.join(path.dirname(__file__), '../src'))
 from remove_json_keys.lib import data, log # type: ignore
 
-msgs = sns(
+msgs = sn(
     pkg_DESC='Bump versions in pyproject.toml + README.md',
     help_MAJOR='Bump the major (\033[1mx\033[0m.y.z) version',
     help_MINOR='Bump the minor (x.\033[1my\033[0m.z) version',
@@ -73,7 +73,7 @@ def main():
     pyproject_path = path.join(path.dirname(__file__), '../pyproject.toml')
     log.info(f'{msgs.log_LOADING_PYPROJECT.format(pyproject_path=pyproject_path)}...')
     with open(pyproject_path, 'rb') as file : pyproject = tomli.load(file)
-    project = sns(**pyproject['project'])
+    project = sn(**pyproject['project'])
 
     # Update files
     _, new_ver = init_vers(project, bump_type)

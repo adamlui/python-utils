@@ -1,21 +1,21 @@
 import argparse
-from types import SimpleNamespace as sns
+from types import SimpleNamespace as sn
 from . import data
 
-controls = sns(
-    json_dir=sns(
+controls = sn(
+    json_dir=sn(
         args=['-d', '--json-dir', '--json-folder'],
         type=str, default_val='_locales', help='Name of the folder containing JSON files (default: "_locales")'
     ),
-    keys=sns(
+    keys=sn(
         args=['-k', '--keys', '--key', '--remove-keys', '--remove-key', '--delete-keys', '--delete-key'],
         type=str, parser='csv', help='Keys to remove (e.g. "appName,author")'
     ),
-    no_wizard=sns(
+    no_wizard=sn(
         args=['-W', '--no-wizard', '--skip-wizard'],
         action='store_true', default=None, help='Skip interactive prompts during start-up'
     ),
-    help=sns(
+    help=sn(
         args=['-h', '--help'],
         action='help', help='Show help screen'
     )
@@ -28,7 +28,7 @@ def load(cli):
         description="Simply remove JSON keys via CLI command",
         add_help=False # disable default --help to re-create last
     )
-    cli.config=sns()
+    cli.config=sn()
     for attr_name in vars(controls):
         kwargs = getattr(controls, attr_name).__dict__.copy()
         args = kwargs.pop('args')  # separate positional flags

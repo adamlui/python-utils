@@ -1,5 +1,5 @@
 import os, sys
-from types import SimpleNamespace as sns
+from types import SimpleNamespace as sn
 if sys.platform == 'win32' : import colorama ; colorama.init() # enable ANSI color support
 
 try:
@@ -7,7 +7,7 @@ try:
 except OSError:
     terminal_width = 80
 
-colors = sns(
+colors = sn(
     nc='\x1b[0m',        # no color
     br='\x1b[1;91m',     # bright red
     by='\x1b[1;33m',     # bright yellow
