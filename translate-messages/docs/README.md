@@ -31,7 +31,7 @@ translate-messages [options] # or translate-msgs
 If no options are passed, the CLI will:
 1. Prompt for message keys to ignore 
 2. Auto-discover closest child `_locales` dir
-3. Translate `en/messages.json` to target languages
+3. Translate found `en/messages.json` to target languages
 
 _Note: Any messages.json in the [`chrome.i18n`](https://developer.chrome.com/docs/extensions/how-to/ui/localization-message-formats) format can be used as a source file._
 
