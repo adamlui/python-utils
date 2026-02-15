@@ -18,7 +18,7 @@ license-files = [
     "docs/LICENSE.md",
 ]
 dependencies = [
-    "colorama>=0.4.6,<1.0.0",
+    "colorama>=0.4.6,<1.0.0 ; platform_system == 'Windows'",
 ]
 requires-python = ">=3.6,<4.0"
 keywords = [

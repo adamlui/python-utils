@@ -1,6 +1,6 @@
 import os, sys
 from types import SimpleNamespace as sns
-import colorama
+if sys.platform == 'win32' : import colorama ; colorama.init() # enable ANSI color support
 
 try:
     terminal_width = os.get_terminal_size()[0]
@@ -18,7 +18,6 @@ colors = sns(
     dy='\x1b[33m',       # dark yellow
     gry='\x1b[90m'       # gray
 )
-colorama.init() # enable compatibility w/ Windows
 
 def data(msg, *args, **kwargs):
     print(f'\n{colors.bw}{msg.format(*args, **kwargs)}{colors.nc}')
