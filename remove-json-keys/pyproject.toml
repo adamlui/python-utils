@@ -55,6 +55,7 @@ Documentation = "https://github.com/adamlui/python-utils/tree/main/remove-json-k
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#readme"
 Issues = "https://github.com/adamlui/python-utils/issues"
+PyPIStats = "https://pypistats.org/packages/remove-json-keys"
 Releases = "https://github.com/adamlui/python-utils/releases"
 Repository = "https://github.com/adamlui/python-utils"
 
