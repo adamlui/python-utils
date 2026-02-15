@@ -23,7 +23,7 @@ pip install remove-json-keys
 
 Run the CLI:
 ```bash
-remove-json-keys
+remove-json-keys [options] # alias: remove-json
 ```
 
 If no options are provided, the CLI will:
@@ -55,7 +55,7 @@ remove-json-keys --keys=author -W
 Remove `appDesc` + `err_notFound` keys from JSON files found in `data` dir:
 
 ```bash
-remove-json-keys -k appDesc,err_notFound -d data -W
+remove-json -k appDesc,err_notFound -d data -W
 ```
 
 ## MIT License

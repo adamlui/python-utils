@@ -25,7 +25,7 @@ pip install translate-messages
 
 Run the CLI:
 ```bash
-translate-msgs
+translate-messages [options] # alias: translate-msgs
 ```
 
 If no options are provided, the CLI will:
@@ -58,7 +58,7 @@ Options can be set by using command-line arguments:
 Translate everything except `appName` from `_locales/en/messages.json` to French and Spanish:
 
 ```bash
-translate-msgs --include-langs=fr,es --ignore-keys=appName -W
+translate-messages --include-langs=fr,es --ignore-keys=appName -W
 ```
 
 Translate `appDesc` + `err_notFound` keys from `_msgs/en/messages.json`:
