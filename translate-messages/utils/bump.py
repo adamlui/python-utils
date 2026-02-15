@@ -1,7 +1,7 @@
 import argparse, re, sys
 from os import path
 from types import SimpleNamespace as sn
-import tomli, tomli_w
+from lib import toml
 
 sys.path.insert(0, path.join(path.dirname(__file__), '../src'))
 from translate_messages.lib import data, log # type: ignore
@@ -43,7 +43,7 @@ def bump_pyproject_vers(pyproject_path, pyproject, project, new_ver): # project.
 
     # Bump project.version
     pyproject['project']['version'] = new_ver
-    with open(pyproject_path, 'wb') as file : tomli_w.dump(pyproject, file)
+    toml.write(pyproject_path, pyproject)
     log.success(msgs.log_BUMPED_PROJECT_VER.format(prev_ver=project.version, new_ver=new_ver))
 
     # Bump project.urls['Releases']
@@ -52,12 +52,12 @@ def bump_pyproject_vers(pyproject_path, pyproject, project, new_ver): # project.
     log.data(f"{msgs.log_CREATED_CHANGELOG_URL}: {changelog_url}")
     log.info(f'{msgs.log_UPDATING_CHANGELOG_URL_IN} pyproject.toml...')
     pyproject['project']['urls']['Changelog'] = changelog_url
-    with open(pyproject_path, 'wb') as file : tomli_w.dump(pyproject, file)
+    toml.write(pyproject_path, pyproject)
     log.success(msgs.log_BUMPED_CHANGELOG_URL_VER_TAG.format(ver_tag=ver_tag))
 
 def update_readme_vers(new_ver): # in URLs
     log.info(f'{msgs.log_UPDATING_VERS_IN} README.md...')
-    readme_path = path.join(path.dirname(__file__), '../README.md')
+    readme_path = path.join(path.dirname(__file__), '../docs/README.md')
     updated_readme_content = re.sub(r'\b(?>\d{1,3}\.\d{1,3}\.\d{1,3})\b', new_ver, data.file.read(readme_path))
     data.file.write(readme_path, updated_readme_content)
     log.success(msgs.log_UPDATED_README_VERS.format(new_ver=new_ver))
@@ -72,7 +72,7 @@ def main():
     # Init project data
     pyproject_path = path.join(path.dirname(__file__), '../pyproject.toml')
     log.info(f'{msgs.log_LOADING_PYPROJECT.format(pyproject_path=pyproject_path)}...')
-    with open(pyproject_path, 'rb') as file : pyproject = tomli.load(file)
+    pyproject = toml.read(pyproject_path)
     project = sn(**pyproject['project'])
 
     # Update files
