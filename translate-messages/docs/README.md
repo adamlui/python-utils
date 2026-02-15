@@ -46,7 +46,7 @@ Options can be set by using command-line arguments:
 | `--exclude-langs`      | Comma-separated list of languages to exclude                                                         | `--exclude-langs=en,es`
 | `-k`, `--keys`         | Comma-separated list of keys to translate                                                            | `--keys=appDesc,err_notFound`
 | `--exclude-keys`       | Comma-separated list of keys to ignore                                                               | `--exclude-keys=appName,author`
-| `-i`, `--init`         | Create .translate-msgs.config.json in project root to store defaults                                 |
+| `-i`, `--init`         | Create .translate-msgs.config.jsonc in project root to store defaults                                |
 | `-f`, `--force`        | Force overwrite of existing config file when using `--init`                                          |
 | `-W`, `--no-wizard`    | Skip interactive prompts during start-up                                                             |
 | `-h`, `--help`         | Show help screen                                                                                     |
@@ -69,11 +69,11 @@ translate-msgs -k appDesc,err_notFound -d _msgs -W
 
 ## Config file
 
-Use `--init` to create `.translate-msgs.config.json` in your project root to set default options.
+Use `--init` to create `.translate-msgs.config.jsonc` in your project root to set default options.
 
 Example defaults:
 
-```json
+```jsonc
 {
   "locales_dir": "_locales",
   "target_langs": "",

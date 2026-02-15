@@ -26,7 +26,7 @@ controls = sns(
     ),
     init=sns(
         args=['-i', '--init'],
-        action='store_true', help='Create .translate-msgs.config.json file to store defaults'
+        action='store_true', help='Create .translate-msgs.config.jsonc file to store defaults'
     ),
     force=sns(
         args=['-f', '--force', '--overwrite'],
@@ -48,15 +48,21 @@ def load(cli, caller_file):
     cli.config = sns()
     cli.project_root = path.join(path.dirname(caller_file),
         f"../../{ '' if 'src' in path.dirname(caller_file) else '../../' }")
+    if not getattr(cli, 'short_name', None) : cli.short_name = cli.name.replace('messages', 'msgs')
     possile_config_filenames = [
-         '.translate-msgs.config.json', 'translate-msgs.config.json',
-        f'.{cli.name}.config.json', f'{cli.name}.config.json'
+        f'.{cli.short_name}.config.json', f'{cli.short_name}.config.json',
+        f'.{cli.short_name}.config.jsonc', f'{cli.short_name}.config.json',
+        f'.{cli.short_name}.config.json5', f'{cli.short_name}.config.json',
+        f'.{cli.name}.config.json', f'{cli.name}.config.json',
+        f'.{cli.name}.config.jsonc', f'{cli.name}.config.jsonc',
+        f'.{cli.name}.config.json5', f'{cli.name}.config.json5',
     ]
     for filename in possile_config_filenames:
         cli.config_filepath = path.join(cli.project_root, filename)
         if path.exists(cli.config_filepath):
             cli.config = data.sns.from_dict(data.json.read(cli.config_filepath))
             cli.config_filename = filename
+            print(cli.config) ; exit()
             break
 
     # Parse CLI args

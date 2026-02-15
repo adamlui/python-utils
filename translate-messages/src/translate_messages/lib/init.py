@@ -14,7 +14,7 @@ def config_file(cli):
             log.warn(f'Config already exists at {cli.config_filepath}. Skipping --init.')
             log.tip('Pass --force to overwrite.')
             return
-    cli.config_filename = '.translate-msgs.config.json'
+    cli.config_filename = '.translate-msgs.config.jsonc'
     cli.config_filepath = os.path.join(cli.project_root, cli.config_filename)
     try:
         jsd_url = f'{cli.urls.jsdelivr}/{cli.name}/{cli.config_filename}'
