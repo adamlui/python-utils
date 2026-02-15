@@ -62,7 +62,6 @@ def load(cli, caller_file):
         if path.exists(cli.config_filepath):
             cli.config = data.sns.from_dict(data.json.read(cli.config_filepath))
             cli.config_filename = filename
-            print(cli.config) ; exit()
             break
 
     # Parse CLI args
