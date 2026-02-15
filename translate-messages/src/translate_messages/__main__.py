@@ -16,10 +16,10 @@ def main():
             new_keys = data.csv.parse(input_keys)
             existing_keys = set(cli.config.exclude_keys)
             truly_new_keys = []
-
             for key in new_keys:
                 if key not in existing_keys and key not in truly_new_keys:
                     truly_new_keys.append(key)
+
             if truly_new_keys:
                 cli.config.exclude_keys.extend(truly_new_keys)
                 print(f"Added: {', '.join(truly_new_keys)}")
