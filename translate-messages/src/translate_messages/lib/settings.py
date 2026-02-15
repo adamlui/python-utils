@@ -48,7 +48,6 @@ def load(cli, caller_file):
     cli.config = sns()
     cli.project_root = path.join(path.dirname(caller_file),
         f"../../{ '' if 'src' in path.dirname(caller_file) else '../../' }")
-    if not getattr(cli, 'short_name', None) : cli.short_name = cli.name.replace('messages', 'msgs')
     possile_config_filenames = [
         f'.{cli.short_name}.config.json', f'{cli.short_name}.config.json',
         f'.{cli.short_name}.config.jsonc', f'{cli.short_name}.config.json',

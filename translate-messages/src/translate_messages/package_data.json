@@ -1,5 +1,6 @@
 {
   "name": "translate-messages",
+  "short_name": "translate-msgs",
   "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
   "urls": {
     "docs": "https://github.com/adamlui/python-utils/tree/main/translate-messages/docs",
