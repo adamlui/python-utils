@@ -37,12 +37,12 @@ _Note: Key/values can span multiple lines and have any amount of whitespace betw
 
 Options can be set by using command-line arguments:
 
-| Option                 | Description                                                    | Example
-| ---------------------- | -------------------------------------------------------------- | -----------------------------
-| `-d`, `--json-dir`     | Name of the folder containing JSON files (default: `_locales`) | `--json-dir=data`
-| `-k`, `--keys`         | Comma-separated list of keys to remove                         | `--keys=appDesc,err_notFound`
-| `-W`, `--no-wizard`    | Skip interactive prompts during start-up                       |
-| `-h`, `--help`         | Show help screen                                               |
+| Option              | Description                                                    | Example
+| --------------------| -------------------------------------------------------------- | -----------------------------
+| `-d`, `--json-dir`  | Name of the folder containing JSON files (default: `_locales`) | `--json-dir=data`
+| `-k`, `--keys`      | Comma-separated list of keys to remove                         | `--keys=appDesc,err_notFound`
+| `-W`, `--no-wizard` | Skip interactive prompts during start-up                       |
+| `-h`, `--help`      | Show help screen                                               |
 
 ## Examples
 
