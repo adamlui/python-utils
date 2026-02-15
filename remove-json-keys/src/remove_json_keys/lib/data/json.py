@@ -1,9 +1,11 @@
 import json, os, re
 from . import file
 
-def read(json_path):
-    if not os.path.exists(json_path) : return {}
-    with open(json_path, 'r', encoding='utf-8') as file : return json.load(file)
+def read(file_path):
+    if not os.path.exists(file_path):
+        return {}
+    with open(file_path, 'r', encoding='utf-8') as file:
+        return json.load(file)
 
 def remove_keys(cli):
     keys_removed, keys_skipped, files_processed_cnt = [], [], 0
