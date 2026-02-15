@@ -28,7 +28,7 @@ Run the CLI:
 translate-messages [options] # alias: translate-msgs
 ```
 
-If no options are provided, the CLI will:
+If no options are passed, the CLI will:
 1. Prompt for message keys to ignore 
 2. Auto-discover closest child `_locales` dir
 3. Translate `en/messages.json` to target languages
