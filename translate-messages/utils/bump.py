@@ -44,7 +44,7 @@ def bump_pyproject_vers(pyproject_path, pyproject, project, new_ver): # project.
     # Bump project.version
     pyproject['project']['version'] = new_ver
     toml.write(pyproject_path, pyproject)
-    log.success(msgs.log_BUMPED_PROJECT_VER.format(prev_ver=project.version, new_ver=new_ver))
+    log.success(msgs.log_BUMPED_PROJECT_VER.format(prev_ver=project.version, **locals()))
 
     # Bump project.urls['Releases']
     new_ver_tag = f'{project.name}-{new_ver}'
@@ -53,7 +53,7 @@ def bump_pyproject_vers(pyproject_path, pyproject, project, new_ver): # project.
     log.info(f'{msgs.log_UPDATING_CLOG_URL_IN} pyproject.toml...')
     pyproject['project']['urls']['Changelog'] = changelog_url
     toml.write(pyproject_path, pyproject)
-    log.success(msgs.log_BUMPED_CLOG_URL_VER_TAG.format(new_ver_tag=new_ver_tag))
+    log.success(msgs.log_BUMPED_CLOG_URL_VER_TAG.format(**locals()))
 
 def update_readme_vers(new_ver): # in URLs
     log.info(f'{msgs.log_UPDATING_VERS_IN} docs/README.md...')
@@ -71,7 +71,7 @@ def main():
 
     # Init project data
     pyproject_path = path.join(path.dirname(__file__), '../pyproject.toml')
-    log.info(f'{msgs.log_LOADING_PYPROJECT.format(pyproject_path=pyproject_path)}...')
+    log.info(f'{msgs.log_LOADING_PYPROJECT.format(**locals())}...')
     pyproject = toml.read(pyproject_path)
     project = sn(**pyproject['project'])
 
