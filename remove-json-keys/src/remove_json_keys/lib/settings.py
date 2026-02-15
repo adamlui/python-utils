@@ -24,10 +24,7 @@ controls = sn(
 def load(cli):
 
     # Parse CLI args
-    argp = argparse.ArgumentParser(
-        description="Simply remove JSON keys via CLI command",
-        add_help=False # disable default --help to re-create last
-    )
+    argp = argparse.ArgumentParser(description="Simply remove JSON keys via CLI command", add_help=False)
     cli.config=sn()
     for attr_name in vars(controls):
         kwargs = getattr(controls, attr_name).__dict__.copy()
