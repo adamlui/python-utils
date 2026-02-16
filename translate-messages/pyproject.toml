@@ -24,7 +24,14 @@ dependencies = [
 requires-python = ">=3.6,<4.0"
 keywords = [
     "chrome",
+    "console",
+    "cli",
+    "data",
+    "dev tool",
     "i18n",
+    "internationalization",
+    "json",
+    "localization",
     "messages",
     "mymemory",
     "translate",
