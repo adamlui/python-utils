@@ -39,17 +39,17 @@ _Note: Any messages.json in the [`chrome.i18n`](https://developer.chrome.com/doc
 
 Options can be set by using command-line arguments:
 
-| Option                 | Description                                                                                          | Example
-| ---------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------
-| `-d`, `--locales-dir`  | Name of the folder containing locale files (default: `_locales`)                                     | `--locales-dir=_messages`
-| `-t`, `--target-langs` | Comma-separated list of languages to include (default: all [`supported_locales`][supported-locales]) | `--target-langs=en,es,fr`
-| `-k`, `--keys`         | Comma-separated list of keys to translate                                                            | `--keys=app_DESC,err_NOT_FOUND`
-| `--exclude-langs`      | Comma-separated list of languages to exclude                                                         | `--exclude-langs=en,es`
-| `--exclude-keys`       | Comma-separated list of keys to ignore                                                               | `--exclude-keys=app_NAME,author`
-| `-i`, `--init`         | Create `.translate-msgs.config.jsonc` in project root to store default options                       |
-| `-f`, `--force`        | Force overwrite of existing config file when using `--init`                                          |
-| `-W`, `--no-wizard`    | Skip interactive prompts during start-up                                                             |
-| `-h`, `--help`         | Show help screen                                                                                     |
+| Option                 | Description                                                                                               | Example
+| ---------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------
+| `-d`, `--locales-dir`  | Name of the folder containing locale files (default: `_locales`)                                          | `--locales-dir=_messages`
+| `-t`, `--target-langs` | Comma-separated list of languages to translate to (default: all [`supported_locales`][supported-locales]) | `--target-langs=en,es,fr`
+| `-k`, `--keys`         | Comma-separated list of keys to translate                                                                 | `--keys=app_DESC,err_NOT_FOUND`
+| `--exclude-langs`      | Comma-separated list of languages to exclude                                                              | `--exclude-langs=en,es`
+| `--exclude-keys`       | Comma-separated list of keys to ignore                                                                    | `--exclude-keys=app_NAME,author`
+| `-i`, `--init`         | Create `.translate-msgs.config.jsonc` in project root to store default options                            |
+| `-f`, `--force`        | Force overwrite of existing config file when using `--init`                                               |
+| `-W`, `--no-wizard`    | Skip interactive prompts during start-up                                                                  |
+| `-h`, `--help`         | Show help screen                                                                                          |
 
 [supported-locales]: https://github.com/adamlui/python-utils/blob/translate-messages-1.2.0/translate-messages/src/translate_messages/package_data.json#L21-L26
 
