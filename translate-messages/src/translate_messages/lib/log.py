@@ -36,9 +36,7 @@ def final_summary(summary_dict):
             data(f'Languages {status}: {len(lang_set)}')
             print(f"{status_color}[ {', '.join(lang_set)} ]{colors.nc}")
 
-
 def trunc(msg, end='\n'):
     truncated_lines = [
         line if len(line) < terminal_width else line[:terminal_width -4] + '...' for line in msg.splitlines()]
     print('\n'.join(truncated_lines), end=end)
-
