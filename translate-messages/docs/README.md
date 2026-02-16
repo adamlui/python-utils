@@ -51,8 +51,6 @@ Options can be set by using command-line arguments:
 | `-W`, `--no-wizard`    | Skip interactive prompts during start-up                                                                  |
 | `-h`, `--help`         | Show help screen                                                                                          |
 
-[supported-locales]: https://github.com/adamlui/python-utils/blob/translate-messages-1.2.0/translate-messages/src/translate_messages/package_data.json#L21-L26
-
 ## Examples
 
 Translate all keys except `app_NAME` from `_locales/en/messages.json` to all [`supported_locales`][supported-locales] (prompts for more keys to ignore):
@@ -106,3 +104,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #
 
 <a href="#top">Back to top ↑</a>
+
+[supported-locales]: https://github.com/adamlui/python-utils/blob/translate-messages-1.2.0/translate-messages/src/translate_messages/package_data.json#L21-L26
