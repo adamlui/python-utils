@@ -28,10 +28,10 @@ def config_file(cli):
             jsd_url = f'{cli.urls.jsdelivr}/{cli.name}/{cli.config_filename}'
             resp = requests.get(jsd_url, timeout=5)
             resp.raise_for_status()
-            cli.default_file_config = resp.json()
+            cli.default_file_config = resp.text
         except (requests.RequestException, ValueError) as err:
             raise RuntimeError(f'Failed to fetch default config from {jsd_url}: {err}')
-    data.json.write(cli.default_file_config, cli.config_filepath)
+    data.file.write(cli.config_filepath, cli.default_file_config)
     log.success(f'Default config created at {cli.config_filepath}')
 
 def locales_dir(target_dir):
