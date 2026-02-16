@@ -1,4 +1,4 @@
-from urllib.error import URLError, HTTPError
+from urllib.error import URLError
 from urllib.parse import urlparse
 from urllib.request import urlopen
 
@@ -15,5 +15,5 @@ def get(url, timeout=5, encoding='utf-8', allowed_schemes=('http', 'https'), all
     try:
         with urlopen(url, timeout=timeout) as resp:
             return resp.read().decode(encoding)
-    except (URLError, HTTPError) as err:
+    except URLError as err:
         raise RuntimeError(f'Failed to fetch from {url}: {err}')
