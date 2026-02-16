@@ -1,4 +1,5 @@
-import os, requests
+import os
+import requests
 from . import data, log, settings
 
 def cli(caller_file):
