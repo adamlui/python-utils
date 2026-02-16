@@ -17,7 +17,7 @@ def main():
         log.warn('Unable to locate directory.')
         sys.exit(1)
 
-    keys_removed, keys_skipped, files_processed_cnt = data.json.remove_keys(cli)
+    keys_removed, keys_skipped, files_processed_cnt = data.json.remove_keys(cli.config.json_dir, cli.config.keys)
 
     log.final_summary({
         'removed': [f'{key} ({file_path})' for key, file_path in keys_removed],
