@@ -10,10 +10,12 @@ def bump_patch(session) : session.run('python', 'utils/bump.py', '--patch', *ses
 def bump_minor(session) : session.run('python', 'utils/bump.py', '--minor', *session.posargs)
 @session
 def bump_major(session) : session.run('python', 'utils/bump.py', '--major', *session.posargs)
+
 @session
 def build(session) : clean(session) ; session.run('python', '-m', 'build') ; print('Build complete!')
 @session
 def publish(session) : session.run('bash', 'utils/publish.sh', *session.posargs)
+
 @session
 def deploy_patch(session) : bump_patch(session) ; build(session) ; publish(session)
 @session
