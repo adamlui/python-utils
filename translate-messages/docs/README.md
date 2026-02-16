@@ -43,8 +43,8 @@ Options can be set by using command-line arguments:
 | ---------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------
 | `-d`, `--locales-dir`  | Name of the folder containing locale files (default: `_locales`)                                     | `--locales-dir=_messages`
 | `-t`, `--target-langs` | Comma-separated list of languages to include (default: all [`supported_locales`][supported-locales]) | `--target-langs=en,es,fr`
-| `--exclude-langs`      | Comma-separated list of languages to exclude                                                         | `--exclude-langs=en,es`
 | `-k`, `--keys`         | Comma-separated list of keys to translate                                                            | `--keys=app_DESC,err_NOT_FOUND`
+| `--exclude-langs`      | Comma-separated list of languages to exclude                                                         | `--exclude-langs=en,es`
 | `--exclude-keys`       | Comma-separated list of keys to ignore                                                               | `--exclude-keys=app_NAME,author`
 | `-i`, `--init`         | Create `.translate-msgs.config.jsonc` in project root to store default options                       |
 | `-f`, `--force`        | Force overwrite of existing config file when using `--init`                                          |
