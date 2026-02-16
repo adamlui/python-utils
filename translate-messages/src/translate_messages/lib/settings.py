@@ -49,11 +49,11 @@ def load(cli, caller_file):
     cli.project_root = path.join(path.dirname(caller_file),
         f"../../{ '' if 'src' in path.dirname(caller_file) else '../../' }")
     possile_config_filenames = [
-        f'.{cli.short_name}.config.json', f'{cli.short_name}.config.json',
         f'.{cli.short_name}.config.jsonc', f'{cli.short_name}.config.jsonc',
+        f'.{cli.short_name}.config.json', f'{cli.short_name}.config.json',
         f'.{cli.short_name}.config.json5', f'{cli.short_name}.config.json5',
-        f'.{cli.name}.config.json', f'{cli.name}.config.json',
         f'.{cli.name}.config.jsonc', f'{cli.name}.config.jsonc',
+        f'.{cli.name}.config.json', f'{cli.name}.config.json',
         f'.{cli.name}.config.json5', f'{cli.name}.config.json5',
     ]
     for filename in possile_config_filenames:
