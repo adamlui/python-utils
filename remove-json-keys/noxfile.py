@@ -15,11 +15,11 @@ def build(session) : clean(session) ; session.run('python', '-m', 'build') ; pri
 @session
 def publish(session) : session.run('bash', 'utils/publish.sh', *session.posargs)
 @session
-def release_patch(session) : bump_patch(session) ; build(session) ; publish(session)
+def deploy_patch(session) : bump_patch(session) ; build(session) ; publish(session)
 @session
-def release_minor(session) : bump_minor(session) ; build(session) ; publish(session)
+def deploy_minor(session) : bump_minor(session) ; build(session) ; publish(session)
 @session
-def release_major(session) : bump_major(session) ; build(session) ; publish(session)
+def deploy_major(session) : bump_major(session) ; build(session) ; publish(session)
 
 @session
 def clean(session):
