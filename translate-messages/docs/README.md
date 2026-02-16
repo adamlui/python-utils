@@ -44,8 +44,8 @@ Options can be set by using command-line arguments:
 | `-d`, `--locales-dir`  | Name of the folder containing locale files (default: `_locales`)                                     | `--locales-dir=_messages`
 | `-t`, `--target-langs` | Comma-separated list of languages to include (default: all [`supported_locales`][supported-locales]) | `--target-langs=en,es,fr`
 | `--exclude-langs`      | Comma-separated list of languages to exclude                                                         | `--exclude-langs=en,es`
-| `-k`, `--keys`         | Comma-separated list of keys to translate                                                            | `--keys=appDesc,err_notFound`
-| `--exclude-keys`       | Comma-separated list of keys to ignore                                                               | `--exclude-keys=appName,author`
+| `-k`, `--keys`         | Comma-separated list of keys to translate                                                            | `--keys=app_DESC,err_NOT_FOUND`
+| `--exclude-keys`       | Comma-separated list of keys to ignore                                                               | `--exclude-keys=app_NAME,author`
 | `-i`, `--init`         | Create `.translate-msgs.config.jsonc` in project root to store default settings                      |
 | `-f`, `--force`        | Force overwrite of existing config file when using `--init`                                          |
 | `-W`, `--no-wizard`    | Skip interactive prompts during start-up                                                             |
@@ -55,16 +55,16 @@ Options can be set by using command-line arguments:
 
 ## Examples
 
-Translate everything except `appName` from `_locales/en/messages.json` to French and Spanish:
+Translate everything except `app_NAME` from `_locales/en/messages.json` to French and Spanish:
 
 ```bash
-translate-messages --include-langs=fr,es --ignore-keys=appName -W
+translate-messages --include-langs=fr,es --ignore-keys=app_NAME -W
 ```
 
-Translate `appDesc` + `err_notFound` keys from `_msgs/en/messages.json`:
+Translate `app_DESC` + `err_NOT_FOUND` keys from `_msgs/en/messages.json`:
 
 ```bash
-translate-msgs -k appDesc,err_notFound -d _msgs -W
+translate-msgs -k app_DESC,err_NOT_FOUND -d _msgs -W
 ```
 
 ## Config file

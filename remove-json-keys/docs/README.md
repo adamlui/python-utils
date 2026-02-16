@@ -42,7 +42,7 @@ Options can be set by using command-line arguments:
 | Option              | Description                                                    | Example
 | ------------------- | -------------------------------------------------------------- | -----------------------------
 | `-d`, `--json-dir`  | Name of the folder containing JSON files (default: `_locales`) | `--json-dir=data`
-| `-k`, `--keys`      | Comma-separated list of keys to remove                         | `--keys=appDesc,err_notFound`
+| `-k`, `--keys`      | Comma-separated list of keys to remove                         | `--keys=app_DESC,err_NOT_FOUND`
 | `-W`, `--no-wizard` | Skip interactive prompts during start-up                       |
 | `-h`, `--help`      | Show help screen                                               |
 
@@ -54,10 +54,10 @@ Remove `author` key from JSON files found in default `_locales` dir:
 remove-json-keys --keys=author -W
 ```
 
-Remove `appDesc` + `err_notFound` keys from JSON files found in `data` dir:
+Remove `app_DESC` + `err_NOT_FOUND` keys from JSON files found in `data` dir:
 
 ```bash
-remove-json -k appDesc,err_notFound -d data -W
+remove-json -k app_DESC,err_NOT_FOUND -d data -W
 ```
 
 ## MIT License
