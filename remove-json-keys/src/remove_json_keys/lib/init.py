@@ -1,5 +1,4 @@
-import os
-import requests
+import os, urllib.request, urllib.error
 from . import data, log, settings
 
 def cli(caller_file):
@@ -20,10 +19,9 @@ def config_file(cli):
     if not getattr(cli, 'default_file_config', None):
         try:
             jsd_url = f'{cli.urls.jsdelivr}/{cli.name}/{cli.config_filename}'
-            resp = requests.get(jsd_url, timeout=5)
-            resp.raise_for_status()
-            cli.default_file_config = resp.text
-        except (requests.RequestException, ValueError) as err:
+            with urllib.request.urlopen(jsd_url, timeout=5) as resp:
+                cli.default_file_config = resp.read().decode('utf-8')
+        except (urllib.error.URLError, urllib.error.HTTPError, ValueError) as err:
             raise RuntimeError(f'Failed to fetch default config from {jsd_url}: {err}')
     data.file.write(cli.config_filepath, cli.default_file_config)
     log.success(f'Default config created at {cli.config_filepath}')
