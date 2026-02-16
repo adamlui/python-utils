@@ -1,5 +1,3 @@
-import shutil
-from pathlib import Path
 import nox
 
 def session(func) : return nox.session(venv_backend='none')(func)
@@ -26,8 +24,4 @@ def deploy_minor(session) : bump_minor(session) ; build(session) ; publish(sessi
 def deploy_major(session) : bump_major(session) ; build(session) ; publish(session)
 
 @session
-def clean(session):
-    for target in ['dist', 'build', '*_cache', '__pycache__', '*.egg-info']:
-        for path in Path('.').rglob(target):
-            if path.is_dir() : shutil.rmtree(path) ; print(f'Removed {path}/')
-    print('Clean complete!')
+def clean(session) : session.run('python', 'utils/clean.py')
