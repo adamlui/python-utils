@@ -89,3 +89,9 @@ dev = [
 where = [
     "src",
 ]
+
+[tool.setuptools.package-data]
+"*" = [
+    "assets/ascii/*.txt",
+    "package_data.json",
+]
