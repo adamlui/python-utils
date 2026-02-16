@@ -14,7 +14,7 @@ controls = sn(
     ),
     keys=sn(
         args=['-k', '--keys', '--key', '--include-keys', '--include-key', '--translate-keys', '--translate-key'],
-        type=str, parser='csv', help='Keys to translate (e.g. "appDesc,err_notFound")'
+        type=str, parser='csv', help='Keys to translate (e.g. "app_DESC,err_NOT_FOUND")'
     ),
     exclude_langs=sn(
         args=['--exclude-langs', '--exclude-lang', '--ignore-langs', '--ignore-lang'],
@@ -22,7 +22,7 @@ controls = sn(
     ),
     exclude_keys=sn(
         args=['--exclude-keys', '--exclude-key', '--ignore-keys', '--ignore-key'],
-        type=str, parser='csv', help='Keys to ignore (e.g. "appName,author")'
+        type=str, parser='csv', help='Keys to ignore (e.g. "app_NAME,author")'
     ),
     init=sn(
         args=['-i', '--init'],

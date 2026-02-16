@@ -10,7 +10,7 @@ controls = sn(
     ),
     keys=sn(
         args=['-k', '--keys', '--key', '--remove-keys', '--remove-key', '--delete-keys', '--delete-key'],
-        type=str, parser='csv', help='Keys to remove (e.g. "appName,author")'
+        type=str, parser='csv', help='Keys to remove (e.g. "app_NAME,author")'
     ),
     init=sn(
         args=['-i', '--init'],
