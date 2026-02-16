@@ -51,7 +51,7 @@ def load(cli, caller_file):
     argp = argparse.ArgumentParser(description=cli.description, add_help=False)
     for attr_name in vars(controls):
         kwargs = getattr(controls, attr_name).__dict__.copy()
-        args = kwargs.pop('args')  # separate positional flags
+        args = kwargs.pop('args') # separate positional flags
         for forbidden in ('default_val', 'parser'): # remove custom attrs
             kwargs.pop(forbidden, None)
         argp.add_argument(*args, **kwargs)

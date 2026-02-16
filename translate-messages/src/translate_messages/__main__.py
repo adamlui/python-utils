@@ -24,7 +24,7 @@ def main():
     cli.msgs_filename = 'messages.json'
     cli.locales_path = Path(cli.config.locales_dir)
     cli.en_msgs = data.json.read(cli.locales_path / 'en' / cli.msgs_filename)
-    cli.config.target_langs = list(set(cli.config.target_langs))  # remove dupes
+    cli.config.target_langs = list(set(cli.config.target_langs)) # remove dupes
 
     if not cli.config.target_langs:
         cli.config.target_langs = cli.supported_locales
