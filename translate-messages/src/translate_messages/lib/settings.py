@@ -48,7 +48,7 @@ def load(cli, caller_file):
     cli.config = sn()
     cli.project_root = path.join(path.dirname(caller_file),
         f"../../{ '' if 'src' in path.dirname(caller_file) else '../../' }")
-    possile_config_filenames = [
+    possible_config_filenames = [
         f'.{cli.short_name}.config.jsonc', f'{cli.short_name}.config.jsonc',
         f'.{cli.short_name}.config.json', f'{cli.short_name}.config.json',
         f'.{cli.short_name}.config.json5', f'{cli.short_name}.config.json5',
@@ -56,7 +56,7 @@ def load(cli, caller_file):
         f'.{cli.name}.config.json', f'{cli.name}.config.json',
         f'.{cli.name}.config.json5', f'{cli.name}.config.json5',
     ]
-    for filename in possile_config_filenames:
+    for filename in possible_config_filenames:
         cli.config_filepath = path.join(cli.project_root, filename)
         if path.exists(cli.config_filepath):
             cli.config = data.sns.from_dict(data.json.read(cli.config_filepath))
