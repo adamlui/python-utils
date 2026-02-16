@@ -19,6 +19,7 @@ license-files = [
 ]
 dependencies = [
     "colorama>=0.4.6,<1.0.0 ; platform_system == 'Windows'",
+    "json5>=0.9.0,<1.0.0",
     "translate>=3.8.0,<4.0.0",
 ]
 requires-python = ">=3.6,<4.0"
@@ -80,7 +81,6 @@ translate-messages = "translate_messages.__main__:main"
 
 [project.optional-dependencies]
 dev = [
-    "json5>=0.9.0,<1.0.0",
     "nox>=2026.2.9,<2027.0.0",
     "tomli>=2.0.0,<3.0.0",
     "tomli-w>=0.1.0,<2.0.0",
