@@ -5,10 +5,10 @@ def main():
 
     cli = init.cli(__file__)
 
-    if cli.config.init: # --init passed
+    if cli.config.init:
         init.config_file(cli)
         sys.exit(0)
-    if not cli.config.no_wizard: # --no-wizard not passed
+    if not cli.config.no_wizard:
         wizard.run(cli)
 
     log.info(f'Searching for {cli.config.locales_dir}...')
@@ -26,8 +26,9 @@ def main():
     cli.en_msgs = data.json.read(cli.locales_path / 'en' / cli.msgs_filename)
     cli.config.target_langs = list(set(cli.config.target_langs))  # remove dupes
 
-    if not cli.config.target_langs: # merge discovered locales w/ target_langs
-        for lang_path in cli.locales_path.rglob(f'*/{cli.msgs_filename}'):
+    if not cli.config.target_langs:
+        cli.config.target_langs = cli.supported_locales
+        for lang_path in cli.locales_path.rglob(f'*/{cli.msgs_filename}'): # merge discovered locales
             discovered_lang = lang_path.parent.name.replace('_', '-')
             if discovered_lang not in cli.config.target_langs:
                 cli.config.target_langs.append(discovered_lang)
