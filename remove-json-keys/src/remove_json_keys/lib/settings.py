@@ -55,15 +55,15 @@ def load(cli, caller_file):
         for forbidden in ('default_val', 'parser'): # remove custom attrs
             kwargs.pop(forbidden, None)
         argp.add_argument(*args, **kwargs)
-    cli.config.__dict__.update({ key:val for key,val in vars(argp.parse_args()).items() if val is not None })
+    for key, val in vars(argp.parse_args()).items():
+        if getattr(cli.config, key, None) is None:
+            setattr(cli.config, key, val)
 
     # Init cli.config vals
     for name, ctrl in vars(controls).items():
         val = getattr(cli.config, name, None)
         if getattr(ctrl, 'parser', None) == 'csv':
             val = data.csv.parse(val)
-        if getattr(ctrl, 'action', None) == 'store_true':
-            val = val if val is not None else False
         if val is None and hasattr(ctrl, 'default_val'):
             val = ctrl.default_val
         setattr(cli.config, name, val)
