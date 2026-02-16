@@ -62,7 +62,7 @@ def write_translations(cli):
         else : langs_translated.append(lang_code) ; lang_translated = True
         if not lang_translated : langs_not_translated.append(lang_code)
         status = (
-            f'{log.colors.dg}Adde' if lang_added else
+            f'{log.colors.dg}Added' if lang_added else
             f'{log.colors.gry}Skipped' if lang_skipped else
             f'{log.colors.dy}Updated'
         )
