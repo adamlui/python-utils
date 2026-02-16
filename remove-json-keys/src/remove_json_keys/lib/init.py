@@ -34,7 +34,7 @@ def config_file(cli):
     data.file.write(cli.config_filepath, cli.default_file_config)
     log.success(f'Default config created at {cli.config_filepath}')
 
-def locales_dir(target_dir):
+def json_dir(target_dir):
     for root, dirs, _ in os.walk(os.getcwd()):
         if target_dir in dirs:
             return os.path.join(root, target_dir)
