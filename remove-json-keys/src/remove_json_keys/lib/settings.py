@@ -14,7 +14,7 @@ controls = sn(
     ),
     init=sn(
         args=['-i', '--init'],
-        action='store_true', help='Create .remove-json-keys.config.json5 file to store default options'
+        action='store_true', help='Create .remove-json.config.json5 file to store default options'
     ),
     force=sn(
         args=['-f', '--force', '--overwrite'],

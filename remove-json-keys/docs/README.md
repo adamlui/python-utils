@@ -43,7 +43,7 @@ Options can be set by using command-line arguments:
 | ------------------- | ------------------------------------------------------------------------------- | -----------------------------
 | `-d`, `--json-dir`  | Name of the folder containing JSON files (default: `_locales`)                  | `--json-dir=data`
 | `-k`, `--keys`      | Comma-separated list of keys to remove                                          | `--keys=appDesc,err_notFound`
-| `-i`, `--init`      | Create .remove-json-keys.config.json5 in project root to store default settings |
+| `-i`, `--init`      | Create .remove-json.config.json5 in project root to store default settings      |
 | `-W`, `--no-wizard` | Skip interactive prompts during start-up                                        |
 | `-h`, `--help`      | Show help screen                                                                |
 
@@ -69,7 +69,7 @@ remove-json -k app_DESC,app_VER -d data -W # no prompts
 
 ## Config file
 
-Use `--init` to create `.remove-json-keys.config.json5` in your project root to set default options.
+Use `--init` to create `.remove-json.config.json5` in your project root to set default options.
 
 Example defaults:
 
