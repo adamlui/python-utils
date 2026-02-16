@@ -29,7 +29,7 @@ def create_translations(cli, target_msgs, lang_code):
             translated_msgs[key] = { 'message': translated_msg }
 
         else : translated_msgs[key] = target_msgs[key]
-    
+
     return translated_msgs
 
 def write_translations(cli):
