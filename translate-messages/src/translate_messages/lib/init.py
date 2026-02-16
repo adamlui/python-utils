@@ -17,7 +17,7 @@ def config_file(cli):
             return
     cli.config_filename = f'.{cli.short_name}.config.jsonc'
     cli.config_filepath = os.path.join(cli.project_root, cli.config_filename)
-    if not cli.default_file_config:
+    if not getattr(cli, 'default_file_config', None):
         try:
             jsd_url = f'{cli.urls.jsdelivr}/{cli.name}/{cli.config_filename}'
             resp = requests.get(jsd_url, timeout=5)
