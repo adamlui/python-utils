@@ -1,12 +1,39 @@
 import os
-from . import data, settings
+import requests
+from . import data, log, settings
 
-def cli():
+def cli(caller_file):
     cli = data.sns.from_dict(data.json.read(os.path.join(os.path.dirname(__file__), '../package_data.json')))
-    settings.load(cli)
+    settings.load(cli, caller_file)
     return cli
 
 def json_dir(target_dir):
+    for root, dirs, _ in os.walk(os.getcwd()):
+        if target_dir in dirs:
+            return os.path.join(root, target_dir)
+    return None
+
+def config_file(cli):
+    if os.path.exists(cli.config_filepath):
+        if cli.config.force:
+            log.info(f'Overwriting existing config at {cli.config_filepath}...')
+        else:
+            log.warn(f'Config already exists at {cli.config_filepath}. Skipping --init.')
+            log.tip('Pass --force to overwrite.')
+            return
+    cli.config_filename = f'.{cli.name}.config.jsonc'
+    cli.config_filepath = os.path.join(cli.project_root, cli.config_filename)
+    try:
+        jsd_url = f'{cli.urls.jsdelivr}/{cli.name}/{cli.config_filename}'
+        resp = requests.get(jsd_url, timeout=5)
+        resp.raise_for_status()
+        cli.file_config = resp.json()
+    except (requests.RequestException, ValueError) as err:
+        raise RuntimeError(f"Failed to fetch default config from {jsd_url}: {err}")
+    data.json.write(cli.file_config, cli.config_filepath)
+    log.success(f'Default config created at {cli.config_filepath}')
+
+def locales_dir(target_dir):
     for root, dirs, _ in os.walk(os.getcwd()):
         if target_dir in dirs:
             return os.path.join(root, target_dir)

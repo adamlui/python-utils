@@ -1,4 +1,5 @@
 import argparse
+from os import path
 from types import SimpleNamespace as sn
 from . import data
 
@@ -11,6 +12,14 @@ controls = sn(
         args=['-k', '--keys', '--key', '--remove-keys', '--remove-key', '--delete-keys', '--delete-key'],
         type=str, parser='csv', help='Keys to remove (e.g. "appName,author")'
     ),
+    init=sn(
+        args=['-i', '--init'],
+        action='store_true', help='Create .remove-json-keys.config.jsonc file to store default options'
+    ),
+    force=sn(
+        args=['-f', '--force', '--overwrite'],
+        action='store_true', help='Force overwrite existing config file when using --init'
+    ),
     no_wizard=sn(
         args=['-W', '--no-wizard', '--skip-wizard'],
         action='store_true', default=None, help='Skip interactive prompts during start-up'
@@ -21,11 +30,30 @@ controls = sn(
     )
 )
 
-def load(cli):
+def load(cli, caller_file):
+
+    # Load from config file
+    cli.config = sn()
+    cli.project_root = path.join(path.dirname(caller_file),
+        f"../../{ '' if 'src' in path.dirname(caller_file) else '../../' }")
+    possile_config_filenames = [
+        f'.{cli.short_name}.config.json', f'{cli.short_name}.config.json',
+        f'.{cli.short_name}.config.jsonc', f'{cli.short_name}.config.json',
+        f'.{cli.short_name}.config.json5', f'{cli.short_name}.config.json',
+        f'.{cli.name}.config.json', f'{cli.name}.config.json',
+        f'.{cli.name}.config.jsonc', f'{cli.name}.config.jsonc',
+        f'.{cli.name}.config.json5', f'{cli.name}.config.json5',
+    ]
+    for filename in possile_config_filenames:
+        cli.config_filepath = path.join(cli.project_root, filename)
+        if path.exists(cli.config_filepath):
+            cli.config = data.sns.from_dict(data.json.read(cli.config_filepath))
+            cli.config_filename = filename
+            break
 
     # Parse CLI args
-    argp = argparse.ArgumentParser(description="Simply remove JSON keys via CLI command", add_help=False)
-    cli.config=sn()
+    argp = argparse.ArgumentParser(
+        description="Simply remove JSON keys via CLI command", add_help=False)
     for attr_name in vars(controls):
         kwargs = getattr(controls, attr_name).__dict__.copy()
         args = kwargs.pop('args')  # separate positional flags

@@ -39,12 +39,13 @@ _Note: Key/values can span multiple lines and have any amount of whitespace betw
 
 Options can be set by using command-line arguments:
 
-| Option              | Description                                                    | Example
-| ------------------- | -------------------------------------------------------------- | -----------------------------
-| `-d`, `--json-dir`  | Name of the folder containing JSON files (default: `_locales`) | `--json-dir=data`
-| `-k`, `--keys`      | Comma-separated list of keys to remove                         | `--keys=app_DESC,err_NOT_FOUND`
-| `-W`, `--no-wizard` | Skip interactive prompts during start-up                       |
-| `-h`, `--help`      | Show help screen                                               |
+| Option              | Description                                                                     | Example
+| ------------------- | ------------------------------------------------------------------------------- | -----------------------------
+| `-d`, `--json-dir`  | Name of the folder containing JSON files (default: `_locales`)                  | `--json-dir=data`
+| `-k`, `--keys`      | Comma-separated list of keys to remove                                          | `--keys=appDesc,err_notFound`
+| `-i`, `--init`      | Create .remove-json-keys.config.jsonc in project root to store default settings |
+| `-W`, `--no-wizard` | Skip interactive prompts during start-up                                        |
+| `-h`, `--help`      | Show help screen                                                                |
 
 ## Examples
 
@@ -65,6 +66,23 @@ Remove `app_DESC` + `app_VER` keys from JSON files found in `data` dir:
 ```bash
 remove-json -k app_DESC,app_VER -d data -W
 ```
+
+## Config file
+
+Use `--init` to create `.remove-json-keys.config.jsonc` in your project root to set default options.
+
+Example defaults:
+
+```jsonc
+{
+  "json_dir": "_locales",
+  "keys": "",
+  "force": false,
+  "no_wizard": false
+}
+```
+
+_Note: CLI arguments always override config file._
 
 ## MIT License
 
