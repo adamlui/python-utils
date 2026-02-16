@@ -26,7 +26,7 @@ controls = sn(
     ),
     init=sn(
         args=['-i', '--init'],
-        action='store_true', help='Create .translate-msgs.config.jsonc file to store defaults'
+        action='store_true', help='Create .translate-msgs.config.jsonc file to store default settings'
     ),
     force=sn(
         args=['-f', '--force', '--overwrite'],
