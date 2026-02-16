@@ -5,6 +5,8 @@ import nox
 def session(func) : return nox.session(venv_backend='none')(func)
 
 @session
+def bump(session) : session.run('python', 'utils/bump.py', *session.posargs)
+@session
 def bump_patch(session) : session.run('python', 'utils/bump.py', '--patch', *session.posargs)
 @session
 def bump_minor(session) : session.run('python', 'utils/bump.py', '--minor', *session.posargs)
