@@ -32,7 +32,7 @@ def remove_keys(json_dir, keys):
 
     return keys_removed, keys_skipped, files_processed_cnt
 
-def write(file_path, src_data):
+def write(file_path, data):
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
     with open(file_path, 'w', encoding='utf-8') as file:
-        json.dump(src_data, file, indent=2, ensure_ascii=False)
+        json.dump(data, file, indent=2, ensure_ascii=False)
