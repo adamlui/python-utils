@@ -37,8 +37,8 @@ def load(cli, caller_file):
     cli.project_root = path.join(path.dirname(caller_file),
         f"../../{ '' if 'src' in path.dirname(caller_file) else '../../' }")
     possible_config_filenames = [
-        f'{prefix}{name}.config.{ext}'
-            for prefix in ['.', ''] for name in [cli.short_name, cli.name] for ext in ['json5', 'json', 'jsonc']
+        f'{prefix}{name}.config.json{suffix}'
+            for prefix in ['.', ''] for name in [cli.short_name, cli.name] for suffix in ['5', '', 'c']
     ]
     for filename in possible_config_filenames:
         cli.config_filepath = path.join(cli.project_root, filename)
