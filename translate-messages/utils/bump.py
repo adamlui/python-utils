@@ -1,8 +1,8 @@
 import argparse, re, sys
 from os import path
 from types import SimpleNamespace as sn
-from lib import toml
 
+from lib import toml
 sys.path.insert(0, path.join(path.dirname(__file__), '../src'))
 from translate_messages.lib import data, log # type: ignore
 
