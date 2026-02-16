@@ -23,14 +23,15 @@ def config_file(cli):
             return
     cli.config_filename = f'.{cli.name}.config.jsonc'
     cli.config_filepath = os.path.join(cli.project_root, cli.config_filename)
-    try:
-        jsd_url = f'{cli.urls.jsdelivr}/{cli.name}/{cli.config_filename}'
-        resp = requests.get(jsd_url, timeout=5)
-        resp.raise_for_status()
-        cli.file_config = resp.json()
-    except (requests.RequestException, ValueError) as err:
-        raise RuntimeError(f"Failed to fetch default config from {jsd_url}: {err}")
-    data.json.write(cli.file_config, cli.config_filepath)
+    if not cli.default_file_config:
+        try:
+            jsd_url = f'{cli.urls.jsdelivr}/{cli.name}/{cli.config_filename}'
+            resp = requests.get(jsd_url, timeout=5)
+            resp.raise_for_status()
+            cli.default_file_config = resp.json()
+        except (requests.RequestException, ValueError) as err:
+            raise RuntimeError(f"Failed to fetch default config from {jsd_url}: {err}")
+    data.json.write(cli.default_file_config, cli.config_filepath)
     log.success(f'Default config created at {cli.config_filepath}')
 
 def locales_dir(target_dir):
