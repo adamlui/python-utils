@@ -49,22 +49,22 @@ Options can be set by using command-line arguments:
 
 ## Examples
 
-Remove `author` key from JSON files found in default `_locales` dir (prompts for more keys):
+Remove `author` key from JSON files found in default `_locales` dir:
 
 ```bash
-remove-json-keys --keys=author
+remove-json-keys --keys=author # prompts for more keys to remove
 ```
 
-Remove `info_SUCCESS` key from JSON files found in `messages` dir (no prompts):
+Remove `info_SUCCESS` key from JSON files found in `messages` dir:
 
 ```bash
-remove-json-keys --keys=err_NOT_FOUND --json-dir=messages -W
+remove-json-keys --keys=err_NOT_FOUND --json-dir=messages -W # no prompts
 ```
 
 Remove `app_DESC` + `app_VER` keys from JSON files found in `data` dir:
 
 ```bash
-remove-json -k app_DESC,app_VER -d data -W
+remove-json -k app_DESC,app_VER -d data -W # no prompts
 ```
 
 ## Config file

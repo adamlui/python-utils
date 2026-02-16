@@ -53,22 +53,22 @@ Options can be set by using command-line arguments:
 
 ## Examples
 
-Translate all keys except `app_NAME` from `_locales/en/messages.json` to all [`supported_locales`][supported-locales] (prompts for more keys to ignore):
+Translate all keys except `app_NAME` from `_locales/en/messages.json` to all [`supported_locales`][supported-locales]:
 
 ```bash
-translate-messages --ignore-keys=app_NAME
+translate-messages --ignore-keys=app_NAME # prompts for more keys to ignore
 ```
 
-Translate `app_DESC` key from `messges/en/messages.json` to French (no prompts):
+Translate `app_DESC` key from `messges/en/messages.json` to French:
 
 ```bash
-translate-messages --keys=app_DESC --locales-dir=messages --target-langs=fr -W
+translate-messages --keys=app_DESC --locales-dir=messages --target-langs=fr -W # no prompts
 ```
 
 Translate `app_DESC` + `err_NOT_FOUND` keys from `_msgs/en/messages.json` to Spanish and Hindi:
 
 ```bash
-translate-msgs -k app_DESC,err_NOT_FOUND -d _msgs -t es,hi -W
+translate-msgs -k app_DESC,err_NOT_FOUND -d _msgs -t es,hi -W # no prompts
 ```
 
 ## Config file
