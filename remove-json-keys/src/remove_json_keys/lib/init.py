@@ -7,12 +7,6 @@ def cli(caller_file):
     settings.load(cli, caller_file)
     return cli
 
-def json_dir(target_dir):
-    for root, dirs, _ in os.walk(os.getcwd()):
-        if target_dir in dirs:
-            return os.path.join(root, target_dir)
-    return None
-
 def config_file(cli):
     if os.path.exists(cli.config_filepath):
         if cli.config.force:
