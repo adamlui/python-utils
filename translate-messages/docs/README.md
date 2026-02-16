@@ -55,7 +55,7 @@ Options can be set by using command-line arguments:
 
 ## Examples
 
-Translate all keys except `app_NAME` from `_locales/en/messages.json` to all [`supported_locales`][supported-locales] (prompts for more keys):
+Translate all keys except `app_NAME` from `_locales/en/messages.json` to all [`supported_locales`][supported-locales] (prompts for more keys to ignore):
 
 ```bash
 translate-messages --ignore-keys=app_NAME
