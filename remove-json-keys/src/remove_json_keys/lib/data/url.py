@@ -1,8 +1,19 @@
-import urllib.request, urllib.error
+from urllib.error import URLError, HTTPError
+from urllib.parse import urlparse
+from urllib.request import urlopen
 
-def get(url, timeout=5, encoding='utf-8'):
+def get(url, timeout=5, encoding='utf-8', allowed_schemes=('http', 'https'), allowed_domains=[]):
+    parsed_url = urlparse(url)
+
+    if parsed_url.scheme not in allowed_schemes:
+        raise ValueError(f"URL scheme '{parsed_url.scheme}' not allowed. Allowed: {allowed_schemes}")
+
+    if allowed_domains:
+        domain = parsed_url.netloc.lower()
+        if not any(domain.endswith(d.lower()) for d in allowed_domains):
+            raise ValueError(f"URL domain '{domain}' not allowed. Allowed: {allowed_domains}")
     try:
-        with urllib.request.urlopen(url, timeout=timeout) as resp:
+        with urlopen(url, timeout=timeout) as resp:
             return resp.read().decode(encoding)
-    except (urllib.error.URLError, urllib.error.HTTPError) as err:
+    except (URLError, HTTPError) as err:
         raise RuntimeError(f'Failed to fetch from {url}: {err}')
