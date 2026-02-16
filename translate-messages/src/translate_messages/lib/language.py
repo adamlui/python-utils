@@ -34,8 +34,8 @@ def create_translations(cli, target_msgs, lang_code):
     return translated_msgs
 
 def write_translations(cli):
+
     langs_added, langs_skipped, langs_translated, langs_not_translated = [], [], [], []
-    
     for lang_code in cli.config.target_langs:
         lang_added, lang_skipped, lang_translated = False, False, False
         lang_folder = lang_code.replace('-', '_')
