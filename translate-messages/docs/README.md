@@ -46,7 +46,7 @@ Options can be set by using command-line arguments:
 | `--exclude-langs`      | Comma-separated list of languages to exclude                                                         | `--exclude-langs=en,es`
 | `-k`, `--keys`         | Comma-separated list of keys to translate                                                            | `--keys=appDesc,err_notFound`
 | `--exclude-keys`       | Comma-separated list of keys to ignore                                                               | `--exclude-keys=appName,author`
-| `-i`, `--init`         | Create .translate-msgs.config.jsonc in project root to store default settings                        |
+| `-i`, `--init`         | Create `.translate-msgs.config.jsonc` in project root to store default settings                      |
 | `-f`, `--force`        | Force overwrite of existing config file when using `--init`                                          |
 | `-W`, `--no-wizard`    | Skip interactive prompts during start-up                                                             |
 | `-h`, `--help`         | Show help screen                                                                                     |
