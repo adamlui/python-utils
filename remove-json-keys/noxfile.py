@@ -23,9 +23,7 @@ def deploy_major(session) : bump_major(session) ; build(session) ; publish(sessi
 
 @session
 def clean(session):
-    paths_to_remove = ['dist', 'build']
-    for path in paths_to_remove:
-        if Path(path).exists() : shutil.rmtree(path) ; print(f'Removed {path}/')
-    for item in Path('.').glob('*.egg-info'):
-        if item.is_dir() : shutil.rmtree(item) ; print(f'Removed {item}/')
+    for target in ['dist', 'build', '*_cache', '__pycache__', '*.egg-info']:
+        for path in Path('.').rglob(target):
+            if path.is_dir() : shutil.rmtree(path) ; print(f'Removed {path}/')
     print('Clean complete!')
