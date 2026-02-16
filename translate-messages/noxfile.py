@@ -3,8 +3,16 @@ from pathlib import Path
 import nox
 
 @nox.session(venv_backend='none')
-def bump(session):
-    session.run('python', 'utils/bump.py', *session.posargs)
+def bump_major(session):
+    session.run('python', 'utils/bump.py', '--major', *session.posargs)
+
+@nox.session(venv_backend='none')
+def bump_minor(session):
+    session.run('python', 'utils/bump.py', '--minor', *session.posargs)
+
+@nox.session(venv_backend='none')
+def bump_patch(session):
+    session.run('python', 'utils/bump.py', '--patch', *session.posargs)
 
 @nox.session(venv_backend='none')
 def build(session):
