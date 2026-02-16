@@ -56,7 +56,7 @@ def write_translations(cli):
         log.info(f"{ 'Adding' if not msgs else 'Updating' } {lang_folder}/{cli.msgs_filename}...", end='')
         sys.stdout.flush()
         translated_msgs = create_translations(cli, msgs, lang_code)
-        data.json.write(translated_msgs, msgs_path)
+        data.json.write(msgs_path, translated_msgs)
 
         if translated_msgs == msgs : langs_skipped.append(lang_code) ; lang_skipped = True
         elif translated_msgs != msgs : langs_translated.append(lang_code) ; lang_translated = True
