@@ -48,10 +48,13 @@ def write_translations(cli):
             lang_folder = lang_folder[:sep_idx] + '_' + lang_folder[sep_idx+1:].upper()
 
         lang_folder_path = os.path.join(cli.config.locales_dir, lang_folder)
-        if not os.path.exists(lang_folder_path): # create lang_folder if missing
-            os.makedirs(lang_folder_path) ; langs_added.append(lang_code) ; lang_added = True
         msgs_path = os.path.join(lang_folder_path, cli.msgs_filename)
-        msgs = data.json.read(msgs_path)
+        if os.path.exists(msgs_path):
+            msgs = data.json.read(msgs_path)
+        else:
+            msgs = {}
+            os.makedirs(lang_folder_path, exist_ok=True)
+            langs_added.append(lang_code) ; lang_added = True
 
         log.info(f"{ 'Adding' if not msgs else 'Updating' } {lang_folder}/{cli.msgs_filename}...", end='')
         sys.stdout.flush()
