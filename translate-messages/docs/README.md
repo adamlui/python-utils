@@ -79,13 +79,13 @@ Example defaults:
 
 ```json5
 {
-  "locales_dir": "_locales", // Name of the folder containing locale files
-  "target_langs": "",        // Languages to translate to (e.g. "en,es,fr") (default: all supported locales)
-  "keys": "",                // Keys to translate (e.g. "appDesc,err_notFound")
-  "exclude_langs": "",       // Languages to exclude (e.g. "en,es")
-  "exclude_keys": "",        // Keys to ignore (e.g. "appName,author")
-  "force": false,            // Force overwrite existing config file when using --init
-  "no_wizard": false         // Skip interactive prompts during start-up
+  "locales_dir": "_locales", // name of the folder containing locale files
+  "target_langs": "",        // languages to translate to (e.g. "en,es,fr") (default: all supported locales)
+  "keys": "",                // keys to translate (e.g. "app_DESC,err_NOT_FOUND")
+  "exclude_langs": "",       // languages to exclude (e.g. "en,es")
+  "exclude_keys": "",        // keys to ignore (e.g. "appName,author")
+  "force": false,            // force overwrite existing config file when using --init
+  "no_wizard": false         // skip interactive prompts during start-up
 }
 ```
 
