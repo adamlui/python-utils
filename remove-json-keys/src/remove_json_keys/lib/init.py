@@ -15,12 +15,10 @@ def config_file(cli):
             log.warn(f'Config already exists at {config_path}. Skipping --init.')
             log.tip('Pass --force to overwrite.')
             return
-    
     cli.config_filename = f'.{cli.short_name}.config.json5'
     cli.config_filepath = str(Path(cli.project_root) / cli.config_filename)
     if not getattr(cli, 'default_file_config', None):
         cli.default_file_config = data.url.get(f'{cli.urls.jsdelivr}/{cli.name}/{cli.config_filename}')
-    
     data.file.write(cli.config_filepath, cli.default_file_config)
     log.success(f'Default config created at {cli.config_filepath}')
 
