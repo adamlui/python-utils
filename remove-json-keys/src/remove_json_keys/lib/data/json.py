@@ -10,26 +10,20 @@ def remove_keys(json_dir, keys):
     keys_removed, keys_skipped, files_processed_cnt = [], [], 0
     for root, _, files in os.walk(json_dir):
         for filename in files:
-            if filename.endswith('.json'):
-                file_path = os.path.join(root, filename)
-                json_data = file.read(file_path)
-
-                # Remove keys
-                modified = False
-                for key in keys:
-                    re_key = fr'"{re.escape(key)}"\s*:\s*(?:\{{[^}}]*\}}|"[^"]*"|\d+|true|false|null)\s*,?\s*'
-                    json_data, cnt = re.subn(re_key, '', json_data)
-                    if cnt > 0:
-                        keys_removed.append((key, os.path.relpath(file_path, json_dir)))
-                        modified = True
-                    else:
-                        keys_skipped.append((key, os.path.relpath(file_path, json_dir)))
-
-                # Save modified JSON
-                if modified : file.write(file_path, json_data)
-
-                files_processed_cnt += 1
-
+            if not filename.endswith('.json') : continue
+            file_path = os.path.join(root, filename)
+            json_data = file.read(file_path)
+            modified = False
+            for key in keys: # remove matched ones
+                re_key = fr'"{re.escape(key)}"\s*:\s*(?:\{{[^}}]*\}}|"[^"]*"|\d+|true|false|null)\s*,?\s*'
+                json_data, cnt = re.subn(re_key, '', json_data)
+                if cnt > 0:
+                    keys_removed.append((key, os.path.relpath(file_path, json_dir)))
+                    modified = True
+                else:
+                    keys_skipped.append((key, os.path.relpath(file_path, json_dir)))
+            if modified : file.write(file_path, json_data)
+            files_processed_cnt += 1
     return keys_removed, keys_skipped, files_processed_cnt
 
 def write(file_path, data, encoding='utf-8'):
