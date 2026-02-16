@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "translate-messages"
-version = "1.1.0"
+version = "1.2.0"
 description = "Translate en/messages.json (in chrome.i18n format) to other locales."
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
@@ -58,7 +58,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/translate-messages-1.1.0"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/translate-messages-1.2.0"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/translate-messages/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/translate-messages/#readme"
