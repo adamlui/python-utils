@@ -2,7 +2,7 @@ from pathlib import Path
 from . import data, log, settings
 
 def cli(caller_file):
-    cli = data.sns.from_dict(data.json.read(Path(__file__).parent.parent / 'package_data.json'))
+    cli = data.sns.from_dict(data.json.read(Path(__file__).parent.parent / 'assets/data/package_data.json'))
     settings.load(cli, caller_file)
     return cli
 
