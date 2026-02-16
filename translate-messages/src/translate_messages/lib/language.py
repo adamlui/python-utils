@@ -1,4 +1,4 @@
-import os, sys
+import os, re, sys
 from translate import Translator
 from . import data, log
 
@@ -20,7 +20,7 @@ def create_translations(cli, target_msgs, lang_code):
             original_msg = translated_msg = cli.en_msgs[key]['message']
             try:
                 translator = Translator(provider='', to_lang=lang_code)
-                translated_msg = translator.translate(original_msg).replace('&quot;', "'").replace('&#39;', "'")
+                translated_msg = re.sub(r'&(?:quot|#39);', "'", translator.translate(original_msg))
                 if any(flag in translated_msg for flag in fail_flags):
                     translated_msg = original_msg
             except Exception as err:
