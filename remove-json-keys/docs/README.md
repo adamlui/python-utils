@@ -75,10 +75,10 @@ Example defaults:
 
 ```jsonc
 {
-  "json_dir": "_locales",
-  "keys": "",
-  "force": false,
-  "no_wizard": false
+  "json_dir": "_locales", // name of the folder containing JSON files
+  "keys": "",             // Keys to remove (e.g. "appName,author")
+  "force": false,         // Force overwrite existing config file when using --init
+  "no_wizard": false      // Skip interactive prompts during start-up
 }
 ```
 

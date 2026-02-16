@@ -1,9 +1,9 @@
 {
-  "locales_dir": "_locales",
-  "target_langs": "",
-  "keys": "",
-  "exclude_langs": "",
-  "exclude_keys": "",
-  "force": false,
-  "no_wizard": false
+  "locales_dir": "_locales", // Name of the folder containing locale files
+  "target_langs": "",        // Languages to translate to (e.g. "en,es,fr") (default: all supported locales)
+  "keys": "",                // Keys to translate (e.g. "appDesc,err_notFound")
+  "exclude_langs": "",       // Languages to exclude (e.g. "en,es")
+  "exclude_keys": "",        // Keys to ignore (e.g. "appName,author")
+  "force": false,            // Force overwrite existing config file when using --init
+  "no_wizard": false         // Skip interactive prompts during start-up
 }
