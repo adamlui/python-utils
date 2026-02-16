@@ -1,4 +1,4 @@
-import os, shutil
+import shutil
 from pathlib import Path
 import nox
 
@@ -11,7 +11,7 @@ def clean(session):
     paths_to_remove = ['dist', 'build']
 
     for path in paths_to_remove:
-        if os.path.exists(path):
+        if Path(path).exists():
             shutil.rmtree(path)
             print(f'Removed {path}/')
     

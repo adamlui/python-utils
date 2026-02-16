@@ -5,7 +5,8 @@ def main():
     cli = init.cli(__file__)
 
     if cli.config.init: # --init passed
-        init.config_file(cli) ; sys.exit(0)
+        init.config_file(cli)
+        sys.exit(0)
     if not cli.config.no_wizard: # --no-wizard not passed
         wizard.run(cli)
 

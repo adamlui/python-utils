@@ -1,4 +1,5 @@
-import json, os
+import json
+from pathlib import Path
 import json5
 
 def read(file_path, encoding='utf-8'):
@@ -6,6 +7,6 @@ def read(file_path, encoding='utf-8'):
         return json5.load(file)
 
 def write(file_path, data, encoding='utf-8'):
-    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    Path(file_path).parent.mkdir(parents=True, exist_ok=True)
     with open(file_path, 'w', encoding=encoding) as file:
         json.dump(data, file, indent=2, ensure_ascii=False)
