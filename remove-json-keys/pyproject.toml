@@ -69,6 +69,7 @@ remove-json = "remove_json_keys.__main__:main"
 [project.optional-dependencies]
 dev = [
     "json5>=0.9.0,<1.0.0",
+    "nox>=2026.2.9,<2027.0.0",
     "tomli>=2.0.0,<3.0.0",
     "tomli-w>=0.1.0,<2.0.0",
 ]
