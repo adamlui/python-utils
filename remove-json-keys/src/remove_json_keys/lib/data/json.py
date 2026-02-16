@@ -1,11 +1,10 @@
 import json, os, re
+import json5
 from . import file
 
 def read(file_path):
-    if not os.path.exists(file_path):
-        return {}
     with open(file_path, 'r', encoding='utf-8') as file:
-        return json.load(file)
+        return json5.load(file)
 
 def remove_keys(json_dir, keys):
     keys_removed, keys_skipped, files_processed_cnt = [], [], 0
@@ -32,3 +31,8 @@ def remove_keys(json_dir, keys):
                 files_processed_cnt += 1
 
     return keys_removed, keys_skipped, files_processed_cnt
+
+def write(src_data, target_path):
+    os.makedirs(os.path.dirname(target_path), exist_ok=True)
+    with open(target_path, 'w', encoding='utf-8') as file:
+        json.dump(src_data, file, indent=2, ensure_ascii=False)
