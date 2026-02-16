@@ -1,4 +1,4 @@
-import os, urllib.request, urllib.error
+import os
 from . import data, log, settings
 
 def cli(caller_file):
@@ -17,12 +17,7 @@ def config_file(cli):
     cli.config_filename = f'.{cli.short_name}.config.json5'
     cli.config_filepath = os.path.join(cli.project_root, cli.config_filename)
     if not getattr(cli, 'default_file_config', None):
-        try:
-            jsd_url = f'{cli.urls.jsdelivr}/{cli.name}/{cli.config_filename}'
-            with urllib.request.urlopen(jsd_url, timeout=5) as resp:
-                cli.default_file_config = resp.read().decode('utf-8')
-        except (urllib.error.URLError, urllib.error.HTTPError, ValueError) as err:
-            raise RuntimeError(f'Failed to fetch default config from {jsd_url}: {err}')
+        cli.default_file_config = data.url.get(f'{cli.urls.jsdelivr}/{cli.name}/{cli.config_filename}')
     data.file.write(cli.config_filepath, cli.default_file_config)
     log.success(f'Default config created at {cli.config_filepath}')
 
