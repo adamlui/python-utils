@@ -4,10 +4,10 @@ def main():
 
     cli = init.cli(__file__)
 
-    if cli.config.init: # --init passed
+    if cli.config.init:
         init.config_file(cli)
         sys.exit(0)
-    if not cli.config.no_wizard: # --no-wizard not passed
+    if not cli.config.no_wizard:
         wizard.run(cli)
 
     log.info(f'Searching for {cli.config.json_dir}...')
