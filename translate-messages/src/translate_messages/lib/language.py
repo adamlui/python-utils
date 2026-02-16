@@ -62,10 +62,10 @@ def write_translations(cli):
         elif translated_msgs != msgs : langs_translated.append(lang_code) ; lang_translated = True
         if not lang_translated : langs_not_translated.append(lang_code)
         status = (
-            f"{log.colors.dg}Added" if lang_added else
-            f"{log.colors.gry}Skipped" if lang_skipped else
-            f"{log.colors.dy}Updated"
+            f'{log.colors.dg}Adde' if lang_added else
+            f'{log.colors.gry}Skipped' if lang_skipped else
+            f'{log.colors.dy}Updated'
         )
-        log.overwrite_print(f"{status} {lang_folder}/{cli.msgs_filename}{log.colors.nc}")
+        log.overwrite_print(f'{status} {lang_folder}/{cli.msgs_filename}{log.colors.nc}')
 
     return langs_translated, langs_skipped, langs_added, langs_not_translated

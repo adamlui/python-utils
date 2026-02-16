@@ -30,7 +30,7 @@ def config_file(cli):
             resp.raise_for_status()
             cli.default_file_config = resp.json()
         except (requests.RequestException, ValueError) as err:
-            raise RuntimeError(f"Failed to fetch default config from {jsd_url}: {err}")
+            raise RuntimeError(f'Failed to fetch default config from {jsd_url}: {err}')
     data.json.write(cli.default_file_config, cli.config_filepath)
     log.success(f'Default config created at {cli.config_filepath}')
 
