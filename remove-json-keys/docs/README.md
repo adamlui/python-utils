@@ -48,16 +48,22 @@ Options can be set by using command-line arguments:
 
 ## Examples
 
-Remove `author` key from JSON files found in default `_locales` dir:
+Remove `author` key from JSON files found in default `_locales` dir (prompts for more keys):
 
 ```bash
-remove-json-keys --keys=author -W
+remove-json-keys --keys=author
 ```
 
-Remove `app_DESC` + `err_NOT_FOUND` keys from JSON files found in `data` dir:
+Remove `info_SUCCESS` key from JSON files found in `messages` dir (no prompts):
 
 ```bash
-remove-json -k app_DESC,err_NOT_FOUND -d data -W
+remove-json-keys --keys=err_NOT_FOUND --json-dir=messages -W
+```
+
+Remove `app_DESC` + `app_VER` keys from JSON files found in `data` dir:
+
+```bash
+remove-json -k app_DESC,app_VER -d data -W
 ```
 
 ## MIT License
