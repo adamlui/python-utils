@@ -15,7 +15,7 @@ def config_file(cli):
             log.warn(f'Config already exists at {cli.config_filepath}. Skipping --init.')
             log.tip('Pass --force to overwrite.')
             return
-    cli.config_filename = f'.{cli.short_name}.config.jsonc'
+    cli.config_filename = f'.{cli.short_name}.config.json5'
     cli.config_filepath = os.path.join(cli.project_root, cli.config_filename)
     if not getattr(cli, 'default_file_config', None):
         try:
