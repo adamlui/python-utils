@@ -4,7 +4,8 @@ def run(cli):
 
     while True: # prompt user for keys to ignore
 
-        if getattr(cli.config, 'exclude_keys', '') : print('\nIgnored key(s):', cli.config.exclude_keys)
+        if getattr(cli.config, 'exclude_keys', ''):
+            print('\nIgnored key(s):', cli.config.exclude_keys)
         input_keys = input(
             f'\n{log.colors.bw}Enter key(s) to ignore (comma-separated, or ENTER if done): {log.colors.nc}')
         if not input_keys : break

@@ -5,7 +5,8 @@ def run(cli):
 
     while True: # prompt user for keys to remove
 
-        if getattr(cli.config, 'keys', '') : print('\nCurrent keys to remove:', cli.config.keys)
+        if getattr(cli.config, 'keys', ''):
+            print('\nCurrent keys to remove:', cli.config.keys)
         input_keys = input(
             f'\n{log.colors.bw}Enter key(s) to remove (comma-separated, or ENTER if done): {log.colors.nc}')
 
