@@ -1,4 +1,5 @@
-import os, re, sys
+from pathlib import Path
+import re, sys
 from translate import Translator
 from . import data, log
 
@@ -27,33 +28,34 @@ def create_translations(cli, target_msgs, lang_code):
                 log.trunc(f'Translation failed for key "{key}" in {lang_code}/{cli.msgs_filename}: {err}')
                 translated_msg = original_msg
             translated_msgs[key] = { 'message': translated_msg }
-
-        else : translated_msgs[key] = target_msgs[key]
+        else:
+            translated_msgs[key] = target_msgs[key]
 
     return translated_msgs
 
 def write_translations(cli):
-
     langs_added, langs_skipped, langs_translated, langs_not_translated = [], [], [], []
+    
     for lang_code in cli.config.target_langs:
         lang_added, lang_skipped, lang_translated = False, False, False
         lang_folder = lang_code.replace('-', '_')
 
         if lang_code.startswith('en'): # skip EN locales
             print(f'\n{log.colors.gry}Skipped {lang_folder}/{cli.msgs_filename}...{log.colors.nc}', end='')
-            langs_skipped.append(lang_code) ; langs_not_translated.append(lang_code) ; continue
+            langs_skipped.append(lang_code) ; langs_not_translated.append(lang_code)
+            continue
 
         if '-' in lang_code: # cap suffix
             sep_idx = lang_folder.index('_')
             lang_folder = lang_folder[:sep_idx] + '_' + lang_folder[sep_idx+1:].upper()
 
-        lang_folder_path = os.path.join(cli.config.locales_dir, lang_folder)
-        msgs_path = os.path.join(lang_folder_path, cli.msgs_filename)
-        if os.path.exists(msgs_path):
+        lang_folder_path = Path(cli.config.locales_dir) / lang_folder
+        msgs_path = lang_folder_path / cli.msgs_filename
+        if msgs_path.exists():
             msgs = data.json.read(msgs_path)
         else:
             msgs = {}
-            os.makedirs(lang_folder_path, exist_ok=True)
+            lang_folder_path.mkdir(parents=True, exist_ok=True)
             langs_added.append(lang_code) ; lang_added = True
 
         log.info(f"{ 'Adding' if not msgs else 'Updating' } {lang_folder}/{cli.msgs_filename}...", end='')
