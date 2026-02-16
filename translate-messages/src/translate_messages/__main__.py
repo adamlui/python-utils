@@ -36,14 +36,14 @@ def main():
         log.warn('Unable to locate directory.')
         sys.exit(1)
 
-    cli.config.msgs_filename = 'messages.json'
-    cli.config.en_msgs = data.json.read(os.path.join(cli.config.locales_dir, 'en', cli.config.msgs_filename))
+    cli.msgs_filename = 'messages.json'
+    cli.en_msgs = data.json.read(os.path.join(cli.config.locales_dir, 'en', cli.msgs_filename))
     cli.config.target_langs = list(set(cli.config.target_langs)) # remove dupes
 
     if not cli.config.target_langs: # merge discovered locales w/ target_langs
         for root, dirs, _ in os.walk(cli.config.locales_dir):
             for lang_folder in dirs:
-                msgs_path = os.path.join(root, lang_folder, cli.config.msgs_filename)
+                msgs_path = os.path.join(root, lang_folder, cli.msgs_filename)
                 discovered_lang = lang_folder.replace('_', '-')
                 if os.path.exists(msgs_path) and discovered_lang not in cli.config.target_langs:
                     cli.config.target_langs.append(discovered_lang)
