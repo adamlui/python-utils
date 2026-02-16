@@ -59,7 +59,7 @@ def write_translations(cli):
         data.json.write(msgs_path, translated_msgs)
 
         if translated_msgs == msgs : langs_skipped.append(lang_code) ; lang_skipped = True
-        elif translated_msgs != msgs : langs_translated.append(lang_code) ; lang_translated = True
+        else : langs_translated.append(lang_code) ; lang_translated = True
         if not lang_translated : langs_not_translated.append(lang_code)
         status = (
             f'{log.colors.dg}Adde' if lang_added else
