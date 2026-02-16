@@ -10,7 +10,7 @@ controls = sn(
     ),
     target_langs=sn(
         args=['-t', '--target-langs', '--target-lang', '--include-langs', '--include-lang'],
-        type=str, parser='csv', help='languages to translate to (e.g. "en,es,fr") (default: all supported locales)'
+        type=str, parser='csv', help='Languages to translate to (e.g. "en,es,fr") (default: all supported locales)'
     ),
     keys=sn(
         args=['-k', '--keys', '--key', '--include-keys', '--include-key', '--translate-keys', '--translate-key'],
