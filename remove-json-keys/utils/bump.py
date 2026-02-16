@@ -60,7 +60,7 @@ def update_readme_vers(new_ver): # in URLs
     readme_path = path.join(path.dirname(__file__), '../docs/README.md')
     updated_readme_content = re.sub(r'\b(?>\d{1,3}\.\d{1,3}\.\d{1,3})\b', new_ver, data.file.read(readme_path))
     data.file.write(readme_path, updated_readme_content)
-    log.success(msgs.log_UPDATED_README_VERS.format(new_ver=new_ver))
+    log.success(msgs.log_UPDATED_README_VERS.format(**locals()))
 
 def main():
 
