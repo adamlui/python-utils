@@ -60,8 +60,7 @@ def load(cli, caller_file):
             break
 
     # Parse CLI args
-    argp = argparse.ArgumentParser(
-        description="Translate en/messages.json (chrome.i18n format) to 100+ locales", add_help=False)
+    argp = argparse.ArgumentParser(description=cli.description, add_help=False)
     for attr_name in vars(controls):
         kwargs = getattr(controls, attr_name).__dict__.copy()
         args = kwargs.pop('args')  # separate positional flags
