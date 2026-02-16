@@ -29,6 +29,7 @@ keywords = [
     "mymemory",
     "translate",
     "translation",
+    "translator",
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
