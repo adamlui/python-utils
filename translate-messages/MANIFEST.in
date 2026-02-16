@@ -1,1 +1,2 @@
 recursive-include docs *
+recursive-include src/translate_messages/assets *

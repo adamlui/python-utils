@@ -1,1 +1,2 @@
 recursive-include docs *
+recursive-include src/remove_json_keys/assets *
