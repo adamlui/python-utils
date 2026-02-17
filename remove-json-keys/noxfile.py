@@ -1,14 +1,16 @@
 import nox
+from pathlib import Path
 
 def session(func) : return nox.session(venv_backend='none')(func)
 
-@session
-def test(session) : session.run('py', '-m', 'remove_json_keys', *session.posargs, env={'PYTHONPATH': 'src'})
-@session
-def test_build(session) : session.run('pip', 'install', '-e', '.') ; session.run('remove_json_keys', *session.posargs)
+pkg_dir = Path(__file__).parent.name
+pkg_name = pkg_dir.replace('-', '_')
 
 @session
-def bump(session) : session.run('py', 'utils/bump.py', *session.posargs)
+def test(session) : session.run('py', '-m', pkg_name, *session.posargs, env={'PYTHONPATH': 'src'})
+@session
+def test_build(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg_dir, *session.posargs)
+
 @session
 def bump_patch(session) : session.run('py', 'utils/bump.py', '--patch', *session.posargs)
 @session
