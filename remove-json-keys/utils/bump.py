@@ -1,10 +1,15 @@
 import argparse, re, sys
-from os import path
+from pathlib import Path
 from types import SimpleNamespace as sn
 
 from lib import toml
-sys.path.insert(0, path.join(path.dirname(__file__), '../src'))
-from remove_json_keys.lib import data, log # type: ignore
+
+paths = sn(root=Path(__file__).parent.parent)
+paths.pyproject = paths.root / 'pyproject.toml'
+paths.readme = paths.root / 'docs' / 'README.md'
+sys.path.insert(0, str(paths.root / 'src'))
+
+from remove_json_keys.lib import data, log  # type: ignore
 
 msgs = sn(
     app_DESC='Bump versions in pyproject.toml + README.md',
@@ -30,20 +35,19 @@ def parse_args():
     argp.add_argument('-h', '--help',  action='help', help=msgs.help_HELP)
     return argp.parse_args()
 
-def init_vers(project, bump_type): # <prev|new>_ver
+def init_vers(project, bump_type):
     prev_ver = project.version
     major, minor, patch = map(int, prev_ver.split('.'))
-    if   bump_type == 'major' : patch =  0 ; minor =  0 ; major += 1
-    elif bump_type == 'minor' : patch =  0 ; minor += 1
+    if   bump_type == 'major' : patch = 0 ; minor = 0 ; major += 1
+    elif bump_type == 'minor' : patch = 0 ; minor += 1
     elif bump_type == 'patch' : patch += 1
     new_ver = f'{major}.{minor}.{patch}'
     return prev_ver, new_ver
 
-def bump_pyproject_vers(pyproject_path, pyproject, project, new_ver): # project.version + .urls['Releases']
-
+def bump_pyproject_vers(pyproject, project, new_ver):
     # Bump project.version
     pyproject['project']['version'] = new_ver
-    toml.write(pyproject_path, pyproject)
+    toml.write(paths.pyproject, pyproject)
     log.success(msgs.log_BUMPED_PROJECT_VER.format(prev_ver=project.version, **locals()))
 
     # Bump project.urls['Releases']
@@ -52,32 +56,28 @@ def bump_pyproject_vers(pyproject_path, pyproject, project, new_ver): # project.
     log.data(f'{msgs.log_GENERATED_CLOG_URL}: {changelog_url}')
     log.info(f'{msgs.log_UPDATING_CLOG_URL_IN} pyproject.toml...')
     pyproject['project']['urls']['Changelog'] = changelog_url
-    toml.write(pyproject_path, pyproject)
+    toml.write(paths.pyproject, pyproject)
     log.success(msgs.log_BUMPED_CLOG_URL_VER_TAG.format(**locals()))
 
-def update_readme_vers(new_ver): # in URLs
+def update_readme_vers(new_ver):
     log.info(f'{msgs.log_UPDATING_VERS_IN} docs/README.md...')
-    readme_path = path.join(path.dirname(__file__), '../docs/README.md')
-    updated_readme_content = re.sub(r'\b(?>\d{1,3}\.\d{1,3}\.\d{1,3})\b', new_ver, data.file.read(readme_path))
-    data.file.write(readme_path, updated_readme_content)
+    updated_readme_content = re.sub(r'\b(?>\d{1,3}\.\d{1,3}\.\d{1,3})\b', new_ver, data.file.read(paths.readme))
+    data.file.write(paths.readme, updated_readme_content)
     log.success(msgs.log_UPDATED_README_VERS.format(**locals()))
 
 def main():
-
-    # Parse args
     args = parse_args()
     bump_type = 'major' if args.major else 'minor' if args.minor else 'patch' if args.patch else None
-    if not bump_type : log.error(msgs.err_MISSING_BUMP_TYPE_ARG) ; sys.exit(1)
+    if not bump_type:
+        log.error(msgs.err_MISSING_BUMP_TYPE_ARG)
+        sys.exit(1)
 
-    # Init project data
-    pyproject_path = path.join(path.dirname(__file__), '../pyproject.toml')
-    log.info(f'{msgs.log_LOADING_PYPROJECT.format(**locals())}...')
-    pyproject = toml.read(pyproject_path)
+    log.info(f'{msgs.log_LOADING_PYPROJECT.format(pyproject_path=paths.pyproject)}...')
+    pyproject = toml.read(paths.pyproject)
     project = sn(**pyproject['project'])
 
-    # Update files
     _, new_ver = init_vers(project, bump_type)
-    bump_pyproject_vers(pyproject_path, pyproject, project, new_ver)    
+    bump_pyproject_vers(pyproject, project, new_ver)    
     update_readme_vers(new_ver)
 
 if __name__ == '__main__' : main()

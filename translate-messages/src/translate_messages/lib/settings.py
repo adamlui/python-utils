@@ -1,5 +1,5 @@
 import argparse
-from os import path
+from pathlib import Path
 from types import SimpleNamespace as sn
 from . import data
 
@@ -46,15 +46,19 @@ def load(cli, caller_file):
 
     # Load from config file
     cli.config = sn()
-    cli.project_root = path.join(path.dirname(caller_file),
-        f"../../{ '' if 'src' in path.dirname(caller_file) else '../../' }")
+    caller_path = Path(caller_file)
+    if 'src' in str(caller_path):
+        cli.project_root = str(caller_path.parent.parent.parent)
+    else:
+        cli.project_root = str(caller_path.parent.parent)
     possible_config_filenames = [
         f'{prefix}{name}.config.json{suffix}'
             for prefix in ['.', ''] for name in [cli.short_name, cli.name] for suffix in ['5', '', 'c']
     ]
     for filename in possible_config_filenames:
-        cli.config_filepath = path.join(cli.project_root, filename)
-        if path.exists(cli.config_filepath):
+        config_path = Path(cli.project_root) / filename
+        if config_path.exists():
+            cli.config_filepath = str(config_path)
             cli.config = data.sns.from_dict(data.json.read(cli.config_filepath))
             cli.config_filename = filename
             break
