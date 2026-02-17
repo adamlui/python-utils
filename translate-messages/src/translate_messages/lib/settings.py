@@ -73,7 +73,7 @@ def load(cli, caller_file):
         if getattr(cli.config, key, None) is None:
             setattr(cli.config, key, val)
 
-    # Init cli.config vals
+    # Init all cli.config vals
     for name, ctrl in vars(controls).items():
         val = getattr(cli.config, name, None)
         if getattr(ctrl, 'parser', None) == 'csv':
