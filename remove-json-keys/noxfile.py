@@ -9,6 +9,8 @@ pkg_name = pkg_dir.replace('-', '_')
 @session
 def test(session) : session.run('py', '-m', pkg_name, *session.posargs, env={'PYTHONPATH': 'src'})
 @session
+def test_help(session) : session.run('py', '-m', pkg_name, '--help', *session.posargs, env={'PYTHONPATH': 'src'})
+@session
 def test_build(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg_dir, *session.posargs)
 
 @session
