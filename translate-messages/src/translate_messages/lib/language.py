@@ -47,7 +47,7 @@ def write_translations(cli):
 
         if '-' in lang_code: # cap suffix
             sep_idx = lang_folder.index('_')
-            lang_folder = lang_folder[:sep_idx] + '_' + lang_folder[sep_idx+1:].upper()
+            lang_folder = f'{lang_folder[:sep_idx]}_{lang_folder[sep_idx+1:].upper()}'
 
         lang_folder_path = Path(cli.config.locales_dir) / lang_folder
         msgs_path = lang_folder_path / cli.msgs_filename
