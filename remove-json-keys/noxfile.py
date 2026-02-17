@@ -1,17 +1,18 @@
 from pathlib import Path
+from types import SimpleNamespace as sn
 import nox
 
 def session(func) : return nox.session(venv_backend='none')(func)
 
-pkg_dir = Path(__file__).parent.name
-pkg_name = pkg_dir.replace('-', '_')
+pkg = sn(dir=Path(__file__).parent.name)
+pkg.name = pkg.dir.replace('-', '_')
 
 @session
-def test(session) : session.run('py', '-m', pkg_name, *session.posargs, env={ 'PYTHONPATH': 'src' })
+def test(session) : session.run('py', '-m', pkg.name, *session.posargs, env={ 'PYTHONPATH': 'src' })
 @session
-def test_help(session) : session.run('py', '-m', pkg_name, '--help', *session.posargs, env={ 'PYTHONPATH': 'src' })
+def test_help(session) : session.run('py', '-m', pkg.name, '--help', *session.posargs, env={ 'PYTHONPATH': 'src' })
 @session
-def test_build(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg_dir, *session.posargs)
+def test_build(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg.dir, *session.posargs)
 
 @session
 def bump_patch(session) : session.run('py', 'utils/bump.py', '--patch', *session.posargs)
