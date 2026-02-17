@@ -1,5 +1,5 @@
-import nox
 from pathlib import Path
+import nox
 
 def session(func) : return nox.session(venv_backend='none')(func)
 
