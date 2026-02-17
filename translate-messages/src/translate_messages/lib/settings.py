@@ -47,10 +47,7 @@ def load(cli, caller_file):
     # Load from config file
     cli.config = sn()
     caller_path = Path(caller_file)
-    if 'src' in str(caller_path):
-        cli.project_root = str(caller_path.parent.parent.parent)
-    else:
-        cli.project_root = str(caller_path.parent.parent)
+    cli.project_root = str(caller_path.parent.parent.parent if 'src' in str(caller_path) else caller_path.parent.parent) 
     possible_config_filenames = [
         f'{prefix}{name}.config.json{suffix}'
             for prefix in ['.', ''] for name in [cli.short_name, cli.name] for suffix in ['5', '', 'c']
