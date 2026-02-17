@@ -32,7 +32,7 @@ def main():
             discovered_lang = lang_path.parent.name.replace('_', '-')
             if discovered_lang not in cli.config.target_langs:
                 cli.config.target_langs.append(discovered_lang)
-    
+
     cli.config.target_langs.sort()
 
     langs_translated, langs_skipped, langs_added, langs_not_translated = language.write_translations(cli)
