@@ -7,25 +7,12 @@ from lib import toml
 paths = sn(root=Path(__file__).parent.parent)
 paths.pyproject = paths.root / 'pyproject.toml'
 paths.readme = paths.root / 'docs' / 'README.md'
+paths.msgs = paths.root / 'utils' / 'data' / 'messages.json'
 sys.path.insert(0, str(paths.root / 'src'))
 
 from remove_json_keys.lib import data, log  # type: ignore
 
-msgs = sn(
-    app_DESC='Bump versions in pyproject.toml + README.md',
-    help_MAJOR='Bump the major (\033[1mx\033[0m.y.z) version',
-    help_MINOR='Bump the minor (x.\033[1my\033[0m.z) version',
-    help_PATCH='Bump the patch (x.y.\033[1mz\033[0m) version',
-    help_HELP='Show help screen',
-    err_MISSING_BUMP_TYPE_ARG='You must pass --<major|minor|patch> as an argument.',
-    log_LOADING_PYPROJECT='Loading {pyproject_path}',
-    log_BUMPED_PROJECT_VER='Bumped project.version in pyproject.toml from [{prev_ver}] to [{new_ver}]',
-    log_GENERATED_CLOG_URL='Generated Changelog URL',
-    log_UPDATING_CLOG_URL_IN='Updating Changelog URL in',
-    log_BUMPED_CLOG_URL_VER_TAG='Bumped Changelog URL version tag to [{new_ver_tag}]',
-    log_UPDATING_VERS_IN='Updating versions in',
-    log_UPDATED_README_VERS='Updated versions in README URLs to [{new_ver}]!'
-)
+msgs = sn(**{ key:val['message'] for key,val in data.json.read(paths.msgs)['bump'].items() })
 
 def parse_args():
     argp = argparse.ArgumentParser(description=msgs.app_DESC, add_help=False)
