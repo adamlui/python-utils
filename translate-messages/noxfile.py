@@ -3,6 +3,11 @@ import nox
 def session(func) : return nox.session(venv_backend='none')(func)
 
 @session
+def test(session) : session.run('python', '-m', 'translate_messages', *session.posargs, env={'PYTHONPATH': 'src'})
+@session
+def test_build(session) : session.run('pip', 'install', '-e', '.') ; session.run('translate-messages', *session.posargs)
+
+@session
 def bump(session) : session.run('python', 'utils/bump.py', *session.posargs)
 @session
 def bump_patch(session) : session.run('python', 'utils/bump.py', '--patch', *session.posargs)
