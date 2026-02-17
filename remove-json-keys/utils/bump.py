@@ -32,6 +32,7 @@ def init_vers(project, bump_type):
     return prev_ver, new_ver
 
 def bump_pyproject_vers(pyproject, project, new_ver):
+
     # Bump project.version
     pyproject['project']['version'] = new_ver
     toml.write(paths.pyproject, pyproject)
@@ -53,16 +54,20 @@ def update_readme_vers(new_ver):
     log.success(msgs.log_UPDATED_README_VERS.format(**locals()))
 
 def main():
+
+    # Parse args
     args = parse_args()
     bump_type = 'major' if args.major else 'minor' if args.minor else 'patch' if args.patch else None
     if not bump_type:
         log.error(msgs.err_MISSING_BUMP_TYPE_ARG)
         sys.exit(1)
 
+    # Init project data
     log.info(f'{msgs.log_LOADING_PYPROJECT.format(pyproject_path=paths.pyproject)}...')
     pyproject = toml.read(paths.pyproject)
     project = sn(**pyproject['project'])
 
+    # Update files
     _, new_ver = init_vers(project, bump_type)
     bump_pyproject_vers(pyproject, project, new_ver)    
     update_readme_vers(new_ver)
