@@ -9,7 +9,7 @@ controls = sn(
         type=str, default_val='_locales', help='Name of the folder containing JSON files (default: "_locales")'
     ),
     keys=sn(
-        args=['-k', '--keys', '--key', '--remove-keys', '--remove-key', '--delete-keys', '--delete-key'],
+        args=['-k', '--keys', '--remove-keys', '--delete-keys'],
         type=str, parser='csv', help='Keys to remove (e.g. "app_NAME,author")'
     ),
     init=sn(

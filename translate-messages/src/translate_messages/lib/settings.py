@@ -9,19 +9,19 @@ controls = sn(
         type=str, default_val='_locales', help='Name of the folder containing locale files (default: "_locales")'
     ),
     target_langs=sn(
-        args=['-t', '--target-langs', '--target-lang', '--include-langs', '--include-lang'],
+        args=['-t', '--target-langs', '--include-langs'],
         type=str, parser='csv', help='Languages to translate to (e.g. "en,es,fr") (default: all supported locales)'
     ),
     keys=sn(
-        args=['-k', '--keys', '--key', '--include-keys', '--include-key', '--translate-keys', '--translate-key'],
+        args=['-k', '--keys', '--include-keys', '--translate-keys'],
         type=str, parser='csv', help='Keys to translate (e.g. "app_DESC,err_NOT_FOUND")'
     ),
     exclude_langs=sn(
-        args=['--exclude-langs', '--exclude-lang', '--ignore-langs', '--ignore-lang'],
+        args=['--exclude-langs', '--ignore-langs'],
         type=str, parser='csv', help='Languages to exclude (e.g. "en,es")'
     ),
     exclude_keys=sn(
-        args=['--exclude-keys', '--exclude-key', '--ignore-keys', '--ignore-key'],
+        args=['--exclude-keys', '--ignore-keys'],
         type=str, parser='csv', help='Keys to ignore (e.g. "app_NAME,author")'
     ),
     init=sn(
