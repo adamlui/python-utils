@@ -1,5 +1,6 @@
 def main():
     import sys
+    from pathlib import Path
     from .lib import data, init, log, wizard
 
     cli = init.cli(__file__)
@@ -11,9 +12,9 @@ def main():
         wizard.run(cli)
 
     log.info(f'Searching for {cli.config.json_dir}...')
-    cli.config.json_dir = init.json_dir(cli.config.json_dir)
+    init.json_dir(cli)
 
-    if cli.config.json_dir:
+    if Path(cli.config.locales_dir).exists():
         log.success('Directory found!')
         print(f'\n>> {cli.config.json_dir}')
     else:

@@ -22,7 +22,9 @@ def config_file(cli):
     data.file.write(cli.config_filepath, cli.default_file_config)
     log.success(f'Default config created at {cli.config_filepath}')
 
-def locales_dir(target_dir):
-    for path in Path.cwd().rglob(target_dir):
-        if path.is_dir() : return str(path)
-    return None
+def locales_dir(cli):
+    for path in Path.cwd().rglob(cli.config.locales_dir):
+        if path.is_dir():
+            cli.config.locales_dir = str(path)
+            return
+    cli.config.locales_dir = None

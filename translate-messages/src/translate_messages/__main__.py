@@ -12,9 +12,9 @@ def main():
         wizard.run(cli)
 
     log.info(f'Searching for {cli.config.locales_dir}...')
-    cli.config.locales_dir = init.locales_dir(cli.config.locales_dir)
+    init.locales_dir(cli)
 
-    if cli.config.locales_dir:
+    if Path(cli.config.locales_dir).exists():
         log.success('Directory found!')
         print(f'\n>> {cli.config.locales_dir}')
     else:
