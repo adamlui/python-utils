@@ -48,9 +48,10 @@ def src_msgs(cli):
 
 def target_langs(cli):
     cli.config.target_langs = list(set(cli.config.target_langs)) # remove dupes
-    if not cli.config.target_langs:
-        cli.config.target_langs = cli.supported_locales
-        for lang_path in cli.locales_path.rglob(f'*/{cli.msgs_filename}'): # merge discovered locales
+    if not cli.config.target_langs: # init to stable ones
+        cli.config.target_langs = cli.stable_locales
+    if not cli.config.only_stable: # merge discovered locales
+        for lang_path in cli.locales_path.rglob(f'*/{cli.msgs_filename}'):
             discovered_lang = lang_path.parent.name.replace('_', '-')
             if discovered_lang not in cli.config.target_langs:
                 cli.config.target_langs.append(discovered_lang)

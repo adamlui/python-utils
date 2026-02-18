@@ -11,7 +11,7 @@ controls = sn(
     ),
     target_langs=sn(
         args=['-t', '--target-langs', '--include-langs'],
-        type=str, parser='csv', help='Languages to translate to (e.g. "en,es,fr") (default: all 100+ supported locales)'
+        type=str, parser='csv', help='Languages to translate to (e.g. "es,fr") (default: all 100+ supported locales)'
     ),
     keys=sn(
         args=['-k', '--keys', '--include-keys', '--translate-keys'],
@@ -19,11 +19,15 @@ controls = sn(
     ),
     exclude_langs=sn(
         args=['--exclude-langs', '--ignore-langs'],
-        type=str, parser='csv', help='Languages to exclude (e.g. "en,es")'
+        type=str, parser='csv', help='Languages to exclude (e.g. "es,zh")'
     ),
     exclude_keys=sn(
         args=['--exclude-keys', '--ignore-keys'],
         type=str, parser='csv', help='Keys to ignore (e.g. "app_NAME,author")'
+    ),
+    only_stable=sn(
+        args=['-s', '--only-stable', '--no-discovery'],
+        action='store_true', help='Only use stable locales (skip auto-discovery)'
     ),
     init=sn(
         args=['-i', '--init'],
