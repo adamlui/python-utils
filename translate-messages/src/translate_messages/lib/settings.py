@@ -1,6 +1,7 @@
 import argparse
 from pathlib import Path
 from types import SimpleNamespace as sn
+
 from . import data
 
 controls = sn(

@@ -1,4 +1,5 @@
 import sys
+
 from . import data, log
 
 def run(cli):

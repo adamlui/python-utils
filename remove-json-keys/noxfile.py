@@ -1,5 +1,6 @@
 from pathlib import Path
 from types import SimpleNamespace as sn
+
 import nox
 
 def session(func) : return nox.session(venv_backend='none')(func)

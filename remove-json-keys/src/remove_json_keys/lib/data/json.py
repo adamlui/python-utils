@@ -1,6 +1,8 @@
 import json, re
 from pathlib import Path
+
 import json5
+
 from . import file
 
 def read(file_path, encoding='utf-8'):

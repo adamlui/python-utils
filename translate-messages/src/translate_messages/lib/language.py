@@ -1,6 +1,8 @@
 from pathlib import Path
 import re, sys
+
 from translate import Translator
+
 from . import data, log
 
 def create_translations(cli, target_msgs, lang_code):

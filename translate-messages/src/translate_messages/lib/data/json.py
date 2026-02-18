@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+
 import json5
 
 def read(file_path, encoding='utf-8'):
