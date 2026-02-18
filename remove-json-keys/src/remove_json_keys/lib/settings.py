@@ -54,8 +54,8 @@ def load(cli, caller_file):
     for attr_name in vars(controls):
         kwargs = getattr(controls, attr_name).__dict__.copy()
         args = kwargs.pop('args') # separate positional flags
-        for forbidden in ('default_val', 'parser'): # remove custom attrs
-            kwargs.pop(forbidden, None)
+        for custom_attr in ('default_val', 'parser'): # remove custom attrs for argp
+            kwargs.pop(custom_attr, None)
         argp.add_argument(*args, **kwargs)
     for key, val in vars(argp.parse_args()).items():
         if getattr(cli.config, key, None) is None:
