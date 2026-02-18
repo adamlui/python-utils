@@ -34,7 +34,7 @@ controls = sn(
         action='store_true', help='Force overwrite existing config file when using init'
     ),
     no_wizard=sn(
-        args=['-W', '--no-wizard', '--skip-wizard'],
+        args=['-n', '-W', '--no-wizard', '--skip-wizard'],
         action='store_true', default=None, help='Skip interactive prompts during start-up'
     ),
     help=sn(

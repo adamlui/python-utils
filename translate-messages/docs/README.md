@@ -48,7 +48,7 @@ Options can be set by using command-line arguments:
 | `--exclude-keys`       | Comma-separated list of keys to ignore                                                                    | `--exclude-keys=app_NAME,author`
 | `init`, `-i`, `--init` | Create `.translate-msgs.config.json5` in project root to store default options                            |
 | `-f`, `--force`        | Force overwrite of existing config file when using `init`                                                 |
-| `-W`, `--no-wizard`    | Skip interactive prompts during start-up                                                                  |
+| `-n`, `--no-wizard`    | Skip interactive prompts during start-up                                                                  |
 | `-h`, `--help`         | Show help screen                                                                                          |
 
 ## Examples
@@ -62,13 +62,13 @@ translate-messages --ignore-keys=app_NAME # prompts for more keys to ignore
 Translate `app_DESC` key from `messges/en/messages.json` to French:
 
 ```bash
-translate-messages --keys=app_DESC --locales-dir=messages --target-langs=fr -W # no prompts
+translate-messages --keys=app_DESC --locales-dir=messages --target-langs=fr -n # no prompts
 ```
 
 Translate `app_DESC` + `err_NOT_FOUND` keys from `_msgs/en/messages.json` to Spanish and Hindi:
 
 ```bash
-translate-msgs -k app_DESC,err_NOT_FOUND -d _msgs -t es,hi -W # no prompts
+translate-msgs -k app_DESC,err_NOT_FOUND -d _msgs -t es,hi -n # no prompts
 ```
 
 ## Config file

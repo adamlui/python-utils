@@ -44,7 +44,7 @@ Options can be set by using command-line arguments:
 | `-d`, `--json-dir`     | Name of the folder containing JSON files (default: `_locales`)                  | `--json-dir=data`
 | `-k`, `--keys`         | Comma-separated list of keys to remove                                          | `--keys=app_DESC,err_NOT_FOUND`
 | `init`, `-i`, `--init` | Create .remove-json.config.json5 in project root to store default settings      |
-| `-W`, `--no-wizard`    | Skip interactive prompts during start-up                                        |
+| `-n`, `--no-wizard`    | Skip interactive prompts during start-up                                        |
 | `-h`, `--help`         | Show help screen                                                                |
 
 ## Examples
@@ -58,13 +58,13 @@ remove-json-keys --keys=author # prompts for more keys to remove
 Remove `info_SUCCESS` key from JSON files found in `messages` dir:
 
 ```bash
-remove-json-keys --keys=err_NOT_FOUND --json-dir=messages -W # no prompts
+remove-json-keys --keys=err_NOT_FOUND --json-dir=messages -n # no prompts
 ```
 
 Remove `app_DESC` + `app_VER` keys from JSON files found in `data` dir:
 
 ```bash
-remove-json -k app_DESC,app_VER -d data -W # no prompts
+remove-json -k app_DESC,app_VER -d data -n # no prompts
 ```
 
 ## Config file
