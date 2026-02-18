@@ -43,7 +43,7 @@ def src_msgs(cli):
     try:
         cli.en_msgs = data.json.read(cli.en_path)
     except Exception as err:
-        log.error(f'Failed to parse {cli.en_path}: {err}')
+        log.error(f'{cli.msgs.err_PARSE_FAILED} {cli.en_path}: {err}')
         log.tip(f'{cli.msgs.tip_MAKE_SURE} {cli.msgs.tip_IT_HAS_VALID_JSON}')
         sys.exit(1)
 
