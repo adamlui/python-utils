@@ -6,8 +6,8 @@ from lib import toml
 
 paths = sn(root=Path(__file__).parent.parent)
 paths.pyproject = paths.root / 'pyproject.toml'
-paths.readme = paths.root / 'docs' / 'README.md'
-paths.msgs = paths.root / 'utils' / 'data' / 'messages.json'
+paths.readme = paths.root / 'docs/README.md'
+paths.msgs = paths.root / 'utils/data/messages.json'
 sys.path.insert(0, str(paths.root / 'src'))
 
 from remove_json_keys.lib import data, log # type: ignore

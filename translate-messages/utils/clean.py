@@ -4,7 +4,7 @@ from types import SimpleNamespace as sn
 
 def main():
     paths = sn(root=Path(__file__).parent.parent)
-    paths.msgs = paths.root / 'utils' / 'data' / 'messages.json'
+    paths.msgs = paths.root / 'utils/data/messages.json'
     sys.path.insert(0, str(paths.root / 'src'))
 
     from translate_messages.lib import data, log # type: ignore
