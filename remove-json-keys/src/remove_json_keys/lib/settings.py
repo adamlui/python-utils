@@ -6,33 +6,19 @@ from . import data, log
 
 controls = sn(
     json_dir=sn(
-        args=['-d', '--json-dir', '--json-folder'],
-        type=str, default_val='_locales', help='Name of the folder containing JSON files (default: "_locales")'
-    ),
+        args=['-d', '--json-dir', '--json-folder'], type=str, default_val='_locales'),
     keys=sn(
-        args=['-k', '--keys', '--remove-keys', '--delete-keys'],
-        type=str, parser='csv', help='Keys to remove (e.g. "app_NAME,author")'
-    ),
+        args=['-k', '--keys', '--remove-keys', '--delete-keys'], type=str, parser='csv'),
     init=sn(
-        args=['-i', '--init'],
-        action='store_true', subcmd='true', help='Create .remove-json.config.json5 file to store default options'
-    ),
+        args=['-i', '--init'], action='store_true', subcmd='true'),
     force=sn(
-        args=['-f', '--force', '--overwrite'],
-        action='store_true', help='Force overwrite existing config file when using init'
-    ),
+        args=['-f', '--force', '--overwrite'], action='store_true'),
     no_wizard=sn(
-        args=['-n', '-W', '--no-wizard', '--skip-wizard'],
-        action='store_true', default=None, help='Skip interactive prompts during start-up'
-    ),
+        args=['-n', '-W', '--no-wizard', '--skip-wizard'], action='store_true', default=None),
     help=sn(
-        args=['-h', '--help'],
-        action='help', help='Show help screen'
-    ),
+        args=['-h', '--help'], action='help'),
     debug=sn(
-        args=['--debug'],
-        nargs='?', const=True, help='Show debug logs'
-    )
+        args=['--debug'], nargs='?', const=True)
 )
 
 def load(cli, caller_file):
