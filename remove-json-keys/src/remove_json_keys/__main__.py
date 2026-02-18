@@ -15,7 +15,7 @@ def main():
         log.success('Directory found!')
         print(f'\n>> {cli.config.json_dir}')
     else:
-        log.warn('Unable to locate directory.')
+        log.warn('Unable to locate directory!')
         sys.exit(1)
 
     keys_removed, keys_skipped, files_processed_cnt = data.json.remove_keys(cli.config.json_dir, cli.config.keys)

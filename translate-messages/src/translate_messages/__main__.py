@@ -15,7 +15,7 @@ def main():
         log.success('Directory found!')
         print(f'\n>> {cli.config.locales_dir}')
     else:
-        log.warn('Unable to locate directory.')
+        log.warn('Unable to locate directory!')
         sys.exit(1)
 
     init.src_msgs(cli)

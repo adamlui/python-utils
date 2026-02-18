@@ -13,7 +13,7 @@ def config_file(cli):
         if cli.config.force:
             log.info(f'Overwriting existing config at {config_path}...')
         else:
-            log.warn(f'Config already exists at {config_path}. Skipping init.')
+            log.warn(f'Config already exists at {config_path}! Skipping init.')
             log.tip('Pass --force to overwrite.')
             return
     cli.config_filename = f'.{cli.short_name}.config.json5'
