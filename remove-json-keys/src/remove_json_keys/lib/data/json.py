@@ -3,11 +3,11 @@ from pathlib import Path
 
 import json5
 
-from . import file, sns
+from . import file
 
 def read(file_path, encoding='utf-8'):
     with open(file_path, 'r', encoding=encoding) as file:
-        return sns.from_dict(json5.load(file))
+        return json5.load(file)
 
 def remove_keys(json_dir, keys):
     keys_removed, keys_skipped, files_processed_cnt = [], [], 0

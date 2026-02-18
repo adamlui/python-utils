@@ -38,7 +38,7 @@ def create_translations(cli, target_msgs, lang_code):
 
 def get_msgs():
     msgs_path = Path(__file__).parent.parent / 'assets' / 'data' / 'messages.json'
-    return sn(**{ key: val.message for key, val in data.json.read(msgs_path).items() })
+    return sn(**{ key:val['message'] for key,val in data.json.read(msgs_path).items() })
 
 def write_translations(cli):
 
