@@ -4,8 +4,8 @@
 
 <a href="https://pypistats.org/packages/translate-messages">
     <img height=31 src="https://img.shields.io/pypi/dm/translate-messages?logo=pypi&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
-<a href="https://github.com/adamlui/python-utils/releases/tag/translate-messages-1.2.2">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.2.2-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/python-utils/releases/tag/translate-messages-1.3.0">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.3.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/translate-messages/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
@@ -106,4 +106,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <a href="#top">Back to top ↑</a>
 
-[stable-locales]: https://github.com/adamlui/python-utils/blob/translate-messages-1.2.2/translate-messages/src/translate_messages/package_data.json#L22-L27
+[stable-locales]: https://github.com/adamlui/python-utils/blob/translate-messages-1.3.0/translate-messages/src/translate_messages/assets/data/package_data.json#L22-L27
