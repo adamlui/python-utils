@@ -52,19 +52,19 @@ Options can be set by using command-line arguments:
 Remove `author` key from JSON files found in default `_locales` dir:
 
 ```bash
-remove-json-keys --keys=author # prompts for more keys to remove
+remove-json-keys --keys=author  # prompts for more keys to remove
 ```
 
 Remove `info_SUCCESS` key from JSON files found in `messages` dir:
 
 ```bash
-remove-json-keys --keys=err_NOT_FOUND --json-dir=messages -n # no prompts
+remove-json-keys -n --keys=err_NOT_FOUND --json-dir=messages  # no prompts
 ```
 
 Remove `app_DESC` + `app_VER` keys from JSON files found in `data` dir:
 
 ```bash
-remove-json -k app_DESC,app_VER -d data -n # no prompts
+remove-json -n -k app_DESC,app_VER -d data  # no prompts
 ```
 
 ## Config file

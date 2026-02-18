@@ -63,13 +63,13 @@ translate-messages --ignore-keys=app_NAME  # prompts for more keys to ignore
 Translate `app_DESC` key from `messges/en/messages.json` to French:
 
 ```bash
-translate-messages --keys=app_DESC --locales-dir=messages --target-langs=fr -n  # no prompts
+translate-messages -n --keys=app_DESC --locales-dir=messages --target-langs=fr  # no prompts
 ```
 
 Translate `app_DESC` + `err_NOT_FOUND` keys from `_msgs/en/messages.json` to Spanish and Hindi:
 
 ```bash
-translate-msgs -k app_DESC,err_NOT_FOUND -d _msgs -t es,hi -n  # no prompts
+translate-msgs -n -k app_DESC,err_NOT_FOUND -d _msgs -t es,hi  # no prompts
 ```
 
 ## Config file
