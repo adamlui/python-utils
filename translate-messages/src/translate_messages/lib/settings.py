@@ -91,4 +91,3 @@ def load(cli, caller_file):
             val = ctrl.default_val
         setattr(cli.config, name, val)
     log.debug('All cli.config vals set!\n{}', cli)
-    
