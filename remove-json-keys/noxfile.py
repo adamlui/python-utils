@@ -24,6 +24,9 @@ def test_help(session) : session.run('py', '-m', pkg.name, '--help', *session.po
 def test_build(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg.dir, *session.posargs)
 
 @session
+def debug(session) : session.run('py', '-m', pkg.name, '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
+
+@session
 def bump_patch(session) : session.run('py', 'utils/bump.py', '--patch', *session.posargs)
 @session
 def bump_minor(session) : session.run('py', 'utils/bump.py', '--minor', *session.posargs)

@@ -59,3 +59,4 @@ def target_langs(cli):
     cli.config.target_langs.sort()
     if cli.config.exclude_langs:
        cli.config.target_langs = [lang for lang in cli.config.target_langs if lang not in cli.config.exclude_langs]
+    log.debug(f"cli.config.target_langs init'd!\n{log.colors.gry}{cli.config.target_langs}")

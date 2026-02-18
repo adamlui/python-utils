@@ -2,7 +2,7 @@ import argparse, sys
 from pathlib import Path
 from types import SimpleNamespace as sn
 
-from . import data
+from . import data, log
 
 controls = sn(
     json_dir=sn(
@@ -28,6 +28,10 @@ controls = sn(
     help=sn(
         args=['-h', '--help'],
         action='help', help='Show help screen'
+    ),
+    debug=sn(
+        args=['--debug'],
+        action='store_true', help='Show debug logs'
     )
 )
 
@@ -49,6 +53,7 @@ def load(cli, caller_file):
             cli.config = data.sns.from_dict(data.json.read(cli.config_filepath))
             cli.config_filename = filename
             break
+    log.debug(f'Config file loaded!\n{log.colors.gry}{cli.config}' if cli.config_filepath else 'No config file found.')
 
     # Parse CLI args
     argp = argparse.ArgumentParser(description=cli.description, add_help=False)
@@ -65,6 +70,7 @@ def load(cli, caller_file):
     for key, val in vars(parsed_args).items(): # apply parsed_args to cli.config
         if not getattr(cli.config, key, ''):
             setattr(cli.config, key, val)
+    log.debug(f'Args parsed!\n{log.colors.gry}{cli.config}')
 
     # Init all cli.config vals
     for name, ctrl in vars(controls).items():
@@ -74,3 +80,4 @@ def load(cli, caller_file):
         if val is None and hasattr(ctrl, 'default_val'):
             val = ctrl.default_val
         setattr(cli.config, name, val)
+    log.debug(f'All cli.config vals set!\n{log.colors.gry}{cli.config}')
