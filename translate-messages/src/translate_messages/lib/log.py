@@ -27,13 +27,13 @@ def success(msg, *args, **kwargs) : print(f'\n{colors.bg}{msg.format(*args, **kw
 def tip(msg, *args, **kwargs) : print(f'\n{colors.bo}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
 def warn(msg, *args, **kwargs) : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
-def final_summary(summary_dict):
-    success('\nAll JSON files updated successfully!')
+def final_summary(msgs, summary_dict):
+    success(f'\n{msgs.log_ALL_JSON_UPDATED}!')
     for name, lang_set in summary_dict.items():
         if lang_set:
             status = name.replace('_', ' ')
             status_color = colors.by if status == 'translated' else colors.bg if status == 'added' else colors.gry
-            data(f'Languages {status}: {len(lang_set)}')
+            data(f'{msgs.log_LANGUAGES} {status}: {len(lang_set)}')
             print(f"{status_color}[ {', '.join(lang_set)} ]{colors.nc}")
 
 def trunc(msg, end='\n'):

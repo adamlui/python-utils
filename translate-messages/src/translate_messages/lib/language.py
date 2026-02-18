@@ -1,5 +1,6 @@
 from pathlib import Path
 import re, sys
+from types import SimpleNamespace as sn
 
 from translate import Translator
 
@@ -27,13 +28,17 @@ def create_translations(cli, target_msgs, lang_code):
                 if any(flag in translated_msg for flag in fail_flags):
                     translated_msg = original_msg
             except Exception as err:
-                log.trunc(f'Translation failed for key "{key}" in {lang_code}/{cli.msgs_filename}: {err}')
+                log.trunc(f'{cli.msgs.err_TRANSLATE_FAILED_FOR_KEY} "{key}" in {lang_code}/{cli.msgs_filename}: {err}')
                 translated_msg = original_msg
             translated_msgs[key] = { 'message': translated_msg }
         else:
             translated_msgs[key] = target_msgs[key]
 
     return translated_msgs
+
+def get_msgs():
+    msgs_path = Path(__file__).parent.parent / 'assets' / 'data' / 'messages.json'
+    return sn(**{ key:val['message'] for key,val in data.json.read(msgs_path).items() })
 
 def write_translations(cli):
 
@@ -43,7 +48,8 @@ def write_translations(cli):
         lang_folder = lang_code.replace('-', '_')
 
         if lang_code.startswith('en'): # skip EN locales
-            print(f'\n{log.colors.gry}Skipped {lang_folder}/{cli.msgs_filename}...{log.colors.nc}', end='')
+            print(f'\n{log.colors.gry}'
+                  f'{cli.msgs.log_SKIPPED} {lang_folder}/{cli.msgs_filename}...{log.colors.nc}', end='')
             langs_skipped.append(lang_code) ; langs_not_translated.append(lang_code)
             continue
 
@@ -60,7 +66,8 @@ def write_translations(cli):
             lang_folder_path.mkdir(parents=True, exist_ok=True)
             langs_added.append(lang_code) ; lang_added = True
 
-        log.info(f"{ 'Adding' if not msgs else 'Updating' } {lang_folder}/{cli.msgs_filename}...", end='')
+        action = cli.msgs.log_ADDING if not msgs else cli.msgs.log_UPDATING
+        log.info(f'{action} {lang_folder}/{cli.msgs_filename}...', end='')
         sys.stdout.flush()
         translated_msgs = create_translations(cli, msgs, lang_code)
         data.json.write(msgs_path, translated_msgs)
@@ -68,11 +75,9 @@ def write_translations(cli):
         if translated_msgs == msgs : langs_skipped.append(lang_code) ; lang_skipped = True
         else : langs_translated.append(lang_code) ; lang_translated = True
         if not lang_translated : langs_not_translated.append(lang_code)
-        status = (
-            f'{log.colors.dg}Added' if lang_added else
-            f'{log.colors.gry}Skipped' if lang_skipped else
-            f'{log.colors.dy}Updated'
-        )
+        status = f'{log.colors.dg}{cli.msgs.log_ADDED}' if lang_added else \
+                 f'{log.colors.gry}{cli.msgs.log_SKIPPED}' if lang_skipped else \
+                 f'{log.colors.dy}{cli.msgs.log_UPDATED}'
         log.overwrite_print(f'{status} {lang_folder}/{cli.msgs_filename}{log.colors.nc}')
 
     return langs_translated, langs_skipped, langs_added, langs_not_translated

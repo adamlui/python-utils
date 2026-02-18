@@ -1,0 +1,18 @@
+{
+  "prompt_KEYS_TO_REMOVE": { "message": "Enter key(s) to remove (comma-separated, or ENTER if done)" },
+  "prompt_NO_KEYS_EXIT": { "message": "No keys entered. Exit?" },
+  "log_OVERWRITING_CONFIG_AT": { "message": "Overwriting existing config at" },
+  "log_DEFAULT_CONFIG_CREATED_AT": { "message": "Default config created at" },
+  "log_EXITING": { "message": "Exiting" },
+  "log_SEARCHING_FOR": { "message": "Searching for" },
+  "log_DIR_FOUND": { "message": "Directory found" },
+  "log_ADDED": { "message": "Added" },
+  "log_KEYS": { "message": "Keys" },
+  "log_KEYS_TO_REMOVE": { "message": "Current keys to remove" },
+  "log_NO_NEW_KEYS_ADDED": { "message": "No new keys added (all already present)" },
+  "log_ALL_JSON_PROCESSED": { "message": "All JSON files processed" },
+  "log_TOTAL_JSON_PROCESSED": { "message": "Total JSON files processed" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pass --force to overwrite" },
+  "warn_CONFIG_EXISTS_AT": { "message": "Config already exists at" },
+  "warn_DIR_NOT_FOUND": { "message": "Unable to locate directory" }
+}

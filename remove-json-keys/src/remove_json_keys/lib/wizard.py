@@ -7,15 +7,15 @@ def run(cli):
     while True: # prompt user for keys to remove
 
         if getattr(cli.config, 'keys', ''):
-            print('\nCurrent keys to remove:', cli.config.keys)
+            print(f'\n{cli.msgs.log_KEYS_TO_REMOVE}:', cli.config.keys)
         input_keys = input(
-            f'\n{log.colors.bw}Enter key(s) to remove (comma-separated, or ENTER if done): {log.colors.nc}')
+            f'\n{log.colors.bw}{cli.msgs.prompt_KEYS_TO_REMOVE}: {log.colors.nc}')
 
         if not input_keys: # no keys entered
             if cli.config.keys : break # out of wizard
-            user_resp = input('\nNo keys entered. Exit? (Y/n): ').lower()
+            user_resp = input(F'\n{cli.msgs.prompt_NO_KEYS_EXIT} (Y/n): ').lower()
             if user_resp == 'n' : continue # back to og prompt
-            else : print(f'Exiting {cli.name}...') ; sys.exit(0)
+            else : print(f'{cli.msgs.log_EXITING} {cli.name}...') ; sys.exit(0)
 
         new_keys = data.csv.parse(input_keys)
         existing_keys = set(cli.config.keys)
@@ -26,6 +26,6 @@ def run(cli):
 
         if truly_new_keys:
             cli.config.keys.extend(truly_new_keys)
-            print(f"Added: {', '.join(truly_new_keys)}")
+            print(f"{cli.msgs.log_ADDED}: {', '.join(truly_new_keys)}")
         else:
-            print('No new keys added (all already present)')
+            print(f'{cli.msgs.log_NO_NEW_KEYS_ADDED}')

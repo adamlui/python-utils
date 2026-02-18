@@ -27,13 +27,13 @@ def success(msg, *args, **kwargs) : print(f'\n{colors.bg}{msg.format(*args, **kw
 def tip(msg, *args, **kwargs) : print(f'\n{colors.bo}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
 def warn(msg, *args, **kwargs) : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
-def final_summary(summary_dict):
-    success('All JSON files processed!')
+def final_summary(msgs, summary_dict):
+    success(f'{msgs.log_ALL_JSON_PROCESSED}!')
     for name, file_set in summary_dict.items():
         if file_set:
             status = name.replace('_', ' ')
             status_color = colors.by if status == 'removed' else colors.gry
-            data(f'Keys {status}: {len(file_set)}')
+            data(f'{msgs.log_KEYS} {status}: {len(file_set)}')
             print(f'{status_color}[\n    ' + '\n    '.join(file_set) + f'\n]{colors.nc}')
 
 def trunc(msg, end='\n'):

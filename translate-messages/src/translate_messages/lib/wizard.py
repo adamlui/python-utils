@@ -5,9 +5,9 @@ def run(cli):
     while True: # prompt user for keys to ignore
 
         if getattr(cli.config, 'exclude_keys', ''):
-            print('\nIgnored key(s):', cli.config.exclude_keys)
+            print(f'\n{cli.msgs.log_IGNORED_KEYS}:', cli.config.exclude_keys)
         input_keys = input(
-            f'\n{log.colors.bw}Enter key(s) to ignore (comma-separated, or ENTER if done): {log.colors.nc}')
+            f'\n{log.colors.bw}{cli.msgs.prompt_KEYS_TO_IGNORE}: {log.colors.nc}')
         if not input_keys : break
 
         new_keys = data.csv.parse(input_keys)
@@ -19,6 +19,6 @@ def run(cli):
 
         if truly_new_keys:
             cli.config.exclude_keys.extend(truly_new_keys)
-            print(f"Added: {', '.join(truly_new_keys)}")
+            print(f"{cli.msgs.log_ADDED}: {', '.join(truly_new_keys)}")
         else:
-            print('No new keys added (all already present)')
+            print(f'{cli.msgs.log_NO_NEW_KEYS_ADDED}')
