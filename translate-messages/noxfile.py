@@ -52,5 +52,5 @@ def push_bump(session):
     new_ver = toml.read('pyproject.toml')['project']['version']
     session.run('git', 'pull')
     session.run('git', 'add', '.')
-    session.run('git', 'commit', '-m', f'Bumped {pkg.name} versions to {new_ver}')
+    session.run('git', 'commit', '-m', f'Bumped {pkg.dir} versions to {new_ver}')
     session.run('git', 'push')
