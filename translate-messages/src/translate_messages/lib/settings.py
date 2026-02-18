@@ -14,7 +14,7 @@ controls = sn(
     ),
     keys=sn(
         args=['-k', '--keys', '--include-keys', '--translate-keys'],
-        type=str, parser='csv', help='Keys to translate (e.g. "app_DESC,err_NOT_FOUND")'
+        type=str, parser='csv', help='Keys to translate (e.g. "app_DESC,err_NOT_FOUND") (default: all found src keys missing in target files)'
     ),
     exclude_langs=sn(
         args=['--exclude-langs', '--ignore-langs'],
