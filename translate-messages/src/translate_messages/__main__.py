@@ -1,9 +1,9 @@
+import sys
+from pathlib import Path
+
+from .lib import init, language, log, wizard
+
 def main():
-    import sys
-    from pathlib import Path
-
-    from .lib import init, language, log, wizard
-
     cli = init.cli(__file__)
 
     if cli.config.init:
