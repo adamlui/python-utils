@@ -1,7 +1,8 @@
 def main():
     import sys
     from pathlib import Path
-    from .lib import data, init, language, log, wizard
+
+    from .lib import init, language, log, wizard
 
     cli = init.cli(__file__)
 
@@ -20,21 +21,8 @@ def main():
     else:
         log.warn('Unable to locate directory.')
         sys.exit(1)
-
-    cli.msgs_filename = 'messages.json'
-    cli.locales_path = Path(cli.config.locales_dir)
-    cli.en_path = cli.locales_path / 'en' / cli.msgs_filename
-    if not cli.en_path.exists():
-        log.error(f'English locale not found at {cli.en_path}.')
-        log.tip(f'Make sure {cli.en_path} exists!')
-        sys.exit(1)
-    try:
-        cli.en_msgs = data.json.read(cli.en_path)
-    except Exception as err:
-        log.error(f'Failed to parse {cli.en_path}: {err}')
-        log.tip('Make sure it contains valid JSON')
-        sys.exit(1)
-
+    
+    init.src_msgs(cli)
     init.target_langs(cli)
 
     langs_translated, langs_skipped, langs_added, langs_not_translated = language.write_translations(cli)

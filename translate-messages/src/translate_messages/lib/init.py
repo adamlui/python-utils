@@ -1,4 +1,6 @@
 from pathlib import Path
+import sys
+
 from . import data, log, settings
 
 def cli(caller_file):
@@ -29,14 +31,27 @@ def locales_dir(cli):
             return
     cli.config.locales_dir = None
 
+def src_msgs(cli):
+    cli.msgs_filename = 'messages.json'
+    cli.locales_path = Path(cli.config.locales_dir)
+    cli.en_path = cli.locales_path / 'en' / cli.msgs_filename
+    if not cli.en_path.exists():
+        log.error(f'English locale not found at {cli.en_path}.')
+        log.tip(f'Make sure {cli.en_path} exists!')
+        sys.exit(1)
+    try:
+        cli.en_msgs = data.json.read(cli.en_path)
+    except Exception as err:
+        log.error(f'Failed to parse {cli.en_path}: {err}')
+        log.tip('Make sure it contains valid JSON')
+        sys.exit(1)
+
 def target_langs(cli):
     cli.config.target_langs = list(set(cli.config.target_langs)) # remove dupes
-
     if not cli.config.target_langs:
         cli.config.target_langs = cli.supported_locales
         for lang_path in cli.locales_path.rglob(f'*/{cli.msgs_filename}'): # merge discovered locales
             discovered_lang = lang_path.parent.name.replace('_', '-')
             if discovered_lang not in cli.config.target_langs:
                 cli.config.target_langs.append(discovered_lang)
-
     cli.config.target_langs.sort()
