@@ -71,7 +71,7 @@ def load(cli, caller_file):
             kwargs.pop(custom_attr, None)
         argp.add_argument(*args, **kwargs)
     for key, val in vars(argp.parse_args()).items():
-        if getattr(cli.config, key, None) is None:
+        if not getattr(cli.config, key, ''):
             setattr(cli.config, key, val)
 
     # Init all cli.config vals
