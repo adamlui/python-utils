@@ -69,7 +69,7 @@ def main():
 
     # Update files
     _, new_ver = init_vers(project, bump_type)
-    bump_pyproject_vers(pyproject, project, new_ver)    
+    bump_pyproject_vers(pyproject, project, new_ver)
     update_readme_vers(new_ver)
 
 if __name__ == '__main__' : main()

@@ -21,7 +21,7 @@ def main():
     else:
         log.warn('Unable to locate directory.')
         sys.exit(1)
-    
+
     init.src_msgs(cli)
     init.target_langs(cli)
 
