@@ -11,7 +11,7 @@ def main():
 
     log.info(f'Searching for {cli.config.json_dir}...')
     init.json_dir(cli)
-    if Path(cli.config.locales_dir).exists():
+    if Path(cli.config.json_dir).exists():
         log.success('Directory found!')
         print(f'\n>> {cli.config.json_dir}')
     else:
