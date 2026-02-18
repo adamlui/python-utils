@@ -32,7 +32,7 @@ def debug(msg, cli=None, *args, **kwargs):
     data = colors.gry
     if cli:
         if getattr(cli, 'debug_key', None):
-            data += str(getattr(cli.config, cli.debug_key, f'Key "{cli.debug_key}" not found'))
+            data += str(getattr(cli.config, cli.debug_key, f'cli.config key "{cli.debug_key}" not found'))
         else:
             data += str(cli.config)
     print(f'\n{colors.by}DEBUG: {msg.format(data, *args, **kwargs)}{colors.nc}')
