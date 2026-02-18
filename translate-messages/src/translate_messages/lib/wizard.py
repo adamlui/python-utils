@@ -21,4 +21,4 @@ def run(cli):
             cli.config.exclude_keys.extend(truly_new_keys)
             print(f"{cli.msgs.log_ADDED}: {', '.join(truly_new_keys)}")
         else:
-            print(f'{cli.msgs.log_NO_NEW_KEYS_ADDED}')
+            print(cli.msgs.log_NO_NEW_KEYS_ADDED)
