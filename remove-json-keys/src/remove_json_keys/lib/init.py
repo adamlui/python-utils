@@ -14,7 +14,7 @@ def config_file(cli):
         if cli.config.force:
             log.info(f'{cli.msgs.log_OVERWRITING_CONFIG_AT} {config_path}...')
         else:
-            log.warn(f'{cli.msgs.warn_CONFIG_EXISTS_AT} {config_path}. {cli.msgs.log_SKIPPING} --init.')
+            log.warn(f'{cli.msgs.warn_CONFIG_EXISTS_AT} {config_path}. {cli.msgs.log_SKIPPING} init.')
             log.tip(f'{cli.msgs.tip_PASS_FORCE_TO_OVERWRITE}.')
             return
     cli.config_filename = f'.{cli.short_name}.config.json5'
