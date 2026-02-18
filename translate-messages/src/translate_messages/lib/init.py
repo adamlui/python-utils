@@ -28,3 +28,15 @@ def locales_dir(cli):
             cli.config.locales_dir = str(path)
             return
     cli.config.locales_dir = None
+
+def target_langs(cli):
+    cli.config.target_langs = list(set(cli.config.target_langs)) # remove dupes
+
+    if not cli.config.target_langs:
+        cli.config.target_langs = cli.supported_locales
+        for lang_path in cli.locales_path.rglob(f'*/{cli.msgs_filename}'): # merge discovered locales
+            discovered_lang = lang_path.parent.name.replace('_', '-')
+            if discovered_lang not in cli.config.target_langs:
+                cli.config.target_langs.append(discovered_lang)
+
+    cli.config.target_langs.sort()

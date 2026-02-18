@@ -35,16 +35,7 @@ def main():
         log.tip('Make sure it contains valid JSON')
         sys.exit(1)
 
-    cli.config.target_langs = list(set(cli.config.target_langs)) # remove dupes
-
-    if not cli.config.target_langs:
-        cli.config.target_langs = cli.supported_locales
-        for lang_path in cli.locales_path.rglob(f'*/{cli.msgs_filename}'): # merge discovered locales
-            discovered_lang = lang_path.parent.name.replace('_', '-')
-            if discovered_lang not in cli.config.target_langs:
-                cli.config.target_langs.append(discovered_lang)
-
-    cli.config.target_langs.sort()
+    init.target_langs(cli)
 
     langs_translated, langs_skipped, langs_added, langs_not_translated = language.write_translations(cli)
 
