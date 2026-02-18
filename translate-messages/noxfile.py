@@ -5,14 +5,13 @@ from types import SimpleNamespace as sn
 import nox
 
 paths = sn(root=Path(__file__).parent)
-paths.pyproject = paths.root / 'pyproject.toml'
 sys.path.insert(0, str(paths.root / 'utils'))
 
 from lib import toml # type: ignore
 
 def session(func) : return nox.session(venv_backend='none')(func)
 
-pkg = sn(dir=Path(__file__).parent.name)
+pkg = sn(dir=paths.root.name)
 pkg.name = pkg.dir.replace('-', '_')
 
 # SESSIONS
