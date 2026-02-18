@@ -18,8 +18,6 @@ colors = sn(
 )
 
 def data(msg, *args, **kwargs) : print(f'\n{colors.bw}{msg.format(*args, **kwargs)}{colors.nc}')
-def debug(msg, *args, **kwargs):
-    if '--debug' in sys.argv : print(f'\n{colors.by}DEBUG: {msg.format(*args, **kwargs)}{colors.nc}')
 def dim(msg, *args, **kwargs) : print(f'\n{colors.gry}{msg.format(*args, **kwargs)}{colors.nc}')
 def error(msg, *args, **kwargs) : print(f'\n{colors.br}ERROR: {msg.format(*args, **kwargs)}{colors.nc}')
 def info(msg, *args, end='', **kwargs) : print(f'\n{colors.by}{msg.format(*args, **kwargs)}{colors.nc}', end=end)
@@ -28,6 +26,16 @@ def overwrite_print(msg, *args, **kwargs):
 def success(msg, *args, **kwargs) : print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')
 def tip(msg, *args, **kwargs) : print(f'\n{colors.bo}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
 def warn(msg, *args, **kwargs) : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
+
+def debug(msg, cli=None, *args, **kwargs):
+    if '--debug' not in sys.argv : return
+    data = colors.gry
+    if cli:
+        if getattr(cli, 'debug_key', None):
+            data += str(getattr(cli.config, cli.debug_key, f'Key "{cli.debug_key}" not found'))
+        else:
+            data += str(cli.config)
+    print(f'\n{colors.by}DEBUG: {msg.format(data, *args, **kwargs)}{colors.nc}')
 
 def final_summary(msgs, summary_dict):
     success(f'{msgs.log_ALL_JSON_PROCESSED}!')
