@@ -82,6 +82,3 @@ def load(cli, caller_file):
         if val is None and hasattr(ctrl, 'default_val'):
             val = ctrl.default_val
         setattr(cli.config, name, val)
-
-    if cli.config.exclude_langs: # trim cli.config.target_langs
-       cli.config.target_langs = [lang for lang in cli.config.target_langs if lang not in cli.config.exclude_langs]

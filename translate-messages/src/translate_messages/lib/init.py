@@ -55,3 +55,5 @@ def target_langs(cli):
             if discovered_lang not in cli.config.target_langs:
                 cli.config.target_langs.append(discovered_lang)
     cli.config.target_langs.sort()
+    if cli.config.exclude_langs:
+       cli.config.target_langs = [lang for lang in cli.config.target_langs if lang not in cli.config.exclude_langs]
