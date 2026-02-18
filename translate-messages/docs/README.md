@@ -46,8 +46,8 @@ Options can be set by using command-line arguments:
 | `-k`, `--keys`         | Comma-separated list of keys to translate (default: all found src keys missing in target files)           | `--keys=app_DESC,err_NOT_FOUND`
 | `--exclude-langs`      | Comma-separated list of languages to exclude                                                              | `--exclude-langs=en,es`
 | `--exclude-keys`       | Comma-separated list of keys to ignore                                                                    | `--exclude-keys=app_NAME,author`
-| `-i`, `--init`         | Create `.translate-msgs.config.json5` in project root to store default options                            |
-| `-f`, `--force`        | Force overwrite of existing config file when using `--init`                                               |
+| `init`, `-i`, `--init` | Create `.translate-msgs.config.json5` in project root to store default options                            |
+| `-f`, `--force`        | Force overwrite of existing config file when using `init`                                                 |
 | `-W`, `--no-wizard`    | Skip interactive prompts during start-up                                                                  |
 | `-h`, `--help`         | Show help screen                                                                                          |
 
@@ -73,7 +73,7 @@ translate-msgs -k app_DESC,err_NOT_FOUND -d _msgs -t es,hi -W # no prompts
 
 ## Config file
 
-Use `--init` to create `.translate-msgs.config.json5` in your project root to set default options.
+Run `translate-msgs init` to create `.translate-msgs.config.json5` in your project root to set default options.
 
 Example defaults:
 
@@ -84,7 +84,7 @@ Example defaults:
   "keys": "",                // keys to translate (e.g. "app_DESC,err_NOT_FOUND")
   "exclude_langs": "",       // languages to exclude (e.g. "en,es")
   "exclude_keys": "",        // keys to ignore (e.g. "app_NAME,author")
-  "force": false,            // force overwrite existing config file when using --init
+  "force": false,            // force overwrite existing config file when using init
   "no_wizard": false         // skip interactive prompts during start-up
 }
 ```

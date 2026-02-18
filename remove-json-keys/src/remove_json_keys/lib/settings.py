@@ -1,4 +1,4 @@
-import argparse
+import argparse, sys
 from pathlib import Path
 from types import SimpleNamespace as sn
 
@@ -15,11 +15,11 @@ controls = sn(
     ),
     init=sn(
         args=['-i', '--init'],
-        action='store_true', help='Create .remove-json.config.json5 file to store default options'
+        action='store_true', subcmd='true', help='Create .remove-json.config.json5 file to store default options'
     ),
     force=sn(
         args=['-f', '--force', '--overwrite'],
-        action='store_true', help='Force overwrite existing config file when using --init'
+        action='store_true', help='Force overwrite existing config file when using init'
     ),
     no_wizard=sn(
         args=['-W', '--no-wizard', '--skip-wizard'],
@@ -55,10 +55,14 @@ def load(cli, caller_file):
     for attr_name in vars(controls):
         kwargs = getattr(controls, attr_name).__dict__.copy()
         args = kwargs.pop('args') # separate positional flags
-        for custom_attr in ('default_val', 'parser'): # remove custom attrs for argp
+        for custom_attr in ('default_val', 'parser', 'subcmd'): # remove custom attrs from kwargs
             kwargs.pop(custom_attr, None)
         argp.add_argument(*args, **kwargs)
-    for key, val in vars(argp.parse_args()).items():
+    parsed_args, unknown = argp.parse_known_args()
+    for attr_name, ctrl in vars(controls).items(): # process subcmds
+        if getattr(ctrl, 'subcmd', False) and next(arg for arg in ctrl.args if arg.startswith('--'))[2:] in sys.argv:
+            setattr(parsed_args, attr_name, True)
+    for key, val in vars(parsed_args).items(): # apply parsed_args to cli.config
         if not getattr(cli.config, key, ''):
             setattr(cli.config, key, val)
 
