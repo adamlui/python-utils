@@ -4,7 +4,7 @@ import sys
 from . import data, language, log, settings
 
 def cli(caller_file):
-    cli = data.sns.from_dict(data.json.read(Path(__file__).parent.parent / 'assets/data/package_data.json'))
+    cli = data.json.read(Path(__file__).parent.parent / 'assets/data/package_data.json')
     cli.msgs = language.get_msgs()
     settings.load(cli, caller_file)
     return cli

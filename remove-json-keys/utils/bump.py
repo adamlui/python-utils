@@ -12,7 +12,7 @@ sys.path.insert(0, str(paths.root / 'src'))
 
 from remove_json_keys.lib import data, log # type: ignore
 
-msgs = sn(**{ key:val['message'] for key,val in data.json.read(paths.msgs)['bump'].items() })
+msgs = sn(**{ key: val.message for key, val in data.json.read(paths.msgs).bump.items() })
 
 def parse_args():
     argp = argparse.ArgumentParser(description=msgs.app_DESC, add_help=False)

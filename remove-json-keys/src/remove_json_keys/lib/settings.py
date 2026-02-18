@@ -47,7 +47,7 @@ def load(cli, caller_file):
         config_path = Path(cli.project_root) / filename
         if config_path.exists():
             cli.config_filepath = str(config_path)
-            cli.config = data.sns.from_dict(data.json.read(cli.config_filepath))
+            cli.config = data.json.read(cli.config_filepath)
             cli.config_filename = filename
             break
     if hasattr(cli, 'config_filename'):

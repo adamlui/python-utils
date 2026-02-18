@@ -9,7 +9,7 @@ def main():
 
     from remove_json_keys.lib import data, log # type: ignore
 
-    msgs = sn(**{ key:val['message'] for key,val in data.json.read(paths.msgs)['clean'].items() })
+    msgs = sn(**{ key: val.message for key, val in data.json.read(paths.msgs).clean.items() })
 
     for target in ['dist', 'build', '*_cache', '__pycache__', '*.egg-info']:
         for path in Path('.').rglob(target):
