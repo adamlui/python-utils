@@ -10,7 +10,7 @@ paths.readme = paths.root / 'docs' / 'README.md'
 paths.msgs = paths.root / 'utils' / 'data' / 'messages.json'
 sys.path.insert(0, str(paths.root / 'src'))
 
-from remove_json_keys.lib import data, log  # type: ignore
+from remove_json_keys.lib import data, log # type: ignore
 
 msgs = sn(**{ key:val['message'] for key,val in data.json.read(paths.msgs)['bump'].items() })
 
