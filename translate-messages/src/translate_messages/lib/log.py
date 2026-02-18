@@ -18,7 +18,8 @@ colors = sn(
 )
 
 def data(msg, *args, **kwargs) : print(f'\n{colors.bw}{msg.format(*args, **kwargs)}{colors.nc}')
-def debug(msg, *args, **kwargs) : print(f'\n{colors.by}DEBUG: {msg.format(*args, **kwargs)}{colors.nc}')
+def debug(msg, *args, **kwargs):
+    if '--debug' in sys.argv : print(f'\n{colors.by}DEBUG: {msg.format(*args, **kwargs)}{colors.nc}')
 def dim(msg, *args, **kwargs) : print(f'\n{colors.gry}{msg.format(*args, **kwargs)}{colors.nc}')
 def error(msg, *args, **kwargs) : print(f'\n{colors.br}ERROR: {msg.format(*args, **kwargs)}{colors.nc}')
 def info(msg, *args, end='', **kwargs) : print(f'\n{colors.by}{msg.format(*args, **kwargs)}{colors.nc}', end=end)
