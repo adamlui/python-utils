@@ -14,5 +14,12 @@
   "log_TOTAL_JSON_PROCESSED": { "message": "Total JSON files processed" },
   "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pass --force to overwrite" },
   "warn_CONFIG_EXISTS_AT": { "message": "Config already exists at" },
-  "warn_DIR_NOT_FOUND": { "message": "Unable to locate directory" }
+  "warn_DIR_NOT_FOUND": { "message": "Unable to locate directory" },
+  "help_JSON_DIR": { "message": "Name of the folder containing JSON files (default: \"_locales\")" },
+  "help_KEYS": { "message": "Keys to remove (e.g. \"app_NAME,author\")" },
+  "help_INIT": { "message": "Create .remove-json.config.json5 file to store default options" },
+  "help_FORCE": { "message": "Force overwrite existing config file when using init" },
+  "help_NO_WIZARD": { "message": "Skip interactive prompts during start-up" },
+  "help_HELP": { "message": "Show help screen" },
+  "help_DEBUG": { "message": "Show debug logs" }
 }

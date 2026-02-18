@@ -7,51 +7,35 @@ from . import data, log
 controls = sn(
     locales_dir=sn(
         args=['-d', '--locales-dir', '--locales-folder', '--json-dir', '--json-folder'],
-        type=str, default_val='_locales', help='Name of the folder containing locale files (default: "_locales")'
+        type=str, default_val='_locales'
     ),
     target_langs=sn(
-        args=['-t', '--target-langs', '--include-langs'],
-        type=str, parser='csv', help='Languages to translate to (e.g. "es,fr") (default: all 100+ supported locales)'
-    ),
+        args=['-t', '--target-langs', '--include-langs'], type=str, parser='csv' ),
     keys=sn(
-        args=['-k', '--keys', '--include-keys', '--translate-keys'],
-        type=str, parser='csv', help='Keys to translate (e.g. "app_DESC,err_NOT_FOUND") (default: all found src keys missing in target files)'
-    ),
+        args=['-k', '--keys', '--include-keys', '--translate-keys'], type=str, parser='csv'),
     exclude_langs=sn(
-        args=['--exclude-langs', '--ignore-langs'],
-        type=str, parser='csv', help='Languages to exclude (e.g. "es,zh")'
-    ),
+        args=['--exclude-langs', '--ignore-langs'], type=str, parser='csv'),
     exclude_keys=sn(
-        args=['--exclude-keys', '--ignore-keys'],
-        type=str, parser='csv', help='Keys to ignore (e.g. "app_NAME,author")'
-    ),
+        args=['--exclude-keys', '--ignore-keys'], type=str, parser='csv'),
     only_stable=sn(
-        args=['-s', '--only-stable', '--no-discovery'],
-        action='store_true', help='Only use stable locales (skip auto-discovery)'
-    ),
+        args=['-s', '--only-stable', '--no-discovery'], action='store_true'),
     init=sn(
-        args=['-i', '--init'],
-        action='store_true', subcmd='true', help='Create .translate-msgs.config.json5 file to store default options'
-    ),
+        args=['-i', '--init'], action='store_true', subcmd='true'),
     force=sn(
-        args=['-f', '--force', '--overwrite'],
-        action='store_true', help='Force overwrite existing config file when using init'
-    ),
+        args=['-f', '--force', '--overwrite'], action='store_true'),
     no_wizard=sn(
-        args=['-n', '-W', '--no-wizard', '--skip-wizard'],
-        action='store_true', default=None, help='Skip interactive prompts during start-up'
-    ),
+        args=['-n', '-W', '--no-wizard', '--skip-wizard'], action='store_true', default=None),
     help=sn(
-        args=['-h', '--help'],
-        action='help', help='Show help screen'
-    ),
+        args=['-h', '--help'], action='help'),
     debug=sn(
-        args=['--debug'],
-        action='store_true', help='Show debug logs'
-    )
+        args=['--debug'], action='store_true')
 )
 
 def load(cli, caller_file):
+
+    # Assign help tips from cli.msgs
+    for ctrl_key, ctrl in vars(controls).items():
+        if not hasattr(ctrl, 'help') : ctrl.help = getattr(cli.msgs, f'help_{ctrl_key.upper()}')
 
     # Load from config file
     cli.config = sn()

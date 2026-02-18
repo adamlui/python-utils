@@ -37,6 +37,10 @@ controls = sn(
 
 def load(cli, caller_file):
 
+    # Assign help tips from cli.msgs
+    for ctrl_key, ctrl in vars(controls).items():
+        if not hasattr(ctrl, 'help') : ctrl.help = getattr(cli.msgs, f'help_{ctrl_key.upper()}')
+
     # Load from config file
     cli.config = sn()
     caller_path = Path(caller_file)
