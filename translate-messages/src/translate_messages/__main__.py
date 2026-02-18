@@ -1,20 +1,16 @@
-import sys
 from pathlib import Path
+import sys
 
 from .lib import init, language, log, wizard
 
 def main():
     cli = init.cli(__file__)
 
-    if cli.config.init:
-        init.config_file(cli)
-        sys.exit(0)
-    if not cli.config.no_wizard:
-        wizard.run(cli)
+    if cli.config.init : init.config_file(cli) ; sys.exit(0)
+    if not cli.config.no_wizard : wizard.run(cli)
 
     log.info(f'Searching for {cli.config.locales_dir}...')
     init.locales_dir(cli)
-
     if Path(cli.config.locales_dir).exists():
         log.success('Directory found!')
         print(f'\n>> {cli.config.locales_dir}')
