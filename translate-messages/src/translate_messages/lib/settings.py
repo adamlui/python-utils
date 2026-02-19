@@ -84,9 +84,9 @@ def load(cli, caller_file):
     # Init all cli.config vals
     for name, ctrl in vars(controls).items():
         val = getattr(cli.config, name, '')
-        if getattr(ctrl, 'parser', None) == 'csv':
+        if getattr(ctrl, 'parser', '') == 'csv':
             val = data.csv.parse(val)
-        if val is None and hasattr(ctrl, 'default_val'):
+        if not val and hasattr(ctrl, 'default_val'):
             val = ctrl.default_val
         setattr(cli.config, name, val)
     log.debug('All cli.config vals set!\n{}', cli)
