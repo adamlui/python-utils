@@ -78,13 +78,12 @@ def load(cli, caller_file):
         if getattr(ctrl, 'subcmd', False) and next(arg for arg in ctrl.args if arg.startswith('--'))[2:] in sys.argv:
             setattr(parsed_args, attr_name, True)
     for key, val in vars(parsed_args).items(): # apply parsed_args to cli.config
-        if not getattr(cli.config, key, ''):
-            setattr(cli.config, key, val)
+        if val : setattr(cli.config, key, val)
     log.debug('Args parsed!\n{}', cli)
 
     # Init all cli.config vals
     for name, ctrl in vars(controls).items():
-        val = getattr(cli.config, name, None)
+        val = getattr(cli.config, name, '')
         if getattr(ctrl, 'parser', None) == 'csv':
             val = data.csv.parse(val)
         if val is None and hasattr(ctrl, 'default_val'):
