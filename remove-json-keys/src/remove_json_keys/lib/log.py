@@ -11,6 +11,7 @@ colors = sn(
     by='\x1b[1;33m',     # bright yellow
     bo='\x1b[38;5;214m', # bright orange
     bg='\x1b[1;92m',     # bright green
+    bc='\x1b[1;96m',     # bright cyan
     bw='\x1b[1;97m',     # bright white
     dg='\x1b[32m',       # dark green
     dy='\x1b[33m',       # dark yellow
@@ -24,7 +25,7 @@ def info(msg, *args, end='', **kwargs) : print(f'\n{colors.by}{msg.format(*args,
 def overwrite_print(msg, *args, **kwargs):
     sys.stdout.write('\r' + msg.format(*args, **kwargs).ljust(terminal_width)[:terminal_width])
 def success(msg, *args, **kwargs) : print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')
-def tip(msg, *args, **kwargs) : print(f'\n{colors.bo}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
+def tip(msg, *args, **kwargs) : print(f'\n{colors.bc}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
 def warn(msg, *args, **kwargs) : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
 def debug(msg, cli=None, *args, **kwargs):
