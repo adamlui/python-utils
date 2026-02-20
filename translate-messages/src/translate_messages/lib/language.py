@@ -45,29 +45,28 @@ def write_translations(cli):
     langs_added, langs_skipped, langs_translated, langs_not_translated = [], [], [], []
     for lang_code in cli.config.target_langs:
         lang_added, lang_skipped, lang_translated = False, False, False
-        lang_folder = lang_code.replace('-', '_')
+        lang_dir = lang_code.replace('-', '_')
 
         if lang_code.startswith('en'): # skip EN locales
-            print(f'\n{log.colors.gry}'
-                  f'{cli.msgs.log_SKIPPED} {lang_folder}/{cli.msgs_filename}...{log.colors.nc}', end='')
+            print(f'\n{log.colors.gry}{cli.msgs.log_SKIPPED} {lang_dir}/{cli.msgs_filename}...{log.colors.nc}', end='')
             langs_skipped.append(lang_code) ; langs_not_translated.append(lang_code)
             continue
 
         if '-' in lang_code: # cap suffix
-            sep_idx = lang_folder.index('_')
-            lang_folder = f'{lang_folder[:sep_idx]}_{lang_folder[sep_idx+1:].upper()}'
+            sep_idx = lang_dir.index('_')
+            lang_dir = f'{lang_dir[:sep_idx]}_{lang_dir[sep_idx+1:].upper()}'
 
-        lang_folder_path = cli.locales_path / lang_folder
-        msgs_path = lang_folder_path / cli.msgs_filename
+        lang_dir_path = cli.locales_path / lang_dir
+        msgs_path = lang_dir_path / cli.msgs_filename
         if msgs_path.exists():
             msgs = data.json.read(msgs_path)
         else:
             msgs = {}
-            lang_folder_path.mkdir(parents=True, exist_ok=True)
+            lang_dir_path.mkdir(parents=True, exist_ok=True)
             langs_added.append(lang_code) ; lang_added = True
 
         action = cli.msgs.log_ADDING if not msgs else cli.msgs.log_UPDATING
-        log.info(f'{action} {lang_folder}/{cli.msgs_filename}...', end='')
+        log.info(f'{action} {lang_dir}/{cli.msgs_filename}...', end='')
         sys.stdout.flush()
         translated_msgs = create_translations(cli, msgs, lang_code)
         data.json.write(msgs_path, translated_msgs)
@@ -78,6 +77,6 @@ def write_translations(cli):
         status = f'{log.colors.dg}{cli.msgs.log_ADDED}' if lang_added else \
                  f'{log.colors.gry}{cli.msgs.log_SKIPPED}' if lang_skipped else \
                  f'{log.colors.dy}{cli.msgs.log_UPDATED}'
-        log.overwrite_print(f'{status} {lang_folder}/{cli.msgs_filename}{log.colors.nc}')
+        log.overwrite_print(f'{status} {lang_dir}/{cli.msgs_filename}{log.colors.nc}')
 
     return langs_translated, langs_skipped, langs_added, langs_not_translated
