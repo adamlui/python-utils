@@ -13,8 +13,7 @@ def init_kudo_sync_bot(msgs):
     gpg_keys_path = os.environ.get('GPG_KEYS_PATH')
     if gpg_keys_path:
         key_path = Path(gpg_keys_path) / 'kudo-sync-bot-private-key.asc'
-        if key_path.exists():
-            subprocess.run(['gpg', '--batch', '--import', str(key_path)], check=True)
+        if key_path.exists() : subprocess.run(['gpg', '--batch', '--import', str(key_path)], check=True)
         key_id_path = Path(gpg_keys_path) / 'kudo-sync-bot-key-id.txt'
         if key_id_path.exists():
             key_id = key_id_path.read_text().strip()
