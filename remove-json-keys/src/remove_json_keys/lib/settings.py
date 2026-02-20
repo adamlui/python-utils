@@ -21,7 +21,7 @@ controls = sn(
     docs=sn(
         args=['--docs'], action='store_true'),
     debug=sn(
-        args=['--debug'], nargs='?', const=True)
+        args=['--debug'], nargs='?', const=True, metavar='TARGET_KEY' )
 )
 
 def load(cli):
