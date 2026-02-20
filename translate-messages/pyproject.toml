@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "translate-messages"
 version = "1.3.0"
-description = "Translate en/messages.json (in chrome.i18n format) to 100+ locales."
+description = "Translate en/messages.json (in chrome.i18n format) to 100+ locales automatically."
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
 ]
