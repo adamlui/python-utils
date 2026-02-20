@@ -1,7 +1,7 @@
 {
   "name": "translate-messages",
   "version": "1.5.0",
-  "description": "Translate en/messages.json (in chrome.i18n format) to 100+ locales automatically.",
+  "description": "Translate en/messages.json (chrome.i18n format) to 100+ locales automatically.",
   "short_name": "translate-msgs",
   "cli_cmds": ["translate-messages", "translate-msgs"],
   "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
