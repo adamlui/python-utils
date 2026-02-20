@@ -56,9 +56,9 @@ def config_filepath(cli): # for settings.load()
     current_dir = Path.cwd().resolve()
     for parent in [current_dir, *current_dir.parents]:
         for filename in possible_config_filenames:
-            possible_config_file = parent / filename
-            if possible_config_file.exists():
-                cli.config_filepath = possible_config_file
+            possible_config_filepath = parent / filename
+            if possible_config_filepath.exists():
+                cli.config_filepath = possible_config_filepath
                 return
 
 def locales_path(cli):
