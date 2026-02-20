@@ -1,7 +1,7 @@
+import sys, webbrowser
 from urllib.error import URLError
 from urllib.parse import urlparse
 from urllib.request import urlopen
-import sys, webbrowser
 
 def get(url, timeout=5, encoding='utf-8'):
     url = validate_url(url)
