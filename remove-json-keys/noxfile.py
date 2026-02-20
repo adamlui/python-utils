@@ -15,6 +15,8 @@ def test(session) : session.run('py', '-m', pkg.name, *session.posargs, env={ 'P
 @session
 def test_help(session) : session.run('py', '-m', pkg.name, '--help', *session.posargs, env={ 'PYTHONPATH': 'src' })
 @session
+def test_docs(session) : session.run('py', '-m', pkg.name, '--docs', *session.posargs, env={ 'PYTHONPATH': 'src' })
+@session
 def test_build(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg.dir, *session.posargs)
 
 @session

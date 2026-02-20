@@ -51,6 +51,7 @@ Options can be set by using command-line arguments:
 | `-f`, `--force`        | Force overwrite of existing config file when using `init`                                                 |
 | `-n`, `--no-wizard`    | Skip interactive prompts during start-up                                                                  |
 | `-h`, `--help`         | Show help screen                                                                                          |
+| `--docs`               | Open docs URL                                                                                             |
 
 ## Examples
 

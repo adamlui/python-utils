@@ -1,12 +1,13 @@
 from pathlib import Path
 import sys
 
-from .lib import data, init, log, wizard
+from .lib import data, init, log, url, wizard
 
 def main():
     cli = init.cli()
 
     if cli.config.init : init.config_file(cli) ; sys.exit(0)
+    if cli.config.docs : url.open(cli.urls.docs) ; sys.exit(0)
     if not cli.config.no_wizard : wizard.run(cli)
 
     log.info(f'{cli.msgs.log_SEARCHING_FOR} {cli.config.json_dir}...')

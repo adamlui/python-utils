@@ -1,6 +1,7 @@
 from urllib.error import URLError
 from urllib.parse import urlparse
 from urllib.request import urlopen
+import sys, webbrowser
 
 def get(url, timeout=5, encoding='utf-8', allowed_schemes=('http', 'https'), allowed_domains=[]):
     parsed_url = urlparse(url)
@@ -17,3 +18,10 @@ def get(url, timeout=5, encoding='utf-8', allowed_schemes=('http', 'https'), all
             return resp.read().decode(encoding)
     except URLError as err:
         raise RuntimeError(f'Failed to fetch from {url}: {err}')
+
+def open(url):
+    try:
+        webbrowser.open(url)
+    except Exception as err:
+        print(f'Failed to open browser: {err}', file=sys.stderr)
+        sys.exit(1)
