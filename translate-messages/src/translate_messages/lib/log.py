@@ -65,7 +65,7 @@ def help_cmd_docs_url_exit(cli, msg=''):
     help_cmd(cli) ; docs_url(cli) ; sys.exit(1)
 
 def init_cmd_docs_url_exit(cli, msg=''):
-    if msg: print(f'\n{colors.br}ERROR: {msg}')
+    if msg : print(f'\n{colors.br}ERROR: {msg}')
     init_cmd(cli) ; docs_url(cli) ; sys.exit(1)
 
 def trunc(msg, end='\n'):
