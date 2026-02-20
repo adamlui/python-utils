@@ -1,7 +1,7 @@
 from pathlib import Path
 import os, subprocess, sys
 
-def commit(files, msg) : run('add', *files) ; run('commit', '-n', '-m', msg)
+def commit(files, msg, *args) : run('add', *files) ; run('commit', '-m', msg, *args)
 
 def init_kudo_sync_bot(msgs):
     print(f'\n{msgs.log_SWITCHING_TO_KUDO_SYNC_BOT}...\n')

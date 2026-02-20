@@ -50,7 +50,8 @@ def bump_pyproject_vers(pyproject, project, new_ver):
 
 def bump_package_data_ver(project, new_ver):
     log.info(f'{msgs.log_BUMPING_VER_IN} assets/data/package_data.json...')
-    updated_json_content = re.sub(r'"(?>\d{1,3}\.\d{1,3}\.\d{1,3})"', f'"{new_ver}"', data.file.read(paths.package_data))
+    updated_json_content = re.sub(
+        r'"(?>\d{1,3}\.\d{1,3}\.\d{1,3})"', f'"{new_ver}"', data.file.read(paths.package_data))
     data.file.write(paths.package_data, updated_json_content)
     log.success(msgs.log_BUMPED_PACKAGE_DATA_VER.format(prev_ver=project.version, **locals()))
 
@@ -86,8 +87,10 @@ def main():
     else:
         git.init_kudo_sync_bot(msgs)
         log.info(f'{msgs.log_COMMITTING_CHANGES}...')
-        git.commit([str(paths.pyproject), str(paths.package_data)], f'Bumped {project.name} versions to {new_ver}')
-        git.commit([str(paths.readme)], f'Updated {project.name} versions in README URLs to {new_ver}')
+        git.commit([str(paths.pyproject), str(paths.package_data)],
+            f'Bumped {project.name} versions to {new_ver}', '-n')
+        git.commit([str(paths.readme)],
+            f'Updated {project.name} versions in README URLs to {new_ver}', '-n')
         if args.no_push:
             print(f'\n{msgs.log_SKIPPING_GIT_PUSH}...')
         else:
