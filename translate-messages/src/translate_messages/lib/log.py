@@ -23,8 +23,8 @@ def dim(msg, *args, **kwargs) : print(f'\n{colors.gry}{msg.format(*args, **kwarg
 def docs_url(cli) : tip(f'{cli.msgs.tip_FOR_MORE_HELP_VISIT}:\n{cli.urls.docs}')
 def error(msg, *args, **kwargs) : print(f'\n{colors.br}ERROR: {msg.format(*args, **kwargs)}{colors.nc}')
 def help_cmd(cli) : info(f"{cli.msgs.log_TYPE} '{cli.cli_cmds[0]} --help' {cli.msgs.log_FOR_AVAIL_OPTIONS}\n")
-def help_cmd_docs_url_exit(cli) : help_cmd(cli) ; docs_url(cli) ; sys.exit(1)
 def info(msg, *args, end='', **kwargs) : print(f'\n{colors.by}{msg.format(*args, **kwargs)}{colors.nc}', end=end)
+def init_cmd(cli) : info(f"{cli.msgs.log_TYPE} '{cli.cli_cmds[0]} --init' {cli.msgs.log_TO_CREATE_DEFAULT_CONFIG}\n")
 def overwrite_print(msg, *args, **kwargs):
     sys.stdout.write('\r' + msg.format(*args, **kwargs).ljust(terminal_width)[:terminal_width])
 def success(msg, *args, **kwargs) : print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')
@@ -59,6 +59,14 @@ def final_summary(msgs, summary_dict):
             status_color = colors.by if status == 'translated' else colors.bg if status == 'added' else colors.gry
             data(f'{msgs.log_LANGUAGES} {status}: {len(lang_set)}')
             print(f"{status_color}[ {', '.join(lang_set)} ]{colors.nc}")
+
+def help_cmd_docs_url_exit(cli, msg=''):
+    if msg : print(f'\n{colors.br}ERROR: {msg}')
+    help_cmd(cli) ; docs_url(cli) ; sys.exit(1)
+
+def init_cmd_docs_url_exit(cli, msg=''):
+    if msg: print(f'\n{colors.br}ERROR: {msg}')
+    init_cmd(cli) ; docs_url(cli) ; sys.exit(1)
 
 def trunc(msg, end='\n'):
     truncated_lines = [

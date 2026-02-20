@@ -16,6 +16,7 @@
   "log_NO_NEW_KEYS_ADDED": { "message": "No new keys added (all already present)" },
   "log_ALL_JSON_UPDATED": { "message": "All JSON files updated successfully" },
   "log_TYPE": { "message": "Type" },
+  "log_TO_CREATE_DEFAULT_CONFIG": { "message": "to create default config file" },
   "log_FOR_AVAIL_OPTIONS": { "message": "for available options" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "For more help, visit" },
   "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pass --force to overwrite" },

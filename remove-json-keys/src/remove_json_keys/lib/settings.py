@@ -50,8 +50,7 @@ def load(cli):
         if getattr(ctrl, 'subcmd', False):
             for arg in ctrl.args : subcmd_flags.append(arg)
     if unknown_args and not all(f'--{arg}' in subcmd_flags for arg in unknown_args):
-        log.error(f"{cli.msgs.err_UNRECOGNIZED_ARGS}: {' '.join(unknown_args)}")
-        log.help_cmd_docs_url_exit(cli)
+        log.help_cmd_docs_url_exit(cli, f"{cli.msgs.err_UNRECOGNIZED_ARGS}: {' '.join(unknown_args)}")
     for ctrl_key, ctrl in vars(controls).items(): # process subcmds
         if getattr(ctrl, 'subcmd', False) and next(arg for arg in ctrl.args if arg.startswith('--'))[2:] in sys.argv:
             setattr(parsed_args, ctrl_key, True)
@@ -63,7 +62,12 @@ def load(cli):
     init.config_filepath(cli)
     if getattr(cli, 'config_filepath', None):
         for key, val in data.json.read(cli.config_filepath).items():
-            if not getattr(cli.config, key): setattr(cli.config, key, val)
+            if not getattr(cli.config, key, None):
+                if hasattr(cli.config, key):
+                    setattr(cli.config, key, val)
+                else:
+                    log.init_cmd_docs_url_exit(cli,
+                        f"Invalid key '{key}' found in \n{log.colors.gry}{cli.config_filepath}")
         log.debug('Config file loaded!', cli)
     else:
         log.debug('No config file found.')
