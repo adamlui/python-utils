@@ -24,7 +24,7 @@ def config_file(cli):
     # Handle existing file
     if target_path.exists():
         if cli.config.force:
-            log.info(f'{cli.msgs.log_OVERWRITING_CONFIG_AT} {target_path}...')
+            log.info(f'{cli.msgs.log_OVERWRITING_CONFIG_AT} {target_path}...\n')
         else:
             log.warn(f'{cli.msgs.warn_CONFIG_EXISTS_AT} {target_path}. {cli.msgs.log_SKIPPING} init...')
             log.tip(f'{cli.msgs.tip_PASS_FORCE_TO_OVERWRITE}.')
@@ -33,7 +33,7 @@ def config_file(cli):
     # Fetch/write from jsDelivr
     if not getattr(cli, 'default_file_config', ''):
         ver_tag = f'@{cli.name}-{cli.version}'
-        print(f'{cli.urls.jsdelivr}{ver_tag}/{cli.name}/{target_path.name}')
+        log.debug(f'{cli.urls.jsdelivr}{ver_tag}/{cli.name}/{target_path.name}')
         cli.default_file_config = url.get(f'{cli.urls.jsdelivr}{ver_tag}/{cli.name}/{target_path.name}')
     data.file.write(str(target_path), cli.default_file_config)
     log.success(f'{cli.msgs.log_DEFAULT_CONFIG_CREATED_AT} {target_path}')
