@@ -45,10 +45,10 @@ def debug(msg, cli=None, *args, **kwargs):
         data_val = getattr(cli.config, debug_key, f'cli.config key "{debug_key}" not found') if debug_key \
               else cli.config
         msg += f'\n{colors.gry}{data_val}{colors.nc}'
-    
+
     if args: # use 'em
         msg = msg.format(*args, **kwargs)
-    
+
     print(f'\n{colors.by}DEBUG: {msg}{colors.nc}')
 
 def final_summary(msgs, summary_dict):
