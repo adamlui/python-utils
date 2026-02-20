@@ -1,18 +1,12 @@
 from pathlib import Path
-import sys
 from types import SimpleNamespace as sn
 
 import nox
 
-paths = sn(root=Path(__file__).parent)
-sys.path.insert(0, str(paths.root / 'utils'))
-
-from lib import toml # type: ignore
+pkg = sn(dir=Path(__file__).parent.name)
+pkg.name = pkg.dir.replace('-', '_')
 
 def session(func) : return nox.session(venv_backend='none')(func)
-
-pkg = sn(dir=paths.root.name)
-pkg.name = pkg.dir.replace('-', '_')
 
 # SESSIONS
 
@@ -27,11 +21,11 @@ def test_build(session) : session.run('pip', 'install', '-e', '.') ; session.run
 def debug(session) : session.run('py', '-m', pkg.name, '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
 
 @session
-def bump_patch(session) : session.run('py', 'utils/bump.py', '--patch', *session.posargs)
+def bump_patch(session) : session.run('py', 'utils/bump.py', '--patch', '--no-push', *session.posargs)
 @session
-def bump_minor(session) : session.run('py', 'utils/bump.py', '--minor', *session.posargs)
+def bump_minor(session) : session.run('py', 'utils/bump.py', '--minor', '--no-push', *session.posargs)
 @session
-def bump_major(session) : session.run('py', 'utils/bump.py', '--major', *session.posargs)
+def bump_major(session) : session.run('py', 'utils/bump.py', '--major', '--no-push', *session.posargs)
 
 @session
 def build(session) : clean(session) ; session.run('py', '-m', 'build') ; print('Build complete!')
@@ -39,20 +33,11 @@ def build(session) : clean(session) ; session.run('py', '-m', 'build') ; print('
 def publish(session) : session.run('bash', 'utils/publish.sh', *session.posargs)
 
 @session
-def deploy_patch(session) : bump_patch(session) ; push_bump(session) ; build(session) ; publish(session)
+def deploy_patch(session) : bump_patch(session) ; build(session) ; publish(session)
 @session
-def deploy_minor(session) : bump_minor(session) ; push_bump(session) ; build(session) ; publish(session)
+def deploy_minor(session) : bump_minor(session) ; build(session) ; publish(session)
 @session
-def deploy_major(session) : bump_major(session) ; push_bump(session) ; build(session) ; publish(session)
+def deploy_major(session) : bump_major(session) ; build(session) ; publish(session)
 
 @session
 def clean(session) : session.run('py', 'utils/clean.py')
-
-# HELPERS
-
-def push_bump(session):
-    new_ver = toml.read('pyproject.toml')['project']['version']
-    session.run('git', 'pull')
-    session.run('git', 'add', '.')
-    session.run('git', 'commit', '-m', f'Bumped {pkg.dir} versions to {new_ver}')
-    session.run('git', 'push')
