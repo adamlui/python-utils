@@ -3,14 +3,13 @@ from pathlib import Path
 from types import SimpleNamespace as sn
 
 from lib import git, toml
+from translate_messages.lib import data, log
 
 paths = sn(root=Path(__file__).parent.parent)
 paths.pyproject = paths.root / 'pyproject.toml'
 paths.package_data = paths.root / 'src/translate_messages/assets/data/package_data.json'
 paths.readme = paths.root / 'docs/README.md'
 paths.util_msgs = paths.root / 'utils/data/messages.json'
-
-from translate_messages.lib import data, log
 
 msgs = sn(**{ key:val['message'] for key,val in data.json.read(paths.util_msgs)['bump'].items() })
 
