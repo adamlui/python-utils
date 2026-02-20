@@ -32,7 +32,9 @@ def config_file(cli):
 
     # Fetch/write from jsDelivr
     if not getattr(cli, 'default_file_config', ''):
-        cli.default_file_config = data.url.get(f'{cli.urls.jsdelivr}/{cli.name}/{target_path.name}')
+        ver_tag = f'@{cli.name}-{cli.version}'
+        print(f'{cli.urls.jsdelivr}{ver_tag}/{cli.name}/{target_path.name}')
+        cli.default_file_config = data.url.get(f'{cli.urls.jsdelivr}{ver_tag}/{cli.name}/{target_path.name}')
     data.file.write(str(target_path), cli.default_file_config)
     log.success(f'{cli.msgs.log_DEFAULT_CONFIG_CREATED_AT} {target_path}')
     if in_project_root : log.tip(f'{cli.msgs.tip_MOVE_CONFIG_TO_ROOT}.')
