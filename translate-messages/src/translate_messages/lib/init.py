@@ -58,16 +58,15 @@ def config_filepath(cli): # for settings.load()
                 cli.config_filepath = possible_config_file
                 return
 
-def locales_dir(cli):
+def locales_path(cli):
     for path in Path.cwd().rglob(cli.config.locales_dir):
         if path.is_dir():
-            cli.config.locales_dir = str(path)
+            cli.locales_path = Path(path)
             return
-    cli.config.locales_dir = ''
+    cli.locales_path = None
 
 def src_msgs(cli):
     cli.msgs_filename = 'messages.json'
-    cli.locales_path = Path(cli.config.locales_dir)
     cli.en_path = cli.locales_path / 'en' / cli.msgs_filename
     if not cli.en_path.exists():
         log.error(f'{cli.msgs.err_EN_LOC_NOT_FOUND_AT} {cli.en_path}.')

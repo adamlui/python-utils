@@ -10,10 +10,10 @@ def main():
     if not cli.config.no_wizard : wizard.run(cli)
 
     log.info(f'{cli.msgs.log_SEARCHING_FOR} {cli.config.locales_dir}...')
-    init.locales_dir(cli)
-    if Path(cli.config.locales_dir).exists():
+    init.locales_path(cli)
+    if Path(cli.locales_path).exists():
         log.success(f'{cli.msgs.log_DIR_FOUND}!')
-        print(f'\n>> {cli.config.locales_dir}')
+        print(f'\n>> {cli.locales_path}')
     else:
         log.warn(f'{cli.msgs.warn_DIR_NOT_FOUND}.')
         sys.exit(1)
