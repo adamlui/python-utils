@@ -83,20 +83,20 @@ def main():
 
     # Git commit/push
     if args.no_commit:
-        log.info(f'{msgs.log_SKIPPING_GIT_COMMIT}...')
+        print(f'\n{msgs.log_SKIPPING_GIT_COMMIT}...')
     else:
         git.init_kudo_sync_bot(msgs)
         log.info(f'{msgs.log_COMMITTING_CHANGES}...')
         git.commit([str(paths.pyproject), str(paths.package_data)], f'Bumped {project.name} versions to {new_ver}')
         git.commit([str(paths.readme)], f'Updated {project.name} versions in README URLs to {new_ver}')
         if args.no_push:
-            log.info(f'{msgs.log_SKIPPING_GIT_PUSH}...')
+            print(f'\n{msgs.log_SKIPPING_GIT_PUSH}...')
         else:
             log.info(f'{msgs.log_PUSHING_CHANGES}...')
             git.push()
             log.success(f'{msgs.log_PUSHED_ALL_COMMITS}')
         git.restore_og_config(msgs)
 
-    log.success(f'\n{msgs.log_SUCCESS}! {project.name} {msgs.log_BUMPED_TO} v{new_ver}!')
+    log.success(f'{msgs.log_SUCCESS}! {project.name} {msgs.log_BUMPED_TO} v{new_ver}!')
 
 if __name__ == '__main__' : main()
