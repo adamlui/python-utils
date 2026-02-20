@@ -5,26 +5,26 @@ from types import SimpleNamespace as sn
 import nox
 
 paths = sn(root=Path(__file__).parent)
-sys.path.insert(0, str(paths.root / 'utils'))
+sys.path.insert(0, str(paths.root / 'src'))
 
-from lib import toml # type: ignore
+from remove_json_keys.lib import pkg # type: ignore
 
 def session(func) : return nox.session(venv_backend='none')(func)
 
-pkg = sn(dir=paths.root.name)
-pkg.name = pkg.dir.replace('-', '_')
+project = sn(dir=paths.root.name)
+project.name = project.dir.replace('-', '_')
 
 # SESSIONS
 
 @session
-def test(session) : session.run('py', '-m', pkg.name, *session.posargs, env={ 'PYTHONPATH': 'src' })
+def test(session) : session.run('py', '-m', project.name, *session.posargs, env={ 'PYTHONPATH': 'src' })
 @session
-def test_help(session) : session.run('py', '-m', pkg.name, '--help', *session.posargs, env={ 'PYTHONPATH': 'src' })
+def test_help(session) : session.run('py', '-m', project.name, '--help', *session.posargs, env={ 'PYTHONPATH': 'src' })
 @session
-def test_build(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg.dir, *session.posargs)
+def test_build(session) : session.run('pip', 'install', '-e', '.') ; session.run(project.dir, *session.posargs)
 
 @session
-def debug(session) : session.run('py', '-m', pkg.name, '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
+def debug(session) : session.run('py', '-m', project.name, '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
 
 @session
 def bump_patch(session) : session.run('py', 'utils/bump.py', '--patch', *session.posargs)
@@ -51,8 +51,8 @@ def clean(session) : session.run('py', 'utils/clean.py')
 # HELPERS
 
 def push_bump(session):
-    new_ver = toml.read('pyproject.toml')['project']['version']
+    new_ver = pkg.get_ver()
     session.run('git', 'pull')
     session.run('git', 'add', '.')
-    session.run('git', 'commit', '-m', f'Bumped {pkg.dir} versions to {new_ver}')
+    session.run('git', 'commit', '-m', f'Bumped {project.dir} versions to {new_ver}')
     session.run('git', 'push')

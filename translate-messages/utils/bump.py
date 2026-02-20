@@ -2,8 +2,6 @@ import argparse, re, sys
 from pathlib import Path
 from types import SimpleNamespace as sn
 
-from lib import toml
-
 paths = sn(root=Path(__file__).parent.parent)
 paths.pyproject = paths.root / 'pyproject.toml'
 paths.readme = paths.root / 'docs/README.md'
@@ -35,7 +33,7 @@ def bump_pyproject_vers(pyproject, project, new_ver):
 
     # Bump project.version
     pyproject['project']['version'] = new_ver
-    toml.write(paths.pyproject, pyproject)
+    data.toml.write(paths.pyproject, pyproject)
     log.success(msgs.log_BUMPED_PROJECT_VER.format(prev_ver=project.version, **locals()))
 
     # Bump project.urls['Releases']
@@ -44,7 +42,7 @@ def bump_pyproject_vers(pyproject, project, new_ver):
     log.data(f'{msgs.log_GENERATED_CLOG_URL}: {changelog_url}')
     log.info(f'{msgs.log_UPDATING_CLOG_URL_IN} pyproject.toml...')
     pyproject['project']['urls']['Changelog'] = changelog_url
-    toml.write(paths.pyproject, pyproject)
+    data.toml.write(paths.pyproject, pyproject)
     log.success(msgs.log_BUMPED_CLOG_URL_VER_TAG.format(**locals()))
 
 def update_readme_vers(new_ver):
@@ -64,7 +62,7 @@ def main():
 
     # Init project data
     log.info(f'{msgs.log_LOADING_PYPROJECT.format(pyproject_path=paths.pyproject)}...')
-    pyproject = toml.read(paths.pyproject)
+    pyproject = data.toml.read(paths.pyproject)
     project = sn(**pyproject['project'])
 
     # Update files
