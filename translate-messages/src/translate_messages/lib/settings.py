@@ -1,8 +1,7 @@
 import argparse, sys
-from pathlib import Path
 from types import SimpleNamespace as sn
 
-from . import data, log
+from . import data, init, log
 
 controls = sn(
     locales_dir=sn(
@@ -31,7 +30,7 @@ controls = sn(
         args=['--debug'], nargs='?', const=True)
 )
 
-def load(cli, caller_file):
+def load(cli):
 
     # Init debug target
     if '--debug' in sys.argv:
@@ -45,32 +44,19 @@ def load(cli, caller_file):
 
     # Load from config file
     cli.config = sn()
-    caller_path = Path(caller_file)
-    cli.project_root = str(caller_path.parent.parent.parent if 'src' in str(caller_path)
-                      else caller_path.parent.parent)
-    possible_config_filenames = [
-        f'{prefix}{name}.config.json{suffix}'
-            for prefix in ['.', ''] for name in [cli.short_name, cli.name]
-            for suffix in ['5', '', 'c']
-    ]
-    for filename in possible_config_filenames:
-        config_path = Path(cli.project_root) / filename
-        if config_path.exists():
-            cli.config_filepath = str(config_path)
-            cli.config = data.sns.from_dict(data.json.read(cli.config_filepath))
-            cli.config_filename = filename
-            break
-    if hasattr(cli, 'config_filename'):
+    init.config_filepath(cli)
+    if getattr(cli, 'config_filepath', None):
+        cli.config = data.sns.from_dict(data.json.read(cli.config_filepath))
         log.debug('Config file loaded!\n{}', cli)
     else:
         log.debug('No config file found.')
 
     # Parse CLI args
     argp = argparse.ArgumentParser(description=cli.description, add_help=False)
-    for attr_name in vars(controls):
+    for attr_name in vars(controls): # add args to argp
         kwargs = getattr(controls, attr_name).__dict__.copy()
-        args = kwargs.pop('args') # separate positional flags
-        for custom_attr in ('default_val', 'parser', 'subcmd'): # remove custom attrs from kwargs
+        args = kwargs.pop('args')
+        for custom_attr in ('default_val', 'parser', 'subcmd'):
             kwargs.pop(custom_attr, None)
         argp.add_argument(*args, **kwargs)
     parsed_args, unknown = argp.parse_known_args()
