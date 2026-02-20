@@ -36,7 +36,7 @@ def load(cli):
     cli.config = sn()
     init.config_filepath(cli)
     if getattr(cli, 'config_filepath', None):
-        cli.config = data.sns.from_dict(data.json.read(cli.config_filepath))
+        cli.config = sn(**data.json.read(cli.config_filepath))
         log.debug('Config file loaded!\n{}', cli)
     else:
         log.debug('No config file found.')
