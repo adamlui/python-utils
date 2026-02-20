@@ -46,6 +46,7 @@ Options can be set by using command-line arguments:
 | `init`, `-i`, `--init` | Create .remove-json.config.json5 in project root to store default settings      |
 | `-n`, `--no-wizard`    | Skip interactive prompts during start-up                                        |
 | `-h`, `--help`         | Show help screen                                                                |
+| `-v`, `--version`      | Show version                                                                    |
 | `--docs`               | Open docs URL                                                                   |
 
 ## Examples

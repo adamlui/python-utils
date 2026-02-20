@@ -26,7 +26,8 @@
   "help_INIT": { "message": "Create .remove-json.config.json5 file to store default options" },
   "help_FORCE": { "message": "Force overwrite existing config file when using init" },
   "help_NO_WIZARD": { "message": "Skip interactive prompts during start-up" },
-  "help_DOCS": { "message": "Open docs URL" },
   "help_HELP": { "message": "Show help screen" },
+  "help_VERSION": { "message": "Show version" },
+  "help_DOCS": { "message": "Open docs URL" },
   "help_DEBUG": { "message": "Show debug logs" }
 }

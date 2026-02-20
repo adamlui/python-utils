@@ -26,6 +26,8 @@ controls = sn(
         args=['-n', '-W', '--no-wizard', '--skip-wizard'], action='store_true', default=None),
     help=sn(
         args=['-h', '--help'], action='help'),
+    version=sn(
+        args=['-v', '--version'], action='store_true'),
     docs=sn(
         args=['--docs'], action='store_true'),
     debug=sn(

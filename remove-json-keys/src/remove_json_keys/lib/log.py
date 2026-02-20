@@ -26,6 +26,7 @@ def overwrite_print(msg, *args, **kwargs):
     sys.stdout.write('\r' + msg.format(*args, **kwargs).ljust(terminal_width)[:terminal_width])
 def success(msg, *args, **kwargs) : print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')
 def tip(msg, *args, **kwargs) : print(f'\n{colors.bc}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
+def version(cli) : print(f'\n{colors.by}{cli.name}\n{colors.bw}version: {cli.version}{colors.nc}')
 def warn(msg, *args, **kwargs) : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
 def debug(msg, cli=None, *args, **kwargs):
