@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 from urllib.request import urlopen
 
 def get(url, timeout=5, encoding='utf-8'):
-    url = validate_url(url)
+    url = validate(url)
     try:
         with urlopen(url, timeout=timeout) as resp:
             return resp.read().decode(encoding)
@@ -12,14 +12,14 @@ def get(url, timeout=5, encoding='utf-8'):
         raise RuntimeError(f'Failed to fetch from {url}: {err}')
 
 def open(url):
-    url = validate_url(url)
+    url = validate(url)
     try:
         webbrowser.open(url)
     except Exception as err:
         print(f'Failed to open browser: {err}', file=sys.stderr)
         sys.exit(1)
 
-def validate_url(url, allowed_schemes=('http', 'https'), allowed_domains=[]):
+def validate(url, allowed_schemes=('http', 'https'), allowed_domains=[]):
     parsed_url = urlparse(url)
 
     if parsed_url.scheme not in allowed_schemes:
