@@ -6,7 +6,7 @@ from lib import git, toml
 
 paths = sn(root=Path(__file__).parent.parent)
 paths.pyproject = paths.root / 'pyproject.toml'
-paths.package_data = paths.root / 'src/remove_json_keys/assets/data/package_data.json'
+paths.package_data = paths.root / 'src/translate_messages/assets/data/package_data.json'
 paths.readme = paths.root / 'docs/README.md'
 paths.util_msgs = paths.root / 'utils/data/messages.json'
 
