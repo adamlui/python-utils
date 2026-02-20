@@ -51,13 +51,13 @@ def load(cli):
             'action', 'choices', 'const', 'default', 'dest', 'help', 'metavar', 'nargs', 'required', 'type', 'version' }
         argparse_kwargs = { key:val for key,val in kwargs.items() if key in valid_argparse_params}
         argp.add_argument(*args, **argparse_kwargs)
-    parsed_args, unknown = argp.parse_known_args()
+    parsed_args, unrecognized_args = argp.parse_known_args()
     subcmd_flags = [] # exempt dashless args from validation
     for ctrl in vars(controls).values():
         if getattr(ctrl, 'subcmd', False):
             for arg in ctrl.args : subcmd_flags.append(arg)
-    if unknown and not all(f'--{arg}' in subcmd_flags for arg in unknown):
-        log.error(f"{cli.msgs.err_UNRECOGNIZED_ARGS}: {' '.join(unknown)}")
+    if unrecognized_args and not all(f'--{arg}' in subcmd_flags for arg in unrecognized_args):
+        log.error(f"{cli.msgs.err_UNRECOGNIZED_ARGS}: {' '.join(unrecognized_args)}")
         log.help_cmd_docs_url_exit(cli)
     for attr_name, ctrl in vars(controls).items(): # process subcmds
         if getattr(ctrl, 'subcmd', False) and next(arg for arg in ctrl.args if arg.startswith('--'))[2:] in sys.argv:
