@@ -9,9 +9,8 @@ paths.pyproject = paths.root / 'pyproject.toml'
 paths.package_data = paths.root / 'src/translate_messages/assets/data/package_data.json'
 paths.readme = paths.root / 'docs/README.md'
 paths.util_msgs = paths.root / 'utils/data/messages.json'
-sys.path.insert(0, str(paths.root / 'src'))
 
-from translate_messages.lib import data, log # type: ignore
+from translate_messages.lib import data, log
 
 msgs = sn(**{ key:val['message'] for key,val in data.json.read(paths.util_msgs)['bump'].items() })
 

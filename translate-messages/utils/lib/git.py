@@ -1,8 +1,7 @@
 from pathlib import Path
 import sys, subprocess, os
 
-sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'src'))
-from translate_messages.lib import log # type: ignore
+from translate_messages.lib import log
 
 def commit(files, msg) : run('add', *files) ; run('commit', '-n', '-m', msg)
 
