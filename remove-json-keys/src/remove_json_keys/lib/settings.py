@@ -22,12 +22,6 @@ controls = sn(
 
 def load(cli):
 
-    # Init debug target
-    if '--debug' in sys.argv:
-        debug_arg_idx = sys.argv.index('--debug')
-        if len(sys.argv) > debug_arg_idx +1 and not sys.argv[debug_arg_idx +1].startswith('-'):
-            cli.debug_key = sys.argv[debug_arg_idx +1].replace('-', '_')
-
     # Assign help tips from cli.msgs
     for ctrl_key, ctrl in vars(controls).items():
         if not hasattr(ctrl, 'help') : ctrl.help = getattr(cli.msgs, f'help_{ctrl_key.upper()}')
@@ -37,7 +31,7 @@ def load(cli):
     init.config_filepath(cli)
     if getattr(cli, 'config_filepath', None):
         cli.config = sn(**data.json.read(cli.config_filepath))
-        log.debug('Config file loaded!\n{}', cli)
+        log.debug('Config file loaded!', cli)
     else:
         log.debug('No config file found.')
 
@@ -56,7 +50,7 @@ def load(cli):
             setattr(parsed_args, attr_name, True)
     for key, val in vars(parsed_args).items(): # apply parsed_args to cli.config
         if val : setattr(cli.config, key, val)
-    log.debug('Args parsed!\n{}', cli)
+    log.debug('Args parsed!', cli)
 
     # Init all cli.config vals
     for name, ctrl in vars(controls).items():
@@ -66,4 +60,4 @@ def load(cli):
         if not val and hasattr(ctrl, 'default_val'):
             val = ctrl.default_val
         setattr(cli.config, name, val)
-    log.debug('All cli.config vals set!\n{}', cli)
+    log.debug('All cli.config vals set!', cli)

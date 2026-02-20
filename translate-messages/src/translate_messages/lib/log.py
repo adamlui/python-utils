@@ -29,14 +29,23 @@ def tip(msg, *args, **kwargs) : print(f'\n{colors.bc}TIP: {msg.format(*args, **k
 def warn(msg, *args, **kwargs) : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
 def debug(msg, cli=None, *args, **kwargs):
-    if '--debug' not in sys.argv : return
-    data = colors.gry
-    if cli:
-        if getattr(cli, 'debug_key', None):
-            data += str(getattr(cli.config, cli.debug_key, f'cli.config key "{cli.debug_key}" not found'))
-        else:
-            data += str(cli.config)
-    print(f'\n{colors.by}DEBUG: {msg.format(data, *args, **kwargs)}{colors.nc}')
+    if '--debug' not in sys.argv: return
+
+    # Init --debug [target]
+    debug_key=None
+    debug_argidx = sys.argv.index('--debug')
+    if debug_argidx +1 < len(sys.argv) and not sys.argv[debug_argidx +1].startswith('-'):
+        debug_key = sys.argv[debug_argidx +1].replace('-', '_')
+
+    if cli: # init data line
+        data_val = getattr(cli.config, debug_key, f'cli.config key "{debug_key}" not found') if debug_key \
+              else cli.config
+        msg += f'\n{colors.gry}{data_val}{colors.nc}'
+    
+    if args: # use 'em
+        msg = msg.format(*args, **kwargs)
+    
+    print(f'\n{colors.by}DEBUG: {msg}{colors.nc}')
 
 def final_summary(msgs, summary_dict):
     success(f'\n{msgs.log_ALL_JSON_UPDATED}!')
