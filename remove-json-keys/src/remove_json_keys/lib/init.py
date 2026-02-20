@@ -14,11 +14,12 @@ def cli():
 def config_file(cli):
     target_path = Path.cwd() / f'.{cli.short_name}.config.json5'
     project_markers = data.json.read(data_path / 'project_markers.json')
+    in_project_root = None
     if not any((Path.cwd() / marker).exists() for marker in project_markers):
         log.warn(f'{cli.msgs.warn_NO_PROJECT_ROOT_FOUND_IN} {Path.cwd()}')
         user_resp = input(f'{cli.msgs.prompt_INIT_CONFIG_HERE_ANYWAY}? (y/N): ').strip().lower()
         if not user_resp.startswith('y') : return
-        else : not_in_root = True # for move tip
+        else : in_project_root = True # for move tip
 
     # Handle existing file
     if target_path.exists():
@@ -34,7 +35,7 @@ def config_file(cli):
         cli.default_file_config = data.url.get(f'{cli.urls.jsdelivr}/{cli.name}/{target_path.name}')
     data.file.write(str(target_path), cli.default_file_config)
     log.success(f'{cli.msgs.log_DEFAULT_CONFIG_CREATED_AT} {target_path}')
-    if not_in_root : log.tip(f'{cli.msgs.tip_MOVE_CONFIG_TO_ROOT}.')
+    if in_project_root : log.tip(f'{cli.msgs.tip_MOVE_CONFIG_TO_ROOT}.')
 
 def config_filepath(cli): # for settings.load()
 
