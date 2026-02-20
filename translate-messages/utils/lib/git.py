@@ -1,5 +1,5 @@
 from pathlib import Path
-import sys, subprocess, os
+import os, subprocess, sys
 
 def commit(files, msg) : run('add', *files) ; run('commit', '-n', '-m', msg)
 
