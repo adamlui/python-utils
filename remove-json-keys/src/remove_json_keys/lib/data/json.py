@@ -9,16 +9,15 @@ def read(file_path, encoding='utf-8'):
     with open(file_path, 'r', encoding=encoding) as file:
         return json5.load(file)
 
-def remove_keys(json_dir, keys):
+def remove_keys(json_path, keys):
     keys_removed, keys_skipped, files_processed_cnt = [], [], 0
-    json_dir = Path(json_dir)
-    for file_path in json_dir.rglob('*.json'):
+    for file_path in json_path.rglob('*.json'):
         json_data = file.read(file_path)
         modified = False
         for key in keys: # remove matched ones
             re_key = fr'"{re.escape(key)}"\s*:\s*(?:\{{[^}}]*\}}|"[^"]*"|\d+|true|false|null)\s*,?\s*'
             json_data, cnt = re.subn(re_key, '', json_data)
-            rel_path = str(file_path.relative_to(json_dir))
+            rel_path = str(file_path.relative_to(json_path))
             if cnt > 0:
                 keys_removed.append((key, rel_path))
                 modified = True

@@ -58,9 +58,9 @@ def config_filepath(cli): # for settings.load()
                 cli.config_filepath = possible_config_file
                 return
 
-def json_dir(cli):
+def json_path(cli):
     for path in Path.cwd().rglob(cli.config.json_dir):
         if path.is_dir():
-            cli.config.json_dir = str(path)
+            cli.json_path = Path(path)
             return
-    cli.config.json_dir = None
+    cli.json_path = None
