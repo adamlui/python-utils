@@ -8,12 +8,12 @@ paths = sn(root=Path(__file__).parent.parent)
 paths.pyproject = paths.root / 'pyproject.toml'
 paths.package_data = paths.root / 'src/remove_json_keys/assets/data/package_data.json'
 paths.readme = paths.root / 'docs/README.md'
-paths.msgs = paths.root / 'utils/data/messages.json'
+paths.util_msgs = paths.root / 'utils/data/messages.json'
 sys.path.insert(0, str(paths.root / 'src'))
 
 from remove_json_keys.lib import data, log # type: ignore
 
-msgs = sn(**{ key:val['message'] for key,val in data.json.read(paths.msgs)['bump'].items() })
+msgs = sn(**{ key:val['message'] for key,val in data.json.read(paths.util_msgs)['bump'].items() })
 
 def parse_args():
     argp = argparse.ArgumentParser(description=msgs.app_DESC, add_help=False)
