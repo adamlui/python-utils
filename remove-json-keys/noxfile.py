@@ -39,6 +39,8 @@ def deploy_patch(session) : bump_patch(session) ; build(session) ; publish(sessi
 @session
 def deploy_minor(session) : bump_minor(session) ; build(session) ; publish(session)
 @session
+def deploy_feat(session) : deploy_minor(session)
+@session
 def deploy_major(session) : bump_major(session) ; build(session) ; publish(session)
 
 @session
