@@ -1,13 +1,12 @@
 from pathlib import Path
 import sys
-from types import SimpleNamespace as sn
 
 from . import data, language, log, settings
 
 data_path = Path(__file__).parent.parent / 'assets/data'
 
 def cli():
-    cli = sn(**data.json.read(data_path / 'package_data.json'))
+    cli = data.sns.from_dict(data.json.read(data_path / 'package_data.json'))
     cli.msgs = language.get_msgs()
     settings.load(cli)
     return cli
