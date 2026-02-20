@@ -13,7 +13,7 @@ def run(cli):
 
         if not input_keys: # no keys entered
             if cli.config.keys : break # out of wizard
-            user_resp = input(F'\n{cli.msgs.prompt_NO_KEYS_EXIT} (Y/n): ').lower()
+            user_resp = input(F'\n{cli.msgs.prompt_NO_KEYS_EXIT} (Y/n): ').strip().lower()
             if user_resp == 'n' : continue # back to og prompt
             else : print(f'{cli.msgs.log_EXITING} {cli.name}...') ; sys.exit(0)
 
