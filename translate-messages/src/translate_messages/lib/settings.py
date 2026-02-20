@@ -57,9 +57,10 @@ def load(cli):
     for attr_name in vars(controls): # add args to argp
         kwargs = getattr(controls, attr_name).__dict__.copy()
         args = kwargs.pop('args')
-        for custom_attr in ('default_val', 'exit', 'handler', 'parser', 'subcmd'):
-            kwargs.pop(custom_attr, None)
-        argp.add_argument(*args, **kwargs)
+        valid_argparse_params = {
+            'action', 'choices', 'const', 'default', 'dest', 'help', 'metavar', 'nargs', 'required', 'type', 'version' }
+        argparse_kwargs = { key:val for key,val in kwargs.items() if key in valid_argparse_params}
+        argp.add_argument(*args, **argparse_kwargs)
     parsed_args, unknown = argp.parse_known_args()
     for attr_name, ctrl in vars(controls).items(): # process subcmds
         if getattr(ctrl, 'subcmd', False) and next(arg for arg in ctrl.args if arg.startswith('--'))[2:] in sys.argv:
