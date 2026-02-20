@@ -1,7 +1,7 @@
 import argparse, sys
 from types import SimpleNamespace as sn
 
-from . import data, init, log
+from . import data, init, log, url
 
 controls = sn(
     json_dir=sn(
@@ -9,7 +9,9 @@ controls = sn(
     keys=sn(
         args=['-k', '--keys', '--remove-keys', '--delete-keys'], type=str, parser='csv'),
     init=sn(
-        args=['-i', '--init'], action='store_true', subcmd='true'),
+        args=['-i', '--init'],
+        action='store_true', subcmd='true', exit=True, handler=lambda cli: init.config_file(cli)
+    ),
     force=sn(
         args=['-f', '--force', '--overwrite'], action='store_true'),
     no_wizard=sn(
@@ -17,9 +19,9 @@ controls = sn(
     help=sn(
         args=['-h', '--help'], action='help'),
     version=sn(
-        args=['-v', '--version'], action='store_true'),
+        args=['-v', '--version'], action='store_true', exit=True, handler=lambda cli: log.version(cli)  ),
     docs=sn(
-        args=['--docs'], action='store_true'),
+        args=['--docs'], action='store_true', exit=True, handler=lambda cli: url.open(cli.urls.docs)),
     debug=sn(
         args=['--debug'], nargs='?', const=True, metavar='TARGET_KEY' )
 )
@@ -45,7 +47,7 @@ def load(cli):
     for attr_name in vars(controls): # add args to argp
         kwargs = getattr(controls, attr_name).__dict__.copy()
         args = kwargs.pop('args')
-        for custom_attr in ('default_val', 'parser', 'subcmd'):
+        for custom_attr in ('default_val', 'exit', 'handler', 'parser', 'subcmd'):
             kwargs.pop(custom_attr, None)
         argp.add_argument(*args, **kwargs)
     parsed_args, unknown = argp.parse_known_args()

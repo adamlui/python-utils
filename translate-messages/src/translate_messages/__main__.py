@@ -1,14 +1,17 @@
 from pathlib import Path
 import sys
 
-from .lib import init, language, log, url, wizard
+from .lib import init, language, log, settings, wizard
 
 def main():
     cli = init.cli()
 
-    if cli.config.init : init.config_file(cli) ; sys.exit(0)
-    if cli.config.docs : url.open(cli.urls.docs) ; sys.exit(0)
-    if cli.config.version : log.version(cli) ; sys.exit(0)
+    # Process early-exit args (e.g. init, --version)
+    for ctrl_name, ctrl in vars(settings.controls).items():
+        if getattr(ctrl, 'exit', False) and getattr(cli.config, ctrl_name, False):
+            if hasattr(ctrl, 'handler') : ctrl.handler(cli)
+            sys.exit(0)
+
     if not cli.config.no_wizard : wizard.run(cli)
 
     log.info(f'{cli.msgs.log_SEARCHING_FOR} {cli.config.locales_dir}...')
