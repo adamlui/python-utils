@@ -42,11 +42,13 @@ def config_file(cli):
 def config_filepath(cli): # for settings.load()
 
     # Check --config <path>
-    for idx, arg in enumerate(sys.argv):
-        if arg == '--config' and idx +1 < len(sys.argv):
-            cli.config_filepath = Path(sys.argv[idx + 1]).resolve()
-            if cli.config_filepath.exists(): return
-            else : log.warn(f'{cli.msgs.warn_SPECIFIED_CONFIG} {cli.config_filepath} {cli.msgs.warn_NOT_FOUND.lower()}')
+    if getattr(cli.config, 'config', ''):
+        cli.config_filepath = Path(cli.config.config).resolve()
+        if cli.config_filepath.exists():
+            log.debug(f'Config file found: {cli.config_filepath}')
+            return
+        else:
+            log.warn(f'{cli.msgs.warn_SPECIFIED_CONFIG} {cli.config_filepath} not found')
 
     # Search upwards
     possible_config_filenames = [
@@ -60,6 +62,8 @@ def config_filepath(cli): # for settings.load()
             if possible_config_filepath.exists():
                 cli.config_filepath = possible_config_filepath
                 return
+
+    cli.config_filepath = None
 
 def locales_path(cli):
     for path in Path.cwd().rglob(cli.config.locales_dir):

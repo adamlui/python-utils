@@ -8,6 +8,8 @@ controls = sn(
         args=['-d', '--json-dir', '--json-folder'], type=str, default_val='_locales'),
     keys=sn(
         args=['-k', '--keys', '--remove-keys', '--delete-keys'], type=str, parser='csv'),
+    config=sn(
+        args=['--config'], type=str),
     init=sn(
         args=['-i', '--init'],
         action='store_true', subcmd='true', exit=True, handler=lambda cli: init.config_file(cli)
@@ -27,51 +29,51 @@ controls = sn(
 )
 
 def load(cli):
+    cli.config = sn()
 
     # Assign help tips from cli.msgs
     for ctrl_key, ctrl in vars(controls).items():
         if not hasattr(ctrl, 'help') : ctrl.help = getattr(cli.msgs, f'help_{ctrl_key.upper()}')
 
-    # Load from config file
-    cli.config = sn()
-    init.config_filepath(cli)
-    if getattr(cli, 'config_filepath', None):
-        cli.config = data.sns.from_dict(data.json.read(cli.config_filepath))
-        log.debug('Config file loaded!', cli)
-    else:
-        log.debug('No config file found.')
-
     # Parse CLI args
     argp = argparse.ArgumentParser(description=cli.description, add_help=False)
-    sys.argv = [arg.replace('_', '-') if arg.startswith('--') and '_' in arg else arg for arg in sys.argv]
-    for attr_name in vars(controls): # add args to argp
-        kwargs = getattr(controls, attr_name).__dict__.copy()
+    for ctrl_key in vars(controls): # add args to argp
+        kwargs = getattr(controls, ctrl_key).__dict__.copy()
         args = kwargs.pop('args')
-        valid_argparse_params = {
+        valid_argparse_kwargs = {
             'action', 'choices', 'const', 'default', 'dest', 'help', 'metavar', 'nargs', 'required', 'type', 'version' }
-        argparse_kwargs = { key:val for key,val in kwargs.items() if key in valid_argparse_params}
+        argparse_kwargs = { key:val for key,val in kwargs.items() if key in valid_argparse_kwargs}
         argp.add_argument(*args, **argparse_kwargs)
-    parsed_args, unrecognized_args = argp.parse_known_args()
+    parsed_args, unknown_args = argp.parse_known_args()
     subcmd_flags = [] # exempt dashless args from validation
     for ctrl in vars(controls).values():
         if getattr(ctrl, 'subcmd', False):
             for arg in ctrl.args : subcmd_flags.append(arg)
-    if unrecognized_args and not all(f'--{arg}' in subcmd_flags for arg in unrecognized_args):
-        log.error(f"{cli.msgs.err_UNRECOGNIZED_ARGS}: {' '.join(unrecognized_args)}")
+    if unknown_args and not all(f'--{arg}' in subcmd_flags for arg in unknown_args):
+        log.error(f"{cli.msgs.err_UNRECOGNIZED_ARGS}: {' '.join(unknown_args)}")
         log.help_cmd_docs_url_exit(cli)
-    for attr_name, ctrl in vars(controls).items(): # process subcmds
+    for ctrl_key, ctrl in vars(controls).items(): # process subcmds
         if getattr(ctrl, 'subcmd', False) and next(arg for arg in ctrl.args if arg.startswith('--'))[2:] in sys.argv:
-            setattr(parsed_args, attr_name, True)
+            setattr(parsed_args, ctrl_key, True)
     for key, val in vars(parsed_args).items(): # apply parsed_args to cli.config
-        if val : setattr(cli.config, key, val)
+        setattr(cli.config, key, val)
     log.debug('Args parsed!', cli)
 
-    # Init all cli.config vals
-    for name, ctrl in vars(controls).items():
-        val = getattr(cli.config, name, '')
-        if getattr(ctrl, 'parser', '') == 'csv':
-            val = data.csv.parse(val)
+    # Load from config file (w/o overriding args)
+    init.config_filepath(cli)
+    if getattr(cli, 'config_filepath', None):
+        for key, val in data.json.read(cli.config_filepath).items():
+            if not getattr(cli.config, key): setattr(cli.config, key, val)
+        log.debug('Config file loaded!', cli)
+    else:
+        log.debug('No config file found.')
+
+    # Apply parsers/default_vals
+    for ctrl_key, ctrl in vars(controls).items():
+        val = getattr(cli.config, ctrl_key, '')
         if not val and hasattr(ctrl, 'default_val'):
-            val = ctrl.default_val
-        setattr(cli.config, name, val)
+            setattr(cli.config, ctrl_key, ctrl.default_val)
+        if getattr(ctrl, 'parser', '') == 'csv':
+            setattr(cli.config, ctrl_key, data.csv.parse(val))
+
     log.debug('All cli.config vals set!', cli)

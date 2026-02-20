@@ -38,6 +38,7 @@
   "help_EXCLUDE_LANGS": { "message": "Languages to exclude (e.g. \"es,zh\")" },
   "help_EXCLUDE_KEYS": { "message": "Keys to ignore (e.g. \"app_NAME,author\")" },
   "help_ONLY_STABLE": { "message": "Only use stable locales (skip auto-discovery)" },
+  "help_CONFIG": { "message": "Use custom config file (e.g. \"path/to/file\")" },
   "help_INIT": { "message": "Create .translate-msgs.config.json5 file to store default options" },
   "help_FORCE": { "message": "Force overwrite existing config file when using init" },
   "help_NO_WIZARD": { "message": "Skip interactive prompts during start-up" },

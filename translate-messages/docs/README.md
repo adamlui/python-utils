@@ -47,6 +47,7 @@ Options can be set by using command-line arguments:
 | `--exclude-langs`      | Comma-separated list of languages to exclude                                                              | `--exclude-langs=es,zh`
 | `--exclude-keys`       | Comma-separated list of keys to ignore                                                                    | `--exclude-keys=app_NAME,author`
 | `--only-stable`        | Only use stable locales (skip auto-discovery)                                                             |
+| `config`               | Use custom config file                                                                                    | `--config=path/to/file`
 | `init`, `-i`, `--init` | Create `.translate-msgs.config.json5` in project root to store default options                            |
 | `-f`, `--force`        | Force overwrite of existing config file when using `init`                                                 |
 | `-n`, `--no-wizard`    | Skip interactive prompts during start-up                                                                  |

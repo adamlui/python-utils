@@ -27,6 +27,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Unrecognized argument(s)" },
   "help_JSON_DIR": { "message": "Name of the folder containing JSON files (default: \"_locales\")" },
   "help_KEYS": { "message": "Keys to remove (e.g. \"app_NAME,author\")" },
+  "help_CONFIG": { "message": "Use custom config file (e.g. \"path/to/file\")" },
   "help_INIT": { "message": "Create .remove-json.config.json5 file to store default options" },
   "help_FORCE": { "message": "Force overwrite existing config file when using init" },
   "help_NO_WIZARD": { "message": "Skip interactive prompts during start-up" },
