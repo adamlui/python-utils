@@ -11,6 +11,8 @@
     "log_GENERATED_CLOG_URL": { "message": "Generated Changelog URL" },
     "log_UPDATING_CLOG_URL_IN": { "message": "Updating Changelog URL in" },
     "log_BUMPED_CLOG_URL_VER_TAG": { "message": "Bumped Changelog URL version tag to [{new_ver_tag}]" },
+    "log_BUMPING_VER_IN": { "message": "Bumping version in" },
+    "log_BUMPED_PACKAGE_DATA_VER": { "message": "Bumped version in package_data.json from [{prev_ver}] to [{new_ver}]!" },
     "log_UPDATING_VERS_IN": { "message": "Updating versions in" },
     "log_UPDATED_README_VERS": { "message": "Updated versions in README URLs to [{new_ver}]!" }
   },

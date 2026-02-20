@@ -6,6 +6,7 @@ from lib import toml
 
 paths = sn(root=Path(__file__).parent.parent)
 paths.pyproject = paths.root / 'pyproject.toml'
+paths.package_data = paths.root / 'src/translate_messages/assets/data/package_data.json'
 paths.readme = paths.root / 'docs/README.md'
 paths.msgs = paths.root / 'utils/data/messages.json'
 sys.path.insert(0, str(paths.root / 'src'))
@@ -41,11 +42,17 @@ def bump_pyproject_vers(pyproject, project, new_ver):
     # Bump project.urls['Releases']
     new_ver_tag = f'{project.name}-{new_ver}'
     changelog_url = f"{project.urls['Releases']}/tag/{new_ver_tag}"
-    log.data(f'{msgs.log_GENERATED_CLOG_URL}: {changelog_url}')
+    log.debug(f'{msgs.log_GENERATED_CLOG_URL}: {changelog_url}')
     log.info(f'{msgs.log_UPDATING_CLOG_URL_IN} pyproject.toml...')
     pyproject['project']['urls']['Changelog'] = changelog_url
     toml.write(paths.pyproject, pyproject)
     log.success(msgs.log_BUMPED_CLOG_URL_VER_TAG.format(**locals()))
+
+def bump_package_data_ver(project, new_ver):
+    log.info(f'{msgs.log_BUMPING_VER_IN} assets/data/package_data.json...')
+    updated_json_content = re.sub(r'"(?>\d{1,3}\.\d{1,3}\.\d{1,3})"', f'"{new_ver}"', data.file.read(paths.package_data))
+    data.file.write(paths.package_data, updated_json_content)
+    log.success(msgs.log_BUMPED_PACKAGE_DATA_VER.format(prev_ver=project.version, **locals()))
 
 def update_readme_vers(new_ver):
     log.info(f'{msgs.log_UPDATING_VERS_IN} docs/README.md...')
@@ -70,6 +77,7 @@ def main():
     # Update files
     _, new_ver = init_vers(project, bump_type)
     bump_pyproject_vers(pyproject, project, new_ver)
+    bump_package_data_ver(project, new_ver)
     update_readme_vers(new_ver)
 
 if __name__ == '__main__' : main()
