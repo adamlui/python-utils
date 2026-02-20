@@ -2,7 +2,7 @@ import argparse, re, sys
 from pathlib import Path
 from types import SimpleNamespace as sn
 
-from lib import toml
+from lib import git, toml
 
 paths = sn(root=Path(__file__).parent.parent)
 paths.pyproject = paths.root / 'pyproject.toml'
@@ -20,6 +20,8 @@ def parse_args():
     argp.add_argument('-M', '--major', action='store_true', help=msgs.help_MAJOR)
     argp.add_argument('-m', '--minor', action='store_true', help=msgs.help_MINOR)
     argp.add_argument('-p', '--patch', action='store_true', help=msgs.help_PATCH)
+    argp.add_argument('-n', '--no-commit', '--skip-commit', action='store_true', help=msgs.help_NO_COMMIT)
+    argp.add_argument('-N', '--no-push', '--skip-push', action='store_true', help=msgs.help_NO_PUSH)
     argp.add_argument('-h', '--help',  action='help', help=msgs.help_HELP)
     return argp.parse_args()
 
@@ -79,5 +81,23 @@ def main():
     bump_pyproject_vers(pyproject, project, new_ver)
     bump_package_data_ver(project, new_ver)
     update_readme_vers(new_ver)
+
+    # Git commit/push
+    if args.no_commit:
+        log.info(f'{msgs.log_SKIPPING_GIT_COMMIT}...')
+    else:
+        git.init_kudo_sync_bot(msgs)
+        log.info(f'{msgs.log_COMMITTING_CHANGES}...')
+        git.commit([str(paths.pyproject), str(paths.package_data)], f'Bumped {project.name} versions to {new_ver}')
+        git.commit([str(paths.readme)],  f'Updated {project.name} versions in README URLs to {new_ver}')
+        if args.no_push:
+            log.info(f'{msgs.log_SKIPPING_GIT_PUSH}...')
+        else:
+            log.info(f'{msgs.log_PUSHING_CHANGES}...')
+            git.push()
+            log.success(f'{msgs.log_PUSHED_ALL_COMMITS}')
+        git.restore_og_config(msgs)
+
+    log.success(f'\n{msgs.log_SUCCESS}! {project.name} {msgs.log_BUMPED_TO} v{new_ver}!')
 
 if __name__ == '__main__' : main()
