@@ -20,7 +20,10 @@ colors = sn(
 
 def data(msg, *args, **kwargs) : print(f'\n{colors.bw}{msg.format(*args, **kwargs)}{colors.nc}')
 def dim(msg, *args, **kwargs) : print(f'\n{colors.gry}{msg.format(*args, **kwargs)}{colors.nc}')
+def docs_url(cli) : tip(f'{cli.msgs.tip_FOR_MORE_HELP_VISIT}:\n{cli.urls.docs}')
 def error(msg, *args, **kwargs) : print(f'\n{colors.br}ERROR: {msg.format(*args, **kwargs)}{colors.nc}')
+def help_cmd(cli) : info(f"{cli.msgs.log_TYPE} '{cli.cli_cmds[0]} --help' {cli.msgs.log_FOR_AVAIL_OPTIONS}\n")
+def help_cmd_docs_url_exit(cli) : help_cmd(cli) ; docs_url(cli) ; sys.exit(1)
 def info(msg, *args, end='', **kwargs) : print(f'\n{colors.by}{msg.format(*args, **kwargs)}{colors.nc}', end=end)
 def overwrite_print(msg, *args, **kwargs):
     sys.stdout.write('\r' + msg.format(*args, **kwargs).ljust(terminal_width)[:terminal_width])
