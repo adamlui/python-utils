@@ -26,7 +26,7 @@ def load(cli):
     if '--debug' in sys.argv:
         debug_arg_idx = sys.argv.index('--debug')
         if len(sys.argv) > debug_arg_idx +1 and not sys.argv[debug_arg_idx +1].startswith('-'):
-            cli.debug_key = sys.argv[debug_arg_idx +1]
+            cli.debug_key = sys.argv[debug_arg_idx +1].replace('-', '_')
 
     # Assign help tips from cli.msgs
     for ctrl_key, ctrl in vars(controls).items():
@@ -43,6 +43,7 @@ def load(cli):
 
     # Parse CLI args
     argp = argparse.ArgumentParser(description=cli.description, add_help=False)
+    sys.argv = [arg.replace('_', '-') if arg.startswith('--') and '_' in arg else arg for arg in sys.argv]
     for attr_name in vars(controls): # add args to argp
         kwargs = getattr(controls, attr_name).__dict__.copy()
         args = kwargs.pop('args')
