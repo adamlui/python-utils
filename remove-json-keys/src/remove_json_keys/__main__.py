@@ -26,8 +26,8 @@ def main():
     keys_removed, keys_skipped, files_processed_cnt = data.json.remove_keys(cli.json_path, cli.config.keys)
 
     log.final_summary(cli.msgs, {
-        'removed': [f'{key} ({file_path})' for key, file_path in keys_removed],
-        'skipped': [f'{key} ({file_path})' for key, file_path in keys_skipped],
+        cli.msgs.log_REMOVED.lower(): [f'{key} ({file_path})' for key, file_path in keys_removed],
+        cli.msgs.log_SKIPPED.lower(): [f'{key} ({file_path})' for key, file_path in keys_skipped],
     })
     log.data(f'{cli.msgs.log_TOTAL_JSON_PROCESSED}: {files_processed_cnt}')
 

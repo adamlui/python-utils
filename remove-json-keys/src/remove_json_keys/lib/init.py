@@ -47,7 +47,7 @@ def config_filepath(cli): # for settings.load()
             log.debug(f'Config file found: {cli.config_filepath}')
             return
         else:
-            log.warn(f'{cli.msgs.warn_SPECIFIED_CONFIG} {cli.config_filepath} not found')
+            log.warn(f'{cli.msgs.warn_SPECIFIED_CONFIG} {cli.config_filepath} {cli.msgs.warn_NOT_FOUND}')
 
     # Search upwards
     possible_config_filenames = [

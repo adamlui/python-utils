@@ -29,7 +29,7 @@ def overwrite_print(msg, *args, **kwargs):
     sys.stdout.write('\r' + msg.format(*args, **kwargs).ljust(terminal_width)[:terminal_width])
 def success(msg, *args, **kwargs) : print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')
 def tip(msg, *args, **kwargs) : print(f'\n{colors.bc}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
-def version(cli) : print(f'\n{colors.by}{cli.name}\n{colors.bw}version: {cli.version}{colors.nc}')
+def version(cli) : print(f'\n{colors.by}{cli.name}\n{colors.bw}{cli.msgs.log_VERSION}: {cli.version}{colors.nc}')
 def warn(msg, *args, **kwargs) : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
 def debug(msg, cli=None, *args, **kwargs):
@@ -42,8 +42,10 @@ def debug(msg, cli=None, *args, **kwargs):
         debug_key = sys.argv[debug_argidx +1].replace('-', '_')
 
     if cli: # init data line
-        data_val = getattr(cli.config, debug_key, f'cli.config key "{debug_key}" not found') if debug_key \
-              else cli.config
+        if debug_key:
+            data_val = getattr(cli.config, debug_key, f'cli.config key "{debug_key}" {cli.msgs.warn_NOT_FOUND.lower()}')
+        else:
+            data_val = cli.config
         msg += f'\n{colors.gry}{data_val}{colors.nc}'
 
     if args: # use 'em
@@ -56,7 +58,7 @@ def final_summary(msgs, summary_dict):
     for name, file_set in summary_dict.items():
         if file_set:
             status = name.replace('_', ' ')
-            status_color = colors.by if status == 'removed' else colors.gry
+            status_color = colors.by if status == msgs.log_REMOVED.lower() else colors.gry
             data(f'{msgs.log_KEYS} {status}: {len(file_set)}')
             print(f'{status_color}[\n    ' + '\n    '.join(file_set) + f'\n]{colors.nc}')
 

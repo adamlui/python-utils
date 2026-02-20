@@ -29,10 +29,10 @@ def main():
     langs_translated, langs_skipped, langs_added, langs_not_translated = language.write_translations(cli)
 
     log.final_summary(cli.msgs, {
-        'translated': langs_translated,
-        'skipped': langs_skipped,
-        'added': langs_added,
-        'not translated': langs_not_translated,
+        cli.msgs.log_TRANSLATED.lower(): langs_translated,
+        cli.msgs.log_SKIPPED.lower(): langs_skipped,
+        cli.msgs.log_ADDED.lower(): langs_added,
+        cli.msgs.log_NOT_TRANSLATED.lower(): langs_not_translated,
     })
 
 if __name__ == '__main__' : main()
