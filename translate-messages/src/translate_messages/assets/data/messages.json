@@ -20,7 +20,7 @@
   "log_TYPE": { "message": "Type" },
   "log_TO_CREATE_DEFAULT_CONFIG": { "message": "to create default config file" },
   "log_FOR_AVAIL_OPTIONS": { "message": "for available options" },
-  "log_VERSION": { "message": "version" },
+  "log_VERSION": { "message": "Version" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "For more help, visit" },
   "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pass --force to overwrite" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Move config file to root of project you wish to use it in" },
