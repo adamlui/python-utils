@@ -2,8 +2,8 @@
 
 # > remove-json-keys
 
-<a href="https://pypistats.org/packages/remove-json-keys">
-    <img height=31 src="https://img.shields.io/pypi/dm/remove-json-keys?logo=pypi&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
+<a href="https://pepy.tech/projects/remove-json-keys">
+    <img height=31 src="https://img.shields.io/pepy/dt/remove-json-keys?logo=pypi&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
 <a href="https://github.com/adamlui/python-utils/releases/tag/remove-json-keys-1.5.0">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.5.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/remove-json-keys/docs/LICENSE.md">
