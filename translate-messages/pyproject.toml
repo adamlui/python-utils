@@ -71,7 +71,7 @@ Documentation = "https://github.com/adamlui/python-utils/tree/main/translate-mes
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/translate-messages/#readme"
 Issues = "https://github.com/adamlui/python-utils/issues"
-"PyPI Stats" = "https://pypistats.org/packages/translate-messages"
+"PyPI Stats" = "https://pepy.tech/projects/translate-messages"
 Releases = "https://github.com/adamlui/python-utils/releases"
 Repository = "https://github.com/adamlui/python-utils"
 
