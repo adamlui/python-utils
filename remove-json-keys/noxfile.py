@@ -12,14 +12,7 @@ def session(func) : return nox.session(venv_backend='none')(func)
 # SESSIONS
 
 @session
-def test(session) : session.run('py', '-m', pkg.name, *session.posargs, env={ 'PYTHONPATH': 'src' })
-@session
-def test_help(session) : session.run('py', '-m', pkg.name, '--help', *session.posargs, env={ 'PYTHONPATH': 'src' })
-@session
-def test_docs(session) : session.run('py', '-m', pkg.name, '--docs', *session.posargs, env={ 'PYTHONPATH': 'src' })
-@session
-def test_build(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg.dir, *session.posargs)
-
+def dev(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg.dir, '--help', *session.posargs)
 @session
 def debug(session) : session.run('py', '-m', pkg.name, '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
 
