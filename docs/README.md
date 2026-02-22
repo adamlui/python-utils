@@ -1,7 +1,7 @@
 # 🐍 adamlui / python-utils
 
 <a href="#">
-    <img height=31 src="https://img.shields.io/badge/Downloads-1.7K/month-44cc11.svg?logo=pypi&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
+    <img height=31 src="https://img.shields.io/badge/Downloads-5.2k-44cc11.svg?logo=pypi&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
 <a href="./LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
