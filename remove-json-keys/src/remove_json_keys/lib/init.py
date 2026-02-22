@@ -10,7 +10,7 @@ def cli():
     settings.load(cli)
     return cli
 
-def config_file(cli):
+def config_file(cli): # for --init
     target_path = Path.cwd() / f'.{cli.short_name}.config.json5'
     project_markers = data.json.read(data_path / 'project_markers.json')
     in_project_root = None
