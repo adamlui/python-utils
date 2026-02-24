@@ -22,9 +22,9 @@ def data(msg, *args, **kwargs) : print(f'\n{colors.bw}{msg.format(*args, **kwarg
 def dim(msg, *args, **kwargs) : print(f'\n{colors.gry}{msg.format(*args, **kwargs)}{colors.nc}')
 def docs_url(cli) : tip(f'{cli.msgs.tip_FOR_MORE_HELP_VISIT}:\n{cli.urls.docs}')
 def error(msg, *args, **kwargs) : print(f'\n{colors.br}ERROR: {msg.format(*args, **kwargs)}{colors.nc}')
-def help_cmd(cli) : info(f"{cli.msgs.log_TYPE} '{cli.cli_cmds[0]} --help' {cli.msgs.log_FOR_AVAIL_OPTIONS}\n")
+def help_cmd(cli) : info(f"{cli.msgs.log_TYPE} '{cli.cmds[0]} --help' {cli.msgs.log_FOR_AVAIL_OPTIONS}\n")
 def info(msg, *args, end='', **kwargs) : print(f'\n{colors.by}{msg.format(*args, **kwargs)}{colors.nc}', end=end)
-def init_cmd(cli) : info(f"{cli.msgs.log_TYPE} '{cli.cli_cmds[0]} --init' {cli.msgs.log_TO_CREATE_DEFAULT_CONFIG}\n")
+def init_cmd(cli) : info(f"{cli.msgs.log_TYPE} '{cli.cmds[0]} --init' {cli.msgs.log_TO_CREATE_DEFAULT_CONFIG}\n")
 def overwrite_print(msg, *args, **kwargs):
     sys.stdout.write('\r' + msg.format(*args, **kwargs).ljust(terminal_width)[:terminal_width])
 def success(msg, *args, **kwargs) : print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')

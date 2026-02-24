@@ -3,7 +3,7 @@
   "version": "1.5.0",
   "description": "Simply remove JSON keys via CLI command.",
   "short_name": "remove-json",
-  "cli_cmds": ["remove-json-keys", "remove-json"],
+  "cmds": ["remove-json-keys", "remove-json"],
   "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
   "urls": {
     "docs": "https://github.com/adamlui/python-utils/tree/main/remove-json-keys/docs",
