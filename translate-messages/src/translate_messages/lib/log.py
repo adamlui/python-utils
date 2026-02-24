@@ -13,7 +13,6 @@ colors = sn(
     bg='\x1b[1;92m',     # bright green
     bc='\x1b[1;96m',     # bright cyan
     bw='\x1b[1;97m',     # bright white
-    dr='\x1b[31m',       # dark red
     dg='\x1b[32m',       # dark green
     dy='\x1b[33m',       # dark yellow
     gry='\x1b[90m'       # gray
