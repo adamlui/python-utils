@@ -20,6 +20,7 @@ def write(file_path, data, encoding='utf-8', ensure_ascii=False, style='pretty')
                 inner = json.dumps(val, ensure_ascii=ensure_ascii)
                 inner = '{ ' + inner[1:-1] + ' }' # pad braces
                 file.write(f'  "{key}": {inner}{line_end}\n')
-            file.write('}\n')
+            file.write('}')
         else: # minified to single line
             json.dump(data, file, separators=(',', ':'), ensure_ascii=ensure_ascii)
+        file.write('\n') # trailing newline
