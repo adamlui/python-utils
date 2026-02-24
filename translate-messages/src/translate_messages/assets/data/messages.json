@@ -27,6 +27,7 @@
   "tip_MAKE_SURE": { "message": "Make sure" },
   "tip_EXISTS": { "message": "exists" },
   "tip_IT_HAS_VALID_JSON": { "message": "it contains valid JSON" },
+  "tip_USE_A_VPN": { "message": "Use a VPN to reset API throttling" },
   "warn_CONFIG_EXISTS_AT": { "message": "Config already exists at" },
   "warn_DIR_NOT_FOUND": { "message": "Unable to locate directory" },
   "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "No project root detected in" },

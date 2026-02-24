@@ -29,6 +29,7 @@ def overwrite_print(msg, *args, **kwargs):
     sys.stdout.write('\r' + msg.format(*args, **kwargs).ljust(terminal_width)[:terminal_width])
 def success(msg, *args, **kwargs) : print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')
 def tip(msg, *args, **kwargs) : print(f'\n{colors.bc}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
+def tip_use_a_vpn(cli) : tip(f'{cli.msgs.tip_USE_A_VPN}.')
 def version(cli):
     print(f'\n{colors.by}{cli.name}\n{colors.bw}{cli.msgs.log_VERSION.lower()}: {cli.version}{colors.nc}')
 def warn(msg, *args, **kwargs) : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')

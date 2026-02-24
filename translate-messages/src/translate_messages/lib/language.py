@@ -25,10 +25,11 @@ def create_translations(cli, target_msgs, lang_code):
             try:
                 translator = Translator(provider='', to_lang=lang_code)
                 translated_msg = re.sub(r'&(?:quot|#39);', "'", translator.translate(original_msg))
-                if any(flag in translated_msg for flag in fail_flags):
+                if any(flag in translated_msg.upper() for flag in fail_flags):
                     translated_msg = original_msg
             except Exception as err:
                 print(f'\n{log.colors.br}{cli.msgs.err_TRANSLATE_FAILED_FOR_KEY} "{key}": {err}')
+                if 'TOO MANY REQUESTS' in str(err).upper() : log.tip_use_a_vpn(cli) ; exit(1)
                 translated_msg = original_msg
             translated_msgs[key] = { 'message': translated_msg }
         else:
