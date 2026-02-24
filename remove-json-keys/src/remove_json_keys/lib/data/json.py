@@ -35,10 +35,9 @@ def write(file_path, data, encoding='utf-8', ensure_ascii=False, style='pretty')
         elif style == 'compact': # single key/val per line
             file.write('{\n')
             items = list(data.items())
-            for i, (key, val) in enumerate(items):
-                line_end = ',' if i < len(items) - 1 else ''
-                inner = json.dumps(val, ensure_ascii=ensure_ascii)
-                inner = '{ ' + inner[1:-1] + ' }' # pad braces
+            for idx, (key, val) in enumerate(items):
+                line_end = ',' if idx < len(items) -1 else ''
+                inner = f'{{ {json.dumps(val, ensure_ascii=ensure_ascii)[1:-1]} }}'
                 file.write(f'  "{key}": {inner}{line_end}\n')
             file.write('}')
         else: # minified to single line
