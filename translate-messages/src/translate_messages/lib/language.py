@@ -28,7 +28,7 @@ def create_translations(cli, target_msgs, lang_code):
                 if any(flag in translated_msg for flag in fail_flags):
                     translated_msg = original_msg
             except Exception as err:
-                log.trunc(f'{cli.msgs.err_TRANSLATE_FAILED_FOR_KEY} "{key}" in {lang_code}/{cli.msgs_filename}: {err}')
+                print(f'\n{log.colors.dr}{cli.msgs.err_TRANSLATE_FAILED_FOR_KEY} "{key}": {err}')
                 translated_msg = original_msg
             translated_msgs[key] = { 'message': translated_msg }
         else:
