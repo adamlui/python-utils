@@ -35,7 +35,7 @@ controls = sn(
     docs=sn(
         args=['--docs'], action='store_true', exit=True, handler=lambda cli: url.open(cli.urls.docs)),
     debug=sn(
-        args=['--debug'], nargs='?', const=True, metavar='TARGET_KEY' ),
+        args=['-V', '--debug'], nargs='?', const=True, metavar='TARGET_KEY' ),
     no_wizard_legacy=sn(
         args=['-W',], type='legacy')
 )
