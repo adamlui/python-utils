@@ -8,7 +8,7 @@ from . import data, log
 
 def create_translations(cli, target_msgs, lang_code):
 
-    fail_flags = ['INVALID TARGET LANGUAGE', 'TOO MANY REQUESTS', 'MYMEMORY']
+    fail_flags = ['INVALID TARGET LANGUAGE', 'MYMEMORY']
     src_keys = cli.config.keys or cli.en_msgs
     src_keys = [key for key in src_keys if key in cli.en_msgs]
     translated_msgs = {}
