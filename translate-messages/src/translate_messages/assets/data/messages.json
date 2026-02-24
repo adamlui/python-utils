@@ -32,6 +32,8 @@
   "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "No project root detected in" },
   "warn_SPECIFIED_CONFIG": { "message": "Specified config" },
   "warn_NOT_FOUND": { "message": "Not found" },
+  "warn_OPTION": { "message": "Option" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "no longer has any effect" },
   "err_UNRECOGNIZED_ARGS": { "message": "Unrecognized argument(s)" },
   "err_PARSE_FAILED": { "message": "Failed to parse" },
   "err_TRANSLATE_FAILED_FOR_KEY": { "message": "Translation failed for key" },

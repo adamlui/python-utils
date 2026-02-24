@@ -27,7 +27,7 @@ controls = sn(
     force=sn(
         args=['-f', '--force', '--overwrite'], action='store_true'),
     no_wizard=sn(
-        args=['-n', '-W', '--no-wizard', '--skip-wizard'], action='store_true', default=None),
+        args=['-n', '--no-wizard', '--skip-wizard'], action='store_true', default=None),
     help=sn(
         args=['-h', '--help'], action='help'),
     version=sn(
@@ -35,7 +35,9 @@ controls = sn(
     docs=sn(
         args=['--docs'], action='store_true', exit=True, handler=lambda cli: url.open(cli.urls.docs)),
     debug=sn(
-        args=['--debug'], nargs='?', const=True, metavar='TARGET_KEY' )
+        args=['--debug'], nargs='?', const=True, metavar='TARGET_KEY' ),
+    no_wizard_legacy=sn(
+        args=['-W',], type='legacy')
 )
 
 def load(cli):
@@ -43,23 +45,29 @@ def load(cli):
 
     # Assign help tips from cli.msgs
     for ctrl_key, ctrl in vars(controls).items():
+        if getattr(ctrl, 'type', None) == 'legacy' : continue
         if not hasattr(ctrl, 'help') : ctrl.help = getattr(cli.msgs, f'help_{ctrl_key.upper()}')
 
     # Parse CLI args
     argp = argparse.ArgumentParser(description=cli.description, add_help=False)
-    for ctrl_key in vars(controls): # add args to argp
-        kwargs = getattr(controls, ctrl_key).__dict__.copy()
+    for ctrl_key, ctrl in vars(controls).items(): # add args to argp
+        kwargs = ctrl.__dict__.copy()
         args = kwargs.pop('args')
+        if getattr(ctrl, 'type', None) == 'legacy':
+            for arg in args:
+                if arg in sys.argv:
+                    log.warn(f'{cli.msgs.warn_OPTION} {arg} {cli.msgs.warn_NO_LONGER_HAS_ANY_EFFECT}.')
+            continue # to parse next arg  
         valid_argparse_kwargs = {
             'action', 'choices', 'const', 'default', 'dest', 'help', 'metavar', 'nargs', 'required', 'type', 'version' }
         argparse_kwargs = { key:val for key,val in kwargs.items() if key in valid_argparse_kwargs}
         argp.add_argument(*args, **argparse_kwargs)
     parsed_args, unknown_args = argp.parse_known_args()
-    subcmd_flags = [] # exempt dashless args from validation
+    exempt_flags = [] # exempt dashless + legacy args from validation
     for ctrl in vars(controls).values():
-        if getattr(ctrl, 'subcmd', False):
-            for arg in ctrl.args : subcmd_flags.append(arg)
-    if unknown_args and not all(f'--{arg}' in subcmd_flags for arg in unknown_args):
+        if getattr(ctrl, 'subcmd', False) or getattr(ctrl, 'type', None) == 'legacy':
+            for arg in ctrl.args : exempt_flags.append(arg)
+    if unknown_args and not all(any(arg.startswith(exempt) for exempt in exempt_flags) for arg in unknown_args):
         log.help_cmd_docs_url_exit(cli, f"{cli.msgs.err_UNRECOGNIZED_ARGS}: {' '.join(unknown_args)}")
     for ctrl_key, ctrl in vars(controls).items(): # process subcmds
         if getattr(ctrl, 'subcmd', False) and next(arg for arg in ctrl.args if arg.startswith('--'))[2:] in sys.argv:
