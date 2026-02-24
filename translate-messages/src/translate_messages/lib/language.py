@@ -52,7 +52,7 @@ def write_translations(cli):
             langs_skipped.append(lang_code) ; langs_not_translated.append(lang_code)
             continue
 
-        if '-' in lang_code: # cap suffix
+        if '-' in lang_code: # uppercase suffix
             sep_idx = lang_dir.index('_')
             lang_dir = f'{lang_dir[:sep_idx]}_{lang_dir[sep_idx+1:].upper()}'
 
@@ -69,7 +69,7 @@ def write_translations(cli):
         log.info(f'{action} {lang_dir}/{cli.msgs_filename}...', end='')
         sys.stdout.flush()
         translated_msgs = create_translations(cli, msgs, lang_code)
-        data.json.write(msgs_path, translated_msgs)
+        data.json.write(msgs_path, translated_msgs, style='compact')
 
         if translated_msgs == msgs : langs_skipped.append(lang_code) ; lang_skipped = True
         else : langs_translated.append(lang_code) ; lang_translated = True
