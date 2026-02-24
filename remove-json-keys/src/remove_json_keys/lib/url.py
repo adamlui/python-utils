@@ -1,4 +1,4 @@
-import sys, webbrowser
+import webbrowser
 from urllib.error import URLError
 from urllib.parse import urlparse
 from urllib.request import urlopen
@@ -16,8 +16,7 @@ def open(url):
     try:
         webbrowser.open(url)
     except Exception as err:
-        print(f'Failed to open browser: {err}', file=sys.stderr)
-        sys.exit(1)
+        raise RuntimeError(f'Failed to open {url} in browser browser: {err}')
 
 def validate(url, allowed_schemes=('http', 'https'), allowed_domains=[]):
     parsed_url = urlparse(url)
