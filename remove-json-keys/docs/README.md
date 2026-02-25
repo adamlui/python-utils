@@ -4,8 +4,8 @@
 
 <a href="https://pepy.tech/projects/remove-json-keys">
     <img height=31 src="https://img.shields.io/pepy/dt/remove-json-keys?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
-<a href="https://github.com/adamlui/python-utils/releases/tag/remove-json-keys-1.5.0">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.5.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/python-utils/releases/tag/remove-json-keys-1.6.0">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.6.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/remove-json-keys/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
