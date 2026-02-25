@@ -18,3 +18,4 @@ updates:
         dependency-type: production
       dev-dependencies:
         dependency-type: development
+    versioning-strategy: increase
