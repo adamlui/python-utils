@@ -39,16 +39,17 @@ _Note: Key/values can span multiple lines and have any amount of whitespace betw
 
 Options can be set by using command-line arguments:
 
-| Option                 | Description                                                                     | Example
-| ---------------------- | ------------------------------------------------------------------------------- | -----------------------------
-| `-d`, `--json-dir`     | Name of the folder containing JSON files (default: `_locales`)                  | `--json-dir=data`
-| `-k`, `--keys`         | Comma-separated list of keys to remove                                          | `--keys=app_DESC,err_NOT_FOUND`
-| `--config`             | Use custom config file                                                          | `--config=path/to/file`
-| `init`, `-i`, `--init` | Create .remove-json.config.json5 in project root to store default settings      |
-| `-n`, `--no-wizard`    | Skip interactive prompts during start-up                                        |
-| `-h`, `--help`         | Show help screen                                                                |
-| `-v`, `--version`      | Show version                                                                    |
-| `--docs`               | Open docs URL                                                                   |
+| Option                            | Description                                                                     | Example
+| --------------------------------- | ------------------------------------------------------------------------------- | -----------------------------
+| `-d`, `--json-dir`                | Name of the folder containing JSON files (default: `_locales`)                  | `--json-dir=data`
+| `-k`, `--keys`                    | Comma-separated list of keys to remove                                          | `--keys=app_DESC,err_NOT_FOUND`
+| `--config`                        | Use custom config file                                                          | `--config=path/to/file`
+| `init`, `-i`, `--init`            | Create .remove-json.config.json5 in project root to store default settings      |
+| `-n`, `--no-wizard`               | Skip interactive prompts during start-up                                        |
+| `-h`, `--help`                    | Show help screen                                                                |
+| `-v`, `--version`                 | Show version                                                                    |
+| `-V`, `--debug [targetConfigKey]` | Show debug logs                                                                 |
+| `--docs`                          | Open docs URL                                                                   |
 
 ## Examples
 
