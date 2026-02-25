@@ -12,7 +12,7 @@
 
 ## 🏛️ MIT License
 
-**Copyright © 2023–2026 [Adam Lui](https://github.com/adamlui)**
+Copyright © 2023–2026 [Adam Lui](https://github.com/adamlui)
 <br><br>
 
 ## 🛡️ Security Policy
