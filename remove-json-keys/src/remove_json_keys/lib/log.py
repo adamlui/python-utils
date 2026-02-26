@@ -34,7 +34,7 @@ def version(cli):
 def warn(msg, *args, **kwargs) : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
 def cmd_docs_url_exit(cli, msg='', cmd='help'):
-    if msg : print(f'\n{colors.br}ERROR: {msg}')
+    if msg : error(msg)
     help_cmd(cli) if cmd == 'help' else init_cmd(cli)
     docs_url(cli)
     sys.exit(1)
