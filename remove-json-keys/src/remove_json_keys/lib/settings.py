@@ -27,7 +27,7 @@ controls = sn(
     debug=sn(
         args=['-V', '--debug'], nargs='?', const=True, metavar='TARGET_KEY' ),
     no_wizard_legacy=sn(
-        args=['-W',], type='legacy')
+        legacy=True, args=['-W',])
 )
 
 def load(cli):
@@ -35,7 +35,7 @@ def load(cli):
 
     # Assign help tips from cli.msgs
     for ctrl_key, ctrl in vars(controls).items():
-        if getattr(ctrl, 'type', None) == 'legacy' : continue
+        if getattr(ctrl, 'legacy', False) : continue
         if not hasattr(ctrl, 'help') : ctrl.help = getattr(cli.msgs, f'help_{ctrl_key.upper()}')
 
     # Parse CLI args
@@ -43,7 +43,7 @@ def load(cli):
     for ctrl_key, ctrl in vars(controls).items(): # add args to argp
         kwargs = ctrl.__dict__.copy()
         args = kwargs.pop('args')
-        if getattr(ctrl, 'type', None) == 'legacy':
+        if getattr(ctrl, 'legacy', False):
             for arg in args:
                 if arg in sys.argv:
                     log.warn(f'{cli.msgs.warn_OPTION} {arg} {cli.msgs.warn_NO_LONGER_HAS_ANY_EFFECT}.')
@@ -55,7 +55,7 @@ def load(cli):
     parsed_args, unknown_args = argp.parse_known_args()
     exempt_flags = [] # exempt dashless + legacy args from validation
     for ctrl in vars(controls).values():
-        if getattr(ctrl, 'subcmd', False) or getattr(ctrl, 'type', None) == 'legacy':
+        if getattr(ctrl, 'subcmd', False) or getattr(ctrl, 'legacy', False):
             for arg in ctrl.args : exempt_flags.append(arg)
     if unknown_args and not all(any(arg.startswith(exempt) for exempt in exempt_flags) for arg in unknown_args):
         log.cmd_docs_url_exit(cli, f"{cli.msgs.err_UNRECOGNIZED_ARGS}: {' '.join(unknown_args)}", cmd='help')
