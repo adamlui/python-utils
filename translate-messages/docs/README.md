@@ -4,8 +4,8 @@
 
 <a href="https://pepy.tech/projects/translate-messages">
     <img height=31 src="https://img.shields.io/pepy/dt/translate-messages?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
-<a href="https://github.com/adamlui/python-utils/releases/tag/translate-messages-1.6.0">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.6.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/python-utils/releases/tag/translate-messages-1.6.1">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.6.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/translate-messages/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
@@ -104,4 +104,4 @@ Copyright © 2023–2026 [Adam Lui](https://github.com/adamlui).
 
 <a href="#top">Back to top ↑</a>
 
-[stable-locales]: https://github.com/adamlui/python-utils/blob/translate-messages-1.6.0/translate-messages/src/translate_messages/assets/data/package_data.json#L23-L28
+[stable-locales]: https://github.com/adamlui/python-utils/blob/translate-messages-1.6.1/translate-messages/src/translate_messages/assets/data/package_data.json#L23-L28
