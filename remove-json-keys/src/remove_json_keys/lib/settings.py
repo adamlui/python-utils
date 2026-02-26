@@ -75,7 +75,7 @@ def load(cli):
                     setattr(cli.config, key, val)
                 else:
                     log.cmd_docs_url_exit(cli,
-                        f"{cli.msgs.err_INVALID_KEY} '{key}' {cli.msgs.err_FOUND_IN}"
+                        f'{cli.msgs.err_INVALID_KEY} {key!r} {cli.msgs.err_FOUND_IN}'
                         f'\n{log.colors.gry}{cli.config_filepath}',
                     cmd='init')
         log.debug('Config file loaded!', cli)

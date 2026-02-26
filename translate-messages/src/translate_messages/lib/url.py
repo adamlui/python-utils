@@ -21,7 +21,7 @@ def validate(url, allowed_schemes=('http', 'https'), allowed_domains=[]):
     parsed_url = urlparse(url)
 
     if parsed_url.scheme not in allowed_schemes:
-        raise ValueError(f"URL scheme '{parsed_url.scheme}' not allowed. Allowed: {allowed_schemes}")
+        raise ValueError(f'URL scheme {parsed_url.scheme!r} not allowed. Allowed: {allowed_schemes}')
 
     if allowed_domains:
         input_domain = parsed_url.netloc.lower()
