@@ -99,5 +99,4 @@ def load(cli):
             setattr(cli.config, ctrl_key, ctrl.default_val)
         if getattr(ctrl, 'parser', '') == 'csv':
             setattr(cli.config, ctrl_key, data.csv.parse(val))
-
     log.debug('All cli.config vals set!', cli)

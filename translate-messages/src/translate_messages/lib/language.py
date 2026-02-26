@@ -69,12 +69,14 @@ def write_translations(cli):
         log.info(f'{action} {lang_dir}/{cli.msgs_filename}...', end='')
         sys.stdout.flush()
         translated_msgs = create_translations(cli, msgs, lang_code)
+
         if translated_msgs == msgs:
             langs_skipped.append(lang_code) ; lang_skipped = True
         else:
             data.json.write(msgs_path, translated_msgs, style='compact')
             langs_translated.append(lang_code) ; lang_translated = True
         if not lang_translated : langs_not_translated.append(lang_code)
+
         status = f'{log.colors.dg}{cli.msgs.log_ADDED}' if lang_added else \
                  f'{log.colors.gry}{cli.msgs.log_SKIPPED}' if lang_skipped else \
                  f'{log.colors.dy}{cli.msgs.log_UPDATED}'
