@@ -10,7 +10,7 @@ def is_valid(file_path, format='json'):
     if not file_path.exists():
         return False
     try : file_text = file_path.read_text(encoding='utf-8')
-    except UnicodeDecodeError:
+    except Exception:
         return False
     if format == 'json':
         try : json.loads(file_text) ; return True
