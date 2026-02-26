@@ -1,7 +1,7 @@
-import webbrowser
 from urllib.error import URLError
 from urllib.parse import urlparse
 from urllib.request import urlopen
+import webbrowser
 
 def get(url, timeout=5, encoding='utf-8'):
     url = validate(url)
@@ -13,8 +13,7 @@ def get(url, timeout=5, encoding='utf-8'):
 
 def open(url):
     url = validate(url)
-    try:
-        webbrowser.open(url)
+    try : webbrowser.open(url)
     except Exception as err:
         raise RuntimeError(f'Failed to open {url} in browser browser: {err}')
 
