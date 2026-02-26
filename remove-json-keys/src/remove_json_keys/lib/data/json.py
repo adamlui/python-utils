@@ -5,6 +5,22 @@ import json5
 
 from . import file
 
+def is_valid(file_path, format='json'):
+    file_path = Path(file_path)
+    if not file_path.exists():
+        return False
+    try : file_text = file_path.read_text(encoding='utf-8')
+    except UnicodeDecodeError:
+        return False
+    if format == 'json':
+        try : json.loads(file_text) ; return True
+        except Exception : return False
+    elif format == 'json5':
+        try : json5.loads(file_text) ; return True
+        except Exception : return False
+    else:
+        raise ValueError(f"Unsupported format '{format}'. Expected 'json' or 'json5'.") 
+
 def read(file_path, encoding='utf-8'):
     with open(file_path, 'r', encoding=encoding) as file:
         return json5.load(file)
