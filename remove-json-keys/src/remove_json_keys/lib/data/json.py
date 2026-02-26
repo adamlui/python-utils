@@ -19,7 +19,7 @@ def is_valid(file_path, format='json'):
         try : json5.loads(file_text) ; return True
         except Exception : return False
     else:
-        raise ValueError(f"Unsupported format '{format}'. Expected 'json' or 'json5'.") 
+        raise ValueError(f"Unsupported format '{format}'. Expected 'json' or 'json5'") 
 
 def read(file_path, encoding='utf-8'):
     with open(file_path, 'r', encoding=encoding) as file:
