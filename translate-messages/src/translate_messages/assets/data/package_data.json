@@ -1,6 +1,6 @@
 {
   "name": "translate-messages",
-  "version": "1.5.2",
+  "version": "1.6.0",
   "description": "Translate en/messages.json (chrome.i18n format) to 100+ locales automatically.",
   "short_name": "translate-msgs",
   "cmds": ["translate-messages", "translate-msgs"],
