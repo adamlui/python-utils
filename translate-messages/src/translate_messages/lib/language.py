@@ -58,7 +58,7 @@ def write_translations(cli):
 
         lang_dir_path = cli.locales_path / lang_dir
         msgs_path = lang_dir_path / cli.msgs_filename
-        if msgs_path.exists():
+        if msgs_path.exists() and msgs_path.stat().st_size > 0:
             msgs = data.json.read(msgs_path)
         else:
             msgs = {}
