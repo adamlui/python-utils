@@ -76,8 +76,9 @@ Releases = "https://github.com/adamlui/python-utils/releases"
 Repository = "https://github.com/adamlui/python-utils"
 
 [project.scripts]
-translate-msgs = "translate_messages.__main__:main"
+translate-json = "translate_messages.__main__:main"
 translate-messages = "translate_messages.__main__:main"
+translate-msgs = "translate_messages.__main__:main"
 
 [project.optional-dependencies]
 dev = [
