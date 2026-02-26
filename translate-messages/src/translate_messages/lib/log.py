@@ -34,6 +34,12 @@ def version(cli):
     print(f'\n{colors.by}{cli.name}\n{colors.bw}{cli.msgs.log_VERSION.lower()}: {cli.version}{colors.nc}')
 def warn(msg, *args, **kwargs) : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
+def cmd_docs_url_exit(cli, msg='', cmd='help'):
+    if msg : print(f'\n{colors.br}ERROR: {msg}')
+    help_cmd(cli) if cmd == 'help' else init_cmd(cli)
+    docs_url(cli)
+    sys.exit(1)
+
 def debug(msg, cli=None, *args, **kwargs):
     if '--debug' not in sys.argv: return
 
@@ -65,14 +71,6 @@ def final_summary(msgs, summary_dict):
                       else colors.gry
             data(f'{msgs.log_LANGUAGES} {status}: {len(lang_set)}')
             print(f"{status_color}[ {', '.join(lang_set)} ]{colors.nc}")
-
-def help_cmd_docs_url_exit(cli, msg=''):
-    if msg : print(f'\n{colors.br}ERROR: {msg}')
-    help_cmd(cli) ; docs_url(cli) ; sys.exit(1)
-
-def init_cmd_docs_url_exit(cli, msg=''):
-    if msg : print(f'\n{colors.br}ERROR: {msg}')
-    init_cmd(cli) ; docs_url(cli) ; sys.exit(1)
 
 def trunc(msg, end='\n'):
     truncated_lines = [
