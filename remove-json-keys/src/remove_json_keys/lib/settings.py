@@ -21,11 +21,11 @@ controls = sn(
     help=sn(
         args=['-h', '--help'], action='help'),
     version=sn(
-        args=['-v', '--version'], action='store_true', exit=True, handler=lambda cli: log.version(cli)  ),
+        args=['-v', '--version'], action='store_true', exit=True, handler=lambda cli: log.version(cli)),
     docs=sn(
         args=['--docs'], action='store_true', exit=True, handler=lambda cli: url.open(cli.urls.docs)),
     debug=sn(
-        args=['-V', '--debug'], nargs='?', const=True, metavar='TARGET_KEY' ),
+        args=['-V', '--debug'], nargs='?', const=True, metavar='TARGET_KEY'),
     legacy_no_wizard=sn(
         replaced_by='no_wizard', args=['-W'])
 )
