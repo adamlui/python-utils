@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from . import data, language, log, settings, url
+from . import data, jsdelivr, language, log, settings, url
 
 data_path = Path(__file__).parent.parent / 'assets/data'
 
@@ -31,7 +31,7 @@ def config_file(cli): # for --init
 
     # Fetch/write from jsDelivr
     if not getattr(cli, 'default_file_config', ''):
-        jsd_url = f'{data.jsdelivr.create_pkg_ver_url(cli)}/{target_path.name}'
+        jsd_url = f'{jsdelivr.create_pkg_ver_url(cli)}/{target_path.name}'
         log.debug(f'{log.colors.bw}{jsd_url}')
         cli.default_file_config = url.get(jsd_url)
     data.file.write(str(target_path), cli.default_file_config)
