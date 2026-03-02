@@ -69,13 +69,13 @@ def cmd_docs_url_exit(cli, msg='', cmd='help'):
     sys.exit(1)
 
 def debug(msg, cli=None, *args, **kwargs):
-    if '--debug' not in sys.argv: return
+    if '--debug' not in sys.argv[1:]: return
 
     # Init --debug [target]
     debug_key=None
-    debug_argidx = sys.argv.index('--debug')
-    if debug_argidx +1 < len(sys.argv) and not sys.argv[debug_argidx +1].startswith('-'):
-        debug_key = sys.argv[debug_argidx +1].replace('-', '_')
+    debug_argidx = sys.argv[1:].index('--debug')
+    if debug_argidx +2 < len(sys.argv) and not sys.argv[debug_argidx +2].startswith('-'):
+        debug_key = sys.argv[debug_argidx +2].replace('-', '_')
 
     if cli: # init data line
         if debug_key:
