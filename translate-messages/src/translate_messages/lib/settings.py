@@ -61,7 +61,7 @@ def load(cli):
 
     # Assign help tips from cli.msgs
     for ctrl_key, ctrl in vars(controls).items():
-        if ctrl_key.startswith('legacy_') or ctrl_key.endswith('entropy') : continue
+        if ctrl_key.startswith('legacy_') : continue
         if not hasattr(ctrl, 'help') : ctrl.help = getattr(cli.msgs, f'help_{ctrl_key.upper()}')
 
     # Load from config file
