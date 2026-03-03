@@ -87,7 +87,7 @@ def src_msgs(cli):
         sys.exit(1)
 
 def target_langs(cli):
-    cli.config.target_langs = list(set(cli.config.target_langs)) # remove dupes
+    cli.config.target_langs = list(set(cli.config.target_langs or [])) # remove dupes
     if not cli.config.target_langs: # init to stable ones
         cli.config.target_langs = cli.stable_locales
         if not cli.config.only_stable: # merge discovered locales
