@@ -23,19 +23,21 @@ def read(file_path, encoding='utf-8'):
     with open(file_path, 'r', encoding=encoding) as file:
         return json5.load(file)
 
-def write(file_path, data, encoding='utf-8', ensure_ascii=False, style='pretty'):
+def write(file_path, data, encoding='utf-8', ensure_ascii=False, style='pretty', atomic=True):
+    from . import file
     Path(file_path).parent.mkdir(parents=True, exist_ok=True)
-    with open(file_path, 'w', encoding=encoding) as file:
-        if style == 'pretty': # single key/val spans multi-lines
-            json.dump(data, file, indent=2, ensure_ascii=ensure_ascii)
-        elif style == 'compact': # single key/val per line
-            file.write('{\n')
-            items = list(data.items())
-            for idx, (key, val) in enumerate(items):
-                line_end = ',' if idx < len(items) -1 else ''
-                inner = f'{{ {json.dumps(val, ensure_ascii=ensure_ascii)[1:-1]} }}'
-                file.write(f'  "{key}": {inner}{line_end}\n')
-            file.write('}')
-        else: # minified to single line
-            json.dump(data, file, separators=(',', ':'), ensure_ascii=ensure_ascii)
-        file.write('\n') # trailing newline
+    if style == 'pretty': # single key/val spans multi-lines
+        json_str = json.dumps(data, indent=2, ensure_ascii=ensure_ascii)
+    elif style == 'compact': # single key/val per line
+        lines = ['{']
+        items = list(data.items())
+        for idx, (key, val) in enumerate(items):
+            line_end = ',' if idx < len(items) -1 else ''
+            inner = f'{{ {json.dumps(val, ensure_ascii=ensure_ascii)[1:-1]} }}'
+            lines.append(f'  "{key}": {inner}{line_end}')
+        lines.append('}')
+        json_str = '\n'.join(lines)
+    else:  # minified
+        json_str = json.dumps(data, separators=(',', ':'), ensure_ascii=ensure_ascii)
+    json_str += '\n'
+    getattr(file, 'atomic_write' if atomic else 'write')(file_path, json_str, encoding=encoding)
