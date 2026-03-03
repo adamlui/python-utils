@@ -56,7 +56,7 @@ def write(file_path, data, encoding='utf-8', ensure_ascii=False, style='pretty',
             lines.append(f'  "{key}": {inner}{line_end}')
         lines.append('}')
         json_str = '\n'.join(lines)
-    else:  # minified
+    else: # minified to single line
         json_str = json.dumps(data, separators=(',', ':'), ensure_ascii=ensure_ascii)
     json_str += '\n'
     getattr(file, 'atomic_write' if atomic else 'write')(file_path, json_str, encoding=encoding)
