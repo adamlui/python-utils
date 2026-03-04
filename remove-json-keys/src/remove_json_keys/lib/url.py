@@ -28,6 +28,6 @@ def validate(url: str, allowed_schemes: Tuple[str, ...] = ('http', 'https'),
     if allowed_domains:
         input_domain = parsed_url.netloc.lower()
         if not any(input_domain.endswith(allowed_domain.lower()) for allowed_domain in allowed_domains):
-            raise ValueError(f"URL domain '{input_domain}' not allowed. Allowed: {allowed_domains}")
+            raise ValueError(f'URL domain {input_domain!r} not allowed. Allowed: {allowed_domains}')
     
     return url

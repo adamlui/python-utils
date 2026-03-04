@@ -76,13 +76,13 @@ def debug(msg: str, cli: Optional[sn] = None, *args, **kwargs) -> None:
 
     # Init --debug [target]
     debug_key=None
-    debug_argidx = sys.argv[1:].index('--debug')
-    if debug_argidx +2 < len(sys.argv) and not sys.argv[debug_argidx +2].startswith('-'):
-        debug_key = sys.argv[debug_argidx +2].replace('-', '_')
+    debug_argidx = sys.argv.index('--debug')
+    if debug_argidx +1 < len(sys.argv) and not sys.argv[debug_argidx +1].startswith('-'):
+        debug_key = sys.argv[debug_argidx +1].replace('-', '_')
 
     if cli: # init data line
         if debug_key:
-            data_val = getattr(cli.config, debug_key, f'cli.config key "{debug_key}" {cli.msgs.warn_NOT_FOUND.lower()}')
+            data_val = getattr(cli.config, debug_key, f'cli.config key {debug_key!r} {cli.msgs.warn_NOT_FOUND.lower()}')
         else:
             data_val = cli.config
         msg += f'\n{colors.gry}{data_val}{colors.nc}'
