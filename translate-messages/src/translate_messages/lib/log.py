@@ -4,7 +4,7 @@ from types import SimpleNamespace as sn
 from typing import Dict, List, Optional
 if sys.platform == 'win32' : import colorama ; colorama.init() # enable ANSI color support
 
-from . import data as datalib, pkg, settings
+from . import data as datalib, env, pkg, settings
 
 try : terminal_width = os.get_terminal_size()[0]
 except OSError : terminal_width = 80
@@ -72,7 +72,7 @@ def cmd_docs_url_exit(cli: sn, msg: str = '', cmd: str = 'help') -> None:
     sys.exit(1)
 
 def debug(msg: str, cli: Optional[sn] = None, *args, **kwargs) -> None:
-    if '--debug' not in sys.argv[1:]: return
+    if not env.is_debug_mode() : return
 
     # Init --debug [target]
     debug_key=None
