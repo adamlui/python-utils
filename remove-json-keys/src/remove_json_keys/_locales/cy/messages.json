@@ -17,7 +17,7 @@
   "log_ALL_JSON_PROCESSED": { "message": "Mae pob ffeil JSON wedi ei phrosesu" },
   "log_TOTAL_JSON_PROCESSED": { "message": "Cyfanswm ffeiliau JSON wedi'u prosesu" },
   "log_TYPE": { "message": "Math" },
-  "log_TO_CREATE_DEFAULT_CONFIG": { "message": "to create default config file" },
+  "log_TO_CREATE_DEFAULT_CONFIG": { "message": "creu ffeil cyfluniad rhagosodedig" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ar gyfer yr opsiynau sydd ar gael" },
   "log_VERSION": { "message": "Fersiwn" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Am fwy o wybodaeth, ewch i" },

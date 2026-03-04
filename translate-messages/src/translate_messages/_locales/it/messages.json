@@ -33,7 +33,7 @@
   "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Nessuna radice di progetto rilevata in" },
   "warn_SPECIFIED_CONFIG": { "message": "Configurazione specificata" },
   "warn_NOT_FOUND": { "message": "Non trovato" },
-  "warn_CONFIG_FILE_KEY": { "message": "Config file key" },
+  "warn_CONFIG_FILE_KEY": { "message": "Chiave del file di configurazione" },
   "warn_CLI_OPTION": { "message": "Opzione CLI" },
   "warn_HAS_BEEN_REPLACED_BY": { "message": "è stato sostituito da" },
   "warn_AND_WILL_BE_REMOVED": { "message": "e verranno rimossi" },
