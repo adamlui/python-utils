@@ -133,9 +133,6 @@ def get_sys_lang(cli: Optional[sn] = None) -> str:
         if cli : log.error(f'{cli.msgs.err_FAILED_TO_FETCH_SYS_LANG}: {err}')
         return 'en'
 
-    msgs_path = Path(__file__).parent.parent / 'assets/data/messages.json'
-    return sn(**{ key:val['message'] for key,val in data.json.read(msgs_path).items() })
-
 def write_translations(cli):
 
     langs_added, langs_skipped, langs_translated, langs_not_translated = [], [], [], []
