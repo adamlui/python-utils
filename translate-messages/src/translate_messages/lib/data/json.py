@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from typing import Dict, Any
+from typing import Any, Dict, Union
 
 import json5
 
@@ -25,11 +25,14 @@ def is_valid(file_path, format='json'):
         try : json5.loads(file_text) ; return True
         except Exception : return False
     else:
-        raise ValueError(f"Unsupported format {format!r}. Expected 'json' or 'json5'") 
+        raise ValueError(f"Unsupported format {format!r}. Expected 'json' or 'json5'")
 
-def read(file_path, encoding='utf-8'):
-    with open(file_path, 'r', encoding=encoding) as file:
-        return json5.load(file)
+def read(input: Union[str, Path], encoding: str = 'utf-8') -> Any:
+    input_str = str(input)
+    if input_str.endswith(('.json', '.json5')):
+        with open(input_str, 'r', encoding=encoding) as file:
+           return json5.load(file)
+    else : return json5.loads(input_str)
 
 def write(file_path, data, encoding='utf-8', ensure_ascii=False, style='pretty', atomic=True):
     from . import file
