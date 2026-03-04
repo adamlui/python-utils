@@ -18,5 +18,6 @@
     "pypi": "https://pypi.org/project/remove-json-keys/",
     "pypistats": "https://pypistats.org/packages/remove-json-keys",
     "support": "https://github.com/adamlui/python-utils/issues"
-  }
+  },
+  "commit_hashes": { "locales": "3cf794b" }
 }

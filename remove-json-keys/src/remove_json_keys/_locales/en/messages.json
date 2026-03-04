@@ -36,6 +36,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Unrecognized argument(s)" },
   "err_INVALID_KEY": { "message": "Invalid key" },
   "err_FOUND_IN": { "message": "found in" },
+  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Failed to fetch system language" },
   "help_JSON_DIR": { "message": "Name of the folder containing JSON files (default: \"_locales\")" },
   "help_KEYS": { "message": "Keys to remove (e.g. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Use custom config file (e.g. \"path/to/file\")" },

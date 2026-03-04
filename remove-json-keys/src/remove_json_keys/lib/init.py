@@ -1,12 +1,13 @@
 from pathlib import Path
 
-from . import data, jsdelivr, language, log, settings, url
+from . import data, env, jsdelivr, language, log, settings, url
 
 data_path = Path(__file__).parent.parent / 'assets/data'
 
 def cli():
     cli = data.sns.from_dict(data.json.read(data_path / 'package_data.json'))
-    cli.msgs = language.get_msgs()
+    cli.msgs = language.get_msgs(cli,
+        language.generate_random_lang(excludes=['en']) if env.is_debug_mode() else language.get_sys_lang())
     settings.load(cli)
     return cli
 

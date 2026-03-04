@@ -1,7 +1,15 @@
 import json
 from pathlib import Path
+from typing import Dict, Any
 
 import json5
+
+def flatten(json: Dict[str, Any], key: str = 'message') -> Dict[str, Any]: # eliminate need to ref nested keys
+    flat_obj = {}
+    for json_key in json:
+        val = json[json_key]
+        flat_obj[json_key] = val[key] if isinstance(val, dict) and key in val else val
+    return flat_obj
 
 def is_valid(file_path, format='json'):
     file_path = Path(file_path)
