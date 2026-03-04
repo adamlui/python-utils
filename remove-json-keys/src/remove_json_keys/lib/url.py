@@ -16,7 +16,7 @@ def open(url: str) -> None:
     url = validate(url)
     try : webbrowser.open(url)
     except Exception as err:
-        raise RuntimeError(f'Failed to open {url} in browser browser: {err}')
+        raise RuntimeError(f'Failed to open {url} in browser: {err}')
 
 def validate(url: str, allowed_schemes: Tuple[str, ...] = ('http', 'https'),
                        allowed_domains: Optional[List[str]] = None) -> str:
