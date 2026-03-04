@@ -65,7 +65,7 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
 
     msgs = data.json.flatten(data.json.read( # local ones
         Path(__file__).parent.parent / '_locales/en/messages.json'))
-    
+
     if not lang_code.startswith('en'): # fetch non-English msgs from jsDelivr
         msgs_host_url = f'{jsdelivr.create_commit_url(cli, cli.commit_hashes.locales)}/src/remove_json_keys/_locales/'
         msg_href = f'{msgs_host_url}{lang_code}/messages.json'

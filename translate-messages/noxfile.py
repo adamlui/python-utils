@@ -27,7 +27,7 @@ def bump_minor(session, no_push=True):
     if no_push : cmd.append('--no-push')
     session.run(*cmd, *session.posargs)
 @session
-def bump_feat(session, no_push=True): 
+def bump_feat(session, no_push=True):
     bump_minor(session, no_push)
 @session
 def bump_major(session, no_push=True):

@@ -54,7 +54,7 @@ def get_canonical_key(key: str) -> Optional[str]:
       else stripped_key if hasattr(controls, stripped_key) \
       else None
 
-def is_neg_key(key: str) -> bool : 
+def is_neg_key(key: str) -> bool :
     return bool(re.match(r'^(?:no|disable|exclude)_', string.removeprefix(key, 'legacy_')))
 
 def load(cli: sn) -> None:
@@ -75,7 +75,7 @@ def load(cli: sn) -> None:
                     f'{cli.msgs.err_INVALID_KEY} {config_key!r} {cli.msgs.err_FOUND_IN}'
                     f'\n{log.colors.gry}{cli.config_filepath}',
                     cmd='init')
-        for config_key, config_val in config_data.items():            
+        for config_key, config_val in config_data.items():
             canonical_key = get_canonical_key(config_key)
             if canonical_key and config_key != canonical_key: # re-map config_key -> canonical_key
                 log.warn_legacy_option(cli, config_key, source='config')
@@ -94,7 +94,7 @@ def load(cli: sn) -> None:
     for ctrl_key, ctrl in vars(controls).items(): # add args to argp
         kwargs = ctrl.__dict__.copy()
         args = kwargs.pop('args')
-        argparse_kwargs = { key:val for key,val in kwargs.items() if key in valid_argparse_kwargs }        
+        argparse_kwargs = { key:val for key,val in kwargs.items() if key in valid_argparse_kwargs }
         if ctrl_key.startswith('legacy_'): # copy canonical attrs first
             canonical_key = get_canonical_key(ctrl_key)
             if canonical_key: # adjust argparse_kwargs
