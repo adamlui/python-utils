@@ -1,10 +1,10 @@
 [
-    ".git",
-    "manifest.json",
-    "package.json",
-    "package-lock.json",
-    "pyproject.toml",
-    "requirements.txt",
-    "requirements-dev.txt",
-    "setup.py"
+  ".git",
+  "manifest.json",
+  "package.json",
+  "package-lock.json",
+  "pyproject.toml",
+  "requirements.txt",
+  "requirements-dev.txt",
+  "setup.py"
 ]
