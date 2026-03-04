@@ -2,7 +2,7 @@ from types import SimpleNamespace as sn
 
 from . import data, log
 
-def run(cli: sn):
+def run(cli: sn) -> None:
 
     while True: # prompt user for keys to ignore
 
