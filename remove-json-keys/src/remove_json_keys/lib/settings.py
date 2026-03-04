@@ -1,5 +1,6 @@
 import argparse, re, sys
 from types import SimpleNamespace as sn
+from typing import Optional
 
 from . import data, init, log, string, url
 
@@ -30,7 +31,7 @@ controls = sn(
         args=['-W'], action='store_true', default=None)
 )
 
-def get_canonical_key(key: str) -> str | None:
+def get_canonical_key(key: str) -> Optional[str]:
     if key.startswith('-'): # convert CLI arg to full key name
         for ctrl_key, ctrl in vars(controls).items():
             if key in getattr(ctrl, 'args', []):
