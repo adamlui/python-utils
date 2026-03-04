@@ -18,7 +18,7 @@ def run(cli):
             else : print(f'{cli.msgs.log_EXITING} {cli.name}...') ; sys.exit(0)
 
         new_keys = data.csv.parse(input_keys)
-        existing_keys = set(cli.config.keys)
+        existing_keys = set(cli.config.keys or [])
         truly_new_keys = []
         for key in new_keys:
             if key not in existing_keys and key not in truly_new_keys:
