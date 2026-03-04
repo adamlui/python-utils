@@ -73,7 +73,7 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
             try: # fetch remote msgs
                 msgs = data.json.flatten(data.json.read(url.get(msg_href)))
                 break
-            except Exception as err: # retry up to 2X (region-stripped + EN)
+            except Exception: # retry up to 2X (region-stripped + EN)
                 if attempt == 2 : break
                 msg_href = ( re.sub(r'([^_]*)_[^/]*(/.*)', r'\1\2', msg_href) # strip region before retrying
                     if attempt == 0 and '-' in lang_code else f'{msgs_host_url}en/messages.json') # else use EN msgs
