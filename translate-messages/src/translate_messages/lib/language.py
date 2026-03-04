@@ -54,7 +54,7 @@ def generate_random_lang(includes: Optional[List[str]] = None,
     def get_locales() -> List[str]:
 
         # Read cache if found
-        cache_dir = Path(__file__).parent.parent / '.cache'
+        cache_dir = Path(__file__).parent.parent / '_cache'
         locale_cache = cache_dir / 'locales.json'
         if locale_cache.exists():
             try : return data.json.read(locale_cache)
