@@ -47,7 +47,7 @@ def get_canonical_key(key: str) -> Optional[str]:
 def is_neg_key(key: str) -> bool : 
     return bool(re.match(r'^(?:no|disable|exclude)_', string.removeprefix(key, 'legacy_')))
 
-def load(cli):
+def load(cli: sn) -> None:
     cli.config = sn()
 
     # Assign help tips from cli.msgs

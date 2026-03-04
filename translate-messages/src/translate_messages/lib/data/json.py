@@ -11,7 +11,7 @@ def flatten(json: Dict[str, Any], key: str = 'message') -> Dict[str, Any]: # eli
         flat_obj[json_key] = val[key] if isinstance(val, dict) and key in val else val
     return flat_obj
 
-def is_valid(file_path, format='json'):
+def is_valid(file_path: Union[Path, str], format: str = 'json') -> bool:
     file_path = Path(file_path)
     if not file_path.exists():
         return False
@@ -27,14 +27,15 @@ def is_valid(file_path, format='json'):
     else:
         raise ValueError(f"Unsupported format {format!r}. Expected 'json' or 'json5'")
 
-def read(input: Union[str, Path], encoding: str = 'utf-8') -> Any:
+def read(input: Union[Path, str], encoding: str = 'utf-8') -> Any:
     input_str = str(input)
     if input_str.endswith(('.json', '.json5')):
         with open(input_str, 'r', encoding=encoding) as file:
            return json5.load(file)
     else : return json5.loads(input_str)
 
-def write(file_path, data, encoding='utf-8', ensure_ascii=False, style='pretty', atomic=True):
+def write(file_path: Union[Path, str], data: Any, encoding: str = 'utf-8', ensure_ascii: bool = False,
+          style: str = 'pretty', atomic: bool =True):
     from . import file
     Path(file_path).parent.mkdir(parents=True, exist_ok=True)
     if style == 'pretty': # single key/val spans multi-lines

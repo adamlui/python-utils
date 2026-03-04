@@ -1,13 +1,13 @@
 from pathlib import Path
 import re, sys
 from types import SimpleNamespace as sn
-from typing import List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 from translate import Translator
 
 from . import data, log
 
-def create_translations(cli, target_msgs, lang_code):
+def create_translations(cli: sn, target_msgs: Dict[str, Any], lang_code: str) -> Dict[str, Dict[str, str]]:
 
     fail_flags = ['INVALID TARGET LANGUAGE', 'MYMEMORY']
     src_keys = cli.config.keys or cli.en_msgs
@@ -133,7 +133,7 @@ def get_sys_lang(cli: Optional[sn] = None) -> str:
         if cli : log.error(f'{cli.msgs.err_FAILED_TO_FETCH_SYS_LANG}: {err}')
         return 'en'
 
-def write_translations(cli):
+def write_translations(cli: sn) -> Tuple[List[str], List[str], List[str], List[str]]:
 
     langs_added, langs_skipped, langs_translated, langs_not_translated = [], [], [], []
     for lang_code in cli.config.target_langs:

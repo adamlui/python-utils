@@ -1,6 +1,6 @@
 import json, re
 from pathlib import Path
-from typing import Any, Dict, Union
+from typing import Any, Dict, List, Union
 
 import json5
 
@@ -13,7 +13,7 @@ def flatten(json: Dict[str, Any], key: str = 'message') -> Dict[str, Any]: # eli
         flat_obj[json_key] = val[key] if isinstance(val, dict) and key in val else val
     return flat_obj
 
-def is_valid(file_path, format='json'):
+def is_valid(file_path: Union[Path, str], format: str = 'json') -> bool:
     file_path = Path(file_path)
     if not file_path.exists():
         return False
@@ -29,14 +29,14 @@ def is_valid(file_path, format='json'):
     else:
         raise ValueError(f"Unsupported format {format!r}. Expected 'json' or 'json5'")
 
-def read(input: Union[str, Path], encoding: str = 'utf-8') -> Any:
+def read(input: Union[Path, str], encoding: str = 'utf-8') -> Any:
     input_str = str(input)
     if input_str.endswith(('.json', '.json5')):
         with open(input_str, 'r', encoding=encoding) as file:
            return json5.load(file)
     else : return json5.loads(input_str)
 
-def remove_keys(json_path, keys):
+def remove_keys(json_path: Path, keys: List[str]):
     keys_removed, keys_skipped, files_processed_cnt = [], [], 0
     for file_path in json_path.rglob('*.json'):
         json_data = file.read(file_path)
@@ -54,7 +54,8 @@ def remove_keys(json_path, keys):
         files_processed_cnt += 1
     return keys_removed, keys_skipped, files_processed_cnt
 
-def write(file_path, data, encoding='utf-8', ensure_ascii=False, style='pretty', atomic=True):
+def write(file_path: Union[Path, str], data: Any, encoding: str = 'utf-8', ensure_ascii: bool = False,
+          style: str = 'pretty', atomic: bool =True):
     Path(file_path).parent.mkdir(parents=True, exist_ok=True)
     if style == 'pretty': # single key/val spans multi-lines
         json_str = json.dumps(data, indent=2, ensure_ascii=ensure_ascii)

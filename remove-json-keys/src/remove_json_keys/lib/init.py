@@ -1,17 +1,18 @@
 from pathlib import Path
+from types import SimpleNamespace as sn
 
 from . import data, env, jsdelivr, language, log, settings, url
 
 data_path = Path(__file__).parent.parent / 'assets/data'
 
-def cli():
+def cli() -> sn:
     cli = data.sns.from_dict(data.json.read(data_path / 'package_data.json'))
     cli.msgs = language.get_msgs(cli,
         language.generate_random_lang(excludes=['en']) if env.is_debug_mode() else language.get_sys_lang())
     settings.load(cli)
     return cli
 
-def config_file(cli): # for --init
+def config_file(cli: sn) -> None: # for --init
     target_path = Path.cwd() / f'.{cli.short_name}.config.json5'
     project_markers = data.json.read(data_path / 'project_markers.json')
     in_project_root = None
@@ -39,7 +40,7 @@ def config_file(cli): # for --init
     log.success(f'{cli.msgs.log_DEFAULT_CONFIG_CREATED_AT} {target_path}')
     if in_project_root : log.tip(f'{cli.msgs.tip_MOVE_CONFIG_TO_ROOT}.')
 
-def config_filepath(cli): # for settings.load()
+def config_filepath(cli: sn) -> None: # for settings.load()
 
     # Check --config <path>
     if getattr(cli.config, 'config', ''):
@@ -65,7 +66,7 @@ def config_filepath(cli): # for settings.load()
 
     cli.config_filepath = None
 
-def json_path(cli):
+def json_path(cli: sn) -> None:
     for path in Path.cwd().rglob(cli.config.json_dir):
         if path.is_dir():
             cli.json_path = Path(path)

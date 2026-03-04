@@ -1,9 +1,10 @@
+from typing import List, Optional, Tuple
 from urllib.error import URLError
 from urllib.parse import urlparse
 from urllib.request import urlopen
 import webbrowser
 
-def get(url, timeout=5, encoding='utf-8'):
+def get(url: str, timeout: int = 5, encoding: str = 'utf-8') -> str:
     url = validate(url)
     try:
         with urlopen(url, timeout=timeout) as resp:
@@ -11,13 +12,14 @@ def get(url, timeout=5, encoding='utf-8'):
     except URLError as err:
         raise RuntimeError(f'Failed to fetch from {url}: {err}')
 
-def open(url):
+def open(url: str) -> None:
     url = validate(url)
     try : webbrowser.open(url)
     except Exception as err:
         raise RuntimeError(f'Failed to open {url} in browser browser: {err}')
 
-def validate(url, allowed_schemes=('http', 'https'), allowed_domains=[]):
+def validate(url: str, allowed_schemes: Tuple[str, ...] = ('http', 'https'),
+                       allowed_domains: Optional[List[str]] = None) -> str:
     parsed_url = urlparse(url)
 
     if parsed_url.scheme not in allowed_schemes:

@@ -1,6 +1,7 @@
 import os, sys
 from pathlib import Path
 from types import SimpleNamespace as sn
+from typing import Dict, List, Optional
 if sys.platform == 'win32' : import colorama ; colorama.init() # enable ANSI color support
 
 from . import data as datalib, pkg, settings
@@ -25,22 +26,24 @@ colors = sn(
     gry='\x1b[90m'       # gray
 )
 
-def data(msg, *args, **kwargs) : print(f'\n{colors.bw}{msg.format(*args, **kwargs)}{colors.nc}')
-def dim(msg, *args, **kwargs) : print(f'\n{colors.gry}{msg.format(*args, **kwargs)}{colors.nc}')
-def docs_url(cli) : tip(f'{cli.msgs.tip_FOR_MORE_HELP_VISIT}:\n{cli.urls.docs}')
-def error(msg, *args, **kwargs) : print(f'\n{colors.br}ERROR: {msg.format(*args, **kwargs)}{colors.nc}')
-def help_cmd(cli) : info(f"{cli.msgs.log_TYPE} '{cli.cmds[0]} --help' {cli.msgs.log_FOR_AVAIL_OPTIONS}\n")
-def info(msg, *args, end='', **kwargs) : print(f'\n{colors.by}{msg.format(*args, **kwargs)}{colors.nc}', end=end)
-def init_cmd(cli) : info(f"{cli.msgs.log_TYPE} '{cli.cmds[0]} --init' {cli.msgs.log_TO_CREATE_DEFAULT_CONFIG}\n")
-def overwrite_print(msg, *args, **kwargs):
+def data(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bw}{msg.format(*args, **kwargs)}{colors.nc}')
+def dim(msg: str, *args, **kwargs) -> None : print(f'\n{colors.gry}{msg.format(*args, **kwargs)}{colors.nc}')
+def docs_url(cli: sn) -> None : tip(f'{cli.msgs.tip_FOR_MORE_HELP_VISIT}:\n{cli.urls.docs}')
+def error(msg: str, *args, **kwargs) -> None : print(f'\n{colors.br}ERROR: {msg.format(*args, **kwargs)}{colors.nc}')
+def help_cmd(cli: sn) -> None : info(f"{cli.msgs.log_TYPE} '{cli.cmds[0]} --help' {cli.msgs.log_FOR_AVAIL_OPTIONS}\n")
+def info(msg: str, *args, end: str = '', **kwargs) -> None:
+    print(f'\n{colors.by}{msg.format(*args, **kwargs)}{colors.nc}', end=end)
+def init_cmd(cli: sn) -> None:
+    info(f"{cli.msgs.log_TYPE} '{cli.cmds[0]} --init' {cli.msgs.log_TO_CREATE_DEFAULT_CONFIG}\n")
+def overwrite_print(msg: str, *args, **kwargs) -> None:
     sys.stdout.write('\r' + msg.format(*args, **kwargs).ljust(terminal_width)[:terminal_width])
-def success(msg, *args, **kwargs) : print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')
-def tip(msg, *args, **kwargs) : print(f'\n{colors.bc}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
-def version(cli):
+def success(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')
+def tip(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bc}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
+def version(cli: sn) -> None:
     print(f'\n{colors.by}{cli.name}\n{colors.bw}{cli.msgs.log_VERSION.lower()}: {cli.version}{colors.nc}')
-def warn(msg, *args, **kwargs) : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
+def warn(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
-def warn_legacy_option(cli, flag: str, source: str) -> None:
+def warn_legacy_option(cli: sn, flag: str, source: str) -> None:
     warned_set = _warned_keys[source]
     if flag in warned_set : return
     canonical_key = settings.get_canonical_key(flag)
@@ -62,13 +65,13 @@ def warn_legacy_option(cli, flag: str, source: str) -> None:
     msg += f' {cli.msgs.warn_AND_WILL_BE_REMOVED} @ v{next_maj_ver}'
     warn(msg) ; warned_set.add(flag)
 
-def cmd_docs_url_exit(cli, msg='', cmd='help'):
+def cmd_docs_url_exit(cli: sn, msg: str = '', cmd: str = 'help') -> None:
     if msg : error(msg)
     help_cmd(cli) if cmd == 'help' else init_cmd(cli)
     docs_url(cli)
     sys.exit(1)
 
-def debug(msg, cli=None, *args, **kwargs):
+def debug(msg: str, cli: Optional[sn] = None, *args, **kwargs) -> None:
     if '--debug' not in sys.argv[1:]: return
 
     # Init --debug [target]
@@ -89,7 +92,7 @@ def debug(msg, cli=None, *args, **kwargs):
 
     print(f'\n{colors.by}DEBUG: {msg}{colors.nc}')
 
-def final_summary(msgs, summary_dict):
+def final_summary(msgs: sn, summary_dict: Dict[str, List[str]]) -> None:
     success(f'{msgs.log_ALL_JSON_PROCESSED}!')
     for name, file_set in summary_dict.items():
         if file_set:
@@ -98,7 +101,7 @@ def final_summary(msgs, summary_dict):
             data(f'{msgs.log_KEYS} {status}: {len(file_set)}')
             print(f'{status_color}[\n    ' + '\n    '.join(file_set) + f'\n]{colors.nc}')
 
-def trunc(msg, end='\n'):
+def trunc(msg: str, end: str = '\n') -> None:
     truncated_lines = [
         line if len(line) < terminal_width else line[:terminal_width -4] + '...' for line in msg.splitlines()]
     print('\n'.join(truncated_lines), end=end)

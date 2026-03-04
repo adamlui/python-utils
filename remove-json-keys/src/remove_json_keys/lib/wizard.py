@@ -1,8 +1,9 @@
 import sys
+from types import SimpleNamespace as sn
 
 from . import data, log
 
-def run(cli):
+def run(cli: sn) -> None:
 
     while True: # prompt user for keys to remove
 
