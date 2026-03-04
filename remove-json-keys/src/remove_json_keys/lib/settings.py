@@ -128,6 +128,6 @@ def load(cli):
         if not hasattr(cli.config, ctrl_key):
             setattr(cli.config, ctrl_key, ctrl.default_val if hasattr(ctrl, 'default_val') else None)
         config_val = getattr(cli.config, ctrl_key)
-        if getattr(ctrl, 'parser', '') == 'csv' and config_val is not None:
+        if getattr(ctrl, 'parser', '') == 'csv':
             setattr(cli.config, ctrl_key, data.csv.parse(config_val))
     log.debug('All cli.config vals set!', cli)
