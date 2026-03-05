@@ -19,5 +19,8 @@
     "pypistats": "https://pypistats.org/packages/remove-json-keys",
     "support": "https://github.com/adamlui/python-utils/issues"
   },
-  "commit_hashes": { "locales": "2e62364" }
+  "commit_hashes": {
+    "data": "ce658f0",
+    "locales": "2e62364"
+  }
 }

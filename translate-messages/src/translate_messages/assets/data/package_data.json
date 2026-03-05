@@ -27,5 +27,8 @@
     "rw", "sg", "si", "sk", "sl", "sm", "sn", "so", "sr", "sv", "sw", "ta", "te", "tg", "th", "ti", "tk", "tn", "tpi",
     "tr", "uk", "ur", "uz", "vi", "xh", "yi", "zh", "zh-CN", "zh-HK", "zh-SG", "zh-TW", "zu"
   ],
-  "commit_hashes": { "locales": "2e62364" }
+  "commit_hashes": {
+    "data": "ce658f0",
+    "locales": "2e62364"
+  }
 }
