@@ -70,7 +70,7 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
         try: # check if terminal supports non-Latin scripts
             non_latin_locales = data.json.read(url.get(
                 f'{cli.urls.jsdelivr}@{cli.commit_hashes.data}/assets/data/non_latin_locales.json'))
-            if lang_code.split('-')[0] in non_latin_locales and not env.can_render_non_latin_scripts():
+            if lang_code.split('_')[0] in non_latin_locales and not env.can_render_non_latin_scripts():
                 return sn(**msgs) # en ones
         except Exception as err:
             log.debug(f'Failed to fetch non-Latin locales: {err}')
