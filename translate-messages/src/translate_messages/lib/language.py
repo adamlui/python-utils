@@ -99,7 +99,6 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
         mod_root_path / '_locales/en/messages.json'))
 
     if not lang_code.startswith('en'): # fetch non-English msgs from jsDelivr
-        # Check if terminal supports non-Latin scripts
         non_latin_locales = data.json.read(mod_root_path / 'assets/data/non_latin_locales.json')
         if lang_code.split('-')[0] in non_latin_locales and not env.can_render_non_latin_scripts():
             return sn(**msgs) # en ones
