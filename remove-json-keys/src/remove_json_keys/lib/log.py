@@ -76,7 +76,7 @@ def debug(msg: str, cli: Optional[sn] = None, *args, **kwargs) -> None:
 
     # Init --debug [target]
     debug_key=None
-    debug_argidx = sys.argv.index('--debug')
+    debug_argidx = sys.argv.index('--debug') if '--debug' in sys.argv else sys.argv.index('-V')
     if debug_argidx +1 < len(sys.argv) and not sys.argv[debug_argidx +1].startswith('-'):
         debug_key = sys.argv[debug_argidx +1].replace('-', '_')
 
