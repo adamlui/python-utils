@@ -56,17 +56,21 @@ def generate_random_lang(includes: Optional[List[str]] = None,
     return random_lang
 
 def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
-    from . import jsdelivr, url
+    from . import env, jsdelivr, url
 
     lang_code = format_code(lang_code)
     if getattr(get_msgs, 'cached', None) and lang_code == get_msgs.cached_lang:
-        print(get_msgs.cached)
         return get_msgs.cached # don't re-fetch same msgs
 
+    mod_root_path = Path(__file__).parent.parent
+    non_latin_locales = data.json.read(mod_root_path / 'assets/data/non_latin_locales.json')
     msgs = data.json.flatten(data.json.read( # local ones
-        Path(__file__).parent.parent / '_locales/en/messages.json'))
+        mod_root_path / '_locales/en/messages.json'))
 
-    if not lang_code.startswith('en'): # fetch non-English msgs from jsDelivr
+    if (
+        not lang_code.startswith('en') and
+        not (lang_code in non_latin_locales and not env.can_render_non_latin_scripts())
+    ): # fetch non-English msgs from jsDelivr
         msgs_host_url = f'{jsdelivr.create_commit_url(cli, cli.commit_hashes.locales)}/src/remove_json_keys/_locales/'
         msg_href = f'{msgs_host_url}{lang_code}/messages.json'
         for attempt in range(3):
