@@ -22,7 +22,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "ar gyfer yr opsiynau sydd ar gael" },
   "log_VERSION": { "message": "Fersiwn" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Am fwy o wybodaeth, ewch i" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pasio -- gorfodi i drosysgrifo" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pasio --force i drosysgrifo" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Symud y ffeil cyfluniad i wraidd y project yr hoffech ei ddefnyddio ynddo" },
   "tip_MAKE_SURE": { "message": "Gwnewch yn siŵr" },
   "tip_EXISTS": { "message": "bodoli" },

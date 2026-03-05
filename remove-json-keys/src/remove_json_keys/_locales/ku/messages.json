@@ -21,7 +21,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "ji bo vebijarkên berdest" },
   "log_VERSION": { "message": "Awa" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Ji bo bêtir alîkariyê, serdana" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Derbaskirin --bi zorê ji bo sernivîsandinê" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Derbaskirin --force zorê ji bo sernivîsandinê" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Pelê mîhengê veguhezîne rootê projeya ku hûn dixwazin wê tê de bikar bînin" },
   "warn_CONFIG_EXISTS_AT": { "message": "Mîheng jixwe li wir heye" },
   "warn_DIR_NOT_FOUND": { "message": "Pelrêç nayê dîtin" },

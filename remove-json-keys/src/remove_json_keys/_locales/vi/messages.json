@@ -21,7 +21,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "cho các tùy chọn có sẵn" },
   "log_VERSION": { "message": "Phiên bản" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Để được trợ giúp thêm, hãy truy cập" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Vượt qua --lực lượng để ghi đè" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Vượt qua --force lượng để ghi đè" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Di chuyển tệp cấu hình vào thư mục gốc của dự án mà bạn muốn sử dụng nó trong" },
   "warn_CONFIG_EXISTS_AT": { "message": "Cấu hình đã tồn tại lúc" },
   "warn_DIR_NOT_FOUND": { "message": "Không thể định vị thư mục" },

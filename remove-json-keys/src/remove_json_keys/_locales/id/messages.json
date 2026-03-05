@@ -21,7 +21,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "untuk opsi yang tersedia" },
   "log_VERSION": { "message": "Versi" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Untuk bantuan lebih lanjut, kunjungi" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pass -- force untuk menimpa" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pass --force untuk menimpa" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Pindahkan file konfigurasi ke root proyek yang ingin Anda gunakan" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfigurasi sudah ada di" },
   "warn_DIR_NOT_FOUND": { "message": "Tidak dapat menemukan direktori" },

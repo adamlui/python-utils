@@ -22,7 +22,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "pazosankha zomwe zilipo" },
   "log_VERSION": { "message": "Lumikizanani nafe" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Kuti muthandizidwe, pitani" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pass --mphamvu kuti overwrite" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pass --force kuti overwrite" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Sinthani fayilo ya config kuti muzu wa polojekiti yomwe mukufuna kuigwiritsa ntchito mu" },
   "tip_MAKE_SURE": { "message": "Onetsetsani" },
   "tip_EXISTS": { "message": "alipo" },

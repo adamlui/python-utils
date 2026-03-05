@@ -21,7 +21,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "eskuragarri dauden aukeretarako" },
   "log_VERSION": { "message": "Bertsioa" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Laguntza gehiago behar baduzu, bisitatu" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pasatu --gainidazketa behartu" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pasatu --force behartu" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Mugitu konfigurazio fitxategia erabili nahi duzun proiektuaren errora" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfigurazioa dagoeneko existitzen da hemen:" },
   "warn_DIR_NOT_FOUND": { "message": "Ezin da direktorioa aurkitu" },

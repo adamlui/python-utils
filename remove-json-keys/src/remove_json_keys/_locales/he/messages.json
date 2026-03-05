@@ -21,7 +21,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "לאפשרויות זמינות" },
   "log_VERSION": { "message": "גרסה" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "לקבלת עזרה נוספת, ניתן לבקר בכתובת" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "לעבור -- לאכוף לשכתב" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "לעבור --force לשכתב" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "העבר קובץ תצורה לשורש הפרויקט שבו ברצונך להשתמש בו" },
   "warn_CONFIG_EXISTS_AT": { "message": "התצורה כבר קיימת ב -" },
   "warn_DIR_NOT_FOUND": { "message": "לא ניתן לאתר את הספרייה" },

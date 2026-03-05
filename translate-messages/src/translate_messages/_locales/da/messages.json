@@ -22,7 +22,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "for tilgængelige muligheder" },
   "log_VERSION": { "message": "Version" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Du kan få mere hjælp ved at gå til" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Bestå --tving til at overskrive" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Bestå --force til at overskrive" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Flyt konfigurationsfilen til roden af det projekt, du ønsker at bruge den i" },
   "tip_MAKE_SURE": { "message": "Sørg for" },
   "tip_EXISTS": { "message": "eksisterer" },

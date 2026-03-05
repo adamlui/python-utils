@@ -22,7 +22,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "دستیاب آپشنز کے لیے" },
   "log_VERSION": { "message": "ورژن" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "مزید مدد کے لیے، ملاحظہ کریں" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "-- force کو اوور رائٹ کرنے کے لیے پاس کریں" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "--force کو اوور رائٹ کرنے کے لیے پاس کریں" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "کنفیگ فائل کو اس پروجیکٹ کی جڑ میں منتقل کریں جس میں آپ اسے استعمال کرنا چاہتے ہیں" },
   "tip_MAKE_SURE": { "message": "یقینی بنائیں" },
   "tip_EXISTS": { "message": "موجود ہے" },

@@ -22,7 +22,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "за налични опции" },
   "log_VERSION": { "message": "Версия" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "За повече помощ посетете" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Преминаване -- принуждаване да се презапише" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Преминаване --force да се презапише" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Преместване на конфигурационния файл в основата на проекта, в който искате да го използвате" },
   "tip_MAKE_SURE": { "message": "Уверете се" },
   "tip_EXISTS": { "message": "съществува" },

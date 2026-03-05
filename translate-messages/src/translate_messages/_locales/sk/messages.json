@@ -22,7 +22,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "pre dostupné možnosti" },
   "log_VERSION": { "message": "Verzia" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Ak potrebujete ďalšiu pomoc, navštívte stránku" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Prejsť --sila na prepísanie" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Prejsť --force na prepísanie" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Presunúť konfiguračný súbor do koreňového adresára projektu, v ktorom ho chcete použiť" },
   "tip_MAKE_SURE": { "message": "Uistite sa, že" },
   "tip_EXISTS": { "message": "existuje" },

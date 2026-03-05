@@ -22,7 +22,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "per le opzioni disponibili" },
   "log_VERSION": { "message": "Versione" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Per ulteriore assistenza, visita" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Passa --forza per sovrascrivere" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Passa --force per sovrascrivere" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Sposta il file di configurazione nella directory principale del progetto in cui desideri utilizzarlo" },
   "tip_MAKE_SURE": { "message": "Assicurarsi che" },
   "tip_EXISTS": { "message": "esiste" },

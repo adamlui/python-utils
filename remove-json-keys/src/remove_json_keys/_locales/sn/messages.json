@@ -21,7 +21,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "nokuti iripo zvaungasarudza" },
   "log_VERSION": { "message": "Shanduro" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Kuti uwane rumwe rubatsiro, shanyira" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pfuura --simba kuti uwedzere kunyora" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pfuura --force kuti uwedzere kunyora" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Fambisa config file kumudzi weprojekti yaunoda kuishandisa" },
   "warn_CONFIG_EXISTS_AT": { "message": "Config yatovepo pa" },
   "warn_DIR_NOT_FOUND": { "message": "Haikwanise kuwana dhairekitori" },

@@ -21,7 +21,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "mavjud variantlar uchun" },
   "log_VERSION": { "message": "Versiya" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Qo'shimcha yordam olish uchun tashrif buyuring" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pass --force to overwrite" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Yo'llanma --force qayta yozish" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Konfiguratsiya faylini ishlatmoqchi bo'lgan loyihaning ildiz qismiga ko'chiring" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfiguratsiya allaqachon mavjud" },
   "warn_DIR_NOT_FOUND": { "message": "Katalogni topib bo'lmadi" },

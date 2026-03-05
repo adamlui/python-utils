@@ -21,7 +21,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "за достапните опции" },
   "log_VERSION": { "message": "Верзија" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "За повеќе помош, посетете" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Поминете -- принудете да се презапише" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Поминете --force да се презапише" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Преместете ја конфигурациската датотека во коренот на проектот во кој сакате да ја користите" },
   "warn_CONFIG_EXISTS_AT": { "message": "Конфигурацијата веќе постои на" },
   "warn_DIR_NOT_FOUND": { "message": "Не можам да го лоцирам директориумот" },

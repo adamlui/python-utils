@@ -21,7 +21,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "no nā koho i loaʻa" },
   "log_VERSION": { "message": "Mana" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "No ke kōkua hou aku, e kipa aku iā" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Hoʻoholo --e hoʻoikaika e kākau hou" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Hoʻoholo --force hoʻoikaika e kākau hou" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "E hoʻoneʻe i ka faila hoʻonohonoho i ke aʻa o ka papahana āu e makemake ai e hoʻohana" },
   "warn_CONFIG_EXISTS_AT": { "message": "Aia mua ka config ma" },
   "warn_DIR_NOT_FOUND": { "message": "ʻAʻole hiki ke loaʻa ka papa kuhikuhi" },

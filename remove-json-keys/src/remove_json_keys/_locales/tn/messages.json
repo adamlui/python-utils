@@ -21,7 +21,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "mo dilong tse o ka tlhophang mo go tsone" },
   "log_VERSION": { "message": "Mofuta" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Go bona thuso go ya pele, etela" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pass --force to overwrite" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Feta --force go kwalolola" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Sutisetsa faele ya CONFINCE kwa moding wa porojeke e o batlang go e dirisa mo go yone" },
   "warn_CONFIG_EXISTS_AT": { "message": "Config e setse e le teng kwa" },
   "warn_DIR_NOT_FOUND": { "message": "Ga ke kgone go bona kaedi" },

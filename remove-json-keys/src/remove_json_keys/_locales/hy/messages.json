@@ -21,7 +21,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "ազատ տարբերակների համար" },
   "log_VERSION": { "message": "Տարբերակ" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Լրացուցիչ օգնության համար այցելեք" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Անցնել --- ուժ ՝ վերագրանցելու համար" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Անցնել --force վերագրանցելու համար" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Տեղադրեք config ֆայլը նախագծի արմատին, որտեղ ցանկանում եք այն օգտագործել" },
   "warn_CONFIG_EXISTS_AT": { "message": "Կարգավորումն արդեն գոյություն ունի" },
   "warn_DIR_NOT_FOUND": { "message": "Չհաջողվեց գտնել գրացուցակը" },

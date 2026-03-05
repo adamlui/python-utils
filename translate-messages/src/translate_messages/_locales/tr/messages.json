@@ -22,7 +22,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "mevcut seçenekler için" },
   "log_VERSION": { "message": "Versiyon" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Daha fazla yardım için şu adresi ziyaret edin:" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pass -- force to overrite" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Üzerine yazmak için --force seçeneğini kullanın" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Yapılandırma dosyasını, içinde kullanmak istediğiniz projenin kök dizinine taşıyın" },
   "tip_MAKE_SURE": { "message": "Emin olun" },
   "tip_EXISTS": { "message": "var" },

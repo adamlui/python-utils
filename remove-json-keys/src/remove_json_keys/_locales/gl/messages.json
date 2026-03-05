@@ -21,7 +21,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "para opcións dispoñibles" },
   "log_VERSION": { "message": "Versión" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Para máis axuda, visita" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pasar -- force to overwrite" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pasar --force to overwrite" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Mover o ficheiro de configuración á raíz do proxecto no que desexa usalo" },
   "warn_CONFIG_EXISTS_AT": { "message": "A configuración xa existe en" },
   "warn_DIR_NOT_FOUND": { "message": "Non foi posíbel localizar o directorio" },

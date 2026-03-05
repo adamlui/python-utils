@@ -22,7 +22,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "für verfügbare Optionen" },
   "log_VERSION": { "message": "Version" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Weitere Hilfe finden Sie unter" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pass --force to overwrite" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Passen Sie die Option --force, um die Schreibweise zu überschreiben" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Verschieben Sie die Konfigurationsdatei in den Stamm des Projekts, in dem Sie sie verwenden möchten" },
   "tip_MAKE_SURE": { "message": "Stellen Sie sicher," },
   "tip_EXISTS": { "message": "existiert" },

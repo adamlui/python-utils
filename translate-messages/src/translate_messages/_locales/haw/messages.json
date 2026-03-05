@@ -22,7 +22,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "no nā koho i loaʻa" },
   "log_VERSION": { "message": "Mana" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "No ke kōkua hou aku, e kipa aku iā" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Hoʻoholo --e hoʻoikaika e kākau hou" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Hoʻoholo --force hoʻoikaika e kākau hou" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "E hoʻoneʻe i ka faila hoʻonohonoho i ke aʻa o ka papahana āu e makemake ai e hoʻohana" },
   "tip_MAKE_SURE": { "message": "Hōʻoiaʻiʻo" },
   "tip_EXISTS": { "message": "aia" },

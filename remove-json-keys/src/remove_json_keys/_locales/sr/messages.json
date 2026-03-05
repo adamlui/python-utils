@@ -21,7 +21,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "za dostupne opcije" },
   "log_VERSION": { "message": "Verzija" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Za dodatnu pomoć posjetite" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Prosledite -- primorajte na prepisivanje" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Prosledite --force na prepisivanje" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Premestite konfiguracionu datoteku u koren projekta u kojem želite da je koristite" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfiguracija već postoji u" },
   "warn_DIR_NOT_FOUND": { "message": "Nije moguće locirati direktorijum" },

@@ -22,7 +22,7 @@
   "log_FOR_AVAIL_OPTIONS": { "message": "za dostupne opcije" },
   "log_VERSION": { "message": "Verzija" },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Za dodatnu pomoć posjetite" },
-  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Proslijedi -- prisili za prepisivanje" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Proslijedi --force za prepisivanje" },
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Premjestite konfiguracijsku datoteku u korijen projekta u kojem ga želite koristiti" },
   "tip_MAKE_SURE": { "message": "Pobrinite se" },
   "tip_EXISTS": { "message": "postoji" },
