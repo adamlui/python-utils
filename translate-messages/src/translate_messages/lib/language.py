@@ -103,16 +103,16 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
         not lang_code.startswith('en') and
         not (lang_code in non_latin_locales and not env.can_render_non_latin_scripts())
     ): # fetch non-English msgs from jsDelivr
-        msgs_host_url = f'{jsdelivr.create_commit_url(cli, cli.commit_hashes.locales)}/src/remove_json_keys/_locales/'
-        msg_href = f'{msgs_host_url}{lang_code}/messages.json'
+        msg_base_url = f'{jsdelivr.create_commit_url(cli, cli.commit_hashes.locales)}/src/remove_json_keys/_locales'
+        msg_url = f'{msg_base_url}/{lang_code}/messages.json'
         for attempt in range(3):
             try: # fetch remote msgs
-                msgs = data.json.flatten(data.json.read(url.get(msg_href)))
+                msgs = data.json.flatten(data.json.read(url.get(msg_url)))
                 break
             except Exception: # retry up to 2X (region-stripped + EN)
                 if attempt == 2 : break
-                msg_href = ( re.sub(r'([^_]*)_[^/]*(/.*)', r'\1\2', msg_href) # strip region before retrying
-                    if attempt == 0 and '-' in lang_code else f'{msgs_host_url}en/messages.json') # else use EN msgs
+                msg_url = ( re.sub(r'([^_]*)_[^/]*(/.*)', r'\1\2', msg_url) # strip region before retrying
+                    if attempt == 0 and '-' in lang_code else f'{msg_base_url}/en/messages.json') # else use EN msgs
 
     get_msgs.cached = msgs
     get_msgs.cached_lang = lang_code
