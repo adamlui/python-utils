@@ -1,7 +1,7 @@
 # 🐍 adamlui / python-utils
 
 <a href="https://pepy.tech/compare?packages=remove-json-keys%2Ctranslate-messages">
-    <img height=31 src="https://img.shields.io/badge/Downloads-5.3k-af68ff.svg?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
+    <img height=31 src="https://img.shields.io/badge/Downloads-7.4k-af68ff.svg?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
 <a href="./LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
