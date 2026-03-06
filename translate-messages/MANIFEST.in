@@ -1,3 +1,2 @@
-recursive-include docs *
 recursive-include src/translate_messages/assets *
 include src/translate_messages/_locales/en/messages.json
