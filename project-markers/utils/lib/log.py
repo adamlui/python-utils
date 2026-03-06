@@ -1,0 +1,35 @@
+import os, sys
+from types import SimpleNamespace as sn
+if sys.platform == 'win32' : import colorama ; colorama.init() # enable ANSI color support
+
+try : terminal_width = os.get_terminal_size()[0]
+except OSError : terminal_width = 80
+
+colors = sn(
+    nc='\x1b[0m',        # no color
+    br='\x1b[1;91m',     # bright red
+    by='\x1b[1;33m',     # bright yellow
+    bo='\x1b[38;5;214m', # bright orange
+    bg='\x1b[1;92m',     # bright green
+    bc='\x1b[1;96m',     # bright cyan
+    bw='\x1b[1;97m',     # bright white
+    dg='\x1b[32m',       # dark green
+    dy='\x1b[33m',       # dark yellow
+    gry='\x1b[90m'       # gray
+)
+
+def data(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bw}{msg.format(*args, **kwargs)}{colors.nc}')
+def dim(msg: str, *args, **kwargs) -> None : print(f'\n{colors.gry}{msg.format(*args, **kwargs)}{colors.nc}')
+def error(msg: str, *args, **kwargs) -> None : print(f'\n{colors.br}ERROR: {msg.format(*args, **kwargs)}{colors.nc}')
+def info(msg: str, *args, end: str = '', **kwargs) -> None:
+    print(f'\n{colors.by}{msg.format(*args, **kwargs)}{colors.nc}', end=end)
+def overwrite_print(msg: str, *args, **kwargs) -> None:
+    sys.stdout.write('\r' + msg.format(*args, **kwargs).ljust(terminal_width)[:terminal_width])
+def success(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')
+def tip(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bc}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
+def warn(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
+
+def trunc(msg: str, end: str = '\n') -> None:
+    truncated_lines = [
+        line if len(line) < terminal_width else line[:terminal_width -4] + '...' for line in msg.splitlines()]
+    print('\n'.join(truncated_lines), end=end)
