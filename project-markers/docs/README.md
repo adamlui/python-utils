@@ -15,7 +15,7 @@
 
 > ### _Common project root markers._
 
-It's just a JSON file, so you can use it in any environment.
+It's just a [JSON file](https://github.com/adamlui/python-utils/blob/project-markers-1.0.0/project-markers/src/project_markers/project_markers.json), so you can use it in any environment.
 
 ## Installation
 
