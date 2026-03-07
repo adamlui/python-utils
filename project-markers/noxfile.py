@@ -13,8 +13,6 @@ def session(func) : return nox.session(venv_backend='none')(func)
 
 @session
 def dev(session) : session.run('pip', 'install', '-e', '.')
-@session
-def debug(session) : session.run('py', '-m', pkg.name, '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
 
 @session
 def bump_patch(session, no_push=True):
