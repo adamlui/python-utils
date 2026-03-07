@@ -12,7 +12,7 @@ def session(func) : return nox.session(venv_backend='none')(func)
 # SESSIONS
 
 @session
-def dev(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg.dir, '--help', *session.posargs)
+def dev(session) : session.run('pip', 'install', '-e', '.')
 @session
 def debug(session) : session.run('py', '-m', pkg.name, '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
 
