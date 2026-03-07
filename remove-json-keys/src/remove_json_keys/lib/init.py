@@ -13,10 +13,10 @@ def cli() -> sn:
     return cli
 
 def config_file(cli: sn) -> None: # for --init
+    import project_markers
     target_path = Path.cwd() / f'.{cli.short_name}.config.json5'
-    project_markers = data.json.read(data_path / 'project_markers.json')
     in_project_root = None
-    if not any((Path.cwd() / marker).exists() for marker in project_markers):
+    if not any((Path.cwd() / marker).exists() for marker in project_markers): # type: ignore
         log.warn(f'{cli.msgs.warn_NO_PROJECT_ROOT_FOUND_IN} {Path.cwd()}')
         user_resp = input(f'{cli.msgs.prompt_INIT_CONFIG_HERE_ANYWAY}? (y/N): ').strip().lower()
         if not user_resp.startswith('y') : return
