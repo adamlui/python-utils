@@ -32,7 +32,7 @@ print(project_markers)
 # => ['.ansible-lint', '.bazelrc', '.browserslistrc', '.buckconfig', ...]
 ```
 
-_Note: Most type checkers will falsely warn `project_markers` is not iterable because they cannot analyze runtime behavior (where the module is replaced w/ a list for cleaner, direct access). You can safely suppress such warnings using `# type: ignore`._
+_Note: Most type checkers will falsely warn_ `project_markers` _is not iterable because they cannot analyze runtime behavior (where the module is replaced w/ a list for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
 
 The list includes markers from many tools and ecosystems, including:
 
