@@ -20,7 +20,7 @@ def parse_args():
     argp.add_argument('-p', '--patch', action='store_true', help=msgs.help_PATCH)
     argp.add_argument('-n', '--no-commit', '--skip-commit', action='store_true', help=msgs.help_NO_COMMIT)
     argp.add_argument('-N', '--no-push', '--skip-push', action='store_true', help=msgs.help_NO_PUSH)
-    argp.add_argument('-h', '--help',  action='help', help=msgs.help_HELP)
+    argp.add_argument('-h', '--help', action='help', help=msgs.help_HELP)
     return argp.parse_args()
 
 def init_vers(project, bump_type):
