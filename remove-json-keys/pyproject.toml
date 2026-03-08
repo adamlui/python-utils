@@ -25,6 +25,7 @@ dependencies = [
 ]
 requires-python = ">=3.8,<4.0"
 keywords = [
+    "auto-detect",
     "cli",
     "console",
     "data",
