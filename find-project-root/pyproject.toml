@@ -1,0 +1,77 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "find-project-root"
+version = "1.0.0"
+description = "Locate project root via custom markers."
+authors = [
+    { name = "Adam Lui", email = "adam@kudoai.com" }
+]
+readme = "docs/README.md"
+license = "MIT"
+license-files = [
+    "docs/LICENSE.md"
+]
+dependencies = [
+    "project-markers>=1.0.0,<2.0.0"
+]
+requires-python = ">=2.6,<4.0"
+keywords = [
+    "auto-detect",
+    "dev-tool",
+    "directory",
+    "filesystem",
+    "git-root",
+    "locate-root",
+    "marker-files",
+    "path-finder",
+    "project-root",
+    "root-detection"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.6",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Version Control",
+    "Topic :: System :: Filesystems",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Utilities"
+]
+
+[project.urls]
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/find-project-root-1.0.0"
+Documentation = "https://github.com/adamlui/python-utils/tree/main/find-project-root/docs"
+Funding = "https://github.com/sponsors/adamlui"
+Homepage = "https://github.com/adamlui/python-utils/tree/main/find-project-root/#readme"
+Issues = "https://github.com/adamlui/python-utils/issues"
+"PyPI Stats" = "https://pepy.tech/projects/find-project-root"
+Releases = "https://github.com/adamlui/python-utils/releases"
+Repository = "https://github.com/adamlui/python-utils"
+
+[project.optional-dependencies]
+dev = [
+    "nox>=2026.2.9",
+    "tomli>=2.0.0,<3.0.0",
+    "tomli-w>=0.1.0,<2.0.0"
+]
