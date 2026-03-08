@@ -1,5 +1,3 @@
-<a id="top"></a>
-
 # > project-markers
 
 <a href="https://pepy.tech/projects/project-markers">
