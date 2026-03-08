@@ -29,7 +29,7 @@ keywords = [
     "cli",
     "console",
     "data",
-    "dev tool",
+    "dev-tool",
     "json"
 ]
 classifiers = [
