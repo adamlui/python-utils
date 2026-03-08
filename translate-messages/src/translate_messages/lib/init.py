@@ -14,14 +14,17 @@ def cli() -> sn:
     return cli
 
 def config_file(cli: sn) -> None: # for --init
-    import project_markers
-    target_path = Path.cwd() / f'.{cli.short_name}.config.json5'
-    in_project_root = None
-    if not any((Path.cwd() / marker).exists() for marker in project_markers): # type: ignore
-        log.warn(f'{cli.msgs.warn_NO_PROJECT_ROOT_FOUND_IN} {Path.cwd()}')
+    import find_project_root
+    project_root = find_project_root(max_depth=20) # type: ignore
+    if project_root:
+        target_path = Path(project_root) / f'.{cli.short_name}.config.json5'
+        in_project_root = True
+    else:
+        log.warn(cli.msgs.NO_PROJECT_ROOT_FOUND)
         user_resp = input(f'{cli.msgs.prompt_INIT_CONFIG_HERE_ANYWAY}? (y/N): ').strip().lower()
         if not user_resp.startswith('y') : return
-        else : in_project_root = True # for move tip
+        target_path = Path.cwd() / f'.{cli.short_name}.config.json5'
+        in_project_root = False
 
     # Handle existing file
     if target_path.exists():
