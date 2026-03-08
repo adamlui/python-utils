@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "API థ్రోట్లింగ్ ‌ ను రీసెట్ చేయడానికి VPN ఉపయోగించండి" },
   "warn_CONFIG_EXISTS_AT": { "message": "కాన్ఫిగరేషన్ ఇప్పటికే ఉంది" },
   "warn_DIR_NOT_FOUND": { "message": "డైరెక్టరీని గుర్తించడం సాధ్యం కాలేదు" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "లో ప్రాజెక్ట్ రూట్ కనుగొనబడలేదు" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "ప్రాజెక్ట్ రూట్ ఏదీ కనుగొనబడలేదు" },
   "warn_SPECIFIED_CONFIG": { "message": "పేర్కొన్న కాన్ఫిగరేషన్" },
   "warn_NOT_FOUND": { "message": "దొరకలేదు" },
   "warn_CONFIG_FILE_KEY": { "message": "ఫైల్ కీని కాన్ఫిగర్ చేయండి" },

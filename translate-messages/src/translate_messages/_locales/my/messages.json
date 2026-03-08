@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "API Throttling ကိုပြန်လည်သတ်မှတ်ရန် VPN ကိုသုံးပါ" },
   "warn_CONFIG_EXISTS_AT": { "message": "Config မှာ ရှိပြီးသားပါ" },
   "warn_DIR_NOT_FOUND": { "message": "လမ်းညွှန်ကို ရှာမတွေ့ပါ" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "ပရောဂျက်အမြစ်ရှာမတွေ့ပါ" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "ပရောဂျက်အမြစ်ရှာမတွေ့ပါ" },
   "warn_SPECIFIED_CONFIG": { "message": "သတ်မှတ်ထားသော Configuration" },
   "warn_NOT_FOUND": { "message": "မတွေ့ပါ" },
   "warn_CONFIG_FILE_KEY": { "message": "ဖိုင်ကီးကို စီစဉ်စီစဉ်ပါ" },

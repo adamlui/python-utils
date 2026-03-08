@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Pindahkan file konfigurasi ke root proyek yang ingin Anda gunakan" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfigurasi sudah ada di" },
   "warn_DIR_NOT_FOUND": { "message": "Tidak dapat menemukan direktori" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Tidak ada root proyek yang terdeteksi di" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Tidak ada root proyek yang terdeteksi" },
   "warn_SPECIFIED_CONFIG": { "message": "Konfigurasi yang ditentukan" },
   "warn_NOT_FOUND": { "message": "Tidak ditemukan" },
   "warn_CONFIG_FILE_KEY": { "message": "Kunci file konfigurasi" },

@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Przenieś plik konfiguracyjny do katalogu głównego projektu, w którym chcesz go użyć" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfiguracja już istnieje w" },
   "warn_DIR_NOT_FOUND": { "message": "Nie można zlokalizować katalogu" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Nie wykryto korzenia projektu w" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Nie wykryto katalogu głównego projektu" },
   "warn_SPECIFIED_CONFIG": { "message": "Określona konfiguracja" },
   "warn_NOT_FOUND": { "message": "Nie znaleziono" },
   "warn_CONFIG_FILE_KEY": { "message": "Klucz pliku konfiguracyjnego" },

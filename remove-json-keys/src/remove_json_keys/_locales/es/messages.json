@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Mueva el archivo de configuración a la raíz del proyecto en el que desea usarlo" },
   "warn_CONFIG_EXISTS_AT": { "message": "La configuración ya existe en" },
   "warn_DIR_NOT_FOUND": { "message": "No se puede localizar el directorio" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "No se ha detectado ninguna raíz de proyecto en" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "No se ha detectado ninguna raíz del proyecto" },
   "warn_SPECIFIED_CONFIG": { "message": "Config. especificada" },
   "warn_NOT_FOUND": { "message": "No encontrado" },
   "warn_CONFIG_FILE_KEY": { "message": "Config file key" },

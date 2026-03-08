@@ -25,7 +25,6 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "設定ファイルを使用したいプロジェクトのルートに移動します" },
   "warn_CONFIG_EXISTS_AT": { "message": "設定はに既に存在します" },
   "warn_DIR_NOT_FOUND": { "message": "ディレクトリが見つかりません" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "でプロジェクトルートが検出されませんでした" },
   "warn_SPECIFIED_CONFIG": { "message": "指定された設定" },
   "warn_NOT_FOUND": { "message": "見つかりません" },
   "warn_CONFIG_FILE_KEY": { "message": "設定ファイルキー" },

@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Використовуйте VPN для скидання регулювання API" },
   "warn_CONFIG_EXISTS_AT": { "message": "Конфігурація вже існує за адресою" },
   "warn_DIR_NOT_FOUND": { "message": "Не вдалося знайти каталог" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Корінь проекту не виявлено в" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Корінь проекту не виявлено" },
   "warn_SPECIFIED_CONFIG": { "message": "Вказана конфігурація" },
   "warn_NOT_FOUND": { "message": "Не знайдено" },
   "warn_CONFIG_FILE_KEY": { "message": "Ключ файлу налаштувань" },

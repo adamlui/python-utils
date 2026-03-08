@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Dirisa VPN go tsosolosa API" },
   "warn_CONFIG_EXISTS_AT": { "message": "Config e setse e le teng kwa" },
   "warn_DIR_NOT_FOUND": { "message": "Ga ke kgone go bona kaedi" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Ga go a bonwa modi ope wa porojeke mo" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Ga go a bonwa modi wa porojeke" },
   "warn_SPECIFIED_CONFIG": { "message": "Config e e tlhalositsweng" },
   "warn_NOT_FOUND": { "message": "Ga e a bonwa" },
   "warn_CONFIG_FILE_KEY": { "message": "Config file key" },

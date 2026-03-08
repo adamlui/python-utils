@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Конфигурация файлын қолданғыңыз келетін жобаның түбіріне жылжытыңыз" },
   "warn_CONFIG_EXISTS_AT": { "message": "Конфигурациясы бар" },
   "warn_DIR_NOT_FOUND": { "message": "Каталог табылмады" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Жоба түбірі анықталмады" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Жоба түбірі анықталмады" },
   "warn_SPECIFIED_CONFIG": { "message": "Нақты конфигурация" },
   "warn_NOT_FOUND": { "message": "Табылған жоқ" },
   "warn_CONFIG_FILE_KEY": { "message": "Файл кілтін конфигурациялау" },

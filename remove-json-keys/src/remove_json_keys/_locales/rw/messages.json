@@ -25,7 +25,6 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "IDOSIYE Kuri Imizi Bya Umushinga Kuri Gukoresha in" },
   "warn_CONFIG_EXISTS_AT": { "message": "Ku" },
   "warn_DIR_NOT_FOUND": { "message": "Kuri bushyinguro" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Umushinga Imizi in" },
   "warn_SPECIFIED_CONFIG": { "message": "< Uburemere UTSINDAGIY" },
   "warn_NOT_FOUND": { "message": "Ntibyabonetse" },
   "warn_CONFIG_FILE_KEY": { "message": "IDOSIYE Urufunguzo" },

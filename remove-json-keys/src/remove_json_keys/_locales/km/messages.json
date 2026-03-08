@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "ផ្លាស់ទី ឯកសារ កំណត់ រចនា សម្ព័ន្ធ ទៅ ជា root របស់ គម្រោង ដែល អ្នក ចង់ ប្រើ វា ក្នុង" },
   "warn_CONFIG_EXISTS_AT": { "message": "កំណត់រចនាសម្ព័ន្ធមានរួចហើយនៅ" },
   "warn_DIR_NOT_FOUND": { "message": "មិនអាចកំណត់ទីតាំងថតបានទេ" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "រកមិនឃើញឫសគម្រោងនៅក្នុង" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "រកមិនឃើញឫសគម្រោងទេ" },
   "warn_SPECIFIED_CONFIG": { "message": "ការកំណត់រចនាសម្ព័ន្ធដែលបានបញ្ជាក់" },
   "warn_NOT_FOUND": { "message": "រកមិនឃើញមាន" },
   "warn_CONFIG_FILE_KEY": { "message": "កំណត់រចនាសម្ព័ន្ធឃីឯកសារ" },

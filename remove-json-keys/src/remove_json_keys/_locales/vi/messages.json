@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Di chuyển tệp cấu hình vào thư mục gốc của dự án mà bạn muốn sử dụng nó trong" },
   "warn_CONFIG_EXISTS_AT": { "message": "Cấu hình đã tồn tại lúc" },
   "warn_DIR_NOT_FOUND": { "message": "Không thể định vị thư mục" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Không phát hiện thấy thư mục gốc của dự án trong" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Không phát hiện được gốc dự án" },
   "warn_SPECIFIED_CONFIG": { "message": "Cấu hình được chỉ định" },
   "warn_NOT_FOUND": { "message": "Không tìm thấy" },
   "warn_CONFIG_FILE_KEY": { "message": "Khóa tập tin cấu hình" },

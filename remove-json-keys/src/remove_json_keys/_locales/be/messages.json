@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Перамясціць файл канфігурацыі ў корань праекту, які вы хочаце выкарыстаць" },
   "warn_CONFIG_EXISTS_AT": { "message": "Канфігурацыя ўжо існуе на" },
   "warn_DIR_NOT_FOUND": { "message": "Немагчыма знайсці каталог" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Корань праекту не знойдзены ў" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Корань праекту не знойдзены" },
   "warn_SPECIFIED_CONFIG": { "message": "Указаная канфігурацыя" },
   "warn_NOT_FOUND": { "message": "Не знойдзена" },
   "warn_CONFIG_FILE_KEY": { "message": "Клавіша файла канфігурацыі" },

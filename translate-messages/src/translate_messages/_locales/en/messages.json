@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Use a VPN to reset API throttling" },
   "warn_CONFIG_EXISTS_AT": { "message": "Config already exists at" },
   "warn_DIR_NOT_FOUND": { "message": "Unable to locate directory" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "No project root detected in" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "No project root detected" },
   "warn_SPECIFIED_CONFIG": { "message": "Specified config" },
   "warn_NOT_FOUND": { "message": "Not found" },
   "warn_CONFIG_FILE_KEY": { "message": "Config file key" },

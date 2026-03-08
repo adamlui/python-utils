@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Paggamit usa ka VPN aron ma-reset ang API throttling" },
   "warn_CONFIG_EXISTS_AT": { "message": "Ang Config anaa na sa" },
   "warn_DIR_NOT_FOUND": { "message": "Dili makit-an ang direktoryo" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Wala 'y nakit-an nga gamut sa proyekto sa" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Wala 'y nakit-an nga gamut sa proyekto" },
   "warn_SPECIFIED_CONFIG": { "message": "Gipiho nga pagsalig" },
   "warn_NOT_FOUND": { "message": "Wala nakit-an" },
   "warn_CONFIG_FILE_KEY": { "message": "I-configure ang yawi sa file" },

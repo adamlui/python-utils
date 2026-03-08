@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Μετακινήστε το αρχείο διαμόρφωσης στη ρίζα του έργου στο οποίο θέλετε να το χρησιμοποιήσετε" },
   "warn_CONFIG_EXISTS_AT": { "message": "Η διαμόρφωση υπάρχει ήδη στο" },
   "warn_DIR_NOT_FOUND": { "message": "Δεν είναι δυνατός ο εντοπισμός του καταλόγου" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Δεν εντοπίστηκε ρίζα έργου στο" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Δεν εντοπίστηκε ρίζα έργου" },
   "warn_SPECIFIED_CONFIG": { "message": "Καθορισμένη διαμόρφωση" },
   "warn_NOT_FOUND": { "message": "Δεν βρέθηκε" },
   "warn_CONFIG_FILE_KEY": { "message": "Διαμόρφωση κλειδιού αρχείου" },

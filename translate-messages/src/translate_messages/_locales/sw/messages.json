@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Tumia VPN kuweka upya API throttling" },
   "warn_CONFIG_EXISTS_AT": { "message": "Sanidi tayari ipo kwenye" },
   "warn_DIR_NOT_FOUND": { "message": "Imeshindwa kupata saraka" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Hakuna mizizi ya mradi iliyogunduliwa katika" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Hakuna mizizi ya mradi iliyogunduliwa" },
   "warn_SPECIFIED_CONFIG": { "message": "Usanidi maalum" },
   "warn_NOT_FOUND": { "message": "Haijapatikana" },
   "warn_CONFIG_FILE_KEY": { "message": "Sanidi ufunguo wa faili" },

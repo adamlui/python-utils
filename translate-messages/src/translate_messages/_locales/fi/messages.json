@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Käytä VPN: ää API-rajoitusten nollaamiseen" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfiguraatio on jo olemassa kohteessa" },
   "warn_DIR_NOT_FOUND": { "message": "Hakemistoa ei löydy" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Projektin juurta ei havaittu kohteessa" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Projektin juurta ei havaittu" },
   "warn_SPECIFIED_CONFIG": { "message": "Määritetty konfiguraatio" },
   "warn_NOT_FOUND": { "message": "Ei löytynyt" },
   "warn_CONFIG_FILE_KEY": { "message": "Konfig. tiedoston avain" },

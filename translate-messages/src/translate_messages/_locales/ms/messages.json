@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Gunakan VPN untuk menetapkan semula pendikitan api" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfigurasi sudah wujud pada" },
   "warn_DIR_NOT_FOUND": { "message": "Tidak dapat mencari direktori" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Tiada akar projek dikesan dalam" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Tiada akar projek dikesan" },
   "warn_SPECIFIED_CONFIG": { "message": "Konfigurasi yang ditentukan" },
   "warn_NOT_FOUND": { "message": "Tidak ditemui" },
   "warn_CONFIG_FILE_KEY": { "message": "Kunci fail konfigurasi" },

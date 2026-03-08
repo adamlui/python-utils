@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "আপনি যে প্রকল্পে এটি ব্যবহার করতে চান তার মূলতে কনফিগ ফাইল সরান" },
   "warn_CONFIG_EXISTS_AT": { "message": "কনফিগার এ ইতিমধ্যে বিদ্যমান" },
   "warn_DIR_NOT_FOUND": { "message": "ডিরেক্টরি সনাক্ত করা যাচ্ছে না" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "কোনও প্রকল্প রুট সনাক্ত করা যায়নি" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "কোনও প্রকল্প রুট সনাক্ত করা যায়নি" },
   "warn_SPECIFIED_CONFIG": { "message": "নির্দিষ্ট কনফিগারেশন" },
   "warn_NOT_FOUND": { "message": "পাওয়া যায়নি" },
   "warn_CONFIG_FILE_KEY": { "message": "ফাইল কী কনফিগার করুন" },

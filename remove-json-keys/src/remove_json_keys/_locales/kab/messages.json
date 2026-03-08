@@ -25,7 +25,6 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Sbadu afaylu i uẓar n useqdec i tebɣiḍ ad t-tesqedceḍ deg" },
   "warn_CONFIG_EXISTS_AT": { "message": "Config yella yakan deg" },
   "warn_DIR_NOT_FOUND": { "message": "Ur yezmir ara ad d-naf asebter" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Ulac asenfaṛ yettwafen deg" },
   "warn_SPECIFIED_CONFIG": { "message": "Aγewwaṛ yettwassnen" },
   "warn_NOT_FOUND": { "message": "Ulac-it" },
   "warn_CONFIG_FILE_KEY": { "message": "Snifel tasarut n ufaylu" },

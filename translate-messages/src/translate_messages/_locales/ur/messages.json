@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "API تھروٹلنگ ری سیٹ کرنے کے لیے VPN استعمال کریں" },
   "warn_CONFIG_EXISTS_AT": { "message": "کنفیگ پہلے ہی پر موجود ہے" },
   "warn_DIR_NOT_FOUND": { "message": "ڈائریکٹری کا پتہ لگانے سے قاصر" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "میں کسی پروجیکٹ کی جڑ کا پتہ نہیں چلا" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "کسی پروجیکٹ کی جڑ کا پتہ نہیں چلا" },
   "warn_SPECIFIED_CONFIG": { "message": "مخصوص کنفیگریشن" },
   "warn_NOT_FOUND": { "message": "نہیں ملا" },
   "warn_CONFIG_FILE_KEY": { "message": "کنفیگ فائل کی" },

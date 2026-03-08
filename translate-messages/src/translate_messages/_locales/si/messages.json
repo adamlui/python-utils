@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "API තෙරපුම නැවත සැකසීමට VPN භාවිතා කරන්න" },
   "warn_CONFIG_EXISTS_AT": { "message": "වින් ‍ යාසය දැනටමත් හි පවතී" },
   "warn_DIR_NOT_FOUND": { "message": "බහලුම සොයාගත නොහැක" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "තුළ ව් ‍ යාපෘති මූලයක් අනාවරණය නොවීය" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "ව් ‍ යාපෘති මූල කිසිවක් අනාවරණය නොවීය" },
   "warn_SPECIFIED_CONFIG": { "message": "නිශ්චිත වින් ‍ යාසය" },
   "warn_NOT_FOUND": { "message": "හමු නොවීය" },
   "warn_CONFIG_FILE_KEY": { "message": "ගොනු යතුර සකසන්න" },

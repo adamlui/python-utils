@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "ކޮންފިގް ފައިލް ބޭނުންކުރަން ބޭނުންވާ ޕްރޮޖެކްޓްގެ ރޫޓަށް ބަދަލުކުރުން" },
   "warn_CONFIG_EXISTS_AT": { "message": "ކޮންފިގް މިހާރުވެސް އެބަހުއްޓެވެ" },
   "warn_DIR_NOT_FOUND": { "message": "ޑައިރެކްޓަރީ ހޯދުމަށް ނުކުޅެދިއްޖެއެވެ" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "އެއްވެސް ޕްރޮޖެކްޓް ރޫޓެއް ހޯދިފައެއް ނުވެއެވެ" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "ޕްރޮޖެކްޓް ރޫޓެއް ހޯދިފައެއް ނުވެއެވެ" },
   "warn_SPECIFIED_CONFIG": { "message": "ކަނޑައެޅިފައިވާ ކޮންފިގް" },
   "warn_NOT_FOUND": { "message": "ނުފެނޭ" },
   "warn_CONFIG_FILE_KEY": { "message": "ކޮންފިގް ފައިލް ކީ" },

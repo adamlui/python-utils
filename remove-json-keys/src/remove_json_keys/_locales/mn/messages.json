@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Үүнийг ашиглахыг хүсч буй төслийн root руу тохиргооны файлыг зөөх" },
   "warn_CONFIG_EXISTS_AT": { "message": "Тохиргоо аль хэдийн байна" },
   "warn_DIR_NOT_FOUND": { "message": "Лавлахыг олох боломжгүй" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Төслийн үндэс илэрсэнгүй" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Төслийн үндэс илрээгүй байна" },
   "warn_SPECIFIED_CONFIG": { "message": "Тодорхойлогдсон тохиргоо" },
   "warn_NOT_FOUND": { "message": "Олдсонгүй" },
   "warn_CONFIG_FILE_KEY": { "message": "Файлын түлхүүрийг тохируулна уу" },

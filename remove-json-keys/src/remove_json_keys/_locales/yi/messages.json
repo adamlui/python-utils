@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "אריבערפירן די קאנפיג טעקע צום וואָרצל פונעם פּראָיעקט וואו איר ווילט עס נוצן" },
   "warn_CONFIG_EXISTS_AT": { "message": "קאָנפיגוראַציע עקזיסטירט שוין ביי" },
   "warn_DIR_NOT_FOUND": { "message": "קען נישט געפינען דעם דירעקטאָרי" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "קיין פּראָיעקט וואָרצל נישט דעטעקטירט אין" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "קיין פּראָיעקט וואָרצל נישט דעטעקטירט" },
   "warn_SPECIFIED_CONFIG": { "message": "ספּעציפֿישע קאָנפֿיגאַציע" },
   "warn_NOT_FOUND": { "message": "נישט געפֿונען" },
   "warn_CONFIG_FILE_KEY": { "message": "קאָנפיג טעקע שליסל" },

@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Verschieben Sie die Konfigurationsdatei in den Stamm des Projekts, in dem Sie sie verwenden möchten" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfiguration bereits vorhanden bei" },
   "warn_DIR_NOT_FOUND": { "message": "Verzeichnis kann nicht gefunden werden" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Kein Projektstamm erkannt in" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Kein Projektstamm erkannt" },
   "warn_SPECIFIED_CONFIG": { "message": "Angegebene Konfiguration" },
   "warn_NOT_FOUND": { "message": "Nicht gefunden" },
   "warn_CONFIG_FILE_KEY": { "message": "Config file key" },

@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "API थ्रटलिंग रिसेट गर्न VPN प्रयोग गर्नुहोस्" },
   "warn_CONFIG_EXISTS_AT": { "message": "कन्फिग पहिले नै अवस्थित छ" },
   "warn_DIR_NOT_FOUND": { "message": "डाइरेक्टरी पत्ता लगाउन असक्षम" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "यसमा कुनै परियोजनाको मूल पत्ता लागेको छैन" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "कुनै परियोजनाको मूल पत्ता लागेको छैन" },
   "warn_SPECIFIED_CONFIG": { "message": "निर्दिष्ट कन्फिगरेसन" },
   "warn_NOT_FOUND": { "message": "फेला परेन" },
   "warn_CONFIG_FILE_KEY": { "message": "कन्फिग फाइल कुञ्जी" },

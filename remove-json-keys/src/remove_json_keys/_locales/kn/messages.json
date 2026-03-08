@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "ಕಾನ್ಫಿಗರ್ ಫೈಲ್ ಅನ್ನು ನೀವು ಬಳಸಲು ಬಯಸುವ ಪ್ರಾಜೆಕ್ಟ್‌ನ ಮೂಲಕ್ಕೆ ಸರಿಸಿ" },
   "warn_CONFIG_EXISTS_AT": { "message": "ಕಾನ್ಫಿಗರ್ ಈಗಾಗಲೇ ನಲ್ಲಿ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ" },
   "warn_DIR_NOT_FOUND": { "message": "ಡೈರೆಕ್ಟರಿಯನ್ನು ಪತ್ತೆ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "ಯಾವುದೇ ಪ್ರಾಜೆಕ್ಟ್ ಮೂಲ ಪತ್ತೆಯಾಗಿಲ್ಲ" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "ಯಾವುದೇ ಪ್ರಾಜೆಕ್ಟ್ ಮೂಲ ಪತ್ತೆಯಾಗಿಲ್ಲ" },
   "warn_SPECIFIED_CONFIG": { "message": "ನಿರ್ದಿಷ್ಟಪಡಿಸಿದ ಕಾನ್ಫಿಗರೇಶನ್" },
   "warn_NOT_FOUND": { "message": "ಕಂಡುಬಂದಿಲ್ಲ" },
   "warn_CONFIG_FILE_KEY": { "message": "ಫೈಲ್ ಕೀಲಿಯನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ" },

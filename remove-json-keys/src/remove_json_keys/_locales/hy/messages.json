@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Տեղադրեք config ֆայլը նախագծի արմատին, որտեղ ցանկանում եք այն օգտագործել" },
   "warn_CONFIG_EXISTS_AT": { "message": "Կարգավորումն արդեն գոյություն ունի" },
   "warn_DIR_NOT_FOUND": { "message": "Չհաջողվեց գտնել գրացուցակը" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Ծրագրի արմատ չի հայտնաբերվել" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Նախագծի արմատ չի հայտնաբերվել" },
   "warn_SPECIFIED_CONFIG": { "message": "Նշված կոնֆիգուրացիա" },
   "warn_NOT_FOUND": { "message": "Չի գտնվել" },
   "warn_CONFIG_FILE_KEY": { "message": "Կարգավորել ֆայլի բանալին" },

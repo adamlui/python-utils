@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "API ትሪቶሊንግ ንምድሓን VPN ተጠቐም" },
   "warn_CONFIG_EXISTS_AT": { "message": "ሕጂ እውን እንተ ዀነ ፡" },
   "warn_DIR_NOT_FOUND": { "message": "መደርደሪ ክረክብ ኣይከኣለን ።" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "ዝኾነ ናይ ፕሮጀክት ሱር ኣይተረኽበን ።" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "ዝኾነ ናይ ፕሮጀክት ሱር ኣይተረኽበን ።" },
   "warn_SPECIFIED_CONFIG": { "message": "ዝተገለጸ ውህደት" },
   "warn_NOT_FOUND": { "message": "ኣይተረኽበን ።" },
   "warn_CONFIG_FILE_KEY": { "message": "መፍትሕ ፋይል ኣማዕብል" },

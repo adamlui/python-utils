@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Whakamahia he VPN hei whakahou i te API throttling" },
   "warn_CONFIG_EXISTS_AT": { "message": "Kei te noho tonu a Config" },
   "warn_DIR_NOT_FOUND": { "message": "Kaore e taea te kimi i te aratohu" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Kaore he pakiaka kaupapa i kitea i roto i" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Kaore he pakiaka kaupapa i kitea" },
   "warn_SPECIFIED_CONFIG": { "message": "Whakaritehia te whirihoranga" },
   "warn_NOT_FOUND": { "message": "Kaore i kitea" },
   "warn_CONFIG_FILE_KEY": { "message": "Kī kōnae Config" },

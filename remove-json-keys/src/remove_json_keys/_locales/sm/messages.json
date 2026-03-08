@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Siaki faila config i le aʻa o le galuega faatino e te manao e faaaoga i" },
   "warn_CONFIG_EXISTS_AT": { "message": "Ua uma ona i ai le Konekeresi" },
   "warn_DIR_NOT_FOUND": { "message": "E le mafai ona maua se faatonuga" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "E leai se galuega faatino na maua i" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Leai se galuega faatino root mauaina" },
   "warn_SPECIFIED_CONFIG": { "message": "Faapitoa faatulagaga" },
   "warn_NOT_FOUND": { "message": "E leʻi maua" },
   "warn_CONFIG_FILE_KEY": { "message": "Config faila ki" },

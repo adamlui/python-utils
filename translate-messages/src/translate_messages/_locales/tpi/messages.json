@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Yu ken yusim VPN bilong kisim bek API" },
   "warn_CONFIG_EXISTS_AT": { "message": "Toksave long ol samting i stap pinis" },
   "warn_DIR_NOT_FOUND": { "message": "I no gat rot long painim ol dispela samting" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "I no gat wanpela rot bilong projek i stap long" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "I no gat wanpela rot bilong projek i kamap" },
   "warn_SPECIFIED_CONFIG": { "message": "Toksave long ol samting" },
   "warn_NOT_FOUND": { "message": "No painim" },
   "warn_CONFIG_FILE_KEY": { "message": "Konfigim ki bilong fail" },

@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Გამოიყენეთ VPN API-ს დროსელის გადასაყენებლად" },
   "warn_CONFIG_EXISTS_AT": { "message": "Კონფიგურაცია უკვე არსებობს" },
   "warn_DIR_NOT_FOUND": { "message": "Საქაღალდის პოვნა ვერ მოხერხდა" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Პროექტის ფესვები არ არის აღმოჩენილი" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Პროექტის ფესვი ვერ მოიძებნა" },
   "warn_SPECIFIED_CONFIG": { "message": "Მითითებული კონფიგურაცია" },
   "warn_NOT_FOUND": { "message": "Ვერ მოიძებნა" },
   "warn_CONFIG_FILE_KEY": { "message": "Ფაილის გასაღების მორგება" },

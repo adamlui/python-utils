@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Utilizați un VPN pentru a reseta limitarea API" },
   "warn_CONFIG_EXISTS_AT": { "message": "Configurarea există deja la" },
   "warn_DIR_NOT_FOUND": { "message": "Imposibil de localizat directorul" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Nu a fost detectată nicio rădăcină de proiect în" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Nu a fost detectată nicio rădăcină de" },
   "warn_SPECIFIED_CONFIG": { "message": "Configurație specificată" },
   "warn_NOT_FOUND": { "message": "Nu s-a găsit" },
   "warn_CONFIG_FILE_KEY": { "message": "Cheie fișier de configurare" },

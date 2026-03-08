@@ -25,7 +25,6 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Კონფიგურაციის ფაილის გადატანა პროექტის root-ზე, რომელშიც მისი გამოყენება გსურთ" },
   "warn_CONFIG_EXISTS_AT": { "message": "Კონფიგურაცია უკვე არსებობს" },
   "warn_DIR_NOT_FOUND": { "message": "Საქაღალდის პოვნა ვერ მოხერხდა" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Პროექტის ფესვები არ არის აღმოჩენილი" },
   "warn_SPECIFIED_CONFIG": { "message": "Მითითებული კონფიგურაცია" },
   "warn_NOT_FOUND": { "message": "Ვერ მოიძებნა" },
   "warn_CONFIG_FILE_KEY": { "message": "Ფაილის გასაღების მორგება" },

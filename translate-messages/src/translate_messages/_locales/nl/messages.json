@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Gebruik een VPN om API-throttling te resetten" },
   "warn_CONFIG_EXISTS_AT": { "message": "Configuratie bestaat al op" },
   "warn_DIR_NOT_FOUND": { "message": "Kan map niet vinden" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Geen projectwortel gedetecteerd in" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Geen projecthoofdmap gedetecteerd" },
   "warn_SPECIFIED_CONFIG": { "message": "Gespecificeerde configuratie" },
   "warn_NOT_FOUND": { "message": "Niet gevonden" },
   "warn_CONFIG_FILE_KEY": { "message": "Configuratiebestandssleutel" },

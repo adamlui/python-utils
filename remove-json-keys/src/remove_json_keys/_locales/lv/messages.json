@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Pārvietojiet konfigurācijas failu uz tā projekta sakni, kurā vēlaties to izmantot" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfigurācija jau pastāv šeit:" },
   "warn_DIR_NOT_FOUND": { "message": "Nevar atrast direktoriju" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Nav atrasta neviena projekta sakne" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Nav atrasta neviena projekta sakne" },
   "warn_SPECIFIED_CONFIG": { "message": "Norādītā konfigurācija" },
   "warn_NOT_FOUND": { "message": "Nav atrasts" },
   "warn_CONFIG_FILE_KEY": { "message": "Konfigurācijas faila atslēga" },

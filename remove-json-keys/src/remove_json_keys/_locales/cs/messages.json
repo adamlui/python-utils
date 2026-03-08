@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Přesunout konfigurační soubor do kořenového adresáře projektu, ve kterém jej chcete použít" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfigurace již existuje v" },
   "warn_DIR_NOT_FOUND": { "message": "Nelze najít adresář" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Nebyl zjištěn žádný kořen projektu v" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Nebyl zjištěn žádný kořen projektu" },
   "warn_SPECIFIED_CONFIG": { "message": "Specifikovaná konfigurace" },
   "warn_NOT_FOUND": { "message": "Nenalezeno" },
   "warn_CONFIG_FILE_KEY": { "message": "Klíč konfiguračního souboru" },

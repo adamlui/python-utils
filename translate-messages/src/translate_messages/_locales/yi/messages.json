@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "ניצט אַ VPN צו צוריקשטעלן API טראָטלינג" },
   "warn_CONFIG_EXISTS_AT": { "message": "קאָנפיגוראַציע עקזיסטירט שוין ביי" },
   "warn_DIR_NOT_FOUND": { "message": "קען נישט געפינען דעם דירעקטאָרי" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "קיין פּראָיעקט וואָרצל נישט דעטעקטירט אין" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "קיין פּראָיעקט וואָרצל נישט דעטעקטירט" },
   "warn_SPECIFIED_CONFIG": { "message": "ספּעציפֿישע קאָנפֿיגאַציע" },
   "warn_NOT_FOUND": { "message": "נישט געפֿונען" },
   "warn_CONFIG_FILE_KEY": { "message": "קאָנפיג טעקע שליסל" },

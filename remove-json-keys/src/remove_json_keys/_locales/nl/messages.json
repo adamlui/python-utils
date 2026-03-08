@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Verplaats het configuratiebestand naar de hoofdmap van het project waarin u het wilt gebruiken" },
   "warn_CONFIG_EXISTS_AT": { "message": "Configuratie bestaat al op" },
   "warn_DIR_NOT_FOUND": { "message": "Kan map niet vinden" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Geen projectwortel gedetecteerd in" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Geen projecthoofdmap gedetecteerd" },
   "warn_SPECIFIED_CONFIG": { "message": "Gespecificeerde configuratie" },
   "warn_NOT_FOUND": { "message": "Niet gevonden" },
   "warn_CONFIG_FILE_KEY": { "message": "Configuratiebestandssleutel" },

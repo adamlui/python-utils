@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "कॉन्फ़िगरेशन फ़ाइल को उस प्रोजेक्ट के रूट में ले जाएँ जिसमें आप इसे इस्तेमाल करना चाहते हैं" },
   "warn_CONFIG_EXISTS_AT": { "message": "कॉन्फ़िगरेशन पहले से मौजूद है" },
   "warn_DIR_NOT_FOUND": { "message": "डिरेक्ट्री का पता लगाने में असमर्थ" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "में कोई प्रोजेक्ट रूट नहीं मिला" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "कोई प्रोजेक्ट रूट नहीं मिला" },
   "warn_SPECIFIED_CONFIG": { "message": "निर्दिष्ट कॉन्फ़िगरेशन" },
   "warn_NOT_FOUND": { "message": "नहीं मिला" },
   "warn_CONFIG_FILE_KEY": { "message": "कॉन्फ़िग फ़ाइल कुंजी" },

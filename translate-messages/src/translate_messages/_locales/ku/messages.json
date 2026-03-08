@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Ji bo vesazkirina astengkirina API-ê VPN-ê bikar bînin" },
   "warn_CONFIG_EXISTS_AT": { "message": "Mîheng jixwe li wir heye" },
   "warn_DIR_NOT_FOUND": { "message": "Pelrêç nayê dîtin" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Koka projeyê nehatiye dîtin" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Koka projeyê nehatiye tespîtkirin" },
   "warn_SPECIFIED_CONFIG": { "message": "Mîhenga diyarkirî" },
   "warn_NOT_FOUND": { "message": "Peyda nebû" },
   "warn_CONFIG_FILE_KEY": { "message": "Mifteya pelê mîhengkirinê" },

@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Flyt konfigurationsfilen til roden af det projekt, du ønsker at bruge den i" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfigurationen findes allerede på" },
   "warn_DIR_NOT_FOUND": { "message": "Kunne ikke finde mappen" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Der blev ikke fundet nogen projektrod i" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Der blev ikke fundet nogen projektrod" },
   "warn_SPECIFIED_CONFIG": { "message": "Angivet konfiguration" },
   "warn_NOT_FOUND": { "message": "Ikke fundet" },
   "warn_CONFIG_FILE_KEY": { "message": "Konfigurationsfilnøgle" },

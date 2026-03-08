@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Use unha VPN para restablecer o trote da API" },
   "warn_CONFIG_EXISTS_AT": { "message": "A configuración xa existe en" },
   "warn_DIR_NOT_FOUND": { "message": "Non foi posíbel localizar o directorio" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Non se detectou ningunha raíz do proxecto en" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Non se detectou ningunha raíz do proxecto" },
   "warn_SPECIFIED_CONFIG": { "message": "Configuración especificada" },
   "warn_NOT_FOUND": { "message": "Non atopado" },
   "warn_CONFIG_FILE_KEY": { "message": "Configurar a chave do ficheiro" },

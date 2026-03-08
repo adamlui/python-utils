@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "برای تنظیم مجدد محدودیت API از VPN استفاده کنید" },
   "warn_CONFIG_EXISTS_AT": { "message": "پیکربندی از قبل در وجود دارد" },
   "warn_DIR_NOT_FOUND": { "message": "قادر به یافتن دایرکتوری نیست" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "هیچ ریشه پروژه‌ای شناسایی نشد" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "هیچ ریشه پروژه شناسایی نشد" },
   "warn_SPECIFIED_CONFIG": { "message": "پیکربندی مشخص شده" },
   "warn_NOT_FOUND": { "message": "یافت نشد" },
   "warn_CONFIG_FILE_KEY": { "message": "کلید فایل پیکربندی" },

@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Uso di un vpn di Api Thottling" },
   "warn_CONFIG_EXISTS_AT": { "message": "Confiansa cu ya caba ta existi" },
   "warn_DIR_NOT_FOUND": { "message": "No por a localisa e director" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Ningun proyecto cu a wordo detecta den" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "No Proyecto Root Detected" },
   "warn_SPECIFIED_CONFIG": { "message": "Konfiansa spesífiko" },
   "warn_NOT_FOUND": { "message": "No Found" },
   "warn_CONFIG_FILE_KEY": { "message": "Creacion de Archivo Key" },

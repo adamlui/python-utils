@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Isticmaal VPN si aad dib ugu dejiso API throttling" },
   "warn_CONFIG_EXISTS_AT": { "message": "Config hore u jiray at" },
   "warn_DIR_NOT_FOUND": { "message": "Ma awoodo in la helo tusaha" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Ma jiro xidid mashruuc oo laga helay gudaha" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Ma jiro xidid mashruuc la ogaaday" },
   "warn_SPECIFIED_CONFIG": { "message": "Qaabab la cayimay" },
   "warn_NOT_FOUND": { "message": "Lama helin" },
   "warn_CONFIG_FILE_KEY": { "message": "Qeex furaha faylka" },

@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "API ത്രോട്ട്ലിംഗ് പുനഃസജ്ജമാക്കാൻ ഒരു VPN ഉപയോഗിക്കുക" },
   "warn_CONFIG_EXISTS_AT": { "message": "കോൺഫിഗർ ഇതിനകം നിലവിലുണ്ട്" },
   "warn_DIR_NOT_FOUND": { "message": "ഡയറക്ടറി കണ്ടെത്താൻ കഴിഞ്ഞില്ല" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "പ്രോജക്റ്റ് റൂട്ട് ഒന്നും കണ്ടെത്തിയില്ല" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "പ്രോജക്റ്റ് റൂട്ട് കണ്ടെത്തിയില്ല" },
   "warn_SPECIFIED_CONFIG": { "message": "നിർദ്ദിഷ്ട കോൺഫിഗർ" },
   "warn_NOT_FOUND": { "message": "കണ്ടെത്തിയില്ല" },
   "warn_CONFIG_FILE_KEY": { "message": "ഫയൽ കീ കോൺഫിഗർ ചെയ്യുക" },

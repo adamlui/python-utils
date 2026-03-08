@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "API тротлингин калыбына келтирүү үчүн VPN колдонуңуз" },
   "warn_CONFIG_EXISTS_AT": { "message": "Конфигурациялоо мурунтан эле бар" },
   "warn_DIR_NOT_FOUND": { "message": "Каталог табылбады" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Долбоордун тамыры табылган жок" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Долбоордун тамыры табылган жок" },
   "warn_SPECIFIED_CONFIG": { "message": "Көрсөтүлгөн конфигурация" },
   "warn_NOT_FOUND": { "message": "Табылган жок" },
   "warn_CONFIG_FILE_KEY": { "message": "Файл ачкычын конфигурациялоо" },

@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Helyezze át a konfigurációs fájlt annak a projektnek a gyökerébe, amelyben használni szeretné" },
   "warn_CONFIG_EXISTS_AT": { "message": "A konfiguráció már létezik itt:" },
   "warn_DIR_NOT_FOUND": { "message": "Nem található a könyvtár" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Nem található projektgyökér itt:" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Nem található projektgyökér" },
   "warn_SPECIFIED_CONFIG": { "message": "Meghatározott konfiguráció" },
   "warn_NOT_FOUND": { "message": "Nem található" },
   "warn_CONFIG_FILE_KEY": { "message": "Konfigurációs fájl kulcs" },

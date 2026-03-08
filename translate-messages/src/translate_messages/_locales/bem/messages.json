@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Bomfyeni VPN pa kuti mubwekeshepo ukukalipwa kwa API" },
   "warn_CONFIG_EXISTS_AT": { "message": "Config Alaimo" },
   "warn_DIR_NOT_FOUND": { "message": "Ican 't find ya directory" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "No Project Root Found In ukulele" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "No Project Root Found ukulele" },
   "warn_SPECIFIED_CONFIG": { "message": "Ifyebo Fyabamo Lyonse" },
   "warn_NOT_FOUND": { "message": "Tababwenepo" },
   "warn_CONFIG_FILE_KEY": { "message": "Config file key" },

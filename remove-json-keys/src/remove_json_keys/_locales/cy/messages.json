@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Symud y ffeil cyfluniad i wraidd y project yr hoffech ei ddefnyddio ynddo" },
   "warn_CONFIG_EXISTS_AT": { "message": "Mae 'r ffurfweddiad yn bodoli eisioes yn" },
   "warn_DIR_NOT_FOUND": { "message": "Unable to locate directory" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Heb ganfod gwraidd y cywaith yn" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Heb ganfod gwraidd y cywaith" },
   "warn_SPECIFIED_CONFIG": { "message": "Cyfluniad penodedig" },
   "warn_NOT_FOUND": { "message": "Heb ei ganfod" },
   "warn_CONFIG_FILE_KEY": { "message": "Allwedd ffeil cyfluniad" },

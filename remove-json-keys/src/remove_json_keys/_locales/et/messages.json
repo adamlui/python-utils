@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Teisalda konfiguratsioonifail selle projekti juurtele, milles soovid seda kasutada" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfiguratsioon on juba olemas asukohas" },
   "warn_DIR_NOT_FOUND": { "message": "Kataloogi ei leitud" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Üksuses ei leitud projekti juurt" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Projekti juurt ei leitud" },
   "warn_SPECIFIED_CONFIG": { "message": "Määratud konfiguratsioon" },
   "warn_NOT_FOUND": { "message": "Ei leitud" },
   "warn_CONFIG_FILE_KEY": { "message": "Konfiguratsioonifaili võti" },

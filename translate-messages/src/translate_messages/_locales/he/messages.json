@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "משתמשים ב - VPN כדי לאפס מגבלות API" },
   "warn_CONFIG_EXISTS_AT": { "message": "התצורה כבר קיימת ב -" },
   "warn_DIR_NOT_FOUND": { "message": "לא ניתן לאתר את הספרייה" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "לא זוהה שורש פרויקט ב -" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "לא זוהה שורש פרויקט" },
   "warn_SPECIFIED_CONFIG": { "message": "תצורה שצוינה" },
   "warn_NOT_FOUND": { "message": "לא נמצא" },
   "warn_CONFIG_FILE_KEY": { "message": "מקש קובץ תצורה" },

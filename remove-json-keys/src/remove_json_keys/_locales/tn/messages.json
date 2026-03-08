@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Sutisetsa faele ya CONFINCE kwa moding wa porojeke e o batlang go e dirisa mo go yone" },
   "warn_CONFIG_EXISTS_AT": { "message": "Config e setse e le teng kwa" },
   "warn_DIR_NOT_FOUND": { "message": "Ga ke kgone go bona kaedi" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Ga go a bonwa modi ope wa porojeke mo" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Ga go a bonwa modi wa porojeke" },
   "warn_SPECIFIED_CONFIG": { "message": "Config e e tlhalositsweng" },
   "warn_NOT_FOUND": { "message": "Ga e a bonwa" },
   "warn_CONFIG_FILE_KEY": { "message": "Config file key" },

@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "སྒྲིག་འཇུག་བྱས་ཚད ། ཐེངས་10 ལས་ཉུང་བ ། ཐོན་རིམ་5.7.1 ནང་དུ་ཚོད་ལྟ་བྱས་ཟིན ། ཟླ 3 སྔོན་ལ་གསར་བཅོས་བྱས །" },
   "warn_CONFIG_EXISTS_AT": { "message": "སྒྲིག་འཇུག་བྱས་ཚད ། ཐེངས་10 ལས་ཉུང་བ ། ཐོན་རིམ་5.7.1 ནང་དུ་" },
   "warn_DIR_NOT_FOUND": { "message": "ཁ་བྱང་འཚོལ་མི་ཐུབ་པ" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "ལས་འགུལ་གྱི་རྩ་བ་རྙེད་མ་བྱུང་།" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "ལས་འགུལ་རྩ་བ་མི་རྙེད་པ" },
   "warn_SPECIFIED_CONFIG": { "message": "བདམས་ཟིན་པའི་སྒྲིག་བཀོད །" },
   "warn_NOT_FOUND": { "message": "རྙེད་མ་བྱུང་།" },
   "warn_CONFIG_FILE_KEY": { "message": "ཡིག་ཆ་ལྡེ་མིག་སྒྲིག་འཇུག་བྱེད་པ" },

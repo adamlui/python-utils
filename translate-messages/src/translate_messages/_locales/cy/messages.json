@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Defnyddio VPN i ailosod sbarduno API" },
   "warn_CONFIG_EXISTS_AT": { "message": "Mae 'r ffurfweddiad yn bodoli eisioes yn" },
   "warn_DIR_NOT_FOUND": { "message": "Methu dod o hyd i gyfeiriadur" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Heb ganfod gwraidd y cywaith yn" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Heb ganfod gwraidd y cywaith" },
   "warn_SPECIFIED_CONFIG": { "message": "Cyfluniad penodedig" },
   "warn_NOT_FOUND": { "message": "Heb ei ganfod" },
   "warn_CONFIG_FILE_KEY": { "message": "Allwedd ffeil cyfluniad" },

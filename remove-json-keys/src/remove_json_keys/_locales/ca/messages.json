@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Mou el fitxer de configuració a l'arrel del projecte en el qual vols utilitzar-lo" },
   "warn_CONFIG_EXISTS_AT": { "message": "La configuració ja existeix a les" },
   "warn_DIR_NOT_FOUND": { "message": "No s'ha pogut localitzar el directori" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "No s'ha detectat cap arrel de projecte a" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "No s'ha detectat cap arrel del projecte" },
   "warn_SPECIFIED_CONFIG": { "message": "Configuració especificada" },
   "warn_NOT_FOUND": { "message": "No s'ha trobat" },
   "warn_CONFIG_FILE_KEY": { "message": "Clau del fitxer de configuració" },

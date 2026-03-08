@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "கட்டமைப்பு கோப்பை நீங்கள் பயன்படுத்த விரும்பும் திட்டத்தின் மூலத்திற்கு நகர்த்தவும்" },
   "warn_CONFIG_EXISTS_AT": { "message": "உள்ளமைவு ஏற்கனவே உள்ளது" },
   "warn_DIR_NOT_FOUND": { "message": "அடைவை கண்டுபிடிக்க முடியவில்லை" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "திட்ட வேர் எதுவும் கண்டறியப்படவில்லை" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "திட்ட வேர் எதுவும் கண்டறியப்படவில்லை" },
   "warn_SPECIFIED_CONFIG": { "message": "குறிப்பிடப்பட்ட உள்ளமைவு" },
   "warn_NOT_FOUND": { "message": "கிடைக்கவில்லை" },
   "warn_CONFIG_FILE_KEY": { "message": "கட்டமைப்பு கோப்பு விசை" },

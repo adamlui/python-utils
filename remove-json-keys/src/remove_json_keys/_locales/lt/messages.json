@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Perkelkite konfigūracijos failą į projekto, kuriame norite jį naudoti, šaknį" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfigūracija jau yra" },
   "warn_DIR_NOT_FOUND": { "message": "Nepavyksta rasti katalogo" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Projekto šaknis neaptikta" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Projekto šaknis neaptikta" },
   "warn_SPECIFIED_CONFIG": { "message": "Nurodyta konfigūracija" },
   "warn_NOT_FOUND": { "message": "Nerasta" },
   "warn_CONFIG_FILE_KEY": { "message": "Konfigūracijos failo raktas" },

@@ -25,7 +25,6 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Premaknite konfiguracijsko datoteko v koren projekta, v katerem jo želite uporabiti" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfiguracija že obstaja ob" },
   "warn_DIR_NOT_FOUND": { "message": "Imenika ni mogoče najti" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Koren projekta ni zaznan v" },
   "warn_SPECIFIED_CONFIG": { "message": "Določena konfiguracija" },
   "warn_NOT_FOUND": { "message": "Ni najdeno" },
   "warn_CONFIG_FILE_KEY": { "message": "Ključ konfiguracijske datoteke" },

@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Na resetovanie obmedzovania rozhrania API použite sieť VPN" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfigurácia už existuje na" },
   "warn_DIR_NOT_FOUND": { "message": "Nepodarilo sa nájsť priečinok" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "V projekte nebol zistený žiadny koreň projektu" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Nebol zistený žiadny koreň projektu" },
   "warn_SPECIFIED_CONFIG": { "message": "Špecifikovaná konfigurácia" },
   "warn_NOT_FOUND": { "message": "Nenájdené" },
   "warn_CONFIG_FILE_KEY": { "message": "Kľúč konfiguračného súboru" },

@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Користете VPN за да го ресетирате гасењето на API" },
   "warn_CONFIG_EXISTS_AT": { "message": "Конфигурацијата веќе постои на" },
   "warn_DIR_NOT_FOUND": { "message": "Не можам да го лоцирам директориумот" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Не е откриен корен на проектот во" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Не е откриен корен на проектот" },
   "warn_SPECIFIED_CONFIG": { "message": "Наведена конфигурација" },
   "warn_NOT_FOUND": { "message": "Не е пронајдено" },
   "warn_CONFIG_FILE_KEY": { "message": "Конфигурирајте го клучот на датоте" },

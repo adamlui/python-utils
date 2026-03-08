@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Shandisa VPN kuti uisezve API throttling" },
   "warn_CONFIG_EXISTS_AT": { "message": "Config yatovepo pa" },
   "warn_DIR_NOT_FOUND": { "message": "Haikwanise kuwana dhairekitori" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Hapana mudzi weprojekti wakaonekwa mukati" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Hapana mudzi weprojekti wakaonekwa" },
   "warn_SPECIFIED_CONFIG": { "message": "Rondedzero yakatsanangurwa" },
   "warn_NOT_FOUND": { "message": "Haina kuwanikwa" },
   "warn_CONFIG_FILE_KEY": { "message": "Rongedza kiyi yefaira" },

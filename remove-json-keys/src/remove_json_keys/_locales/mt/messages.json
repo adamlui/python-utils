@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Ċaqlaq il-fajl tal-konfigurazzjoni għall-għeruq tal-proġett li tixtieq tuża fih" },
   "warn_CONFIG_EXISTS_AT": { "message": "Il-konfigurazzjoni diġà teżisti fuq" },
   "warn_DIR_NOT_FOUND": { "message": "Ma nistgħux insibu d-direttorju" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "L-ebda għerq tal-proġett ma nstab fi" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "L-ebda għerq tal-proġett ma nstab" },
   "warn_SPECIFIED_CONFIG": { "message": "Konfigurazzjoni speċifikata" },
   "warn_NOT_FOUND": { "message": "Ma nstabx" },
   "warn_CONFIG_FILE_KEY": { "message": "Konfigurazzjoni taċ-ċavetta tal-fajl" },

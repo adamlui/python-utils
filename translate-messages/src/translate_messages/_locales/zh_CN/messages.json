@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "使用VPN重置API限制" },
   "warn_CONFIG_EXISTS_AT": { "message": "配置已存在于" },
   "warn_DIR_NOT_FOUND": { "message": "无法定位目录" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "未在中检测到项目根目录" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "未检测到项目根目录" },
   "warn_SPECIFIED_CONFIG": { "message": "指定的配置" },
   "warn_NOT_FOUND": { "message": "未找到" },
   "warn_CONFIG_FILE_KEY": { "message": "配置文件密钥" },

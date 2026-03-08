@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Skuif konfigurasielêer na die wortel van die projek waarin jy dit wil gebruik" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfigureer alreeds bestaan by" },
   "warn_DIR_NOT_FOUND": { "message": "Kan nie gids opspoor nie" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Nee projek wortel opgespoor in" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Geen projekwortel opgespoor nie" },
   "warn_SPECIFIED_CONFIG": { "message": "Gespesifiseerde konfigurasie" },
   "warn_NOT_FOUND": { "message": "Nie gevind nie" },
   "warn_CONFIG_FILE_KEY": { "message": "Konfigureer lêer sleutel" },

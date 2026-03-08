@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Преместете ја конфигурациската датотека во коренот на проектот во кој сакате да ја користите" },
   "warn_CONFIG_EXISTS_AT": { "message": "Конфигурацијата веќе постои на" },
   "warn_DIR_NOT_FOUND": { "message": "Не можам да го лоцирам директориумот" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Не е откриен корен на проектот во" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Не е откриен корен на проектот" },
   "warn_SPECIFIED_CONFIG": { "message": "Наведена конфигурација" },
   "warn_NOT_FOUND": { "message": "Не е пронајдено" },
   "warn_CONFIG_FILE_KEY": { "message": "Конфигурирајте го клучот на датоте" },

@@ -25,7 +25,6 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Færa stillingarskrá að rót verkefnis sem þú vilt nota hana í" },
   "warn_CONFIG_EXISTS_AT": { "message": "Stilling er þegar til staðar kl." },
   "warn_DIR_NOT_FOUND": { "message": "Ekki tókst að finna möppu" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Engin verkefnisrót fannst í" },
   "warn_SPECIFIED_CONFIG": { "message": "Tilgreindar stillingar" },
   "warn_NOT_FOUND": { "message": "Fannst ekki" },
   "warn_CONFIG_FILE_KEY": { "message": "Stilla skráarlykil" },

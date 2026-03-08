@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "നിങ്ങൾ ഉപയോഗിക്കാൻ ആഗ്രഹിക്കുന്ന പ്രോജക്റ്റിന്റെ റൂട്ടിലേക്ക് കോൺഫിഗർ ഫയൽ നീക്കുക" },
   "warn_CONFIG_EXISTS_AT": { "message": "കോൺഫിഗർ ഇതിനകം നിലവിലുണ്ട്" },
   "warn_DIR_NOT_FOUND": { "message": "ഡയറക്ടറി കണ്ടെത്താൻ കഴിഞ്ഞില്ല" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "പ്രോജക്റ്റ് റൂട്ട് ഒന്നും കണ്ടെത്തിയില്ല" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "പ്രോജക്റ്റ് റൂട്ട് കണ്ടെത്തിയില്ല" },
   "warn_SPECIFIED_CONFIG": { "message": "നിർദ്ദിഷ്ട കോൺഫിഗർ" },
   "warn_NOT_FOUND": { "message": "കണ്ടെത്തിയില്ല" },
   "warn_CONFIG_FILE_KEY": { "message": "ഫയൽ കീ കോൺഫിഗർ ചെയ്യുക" },

@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "ሊጠቀሙበት ወደሚፈልጉት የፕሮጀክት ሥር ፋይልን ያዋቅሩ" },
   "warn_CONFIG_EXISTS_AT": { "message": "ኮንፊግ ቀድሞውኑ አለ በ" },
   "warn_DIR_NOT_FOUND": { "message": "ማውጫ ማግኘት አልተቻለም" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "ምንም የፕሮጀክት ሥር አልተገኘም ውስጥ" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "ምንም የፕሮጀክት ሥር አልተገኘም" },
   "warn_SPECIFIED_CONFIG": { "message": "የተወሰነ ውቅር" },
   "warn_NOT_FOUND": { "message": "አልተገኘም" },
   "warn_CONFIG_FILE_KEY": { "message": "የፋይል ቁልፍን ያዋቅሩ" },

@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Use uma VPN para redefinir a limitação da API" },
   "warn_CONFIG_EXISTS_AT": { "message": "A configuração já existe em" },
   "warn_DIR_NOT_FOUND": { "message": "Não foi possível localizar o diretório" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Nenhuma raiz de projecto detectada em" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Nenhuma raiz de projeto detectada" },
   "warn_SPECIFIED_CONFIG": { "message": "Configuração especificada" },
   "warn_NOT_FOUND": { "message": "Não encontrado" },
   "warn_CONFIG_FILE_KEY": { "message": "Chave do ficheiro de configuração" },

@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Brúka VPN til at seta API aftur" },
   "warn_CONFIG_EXISTS_AT": { "message": "Setur upp longu er til á" },
   "warn_DIR_NOT_FOUND": { "message": "Ikki møguligt at finna faldara" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Eingin verkætlan rót funnin í" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Eingin verkætlan rót funnin" },
   "warn_SPECIFIED_CONFIG": { "message": "Specifiserað konfiguratión" },
   "warn_NOT_FOUND": { "message": "Ikki funnið" },
   "warn_CONFIG_FILE_KEY": { "message": "Upprætta fílu lykil" },

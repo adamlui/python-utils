@@ -25,7 +25,6 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Переместите конфигурационный файл в корень проекта, в котором вы хотите его использовать" },
   "warn_CONFIG_EXISTS_AT": { "message": "Конфигурация уже существует в" },
   "warn_DIR_NOT_FOUND": { "message": "Не удалось найти каталог" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Корень проекта не обнаружен в" },
   "warn_SPECIFIED_CONFIG": { "message": "Указанная конфигурация" },
   "warn_NOT_FOUND": { "message": "Не найдено" },
   "warn_CONFIG_FILE_KEY": { "message": "Ключ файла конфигурации" },

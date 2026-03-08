@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Конфигурация файлын долбоордун тамырына жылдыруу" },
   "warn_CONFIG_EXISTS_AT": { "message": "Конфигурациялоо мурунтан эле бар" },
   "warn_DIR_NOT_FOUND": { "message": "Каталог табылбады" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Долбоордун тамыры табылган жок" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Долбоордун тамыры табылган жок" },
   "warn_SPECIFIED_CONFIG": { "message": "Көрсөтүлгөн конфигурация" },
   "warn_NOT_FOUND": { "message": "Табылган жок" },
   "warn_CONFIG_FILE_KEY": { "message": "Файл ачкычын конфигурациялоо" },

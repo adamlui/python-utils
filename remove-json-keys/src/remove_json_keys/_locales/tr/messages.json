@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Yapılandırma dosyasını, içinde kullanmak istediğiniz projenin kök dizinine taşıyın" },
   "warn_CONFIG_EXISTS_AT": { "message": "Yapılandırma zaten şurada mevcut:" },
   "warn_DIR_NOT_FOUND": { "message": "Dizin bulunamıyor" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Proje kökü algılanmadı" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Proje kökü tespit edilmedi" },
   "warn_SPECIFIED_CONFIG": { "message": "Belirtilen yapılandırma" },
   "warn_NOT_FOUND": { "message": "Bulunamadı" },
   "warn_CONFIG_FILE_KEY": { "message": "Yapılandırma dosyası tuşu" },

@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "将配置文件移动到您希望在其中使用的项目的根目录" },
   "warn_CONFIG_EXISTS_AT": { "message": "配置已存在于" },
   "warn_DIR_NOT_FOUND": { "message": "无法定位目录" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "未在中检测到项目根目录" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "未检测到项目根目录" },
   "warn_SPECIFIED_CONFIG": { "message": "指定的配置" },
   "warn_NOT_FOUND": { "message": "未找到" },
   "warn_CONFIG_FILE_KEY": { "message": "配置文件密钥" },

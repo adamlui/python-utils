@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Použijte VPN k resetování škrcení API" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfigurace již existuje v" },
   "warn_DIR_NOT_FOUND": { "message": "Nelze najít adresář" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Nebyl zjištěn žádný kořen projektu v" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Nebyl zjištěn žádný kořen projektu" },
   "warn_SPECIFIED_CONFIG": { "message": "Specifikovaná konfigurace" },
   "warn_NOT_FOUND": { "message": "Nenalezeno" },
   "warn_CONFIG_FILE_KEY": { "message": "Klíč konfiguračního souboru" },

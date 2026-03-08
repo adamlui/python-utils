@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Sebenzisa iVPN ukuze usete kwakhona i-API" },
   "warn_CONFIG_EXISTS_AT": { "message": "Ukumisela sele ikhona kwi" },
   "warn_DIR_NOT_FOUND": { "message": "Ayikwazi ukufumana uvimba weefayili" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Akukho ngcambu yeprojekthi ifunyenweyo" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Akukho ngcambu yeprojekthi ifunyenweyo" },
   "warn_SPECIFIED_CONFIG": { "message": "Uqwalaselo oluchaziweyo" },
   "warn_NOT_FOUND": { "message": "Ayifumanekanga" },
   "warn_CONFIG_FILE_KEY": { "message": "Misela isitshixo sefayili" },

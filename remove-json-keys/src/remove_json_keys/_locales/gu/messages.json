@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "રૂપરેખાંકન ફાઇલને પ્રોજેક્ટના મૂળમાં ખસેડો જેમાં તમે તેનો ઉપયોગ કરવા માંગો છો" },
   "warn_CONFIG_EXISTS_AT": { "message": "રૂપરેખાંકન પહેલાથી જ અહીં અસ્તિત્વમાં છે" },
   "warn_DIR_NOT_FOUND": { "message": "ડિરેક્ટરી સ્થિત કરવામાં અસમર્થ" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "આમાં કોઈ પ્રોજેક્ટ રુટ શોધાયો નથી" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "કોઈ પ્રોજેક્ટ રુટ શોધાયો નથી" },
   "warn_SPECIFIED_CONFIG": { "message": "સ્પષ્ટ કરેલ રૂપરેખાંકન" },
   "warn_NOT_FOUND": { "message": "મળ્યું નથી" },
   "warn_CONFIG_FILE_KEY": { "message": "રૂપરેખાંકન ફાઇલ કી" },

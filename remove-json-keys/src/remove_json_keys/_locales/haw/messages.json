@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "E hoʻoneʻe i ka faila hoʻonohonoho i ke aʻa o ka papahana āu e makemake ai e hoʻohana" },
   "warn_CONFIG_EXISTS_AT": { "message": "Aia mua ka config ma" },
   "warn_DIR_NOT_FOUND": { "message": "ʻAʻole hiki ke loaʻa ka papa kuhikuhi" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "ʻAʻohe kumu papahana i ʻike ʻia ma" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "ʻAʻohe kumu papahana i ʻike ʻia" },
   "warn_SPECIFIED_CONFIG": { "message": "Hoʻonohonoho i kuhikuhi ʻia" },
   "warn_NOT_FOUND": { "message": "Loaʻa ʻole" },
   "warn_CONFIG_FILE_KEY": { "message": "Kī faila hoʻonohonoho" },

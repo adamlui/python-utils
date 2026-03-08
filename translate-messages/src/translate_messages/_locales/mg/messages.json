@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Ampiasao VPN mba hamerenana ny fihodinan'ny API" },
   "warn_CONFIG_EXISTS_AT": { "message": "Efa misy ny kirakira" },
   "warn_DIR_NOT_FOUND": { "message": "Tsy hita ny laha-tahiry" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Tsy misy fakan-tahaky ny tetikasa hita ao anatin'ny" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Tsy hita ny faka'ny tetikasa" },
   "warn_SPECIFIED_CONFIG": { "message": "Fandrindrana voafaritra" },
   "warn_NOT_FOUND": { "message": "Tsy hita" },
   "warn_CONFIG_FILE_KEY": { "message": "Kitendrin'ny rakitra" },

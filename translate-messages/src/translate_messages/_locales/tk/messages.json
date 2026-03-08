@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "API trottlingini gaýtaryp almak üçin VPN-i ulanyň" },
   "warn_CONFIG_EXISTS_AT": { "message": "Ol eýýäm bar" },
   "warn_DIR_NOT_FOUND": { "message": "Dizaý tapylmady" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Hiç hili netije tapylmady" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Hiç bir projektiň köki tapylmady" },
   "warn_SPECIFIED_CONFIG": { "message": "Konfigurasy" },
   "warn_NOT_FOUND": { "message": "Alymady" },
   "warn_CONFIG_FILE_KEY": { "message": "Faýl açaryny konfigur et" },

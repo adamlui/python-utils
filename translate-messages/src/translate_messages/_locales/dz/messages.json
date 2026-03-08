@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "ཝིཔི་ཨེན་ལག་ལེན་འཐབ་ནི་ ཝིཔི་ཨེན་ལོག་བཙུགས་ནི་" },
   "warn_CONFIG_EXISTS_AT": { "message": "ཡིག་སྣོད་ཚུ་ ཧེ་མ་ལས་རང་ཡོདཔ་ཨིན།" },
   "warn_DIR_NOT_FOUND": { "message": "ཁ་བྱང་འཚོལ་མ་ཚུགས།" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "ལས་འགུལ་རྩ་བ་ཅིག་ཡང་ མ་མཐོང་པས།" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "ལས་འགུལ་རྩ་བ་འཚོལ་མ་ཐོབ་" },
   "warn_SPECIFIED_CONFIG": { "message": "སྒྲིག་གཞི་ཚུ་ ངེས་གཏན་འབད་དོ།" },
   "warn_NOT_FOUND": { "message": "མ་ཐོབ་" },
   "warn_CONFIG_FILE_KEY": { "message": "ཡིག་སྣོད་ལྡེ་མིག་སྒྲིག་འབད།" },

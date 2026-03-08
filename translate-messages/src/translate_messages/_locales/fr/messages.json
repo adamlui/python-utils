@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Utiliser un VPN pour réinitialiser la limitation de l'API" },
   "warn_CONFIG_EXISTS_AT": { "message": "La configuration existe déjà à" },
   "warn_DIR_NOT_FOUND": { "message": "Impossible de localiser le répertoire" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Aucune racine de projet détectée dans" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Aucune racine de projet détectée" },
   "warn_SPECIFIED_CONFIG": { "message": "Configuration spécifiée" },
   "warn_NOT_FOUND": { "message": "Introuvable" },
   "warn_CONFIG_FILE_KEY": { "message": "Config fichier clé" },

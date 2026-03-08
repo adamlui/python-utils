@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "ຍ້າຍໄຟລ໌ config ໄປຫາຮາກຂອງໂຄງການທີ່ທ່ານຕ້ອງການໃຊ້ໃນ" },
   "warn_CONFIG_EXISTS_AT": { "message": "ກຳນົດຄ່າມີຢູ່ແລ້ວທີ່" },
   "warn_DIR_NOT_FOUND": { "message": "ບໍ່ສາມາດຊອກຫາໄດເລກະທໍລີໄດ້" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "ບໍ່ພົບຮາກໂຄງການໃນ" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "ບໍ່ພົບຮາກໂຄງການ" },
   "warn_SPECIFIED_CONFIG": { "message": "ການຕັ້ງຄ່າທີ່ລະບຸໄວ້" },
   "warn_NOT_FOUND": { "message": "ບໍ່ພົບ" },
   "warn_CONFIG_FILE_KEY": { "message": "ປຸ່ມແຟ້ມການຕັ້ງຄ່າ" },

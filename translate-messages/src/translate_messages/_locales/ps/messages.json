@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "د API تلویزیون بیا تنظیم کولو لپاره یو VPN وکاروئ" },
   "warn_CONFIG_EXISTS_AT": { "message": "سازونه لا دمخه شتون لري په" },
   "warn_DIR_NOT_FOUND": { "message": "د درکموند موندلو توان نلري" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "د پروژې ریښه نه ده موندل شوې" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "د پروژې ریښه ونه موندل شوه" },
   "warn_SPECIFIED_CONFIG": { "message": "مشخص ترتیب" },
   "warn_NOT_FOUND": { "message": "ونه موندل شو" },
   "warn_CONFIG_FILE_KEY": { "message": "د فایل کیلي تنظیم کړئ" },

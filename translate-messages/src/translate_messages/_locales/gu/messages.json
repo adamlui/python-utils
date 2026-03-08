@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "API થ્રોટલિંગને રીસેટ કરવા માટે VPN નો ઉપયોગ કરો" },
   "warn_CONFIG_EXISTS_AT": { "message": "રૂપરેખાંકન પહેલાથી જ અહીં અસ્તિત્વમાં છે" },
   "warn_DIR_NOT_FOUND": { "message": "ડિરેક્ટરી સ્થિત કરવામાં અસમર્થ" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "આમાં કોઈ પ્રોજેક્ટ રુટ શોધાયો નથી" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "કોઈ પ્રોજેક્ટ રુટ શોધાયો નથી" },
   "warn_SPECIFIED_CONFIG": { "message": "સ્પષ્ટ કરેલ રૂપરેખાંકન" },
   "warn_NOT_FOUND": { "message": "મળ્યું નથી" },
   "warn_CONFIG_FILE_KEY": { "message": "રૂપરેખાંકન ફાઇલ કી" },

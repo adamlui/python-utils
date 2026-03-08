@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "ਸੰਰਚਨਾ ਫਾਇਲ ਨੂੰ ਪਰੋਜੈਕਟ ਦੇ ਰੂਟ ਵਿੱਚ ਭੇਜੋ" },
   "warn_CONFIG_EXISTS_AT": { "message": "ਸੰਰਚਨਾ ਪਹਿਲਾਂ ਹੀ 'ਤੇ ਮੌਜੂਦ ਹੈ" },
   "warn_DIR_NOT_FOUND": { "message": "ਡਾਇਰੈਕਟਰੀ ਲੱਭਣ ਲਈ ਅਸਫ਼ਲ" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "ਇਸ ਵਿੱਚ ਕੋਈ ਪਰੋਜੈਕਟ ਰੂਟ ਨਹੀਂ ਲੱਭਿਆ" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "ਕੋਈ ਪਰੋਜੈਕਟ ਰੂਟ ਨਹੀਂ ਲੱਭਿਆ" },
   "warn_SPECIFIED_CONFIG": { "message": "ਦਿੱਤੀ ਸੰਰਚਨਾ" },
   "warn_NOT_FOUND": { "message": "ਨਹੀਂ ਲੱਭਿਆ" },
   "warn_CONFIG_FILE_KEY": { "message": "ਫਾਇਲ ਕੁੰਜੀ ਸੰਰਚਨਾ" },

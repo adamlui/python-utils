@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Sèvi ak yon vpn pou Reyajiste retresi API" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfig deja egziste nan/Config déjà existe" },
   "warn_DIR_NOT_FOUND": { "message": "Pa kapab lokalize anyè" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Pa gen rasin pwojè detekte nan" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Pa gen rasin pwojè detekte" },
   "warn_SPECIFIED_CONFIG": { "message": "Konfigirasyon Espesifye" },
   "warn_NOT_FOUND": { "message": "Pa jwenn" },
   "warn_CONFIG_FILE_KEY": { "message": "Konfigire kle dosye a" },

@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Notaðu VPN til að endurstilla API inngjöf" },
   "warn_CONFIG_EXISTS_AT": { "message": "Stilling er þegar til staðar kl." },
   "warn_DIR_NOT_FOUND": { "message": "Ekki tókst að finna möppu" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Engin verkefnisrót fannst í" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Engin verkefnisrót fannst" },
   "warn_SPECIFIED_CONFIG": { "message": "Tilgreindar stillingar" },
   "warn_NOT_FOUND": { "message": "Fannst ekki" },
   "warn_CONFIG_FILE_KEY": { "message": "Stilla skráarlykil" },

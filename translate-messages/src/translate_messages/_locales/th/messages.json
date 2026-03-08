@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "ใช้ VPN เพื่อรีเซ็ตการควบคุมปริมาณ API" },
   "warn_CONFIG_EXISTS_AT": { "message": "มีการกำหนดค่าอยู่แล้วที่" },
   "warn_DIR_NOT_FOUND": { "message": "ไม่สามารถค้นหาไดเรกทอรีได้" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "ไม่พบรูทโครงการใน" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "ไม่พบรูทโครงการ" },
   "warn_SPECIFIED_CONFIG": { "message": "การกำหนดค่าที่ระบุ" },
   "warn_NOT_FOUND": { "message": "ไม่พบ" },
   "warn_CONFIG_FILE_KEY": { "message": "คีย์ไฟล์การกำหนดค่า" },

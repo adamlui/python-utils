@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "VPN utere ad limitationem API restituendam" },
   "warn_CONFIG_EXISTS_AT": { "message": "Configuration quae sunt" },
   "warn_DIR_NOT_FOUND": { "message": "Directorium invenire non potest" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Nulla radix proiecti detecta in" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "No project root detectus" },
   "warn_SPECIFIED_CONFIG": { "message": "Configuratio specificata" },
   "warn_NOT_FOUND": { "message": "Non inventum" },
   "warn_CONFIG_FILE_KEY": { "nuntius": "Clavis fasciculi configurationis" },

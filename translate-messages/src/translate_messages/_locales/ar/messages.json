@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "استخدم VPN لإعادة تعيين اختناق واجهة برمجة التطبيقات" },
   "warn_CONFIG_EXISTS_AT": { "message": "التكوين موجود بالفعل في" },
   "warn_DIR_NOT_FOUND": { "message": "تعذر تحديد موقع الدليل" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "لم يتم اكتشاف جذر مشروع في" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "لم يتم الكشف عن جذر المشروع" },
   "warn_SPECIFIED_CONFIG": { "message": "التكوين المحدد" },
   "warn_NOT_FOUND": { "message": "غير موجود" },
   "warn_CONFIG_FILE_KEY": { "message": "تكوين مفتاح الملف" },

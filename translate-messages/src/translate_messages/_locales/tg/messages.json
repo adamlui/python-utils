@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Истифодаи VPN барои барқарор кардани API throttling" },
   "warn_CONFIG_EXISTS_AT": { "message": "Батанзимдарорӣ аллакай вуҷуд дорад дар" },
   "warn_DIR_NOT_FOUND": { "message": "Натавонистам каталогро пайдо кунам" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Ягон решаи лоиҳа ёфт нашуд дар" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Ягон решаи лоиҳа ёфт нашуд" },
   "warn_SPECIFIED_CONFIG": { "message": "Конфигуратсияи муайяншуда" },
   "warn_NOT_FOUND": { "message": "Ёфт нашуд" },
   "warn_CONFIG_FILE_KEY": { "message": "Танзими калиди файл" },

@@ -25,7 +25,6 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Gbu li ti mo na ndo ti mbeni ye so mo ye ti sara kua na ni" },
   "warn_CONFIG_EXISTS_AT": { "message": "Config ayeke dä awe" },
   "warn_DIR_NOT_FOUND": { "message": "Can 't Fade Me brochure" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "A wara mbeni zo ti kua oko pëpe na yâ ti" },
   "warn_SPECIFIED_CONFIG": { "message": "A yeke sara tënë ti ambeni ye so ayeke na yâ ti Bible" },
   "warn_NOT_FOUND": { "message": "A wara lo pëpe" },
   "warn_CONFIG_FILE_KEY": { "message": "Config faïl clé" },

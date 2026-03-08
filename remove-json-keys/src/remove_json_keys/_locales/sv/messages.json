@@ -25,7 +25,7 @@
   "tip_MOVE_CONFIG_TO_ROOT": { "message": "Flytta konfigurationsfilen till roten av projektet du vill använda den i" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfigurationen finns redan på" },
   "warn_DIR_NOT_FOUND": { "message": "Det gick inte att hitta katalogen" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Ingen projektrot upptäcktes i" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Ingen projektrot upptäckt" },
   "warn_SPECIFIED_CONFIG": { "message": "Specificerad konfiguration" },
   "warn_NOT_FOUND": { "message": "Hittades inte" },
   "warn_CONFIG_FILE_KEY": { "message": "Konfigurationsfilnyckel" },

@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Benotzt e VPN fir API Throttling zréckzesetzen" },
   "warn_CONFIG_EXISTS_AT": { "message": "Konfiguréieren existéiert scho bei" },
   "warn_DIR_NOT_FOUND": { "message": "QShortcut" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "Keng Projektwurzel detektéiert" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Keng Projektwurzel detektéiert" },
   "warn_SPECIFIED_CONFIG": { "message": "Spezifizéiert Configuratioun" },
   "warn_NOT_FOUND": { "message": "Net fonnt" },
   "warn_CONFIG_FILE_KEY": { "message": "Dateischlëssel konfiguréieren" },

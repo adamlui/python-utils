@@ -30,7 +30,7 @@
   "tip_USE_A_VPN": { "message": "Faaaoga se VPN e toe seti API throttling" },
   "warn_CONFIG_EXISTS_AT": { "message": "Ua uma ona i ai le Konekeresi" },
   "warn_DIR_NOT_FOUND": { "message": "E le mafai ona maua se faatonuga" },
-  "warn_NO_PROJECT_ROOT_FOUND_IN": { "message": "E leai se galuega faatino na maua i" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "Leai se galuega faatino root mauaina" },
   "warn_SPECIFIED_CONFIG": { "message": "Faapitoa faatulagaga" },
   "warn_NOT_FOUND": { "message": "E leʻi maua" },
   "warn_CONFIG_FILE_KEY": { "message": "Config faila ki" },
