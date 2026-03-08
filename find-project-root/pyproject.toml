@@ -1,24 +1,24 @@
 [build-system]
 requires = [
     "setuptools>=61.0",
-    "wheel"
+    "wheel",
 ]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "find-project-root"
-version = "1.0.0"
+version = "1.0.1"
 description = "Locate project root via custom markers."
 authors = [
-    { name = "Adam Lui", email = "adam@kudoai.com" }
+    { name = "Adam Lui", email = "adam@kudoai.com" },
 ]
 readme = "docs/README.md"
 license = "MIT"
 license-files = [
-    "docs/LICENSE.md"
+    "docs/LICENSE.md",
 ]
 dependencies = [
-    "project-markers>=1.0.0,<2.0.0"
+    "project-markers>=1.0.0,<2.0.0",
 ]
 requires-python = ">=2.6,<4.0"
 keywords = [
@@ -31,7 +31,7 @@ keywords = [
     "marker-files",
     "path-finder",
     "project-root",
-    "root-detection"
+    "root-detection",
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -56,11 +56,11 @@ classifiers = [
     "Topic :: Software Development :: Version Control",
     "Topic :: System :: Filesystems",
     "Topic :: System :: Systems Administration",
-    "Topic :: Utilities"
+    "Topic :: Utilities",
 ]
 
 [project.urls]
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/find-project-root-1.0.0"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/find-project-root-1.0.1"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/find-project-root/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/find-project-root/#readme"
@@ -73,5 +73,5 @@ Repository = "https://github.com/adamlui/python-utils"
 dev = [
     "nox>=2026.2.9",
     "tomli>=2.0.0,<3.0.0",
-    "tomli-w>=0.1.0,<2.0.0"
+    "tomli-w>=0.1.0,<2.0.0",
 ]
