@@ -18,7 +18,7 @@ def config_file(cli: sn) -> None: # for --init
     if project_root:
         config_dir, in_project_root = Path(project_root), True
     else:
-        log.warn(cli.msgs.NO_PROJECT_ROOT_FOUND)
+        log.warn(cli.msgs.warn_NO_PROJECT_ROOT_FOUND)
         user_resp = input(f'{cli.msgs.prompt_INIT_CONFIG_HERE_ANYWAY}? (y/N): ').strip().lower()
         if not user_resp.startswith('y') : return
         config_dir, in_project_root = Path.cwd(), False
