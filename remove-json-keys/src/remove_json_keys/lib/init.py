@@ -16,14 +16,13 @@ def config_file(cli: sn) -> None: # for --init
     import find_project_root
     project_root = find_project_root(max_depth=20) # type: ignore
     if project_root:
-        target_path = Path(project_root) / f'.{cli.short_name}.config.json5'
-        in_project_root = True
+        config_dir, in_project_root = Path(project_root), True
     else:
         log.warn(cli.msgs.NO_PROJECT_ROOT_FOUND)
         user_resp = input(f'{cli.msgs.prompt_INIT_CONFIG_HERE_ANYWAY}? (y/N): ').strip().lower()
         if not user_resp.startswith('y') : return
-        target_path = Path.cwd() / f'.{cli.short_name}.config.json5'
-        in_project_root = False
+        config_dir, in_project_root = Path.cwd(), False
+    target_path = config_dir / f'.{cli.short_name}.config.json5'
 
     # Handle existing file
     if target_path.exists():
