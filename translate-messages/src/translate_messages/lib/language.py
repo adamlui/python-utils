@@ -106,7 +106,7 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
         except Exception as err:
             log.debug(f'Failed to fetch non-Latin locales: {err}')
 
-        msg_base_url = f'{jsdelivr.create_commit_url(cli, cli.commit_hashes.locales)}/src/translate_messages/_locales'
+        msg_base_url = f'{jsdelivr.create_commit_url(cli, cli.commit_hashes.locales)}/src/translate_messages/data/_locales'
         msg_url = f'{msg_base_url}/{lang_code}/messages.json'
         for attempt in range(3):
             try: # fetch remote msgs
