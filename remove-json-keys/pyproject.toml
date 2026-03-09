@@ -76,7 +76,7 @@ dev = [
     "nox>=2026.2.9",
     "tomli>=2.0.0,<3",
     "tomli-w>=0.1.0,<2",
-    "translate-messages>=1.8.0,<2",
+    "translate-messages>=1.8.1,<2",
 ]
 
 [tool.setuptools.packages.find]
