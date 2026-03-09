@@ -1,6 +1,6 @@
 [build-system]
 requires = [
-    "setuptools>=82.0.0,<83",
+    "setuptools~=82.0.0",
     "wheel",
 ]
 build-backend = "setuptools.build_meta"
@@ -18,11 +18,11 @@ license-files = [
     "docs/LICENSE.md",
 ]
 dependencies = [
-    "colorama>=0.4.6,<1 ; platform_system == 'Windows'",
-    "find-project-root>=1.0.1,<2",
-    "json5>=0.9.0,<1",
-    "non-latin-locales>=1.0.0,<2",
-    "ucs-detect>=2.0.2,<3",
+    "colorama~=0.4.6 ; platform_system == 'Windows'",
+    "find-project-root~=1.0.1",
+    "json5~=0.9.0",
+    "non-latin-locales~=1.0.0",
+    "ucs-detect~=2.0.2",
 ]
 requires-python = ">=3.8,<4"
 keywords = [
@@ -74,9 +74,9 @@ remove-json = "remove_json_keys.__main__:main"
 [project.optional-dependencies]
 dev = [
     "nox>=2026.2.9",
-    "tomli>=2.0.0,<3",
-    "tomli-w>=0.1.0,<2",
-    "translate-messages>=1.8.1,<2",
+    "tomli~=2.0.0",
+    "tomli-w~=0.1.0",
+    "translate-messages~=1.8.1",
 ]
 
 [tool.setuptools.packages.find]
