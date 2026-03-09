@@ -1,6 +1,6 @@
-import json, re
+import json
 from pathlib import Path
-from typing import Any, Dict, List, Union
+from typing import Any, Dict, Union
 
 import json5
 
@@ -35,24 +35,6 @@ def read(input: Union[Path, str], encoding: str = 'utf-8') -> Any:
         with open(input_str, 'r', encoding=encoding) as file:
            return json5.load(file)
     else : return json5.loads(input_str)
-
-def remove_keys(json_path: Path, keys: List[str]):
-    keys_removed, keys_skipped, files_processed_cnt = [], [], 0
-    for file_path in json_path.rglob('*.json'):
-        json_data = file.read(file_path)
-        modified = False
-        for key in keys: # remove matched ones
-            re_key = fr'"{re.escape(key)}"\s*:\s*(?:\{{[^}}]*\}}|"[^"]*"|\d+|true|false|null)\s*,?\s*'
-            json_data, cnt = re.subn(re_key, '', json_data)
-            rel_path = str(file_path.relative_to(json_path))
-            if cnt > 0:
-                keys_removed.append((key, rel_path))
-                modified = True
-            else:
-                keys_skipped.append((key, rel_path))
-        if modified : file.write(file_path, json_data)
-        files_processed_cnt += 1
-    return keys_removed, keys_skipped, files_processed_cnt
 
 def write(file_path: Union[Path, str], data: Any, encoding: str = 'utf-8', ensure_ascii: bool = False,
           style: str = 'pretty', atomic: bool =True):
