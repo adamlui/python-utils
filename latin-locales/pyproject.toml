@@ -1,0 +1,86 @@
+[build-system]
+requires = [
+    "setuptools>=82.0.0,<83",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latin-locales"
+version = "1.0.0"
+description = "ISO 639-1 (2-letter) codes for Latin locales that don't require advanced Unicode support"
+authors = [
+    { name = "Adam Lui", email = "adam@kudoai.com" },
+]
+readme = "docs/README.md"
+license = "MIT"
+license-files = [
+    "docs/LICENSE.md",
+]
+requires-python = ">=2.6,<4"
+keywords = [
+    "charset",
+    "detection",
+    "i18n",
+    "internationalization",
+    "json",
+    "language",
+    "latin",
+    "locale",
+    "localization",
+    "script",
+    "unicode",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.6",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Internationalization",
+    "Topic :: Software Development :: Localization",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/latin-locales-1.0.0"
+Documentation = "https://github.com/adamlui/python-utils/tree/main/latin-locales/docs"
+Funding = "https://github.com/sponsors/adamlui"
+Homepage = "https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme"
+Issues = "https://github.com/adamlui/python-utils/issues"
+"PyPI Stats" = "https://pepy.tech/projects/latin-locales"
+Releases = "https://github.com/adamlui/python-utils/releases"
+Repository = "https://github.com/adamlui/python-utils"
+
+[project.optional-dependencies]
+dev = [
+    "nox>=2026.2.9",
+    "tomli>=2.0.0,<3",
+    "tomli-w>=0.1.0,<2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"latin_locales" = ["latin_locales.json"]
