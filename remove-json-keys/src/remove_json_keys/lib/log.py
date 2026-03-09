@@ -4,7 +4,7 @@ from types import SimpleNamespace as sn
 from typing import Dict, List, Optional
 if sys.platform == 'win32' : import colorama ; colorama.init() # enable ANSI color support
 
-from . import data as datalib, env, pkg, settings
+from . import data as datalib, pkg
 
 try : terminal_width = os.get_terminal_size()[0]
 except OSError : terminal_width = 80
@@ -44,6 +44,7 @@ def version(cli: sn) -> None:
 def warn(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
 def warn_legacy_option(cli: sn, flag: str, source: str) -> None:
+    from . import settings
     warned_set = _warned_keys[source]
     if flag in warned_set : return
     canonical_key = settings.get_canonical_key(flag)
@@ -72,6 +73,7 @@ def cmd_docs_url_exit(cli: sn, msg: str = '', cmd: str = 'help') -> None:
     sys.exit(1)
 
 def debug(msg: str, cli: Optional[sn] = None, *args, **kwargs) -> None:
+    from . import env
     if not env.is_debug_mode() : return
 
     # Init --debug [target]

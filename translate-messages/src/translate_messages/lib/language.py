@@ -3,11 +3,10 @@ import re, sys
 from types import SimpleNamespace as sn
 from typing import Any, Dict, List, Optional, Tuple
 
-from translate import Translator
-
 from . import data, log
 
 def create_translations(cli: sn, target_msgs: Dict[str, Any], lang_code: str) -> Dict[str, Dict[str, str]]:
+    from translate import Translator
 
     fail_flags = ['INVALID TARGET LANGUAGE', 'MYMEMORY']
     src_keys = cli.config.keys or cli.en_msgs

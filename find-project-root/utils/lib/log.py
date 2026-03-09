@@ -3,8 +3,6 @@ from types import SimpleNamespace as sn
 from typing import Optional
 if sys.platform == 'win32' : import colorama ; colorama.init() # enable ANSI color support
 
-from . import env
-
 try : terminal_width = os.get_terminal_size()[0]
 except OSError : terminal_width = 80
 
@@ -33,6 +31,7 @@ def tip(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bc}TIP: {msg.form
 def warn(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
 def debug(msg: str, cli: Optional[sn] = None, *args, **kwargs) -> None:
+    from . import env
     if not env.is_debug_mode() : return
 
     # Init --debug [target]

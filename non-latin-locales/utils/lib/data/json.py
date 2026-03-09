@@ -4,8 +4,6 @@ from typing import Any, Dict, Union
 
 import json5
 
-from . import file
-
 def flatten(json: Dict[str, Any], key: str = 'message') -> Dict[str, Any]: # eliminate need to ref nested keys
     flat_obj = {}
     for json_key in json:
@@ -38,6 +36,7 @@ def read(input: Union[Path, str], encoding: str = 'utf-8') -> Any:
 
 def write(file_path: Union[Path, str], data: Any, encoding: str = 'utf-8', ensure_ascii: bool = False,
           style: str = 'pretty', atomic: bool =True):
+    from . import file
     Path(file_path).parent.mkdir(parents=True, exist_ok=True)
     if style == 'pretty': # single key/val spans multi-lines
         json_str = json.dumps(data, indent=2, ensure_ascii=ensure_ascii)

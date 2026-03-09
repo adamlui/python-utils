@@ -1,8 +1,8 @@
-import argparse, re, sys
+import re
 from pathlib import Path
 from types import SimpleNamespace as sn
 
-from lib import git, toml
+from lib import toml
 from remove_json_keys.lib import data, log
 
 paths = sn(root=Path(__file__).parent.parent)
@@ -14,6 +14,7 @@ paths.util_msgs = paths.root / 'utils/data/messages.json'
 msgs = sn(**{ key:val['message'] for key,val in data.json.read(paths.util_msgs)['bump'].items() })
 
 def parse_args():
+    import argparse
     argp = argparse.ArgumentParser(description=msgs.app_DESC, add_help=False)
     argp.add_argument('-M', '--major', action='store_true', help=msgs.help_MAJOR)
     argp.add_argument('-m', '--minor', action='store_true', help=msgs.help_MINOR)
@@ -67,6 +68,7 @@ def main():
     args = parse_args()
     bump_type = 'major' if args.major else 'minor' if args.minor else 'patch' if args.patch else None
     if not bump_type:
+        import sys
         log.error(msgs.err_MISSING_BUMP_TYPE_ARG)
         sys.exit(1)
 
@@ -85,6 +87,7 @@ def main():
     if args.no_commit:
         print(f'\n{msgs.log_SKIPPING_GIT_COMMIT}...')
     else:
+        from lib import git
         git.init_kudo_sync_bot(msgs)
         log.info(f'{msgs.log_COMMITTING_CHANGES}...')
         git.commit([str(paths.pyproject), str(paths.package_data)],

@@ -1,9 +1,10 @@
 from pathlib import Path
 from types import SimpleNamespace as sn
 
-from . import data, env, jsdelivr, language, log, settings, url
+from . import data, log
 
 def cli() -> sn:
+    from . import env, language, settings
     cli = data.sns.from_dict(data.json.read(Path(__file__).parent.parent / 'data/package_data.json'))
     cli.msgs = language.get_msgs(cli,
         language.generate_random_lang(excludes=['en']) if env.is_debug_mode() else language.get_sys_lang())
@@ -35,6 +36,7 @@ def config_file(cli: sn) -> None: # for --init
 
     # Fetch/write from jsDelivr
     if not getattr(cli, 'default_file_config', ''):
+        from . import jsdelivr, url
         jsd_url = f'{jsdelivr.create_pkg_ver_url(cli)}/{target_path.name}'
         log.debug(f'{log.colors.bw}{jsd_url}')
         cli.default_file_config = url.get(jsd_url)

@@ -1,4 +1,4 @@
-import json, re
+import json
 from pathlib import Path
 from typing import Any, Dict, List, Union
 
@@ -37,6 +37,7 @@ def read(input: Union[Path, str], encoding: str = 'utf-8') -> Any:
     else : return json5.loads(input_str)
 
 def remove_keys(json_path: Path, keys: List[str]):
+    import re
     keys_removed, keys_skipped, files_processed_cnt = [], [], 0
     for file_path in json_path.rglob('*.json'):
         json_data = file.read(file_path)

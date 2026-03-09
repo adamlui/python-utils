@@ -1,9 +1,10 @@
-import os, subprocess, sys
 from pathlib import Path
+import subprocess
 
 def commit(files, msg, *args) : run('add', *files) ; run('commit', '-m', msg, *args)
 
 def init_kudo_sync_bot(msgs):
+    import os
     print(f'\n{msgs.log_SWITCHING_TO_KUDO_SYNC_BOT}...\n')
     with open(Path.home() / '.gitconfig.backup', 'w') as file: # back up git config
         file.write(run('config', '--global', '--list'))
@@ -38,6 +39,7 @@ def restore_og_config(msgs):
 def run(*args):
     result = subprocess.run(['git'] + list(args), capture_output=True, text=True)
     if result.returncode != 0:
+        import sys
         print(f"Git command failed: {' '.join(['git'] + list(args))}")
         print(result.stderr)
         sys.exit(1)

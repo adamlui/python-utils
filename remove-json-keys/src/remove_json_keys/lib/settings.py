@@ -1,8 +1,8 @@
-import argparse, re, sys
+import sys
 from types import SimpleNamespace as sn
 from typing import Optional
 
-from . import data, init, log, string, url
+from . import init, log, string, url
 
 controls = sn(
     json_dir=sn(
@@ -44,10 +44,14 @@ def get_canonical_key(key: str) -> Optional[str]:
       else stripped_key if hasattr(controls, stripped_key) \
       else None
 
-def is_neg_key(key: str) -> bool :
+def is_neg_key(key: str) -> bool:
+    import re
     return bool(re.match(r'^(?:no|disable|exclude)_', string.removeprefix(key, 'legacy_')))
 
 def load(cli: sn) -> None:
+    import argparse
+    from . import data
+
     cli.config = sn()
 
     # Assign help tips from cli.msgs
