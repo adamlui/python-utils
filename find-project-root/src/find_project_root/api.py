@@ -1,7 +1,7 @@
 import os, sys
+from typing import Optional, Union, List
 if sys.version_info >= (3, 4) : from pathlib import Path
 else : Path = str
-from typing import Optional, Union, List
 
 import project_markers
 
