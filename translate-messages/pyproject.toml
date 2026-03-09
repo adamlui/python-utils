@@ -18,13 +18,13 @@ license-files = [
     "docs/LICENSE.md",
 ]
 dependencies = [
-    "colorama>=0.4.6,<1.0.0 ; platform_system == 'Windows'",
-    "find-project-root>=1.0.1,<2.0.0",
-    "json5>=0.9.0,<1.0.0",
-    "translate>=3.8.0,<4.0.0",
-    "ucs-detect>=2.0.2,<3.0.0",
+    "colorama>=0.4.6,<1 ; platform_system == 'Windows'",
+    "find-project-root>=1.0.1,<2",
+    "json5>=0.9.0,<1",
+    "translate>=3.8.0,<4",
+    "ucs-detect>=2.0.2,<3",
 ]
-requires-python = ">=3.8,<4.0"
+requires-python = ">=3.8,<4"
 keywords = [
     "auto-detect",
     "chrome",
@@ -85,9 +85,9 @@ translate-messages = "translate_messages.__main__:main"
 [project.optional-dependencies]
 dev = [
     "nox>=2026.2.9",
-    "remove-json-keys>=1.8.0,<2.0.0",
-    "tomli>=2.0.0,<3.0.0",
-    "tomli-w>=0.1.0,<2.0.0",
+    "remove-json-keys>=1.8.0,<2",
+    "tomli>=2.0.0,<3",
+    "tomli-w>=0.1.0,<2",
 ]
 
 [tool.setuptools.packages.find]

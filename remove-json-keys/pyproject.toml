@@ -18,12 +18,12 @@ license-files = [
     "docs/LICENSE.md",
 ]
 dependencies = [
-    "colorama>=0.4.6,<1.0.0 ; platform_system == 'Windows'",
-    "find-project-root>=1.0.1,<2.0.0",
-    "json5>=0.9.0,<1.0.0",
-    "ucs-detect>=2.0.2,<3.0.0",
+    "colorama>=0.4.6,<1 ; platform_system == 'Windows'",
+    "find-project-root>=1.0.1,<",
+    "json5>=0.9.0,<1",
+    "ucs-detect>=2.0.2,<3",
 ]
-requires-python = ">=3.8,<4.0"
+requires-python = ">=3.8,<4"
 keywords = [
     "auto-detect",
     "cli",
@@ -73,9 +73,9 @@ remove-json = "remove_json_keys.__main__:main"
 [project.optional-dependencies]
 dev = [
     "nox>=2026.2.9",
-    "tomli>=2.0.0,<3.0.0",
-    "tomli-w>=0.1.0,<2.0.0",
-    "translate-messages>=1.6.1,<2.0.0",
+    "tomli>=2.0.0,<3",
+    "tomli-w>=0.1.0,<2",
+    "translate-messages>=1.6.1,<2",
 ]
 
 [tool.setuptools.packages.find]

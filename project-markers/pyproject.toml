@@ -17,7 +17,7 @@ license = "MIT"
 license-files = [
     "docs/LICENSE.md"
 ]
-requires-python = ">=2.6,<4.0"
+requires-python = ">=2.6,<4"
 keywords = [
     "detection",
     "files",
@@ -65,8 +65,8 @@ Repository = "https://github.com/adamlui/python-utils"
 [project.optional-dependencies]
 dev = [
     "nox>=2026.2.9",
-    "tomli>=2.0.0,<3.0.0",
-    "tomli-w>=0.1.0,<2.0.0"
+    "tomli>=2.0.0,<3",
+    "tomli-w>=0.1.0,<2"
 ]
 
 [tool.setuptools.packages.find]
