@@ -7,7 +7,7 @@ from remove_json_keys.lib import data, log
 
 paths = sn(root=Path(__file__).parent.parent)
 paths.pyproject = paths.root / 'pyproject.toml'
-paths.package_data = paths.root / 'src/remove_json_keys/assets/data/package_data.json'
+paths.package_data = paths.root / 'src/remove_json_keys/data/package_data.json'
 paths.readme = paths.root / 'docs/README.md'
 paths.util_msgs = paths.root / 'utils/data/messages.json'
 
@@ -49,7 +49,7 @@ def bump_pyproject_vers(pyproject, project, new_ver):
     log.success(msgs.log_BUMPED_CLOG_URL_VER_TAG.format(**locals()))
 
 def bump_package_data_ver(project, new_ver):
-    log.info(f'{msgs.log_BUMPING_VER_IN} assets/data/package_data.json...')
+    log.info(f'{msgs.log_BUMPING_VER_IN} data/package_data.json...')
     updated_json_content = re.sub(
         r'"(?>\d{1,3}\.\d{1,3}\.\d{1,3})"', f'"{new_ver}"', data.file.read(paths.package_data))
     data.file.write(paths.package_data, updated_json_content)

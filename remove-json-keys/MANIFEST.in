@@ -1,2 +1,0 @@
-recursive-include src/remove_json_keys/assets *
-include src/remove_json_keys/_locales/en/messages.json

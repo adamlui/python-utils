@@ -1,6 +1,6 @@
 [build-system]
 requires = [
-    "setuptools>=61.0",
+    "setuptools>=82.0.0,<83",
     "wheel",
 ]
 build-backend = "setuptools.build_meta"
@@ -76,4 +76,13 @@ dev = [
     "tomli>=2.0.0,<3.0.0",
     "tomli-w>=0.1.0,<2.0.0",
     "translate-messages>=1.6.1,<2.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"remove_json_keys" = [
+    "data/*.json",
+    "data/_locales/en/messages.json",
 ]

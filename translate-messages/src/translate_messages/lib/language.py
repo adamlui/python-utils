@@ -61,7 +61,7 @@ def generate_random_lang(includes: Optional[List[str]] = None,
             except Exception : pass
 
         # Discover pkg _locales
-        locales_dir = Path(__file__).parent.parent / '_locales'
+        locales_dir = Path(__file__).parent.parent / 'data/_locales'
         print(locales_dir)
         if not locales_dir.exists() : return ['en']
         locales = []
@@ -94,9 +94,8 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
     if getattr(get_msgs, 'cached', None) and lang_code == get_msgs.cached_lang:
         return get_msgs.cached # don't re-fetch same msgs
 
-    mod_root_path = Path(__file__).parent.parent
     msgs = data.json.flatten(data.json.read( # local ones
-        mod_root_path / '_locales/en/messages.json'))
+        Path(__file__).parent.parent / 'data/_locales/en/messages.json'))
 
     if not lang_code.startswith('en'): # fetch non-English msgs from jsDelivr
         try: # check if terminal supports non-Latin scripts
