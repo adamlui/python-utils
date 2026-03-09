@@ -57,6 +57,7 @@ classifiers = [
     "Topic :: System :: Filesystems",
     "Topic :: System :: Systems Administration",
     "Topic :: Utilities",
+    "Typing :: Typed",
 ]
 
 [project.urls]
