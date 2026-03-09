@@ -29,6 +29,7 @@ keywords = [
     "locale",
     "localization",
     "non-latin",
+    "script",
     "unicode",
 ]
 classifiers = [
