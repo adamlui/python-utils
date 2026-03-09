@@ -41,7 +41,7 @@ def config_file(cli: sn) -> None: # for --init
         cli.default_file_config = url.get(jsd_url)
     data.file.write(str(target_path), cli.default_file_config)
     log.success(f'{cli.msgs.log_DEFAULT_CONFIG_CREATED_AT} {target_path}')
-    if in_project_root : log.tip(f'{cli.msgs.tip_MOVE_CONFIG_TO_ROOT}.')
+    if not in_project_root : log.tip(f'{cli.msgs.tip_MOVE_CONFIG_TO_ROOT}.')
 
 def config_filepath(cli: sn) -> None: # for settings.load()
 
