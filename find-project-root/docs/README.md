@@ -68,7 +68,7 @@ root = find_project_root(markers=['.git', 'pyproject.toml', 'requirements.txt'])
 
 Combine options:
 ```py
-root = find_project_root(path='src', max_depth=5, markers=['.git'])
+root = find_project_root(path='src', max_depth=5, markers=['manifest.json'])
 ```
 
 ## MIT License
