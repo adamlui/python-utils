@@ -87,8 +87,8 @@ translate-messages = "translate_messages.__main__:main"
 dev = [
     "nox>=2026.2.9",
     "remove-json-keys~=1.8.1",
-    "tomli~=2.0.0",
-    "tomli-w~=0.1.0",
+    "tomli~=2.4.0",
+    "tomli-w~=1.2.0",
 ]
 
 [tool.setuptools.packages.find]

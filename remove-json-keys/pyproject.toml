@@ -74,8 +74,8 @@ remove-json = "remove_json_keys.__main__:main"
 [project.optional-dependencies]
 dev = [
     "nox>=2026.2.9",
-    "tomli~=2.0.0",
-    "tomli-w~=0.1.0",
+    "tomli~=2.4.0",
+    "tomli-w~=1.2.0",
     "translate-messages~=1.8.1",
 ]
 
