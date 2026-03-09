@@ -25,7 +25,7 @@ pip install non-latin-locales
 import non_latin_locales
 
 print(non_latin_locales)
-# => ['am', 'ar', 'bn', 'bo', 'ckb', 'dv', ...]
+# => ['ab', 'am', 'ar', 'as', 'av', 'az', 'ba', 'be', 'bg', ...]
 ```
 
 _Note: Most type checkers will falsely warn_ `non_latin_locales` _is not iterable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a list for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
