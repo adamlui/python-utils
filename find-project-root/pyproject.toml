@@ -18,7 +18,7 @@ license-files = [
     "docs/LICENSE.md",
 ]
 dependencies = [
-    "project-markers~=1.0.2",
+    "project-markers~=1.0.0",
 ]
 requires-python = ">=2.6,<4"
 keywords = [
