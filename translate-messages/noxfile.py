@@ -16,7 +16,7 @@ def dev(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg.di
 @session
 def debug(session) : session.run('py', '-m', pkg.name, '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
 @session
- def test_py26(session):
+def test_py26(session):
     root = Path(__file__).parent
     src_dir = root / 'src'
     markers_dir = root.parent / 'project-markers/src'
