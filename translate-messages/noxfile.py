@@ -15,6 +15,17 @@ def session(func) : return nox.session(venv_backend='none')(func)
 def dev(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg.dir, '--help', *session.posargs)
 @session
 def debug(session) : session.run('py', '-m', pkg.name, '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
+@session
+ def test_py26(session):
+    root = Path(__file__).parent
+    src_dir = root / 'src'
+    markers_dir = root.parent / 'project-markers/src'
+    session.run(
+        'py', '-2.6', '-c',
+        f"import sys ; sys.path.extend([r'{src_dir}', r'{markers_dir}']) ;"
+        f'import find_project_root ; print(find_project_root())'
+    )
+    clean(session, '--py2')
 
 @session
 def bump_patch(session, no_push=True):
@@ -50,4 +61,4 @@ def deploy_feat(session) : deploy_minor(session)
 def deploy_major(session) : bump_major(session, no_push=False) ; build(session) ; publish(session)
 
 @session
-def clean(session) : session.run('py', paths.utils.clean)
+def clean(session, *args) : session.run('py', paths.utils.clean, *args)
