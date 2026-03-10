@@ -10,7 +10,6 @@ def main():
     targets = ['*.pyc']
     if '--py2' not in sys.argv:
         targets.extend(['dist', 'build', '*_cache', '__pycache__', '*.egg-info'])
-    print(targets)
     for target in targets:
         for path in Path('.').rglob(target):
             if path.is_dir():
