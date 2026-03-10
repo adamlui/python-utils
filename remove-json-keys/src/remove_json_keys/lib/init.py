@@ -35,12 +35,12 @@ def config_file(cli: sn) -> None: # for --init
             return
 
     # Fetch/write from jsDelivr
-    if not getattr(cli, 'default_file_config', ''):
+    if not getattr(config_file, 'cached_default', None):
         from . import jsdelivr, url
         jsd_url = f'{jsdelivr.create_pkg_ver_url(cli)}/{target_path.name}'
         log.debug(f'{log.colors.bw}{jsd_url}')
-        cli.default_file_config = url.get(jsd_url)
-    data.file.write(str(target_path), cli.default_file_config)
+        config_file.cached_default = url.get(jsd_url)
+    data.file.write(str(target_path), config_file.cached_default)
     log.success(f'{cli.msgs.log_DEFAULT_CONFIG_CREATED_AT} {target_path}')
     if not in_project_root : log.tip(f'{cli.msgs.tip_MOVE_CONFIG_TO_ROOT}.')
 
