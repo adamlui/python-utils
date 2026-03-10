@@ -13,7 +13,7 @@ def find_project_root(
     current_dir = os.getcwd() if path is None else str(path)
     if not os.path.exists(current_dir):
         raise ValueError(f'Path does not exist: {os.path.abspath(current_dir)}')
-    if not markers: markers = project_markers # type: ignore
+    if not markers : markers = project_markers # type: ignore
     for _ in range(max_depth):
         try : dir_files = os.listdir(current_dir)
         except (OSError, IOError, PermissionError):
