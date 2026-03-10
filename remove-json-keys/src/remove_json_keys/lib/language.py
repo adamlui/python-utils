@@ -86,7 +86,6 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
     return sn(**msgs)
 
 def get_sys_lang(cli: Optional[sn] = None) -> str:
-
     import os, subprocess, sys
     try:
         if sys.platform == 'win32':
