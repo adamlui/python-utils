@@ -17,7 +17,7 @@
 
 **find-project-root** is a lightweight utility that traverses up from a given path until it finds a project marker.
 
-- Minimal dependencies — only uses [project-markers][project-markers-gh] (~6 KB module)
+- Minimal dependencies — only uses [project-markers][project-markers-gh] (~4 KB module)
 - Path flexibility — accepts strings, `Path` objects, or current working dir
 - Customizable markers — provide your own or use defaults
 - Multi-Python support — from Python 2.6 thru 3.15+
