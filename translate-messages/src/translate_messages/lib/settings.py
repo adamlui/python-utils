@@ -122,7 +122,8 @@ def load(cli: sn) -> None:
     if unknown_args and not all(any(arg == exempt for exempt in exempt_flags) for arg in unknown_args):
         log.cmd_docs_url_exit(cli, f"{cli.msgs.err_UNRECOGNIZED_ARGS}: {' '.join(unknown_args)}", cmd='help')
     for ctrl_key, ctrl in vars(controls).items(): # process subcmds
-        if getattr(ctrl, 'subcmd', False) and next(arg for arg in ctrl.args if arg.startswith('--'))[2:] in sys.argv[1:]:
+        if getattr(ctrl, 'subcmd', False) \
+                and next(arg for arg in ctrl.args if arg.startswith('--'))[2:] in sys.argv[1:]:
             setattr(parsed_args, ctrl_key, True)
     applied_args = []
     for arg in sys.argv[1:]:

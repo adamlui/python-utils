@@ -69,7 +69,8 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
         import non_latin_locales
         if lang_code.split('_')[0] in non_latin_locales and not env.can_render_non_latin_scripts(): # type: ignore
             return sn(**msgs) # EN ones cuz non-Latin not supported
-        msg_base_url = f'{jsdelivr.create_commit_url(cli, cli.commit_hashes.locales)}/src/remove_json_keys/data/_locales'
+        msg_base_url = f'{jsdelivr.create_commit_url(cli, cli.commit_hashes.locales)}' \
+                        '/src/remove_json_keys/data/_locales'
         msg_url = f'{msg_base_url}/{lang_code}/messages.json'
         for attempt in range(3):
             try: # fetch remote msgs
