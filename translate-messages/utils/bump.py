@@ -90,10 +90,8 @@ def main():
         from lib import git
         git.init_kudo_sync_bot(msgs)
         log.info(f'{msgs.log_COMMITTING_CHANGES}...')
-        git.commit([str(paths.pyproject), str(paths.package_data)],
+        git.commit([str(paths.pyproject), str(paths.package_data), str(paths.readme)],
             f'Bumped {project.name} versions to {new_ver}', '-n')
-        git.commit([str(paths.readme)],
-            f'Updated {project.name} versions in README URLs to {new_ver}', '-n')
         if args.no_push:
             print(f'\n{msgs.log_SKIPPING_GIT_PUSH}...')
         else:
