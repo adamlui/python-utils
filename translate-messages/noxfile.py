@@ -17,6 +17,11 @@ def dev(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg.di
 def debug(session) : session.run('py', '-m', pkg.name, '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
 
 @session
+def lint(session) : session.run('ruff', 'check', '.', *session.posargs)
+@session
+def lint_fix(session) : session.run('ruff', 'check', '--fix', '.', *session.posargs)
+
+@session
 def bump_patch(session, no_push=True):
     cmd = ['py', paths.utils.bump, '--patch']
     if no_push : cmd.append('--no-push')

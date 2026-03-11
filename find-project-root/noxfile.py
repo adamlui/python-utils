@@ -26,6 +26,11 @@ def test_py26(session):
     clean(session, '--py2')
 
 @session
+def lint(session) : session.run('ruff', 'check', '.', *session.posargs)
+@session
+def lint_fix(session) : session.run('ruff', 'check', '.', '--fix', *session.posargs)
+
+@session
 def bump_patch(session, no_push=True):
     cmd = ['py', paths.utils.bump, '--patch']
     if no_push : cmd.append('--no-push')
