@@ -63,6 +63,8 @@
 [CLI usage](https://github.com/adamlui/python-utils/tree/main/translate-messages/#usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
+<img height=6px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png">
+
 ## 🏛️ MIT License
 
 Copyright © 2023–2026 [Adam Lui](https://github.com/adamlui)
