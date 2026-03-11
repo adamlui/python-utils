@@ -9,7 +9,7 @@ def find_project_root(path=None, max_depth=9, markers=None):
     if not markers : markers = project_markers
     for _ in range(max_depth):
         try : dir_files = os.listdir(current_dir)
-        except (OSError, IOError, PermissionError):
+        except (OSError, IOError):
             return None
         if any(marker in dir_files for marker in markers): # type: ignore
             return str(current_dir)
