@@ -7,9 +7,7 @@ pkg = sn(dir=Path(__file__).parent.name)
 pkg.name = pkg.dir.replace('-', '_')
 paths = sn(utils=sn(bump='utils/bump.py', clean='utils/clean.py', publish='utils/publish.sh'))
 
-def session(func):
-    name = func.__name__.replace('_', '-')
-    return nox.session(venv_backend='none', name=name)(func)
+def session(func) : return nox.session(venv_backend='none', name=func.__name__.replace('_', '-'))(func)
 
 # SESSIONS
 
