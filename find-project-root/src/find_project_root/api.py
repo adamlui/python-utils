@@ -16,4 +16,3 @@ def find_project_root(path=None, max_depth=9, markers=None):
         parent = os.path.dirname(current_dir)
         if parent == current_dir : break # at fs root
         current_dir = parent
-    return None
