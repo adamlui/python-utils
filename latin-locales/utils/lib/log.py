@@ -24,6 +24,7 @@ def dim(msg: str, *args, **kwargs) -> None : print(f'\n{colors.gry}{msg.format(*
 def error(msg: str, *args, **kwargs) -> None : print(f'\n{colors.br}ERROR: {msg.format(*args, **kwargs)}{colors.nc}')
 def info(msg: str, *args, end: str = '', **kwargs) -> None:
     print(f'\n{colors.by}{msg.format(*args, **kwargs)}{colors.nc}', end=end)
+def line_break() : print()
 def overwrite_print(msg: str, *args, **kwargs) -> None:
     sys.stdout.write('\r' + msg.format(*args, **kwargs).ljust(terminal_width)[:terminal_width])
 def success(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')
