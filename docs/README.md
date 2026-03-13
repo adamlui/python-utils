@@ -29,7 +29,7 @@
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/get-min-py/#-installation) /
 [Readme](https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme) /
 [API usage](https://github.com/adamlui/python-utils/tree/main/get-min-py/#-api-usage) /
-[CLI usage](https://github.com/adamlui/python-utils/tree/main/get-min-py/#-cli-usage) /
+[CLI usage](https://github.com/adamlui/python-utils/tree/main/get-min-py/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme">🇪🇸 latin-locales</a>
