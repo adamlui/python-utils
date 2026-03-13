@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Ma nstab l-ebda rekwiżit" },
+  "log_TYPE": { "message": "Tip" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "għall-għażliet disponibbli" },
+  "log_VERSION": { "message": "Verżjoni" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Għal iktar għajnuna, żur" },
+  "warn_NOT_FOUND": { "message": "Ma nstabx" },
+  "warn_CLI_OPTION": { "message": "Għażla tas-CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ġie sostitwit bi" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "u se jitneħħa" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "m' għad m' għandu l-ebda effett" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Argument (i) mhux rikonoxxut (i)" },
+  "help_HELP": { "message": "Uri l-iskrin tal-għajnuna" },
+  "help_VERSION": { "message": "Uri l-verżjoni" },
+  "help_DOCS": { "message": "Iftaħ il-URL tad-dokumenti" },
+  "help_DEBUG": { "message": "Uri r-reġistri tad-debugs" }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "get-min-py",
+  "version": "1.0.0",
+  "description": "Get the minimum Python version required for a PyPI package.",
+  "cmds": ["get-min-py", "check-min-py"],
+  "cmd_format": "get-min-py <pkg>[,pkg_b,pkg_c]",
+  "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
+  "urls": {
+    "docs": "https://github.com/adamlui/python-utils/tree/main/get-min-py/docs",
+    "funding": {
+      "cashapp": "https://cash.app/$adamlui",
+      "github": "https://github.com/sponsors/adamlui",
+      "kofi": "https://ko-fi.com/adamlui",
+      "paypal": "https://paypal.me/adamlui"
+    },
+    "github": "https://github.com/adamlui/python-utils",
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/python-utils",
+    "pypi": "https://pypi.org/project/get-min-py/",
+    "pypistats": "https://pypistats.org/packages/get-min-py",
+    "support": "https://github.com/adamlui/python-utils/issues"
+  },
+  "commit_hashes": {
+    "data": "97a74a8",
+    "locales": "97a74a8"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Reikalavimų nerasta" },
+  "log_TYPE": { "message": "Tipas" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "galimoms parinktims" },
+  "log_VERSION": { "message": "Versija" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Jei reikia daugiau pagalbos, apsilankykite" },
+  "warn_NOT_FOUND": { "message": "Nerasta" },
+  "warn_CLI_OPTION": { "message": "CLI parinktis" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "buvo pakeistas" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ir bus pašalintas" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "nebeturi jokio poveikio" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Neatpažintas (-i) argumentas(-ai)" },
+  "help_HELP": { "message": "Rodyti pagalbos ekraną" },
+  "help_VERSION": { "message": "Rodyti versiją" },
+  "help_DOCS": { "message": "Atidaryti dokumentų URL" },
+  "help_DEBUG": { "message": "Rodyti derinimo žurnalus" }
+}

@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Nessun requisito trovato" },
+  "log_TYPE": { "message": "Tipo" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "per le opzioni disponibili" },
+  "log_VERSION": { "message": "Versione" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Per ulteriore assistenza, visita" },
+  "warn_NOT_FOUND": { "message": "Non trovato" },
+  "warn_CLI_OPTION": { "message": "Opzione CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "è stato sostituito da" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "e verranno rimossi" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "non ha più alcun effetto" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Argomento/i non riconosciuto/i" },
+  "help_HELP": { "message": "Mostra schermata di aiuto" },
+  "help_VERSION": { "message": "Mostra versione" },
+  "help_DOCS": { "message": "Apri URL documenti" },
+  "help_DEBUG": { "message": "Mostra registri di debug" }
+}

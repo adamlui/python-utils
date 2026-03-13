@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "අවශ් ‍ යතාවයක් හමු නොවීය" },
+  "log_TYPE": { "message": "වර්ගය" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ලබා ගත හැකි විකල්ප සඳහා" },
+  "log_VERSION": { "message": "අනුවාදය" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "වැඩිදුර උදව් සඳහා, පිවිසෙන්න" },
+  "warn_NOT_FOUND": { "message": "හමු නොවීය" },
+  "warn_CLI_OPTION": { "message": "CLI විකල්පය" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "විසින් ප් ‍ රතිස්ථාපනය කර ඇත" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "එවිට එය ඉවත් කරනු ලැබේ." },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "තව දුරටත් කිසිදු බලපෑමක් නැත" },
+  "err_UNRECOGNIZED_ARGS": { "message": "හඳුනා නොගත් තර්ක(ය)" },
+  "help_HELP": { "message": "සහාය තිරය පෙන්වන්න" },
+  "help_VERSION": { "message": "අනුවාදය පෙන්වන්න" },
+  "help_DOCS": { "message": "ලේඛන URL විවෘත කරන්න" },
+  "help_DEBUG": { "message": "නිවැරදිකරණ ලඝු-සටහන් පෙන්වන්න" }
+}

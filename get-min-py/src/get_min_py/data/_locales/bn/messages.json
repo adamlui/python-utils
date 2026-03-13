@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "কোনও আবশ্যকতা পাওয়া যায়নি" },
+  "log_TYPE": { "message": "ধরন" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "উপলভ্য বিকল্পগুলির জন্য" },
+  "log_VERSION": { "message": "সংস্করণ" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "আরও সহায়তার জন্য, দেখুন" },
+  "warn_NOT_FOUND": { "message": "পাওয়া যায়নি" },
+  "warn_CLI_OPTION": { "message": "CLI বিকল্প" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "দ্বারা প্রতিস্থাপিত হয়েছে" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "এবং সরানো হবে" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "এখন আর কোনো প্রভাব নেই" },
+  "err_UNRECOGNIZED_ARGS": { "message": "অজানা আর্গুমেন্ট(গুলি)" },
+  "help_HELP": { "message": "সহায়তা স্ক্রিন দেখান" },
+  "help_VERSION": { "message": "সংস্করণ দেখান" },
+  "help_DOCS": { "message": "ডক্স ইউআরএল খুলুন" },
+  "help_DEBUG": { "message": "ডিবাগ লগগুলি দেখান" }
+}

@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Ibisabwa Byabonetse" },
+  "log_TYPE": { "message": "Ubwoko" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "kugirango Bihari Amahitamo" },
+  "log_VERSION": { "message": "Verisiyo" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Ukeneye ibindi bisobanuro wasura" },
+  "warn_NOT_FOUND": { "message": "Ntibyabonetse" },
+  "warn_CLI_OPTION": { "message": "Ihitamo" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "yasimbuwe na" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "kandi bizakurwaho" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "nta nkurikizi igifite" },
+  "err_UNRECOGNIZED_ARGS": { "message": "S" },
+  "help_HELP": { "message": "Ifashayobora Mugaragaza" },
+  "help_VERSION": { "message": "Verisiyo" },
+  "help_DOCS": { "message": "Gufungura Idosiye" },
+  "help_DEBUG": { "message": "Kosora amakosa" }
+}

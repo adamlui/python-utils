@@ -23,6 +23,15 @@
 [API usage](https://github.com/adamlui/python-utils/tree/main/find-project-root/#api-usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
+### <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme">📊 get-min-py</a>
+
+> Get the minimum Python version required for a PyPI package.
+<br>[Install](https://github.com/adamlui/python-utils/tree/main/get-min-py/#-installation) /
+[Readme](https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme) /
+[API usage](https://github.com/adamlui/python-utils/tree/main/get-min-py/#-api-usage) /
+[CLI usage](https://github.com/adamlui/python-utils/tree/main/get-min-py/#-cli-usage) /
+[Discuss](https://github.com/adamlui/python-utils/discussions)
+
 ### <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme">🇪🇸 latin-locales</a>
 
 > ISO 639-1 (2-letter) codes for Latin locales.

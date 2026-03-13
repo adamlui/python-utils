@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Вимоги не знайдено" },
+  "log_TYPE": { "message": "Тип" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "для доступних варіантів" },
+  "log_VERSION": { "message": "Версія" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Щоб отримати додаткову допомогу, відвідайте сторінку" },
+  "warn_NOT_FOUND": { "message": "Не знайдено" },
+  "warn_CLI_OPTION": { "message": "Параметр CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "було замінено на" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "і буде видалено" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "більше не має ніякого ефекту" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Нерозпізнані аргументи" },
+  "help_HELP": { "message": "Показати екран довідки" },
+  "help_VERSION": { "message": "Показати версію" },
+  "help_DOCS": { "message": "Відкрити URL-адресу документів" },
+  "help_DEBUG": { "message": "Показати журнали налагодження" }
+}

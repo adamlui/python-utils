@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Ga go a bonwa sepe se se batlegang" },
+  "log_TYPE": { "message": "Mofuta" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "mo dilong tse o ka tlhophang mo go tsone" },
+  "log_VERSION": { "message": "Mofuta" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Go bona thuso go ya pele, etela" },
+  "warn_NOT_FOUND": { "message": "Ga e a bonwa" },
+  "warn_CLI_OPTION": { "message": "CLI OPTION" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "e emisitswe ke" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "mme e tlile go tlosiwa" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ga e tlhole e na le diphelelo dipe" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Kganetsano(dingangisano) e e sa lemogwang" },
+  "help_HELP": { "message": "SHOW HELP SCREEN" },
+  "help_VERSION": { "message": "SHOW VERSION" },
+  "help_DOCS": { "message": "Open docs URL" },
+  "help_DEBUG": { "message": "SHOW DEBUG LOGS" }
+}

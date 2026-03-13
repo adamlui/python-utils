@@ -1,0 +1,106 @@
+[build-system]
+requires = [
+    "setuptools~=82.0.0",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "get-min-py"
+version = "1.0.0"
+description = "Get the minimum Python version required for a PyPI package."
+authors = [
+    { name = "Adam Lui", email = "adam@kudoai.com" },
+]
+readme = "docs/README.md"
+license = "MIT"
+license-files = [
+    "docs/LICENSE.md",
+]
+dependencies = [
+    "colorama~=0.4.6 ; platform_system == 'Windows'",
+    "json5~=0.13.0",
+    "ucs-detect~=2.0.2",
+]
+requires-python = ">=3.8,<4"
+keywords = [
+    "api",
+    "auto-detect",
+    "classifiers",
+    "cli",
+    "compatibility",
+    "console",
+    "dev-tool",
+    "minimum-version",
+    "package-metadata",
+    "pypi",
+    "python-version",
+    "requires-python",
+    "version-check",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Topic :: Internet",
+    "Topic :: Internet :: WWW/HTTP",
+]
+
+[project.urls]
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/get-min-py-1.0.0"
+Documentation = "https://github.com/adamlui/python-utils/tree/main/get-min-py/docs"
+Funding = "https://github.com/sponsors/adamlui"
+Homepage = "https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme"
+Issues = "https://github.com/adamlui/python-utils/issues"
+"PyPI Stats" = "https://pepy.tech/projects/get-min-py"
+Releases = "https://github.com/adamlui/python-utils/releases"
+Repository = "https://github.com/adamlui/python-utils"
+
+[project.scripts]
+get-min-py = "get_min_py.cli.__main__:main"
+get-min-ver = "get_min_py.cli.__main__:main"
+check-min-py = "get_min_py.cli.__main__:main"
+check-min-ver = "get_min_py.cli.__main__:main"
+getminpy = "get_min_py.cli.__main__:main"
+getminver = "get_min_py.cli.__main__:main"
+checkminpy = "get_min_py.cli.__main__:main"
+checkminver = "get_min_py.cli.__main__:main"
+
+[project.optional-dependencies]
+dev = [
+    "nox>=2026.2.9",
+    "remove-json-keys~=1.8.3",
+    "tomli~=2.4.0",
+    "tomli-w~=1.2.0",
+    "translate-messages~=1.8.3",
+]
+
+[tool.setuptools.packages.find]
+where = [
+    "src",
+]
+
+[tool.setuptools.package-data]
+get_min_py = [
+    "data/*.json",
+    "data/_locales/en/messages.json",
+]

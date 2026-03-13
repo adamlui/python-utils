@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "कोई शर्त नहीं मिली" },
+  "log_TYPE": { "message": "प्रकार" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "उपलब्ध विकल्पों के लिए" },
+  "log_VERSION": { "message": "संस्करण" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "ज़्यादा मदद के लिए, पर जाएँ" },
+  "warn_NOT_FOUND": { "message": "नहीं मिला" },
+  "warn_CLI_OPTION": { "message": "CLI विकल्प" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "द्वारा प्रतिस्थापित कर दिया गया है" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "और हटा दिया जाएगा" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "अब कोई प्रभाव नहीं पड़ता है" },
+  "err_UNRECOGNIZED_ARGS": { "message": "अपरिचित तर्क(तर्क)" },
+  "help_HELP": { "message": "सहायता स्क्रीन दिखाएँ" },
+  "help_VERSION": { "message": "संस्करण दिखाएँ" },
+  "help_DOCS": { "message": "डॉक्स का यूआरएल खोलें" },
+  "help_DEBUG": { "message": "डिबग लॉग दिखाएँ" }
+}

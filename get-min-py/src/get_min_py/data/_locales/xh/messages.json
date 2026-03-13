@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Akukho mfuneko ifunyenweyo" },
+  "log_TYPE": { "message": "Uhlobo" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "kwizinto onokukhetha kuzo ezifumanekayo" },
+  "log_VERSION": { "message": "Uhlobo" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Ukuze ufumane uncedo olungakumbi, yiya" },
+  "warn_NOT_FOUND": { "message": "Ayifumanekanga" },
+  "warn_CLI_OPTION": { "message": "Ukhetho lwe-CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ithathelwe indawo yi-" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "kwaye iza kususwa" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ayisachaphazeli nantoni na" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Impikiswano(iimpikiswano) engaziwayo" },
+  "help_HELP": { "message": "Bonisa isikrini soncedo" },
+  "help_VERSION": { "message": "Bonisa uhlobo" },
+  "help_DOCS": { "message": "Vula i-URL yamaxwebhu" },
+  "help_DEBUG": { "message": "Bonisa ii-logs ze-debug" }
+}

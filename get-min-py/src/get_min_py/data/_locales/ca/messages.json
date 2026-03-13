@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "No s'ha trobat cap requisit" },
+  "log_TYPE": { "message": "Tipus" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "per veure les opcions disponibles" },
+  "log_VERSION": { "message": "Versió" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Per obtenir més ajuda, visita" },
+  "warn_NOT_FOUND": { "message": "No s'ha trobat" },
+  "warn_CLI_OPTION": { "message": "Opció CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ha estat reemplaçat per" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "i s'eliminarà" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ja no té cap efecte" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Arguments no reconeguts" },
+  "help_HELP": { "message": "Mostra la pantalla d'ajuda" },
+  "help_VERSION": { "message": "Mostra la versió" },
+  "help_DOCS": { "message": "Obre l'URL dels documents" },
+  "help_DEBUG": { "message": "Mostra els registres de depuració" }
+}

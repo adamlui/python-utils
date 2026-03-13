@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Nije pronađen nijedan uslov" },
+  "log_TYPE": { "message": "Tip" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "za dostupne opcije" },
+  "log_VERSION": { "message": "Verzija" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Za dodatnu pomoć posjetite" },
+  "warn_NOT_FOUND": { "message": "Nije pronađeno" },
+  "warn_CLI_OPTION": { "message": "Opcija CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "je zamenjen sa" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "i biće uklonjeno" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "više nema efekta" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Neprepoznati argumenti" },
+  "help_HELP": { "message": "Prikaži ekran za pomoć" },
+  "help_VERSION": { "message": "Prikaži verziju" },
+  "help_DOCS": { "message": "Otvori URL dokumenta" },
+  "help_DEBUG": { "message": "Prikaži evidencije otklanjanja grešaka" }
+}

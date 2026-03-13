@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Nebyl nalezen žádný požadavek" },
+  "log_TYPE": { "message": "Typ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "pro dostupné možnosti" },
+  "log_VERSION": { "message": "Verze" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Další pomoc najdeš na adrese" },
+  "warn_NOT_FOUND": { "message": "Nenalezeno" },
+  "warn_CLI_OPTION": { "message": "Možnost CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "byl nahrazen" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "a budou odstraněny" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "již nemá žádný účinek" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Nerozpoznané argumenty" },
+  "help_HELP": { "message": "Zobrazit obrazovku nápovědy" },
+  "help_VERSION": { "message": "Zobrazit verzi" },
+  "help_DOCS": { "message": "Otevřít adresu URL dokumentů" },
+  "help_DEBUG": { "message": "Zobrazit protokoly ladění" }
+}

@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "ޝަރުޠެއް ނުފެނެއެވެ" },
+  "log_TYPE": { "message": "ވައްތަރު" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ލިބެން ހުރި އިޚްތިޔާރުތަކަށްޓަކައެވެ" },
+  "log_VERSION": { "message": "ވަރޝަން" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "އިތުރު އެހީއަށް ޒިޔާރަތް ކުރައްވާ" },
+  "warn_NOT_FOUND": { "message": "ނުފެނޭ" },
+  "warn_CLI_OPTION": { "message": "ސީއެލްއައި އޮޕްޝަން" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ގެ ބަދަލުގައި…" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "އަދި ނައްތާލެވޭނެއެވެ" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "މިހާރު އެއްވެސް އަސަރެއް ނުކުރެއެވެ" },
+  "err_UNRECOGNIZED_ARGS": { "message": "ދެނެގަނެވޭ އާގިއުމެންޓް (ތަކެއް) ." },
+  "help_HELP": { "message": "ހެލްޕް ސްކްރީން ދައްކާށެވެ" },
+  "help_VERSION": { "message": "ވާޝަން ދައްކާށެވެ" },
+  "help_DOCS": { "message": "ޑޮކްސް ޔޫއާރްއެލް ހުޅުވާލާށެވެ" },
+  "help_DEBUG": { "message": "ޑީބަގް ލޮގްތައް ދައްކާށެވެ" }
+}

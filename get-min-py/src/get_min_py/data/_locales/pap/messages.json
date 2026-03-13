@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "No Criteria Found" },
+  "log_TYPE": { "message": "Tipo" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "opcion Disponible" },
+  "log_VERSION": { "message": "Vershon" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Mas informacion de Visita" },
+  "warn_NOT_FOUND": { "message": "No Found" },
+  "warn_CLI_OPTION": { "message": "CLI Opcion" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "a keda remplasá pa" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "y lo despierta" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "no Mas Efecto" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Argumentacion no reconocida(s)" },
+  "help_HELP": { "message": "Ayuda Screenshot" },
+  "help_VERSION": { "message": "Show Version" },
+  "help_DOCS": { "message": "Limpiador DOC URL" },
+  "help_DEBUG": { "message": "Inicio › Debug Logs › Actividad" }
+}

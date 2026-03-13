@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Zahteve ni mogoče najti" },
+  "log_TYPE": { "message": "Vrsta" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "za razpoložljive možnosti" },
+  "log_VERSION": { "message": "Različica" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Za več pomoči obiščite" },
+  "warn_NOT_FOUND": { "message": "Ni najdeno" },
+  "warn_CLI_OPTION": { "message": "Možnost CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "je bil nadomeščen z" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "in bo odstranjen" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "nima več nobenega učinka" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Neprepoznani argumenti" },
+  "help_HELP": { "message": "Prikaži zaslon za pomoč" },
+  "help_VERSION": { "message": "Prikaži različico" },
+  "help_DOCS": { "message": "Odpri URL dokumentov" },
+  "help_DEBUG": { "message": "Prikaži dnevnike odpravljanja napak" }
+}

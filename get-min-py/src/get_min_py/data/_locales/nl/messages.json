@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Geen vereiste gevonden" },
+  "log_TYPE": { "message": "Type" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "voor beschikbare opties" },
+  "log_VERSION": { "message": "Versie" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Ga voor meer hulp naar" },
+  "warn_NOT_FOUND": { "message": "Niet gevonden" },
+  "warn_CLI_OPTION": { "message": "CLI-optie" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "is vervangen door" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "en zal worden verwijderd" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "heeft geen effect meer" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Niet-herkende argument(en)" },
+  "help_HELP": { "message": "Helpscherm weergeven" },
+  "help_VERSION": { "message": "Versie weergeven" },
+  "help_DOCS": { "message": "Documenten-URL openen" },
+  "help_DEBUG": { "message": "Foutopsporingslogboeken weergeven" }
+}

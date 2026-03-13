@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "هیچ الزامی یافت نشد" },
+  "log_TYPE": { "message": "نوع" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "برای گزینه‌های موجود" },
+  "log_VERSION": { "message": "نسخه" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "برای کمک بیشتر، مراجعه کنید به" },
+  "warn_NOT_FOUND": { "message": "یافت نشد" },
+  "warn_CLI_OPTION": { "message": "گزینه CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "جایگزین شده است" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "و حذف خواهد شد" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "دیگر هیچ اثری ندارد" },
+  "err_UNRECOGNIZED_ARGS": { "message": "آرگومان(های) ناشناخته" },
+  "help_HELP": { "message": "نمایش صفحه راهنما" },
+  "help_VERSION": { "message": "نمایش نسخه" },
+  "help_DOCS": { "message": "آدرس اسناد را باز کنید" },
+  "help_DEBUG": { "message": "نمایش گزارش‌های اشکال‌زدایی" }
+}

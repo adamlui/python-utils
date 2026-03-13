@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Tələb tapılmadı" },
+  "log_TYPE": { "message": "Növ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "mövcud seçimlər üçün" },
+  "log_VERSION": { "message": "Versiya" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Daha çox yardım üçün daxil olun" },
+  "warn_NOT_FOUND": { "message": "Tapılmadı" },
+  "warn_CLI_OPTION": { "message": "CLI seçimi" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ilə əvəz edilmişdir:" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "və silinəcək" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "artıq heç bir təsiri yoxdur" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Tanınmamış arqument(lər)" },
+  "help_HELP": { "message": "Yardım ekranını göstər" },
+  "help_VERSION": { "message": "Versiyanı göstər" },
+  "help_DOCS": { "message": "Docs URL-ni aç" },
+  "help_DEBUG": { "message": "Xəta ayıqlama jurnallarını göstər" }
+}

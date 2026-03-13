@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "No requirement found" },
+  "log_TYPE": { "message": "Type" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "for available options" },
+  "log_VERSION": { "message": "Version" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "For more help, visit" },
+  "warn_NOT_FOUND": { "message": "Not found" },
+  "warn_CLI_OPTION": { "message": "CLI option" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "has been replaced by" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "and will be removed" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "no longer has any effect" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Unrecognized argument(s)" },
+  "help_HELP": { "message": "Show help screen" },
+  "help_VERSION": { "message": "Show version" },
+  "help_DOCS": { "message": "Open docs URL" },
+  "help_DEBUG": { "message": "Show debug logs" }
+}

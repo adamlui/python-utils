@@ -1,0 +1,104 @@
+import sys
+from types import SimpleNamespace as sn
+from typing import Optional
+
+from . import log, string, url
+
+controls = sn(
+    help=sn(
+        args=['-h', '--help'], action='help'),
+    version=sn(
+        args=['-v', '--version'], action='store_true', exit=True, handler=lambda cli: log.version(cli)),
+    docs=sn(
+        args=['--docs'], action='store_true', exit=True, handler=lambda cli: url.open(cli.urls.docs)),
+    debug=sn(
+        args=['-V', '--debug'], nargs='?', const=True, metavar='TARGET_KEY')
+)
+
+def get_canonical_key(key: str) -> Optional[str]:
+    if key.startswith('-'): # convert CLI arg to full key name
+        for ctrl_key, ctrl in vars(controls).items():
+            if key in getattr(ctrl, 'args', []):
+                key = ctrl_key
+                break
+    legacy_key = key if key.startswith('legacy_') else f'legacy_{key}'
+    legacy_ctrl = getattr(controls, legacy_key, None)
+    stripped_key = string.removeprefix(key, 'legacy_')
+    return legacy_ctrl.replaced_by if legacy_ctrl and hasattr(legacy_ctrl, 'replaced_by') \
+      else stripped_key if hasattr(controls, stripped_key) \
+      else None
+
+def is_neg_key(key: str) -> bool:
+    import re
+    return bool(re.match(r'^(?:no|disable|exclude)_', string.removeprefix(key, 'legacy_')))
+
+def load(cli: sn) -> None:
+    import argparse
+    from . import data
+
+    cli.config = sn()
+
+    # Assign help tips from cli.msgs
+    for ctrl_key, ctrl in vars(controls).items():
+        if ctrl_key.startswith('legacy_') : continue
+        if not hasattr(ctrl, 'help') : ctrl.help = getattr(cli.msgs, f'help_{ctrl_key.upper()}')
+
+    # Parse CLI args
+    argp = argparse.ArgumentParser(description=cli.description, add_help=False)
+    argp.usage = cli.cmd_format
+    valid_argparse_kwargs = {
+        'action', 'choices', 'const', 'default', 'dest', 'help', 'metavar', 'nargs', 'required', 'type', 'version'}
+    for ctrl_key, ctrl in vars(controls).items(): # add args to argp
+        kwargs = ctrl.__dict__.copy()
+        args = kwargs.pop('args')
+        argparse_kwargs = { key:val for key,val in kwargs.items() if key in valid_argparse_kwargs }
+        if ctrl_key.startswith('legacy_'): # copy canonical attrs first
+            canonical_key = get_canonical_key(ctrl_key)
+            if canonical_key: # adjust argparse_kwargs
+                canonical_ctrl = getattr(controls, canonical_key)
+                argparse_kwargs.update({
+                    key:val for key,val in canonical_ctrl.__dict__.items() if key in valid_argparse_kwargs })
+                argparse_kwargs['dest'] = canonical_key
+                if is_neg_key(ctrl_key) != is_neg_key(canonical_key):
+                    argparse_kwargs['action'] = 'store_false' if argparse_kwargs['action'] == 'store_true' \
+                                           else 'store_true'
+                for arg in args:
+                    if arg in sys.argv[1:]:
+                        log.warn_legacy_option(cli, arg, source='cli')
+                        break
+        argp.add_argument(*args, **argparse_kwargs)
+    parsed_args, unknown_args = argp.parse_known_args()
+    exempt_flags = [] # exempt valid dash-less args from validation
+    exempt_flags.extend(arg.lstrip('-') for ctrl_key, ctrl in vars(controls).items()
+                        if getattr(ctrl, 'subcmd', False)
+                        for arg in ctrl.args if len(arg) > 2) # skip short flags
+    if unknown_args:
+        unknown_flags = [arg for arg in unknown_args if arg.startswith('-')]
+        if unknown_flags:
+            log.cmd_docs_url_exit(cli, f"{cli.msgs.err_UNRECOGNIZED_ARGS}: {' '.join(unknown_flags)}", cmd='help')
+    for ctrl_key, ctrl in vars(controls).items(): # process subcmds
+        if getattr(ctrl, 'subcmd', False) \
+                and next(arg for arg in ctrl.args if arg.startswith('--'))[2:] in sys.argv[1:]:
+            setattr(parsed_args, ctrl_key, True)
+    applied_args = []
+    for arg in sys.argv[1:]:
+        if not arg.startswith('-') : continue
+        base_arg = arg.split('=')[0]
+        for ctrl_key, ctrl in vars(controls).items():
+            if base_arg in getattr(ctrl, 'args', []):
+                dest = get_canonical_key(ctrl_key) or ctrl_key if ctrl_key.startswith('legacy_') else ctrl_key
+                parsed_val = getattr(parsed_args, dest, None)
+                if parsed_val is not None:
+                    setattr(cli.config, dest, parsed_val)
+                    applied_args.append(arg)
+                break
+    log.debug(f'Args parsed! {log.colors.bg}{len(applied_args)} args applied {applied_args}', cli)
+
+    # Apply parsers/default_vals
+    for ctrl_key, ctrl in vars(controls).items():
+        if not hasattr(cli.config, ctrl_key):
+            setattr(cli.config, ctrl_key, ctrl.default_val if hasattr(ctrl, 'default_val') else None)
+        config_val = getattr(cli.config, ctrl_key)
+        if getattr(ctrl, 'parser', '') == 'csv':
+            setattr(cli.config, ctrl_key, data.csv.parse(config_val))
+    log.debug('All cli.config vals set!', cli)

@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Nem található követelmény" },
+  "log_TYPE": { "message": "Típus" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "a rendelkezésre álló opciókhoz" },
+  "log_VERSION": { "message": "Verzió" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "További segítségért látogass el ide:" },
+  "warn_NOT_FOUND": { "message": "Nem található" },
+  "warn_CLI_OPTION": { "message": "CLI opció" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "helyébe a következő szöveg lépett:" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "és el lesz távolítva" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "már nincs hatása" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Ismeretlen argumentum(ok)" },
+  "help_HELP": { "message": "Súgó képernyő megjelenítése" },
+  "help_VERSION": { "message": "Verzió megjelenítése" },
+  "help_DOCS": { "message": "Dokumentumok URL-címének megnyitása" },
+  "help_DEBUG": { "message": "Hibakeresési naplók megjelenítése" }
+}

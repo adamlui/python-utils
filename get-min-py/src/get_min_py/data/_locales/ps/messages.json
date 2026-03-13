@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "هیڅ اړتیا ونه موندل شوه" },
+  "log_TYPE": { "message": "ولیکئ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "د شته اختیارونو لپاره" },
+  "log_VERSION": { "message": "نسخه" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "د نورې مرستې لپاره، لیدنه وکړئ" },
+  "warn_NOT_FOUND": { "message": "ونه موندل شو" },
+  "warn_CLI_OPTION": { "message": "د CLI اختیار" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "لخوا ځای په ځای شوی" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "او به لرې کړای شي" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "نور هیڅ اغیزه نه لري" },
+  "err_UNRECOGNIZED_ARGS": { "message": "ناپیژندلی ارزښتمنۍ" },
+  "help_HELP": { "message": "د مرستې سکرین ښودل" },
+  "help_VERSION": { "message": "دننه سيوری" },
+  "help_DOCS": { "message": "د اسنادو URL خلاص کړئ" },
+  "help_DEBUG": { "message": "کړاوتمبونې خبرالونه ښودل" }
+}

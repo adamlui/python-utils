@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Shuruud la 'aan la helay" },
+  "log_TYPE": { "message": "Nooca" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "xulashooyinka la heli karo" },
+  "log_VERSION": { "message": "Version" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Si aad u hesho caawimaad dheeraad ah, booqo" },
+  "warn_NOT_FOUND": { "message": "Lama helin" },
+  "warn_CLI_OPTION": { "message": "Xulashada CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "waxaa lagu bedelay" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "waana laga saarayaa." },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "mar dambe ma laha wax saameyn ah." },
+  "err_UNRECOGNIZED_ARGS": { "message": "Dood aan la aqoonsan (yada)" },
+  "help_HELP": { "message": "Muuji shaashadda caawinta" },
+  "help_VERSION": { "message": "Muuji nooca" },
+  "help_DOCS": { "message": "URL docs furan" },
+  "help_DEBUG": { "message": "Muuji diiwaanka debug" }
+}

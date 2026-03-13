@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Δεν βρέθηκε απαίτηση" },
+  "log_TYPE": { "message": "Τύπος" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "για τις διαθέσιμες επιλογές" },
+  "log_VERSION": { "message": "Έκδοση" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Για περισσότερη βοήθεια, επισκεφθείτε τη διεύθυνση" },
+  "warn_NOT_FOUND": { "message": "Δεν βρέθηκε" },
+  "warn_CLI_OPTION": { "message": "Επιλογή CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "έχει αντικατασταθεί από" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "και θα αφαιρεθούν" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "δεν έχει πλέον καμία επίδραση" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Παράμετροι που δεν αναγνωρίζονται" },
+  "help_HELP": { "message": "Εμφάνιση οθόνης βοήθειας" },
+  "help_VERSION": { "message": "Εμφάνιση έκδοσης" },
+  "help_DOCS": { "message": "Άνοιγμα διεύθυνσης URL εγγράφων" },
+  "help_DEBUG": { "message": "Εμφάνιση αρχείων καταγραφής εντοπισμού σφαλμάτων" }
+}

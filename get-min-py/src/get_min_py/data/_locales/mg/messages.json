@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Tsy misy fitakiana" },
+  "log_TYPE": { "message": "Karazana" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ireo safidy misy" },
+  "log_VERSION": { "message": "Kinova" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Raha mila fanampiana bebe kokoa, tsidiho" },
+  "warn_NOT_FOUND": { "message": "Tsy hita" },
+  "warn_CLI_OPTION": { "message": "CLI safidy" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "nosoloina ny" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ary dia hanodidina anao sy Manodidina anao manodidina." },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "tsy misy fiantraikany intsony." },
+  "err_UNRECOGNIZED_ARGS": { "message": "Tondriky tsy fantatra" },
+  "help_HELP": { "message": "Asehoy ny efijerin'ny toro-làlana" },
+  "help_VERSION": { "message": "Asehoy ny kinova" },
+  "help_DOCS": { "message": "Sokafy ny URL DOCS" },
+  "help_DEBUG": { "message": "Asehoy ny raki-tatitry ny debugging" }
+}

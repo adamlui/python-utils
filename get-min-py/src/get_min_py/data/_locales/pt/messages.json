@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Nenhum requisito encontrado" },
+  "log_TYPE": { "message": "Tipo" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "para opções disponíveis" },
+  "log_VERSION": { "message": "Versão" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Para obter mais ajuda, visite" },
+  "warn_NOT_FOUND": { "message": "Não encontrado" },
+  "warn_CLI_OPTION": { "message": "Opção CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "foi substituído por" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "e serão removidos" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "já não tem qualquer efeito" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Argumento(s) não reconhecido (s)" },
+  "help_HELP": { "message": "Mostrar ecrã de ajuda" },
+  "help_VERSION": { "message": "Mostrar versão" },
+  "help_DOCS": { "message": "URL do Open Docs" },
+  "help_DEBUG": { "message": "Mostrar registos de depuração" }
+}

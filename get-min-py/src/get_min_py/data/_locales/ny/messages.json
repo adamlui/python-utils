@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Palibe lamulo linapezeka" },
+  "log_TYPE": { "message": "Mtundu" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "pazosankha zomwe zilipo" },
+  "log_VERSION": { "message": "Lumikizanani nafe" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Kuti muthandizidwe, pitani" },
+  "warn_NOT_FOUND": { "message": "Sanapezeke" },
+  "warn_CLI_OPTION": { "message": "CLI njira" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "wakhala m 'malo ndi" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ndipo adzachotsedwa" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "palibe zotsatira" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Unrecognized kutsutsana(s)" },
+  "help_HELP": { "message": "Onetsani zenera lothandizira" },
+  "help_VERSION": { "message": "Lumikizanani nafe" },
+  "help_DOCS": { "message": "Tsegulani ulalo wa docs" },
+  "help_DEBUG": { "message": "Onetsani zolemba za debug" }
+}

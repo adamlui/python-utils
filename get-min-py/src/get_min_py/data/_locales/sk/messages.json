@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Nenašla sa žiadna požiadavka" },
+  "log_TYPE": { "message": "Typ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "pre dostupné možnosti" },
+  "log_VERSION": { "message": "Verzia" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Ak potrebujete ďalšiu pomoc, navštívte stránku" },
+  "warn_NOT_FOUND": { "message": "Nenájdené" },
+  "warn_CLI_OPTION": { "message": "Možnosť CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "bol nahradený" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "a budú odstránené" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "už nemá žiadny účinok" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Nerozpoznané argumenty" },
+  "help_HELP": { "message": "Zobraziť obrazovku pomocníka" },
+  "help_VERSION": { "message": "Zobraziť verziu" },
+  "help_DOCS": { "message": "Otvoriť adresu URL dokumentov" },
+  "help_DEBUG": { "message": "Zobraziť protokoly ladenia" }
+}

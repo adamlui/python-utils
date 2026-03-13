@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Wala 'y nakit-an nga kinahanglanon" },
+  "log_TYPE": { "message": "Type" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "alang sa magamit nga mga kapilian" },
+  "log_VERSION": { "message": "Bersyon" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Alang sa dugang nga tabang, bisitaha" },
+  "warn_NOT_FOUND": { "message": "Wala nakit-an" },
+  "warn_CLI_OPTION": { "message": "CLI nga kapilian" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "gipulihan na kini" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ug pagakuhaon" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "wala nay epekto" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Unsaturated Argument(s)" },
+  "help_HELP": { "message": "Ipakita ang screen sa tabang" },
+  "help_VERSION": { "message": "Ipakita ang bersyon" },
+  "help_DOCS": { "message": "Bukas nga docs URL" },
+  "help_DEBUG": { "message": "Ipakita ang debug logs" }
+}

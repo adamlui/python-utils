@@ -1,0 +1,17 @@
+{
+  "log_NO_REQ_FOUND": { "message": "Не е намерено изискване" },
+  "log_TYPE": { "message": "Тип" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "за налични опции" },
+  "log_VERSION": { "message": "Версия" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "За повече помощ посетете" },
+  "warn_NOT_FOUND": { "message": "Не е намерено" },
+  "warn_CLI_OPTION": { "message": "Опция CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "е заменен от" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "и ще бъдат премахнати" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "вече няма ефект" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Неразпознати аргументи" },
+  "help_HELP": { "message": "Показване на помощния екран" },
+  "help_VERSION": { "message": "Показване на версията" },
+  "help_DOCS": { "message": "Отваряне на url адреса на документите" },
+  "help_DEBUG": { "message": "Показване на регистрите за отстраняване на грешки" }
+}
