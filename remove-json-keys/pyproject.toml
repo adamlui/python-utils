@@ -38,6 +38,7 @@ classifiers = [
     "Environment :: Console",
     "Intended Audience :: Developers",
     "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
     "Natural Language :: English",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
