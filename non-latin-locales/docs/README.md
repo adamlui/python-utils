@@ -1,5 +1,7 @@
 # > non-latin-locales
 
+<a href="https://pepy.tech/projects/non-latin-locales">
+    <img height=31 src="https://img.shields.io/pepy/dt/non-latin-locales?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
 <a href="https://github.com/adamlui/python-utils/releases/tag/non-latin-locales-1.0.0">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/non-latin-locales/docs/LICENSE.md">
