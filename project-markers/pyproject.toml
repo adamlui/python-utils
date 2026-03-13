@@ -1,21 +1,21 @@
 [build-system]
 requires = [
     "setuptools~=82.0.0",
-    "wheel"
+    "wheel",
 ]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "project-markers"
-version = "1.0.0"
+version = "1.0.1"
 description = "List of files that indicate a project root"
 authors = [
-    { name = "Adam Lui", email = "adam@kudoai.com" }
+    { name = "Adam Lui", email = "adam@kudoai.com" },
 ]
 readme = "docs/README.md"
 license = "MIT"
 license-files = [
-    "docs/LICENSE.md"
+    "docs/LICENSE.md",
 ]
 requires-python = ">=2.6,<4"
 keywords = [
@@ -24,7 +24,7 @@ keywords = [
     "json",
     "markers",
     "project",
-    "root"
+    "root",
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -49,11 +49,11 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Software Development :: Version Control",
-    "Topic :: Utilities"
+    "Topic :: Utilities",
 ]
 
 [project.urls]
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/project-markers-1.0.0"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/project-markers-1.0.1"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/project-markers/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/project-markers/#readme"
@@ -66,11 +66,15 @@ Repository = "https://github.com/adamlui/python-utils"
 dev = [
     "nox>=2026.2.9",
     "tomli~=2.0.0",
-    "tomli-w~=0.1.0"
+    "tomli-w~=0.1.0",
 ]
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = [
+    "src",
+]
 
 [tool.setuptools.package-data]
-"project_markers" = ["project_markers.json"]
+project_markers = [
+    "project_markers.json",
+]
