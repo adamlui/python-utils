@@ -1,7 +1,7 @@
 # > latin-locales
 
-<a href="https://github.com/adamlui/python-utils/releases/tag/latin-locales-1.0.0">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/python-utils/releases/tag/latin-locales-1.0.1">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/latin-locales/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
@@ -11,7 +11,7 @@
 
 > ### _ISO 639-1 (2-letter) codes for Latin locales that don't require advanced Unicode support._
 
-It's just a [JSON file](https://github.com/adamlui/python-utils/blob/latin-locales-1.0.0/latin-locales/src/latin_locales/latin_locales.json), so you can use it in any environment.
+It's just a [JSON file](https://github.com/adamlui/python-utils/blob/latin-locales-1.0.1/latin-locales/src/latin_locales/latin_locales.json), so you can use it in any environment.
 
 ## Installation
 

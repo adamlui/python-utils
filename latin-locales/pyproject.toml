@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "latin-locales"
-version = "1.0.0"
+version = "1.0.1"
 description = "ISO 639-1 (2-letter) codes for Latin locales that don't require advanced Unicode support"
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
@@ -63,7 +63,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/latin-locales-1.0.0"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/latin-locales-1.0.1"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/latin-locales/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme"
@@ -80,7 +80,11 @@ dev = [
 ]
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = [
+    "src",
+]
 
 [tool.setuptools.package-data]
-"latin_locales" = ["latin_locales.json"]
+latin_locales = [
+    "latin_locales.json",
+]
