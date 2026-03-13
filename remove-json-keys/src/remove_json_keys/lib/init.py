@@ -23,7 +23,7 @@ def config_file(cli: sn) -> None: # for --init
         user_resp = input(f'{cli.msgs.prompt_INIT_CONFIG_HERE_ANYWAY}? (y/N): ').strip().lower()
         if not user_resp.startswith('y') : return
         config_dir, in_project_root = Path.cwd(), False
-    target_path = config_dir / f'.{cli.short_name}.config.json5'
+    target_path = config_dir / f'.{ cli.short_name or cli.name }.config.json5'
 
     # Handle existing file
     if target_path.exists():
