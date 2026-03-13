@@ -62,6 +62,8 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
     "Programming Language :: Python :: 3.15",
     "Topic :: File Formats :: JSON",
+    "Topic :: Internet",
+    "Topic :: Internet :: WWW/HTTP",
     "Topic :: Software Development",
     "Topic :: Software Development :: Build Tools",
     "Topic :: Software Development :: Internationalization",
