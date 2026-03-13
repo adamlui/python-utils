@@ -45,13 +45,11 @@ CLI options:
 ```py
 import get_min_py
 
-# Single package
 result = get_min_py('requests')
-print(result) # '3.9'
+print(result) # => '3.9'
 
-# Multiple packages
 results = get_min_py(['numpy', 'pandas', 'flask'])
-print(results) # ['3.11', '3.11', '3.9']
+print(results) # => ['3.11', '3.11', '3.9']
 ```
 
 _Note: Most type checkers will falsely warn_ `get_min_py` _is not a callable module because they are incapable of analyzing runtime behavior (where the module is replaced w/ a function for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
