@@ -19,8 +19,10 @@ colors = sn(
     gry='\x1b[90m'       # gray
 )
 
-def data(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bw}{msg.format(*args, **kwargs)}{colors.nc}')
-def dim(msg: str, *args, **kwargs) -> None : print(f'\n{colors.gry}{msg.format(*args, **kwargs)}{colors.nc}')
+def data(msg: str, *args, no_newline: bool = False, **kwargs) -> None:
+    print(f'\n{colors.bw}{msg.format(*args, **kwargs)}{colors.nc}', end='' if no_newline else None)
+def dim(msg: str, *args, no_newline: bool = False, **kwargs) -> None:
+    print(f'\n{colors.gry}{msg.format(*args, **kwargs)}{colors.nc}', end='' if no_newline else None)
 def error(msg: str, *args, **kwargs) -> None : print(f'\n{colors.br}ERROR: {msg.format(*args, **kwargs)}{colors.nc}')
 def info(msg: str, *args, end: str = '', **kwargs) -> None:
     print(f'\n{colors.by}{msg.format(*args, **kwargs)}{colors.nc}', end=end)

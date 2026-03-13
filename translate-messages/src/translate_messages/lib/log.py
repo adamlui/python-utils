@@ -26,8 +26,10 @@ colors = sn(
     gry='\x1b[90m'       # gray
 )
 
-def data(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bw}{msg.format(*args, **kwargs)}{colors.nc}')
-def dim(msg: str, *args, **kwargs) -> None : print(f'\n{colors.gry}{msg.format(*args, **kwargs)}{colors.nc}')
+def data(msg: str, *args, no_newline: bool = False, **kwargs) -> None:
+    print(f'\n{colors.bw}{msg.format(*args, **kwargs)}{colors.nc}', end='' if no_newline else None)
+def dim(msg: str, *args, no_newline: bool = False, **kwargs) -> None:
+    print(f'\n{colors.gry}{msg.format(*args, **kwargs)}{colors.nc}', end='' if no_newline else None)
 def docs_url(cli: sn) -> None : tip(f'{cli.msgs.tip_FOR_MORE_HELP_VISIT}:\n{cli.urls.docs}')
 def error(msg: str, *args, **kwargs) -> None : print(f'\n{colors.br}ERROR: {msg.format(*args, **kwargs)}{colors.nc}')
 def help_cmd(cli: sn) -> None : info(f"{cli.msgs.log_TYPE} '{cli.cmds[0]} --help' {cli.msgs.log_FOR_AVAIL_OPTIONS}\n")
