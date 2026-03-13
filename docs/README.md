@@ -2,7 +2,7 @@
 
 # 🐍 adamlui / python-utils
 
-<a href="https://pypacktrends.com/?packages=find-project-root&packages=latin-locales&packages=non-latin-locales&packages=project-markers&packages=remove-json-keys&packages=translate-messages&time_range=allTimeCumulative&scheme=dark">
+<a href="https://pypacktrends.com/?packages=find-project-root&packages=get-min-py&packages=latin-locales&packages=non-latin-locales&packages=project-markers&packages=remove-json-keys&packages=translate-messages&time_range=allTimeCumulative&scheme=dark">
     <img height=31 src="https://img.shields.io/badge/Downloads-9.8k-af68ff.svg?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="./LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
