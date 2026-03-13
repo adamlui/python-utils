@@ -1,6 +1,6 @@
 {
   "name": "remove-json-keys",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "description": "Simply remove JSON keys via CLI command.",
   "short_name": "remove-json",
   "cmds": ["remove-json-keys", "remove-json"],
