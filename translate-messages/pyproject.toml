@@ -50,6 +50,7 @@ classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Environment :: Console",
     "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
     "Intended Audience :: Information Technology",
     "Natural Language :: English",
     "Operating System :: OS Independent",
