@@ -1,7 +1,7 @@
 import os, sys
 from pathlib import Path
 from types import SimpleNamespace as sn
-from typing import Optional
+from typing import List, Optional, Union
 if sys.platform == 'win32' : import colorama ; colorama.init() # enable ANSI color support
 
 from . import color as colors, data as datalib, pkg
@@ -59,7 +59,9 @@ def debug(msg: str, cli: Optional[sn] = None, *args, **kwargs) -> None:
 
     print(f'\n{colors.by}DEBUG: {msg}{colors.nc}')
 
-def package_vers(pkgs, results, cli, scheme='rainbow'):
+def package_vers(
+    pkgs: List[str], results: Union[Optional[str], List[Optional[str]]], cli: sn, scheme: str = 'rainbow'
+) -> None:
     results = [results] if not isinstance(results, list) else results
     scheme_colors = getattr(colors.schemes, scheme)
     for idx, (package, version) in enumerate(zip(pkgs, results)):
