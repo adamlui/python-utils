@@ -73,7 +73,6 @@ def trunc(msg: str, end: str = '\n') -> None:
         line if len(line) < terminal_width else line[:terminal_width -4] + '...' for line in msg.splitlines()]
     print('\n'.join(truncated_lines), end=end)
 
-
 def warn_legacy_option(cli: sn, flag: str, source: str) -> None:
     from . import settings
     warned_set = _warned_keys[source]
