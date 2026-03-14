@@ -33,12 +33,12 @@ Example:
 
 CLI options:
 
-| Option                            | Description
-| --------------------------------- | -----------------
-| `-h`, `--help`                    | Show help screen
-| `-v`, `--version`                 | Show version
-| `-V`, `--debug [targetConfigKey]` | Show debug logs
-| `--docs`                          | Open docs URL
+| Option                              | Description
+| ----------------------------------- | -----------------
+| `-h`, `--help`                      | Show help screen
+| `-v`, `--version`                   | Show version
+| `-V`, `--debug [target_config_key]` | Show debug logs
+| `--docs`                            | Open docs URL
 
 ## 🔌 API usage
 
