@@ -44,29 +44,6 @@ def version(cli: sn) -> None:
     print(f'\n{colors.by}{cli.name}\n{colors.bw}{cli.msgs.log_VERSION.lower()}: {cli.version}{colors.nc}')
 def warn(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
-def warn_legacy_option(cli: sn, flag: str, source: str) -> None:
-    from . import settings
-    warned_set = _warned_keys[source]
-    if flag in warned_set : return
-    canonical_key = settings.get_canonical_key(flag)
-    msg = f"{ cli.msgs.warn_CONFIG_FILE_KEY if source == 'config' else cli.msgs.warn_CLI_OPTION } {flag!r}"
-    if canonical_key:
-        canonical_ctrl = getattr(settings.controls, canonical_key, None)
-        if source == 'cli' and canonical_ctrl:
-            flags = [arg for arg in getattr(canonical_ctrl, 'args', []) if arg.startswith('-')]
-            if flag.startswith('-') and len(flag) == 2: # show short flag replacement
-                display_key = min(flags, key=len) if flags else f"--{canonical_key.replace('_', '-')}"
-            else: # show long flag replacement
-                long_flags = [flag for flag in flags if flag.startswith('--')]
-                display_key = long_flags[0] if long_flags else f"--{canonical_key.replace('_', '-')}"
-        else:
-            display_key = canonical_key
-        msg += f' {cli.msgs.warn_HAS_BEEN_REPLACED_BY} {display_key!r}'
-    else:
-        msg += f' {cli.msgs.warn_NO_LONGER_HAS_ANY_EFFECT}'
-    msg += f' {cli.msgs.warn_AND_WILL_BE_REMOVED} @ v{next_maj_ver}'
-    warn(msg) ; warned_set.add(flag)
-
 def cmd_docs_url_exit(cli: sn, msg: str = '', cmd: str = 'help') -> None:
     if msg : error(msg)
     help_cmd(cli)
@@ -99,3 +76,27 @@ def trunc(msg: str, end: str = '\n') -> None:
     truncated_lines = [
         line if len(line) < terminal_width else line[:terminal_width -4] + '...' for line in msg.splitlines()]
     print('\n'.join(truncated_lines), end=end)
+
+
+def warn_legacy_option(cli: sn, flag: str, source: str) -> None:
+    from . import settings
+    warned_set = _warned_keys[source]
+    if flag in warned_set : return
+    canonical_key = settings.get_canonical_key(flag)
+    msg = f"{ cli.msgs.warn_CONFIG_FILE_KEY if source == 'config' else cli.msgs.warn_CLI_OPTION } {flag!r}"
+    if canonical_key:
+        canonical_ctrl = getattr(settings.controls, canonical_key, None)
+        if source == 'cli' and canonical_ctrl:
+            flags = [arg for arg in getattr(canonical_ctrl, 'args', []) if arg.startswith('-')]
+            if flag.startswith('-') and len(flag) == 2: # show short flag replacement
+                display_key = min(flags, key=len) if flags else f"--{canonical_key.replace('_', '-')}"
+            else: # show long flag replacement
+                long_flags = [flag for flag in flags if flag.startswith('--')]
+                display_key = long_flags[0] if long_flags else f"--{canonical_key.replace('_', '-')}"
+        else:
+            display_key = canonical_key
+        msg += f' {cli.msgs.warn_HAS_BEEN_REPLACED_BY} {display_key!r}'
+    else:
+        msg += f' {cli.msgs.warn_NO_LONGER_HAS_ANY_EFFECT}'
+    msg += f' {cli.msgs.warn_AND_WILL_BE_REMOVED} @ v{next_maj_ver}'
+    warn(msg) ; warned_set.add(flag)
