@@ -83,8 +83,8 @@ Repository = "https://github.com/adamlui/python-utils"
 
 [project.scripts]
 translate-messages = "translate_messages.__main__:main"
-translatemessages = "translate_messages.__main__:main"
 translate-msgs = "translate_messages.__main__:main"
+translatemessages = "translate_messages.__main__:main"
 translatemsgs = "translate_messages.__main__:main"
 
 [project.optional-dependencies]
