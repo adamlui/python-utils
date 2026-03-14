@@ -68,12 +68,12 @@ Releases = "https://github.com/adamlui/python-utils/releases"
 Repository = "https://github.com/adamlui/python-utils"
 
 [project.scripts]
-remove-json-keys = "remove_json_keys.__main__:main"
-remove-json-key = "remove_json_keys.__main__:main"
-remove-json = "remove_json_keys.__main__:main"
-removejsonkeys = "remove_json_keys.__main__:main"
-removejsonkey = "remove_json_keys.__main__:main"
-removejson = "remove_json_keys.__main__:main"
+remove-json-keys = "remove_json_keys.cli.__main__:main"
+remove-json-key = "remove_json_keys.cli.__main__:main"
+remove-json = "remove_json_keys.cli.__main__:main"
+removejsonkeys = "remove_json_keys.cli.__main__:main"
+removejsonkey = "remove_json_keys.cli.__main__:main"
+removejson = "remove_json_keys.cli.__main__:main"
 
 [project.optional-dependencies]
 dev = [

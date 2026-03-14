@@ -5,7 +5,7 @@ from . import data, log
 
 def cli() -> sn:
     from . import env, language, settings
-    cli = data.sns.from_dict(data.json.read(Path(__file__).parent.parent / 'data/package_data.json'))
+    cli = data.sns.from_dict(data.json.read(Path(__file__).parent.parent.parent / 'data/package_data.json'))
     cli.msgs = language.get_msgs(cli,
         language.generate_random_lang(excludes=['en']) if env.is_debug_mode() else language.get_sys_lang())
     settings.load(cli)
@@ -70,38 +70,9 @@ def config_filepath(cli: sn) -> None: # for settings.load()
 
     cli.config_filepath = None
 
-def locales_path(cli: sn) -> None:
-    for path in Path.cwd().rglob(cli.config.locales_dir):
+def json_path(cli: sn) -> None:
+    for path in Path.cwd().rglob(cli.config.json_dir):
         if path.is_dir():
-            cli.locales_path = Path(path)
+            cli.json_path = Path(path)
             return
-    cli.locales_path = None
-
-def src_msgs(cli: sn) -> None:
-    import sys
-    cli.msgs_filename = 'messages.json'
-    cli.en_path = cli.locales_path / 'en' / cli.msgs_filename
-    if not cli.en_path.exists():
-        log.error(f'{cli.msgs.err_EN_LOC_NOT_FOUND_AT} {cli.en_path}.')
-        log.tip(f'{cli.msgs.tip_MAKE_SURE} {cli.en_path} {cli.msgs.tip_EXISTS}!')
-        sys.exit(1)
-    try:
-        cli.en_msgs = data.json.read(cli.en_path)
-    except Exception as err:
-        log.error(f'{cli.msgs.err_PARSE_FAILED} {cli.en_path}: {err}')
-        log.tip(f'{cli.msgs.tip_MAKE_SURE} {cli.msgs.tip_IT_HAS_VALID_JSON}')
-        sys.exit(1)
-
-def target_langs(cli: sn) -> None:
-    cli.config.target_langs = list(set(cli.config.target_langs or [])) # remove dupes
-    if not cli.config.target_langs: # init to stable ones
-        cli.config.target_langs = cli.stable_locales
-        if not cli.config.only_stable: # merge discovered locales
-            for lang_path in cli.locales_path.rglob(f'*/{cli.msgs_filename}'):
-                discovered_lang = lang_path.parent.name.replace('_', '-')
-                if discovered_lang not in cli.config.target_langs:
-                    cli.config.target_langs.append(discovered_lang)
-    cli.config.target_langs.sort()
-    if cli.config.exclude_langs:
-       cli.config.target_langs = [lang for lang in cli.config.target_langs if lang not in cli.config.exclude_langs]
-    log.debug(f"cli.config.target_langs init'd!\n{log.colors.gry}{cli.config.target_langs}")
+    cli.json_path = None

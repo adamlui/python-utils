@@ -9,7 +9,7 @@ from . import color as colors, data as datalib, pkg
 try : terminal_width = os.get_terminal_size()[0]
 except OSError : terminal_width = 80
 
-current_ver = datalib.json.read(Path(__file__).parent.parent / 'data/package_data.json')['version']
+current_ver = datalib.json.read(Path(__file__).parent.parent.parent / 'data/package_data.json')['version']
 next_maj_ver = pkg.get_next_maj_ver(current_ver)
 _warned_keys = { 'cli': set(), 'config': set() }
 

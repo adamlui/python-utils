@@ -3,7 +3,7 @@ from pathlib import Path
 from types import SimpleNamespace as sn
 
 from lib import toml
-from translate_messages.lib import data, log
+from translate_messages.cli.lib import data, log
 
 paths = sn(root=Path(__file__).parent.parent)
 paths.pyproject = paths.root / 'pyproject.toml'
