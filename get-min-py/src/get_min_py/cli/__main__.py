@@ -20,12 +20,6 @@ def main():
         pkgs.extend([pkg.strip() for pkg in arg.split(',') if pkg.strip()])
     if pkgs:
         results = get_min_py(pkgs)
-        results = [results] if not isinstance(results, list) else results
-        for pkg, version in zip(pkgs, results):
-            if version:
-                log.info(f'{log.colors.bw}{pkg}:{log.colors.nc} Python {version}')
-            else:
-                log.dim(f'{pkg}: {cli.msgs.log_NO_REQ_FOUND}', no_newline=True)
-        log.line_break()
+        log.package_vers(pkgs, results, cli)
 
 if __name__ == '__main__' : main()

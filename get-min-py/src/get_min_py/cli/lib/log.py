@@ -72,6 +72,15 @@ def debug(msg: str, cli: Optional[sn] = None, *args, **kwargs) -> None:
 
     print(f'\n{colors.by}DEBUG: {msg}{colors.nc}')
 
+def package_vers(pkgs, results, cli):
+    results = [results] if not isinstance(results, list) else results
+    for package, version in zip(pkgs, results):
+        if version:
+            info(f'{colors.bw}{package}:{colors.nc} Python {version}')
+        else:
+            dim(f'{package}: {cli.msgs.log_NO_REQ_FOUND}', no_newline=True)
+    line_break()
+
 def trunc(msg: str, end: str = '\n') -> None:
     truncated_lines = [
         line if len(line) < terminal_width else line[:terminal_width -4] + '...' for line in msg.splitlines()]
