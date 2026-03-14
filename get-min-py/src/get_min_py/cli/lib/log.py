@@ -4,7 +4,7 @@ from types import SimpleNamespace as sn
 from typing import Optional
 if sys.platform == 'win32' : import colorama ; colorama.init() # enable ANSI color support
 
-from . import data as datalib, pkg
+from . import color as colors, data as datalib, pkg
 
 try : terminal_width = os.get_terminal_size()[0]
 except OSError : terminal_width = 80
@@ -12,19 +12,6 @@ except OSError : terminal_width = 80
 current_ver = datalib.json.read(Path(__file__).parent.parent.parent / 'data/package_data.json')['version']
 next_maj_ver = pkg.get_next_maj_ver(current_ver)
 _warned_keys = { 'cli': set(), 'config': set() }
-
-colors = sn(
-    nc='\x1b[0m',        # no color
-    br='\x1b[1;91m',     # bright red
-    by='\x1b[1;33m',     # bright yellow
-    bo='\x1b[38;5;214m', # bright orange
-    bg='\x1b[1;92m',     # bright green
-    bc='\x1b[1;96m',     # bright cyan
-    bw='\x1b[1;97m',     # bright white
-    dg='\x1b[32m',       # dark green
-    dy='\x1b[33m',       # dark yellow
-    gry='\x1b[90m'       # gray
-)
 
 def data(msg: str, *args, no_newline: bool = False, **kwargs) -> None:
     print(f'\n{colors.bw}{msg.format(*args, **kwargs)}{colors.nc}', end='' if no_newline else None)
