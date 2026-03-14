@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Шаардлага олдсонгүй" },
+  "log_NO_PY_REQ_FOUND": { "message": "Ямар ч Python шаардлага олдсонгүй" },
   "log_TYPE": { "message": "Төрөл" },
   "log_FOR_AVAIL_OPTIONS": { "message": "боломжтой сонголтууд" },
   "log_VERSION": { "message": "Хувилбар" },

@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Reikalavimų nerasta" },
+  "log_NO_PY_REQ_FOUND": { "message": "Nerasta Python reikalavimo" },
   "log_TYPE": { "message": "Tipas" },
   "log_FOR_AVAIL_OPTIONS": { "message": "galimoms parinktims" },
   "log_VERSION": { "message": "Versija" },

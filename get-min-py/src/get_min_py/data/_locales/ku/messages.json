@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Pêdiviyek nehat dîtin" },
+  "log_NO_PY_REQ_FOUND": { "message": "Pêdiviyeke Pythonê nehat dîtin" },
   "log_TYPE": { "message": "Awa" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ji bo vebijarkên berdest" },
   "log_VERSION": { "message": "Awa" },

@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Nebyl nalezen žádný požadavek" },
+  "log_NO_PY_REQ_FOUND": { "message": "Nebyl nalezen žádný požadavek na Python" },
   "log_TYPE": { "message": "Typ" },
   "log_FOR_AVAIL_OPTIONS": { "message": "pro dostupné možnosti" },
   "log_VERSION": { "message": "Verze" },

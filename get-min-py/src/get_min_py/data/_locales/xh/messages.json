@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Akukho mfuneko ifunyenweyo" },
+  "log_NO_PY_REQ_FOUND": { "message": "Akukho mfuneko yePython ifunyenweyo" },
   "log_TYPE": { "message": "Uhlobo" },
   "log_FOR_AVAIL_OPTIONS": { "message": "kwizinto onokukhetha kuzo ezifumanekayo" },
   "log_VERSION": { "message": "Uhlobo" },

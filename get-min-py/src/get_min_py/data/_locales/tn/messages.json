@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Ga go a bonwa sepe se se batlegang" },
+  "log_NO_PY_REQ_FOUND": { "message": "Ga go a bonwa sepe se se batlegang sa Python" },
   "log_TYPE": { "message": "Mofuta" },
   "log_FOR_AVAIL_OPTIONS": { "message": "mo dilong tse o ka tlhophang mo go tsone" },
   "log_VERSION": { "message": "Mofuta" },

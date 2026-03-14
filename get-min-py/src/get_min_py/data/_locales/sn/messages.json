@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Hapana chinodiwa chakawanikwa" },
+  "log_NO_PY_REQ_FOUND": { "message": "Hapana chinodiwa chePython chakawanikwa" },
   "log_TYPE": { "message": "Rudzi" },
   "log_FOR_AVAIL_OPTIONS": { "message": "nokuti iripo zvaungasarudza" },
   "log_VERSION": { "message": "Shanduro" },

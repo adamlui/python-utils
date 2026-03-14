@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Tələb tapılmadı" },
+  "log_NO_PY_REQ_FOUND": { "message": "Heç bir Python tələbi tapılmadı" },
   "log_TYPE": { "message": "Növ" },
   "log_FOR_AVAIL_OPTIONS": { "message": "mövcud seçimlər üçün" },
   "log_VERSION": { "message": "Versiya" },

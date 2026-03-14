@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Engin krafa fannst" },
+  "log_NO_PY_REQ_FOUND": { "message": "Engin Python krafa fannst" },
   "log_TYPE": { "message": "Tegund" },
   "log_FOR_AVAIL_OPTIONS": { "message": "fyrir tiltæka valkosti" },
   "log_VERSION": { "message": "Útgáfa" },

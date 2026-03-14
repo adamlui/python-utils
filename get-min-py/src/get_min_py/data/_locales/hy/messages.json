@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Պահանջ չի գտնվել" },
+  "log_NO_PY_REQ_FOUND": { "message": "Python - ի պահանջ չի գտնվել" },
   "log_TYPE": { "message": "Տեսակ" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ազատ տարբերակների համար" },
   "log_VERSION": { "message": "Տարբերակ" },

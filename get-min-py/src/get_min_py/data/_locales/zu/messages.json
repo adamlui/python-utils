@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Ayikho imfuneko etholakele" },
+  "log_NO_PY_REQ_FOUND": { "message": "Ayikho imfuneko ye-Python etholakele" },
   "log_TYPE": { "message": "Uhlobo" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ongakhetha kukho okutholakalayo" },
   "log_VERSION": { "message": "Uhlelo" },

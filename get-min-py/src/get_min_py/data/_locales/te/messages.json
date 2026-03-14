@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "ఎటువంటి ఆవశ్యకత కనుగొనబడలేదు" },
+  "log_NO_PY_REQ_FOUND": { "message": "పైథాన్ అవసరం ఏదీ కనుగొనబడలేదు" },
   "log_TYPE": { "message": "రకం" },
   "log_FOR_AVAIL_OPTIONS": { "message": "అందుబాటులో ఉన్న ఎంపికల కోసం" },
   "log_VERSION": { "message": "వెర్షన్" },

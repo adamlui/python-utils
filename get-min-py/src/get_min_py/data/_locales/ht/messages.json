@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Pa gen egzijans yo te jwenn" },
+  "log_NO_PY_REQ_FOUND": { "message": "Pa gen egzijans Python yo te jwenn" },
   "log_TYPE": { "message": "Kalite" },
   "log_FOR_AVAIL_OPTIONS": { "message": "pou opsyon ki disponib/pour les options dispon" },
   "log_VERSION": { "message": "Vèsyon" },

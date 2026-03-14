@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Nenašla sa žiadna požiadavka" },
+  "log_NO_PY_REQ_FOUND": { "message": "Nebola nájdená žiadna požiadavka na Python" },
   "log_TYPE": { "message": "Typ" },
   "log_FOR_AVAIL_OPTIONS": { "message": "pre dostupné možnosti" },
   "log_VERSION": { "message": "Verzia" },

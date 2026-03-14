@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Palibe lamulo linapezeka" },
+  "log_NO_PY_REQ_FOUND": { "message": "Palibe chofunikira cha Python chomwe chinapezeka" },
   "log_TYPE": { "message": "Mtundu" },
   "log_FOR_AVAIL_OPTIONS": { "message": "pazosankha zomwe zilipo" },
   "log_VERSION": { "message": "Lumikizanani nafe" },

@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "לא נמצאה דרישה" },
+  "log_NO_PY_REQ_FOUND": { "message": "לא נמצאה דרישת Python" },
   "log_TYPE": { "message": "סוג" },
   "log_FOR_AVAIL_OPTIONS": { "message": "לאפשרויות זמינות" },
   "log_VERSION": { "message": "גרסה" },

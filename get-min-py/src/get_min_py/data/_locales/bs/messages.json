@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Nije pronađen nijedan uslov" },
+  "log_NO_PY_REQ_FOUND": { "message": "Nije pronađen nijedan zahtjev za Python" },
   "log_TYPE": { "message": "Vrsta" },
   "log_FOR_AVAIL_OPTIONS": { "message": "za dostupne opcije" },
   "log_VERSION": { "message": "Verzija" },

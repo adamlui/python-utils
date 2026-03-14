@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "ምንም መስፈርት አልተገኘም" },
+  "log_NO_PY_REQ_FOUND": { "message": "ምንም Python መስፈርት አልተገኘም" },
   "log_TYPE": { "message": "አይነት" },
   "log_FOR_AVAIL_OPTIONS": { "message": "የሚገኙ አማራጮችን ለማግኘት" },
   "log_VERSION": { "message": "ስሪት" },

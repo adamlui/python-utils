@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Cha deach riatanas sam bith a lorg" },
+  "log_NO_PY_REQ_FOUND": { "message": "Cha deach riatanas python a lorg" },
   "log_TYPE": { "message": "Seòrsa" },
   "log_FOR_AVAIL_OPTIONS": { "message": "airson na roghainnean a tha rim faotainn" },
   "log_VERSION": { "message": "Tionndadh" },

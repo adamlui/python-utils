@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "අවශ් ‍ යතාවයක් හමු නොවීය" },
+  "log_NO_PY_REQ_FOUND": { "message": "Python අවශ් ‍ යතාවයක් හමු නොවීය" },
   "log_TYPE": { "message": "වර්ගය" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ලබා ගත හැකි විකල්ප සඳහා" },
   "log_VERSION": { "message": "අනුවාදය" },

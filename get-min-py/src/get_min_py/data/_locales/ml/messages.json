@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "ആവശ്യകതകളൊന്നും കണ്ടെത്തിയില്ല" },
+  "log_NO_PY_REQ_FOUND": { "message": "പൈത്തൺ ആവശ്യകതകളൊന്നും കണ്ടെത്തിയില്ല" },
   "log_TYPE": { "message": "തരം" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ലഭ്യമായ ഓപ്ഷനുകൾക്കായി" },
   "log_VERSION": { "message": "പതിപ്പ്" },

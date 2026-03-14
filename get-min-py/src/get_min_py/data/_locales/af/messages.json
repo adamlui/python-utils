@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Geen vereiste gevind nie" },
+  "log_NO_PY_REQ_FOUND": { "message": "Geen Python-vereiste gevind nie" },
   "log_TYPE": { "message": "Tipe" },
   "log_FOR_AVAIL_OPTIONS": { "message": "vir beskikbare opsies" },
   "log_VERSION": { "message": "Weergawe" },

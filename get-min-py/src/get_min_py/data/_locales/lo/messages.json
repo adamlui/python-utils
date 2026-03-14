@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "ບໍ່ມີຜົນໄດ້ຮັບທີ່ພົບເຫັນ" },
+  "log_NO_PY_REQ_FOUND": { "message": "ບໍ່ພົບຂໍ້ກຳນົດ Python" },
   "log_TYPE": { "message": "ປະເພດ" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ສໍາ ລັບຕົວເລືອກທີ່ມີຢູ່" },
   "log_VERSION": { "message": "ເວີຊັນ" },

@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Zahteve ni mogoče najti" },
+  "log_NO_PY_REQ_FOUND": { "message": "Zahteve za Python ni mogoče najti" },
   "log_TYPE": { "message": "Vrsta" },
   "log_FOR_AVAIL_OPTIONS": { "message": "za razpoložljive možnosti" },
   "log_VERSION": { "message": "Različica" },

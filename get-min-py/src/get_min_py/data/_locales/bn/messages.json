@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "কোনও আবশ্যকতা পাওয়া যায়নি" },
+  "log_NO_PY_REQ_FOUND": { "message": "পাইথনের কোনও প্রয়োজনীয়তা পাওয়া যায়নি" },
   "log_TYPE": { "message": "ধরন" },
   "log_FOR_AVAIL_OPTIONS": { "message": "উপলভ্য বিকল্পগুলির জন্য" },
   "log_VERSION": { "message": "সংস্করণ" },

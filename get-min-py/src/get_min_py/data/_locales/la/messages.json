@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Nulla necessitate est" },
+  "log_NO_PY_REQ_FOUND": { "message": "Nulla phyton est." },
   "log_TYPE": { "message": "Genus" },
   "log_FOR_AVAIL_OPTIONS": { "message": "aliquam disponibus" },
   "log_VERSION": { "message": "Version" },

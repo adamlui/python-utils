@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "រកមិនឃើញតម្រូវការ" },
+  "log_NO_PY_REQ_FOUND": { "message": "រក មិន ឃើញ តម្រូវការ Python" },
   "log_TYPE": { "message": "ប្រភេទ" },
   "log_FOR_AVAIL_OPTIONS": { "message": "សម្រាប់ជម្រើសដែលមាន" },
   "log_VERSION": { "message": "កំណែ" },

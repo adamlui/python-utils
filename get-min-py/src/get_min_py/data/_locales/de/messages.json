@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Keine Anforderung gefunden" },
+  "log_NO_PY_REQ_FOUND": { "message": "Keine Python-Anforderung gefunden" },
   "log_TYPE": { "message": "Typ" },
   "log_FOR_AVAIL_OPTIONS": { "message": "für verfügbare Optionen" },
   "log_VERSION": { "message": "Version" },

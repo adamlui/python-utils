@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "要件が見つかりません" },
+  "log_NO_PY_REQ_FOUND": { "message": "Pythonの要件が見つかりません" },
   "log_TYPE": { "message": "型" },
   "log_FOR_AVAIL_OPTIONS": { "message": "利用可能なオプションについて" },
   "log_VERSION": { "message": "バージョン" },

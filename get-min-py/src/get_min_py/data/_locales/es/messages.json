@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "No se ha encontrado ningún requisito" },
+  "log_NO_PY_REQ_FOUND": { "message": "No se ha encontrado ningún requisito de Python" },
   "log_TYPE": { "message": "Tipo" },
   "log_FOR_AVAIL_OPTIONS": { "message": "para ver las opciones disponibles" },
   "log_VERSION": { "message": "Versión" },

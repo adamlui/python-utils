@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Không tìm thấy yêu cầu" },
+  "log_NO_PY_REQ_FOUND": { "message": "Không tìm thấy yêu cầu Python" },
   "log_TYPE": { "message": "Loại" },
   "log_FOR_AVAIL_OPTIONS": { "message": "cho các tùy chọn có sẵn" },
   "log_VERSION": { "message": "Phiên bản" },

@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Tidak ditemukan persyaratan" },
+  "log_NO_PY_REQ_FOUND": { "message": "Tidak ditemukan persyaratan Python" },
   "log_TYPE": { "message": "Tipe" },
   "log_FOR_AVAIL_OPTIONS": { "message": "untuk opsi yang tersedia" },
   "log_VERSION": { "message": "Versi" },

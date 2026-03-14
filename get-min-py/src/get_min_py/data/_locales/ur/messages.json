@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "کوئی تقاضہ نہیں ملا" },
+  "log_NO_PY_REQ_FOUND": { "message": "کوئی ازگر کا تقاضہ نہیں ملا" },
   "log_TYPE": { "message": "قسم" },
   "log_FOR_AVAIL_OPTIONS": { "message": "دستیاب آپشنز کے لیے" },
   "log_VERSION": { "message": "ورژن" },

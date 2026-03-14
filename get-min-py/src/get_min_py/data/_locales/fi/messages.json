@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Vaatimusta ei löytynyt" },
+  "log_NO_PY_REQ_FOUND": { "message": "Python-vaatimusta ei löytynyt" },
   "log_TYPE": { "message": "Tyyppi" },
   "log_FOR_AVAIL_OPTIONS": { "message": "saatavilla olevista vaihtoehdoista" },
   "log_VERSION": { "message": "Versio" },

@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "કોઈ આવશ્યકતા મળી નથી" },
+  "log_NO_PY_REQ_FOUND": { "message": "કોઈ પાયથોનની આવશ્યકતા મળી નથી" },
   "log_TYPE": { "message": "પ્રકાર" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ઉપલબ્ધ વિકલ્પો માટે" },
   "log_VERSION": { "message": "સંસ્કરણ" },

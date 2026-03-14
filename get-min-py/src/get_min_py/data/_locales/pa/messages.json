@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "ਕੋਈ ਲੋੜ ਨਹੀਂ ਲੱਭੀ" },
+  "log_NO_PY_REQ_FOUND": { "message": "ਕੋਈ ਪਾਈਥਨ ਲੋੜ ਨਹੀਂ ਲੱਭੀ" },
   "log_TYPE": { "message": "ਕਿਸਮ" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ਉਪਲੱਬਧ ਵਿਕਲਪਾਂ ਲਈ" },
   "log_VERSION": { "message": "ਵਰਜਨ" },

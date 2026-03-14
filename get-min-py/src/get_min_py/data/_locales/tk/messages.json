@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Hiç hili netije tapylmady" },
+  "log_NO_PY_REQ_FOUND": { "message": "Désolé Hiç hili netije tapylmady" },
   "log_TYPE": { "message": "Tip" },
   "log_FOR_AVAIL_OPTIONS": { "message": "mümkin saýlamalar" },
   "log_VERSION": { "message": "VERSION" },

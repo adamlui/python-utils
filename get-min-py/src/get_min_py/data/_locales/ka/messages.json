@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Მოთხოვნა ვერ მოიძებნა" },
+  "log_NO_PY_REQ_FOUND": { "message": "Პითონის მოთხოვნა ვერ მოიძებნა" },
   "log_TYPE": { "message": "Ტიპი" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ხელმისაწვდომი ვარიანტებისთვის" },
   "log_VERSION": { "message": "Ვერსია" },

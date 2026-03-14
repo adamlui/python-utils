@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Nem található követelmény" },
+  "log_NO_PY_REQ_FOUND": { "message": "Nem található Python-követelmény" },
   "log_TYPE": { "message": "Típus" },
   "log_FOR_AVAIL_OPTIONS": { "message": "a rendelkezésre álló opciókhoz" },
   "log_VERSION": { "message": "Verzió" },

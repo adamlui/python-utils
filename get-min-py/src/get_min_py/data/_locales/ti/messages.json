@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "ዝኾነ መስርሕ ኣይተረኽበን ።" },
+  "log_NO_PY_REQ_FOUND": { "message": "ናይ ፒተን መስርሕ ኣይተረኽበን ።" },
   "log_TYPE": { "message": "ዓይነት" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ንዝርከቡ ኣማራጺታት" },
   "log_VERSION": { "message": "ቅጅል" },

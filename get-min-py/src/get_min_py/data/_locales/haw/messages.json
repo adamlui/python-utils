@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "ʻAʻohe koi i loaʻa" },
+  "log_NO_PY_REQ_FOUND": { "message": "ʻAʻohe koi Python i loaʻa" },
   "log_TYPE": { "message": "ʻAno" },
   "log_FOR_AVAIL_OPTIONS": { "message": "no nā koho i loaʻa" },
   "log_VERSION": { "message": "Mana" },

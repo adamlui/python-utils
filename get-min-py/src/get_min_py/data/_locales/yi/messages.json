@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "קיין פארלאנג נישט געפונען" },
+  "log_NO_PY_REQ_FOUND": { "message": "קיין פּיטהאָן רעקווייערמענט נישט געפונען" },
   "log_TYPE": { "message": "טיפּ" },
   "log_FOR_AVAIL_OPTIONS": { "message": "פֿאַר פֿאַראַן אָפּציעס" },
   "log_VERSION": { "message": "ווערסיע" },

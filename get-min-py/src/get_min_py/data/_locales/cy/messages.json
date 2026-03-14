@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Ni chanfuwyd unrhyw ofyniad" },
+  "log_NO_PY_REQ_FOUND": { "message": "Ni chanfuwyd gofyniad Python" },
   "log_TYPE": { "message": "Math" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ar gyfer yr opsiynau sydd ar gael" },
   "log_VERSION": { "message": "Fersiwn" },

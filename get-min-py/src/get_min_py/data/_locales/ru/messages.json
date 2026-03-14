@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Требование не найдено" },
+  "log_NO_PY_REQ_FOUND": { "message": "Требование Python не найдено" },
   "log_TYPE": { "message": "Тип" },
   "log_FOR_AVAIL_OPTIONS": { "message": "для доступных опций" },
   "log_VERSION": { "message": "Версия" },

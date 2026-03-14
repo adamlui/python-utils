@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Nu s-a găsit nicio cerință" },
+  "log_NO_PY_REQ_FOUND": { "message": "Nu a fost găsită nicio cerință Python" },
   "log_TYPE": { "message": "Tip" },
   "log_FOR_AVAIL_OPTIONS": { "message": "pentru opțiunile disponibile" },
   "log_VERSION": { "message": "Versiune" },

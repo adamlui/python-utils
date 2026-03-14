@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "ไม่พบข้อกำหนด" },
+  "log_NO_PY_REQ_FOUND": { "message": "ไม่พบข้อกำหนด Python" },
   "log_TYPE": { "message": "ประเภท" },
   "log_FOR_AVAIL_OPTIONS": { "message": "สำหรับตัวเลือกที่มีอยู่" },
   "log_VERSION": { "message": "เวอร์ชัน" },

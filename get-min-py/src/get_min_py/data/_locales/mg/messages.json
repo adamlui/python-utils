@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Tsy misy fitakiana" },
+  "log_NO_PY_REQ_FOUND": { "message": "Tsy misy fepetra Python hita" },
   "log_TYPE": { "message": "Karazana" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ireo safidy misy" },
   "log_VERSION": { "message": "Kinova" },

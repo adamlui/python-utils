@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "未找到要求" },
+  "log_NO_PY_REQ_FOUND": { "message": "未找到Python要求" },
   "log_TYPE": { "message": "類型" },
   "log_FOR_AVAIL_OPTIONS": { "message": "適用於可用選項" },
   "log_VERSION": { "message": "版本" },

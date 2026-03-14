@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Eingin krav funnin" },
+  "log_NO_PY_REQ_FOUND": { "message": "Eingin Python krav funnin" },
   "log_TYPE": { "message": "Slag" },
   "log_FOR_AVAIL_OPTIONS": { "message": "til ber at velja" },
   "log_VERSION": { "message": "Versión" },

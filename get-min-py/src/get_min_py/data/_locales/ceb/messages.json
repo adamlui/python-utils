@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Wala 'y nakit-an nga kinahanglanon" },
+  "log_NO_PY_REQ_FOUND": { "message": "Wala 'y nakit-an nga kinahanglanon sa Python" },
   "log_TYPE": { "message": "Type" },
   "log_FOR_AVAIL_OPTIONS": { "message": "alang sa magamit nga mga kapilian" },
   "log_VERSION": { "message": "Bersyon" },

@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "कुनै आवश्यकता फेला परेन" },
+  "log_NO_PY_REQ_FOUND": { "message": "कुनै पाइथन आवश्यकता फेला परेन" },
   "log_TYPE": { "message": "प्रकार" },
   "log_FOR_AVAIL_OPTIONS": { "message": "उपलब्ध विकल्पहरूको लागि" },
   "log_VERSION": { "message": "संस्करण" },

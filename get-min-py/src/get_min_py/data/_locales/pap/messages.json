@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "No Criteria Found" },
+  "log_NO_PY_REQ_FOUND": { "message": "No Python Criteria Found" },
   "log_TYPE": { "message": "Tipo" },
   "log_FOR_AVAIL_OPTIONS": { "message": "opcion Disponible" },
   "log_VERSION": { "message": "Vershon" },

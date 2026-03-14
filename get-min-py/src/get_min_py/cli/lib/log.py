@@ -78,7 +78,7 @@ def package_vers(pkgs, results, cli):
         if version:
             info(f'{colors.bw}{package}:{colors.nc} Python {version}')
         else:
-            dim(f'{package}: {cli.msgs.log_NO_REQ_FOUND}', no_newline=True)
+            dim(f'{package}: {cli.msgs.log_NO_PY_REQ_FOUND}', no_newline=True)
     line_break()
 
 def trunc(msg: str, end: str = '\n') -> None:

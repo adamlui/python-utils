@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Δεν βρέθηκε απαίτηση" },
+  "log_NO_PY_REQ_FOUND": { "message": "Δεν βρέθηκε απαίτηση Python" },
   "log_TYPE": { "message": "Τύπος" },
   "log_FOR_AVAIL_OPTIONS": { "message": "για τις διαθέσιμες επιλογές" },
   "log_VERSION": { "message": "Έκδοση" },

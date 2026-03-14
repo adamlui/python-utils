@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Ingen krav funnet" },
+  "log_NO_PY_REQ_FOUND": { "message": "Ingen Python-krav funnet" },
   "log_TYPE": { "message": "Type" },
   "log_FOR_AVAIL_OPTIONS": { "message": "for tilgjengelige alternativer" },
   "log_VERSION": { "message": "Versjon" },

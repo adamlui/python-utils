@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Ez da eskakizunik aurkitu" },
+  "log_NO_PY_REQ_FOUND": { "message": "Ez da Python eskakizunik aurkitu" },
   "log_TYPE": { "message": "Mota" },
   "log_FOR_AVAIL_OPTIONS": { "message": "eskuragarri dauden aukeretarako" },
   "log_VERSION": { "message": "Bertsioa" },

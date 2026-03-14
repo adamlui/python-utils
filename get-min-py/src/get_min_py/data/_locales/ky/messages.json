@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Эч кандай талап табылган жок" },
+  "log_NO_PY_REQ_FOUND": { "message": "Python талаптары табылган жок" },
   "log_TYPE": { "message": "Түрү" },
   "log_FOR_AVAIL_OPTIONS": { "message": "жеткиликтүү параметрлер үчүн" },
   "log_VERSION": { "message": "Версиясы" },

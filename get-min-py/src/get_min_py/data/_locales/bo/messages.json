@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "གྲུབ་འབྲས་གང་ཡང་མ་རྙེད་པ །" },
+  "log_NO_PY_REQ_FOUND": { "message": "Python དགོས་མཁོ་གང་ཡང་མ་རྙེད་པ །" },
   "log_TYPE": { "message": "རིགས" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ཕྱོགས་སྟོན་་་་གཙོ་ངོས ། \"རྩོམ་རིག\"" },
   "log_VERSION": { "message": "བཟོ་བཅོས །" },

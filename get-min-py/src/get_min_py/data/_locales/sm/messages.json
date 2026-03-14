@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Leai se manaʻoga na maua" },
+  "log_NO_PY_REQ_FOUND": { "message": "Leai se Python manaʻoga maua" },
   "log_TYPE": { "message": "Ituaiga" },
   "log_FOR_AVAIL_OPTIONS": { "message": "mo filifiliga avanoa" },
   "log_VERSION": { "message": "Faaliliuga" },

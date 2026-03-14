@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "هیڅ اړتیا ونه موندل شوه" },
+  "log_NO_PY_REQ_FOUND": { "message": "د پېتان هیڅ اړتیا ونه موندل شوه" },
   "log_TYPE": { "message": "ولیکئ" },
   "log_FOR_AVAIL_OPTIONS": { "message": "د شته اختیارونو لپاره" },
   "log_VERSION": { "message": "نسخه" },

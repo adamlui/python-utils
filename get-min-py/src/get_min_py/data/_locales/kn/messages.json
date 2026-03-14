@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "ಯಾವುದೇ ಅವಶ್ಯಕತೆ ಕಂಡುಬಂದಿಲ್ಲ" },
+  "log_NO_PY_REQ_FOUND": { "message": "ಯಾವುದೇ ಪೈಥಾನ್ ಅವಶ್ಯಕತೆ ಕಂಡುಬಂದಿಲ್ಲ" },
   "log_TYPE": { "message": "ಪ್ರಕಾರ" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ಲಭ್ಯವಿರುವ ಆಯ್ಕೆಗಳಿಗಾಗಿ" },
   "log_VERSION": { "message": "ಆವೃತ್ತಿ" },

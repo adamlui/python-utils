@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "هیچ الزامی یافت نشد" },
+  "log_NO_PY_REQ_FOUND": { "message": "هیچ پیش‌نیاز پایتونی یافت نشد" },
   "log_TYPE": { "message": "نوع" },
   "log_FOR_AVAIL_OPTIONS": { "message": "برای گزینه‌های موجود" },
   "log_VERSION": { "message": "نسخه" },

@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "எந்தத் தேவையும் இல்லை" },
+  "log_NO_PY_REQ_FOUND": { "message": "பைதான் தேவை எதுவும் இல்லை" },
   "log_TYPE": { "message": "வகை" },
   "log_FOR_AVAIL_OPTIONS": { "message": "கிடைக்கக்கூடிய விருப்பங்களுக்கு" },
   "log_VERSION": { "message": "பதிப்பு" },

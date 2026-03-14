@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Keng Ufuerderung fonnt" },
+  "log_NO_PY_REQ_FOUND": { "message": "Keng Python Ufuerderung fonnt" },
   "log_TYPE": { "message": "Typ" },
   "log_FOR_AVAIL_OPTIONS": { "message": "fir available options" },
   "log_VERSION": { "message": "Versioun" },

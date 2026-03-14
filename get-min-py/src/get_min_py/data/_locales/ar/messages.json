@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "لم يتم العثور على متطلبات" },
+  "log_NO_PY_REQ_FOUND": { "message": "لم يتم العثور على متطلبات Python" },
   "log_TYPE": { "message": "النوع" },
   "log_FOR_AVAIL_OPTIONS": { "message": "للخيارات المتاحة" },
   "log_VERSION": { "message": "الإصدار" },

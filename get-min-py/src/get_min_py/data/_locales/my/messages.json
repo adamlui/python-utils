@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "လိုအပ်ချက် မတွေ့ပါ" },
+  "log_NO_PY_REQ_FOUND": { "message": "Python လိုအပ်ချက် မတွေ့ပါ" },
   "log_TYPE": { "message": "အမျိုးအစား" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ရရှိနိုင်သော ရွေးချယ်စရာများအတွက်" },
   "log_VERSION": { "message": "ဗားရှင်း" },

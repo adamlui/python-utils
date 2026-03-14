@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Mbeni ye so a wara ni pëpe" },
+  "log_NO_PY_REQ_FOUND": { "message": "Désolé Aucun résultat trouvé" },
   "log_TYPE": { "message": "Bango Bango Type" },
   "log_FOR_AVAIL_OPTIONS": { "message": "akpengba ye so mo lingbi ti sara" },
   "log_VERSION": { "message": "Yângâ tî kodoro" },

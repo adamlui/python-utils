@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "요구 사항이 없습니다" },
+  "log_NO_PY_REQ_FOUND": { "message": "파이썬 요구 사항을 찾을 수 없음" },
   "log_TYPE": { "message": "유형" },
   "log_FOR_AVAIL_OPTIONS": { "message": "사용 가능한 옵션에 대해" },
   "log_VERSION": { "message": "버전" },

@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Nõudeid ei leitud" },
+  "log_NO_PY_REQ_FOUND": { "message": "Pythoni nõuet ei leitud" },
   "log_TYPE": { "message": "Tüüp" },
   "log_FOR_AVAIL_OPTIONS": { "message": "saadaolevate valikute jaoks" },
   "log_VERSION": { "message": "Versioon" },

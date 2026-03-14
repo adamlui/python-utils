@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "कोई शर्त नहीं मिली" },
+  "log_NO_PY_REQ_FOUND": { "message": "कोई पायथन आवश्यकता नहीं मिली" },
   "log_TYPE": { "message": "प्रकार" },
   "log_FOR_AVAIL_OPTIONS": { "message": "उपलब्ध विकल्पों के लिए" },
   "log_VERSION": { "message": "संस्करण" },

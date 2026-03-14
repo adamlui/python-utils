@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Nav atrasta neviena prasība" },
+  "log_NO_PY_REQ_FOUND": { "message": "Nav atrasta neviena Python prasība" },
   "log_TYPE": { "message": "Veids" },
   "log_FOR_AVAIL_OPTIONS": { "message": "par pieejamajām iespējām" },
   "log_VERSION": { "message": "Versija" },

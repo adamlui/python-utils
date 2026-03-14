@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Gereksinim bulunamadı" },
+  "log_NO_PY_REQ_FOUND": { "message": "Python gereksinimi bulunamadı" },
   "log_TYPE": { "message": "Tür" },
   "log_FOR_AVAIL_OPTIONS": { "message": "mevcut seçenekler için" },
   "log_VERSION": { "message": "Versiyon" },

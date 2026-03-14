@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Shuruud la 'aan la helay" },
+  "log_NO_PY_REQ_FOUND": { "message": "Shuruudda Python lama helin" },
   "log_TYPE": { "message": "Nooca" },
   "log_FOR_AVAIL_OPTIONS": { "message": "xulashooyinka la heli karo" },
   "log_VERSION": { "message": "Version" },

@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Ulac tilufa yettwafen" },
+  "log_NO_PY_REQ_FOUND": { "message": "Ulac tilufa n Python yettwafen" },
   "log_TYPE": { "message": "Amḍan" },
   "log_FOR_AVAIL_OPTIONS": { "message": "i yifran i d-yettunefken" },
   "log_VERSION": { "message": "Asebtar" },

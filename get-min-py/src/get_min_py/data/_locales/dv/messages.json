@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "ޝަރުޠެއް ނުފެނެއެވެ" },
+  "log_NO_PY_REQ_FOUND": { "message": "ޕައިތަން ރިކުއަރމަންޓެއް ނުފެނެއެވެ" },
   "log_TYPE": { "message": "ވައްތަރު" },
   "log_FOR_AVAIL_OPTIONS": { "message": "ލިބެން ހުރި އިޚްތިޔާރުތަކަށްޓަކައެވެ" },
   "log_VERSION": { "message": "ވަރޝަން" },

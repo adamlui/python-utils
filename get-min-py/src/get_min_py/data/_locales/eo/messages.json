@@ -1,5 +1,5 @@
 {
-  "log_NO_REQ_FOUND": { "message": "Neniu postulo trovita" },
+  "log_NO_PY_REQ_FOUND": { "message": "Neniu Python postulo trovita" },
   "log_TYPE": { "message": "Tipo" },
   "log_FOR_AVAIL_OPTIONS": { "message": "por disponeblaj opcioj" },
   "log_VERSION": { "message": "Versio" },
