@@ -13,13 +13,13 @@ def hex_to_ansi(hex_color: str) -> str:
 class _Schemes:
     @property
     def default(self) -> list[str]:
-        return [hex_to_ansi(h) for h in [
+        return [hex_to_ansi(hex) for hex in [
             '#00e5bc', '#18c8ae', '#30ac9f', '#488f91', '#607383',
             '#775674', '#8f3966', '#a71d57', '#bf0049', '#9a1b5e'
         ]]
     @property
     def rainbow(self) -> list[str]:
-        return [hex_to_ansi(h) for h in [
+        return [hex_to_ansi(hex) for hex in [
             '#e41a1c', '#ff7f00', '#ffff33', '#4daf4a', '#377eb8',
             '#984ea3', '#f781bf', '#999999', '#a65628', '#d95f02'
         ]]
