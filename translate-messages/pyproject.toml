@@ -27,11 +27,11 @@ dependencies = [
 ]
 requires-python = ">=3.8,<4"
 keywords = [
-    "auto-detect",
     "chrome",
     "cli",
     "console",
     "data",
+    "detect",
     "dev-tool",
     "i18n",
     "internationalization",

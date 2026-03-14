@@ -25,11 +25,11 @@ dependencies = [
 requires-python = ">=3.8,<4"
 keywords = [
     "api",
-    "auto-detect",
     "classifiers",
     "cli",
     "compatibility",
     "console",
+    "detect",
     "dev-tool",
     "minimum-version",
     "package-metadata",
