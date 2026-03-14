@@ -1,7 +1,7 @@
 nc = '\x1b[0m'
 hex = {
     'br': '#ff0000',  'by': '#ffff00',  'bo': '#ffa500',   'bg': '#00ff00',
-    'bw': '#ffffff', 'gry': '#808080', 'blk': '#000000', 'tlBG': '#008080'
+    'bw': '#ffffff',  'dg': '#008000', 'gry': '#808080',  'blk': '#000000', 'tlBG': '#008080'
 }
 
 def hex_to_ansi(hex_color: str) -> str:
