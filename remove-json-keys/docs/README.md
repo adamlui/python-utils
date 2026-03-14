@@ -25,7 +25,7 @@ pip install remove-json-keys
 
 Run the CLI:
 ```bash
-remove-json-keys [options] # or remove-json
+remove-json-keys [options]  # or removejson
 ```
 
 If no options are passed, the CLI will:

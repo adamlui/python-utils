@@ -25,7 +25,7 @@ pip install translate-messages
 
 Run the CLI:
 ```bash
-translate-messages [options] # or translate-msgs
+translate-messages [options]  # or translatemsgs
 ```
 
 If no options are passed, the CLI will:

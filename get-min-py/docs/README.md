@@ -24,7 +24,7 @@ pip install get-min-py
 ## 💻 Command line usage
 
 ```bash
-get-min-py <pkg>[,pkg_b,pkg_c] # or check-min-py
+get-min-py <pkg>[,pkg_b,pkg_c]  # or getminpy
 ```
 
 Example:
