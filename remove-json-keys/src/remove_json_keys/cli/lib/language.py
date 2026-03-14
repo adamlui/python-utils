@@ -62,7 +62,7 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
         return get_msgs.cached # don't re-fetch same msgs
 
     msgs = data.json.flatten(data.json.read( # local ones
-        Path(__file__).parent.parent / 'data/_locales/en/messages.json'))
+        Path(__file__).parent.parent.parent / 'data/_locales/en/messages.json'))
 
     if not lang_code.startswith('en'): # fetch non-English msgs from jsDelivr
         import non_latin_locales
