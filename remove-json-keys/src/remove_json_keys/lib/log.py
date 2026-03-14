@@ -4,7 +4,7 @@ from types import SimpleNamespace as sn
 from typing import Dict, List, Optional
 if sys.platform == 'win32' : import colorama ; colorama.init() # enable ANSI color support
 
-from . import data as datalib, pkg
+from . import color as colors, data as datalib, pkg
 
 try : terminal_width = os.get_terminal_size()[0]
 except OSError : terminal_width = 80
