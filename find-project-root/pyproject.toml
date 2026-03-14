@@ -23,6 +23,7 @@ dependencies = [
 requires-python = ">=2.6,<4"
 keywords = [
     "detect",
+    "detection",
     "dev-tool",
     "directory",
     "filesystem",

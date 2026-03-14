@@ -30,6 +30,7 @@ keywords = [
     "compatibility",
     "console",
     "detect",
+    "detection",
     "dev-tool",
     "minimum-version",
     "package-metadata",
