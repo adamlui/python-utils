@@ -44,8 +44,6 @@ def get_min_py(pkg_names: Union[str, List[str]]) -> Union[Optional[str], List[Op
                 continue # to next pkg
             else : results.append(None)
 
-        except Exception as err:
-            print(f'Error fetching data for {pkg_name}: {err}')
-            results.append(None)
+        except Exception : results.append(None)
 
     return results[0] if len(pkg_names) == 1 else results
