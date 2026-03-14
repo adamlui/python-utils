@@ -2,7 +2,8 @@
   "name": "get-min-py",
   "version": "1.0.0",
   "description": "Get the minimum Python version required for a PyPI package.",
-  "cmds": ["get-min-py", "check-min-py"],
+  "cmds": [
+    "get-min-py", "get-min-ver", "check-min-py", "check-min-ver", "getminpy", "getminver", "checkminpy", "checkminver"],
   "cmd_format": "get-min-py <pkg>[,pkg_b,pkg_c]",
   "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
   "urls": {
