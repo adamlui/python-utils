@@ -33,6 +33,8 @@ keywords = [
     "detection",
     "dev-tool",
     "json",
+    "shell",
+    "terminal",
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",

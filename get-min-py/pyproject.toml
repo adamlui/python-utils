@@ -37,6 +37,8 @@ keywords = [
     "pypi",
     "python-version",
     "requires-python",
+    "shell",
+    "terminal",
     "version-check",
 ]
 classifiers = [
