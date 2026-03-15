@@ -9,7 +9,7 @@ def is_unicode_supported() -> bool:
     with terminal.cbreak(), terminal.hidden_cursor(): # measure rendered width of wide CJK char
         r,g,b = terminal.get_bgcolor()
         if (r,g,b) == (-1,-1,-1) : (r,g,b) = (0,0,0) # get bg failed, init to black
-        sys.stdout.write(terminal.color_rgb(r, g, b)) # make text invisible
+        sys.stdout.write(terminal.color_rgb(r,g,b)) # make text invisible
         _, x1 = terminal.get_location()
         sys.stdout.write('𠀀')
         sys.stdout.flush()
