@@ -96,7 +96,7 @@ isunicodesupported = "is_unicode_supported.cli.__main__:main"
 [project.optional-dependencies]
 dev = [
     "nox>=2026.2.9",
-    "remove-json-keys~=1.8.3",
+    "remove-json-keys~=1.9.0",
     "tomli~=2.4.0",
     "tomli-w~=1.2.0",
     "translate-messages~=1.8.3",
