@@ -24,7 +24,7 @@ pip install is-unicode-supported
 ## 💻 Command line usage
 
 ```bash
-is-unicode-supported
+is-unicode-supported  # or isunicodesupported
 # e.g. => True
 ```
 
