@@ -60,7 +60,7 @@ def generate_random_lang(includes: Optional[List[str]] = None,
             except Exception : pass
 
         # Discover pkg _locales
-        locales_dir = Path(__file__).parent.parent / 'data/_locales'
+        locales_dir = Path(__file__).parent.parent.parent / 'data/_locales'
         if not locales_dir.exists() : return ['en']
         locales = []
         for entry in locales_dir.iterdir():
