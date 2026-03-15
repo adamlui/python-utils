@@ -1,6 +1,6 @@
 # > project-markers
 
-<a href="https://pepy.tech/projects/project-markers">
+<a href="https://pepy.tech/projects/project-markers?versions=*">
     <img height=31 src="https://img.shields.io/pepy/dt/project-markers?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
 <a href="https://github.com/adamlui/python-utils/releases/tag/project-markers-1.0.1">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>

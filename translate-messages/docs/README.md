@@ -2,7 +2,7 @@
 
 # > translate-messages
 
-<a href="https://pepy.tech/projects/translate-messages">
+<a href="https://pepy.tech/projects/translate-messages?versions=*">
     <img height=31 src="https://img.shields.io/pepy/dt/translate-messages?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
 <a href="https://github.com/adamlui/python-utils/releases/tag/translate-messages-1.9.0">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.9.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>

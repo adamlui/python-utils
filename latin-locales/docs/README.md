@@ -1,6 +1,6 @@
 # > latin-locales
 
-<a href="https://pepy.tech/projects/latin-locales">
+<a href="https://pepy.tech/projects/latin-locales?versions=*">
     <img height=31 src="https://img.shields.io/pepy/dt/latin-locales?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
 <a href="https://github.com/adamlui/python-utils/releases/tag/latin-locales-1.0.1">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
