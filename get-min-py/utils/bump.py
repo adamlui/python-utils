@@ -1,8 +1,10 @@
-import re
+import re, sys
 from pathlib import Path
 from types import SimpleNamespace as sn
 
 from lib import toml
+
+sys.path.insert(0, str(Path(__file__).parent.parent / 'src')) # to force use local mod
 from get_min_py.cli.lib import data, log
 
 paths = sn(root=Path(__file__).parent.parent)
