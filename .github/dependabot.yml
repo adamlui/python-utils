@@ -9,8 +9,14 @@ updates:
   - package-ecosystem: pip
     directories:
       - /
-      - /translate-messages
+      - /find-project-root
+      - /get-min-py
+      - /is-unicode-supported
+      - /latin-locales
+      - /non-latin-locales
+      - /project-markers
       - /remove-json-keys
+      - /translate-messages
     schedule:
       interval: daily
     groups:
