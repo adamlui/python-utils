@@ -24,8 +24,9 @@ def get_min_py(pkg_names: Union[str, List[str]]) -> Union[Optional[str], List[Op
                     if op == '>': # return minor-bumped
                         major, minor = version.split('.')[:2]
                         results.append(f'{major}.{int(minor) + 1}')
-                    else: # >=|==|~=
-                        results.append(version) # as-is
+                    else: # >=|==|~= no bump
+                        if version.endswith('.0') : version = version[:-2]
+                        results.append(version)
                     continue # to next pkg
 
             # Check classifiers
