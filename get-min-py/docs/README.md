@@ -29,7 +29,7 @@ get-min-py <pkg>[,pkg2,pkg3,...]  # or getminpy
 
 Example:
 
-<img src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@97a74a8/get-min-py/assets/images/cli-output.png">
+<img src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@f133ea3/get-min-py/assets/images/cli-output.png">
 
 CLI options:
 
