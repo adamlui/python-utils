@@ -86,7 +86,7 @@ def generate_random_lang(includes: Optional[List[str]] = None,
     return random_lang
 
 def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
-    from . import env, jsdelivr, url
+    from . import jsdelivr, url
 
     lang_code = format_code(lang_code)
     if getattr(get_msgs, 'cached', None) and lang_code == get_msgs.cached_lang:
@@ -96,8 +96,10 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
         Path(__file__).parent.parent.parent / 'data/_locales/en/messages.json'))
 
     if not lang_code.startswith('en'): # fetch non-English msgs from jsDelivr
-        import non_latin_locales
-        if lang_code.split('_')[0] in non_latin_locales and not env.can_render_non_latin_scripts(): # type: ignore
+        import is_unicode_supported, non_latin_locales
+        if not hasattr(get_msgs, 'cached_unicode_support'):
+            get_msgs.cached_unicode_support = is_unicode_supported() # type: ignore
+        if lang_code.split('_')[0] in non_latin_locales and not get_msgs.cached_unicode_support: # type: ignore
             return sn(**msgs) # EN ones cuz non-Latin not supported
         msg_base_url = f'{jsdelivr.create_commit_url(cli, cli.commit_hashes.locales)}' \
                         '/src/translate_messages/data/_locales'
