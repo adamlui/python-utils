@@ -100,6 +100,13 @@ _Note: CLI arguments always override config file._
 
 Copyright © 2023–2026 [Adam Lui](https://github.com/adamlui).
 
+## Related
+
+📟 [is-unicode-supported](https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#readme) - Detect whether the terminal supports advanced Unicode.
+<br>🇨🇳 [non-latin-locales](https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme) - ISO 639-1 (2-letter) codes for non-Latin locales.
+<br>🇪🇸 [latin-locales](https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme) - ISO 639-1 (2-letter) codes for Latin locales.
+<br><b>{ }</b> [remove-json-keys](https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#readme) - Simply remove JSON keys via CLI command.
+
 #
 
 <a href="#top">Back to top ↑</a>

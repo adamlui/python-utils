@@ -59,6 +59,10 @@ _Note: Most type checkers will falsely warn_ `get_min_py` _is not a callable mod
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui).
 
+## Related
+
+📂 [find-project-root](https://github.com/adamlui/python-utils/tree/main/find-project-root/#readme) - Locate project root via custom markers.
+
 #
 
 <a href="#top">Back to top ↑</a>

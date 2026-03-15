@@ -35,3 +35,9 @@ _Note: Most type checkers will falsely warn_ `non_latin_locales` _is not iterabl
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui).
+
+## Related
+
+🇪🇸 [latin-locales](https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme) - ISO 639-1 (2-letter) codes for Latin locales.
+<br>🌍 [translate-messages](https://github.com/adamlui/python-utils/tree/main/translate-messages/#readme) - Translate `en/messages.json` (chrome.i18n format) to 100+ locales automatically.
+<br>📟 [is-unicode-supported](https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#readme) - Detect whether the terminal supports advanced Unicode.

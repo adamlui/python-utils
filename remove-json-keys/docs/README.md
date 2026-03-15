@@ -92,6 +92,11 @@ _Note: CLI arguments always override config file._
 
 Copyright © 2023–2026 [Adam Lui](https://github.com/adamlui).
 
+## Related
+
+🌍 [translate-messages](https://github.com/adamlui/python-utils/tree/main/translate-messages/#readme) - Translate `en/messages.json` (chrome.i18n format) to 100+ locales automatically.
+<br>🏷️ [project-markers](https://github.com/adamlui/python-utils/tree/main/project-markers/#readme) - Common project root markers.
+
 #
 
 <a href="#top">Back to top ↑</a>

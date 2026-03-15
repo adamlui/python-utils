@@ -53,6 +53,12 @@ _Note: Most type checkers will falsely warn_ `is_unicode_supported` _is not a ca
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui).
 
+## Related
+
+🇪🇸 [latin-locales](https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme) - ISO 639-1 (2-letter) codes for Latin locales.
+<br>🇨🇳 [non-latin-locales](https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme) - ISO 639-1 (2-letter) codes for non-Latin locales.
+<br>🌍 [translate-messages](https://github.com/adamlui/python-utils/tree/main/translate-messages/#readme) - Translate `en/messages.json` (chrome.i18n format) to 100+ locales automatically.
+
 #
 
 <a href="#top">Back to top ↑</a>

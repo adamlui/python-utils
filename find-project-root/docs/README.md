@@ -77,9 +77,14 @@ root = find_project_root(path='src', max_depth=5, markers=['manifest.json'])
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui).
 
+## Related
+
+🏷️ [project-markers](project-markers-gh) - Common project root markers.
+<br>📊 [get-min-py](https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme) - Get the minimum Python version required for a PyPI package.
+
 #
 
 <a href="#top">Back to top ↑</a>
 
-[project-markers-gh]: https://github.com/adamlui/python-utils/tree/main/project-markers
+[project-markers-gh]: https://github.com/adamlui/python-utils/tree/main/project-markers/#readme
 [project-markers-json]: https://github.com/adamlui/python-utils/blob/main/project-markers/src/project_markers/project_markers.json

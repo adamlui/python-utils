@@ -43,3 +43,8 @@ The list includes hundreds of markers from many tools and ecosystems, including:
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui).
+
+## Related
+
+📂 [find-project-root](https://github.com/adamlui/python-utils/tree/main/find-project-root/#readme) - Locate project root via custom markers.
+<br>📊 [get-min-py](https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme) - Get the minimum Python version required for a PyPI package.
