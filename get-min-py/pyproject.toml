@@ -21,7 +21,6 @@ dependencies = [
     "colorama~=0.4.6 ; platform_system == 'Windows'",
     "is-unicode-supported~=1.0.0",
     "json5~=0.13.0",
-    "ucs-detect~=2.0.2",
 ]
 requires-python = ">=3.8,<4"
 keywords = [

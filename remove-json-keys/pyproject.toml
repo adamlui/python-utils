@@ -23,7 +23,6 @@ dependencies = [
     "is-unicode-supported~=1.0.0",
     "json5~=0.13.0",
     "non-latin-locales~=1.0.1",
-    "ucs-detect~=2.0.2",
 ]
 requires-python = ">=3.8,<4"
 keywords = [
