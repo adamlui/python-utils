@@ -56,7 +56,7 @@ def remove_keys(json_path: Path, keys: List[str]):
     return keys_removed, keys_skipped, files_processed_cnt
 
 def write(file_path: Union[Path, str], data: Any, encoding: str = 'utf-8', ensure_ascii: bool = False,
-          style: str = 'pretty', atomic: bool =True):
+          style: str = 'pretty', atomic: bool = True):
     Path(file_path).parent.mkdir(parents=True, exist_ok=True)
     if style == 'pretty': # single key/val spans multi-lines
         json_str = json.dumps(data, indent=2, ensure_ascii=ensure_ascii)
