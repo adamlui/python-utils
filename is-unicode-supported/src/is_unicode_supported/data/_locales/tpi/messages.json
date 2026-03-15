@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Tipo" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ol narapela samting i stap" },
+  "log_VERSION": { "message": "Tok Pisin" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Bilong kisim sampela save moa, go lukim" },
+  "warn_NOT_FOUND": { "message": "No painim" },
+  "warn_CLI_OPTION": { "message": "CLI opsen" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "em inap senisim" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "na bai ol i rausim ol dispela samting" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "i no gat wanpela samting moa" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Toktok i no stret (s)" },
+  "help_HELP": { "message": "Skrin bilong helpim" },
+  "help_VERSION": { "message": "Toksave long Baibel" },
+  "help_DOCS": { "message": "Opim URL bilong ol dokiman" },
+  "help_DEBUG": { "message": "Toksave long ol liklik hap bilong en" }
+}

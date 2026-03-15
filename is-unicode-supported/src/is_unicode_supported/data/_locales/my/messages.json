@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "အမျိုးအစား" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ရရှိနိုင်သော ရွေးချယ်စရာများအတွက်" },
+  "log_VERSION": { "message": "ဗားရှင်း" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "ပိုမိုသိရှိလိုပါက, သွားရောက်ကြည့်ရှု" },
+  "warn_NOT_FOUND": { "message": "မတွေ့ပါ" },
+  "warn_CLI_OPTION": { "message": "CLI ရွေးချယ်မှု" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "အစားထိုးထားသည်" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ဖယ်ရှားခြင်းခံရမည် ။" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "အကျိုးသက်ရောက်မှုမရှိတော့ပါ" },
+  "err_UNRECOGNIZED_ARGS": { "message": "အသိအမှတ်မပြုသော အငြင်းပွားမှု(များ)" },
+  "help_HELP": { "message": "အကူအညီ မျက်နှာပြင်ကို ပြပါ" },
+  "help_VERSION": { "message": "ဗားရှင်းကိုပြပါ" },
+  "help_DOCS": { "message": "စာရွက်စာတမ်းများ URL ကိုဖွင့်ပါ" },
+  "help_DEBUG": { "message": "Debug မှတ်တမ်းများကိုပြပါ" }
+}

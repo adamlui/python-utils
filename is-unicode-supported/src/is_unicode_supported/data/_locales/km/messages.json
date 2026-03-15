@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "ប្រភេទ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "សម្រាប់ជម្រើសដែលមាន" },
+  "log_VERSION": { "message": "កំណែ" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "សម្រាប់ជំនួយបន្ថែម សូមចូលមើល" },
+  "warn_NOT_FOUND": { "message": "រកមិនឃើញមាន" },
+  "warn_CLI_OPTION": { "message": "ជម្រើស CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ត្រូវបានជំនួសដោយ" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ហើយនឹងត្រូវបានដកចេញ" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "លែងមានឥទ្ធិពលទៀតហើយ" },
+  "err_UNRECOGNIZED_ARGS": { "message": "អាគុយម៉ង់ដែលមិនបានទទួលស្គាល់" },
+  "help_HELP": { "message": "បង្ហាញអេក្រង់ជំនួយ" },
+  "help_VERSION": { "message": "បង្ហាញកំណែ" },
+  "help_DOCS": { "message": "បើក URL docs" },
+  "help_DEBUG": { "message": "បង្ហាញ កំណត់ ហេតុ បំបាត់ កំហុស" }
+}

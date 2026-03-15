@@ -1,0 +1,24 @@
+{
+  "name": "is-unicode-supported",
+  "version": "1.0.0",
+  "description": "Detect whether the terminal supports advanced Unicode.",
+  "cmds": ["is-unicode-supported", "isunicodesupported"],
+  "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
+  "urls": {
+    "docs": "https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/docs",
+    "funding": {
+      "cashapp": "https://cash.app/$adamlui",
+      "github": "https://github.com/sponsors/adamlui",
+      "kofi": "https://ko-fi.com/adamlui",
+      "paypal": "https://paypal.me/adamlui"
+    },
+    "github": "https://github.com/adamlui/python-utils",
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/python-utils",
+    "pypi": "https://pypi.org/project/is-unicode-supported/",
+    "pypistats": "https://pypistats.org/packages/is-unicode-supported",
+    "support": "https://github.com/adamlui/python-utils/issues"
+  },
+  "commit_hashes": {
+    "locales": "fafb513"
+  }
+}

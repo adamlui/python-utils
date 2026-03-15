@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Tipo" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "por disponeblaj opcioj" },
+  "log_VERSION": { "message": "Versio" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Por pli da helpo, vizitu" },
+  "warn_NOT_FOUND": { "message": "Ne trovita" },
+  "warn_CLI_OPTION": { "message": "CLI- opcio" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ĝi estis anstataŭigita per" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "kaj estos forigita" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ne plu havas efekton" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Nerekonita argumento(j)" },
+  "help_HELP": { "message": "Montri helpekranon" },
+  "help_VERSION": { "message": "Montri version" },
+  "help_DOCS": { "message": "Malfermi DOCS- URLon" },
+  "help_DEBUG": { "message": "Montri sencimigajn protokolojn" }
+}

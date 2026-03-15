@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Typ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "fir available options" },
+  "log_VERSION": { "message": "Versioun" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Fir méi Hëllef, besicht" },
+  "warn_NOT_FOUND": { "message": "Net fonnt" },
+  "warn_CLI_OPTION": { "message": "CLI-Optioun" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "hien/si, hatt/et ass ersat ginn" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "si ginn ewechge-trued-en/ge-tratt" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "huet keen Effekt méi" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Unerkannten Argument(en)" },
+  "help_HELP": { "message": "Hëllefsbildschierm uweisen" },
+  "help_VERSION": { "message": "Versioun uweisen" },
+  "help_DOCS": { "message": "Dokument-URL opmaachen" },
+  "help_DEBUG": { "message": "Entfälteg Logbicher uweisen" }
+}

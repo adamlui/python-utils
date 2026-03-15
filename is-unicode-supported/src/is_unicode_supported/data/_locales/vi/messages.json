@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Loại" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "cho các tùy chọn có sẵn" },
+  "log_VERSION": { "message": "Phiên bản" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Để được trợ giúp thêm, hãy truy cập" },
+  "warn_NOT_FOUND": { "message": "Không tìm thấy" },
+  "warn_CLI_OPTION": { "message": "Tùy chọn CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "đã được thay thế bởi" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "và sẽ bị xóa" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "không còn hiệu lực nữa" },
+  "err_UNRECOGNIZED_ARGS": { "message": "(Các) đối số không được công nhận" },
+  "help_HELP": { "message": "Hiển thị màn hình trợ giúp" },
+  "help_VERSION": { "message": "Hiển thị phiên bản" },
+  "help_DOCS": { "message": "Mở URL tài liệu" },
+  "help_DEBUG": { "message": "Hiển thị nhật ký gỡ lỗi" }
+}

@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "རིགས" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ཕྱོགས་སྟོན་་་་གཙོ་ངོས ། \"རྩོམ་རིག\"" },
+  "log_VERSION": { "message": "བཟོ་བཅོས །" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "ཕྱོགས་སྟོན་་་་གཙོ་ངོས ། \"རྩོམ་རིག\"" },
+  "warn_NOT_FOUND": { "message": "རྙེད་མ་བྱུང་།" },
+  "warn_CLI_OPTION": { "message": "CLI གདམ་ཁ་རྐྱབས །" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ཁོ་ཡི་ཚབ་ཏུ་" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ཕྱིར་འཐེན་བྱེད་པར་འགྱུར །" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ད་ལྟའི་བར་ལ་དེའི་གྲུབ་འབྲས་གང་ཡང་མེད །" },
+  "err_UNRECOGNIZED_ARGS": { "message": "ཤེས་རྟོགས་མེད་པའི་རྩོད་རྙོག་(s)" },
+  "help_HELP": { "message": "རོགས་རམ་བརྙན་རིས་མངོན་འཆར" },
+  "help_VERSION": { "message": "པར་རིས་སྟོན་པ" },
+  "help_DOCS": { "message": "ཡིག་ཆའི་ཁ་བྱང་ཁ་ཕྱེ་བ" },
+  "help_DEBUG": { "message": "འགོ་འཛུགས་ཐོ་འགོད་མངོན་འཆར (_D)" }
+}

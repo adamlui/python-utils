@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Momo" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "mō ngā kōwhiringa e wātea ana" },
+  "log_VERSION": { "message": "Putanga" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Mō ētahi atu āwhina, haere mai" },
+  "warn_NOT_FOUND": { "message": "Kaore i kitea" },
+  "warn_CLI_OPTION": { "message": "Kōwhiringa CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "kua whakakapihia e" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "a ka tangohia atu" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "kaore ano kia whai hua" },
+  "err_UNRECOGNIZED_ARGS": { "message": "He tautohetohe kore e mohiotia (s)" },
+  "help_HELP": { "message": "Whakaatuhia te mata awhina" },
+  "help_VERSION": { "message": "Whakaaturia te putanga" },
+  "help_DOCS": { "message": "Whakatuwherahia te URL docs" },
+  "help_DEBUG": { "message": "Whakaatu logs debug" }
+}

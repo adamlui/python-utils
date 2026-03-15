@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Tüüp" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "saadaolevate valikute jaoks" },
+  "log_VERSION": { "message": "Versioon" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Lisateabe saamiseks külasta lehte" },
+  "warn_NOT_FOUND": { "message": "Ei leitud" },
+  "warn_CLI_OPTION": { "message": "CLI valik" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "on asendatud järgmisega:" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ja eemaldatakse" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ei avalda enam mõju" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Tundmatu argument(tundmatud argumendid)" },
+  "help_HELP": { "message": "Kuva abiekraan" },
+  "help_VERSION": { "message": "Kuva versioon" },
+  "help_DOCS": { "message": "Ava dokumentide URL" },
+  "help_DEBUG": { "message": "Näita silumislogisid" }
+}

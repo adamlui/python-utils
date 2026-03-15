@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "סוג" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "לאפשרויות זמינות" },
+  "log_VERSION": { "message": "גרסה" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "לקבלת עזרה נוספת, ניתן לבקר בכתובת" },
+  "warn_NOT_FOUND": { "message": "לא נמצא" },
+  "warn_CLI_OPTION": { "message": "אפשרות CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "הוחלף על ידי" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ויוסרו" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "כבר אין לו כל השפעה" },
+  "err_UNRECOGNIZED_ARGS": { "message": "ארגומנטים לא מזוהים" },
+  "help_HELP": { "message": "הצגת מסך עזרה" },
+  "help_VERSION": { "message": "הצגת הגרסה" },
+  "help_DOCS": { "message": "פתיחת כתובת ה - URL של המסמך" },
+  "help_DEBUG": { "message": "הצג יומני איתור באגים" }
+}

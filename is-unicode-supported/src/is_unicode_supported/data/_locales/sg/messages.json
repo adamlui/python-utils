@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Bango Bango Type" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "akpengba ye so mo lingbi ti sara" },
+  "log_VERSION": { "message": "Yângâ tî kodoro" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Ti wara kota lege ti bâ ndo" },
+  "warn_NOT_FOUND": { "message": "A wara lo pëpe" },
+  "warn_CLI_OPTION": { "message": "A yeke na lege ti kode ti CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "a changé lo na" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "na fade a yeke zi ala" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "a yeke sara ye na lege ni ape" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Mbeni tënë so a hinga ni pëpe (s)" },
+  "help_HELP": { "message": "A yeke mû maboko na azo ti bâ ndo" },
+  "help_VERSION": { "message": "Mbeni ye so a sara na yâ ti Bible" },
+  "help_DOCS": { "message": "A yeke wara a-URL na yâ ti ambeti ti e" },
+  "help_DEBUG": { "message": "A yeke sara si azo abâ so a yeke nzoni ti sara ye na lege ti" }
+}

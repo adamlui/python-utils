@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Tyyppi" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "saatavilla olevista vaihtoehdoista" },
+  "log_VERSION": { "message": "Versio" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Lisätietoja saat osoitteesta" },
+  "warn_NOT_FOUND": { "message": "Ei löytynyt" },
+  "warn_CLI_OPTION": { "message": "CLI-vaihtoehto" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "on korvattu seuraavalla:" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ja poistetaan" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ei enää vaikuta" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Tunnistamattomat argumentit" },
+  "help_HELP": { "message": "Näytä ohjenäyttö" },
+  "help_VERSION": { "message": "Näytä versio" },
+  "help_DOCS": { "message": "Avaa asiakirjojen URL-osoite" },
+  "help_DEBUG": { "message": "Näytä virheenkorjauslokit" }
+}

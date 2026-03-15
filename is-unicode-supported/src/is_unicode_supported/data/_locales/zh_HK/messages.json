@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "類型" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "適用於可用選項" },
+  "log_VERSION": { "message": "版本" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "如需更多協助，請前往" },
+  "warn_NOT_FOUND": { "message": "未找到" },
+  "warn_CLI_OPTION": { "message": "CLI選項" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "已被替換為" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "並將被移除" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "不再有任何效果" },
+  "err_UNRECOGNIZED_ARGS": { "message": "無法識別的引數" },
+  "help_HELP": { "message": "顯示幫助畫面" },
+  "help_VERSION": { "message": "顯示版本" },
+  "help_DOCS": { "message": "開啟文件網址" },
+  "help_DEBUG": { "message": "顯示偵錯記錄" }
+}

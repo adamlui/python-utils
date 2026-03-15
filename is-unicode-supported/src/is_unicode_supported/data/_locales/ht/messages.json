@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Kalite" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "pou opsyon ki disponib/pour les options dispon" },
+  "log_VERSION": { "message": "Vèsyon" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Pou plis èd, vizite" },
+  "warn_NOT_FOUND": { "message": "Pa jwenn" },
+  "warn_CLI_OPTION": { "message": "Opsyon CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "te ranplase pa/a été remplacé" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "epi yo pral retire/et sera supprimé" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "pa gen okenn efè ankò/pa gen okenn efè ankò/n" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Agiman ki pa rekonèt (yo)" },
+  "help_HELP": { "message": "Montre ekran èd" },
+  "help_VERSION": { "message": "Montre vèsyon" },
+  "help_DOCS": { "message": "Louvri URL DOKTÈ" },
+  "help_DEBUG": { "message": "Montre mòso bwa debogaj" }
+}

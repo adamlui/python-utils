@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Slag" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "til ber at velja" },
+  "log_VERSION": { "message": "Versión" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Til hjálpar!" },
+  "warn_NOT_FOUND": { "message": "Ikki funnið" },
+  "warn_CLI_OPTION": { "message": "CLI val" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "hann er skiftur fyri" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "og hann skal verða tikin av døgum," },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "tað hevur ikki longur ávirkan" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Ókennilig argument(s)" },
+  "help_HELP": { "message": "Vís hjálparskjá" },
+  "help_VERSION": { "message": "Vís útgávu" },
+  "help_DOCS": { "message": "Opna dokumentar URL" },
+  "help_DEBUG": { "message": "Vís upploysingarloggar" }
+}

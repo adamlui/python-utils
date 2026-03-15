@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Math" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ar gyfer yr opsiynau sydd ar gael" },
+  "log_VERSION": { "message": "Fersiwn" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Am fwy o wybodaeth, ewch i" },
+  "warn_NOT_FOUND": { "message": "Heb ei ganfod" },
+  "warn_CLI_OPTION": { "message": "Opsiwn CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "wedi'i ddisodli gan" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "a bydd yn cael ei dorri i ffwrdd," },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "nid yw bellach yn cael unrhyw effaith" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Ymresymiad(au) anhysbys" },
+  "help_HELP": { "message": "Dangos y sgrin gymorth" },
+  "help_VERSION": { "message": "Dangos fersiwn" },
+  "help_DOCS": { "message": "Agor LAU DOCS" },
+  "help_DEBUG": { "message": "Dangos cofnodion datnamu" }
+}
