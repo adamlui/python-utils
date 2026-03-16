@@ -1,6 +1,6 @@
 {
   "name": "is-unicode-supported",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detect whether the terminal supports advanced Unicode.",
   "cmds": ["is-unicode-supported", "isunicodesupported"],
   "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
