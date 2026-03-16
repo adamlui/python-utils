@@ -59,6 +59,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Software Development :: Internationalization",
     "Topic :: Software Development :: Localization",
+    "Topic :: Text Processing",
     "Topic :: Text Processing :: Linguistic",
     "Topic :: Utilities",
 ]
