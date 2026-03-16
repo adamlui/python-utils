@@ -57,6 +57,14 @@
 [API usage](https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
+### <a href="https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme"></> programming-languages</a>
+
+> File extensions for programming languages.
+<br>[Install](https://github.com/adamlui/python-utils/tree/main/programming-languages/#installation) /
+[Readme](https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme) /
+[API usage](https://github.com/adamlui/python-utils/tree/main/programming-languages/#usage) /
+[Discuss](https://github.com/adamlui/python-utils/discussions)
+
 ### <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#readme">🏷️ project-markers</a>
 
 > Common project root markers.

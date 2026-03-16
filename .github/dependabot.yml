@@ -14,6 +14,7 @@ updates:
       - /is-unicode-supported
       - /latin-locales
       - /non-latin-locales
+      - /programming-languages
       - /project-markers
       - /remove-json-keys
       - /translate-messages
