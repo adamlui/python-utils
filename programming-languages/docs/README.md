@@ -13,7 +13,7 @@
 
 > ### _File extensions for programming languages._
 
-It's just a [JSON file](https://github.com/adamlui/python-utils/blob/programming-languages-1.0.0/programming-languages/src/programming_languages/languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 700+ languages known to GitHub), the data is updated via script and released w/ each new version.
+It's just a [JSON file](https://github.com/adamlui/python-utils/blob/programming-languages-1.0.0/programming-languages/src/programming_languages/languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 700+ languages known to GitHub). Data is updated via script and released w/ each new version.
 
 ## Installation
 
@@ -28,8 +28,8 @@ import programming_languages
 
 py_lang_data = programming_languages['Python']
 
-print(py_lang_data['extensions']) # => ['.py', '.cgi', '.fcgi', ...]
 print(py_lang_data['type']) # => 'programming'
+print(py_lang_data['extensions']) # => ['.py', '.cgi', '.fcgi', ...]
 ```
 
 _Note: Most type checkers will falsely warn_ `programming_languages` _is not subscriptable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a dictionary for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
