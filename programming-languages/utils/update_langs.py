@@ -4,11 +4,11 @@ import yaml
 
 from lib import data, log
 
-remote_yml_filename = 'languages.yml'
+gh_lang_yml_filename = 'languages.yml'
 
-log.info(f'Downloading {remote_yml_filename}...')
+log.info(f'Downloading {gh_lang_yml_filename}...')
 resp_data = urlopen(
-    f'https://raw.githubusercontent.com/github-linguist/linguist/main/lib/linguist/{remote_yml_filename}'
+    f'https://raw.githubusercontent.com/github-linguist/linguist/main/lib/linguist/{gh_lang_yml_filename}'
 ).read().decode('utf-8')
 
 log.info('Building language data...')
