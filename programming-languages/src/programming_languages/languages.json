@@ -578,7 +578,7 @@
   "Promela": { "type": "programming", "extensions": [".pml"] },
   "Propeller Spin": { "type": "programming", "extensions": [".spin"] },
   "Protocol Buffer": { "type": "data", "extensions": [".proto"] },
-  "Protocol Buffer Text Format": { "type": "data", "extensions": [".textproto",".pbt",".pbtxt"] },
+  "Protocol Buffer Text Format": { "type": "data", "extensions": [".textproto",".pbt",".pbtxt",".txtpb"] },
   "Public Key": { "type": "data", "extensions": [".asc",".pub"] },
   "Pug": { "type": "markup", "extensions": [".jade",".pug"] },
   "Puppet": { "type": "programming", "extensions": [".pp"] },
@@ -821,13 +821,13 @@
       ".xml", ".adml", ".admx", ".ant", ".axaml", ".axml", ".builds", ".ccproj", ".ccxml", ".clixml", ".cproject",
       ".cscfg", ".csdef", ".csl", ".csproj", ".ct", ".depproj", ".dita", ".ditamap", ".ditaval", ".dll.config",
       ".dotsettings", ".filters", ".fsproj", ".fxml", ".glade", ".gml", ".gmx", ".gpx", ".grxml", ".gst", ".hzp",
-      ".iml", ".ivy", ".jelly", ".jsproj", ".kml", ".launch", ".mdpolicy", ".mjml", ".mm", ".mod", ".mojo", ".mxml",
-      ".natvis", ".ncl", ".ndproj", ".nproj", ".nuspec", ".odd", ".osm", ".pkgproj", ".pluginspec", ".proj", ".props",
-      ".ps1xml", ".psc1", ".pt", ".pubxml", ".qhelp", ".rdf", ".res", ".resx", ".rs", ".rss", ".sch", ".scxml",
-      ".sfproj", ".shproj", ".slnx", ".srdf", ".storyboard", ".sublime-snippet", ".sw", ".targets", ".tml", ".ts",
-      ".tsx", ".typ", ".ui", ".urdf", ".ux", ".vbproj", ".vcxproj", ".vsixmanifest", ".vssettings", ".vstemplate",
-      ".vxml", ".wixproj", ".workflow", ".wsdl", ".wsf", ".wxi", ".wxl", ".wxs", ".x3d", ".xacro", ".xaml", ".xib",
-      ".xlf", ".xliff", ".xmi", ".xml.dist", ".xmp", ".xproj", ".xsd", ".xspec", ".xul", ".zcml"
+      ".icls", ".iml", ".ivy", ".jelly", ".jsproj", ".kml", ".launch", ".mdpolicy", ".mjml", ".mm", ".mod", ".mojo",
+      ".mxml", ".natvis", ".ncl", ".ndproj", ".nproj", ".nuspec", ".odd", ".osm", ".pkgproj", ".pluginspec", ".proj",
+      ".props", ".ps1xml", ".psc1", ".pt", ".pubxml", ".qhelp", ".rdf", ".res", ".resx", ".rs", ".rss", ".sch",
+      ".scxml", ".sfproj", ".shproj", ".slnx", ".srdf", ".storyboard", ".sublime-snippet", ".sw", ".targets", ".tml",
+      ".ts", ".tsx", ".typ", ".ui", ".urdf", ".ux", ".vbproj", ".vcxproj", ".vsixmanifest", ".vssettings",
+      ".vstemplate", ".vxml", ".wixproj", ".workflow", ".wsdl", ".wsf", ".wxi", ".wxl", ".wxs", ".x3d", ".xacro",
+      ".xaml", ".xib", ".xlf", ".xliff", ".xmi", ".xml.dist", ".xmp", ".xproj", ".xsd", ".xspec", ".xul", ".zcml"
     ]
   },
   "XML Property List": {
