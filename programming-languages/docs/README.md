@@ -28,7 +28,6 @@ import programming_languages
 
 py_lang_data = programming_languages['Python']
 
-print(py_lang_data['type']) # => 'programming'
 print(py_lang_data['extensions']) # => ['.cgi', '.fcgi', '.gyp', ...]
 ```
 
