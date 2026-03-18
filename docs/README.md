@@ -49,7 +49,7 @@
 [API usage](https://github.com/adamlui/python-utils/tree/main/latin-locales/#usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
-### <a href="https://github.com/adamlui/python-utils/tree/main/markup-languages/#readme"><> markup-languages</a>
+### <a href="https://github.com/adamlui/python-utils/tree/main/markup-languages/#readme"></> markup-languages</a>
 
 > File extensions for markup languages.
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/markup-languages/#installation) /
@@ -65,7 +65,7 @@
 [API usage](https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
-### <a href="https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme"></> programming-languages</a>
+### <a href="https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme">#! programming-languages</a>
 
 > File extensions for programming languages.
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/programming-languages/#installation) /

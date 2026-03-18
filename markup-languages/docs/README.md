@@ -68,7 +68,7 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui).
 ## Related
 
 🇨🇳 [non-latin-locales](https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme) - ISO 639-1 (2-letter) codes for non-Latin locales.
-<br></> [programming-languages](https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme) - File extensions for programming languages.
+<br>#! [programming-languages](https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme) - File extensions for programming languages.
 <br>🏷️ [project-markers](https://github.com/adamlui/python-utils/tree/main/project-markers/#readme) - Common project root markers.
 
 #
