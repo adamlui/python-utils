@@ -26,9 +26,9 @@ pip install data-languages
 ```py
 import data_languages
 
-json_data = data_languages['JSON']
+json_lang_data = data_languages['JSON']
 
-print(json_data['extensions']) # => ['.4DForm', '.4DProject', '.avsc', ...]
+print(json_lang_data['extensions']) # => ['.4DForm', '.4DProject', '.avsc', ...]
 ```
 
 _Note: Most type checkers will falsely warn_ `data_languages` _is not subscriptable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a dictionary for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.

@@ -26,9 +26,9 @@ pip install markup-languages
 ```py
 import markup_languages
 
-html_data = markup_languages['HTML']
+html_lang_data = markup_languages['HTML']
 
-print(html_data['extensions']) # => ['.hta', '.htm', '.html', '.html.hl', ...]
+print(html_lang_data['extensions']) # => ['.hta', '.htm', '.html', '.html.hl', ...]
 ```
 
 _Note: Most type checkers will falsely warn_ `markup_languages` _is not subscriptable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a dictionary for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.

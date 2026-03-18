@@ -26,9 +26,9 @@ pip install prose-languages
 ```py
 import prose_languages
 
-md_data = prose_languages['Markdown']
+md_lang_data = prose_languages['Markdown']
 
-print(md_data['extensions']) # => ['.livemd', '.markdown', '.md', ...]
+print(md_lang_data['extensions']) # => ['.livemd', '.markdown', '.md', ...]
 ```
 
 _Note: Most type checkers will falsely warn_ `prose_languages` _is not subscriptable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a dictionary for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
