@@ -13,7 +13,7 @@
 
 > ### _File extensions for markup languages._
 
-It's just a [JSON file](https://github.com/adamlui/python-utils/blob/markup-languages-1.0.0/markup-languages/src/markup_languages/markup_languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all markdown languages known to GitHub). Data is updated via script and released via new package version.
+It's just a [JSON file](https://github.com/adamlui/python-utils/blob/markup-languages-1.0.0/markup-languages/src/markup_languages/markup_languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 69 markup languages known to GitHub). Data is updated via script and released via new package version.
 
 ## Installation
 
