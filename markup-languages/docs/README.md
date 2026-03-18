@@ -28,7 +28,7 @@ import markup_languages
 
 html_data = markup_languages['HTML']
 
-print(html_data['extensions']) # => ['.html', '.hta', '.htm', ...]
+print(html_data['extensions']) # => ['.hta', '.htm', '.html', '.html.hl', ...]
 ```
 
 _Note: Most type checkers will falsely warn_ `markup_languages` _is not subscriptable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a dictionary for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
@@ -40,7 +40,7 @@ List all extensions for a language:
 ```py
 html_exts = markup_languages['HTML']['extensions']
 
-print(html_exts) # => ['.html', '.hta', '.htm', '.html.hl', ...]
+print(html_exts) # => ['.hta', '.htm', '.html', '.html.hl', ...]
 ```
 
 Get language from an extension:
