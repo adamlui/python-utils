@@ -9,6 +9,7 @@ updates:
   - package-ecosystem: pip
     directories:
       - /
+      - /data-languages
       - /find-project-root
       - /get-min-py
       - /is-unicode-supported
