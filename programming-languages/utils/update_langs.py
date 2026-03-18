@@ -17,8 +17,9 @@ for lang_name, lang_info in yaml.safe_load(resp_data).items():
     if 'extensions' in lang_info:
         lang_data[lang_name] = {
             'type': lang_info.get('type', 'unknown'),
-            'extensions': lang_info['extensions']
+            'extensions': sorted(lang_info['extensions'])
         }
+lang_data = dict(sorted(lang_data.items(), key = lambda item: item[0].lower()))
 
 output_path = Path(__file__).parent.parent / 'src/programming_languages/languages.json'
 log.info(f'Saving {len(lang_data)} languages to {output_path}...')
