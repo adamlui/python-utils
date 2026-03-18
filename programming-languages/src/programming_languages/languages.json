@@ -356,7 +356,7 @@
   "JSON": {
     "type": "data",
     "extensions": [
-      ".4DForm", ".4DProject", ".JSON-tmLanguage", ".avsc", ".geojson", ".gltf", ".har", ".ice", ".json",
+      ".4DForm", ".4DProject", ".avsc", ".geojson", ".gltf", ".har", ".ice", ".json", ".JSON-tmLanguage",
       ".json.example", ".jsonl", ".mcmeta", ".sarif", ".tact", ".tfstate", ".tfstate.backup", ".topojson", ".webapp",
       ".webmanifest", ".yy", ".yyp"
     ]
@@ -807,7 +807,7 @@
   "Vim Script": { "type": "programming", "extensions": [".vba",".vim",".vimrc",".vmb"] },
   "Vim Snippet": { "type": "markup", "extensions": [".snip",".snippet",".snippets"] },
   "Visual Basic .NET": { "type": "programming", "extensions": [".vb",".vbhtml"] },
-  "Visual Basic 6.0": { "type": "programming", "extensions": [".Dsr",".bas",".cls",".ctl",".frm"] },
+  "Visual Basic 6.0": { "type": "programming", "extensions": [".bas",".cls",".ctl",".Dsr",".frm"] },
   "Volt": { "type": "programming", "extensions": [".volt"] },
   "Vue": { "type": "markup", "extensions": [".vue"] },
   "Vyper": { "type": "programming", "extensions": [".vy"] },

@@ -17,7 +17,7 @@ for lang_name, lang_info in yaml.safe_load(resp_data).items():
     if 'extensions' in lang_info:
         lang_data[lang_name] = {
             'type': lang_info.get('type', 'unknown'),
-            'extensions': sorted(lang_info['extensions'])
+            'extensions': sorted(lang_info['extensions'], key=str.lower)
         }
 lang_data = dict(sorted(lang_data.items(), key = lambda item: item[0].lower()))
 
