@@ -13,7 +13,7 @@
 
 > ### _File extensions for programming languages._
 
-It's just a [JSON file](https://github.com/adamlui/python-utils/blob/programming-languages-1.0.0/programming-languages/src/programming_languages/languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 700+ languages known to GitHub). Data is updated via script and released via new package version.
+It's just a [JSON file](https://github.com/adamlui/python-utils/blob/programming-languages-1.0.0/programming-languages/src/programming_languages/programming_languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 500+ programming languages known to GitHub). Data is updated via script and released via new package version.
 
 ## Installation
 
@@ -36,14 +36,6 @@ _Note: Most type checkers will falsely warn_ `programming_languages` _is not sub
 
 ## Examples
 
-List all extensions for a language:
-
-```py
-js_exts = programming_languages['JavaScript']['extensions']
-
-print(js_exts) # => ['._js', '.bones', '.cjs', '.es', ...]
-```
-
 Get language from an extension:
 
 ```py
@@ -52,19 +44,22 @@ def get_lang(file_ext):
         if file_ext in data['extensions']:
             return lang
 
-print(get_lang('.rs')) # => 'Rust'
+print(get_lang('.al')) # => 'AL'
 ```
 
-Filter by language type:
+Get language from a file path:
 
 ```py
-markup_langs = [
-    lang for lang, data in programming_languages.items()
-        if data['type'] == 'markup'
-]
+def get_lang_from_path(filepath):
+    from pathlib import Path
+    file_ext = Path(filepath).suffix
+    for lang, data in programming_languages.items():
+        if file_ext in data['extensions']:
+            return lang
 
-print(markup_langs) # => ['Antlers', 'API Blueprint', 'Astro', 'BibTeX', ...]
-print(f'{len(markup_langs)} markup languages') # -> '69 markup languages'
+print(get_lang_from_path('main.rs')) # => 'Rust'
+print(get_lang_from_path('script.kt')) # => 'Kotlin'
+print(get_lang_from_path('data.avsc')) # => None (use data-languages pkg)
 ```
 
 ## MIT License
@@ -73,9 +68,9 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui).
 
 ## Related
 
-🇨🇳 [non-latin-locales](https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme) - ISO 639-1 (2-letter) codes for non-Latin locales.
-<br>📟 [is-unicode-supported](https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#readme) - Detect whether the terminal supports advanced Unicode.
-<br>🏷️ [project-markers](https://github.com/adamlui/python-utils/tree/main/project-markers/#readme) - Common project root markers.
+</> [markup-languages](https://github.com/adamlui/python-utils/tree/main/markup-languages/#readme) - File extensions for markup languages.
+<br>## [prose-languages](https://github.com/adamlui/python-utils/tree/main/prose-languages/#readme) - File extensions for prose languages.
+<br>{ } [data-languages](https://github.com/adamlui/python-utils/tree/main/data-languages/#readme) - File extensions for data languages.
 
 #
 
