@@ -58,7 +58,7 @@ def get_lang_from_path(filepath):
 
 print(get_lang_from_path('steam.vdf')) # => 'Valve Data Format'
 print(get_lang_from_path('Sublime.sublime-snippet')) # => 'XML'
-print(get_lang_from_path('README.md')) # => None (use markup-languages pkg)
+print(get_lang_from_path('README.md')) # => None (use prose-languages pkg)
 ```
 
 ## MIT License
