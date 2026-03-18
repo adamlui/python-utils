@@ -29,7 +29,7 @@ import programming_languages
 py_lang_data = programming_languages['Python']
 
 print(py_lang_data['type']) # => 'programming'
-print(py_lang_data['extensions']) # => ['.py', '.cgi', '.fcgi', ...]
+print(py_lang_data['extensions']) # => ['.cgi', '.fcgi', '.gyp', ...]
 ```
 
 _Note: Most type checkers will falsely warn_ `programming_languages` _is not subscriptable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a dictionary for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
@@ -41,7 +41,7 @@ List all extensions for a language:
 ```py
 js_exts = programming_languages['JavaScript']['extensions']
 
-print(js_exts) # => ['.js', '._js', '.bones', '.cjs', ...]
+print(js_exts) # => ['._js', '.bones', '.cjs', '.es', ...]
 ```
 
 Get language from an extension:
@@ -58,12 +58,12 @@ print(get_lang('.rs')) # => 'Rust'
 Filter by language type:
 
 ```py
-markup_langs = {
+markup_langs = [
     lang for lang, data in programming_languages.items()
         if data['type'] == 'markup'
-}
+]
 
-print(markup_langs) # => ['HTML+ECR', 'PostCSS', 'Go Template', 'SCSS', ...]
+print(markup_langs) # => ['Antlers', 'API Blueprint', 'Astro', 'BibTeX', ...]
 print(f'{len(markup_langs)} markup languages') # -> '69 markup languages'
 ```
 
