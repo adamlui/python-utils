@@ -2,8 +2,8 @@
 
 # > markup-languages
 
-<a href="https://github.com/adamlui/python-utils/releases/tag/markup-languages-1.0.0">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/python-utils/releases/tag/markup-languages-1.0.1">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/markup-languages/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
@@ -13,7 +13,7 @@
 
 > ### _File extensions for markup languages._
 
-It's just a [JSON file](https://github.com/adamlui/python-utils/blob/markup-languages-1.0.0/markup-languages/src/markup_languages/markup_languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 69 markup languages known to GitHub). Data is updated via script and released via new package version.
+It's just a [JSON file](https://github.com/adamlui/python-utils/blob/markup-languages-1.0.1/markup-languages/src/markup_languages/markup_languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 69 markup languages known to GitHub). Data is updated via script and released via new package version.
 
 ## Installation
 
