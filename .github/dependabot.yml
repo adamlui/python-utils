@@ -9,6 +9,7 @@ updates:
   - package-ecosystem: pip
     directories:
       - /
+      - /computer-languages
       - /data-languages
       - /find-project-root
       - /get-min-py
