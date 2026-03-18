@@ -13,6 +13,7 @@ updates:
       - /get-min-py
       - /is-unicode-supported
       - /latin-locales
+      - /markup-languages
       - /non-latin-locales
       - /programming-languages
       - /project-markers

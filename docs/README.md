@@ -2,7 +2,7 @@
 
 # 🐍 adamlui / python-utils
 
-<a href="https://pypacktrends.com/?packages=find-project-root&packages=get-min-py&packages=is-unicode-supported&packages=latin-locales&packages=non-latin-locales&packages=programming-languages&packages=project-markers&packages=remove-json-keys&packages=translate-messages&time_range=allTimeCumulative&scheme=dark">
+<a href="https://pypacktrends.com/?packages=find-project-root&packages=get-min-py&packages=is-unicode-supported&packages=latin-locales&packages=markup-languages&packages=non-latin-locales&packages=programming-languages&packages=project-markers&packages=remove-json-keys&packages=translate-messages&time_range=allTimeCumulative&scheme=dark">
     <img height=31 src="https://img.shields.io/badge/Downloads-9.8k-af68ff.svg?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="./LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -47,6 +47,14 @@
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/latin-locales/#installation) /
 [Readme](https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme) /
 [API usage](https://github.com/adamlui/python-utils/tree/main/latin-locales/#usage) /
+[Discuss](https://github.com/adamlui/python-utils/discussions)
+
+### <a href="https://github.com/adamlui/python-utils/tree/main/markup-languages/#readme"><> markup-languages</a>
+
+> File extensions for markup languages.
+<br>[Install](https://github.com/adamlui/python-utils/tree/main/markup-languages/#installation) /
+[Readme](https://github.com/adamlui/python-utils/tree/main/markup-languages/#readme) /
+[API usage](https://github.com/adamlui/python-utils/tree/main/markup-languages/#usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme">🇨🇳 non-latin-locales</a>
