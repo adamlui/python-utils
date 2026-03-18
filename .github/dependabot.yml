@@ -18,6 +18,7 @@ updates:
       - /non-latin-locales
       - /programming-languages
       - /project-markers
+      - /prose-languages
       - /remove-json-keys
       - /translate-messages
     schedule:

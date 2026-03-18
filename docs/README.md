@@ -89,6 +89,14 @@
 [API usage](https://github.com/adamlui/python-utils/tree/main/project-markers/#usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
+### <a href="https://github.com/adamlui/python-utils/tree/main/prose-languages/#readme">## prose-languages</a>
+
+> File extensions for prose languages.
+<br>[Install](https://github.com/adamlui/python-utils/tree/main/prose-languages/#installation) /
+[Readme](https://github.com/adamlui/python-utils/tree/main/prose-languages/#readme) /
+[API usage](https://github.com/adamlui/python-utils/tree/main/prose-languages/#usage) /
+[Discuss](https://github.com/adamlui/python-utils/discussions)
+
 ### <a href="https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#readme">{ } remove-json-keys</a>
 
 > Simply remove JSON keys via CLI command.
