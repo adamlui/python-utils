@@ -35,14 +35,6 @@ _Note: Most type checkers will falsely warn_ `markup_languages` _is not subscrip
 
 ## Examples
 
-List all extensions for a language:
-
-```py
-html_exts = markup_languages['HTML']['extensions']
-
-print(html_exts) # => ['.hta', '.htm', '.html', '.html.hl', ...]
-```
-
 Get language from an extension:
 
 ```py
