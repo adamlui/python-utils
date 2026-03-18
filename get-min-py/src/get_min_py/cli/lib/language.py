@@ -66,9 +66,7 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
 
     if not lang_code.startswith('en'): # fetch non-English msgs from jsDelivr
         import is_unicode_supported, non_latin_locales
-        if not hasattr(get_msgs, 'cached_unicode_support'):
-            get_msgs.cached_unicode_support = is_unicode_supported() # type: ignore
-        if lang_code.split('_')[0] in non_latin_locales and not get_msgs.cached_unicode_support: # type: ignore
+        if lang_code.split('_')[0] in non_latin_locales and not is_unicode_supported(): # type: ignore
             return sn(**msgs) # EN ones cuz non-Latin not supported
         msg_base_url = f'{jsdelivr.create_commit_url(cli, cli.commit_hashes.locales)}' \
                         '/src/get_min_py/data/_locales'
