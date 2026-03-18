@@ -30,9 +30,9 @@ keywords = [
     "language-detection",
     "languages",
     "linguist",
+    "markdown",
     "markup-languages",
     "syntax-highlighting",
-    "xml",
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
