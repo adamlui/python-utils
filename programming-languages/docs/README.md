@@ -2,6 +2,8 @@
 
 # > programming-languages
 
+<a href="https://pepy.tech/projects/programming-languages?versions=*">
+    <img height=31 src="https://img.shields.io/pepy/dt/programming-languages?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
 <a href="https://github.com/adamlui/python-utils/releases/tag/programming-languages-2.0.0">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-2.0.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/programming-languages/docs/LICENSE.md">
