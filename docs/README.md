@@ -50,7 +50,7 @@
     <summary>Get the minimum Python version required for a PyPI package.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme">
-            <img width=511 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@f133ea3/get-min-py/assets/images/cli-output.png"></a>
+            <img width=750 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@f133ea3/get-min-py/assets/images/cli-output.png"></a>
     </blockquote>
 </details>
 
