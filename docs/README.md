@@ -39,14 +39,33 @@
 [API usage](https://github.com/adamlui/python-utils/tree/main/find-project-root/#api-usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
-### <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme">📊 get-min-py</a>
+<!-- get-min-py -->
 
-> Get the minimum Python version required for a PyPI package.
-<br>[Install](https://github.com/adamlui/python-utils/tree/main/get-min-py/#-installation) /
-[Readme](https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme) /
-[API usage](https://github.com/adamlui/python-utils/tree/main/get-min-py/#-api-usage) /
-[CLI usage](https://github.com/adamlui/python-utils/tree/main/get-min-py/#-command-line-usage) /
-[Discuss](https://github.com/adamlui/python-utils/discussions)
+<h3>
+    <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme">
+        📊 get-min-py</a>
+</h3>
+
+<details>
+    <summary>Get the minimum Python version required for a PyPI package.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme">
+            <img width=511 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@f133ea3/get-min-py/assets/images/cli-output.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#-installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#-api-usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#-command-line-usage">
+        CLI usage</a> /
+    <a href="https://github.com/adamlui/python-utils/discussions">
+        Discuss</a>
+</blockquote>
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#readme">📟 is-unicode-supported</a>
 
