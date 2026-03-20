@@ -31,7 +31,7 @@ def version(cli: sn) -> None:
     print(f'\n{colors.by}{cli.name}\n{colors.bw}{cli.msgs.log_VERSION.lower()}: {cli.version}{colors.nc}')
 def warn(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
-def cmd_docs_url_exit(cli: sn, msg: str = '') -> None:
+def cmd_docs_url_exit(cli: sn, msg: str = '', cmd: str = 'help') -> None:
     if msg : error(msg)
     help_cmd(cli)
     docs_url(cli)
