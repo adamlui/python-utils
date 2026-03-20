@@ -55,7 +55,7 @@ def get_lang_from_path(filepath):
     for lang, data in prose_languages.items():
         if file_ext in data['extensions']:
             return lang
- 
+
 print(get_lang_from_path('document.adoc')) # => 'AsciiDoc'
 print(get_lang_from_path('README.md')) # => 'Markdown'
 print(get_lang_from_path('index.mdx')) # => None (use markup-languages pkg)
