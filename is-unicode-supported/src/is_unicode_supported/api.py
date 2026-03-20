@@ -1,14 +1,14 @@
-import os, sys
+import sys
 
-import blessed
+import blessed, is_legacy_terminal
 
 def is_unicode_supported() -> bool:
     if hasattr(is_unicode_supported, '_cached'):
         return is_unicode_supported._cached
 
-    if sys.platform == 'win32' and not os.environ.get('WT_SESSION'):
+    if not is_legacy_terminal(): # type: ignore
         is_unicode_supported._cached = False
-        return False # legacy Win consoles don't suport wide chars
+        return False # legacy terminals don't suport wide chars
 
     # Measure rendered width of wide CJK char
     terminal = blessed.Terminal()

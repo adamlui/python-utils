@@ -20,6 +20,7 @@ license-files = [
 dependencies = [
     "blessed~=1.33.0",
     "colorama~=0.4.6 ; platform_system == 'Windows'",
+    "is-legacy-terminal~=1.0.0",
     "json5~=0.13.0",
 ]
 requires-python = ">=3.8,<4"
