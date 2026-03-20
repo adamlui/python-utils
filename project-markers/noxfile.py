@@ -15,9 +15,13 @@ def session(func) : return nox.session(venv_backend='none', name=func.__name__.r
 def dev(session) : session.run('pip', 'install', '-e', '.')
 
 @session
-def lint(session) : session.run('ruff', 'check', '.', *session.posargs)
+def lint(session): # staged project files
+    files = session.run('git', 'diff', '--cached', '--name-only', '--relative', silent=True, log=False).splitlines()
+    if files : session.run('pre-commit', 'run', '--files', *files, *session.posargs)
 @session
-def lint_fix(session) : session.run('ruff', 'check', '.', '--fix', *session.posargs)
+def lint_all(session): # all project files
+    files = session.run('git', 'ls-files', '.', silent=True, log=False).splitlines()
+    session.run('pre-commit', 'run', '--files', *files, *session.posargs)
 
 @session
 def bump_patch(session, no_push=True):
