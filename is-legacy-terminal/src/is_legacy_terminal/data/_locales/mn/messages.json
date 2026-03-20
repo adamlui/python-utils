@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Төрөл" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "боломжтой сонголтууд" },
+  "log_VERSION": { "message": "Хувилбар" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Нэмэлт тусламж авахыг хүсвэл зочилно уу" },
+  "warn_NOT_FOUND": { "message": "Олдсонгүй" },
+  "warn_CLI_OPTION": { "message": "CLI сонголт" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "орлуулсан" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "болон устгагдах болно" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "цаашид ямар ч нөлөөгүй" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Тодорхойгүй аргумент(ууд)" },
+  "help_HELP": { "message": "Тусламжийн дэлгэцийг харуулах" },
+  "help_VERSION": { "message": "Хувилбарыг харуулах" },
+  "help_DOCS": { "message": "Баримтын URL-г нээх" },
+  "help_DEBUG": { "message": "Дибагын логуудыг харуулах" }
+}

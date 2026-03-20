@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "ಪ್ರಕಾರ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ಲಭ್ಯವಿರುವ ಆಯ್ಕೆಗಳಿಗಾಗಿ" },
+  "log_VERSION": { "message": "ಆವೃತ್ತಿ" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "ಹೆಚ್ಚಿನ ಸಹಾಯಕ್ಕಾಗಿ, ಭೇಟಿ ನೀಡಿ" },
+  "warn_NOT_FOUND": { "message": "ಕಂಡುಬಂದಿಲ್ಲ" },
+  "warn_CLI_OPTION": { "message": "CLI ಆಯ್ಕೆ" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ಇದನ್ನು ಬದಲಾಯಿಸಲಾಗಿದೆ" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ಮತ್ತು ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ಇನ್ನು ಮುಂದೆ ಯಾವುದೇ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ" },
+  "err_UNRECOGNIZED_ARGS": { "message": "ಗುರುತಿಸಲಾಗದ ಆರ್ಗ್ಯುಮೆಂಟ್(ಗಳು)" },
+  "help_HELP": { "message": "ಸಹಾಯ ಪರದೆಯನ್ನು ತೋರಿಸಿ" },
+  "help_VERSION": { "message": "ಆವೃತ್ತಿಯನ್ನು ತೋರಿಸಿ" },
+  "help_DOCS": { "message": "ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳ URL ತೆರೆಯಿರಿ" },
+  "help_DEBUG": { "message": "ಡೀಬಗ್ ಲಾಗ್‌ಗಳನ್ನು ತೋರಿಸಿ" }
+}

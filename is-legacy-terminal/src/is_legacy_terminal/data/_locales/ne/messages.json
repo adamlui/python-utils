@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "प्रकार" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "उपलब्ध विकल्पहरूको लागि" },
+  "log_VERSION": { "message": "संस्करण" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "थप मद्दतको लागि, यहाँ जानुहोस्" },
+  "warn_NOT_FOUND": { "message": "फेला परेन" },
+  "warn_CLI_OPTION": { "message": "CLI विकल्प" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "द्वारा प्रतिस्थापित गरिएको छ" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "र हटाइनेछ" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "अब कुनै असर पर्दैन" },
+  "err_UNRECOGNIZED_ARGS": { "message": "अपरिचित तर्क(हरू)" },
+  "help_HELP": { "message": "मद्दत स्क्रिन देखाउनुहोस्" },
+  "help_VERSION": { "message": "संस्करण देखाउनुहोस्" },
+  "help_DOCS": { "message": "DOCS URL खोल्नुहोस्" },
+  "help_DEBUG": { "message": "डिबग लगहरू देखाउनुहोस्" }
+}

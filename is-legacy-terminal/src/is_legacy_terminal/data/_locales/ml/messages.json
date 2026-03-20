@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "തരം" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ലഭ്യമായ ഓപ്ഷനുകൾക്കായി" },
+  "log_VERSION": { "message": "പതിപ്പ്" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "കൂടുതൽ സഹായത്തിനായി, സന്ദർശിക്കുക" },
+  "warn_NOT_FOUND": { "message": "കണ്ടെത്തിയില്ല" },
+  "warn_CLI_OPTION": { "message": "CLI ഓപ്ഷൻ" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "മാറ്റിസ്ഥാപിച്ചത്" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "s" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "s" },
+  "err_UNRECOGNIZED_ARGS": { "message": "തിരിച്ചറിയാത്ത ആർഗ്യുമെന്റ്(കൾ)" },
+  "help_HELP": { "message": "സഹായ സ്ക്രീൻ കാണിക്കുക" },
+  "help_VERSION": { "message": "പതിപ്പ് കാണിക്കുക" },
+  "help_DOCS": { "message": "പ്രമാണങ്ങളുടെ URL തുറക്കുക" },
+  "help_DEBUG": { "message": "ഡീബഗ് ലോഗുകള്‍ കാണിക്കുക" }
+}

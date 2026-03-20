@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Type" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "for tilgængelige muligheder" },
+  "log_VERSION": { "message": "Version" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Du kan få mere hjælp ved at gå til" },
+  "warn_NOT_FOUND": { "message": "Ikke fundet" },
+  "warn_CLI_OPTION": { "message": "CLI-indstilling" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "er blevet erstattet af" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "og vil blive fjernet" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ikke længere har nogen effekt" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Argument( er), der ikke genkendes" },
+  "help_HELP": { "message": "Vis hjælpeskærm" },
+  "help_VERSION": { "message": "Vis version" },
+  "help_DOCS": { "message": "Åbn docs-URL" },
+  "help_DEBUG": { "message": "Vis fejlretningslogge" }
+}

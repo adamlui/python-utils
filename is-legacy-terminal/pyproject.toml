@@ -1,0 +1,120 @@
+[build-system]
+requires = [
+    "setuptools~=82.0.0",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "is-legacy-terminal"
+version = "1.0.0"
+description = "Detect whether the terminal is legacy."
+authors = [
+    { name = "Adam Lui", email = "adam@kudoai.com" },
+]
+readme = "docs/README.md"
+license = "MIT"
+license-files = [
+    "docs/LICENSE.md",
+]
+dependencies = [
+    "colorama~=0.4.6 ; platform_system == 'Windows'",
+    "json5~=0.13.0",
+]
+requires-python = ">=3.8,<4"
+keywords = [
+    "ansi",
+    "api",
+    "cli",
+    "cmd",
+    "compatibility",
+    "conhost",
+    "console",
+    "detect",
+    "detection",
+    "dev-tool",
+    "flicker",
+    "legacy",
+    "powershell",
+    "shell",
+    "support",
+    "supported",
+    "supports",
+    "terminal",
+    "vt100",
+    "windows-console",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System",
+    "Topic :: System :: Shells",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Terminals",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/is-legacy-terminal-1.0.0"
+Documentation = "https://github.com/adamlui/python-utils/tree/main/is-legacy-terminal/docs"
+Funding = "https://github.com/sponsors/adamlui"
+Homepage = "https://github.com/adamlui/python-utils/tree/main/is-legacy-terminal/#readme"
+Issues = "https://github.com/adamlui/python-utils/issues"
+"PyPI Stats" = "https://pepy.tech/projects/is-legacy-terminal"
+Releases = "https://github.com/adamlui/python-utils/releases"
+Repository = "https://github.com/adamlui/python-utils"
+
+[project.scripts]
+is-legacy-terminal = "is_legacy_terminal.cli.__main__:main"
+is-legacy-term = "is_legacy_terminal.cli.__main__:main"
+is-legacy-console = "is_legacy_terminal.cli.__main__:main"
+is-terminal-legacy = "is_legacy_terminal.cli.__main__:main"
+is-term-legacy = "is_legacy_terminal.cli.__main__:main"
+is-console-legacy = "is_legacy_terminal.cli.__main__:main"
+islegacyterminal = "is_legacy_terminal.cli.__main__:main"
+islegacyterm = "is_legacy_terminal.cli.__main__:main"
+islegacyconsole = "is_legacy_terminal.cli.__main__:main"
+isterminallegacy = "is_legacy_terminal.cli.__main__:main"
+istermlegacy = "is_legacy_terminal.cli.__main__:main"
+isconsolelegacy = "is_legacy_terminal.cli.__main__:main"
+
+[project.optional-dependencies]
+dev = [
+    "nox>=2026.2.9",
+    "remove-json-keys~=1.9.1",
+    "tomli~=2.4.0",
+    "tomli-w~=1.2.0",
+    "translate-messages~=1.9.0",
+]
+
+[tool.setuptools.packages.find]
+where = [
+    "src",
+]
+
+[tool.setuptools.package-data]
+is_legacy_terminal = [
+    "data/*.json",
+    "data/_locales/en/messages.json",
+]

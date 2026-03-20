@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Genus" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "aliquam disponibus" },
+  "log_VERSION": { "message": "Version" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Hodie more help, vagina" },
+  "warn_NOT_FOUND": { "message": "Non foundus" },
+  "warn_CLI_OPTION": { "message": "CLI OMNIBE" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "oMNI INTERNATIONE" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "[ORI] Oremus sine salutatione" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "nunquam non è effectis" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Libellusargumenti nonognitas" },
+  "help_HELP": { "message": "Show Auxilium" },
+  "help_VERSION": { "message": "Explicare version" },
+  "help_DOCS": { "message": "URL docs" },
+  "help_DEBUG": { "message": "Scripta Edere" }
+}

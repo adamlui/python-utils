@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Rudzi" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "nokuti iripo zvaungasarudza" },
+  "log_VERSION": { "message": "Shanduro" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Kuti uwane rumwe rubatsiro, shanyira" },
+  "warn_NOT_FOUND": { "message": "Haina kuwanikwa" },
+  "warn_CLI_OPTION": { "message": "CLI nezvechisarudzo" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "yakatsiviwa ne" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "uye vachabviswa" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "haisisina zvazvinoita" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Kukakavara kusingazivikanwi(s)" },
+  "help_HELP": { "message": "Ratidza chidzitiro chekubatsira" },
+  "help_VERSION": { "message": "Ratidza shanduro" },
+  "help_DOCS": { "message": "Vhura zvinyorwa URL" },
+  "help_DEBUG": { "message": "Ratidza debug matanda" }
+}

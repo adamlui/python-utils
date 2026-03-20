@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Տեսակ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ազատ տարբերակների համար" },
+  "log_VERSION": { "message": "Տարբերակ" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Լրացուցիչ օգնության համար այցելեք" },
+  "warn_NOT_FOUND": { "message": "Չի գտնվել" },
+  "warn_CLI_OPTION": { "message": "CLI տարբերակ" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "փոխարինվել է" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "և կհեռացվի" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "այլևս ոչ մի ազդեցություն չունի" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Չճանաչված փաստարկ(ներ)" },
+  "help_HELP": { "message": "Ցույց տալ օգնության էկրանը" },
+  "help_VERSION": { "message": "Ցույց տալ տարբերակը" },
+  "help_DOCS": { "message": "Բացել փաստաթղթերի URL - ը" },
+  "help_DEBUG": { "message": "Ցույց տալ կարգաբերման մատյանները" }
+}

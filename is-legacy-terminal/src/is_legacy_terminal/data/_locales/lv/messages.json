@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Veids" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "par pieejamajām iespējām" },
+  "log_VERSION": { "message": "Versija" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Lai saņemtu papildu palīdzību, apmeklējiet" },
+  "warn_NOT_FOUND": { "message": "Nav atrasts" },
+  "warn_CLI_OPTION": { "message": "CLI opcija" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ir aizstāts ar" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "un tiks noņemts" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "vairs nav nekādas ietekmes" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Neatpazīti argumenti" },
+  "help_HELP": { "message": "Rādīt palīdzības ekrānu" },
+  "help_VERSION": { "message": "Rādīt versiju" },
+  "help_DOCS": { "message": "Atvērt dokumentu URL" },
+  "help_DEBUG": { "message": "Rādīt atkļūdošanas žurnālus" }
+}

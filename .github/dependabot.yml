@@ -13,6 +13,7 @@ updates:
       - /data-languages
       - /find-project-root
       - /get-min-py
+      - /is-legacy-terminal
       - /is-unicode-supported
       - /latin-locales
       - /markup-languages

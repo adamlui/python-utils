@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "Umusango" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ifyo Mwingacita pa Kuti Mulesanga Ifya Ku" },
+  "log_VERSION": { "message": "Ukupilibula" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Nga mulefwaya ukwishibilapo na fimbi, kabiyeni" },
+  "warn_NOT_FOUND": { "message": "Tababwenepo" },
+  "warn_CLI_OPTION": { "message": "CLI Option" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "yalili Yalila" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "kabili bakafumishiwapo" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "no Longer Impact ukulele" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Ukukanasakamana (ukukanasakamana)" },
+  "help_HELP": { "message": "Lombola 'ko bukwashi bwa kwi" },
+  "help_VERSION": { "message": "Tontonkanyeni pa fyo Baibolo ilanda" },
+  "help_DOCS": { "message": "Isuleni URL ya docs" },
+  "help_DEBUG": { "message": "Show Debug Logs" }
+}

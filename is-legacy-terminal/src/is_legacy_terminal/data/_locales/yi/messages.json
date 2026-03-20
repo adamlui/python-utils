@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "טיפּ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "פֿאַר פֿאַראַן אָפּציעס" },
+  "log_VERSION": { "message": "ווערסיע" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "פֿאַר מער הילף, באַזוכט" },
+  "warn_NOT_FOUND": { "message": "נישט געפֿונען" },
+  "warn_CLI_OPTION": { "message": "CLI אָפּציע" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "איז געוואָרן ערזעצט דורך" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "און וועט ווערן אַוועקגענומען" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "האט מער נישט קיין שום ווירקונג" },
+  "err_UNRECOGNIZED_ARGS": { "message": "נישט דערקענטע אַרגומענטן" },
+  "help_HELP": { "message": "ווייַזן הילף־עקראַן" },
+  "help_VERSION": { "message": "ווייַזן ווערסיע" },
+  "help_DOCS": { "message": "עפֿענען דאָקס URL" },
+  "help_DEBUG": { "message": "ווייַזן דיבאַג לאָגס" }
+}

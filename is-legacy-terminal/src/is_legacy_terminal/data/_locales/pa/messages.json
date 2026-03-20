@@ -1,0 +1,16 @@
+{
+  "log_TYPE": { "message": "ਕਿਸਮ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ਉਪਲੱਬਧ ਵਿਕਲਪਾਂ ਲਈ" },
+  "log_VERSION": { "message": "ਵਰਜਨ" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "ਹੋਰ ਮਦਦ ਲਈ, ਜਾਓ" },
+  "warn_NOT_FOUND": { "message": "ਨਹੀਂ ਲੱਭਿਆ" },
+  "warn_CLI_OPTION": { "message": "CLI ਚੋਣ" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ਇਸ ਨਾਲ ਤਬਦੀਲ ਕੀਤਾ ਗਿਆ ਹੈ" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ਅਤੇ ਹਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ਹੁਣ ਕੋਈ ਪ੍ਰਭਾਵ ਨਹੀਂ ਹੈ" },
+  "err_UNRECOGNIZED_ARGS": { "message": "ਅਣਜਾਣ ਆਰਗੂਮੈਂਟ" },
+  "help_HELP": { "message": "ਮੱਦਦ ਸਕਰੀਨ ਵੇਖੋ" },
+  "help_VERSION": { "message": "ਵਰਜਨ ਵੇਖੋ" },
+  "help_DOCS": { "message": "ਡੌਕਸ URL ਖੋਲ੍ਹੋ" },
+  "help_DEBUG": { "message": "ਡੀਬੱਗ ਲਾਗ ਵੇਖੋ" }
+}
