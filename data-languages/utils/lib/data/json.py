@@ -59,7 +59,7 @@ def write(file_path: Union[Path, str], data: Any, encoding: str = 'utf-8', ensur
             for idx, (key,val) in enumerate(obj.items()):
                 inner_lines = format_compact(val, indent +1, f'  {indent_spaces}"{key}": ')
                 for line in inner_lines : lines.append(line)
-                if not idx == len(obj) -1 : lines[-1] += ',' # append comma except last line
+                if idx != len(obj) -1 : lines[-1] += ',' # append comma except last line
             lines.append(indent_spaces + '}')
             return lines
 
@@ -88,7 +88,7 @@ def write(file_path: Union[Path, str], data: Any, encoding: str = 'utf-8', ensur
                 for idx, item in enumerate(obj):
                     inner_lines = format_compact(item, indent +1)
                     for line in inner_lines : lines.append(line)
-                    if not idx == len(obj) -1 : lines[-1] += ','
+                    if idx != len(obj) -1 : lines[-1] += ','
             lines.append(indent_spaces + ']')
             return lines
 
