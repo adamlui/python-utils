@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   lint-all:
-    name: Lint all files (via pre-commit)
+    name: Lint all files
     runs-on: ubuntu-24.04
     permissions:
       contents: read
