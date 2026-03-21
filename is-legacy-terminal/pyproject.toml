@@ -19,6 +19,7 @@ license-files = [
 ]
 dependencies = [
     "colorama~=0.4.6 ; platform_system == 'Windows'",
+    "is-unicode-supported~=1.1.1",
     "json5~=0.13.0",
 ]
 requires-python = ">=3.8,<4"

@@ -65,9 +65,8 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
         Path(__file__).parent.parent.parent / 'data/_locales/en/messages.json'))
 
     if not lang_code.startswith('en'): # fetch non-English msgs from jsDelivr
-        import non_latin_locales
-        from ...api import is_legacy_terminal
-        if lang_code.split('_')[0] in non_latin_locales and not is_legacy_terminal(): # type: ignore
+        import is_unicode_supported, non_latin_locales
+        if lang_code.split('_')[0] in non_latin_locales and not is_unicode_supported(): # type: ignore
             return sn(**msgs) # EN ones cuz non-Latin not supported
         msg_base_url = f'{jsdelivr.create_commit_url(cli, cli.commit_hashes.locales)}' \
                         '/src/is_legacy_terminal/data/_locales'
