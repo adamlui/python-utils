@@ -45,7 +45,7 @@ import is_legacy_terminal
 if is_legacy_terminal():
     print('Is legacy terminal!')
 else:
-    print('Is not legacy terminal!')
+    print('Is modern terminal!')
 ```
 
 _Note: Most type checkers will falsely warn_ `is_legacy_terminal` _is not a callable module because they are incapable of analyzing runtime behavior (where the module is replaced w/ a function for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
