@@ -2,34 +2,23 @@ name: Lint pushes + PRs
 on: [push, pull_request]
 
 jobs:
-
-  python-lint:
-    name: Python lint
-    runs-on: ubuntu-latest
+  lint-all:
+    name: Lint all files (via pre-commit)
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
 
     steps:
-
-      - name: Checkout repository code
+      - name: Checkout repository
         uses: actions/checkout@v6.0.1
 
-      - name: Run Ruff
-        uses: astral-sh/ruff-action@v3.6.1
+      - name: Set up Python
+        uses: actions/setup-python@v6.2.0
+        with:
+          python-version: '3.x'
 
-  yaml-lint:
-    name: YAML lint
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
+      - name: Install dev dependencies
+        run: pip install -r requirements-dev.txt
 
-    steps:
-
-      - name: Checkout repository code
-        uses: actions/checkout@v6.0.1
-
-      - name: Install yamllint
-        run: pip install yamllint
-
-      - name: Run yamllint
-        run: yamllint . -c .yamllint-config.yaml
+      - name: Lint all files
+        run: nox -s lint-all
