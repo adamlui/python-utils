@@ -1,6 +1,6 @@
 {
   "name": "is-legacy-terminal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detect whether the terminal supports advanced Unicode.",
   "cmds": ["is-legacy-terminal", "isunicodesupported"],
   "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
