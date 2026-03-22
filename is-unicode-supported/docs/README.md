@@ -15,7 +15,7 @@
 
 > ### _Detect whether the terminal supports advanced Unicode._
 
-Checks if terminal supports advanced Unicode (CJK, emoji, etc.) by measuring the cursor position of a single, wide char (𠀀). On Windows, returns `False` for legacy consoles (CMD). On all other modern terminals, returns `True` if the wide char renders as 2 columns.
+Checks if terminal supports advanced Unicode (CJK, emoji, etc.) by measuring the cursor position of a single, wide char (𠀀). Returns `False` for legacy consoles or `True` if the wide char renders as 2 columns.
 
 ## ⚡ Installation
 
