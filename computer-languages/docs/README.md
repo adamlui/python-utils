@@ -2,8 +2,8 @@
 
 # ⊕ computer-languages
 
-<a href="https://github.com/adamlui/python-utils/releases/tag/computer-languages-1.0.0">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://pepy.tech/projects/computer-languages?versions=*">
+    <img height=31 src="https://img.shields.io/pepy/dt/computer-languages?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/computer-languages/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
