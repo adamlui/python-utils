@@ -4,8 +4,8 @@
 
 <a href="https://pepy.tech/projects/get-min-py?versions=*">
     <img height=31 src="https://img.shields.io/pepy/dt/get-min-py?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
-<a href="https://github.com/adamlui/python-utils/releases/tag/get-min-py-1.1.2">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.1.2-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/python-utils/releases/tag/get-min-py-1.1.3">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.1.3-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/get-min-py/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
