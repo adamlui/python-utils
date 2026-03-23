@@ -4,8 +4,8 @@
 
 <a href="https://pepy.tech/projects/is-legacy-terminal?versions=*">
     <img height=31 src="https://img.shields.io/pepy/dt/is-legacy-terminal?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
-<a href="https://github.com/adamlui/python-utils/releases/tag/is-legacy-terminal-1.0.1">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/python-utils/releases/tag/is-legacy-terminal-1.0.2">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.2-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/is-legacy-terminal/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
