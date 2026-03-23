@@ -25,22 +25,22 @@ def lint_all(session): # all project files
 
 @session
 def bump_patch(session, no_push=True):
-    cmd = ['py', paths.utils.bump, '--patch']
-    if no_push : cmd.append('--no-push')
-    session.run(*cmd, *session.posargs)
+    cmd_args = ['py', paths.utils.bump, '--patch']
+    if no_push : cmd_args.append('--no-push')
+    session.run(*cmd_args, *session.posargs)
 @session
 def bump_minor(session, no_push=True):
-    cmd = ['py', paths.utils.bump, '--minor']
-    if no_push : cmd.append('--no-push')
-    session.run(*cmd, *session.posargs)
+    cmd_args = ['py', paths.utils.bump, '--minor']
+    if no_push : cmd_args.append('--no-push')
+    session.run(*cmd_args, *session.posargs)
 @session
 def bump_feat(session, no_push=True):
     bump_minor(session, no_push)
 @session
 def bump_major(session, no_push=True):
-    cmd = ['py', paths.utils.bump, '--major']
-    if no_push : cmd.append('--no-push')
-    session.run(*cmd, *session.posargs)
+    cmd_args = ['py', paths.utils.bump, '--major']
+    if no_push : cmd_args.append('--no-push')
+    session.run(*cmd_args, *session.posargs)
 
 @session
 def build(session) : clean(session) ; session.run('py', '-m', 'build') ; print('Build complete!')
