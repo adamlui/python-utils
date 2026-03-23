@@ -2,7 +2,12 @@
   "name": "is-legacy-terminal",
   "version": "1.0.2",
   "description": "Detect whether the terminal supports advanced Unicode.",
-  "cmds": ["is-legacy-terminal", "isunicodesupported"],
+  "cmds": [
+    "is-legacy-terminal", "is-legacy-term", "is-legacy-console", "is-legacy",
+    "is-terminal-legacy", "is-term-legacy", "is-console-legacy",
+    "islegacyterminal", "islegacyterm", "islegacyconsole", "islegacy",
+    "isterminallegacy", "istermlegacy", "isconsolelegacy"
+  ],
   "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
   "urls": {
     "docs": "https://github.com/adamlui/python-utils/tree/main/is-legacy-terminal/docs",

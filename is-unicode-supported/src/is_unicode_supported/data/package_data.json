@@ -2,7 +2,7 @@
   "name": "is-unicode-supported",
   "version": "1.1.2",
   "description": "Detect whether the terminal supports advanced Unicode.",
-  "cmds": ["is-unicode-supported", "isunicodesupported"],
+  "cmds": ["is-unicode-supported", "supports-unicode", "isunicodesupported", "supportsunicode"],
   "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
   "urls": {
     "docs": "https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/docs",

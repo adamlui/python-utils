@@ -97,7 +97,9 @@ Repository = "https://github.com/adamlui/python-utils"
 
 [project.scripts]
 is-unicode-supported = "is_unicode_supported.cli.__main__:main"
+supports-unicode = "is_unicode_supported.cli.__main__:main"
 isunicodesupported = "is_unicode_supported.cli.__main__:main"
+supportsunicode = "is_unicode_supported.cli.__main__:main"
 
 [project.optional-dependencies]
 dev = [
