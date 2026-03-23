@@ -17,7 +17,6 @@
 
 Checks if terminal is legacy (flicker-prone, limited rendering, etc.). On Windows, returns `True` if CMD or PowerShell ISE not hosted in modern shell. On *nix systems, returns `True` if `env.TERM` is `'dumb'` or `'unknown'` (indicating a very basic terminal).
 
-
 ## ⚡ Installation
 
 ```bash
