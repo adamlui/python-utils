@@ -6,7 +6,7 @@ def is_unicode_supported() -> bool:
     if hasattr(is_unicode_supported, '_cached'):
         return is_unicode_supported._cached
 
-    if not is_legacy_terminal(): # type: ignore
+    if is_legacy_terminal(): # type: ignore
         is_unicode_supported._cached = False
         return False # legacy terminals don't suport wide chars
 
