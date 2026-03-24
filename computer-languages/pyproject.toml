@@ -1,6 +1,6 @@
 [build-system]
 requires = [
-    "setuptools~=82.0.0",
+    "setuptools>=82.0.0,<83",
     "wheel",
 ]
 build-backend = "setuptools.build_meta"
@@ -113,8 +113,8 @@ Repository = "https://github.com/adamlui/python-utils"
 [project.optional-dependencies]
 dev = [
     "nox>=2026.2.9",
-    "tomli~=2.4.0",
-    "tomli-w~=1.2.0",
+    "tomli>=2.4.0,<3",
+    "tomli-w>=1.2.0,<2",
 ]
 
 [tool.setuptools.packages.find]
