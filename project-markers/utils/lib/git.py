@@ -1,12 +1,14 @@
 from pathlib import Path
 import subprocess
 
+BACKUP_PATH = Path.home() / '.gitconfig.backup'
+
 def commit(files, msg, *args) : run('add', *files) ; run('commit', '-m', msg, *args)
 
 def init_kudo_sync_bot(msgs):
     import os
     print(f'\n{msgs.log_SWITCHING_TO_KUDO_SYNC_BOT}...\n')
-    with open(Path.home() / '.gitconfig.backup', 'w') as file: # back up git config
+    with open(BACKUP_PATH, 'w') as file: # back up git config
         file.write(run('config', '--global', '--list'))
     gpg_keys_path = os.environ.get('GPG_KEYS_PATH')
     if gpg_keys_path:
@@ -25,14 +27,13 @@ def push() : run('push')
 
 def restore_og_config(msgs):
     print(f'{msgs.log_RESTORING_OG_GIT_CONFIG}...')
-    backup_path = Path.home() / '.gitconfig.backup'
-    if backup_path.exists():
-        with open(backup_path) as file:
+    if BACKUP_PATH.exists():
+        with open(BACKUP_PATH) as file:
             for line in file:
                 if '=' in line:
                     key, val = line.strip().split('=', 1)
                     run('config', '--global', key, val)
-        backup_path.unlink()
+        BACKUP_PATH.unlink()
     else:
         print(msgs.warn_GIT_CONFIG_BACKUP_NOT_FOUND)
 
