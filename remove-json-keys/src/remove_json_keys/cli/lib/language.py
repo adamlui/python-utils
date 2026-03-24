@@ -94,7 +94,7 @@ def get_sys_lang(cli: Optional[sn] = None) -> str:
                 capture_output=True, text=True, check=True
             ).stdout.strip()
         else: # macOS/Linux
-            for env_lang_var in ['LANG', 'LANGUAGE', 'LC_ALL', 'LC_MESSAGES', 'LC_NAME']:
+            for env_lang_var in ['LC_ALL', 'LC_MESSAGES', 'LANG', 'LANGUAGE']:
                 sys_lang = os.environ.get(env_lang_var)
                 if sys_lang : return sys_lang.split('.')[0]
             return 'en'
