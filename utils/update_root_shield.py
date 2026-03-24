@@ -77,7 +77,7 @@ def main() -> None:
         print(f'{pkg:30} {downloads:,}')
         sleep(1)
     print('-' *45)
-    print(f"{'TOTAL DOWNLOADS':20} {grand_total_dls:,}\n")
+    print(f"{'TOTAL DOWNLOADS':30} {grand_total_dls:,}\n")
     README_PATH = 'docs/README.md'
     print(f'Updating {README_PATH}...')
     update_downloads_shield(README_PATH, grand_total_dls)
