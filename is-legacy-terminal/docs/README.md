@@ -26,7 +26,7 @@ pip install is-legacy-terminal
 ## 💻 Command line usage
 
 ```bash
-is-legacy-terminal  # or islegacyterm
+is-legacy-terminal  # or islegacy
 # e.g. => True
 ```
 
