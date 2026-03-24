@@ -65,7 +65,7 @@ print(get_lang_from_path('script.js'))  # => None (use programming-languages pkg
 
 ## MIT License
 
-Copyright © 2026 [Adam Lui](https://github.com/adamlui).
+Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 ## Related
 

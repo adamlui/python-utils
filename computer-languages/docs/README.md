@@ -71,7 +71,7 @@ print(f'{len(markup_langs)} markup languages') # -> '69 markup languages'
 
 ## MIT License
 
-Copyright © 2026 [Adam Lui](https://github.com/adamlui).
+Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 ## Related
 

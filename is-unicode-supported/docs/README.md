@@ -53,7 +53,7 @@ _Note: Most type checkers will falsely warn_ `is_unicode_supported` _is not a ca
 
 ## MIT License
 
-Copyright © 2026 [Adam Lui](https://github.com/adamlui).
+Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 ## Related
 

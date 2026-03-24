@@ -75,7 +75,7 @@ root = find_project_root(path='src', max_depth=5, markers=['manifest.json'])
 
 ## MIT License
 
-Copyright © 2026 [Adam Lui](https://github.com/adamlui).
+Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 ## Related
 

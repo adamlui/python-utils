@@ -42,7 +42,7 @@ The list includes hundreds of markers from many tools and ecosystems, including:
 
 ## MIT License
 
-Copyright © 2026 [Adam Lui](https://github.com/adamlui).
+Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 ## Related
 

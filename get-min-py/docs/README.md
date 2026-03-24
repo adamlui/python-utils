@@ -57,7 +57,7 @@ _Note: Most type checkers will falsely warn_ `get_min_py` _is not a callable mod
 
 ## MIT License
 
-Copyright © 2026 [Adam Lui](https://github.com/adamlui).
+Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 ## Related
 

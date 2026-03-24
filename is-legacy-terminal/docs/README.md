@@ -53,7 +53,7 @@ _Note: Most type checkers will falsely warn_ `is_legacy_terminal` _is not a call
 
 ## MIT License
 
-Copyright © 2026 [Adam Lui](https://github.com/adamlui).
+Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 ## Related
 

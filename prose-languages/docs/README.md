@@ -65,7 +65,7 @@ print(get_lang_from_path('index.mdx')) # => None (use markup-languages pkg)
 
 ## MIT License
 
-Copyright © 2026 [Adam Lui](https://github.com/adamlui).
+Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 ## Related
 

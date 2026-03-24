@@ -34,7 +34,7 @@ _Note: Most type checkers will falsely warn_ `non_latin_locales` _is not iterabl
 
 ## MIT License
 
-Copyright © 2026 [Adam Lui](https://github.com/adamlui).
+Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 
 ## Related
 
