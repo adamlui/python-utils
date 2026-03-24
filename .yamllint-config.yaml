@@ -3,7 +3,6 @@ extends: default
 rules:
   comments: disable  # allow any number of spaces before comments
   document-start: disable  # allow omission of '---' at document start
-  new-lines: disable  # allow any new line character
   truthy: disable  # allow any value for keys yamllint often falsely detects as truthy
   line-length:
     max: 120
