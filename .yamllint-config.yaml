@@ -6,4 +6,4 @@ rules:
   new-lines: disable  # allow any new line character
   truthy: disable  # allow any value for keys yamllint often falsely detects as truthy
   line-length:
-    max: 80
+    max: 120
