@@ -1,4 +1,4 @@
-name: Update downloads shield in root README
+name: Update root downloads shield
 
 on:
   schedule:
@@ -28,17 +28,17 @@ jobs:
       - name: Update README shield
         id: update_shield
         run: |
-          python3 utils/update_root_downloads_shield.py
+          python3 utils/update_root_shield.py
           if [[ $? -eq 0 ]] ; then
             echo "Shield updated!"
-            echo "SHIELDS_UPDATED=true" >> $GITHUB_ENV
+            echo "SHIELD_UPDATED=true" >> $GITHUB_ENV
           else
             echo "No update needed."
-            echo "SHIELDS_UPDATED=false" >> $GITHUB_ENV
+            echo "SHIELD_UPDATED=false" >> $GITHUB_ENV
           fi
 
       - name: Push changes
-        if: env.SHIELDS_UPDATED == 'true'
+        if: env.SHIELD_UPDATED == 'true'
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
           GPG_PRIVATE_ID: ${{ secrets.GPG_PRIVATE_ID }}
