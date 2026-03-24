@@ -37,7 +37,7 @@ def get_downloads(pkg: str, max_retries: int = 5, get_delay: int = 2) -> int:
         except HTTPError as err:
             if err.code == 429: # rate limited
                 retry_delay = (idx +1) *2 # exponentially back off
-                print(f'{pkg}: Rate limited. Retrying in {retry_delay}s...')
+                print(f'! {pkg}: Rate limited. Retrying in {retry_delay}s...')
                 sleep(retry_delay)
             else:
                 print(f'{pkg}: ERROR ({err.code})')
