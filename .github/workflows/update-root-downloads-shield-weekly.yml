@@ -2,7 +2,7 @@ name: Update Downloads shield in root README
 
 on:
   schedule:
-    - cron: "45 35 * * 5" # every Fri @ 5:45 AM
+    - cron: "45 5 * * 5" # every Fri @ 5:45 AM
   workflow_dispatch:
 
 jobs:
