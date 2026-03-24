@@ -23,7 +23,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6.2.0
         with:
-          python-version: 3.14
+          python-version: '3.x'
 
       - name: Update README shield
         id: update_shield
