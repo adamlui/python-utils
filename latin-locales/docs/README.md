@@ -13,7 +13,7 @@
 
 > ### _ISO 639-1 (2-letter) codes for Latin locales that don't require advanced Unicode support._
 
-It's just a [JSON file](https://github.com/adamlui/python-utils/blob/latin-locales-1.0.1/latin-locales/src/latin_locales/latin_locales.json), so you can use it in any environment.
+It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@latin-locales-1.0.1/latin-locales/src/latin_locales/latin_locales.json), so you can use it in any environment.
 
 ## Installation
 
