@@ -1,4 +1,4 @@
-import time
+from time import sleep
 from typing import List
 
 PKGS = [
@@ -35,16 +35,16 @@ def get_downloads(pkg: str, max_retries: int = 5, get_delay: int = 2) -> int:
             with urlopen(url) as resp:
                 return sum(item['downloads'] for item in json.load(resp)['data'])
         except HTTPError as err:
-            if err.code == 429:  # Rate limited
-                retry_delay = (idx +1) *2  # Exponential backoff
+            if err.code == 429: # rate limited
+                retry_delay = (idx +1) *2 # exponentially back off
                 print(f'{pkg}: Rate limited. Retrying in {retry_delay}s...')
-                time.sleep(retry_delay)
+                sleep(retry_delay)
             else:
                 print(f'{pkg}: ERROR ({err.code})')
                 return 0
         except Exception as err:
             print(f'{pkg}: Exception: {err}')
-            time.sleep(get_delay)
+            sleep(get_delay)
     print(f'{pkg}: Failed after {max_retries} retries')
     return 0
 
@@ -59,9 +59,8 @@ def write_file(file_path: str, lines: List[str]) -> None:
 def update_downloads_shield(readme_path: str, downloads: int) -> None:
     import re
     lines = read_file(readme_path)
-    shield_re = r'(<img[^>]+src="https://img.shields.io/badge/Downloads-)([\d\.kM]+)(-[a-f0-9]{6})'
-    formatted_downloads = format_total(downloads)
-    downloads_str = f'{formatted_downloads.lower()}'
+    shield_re = r'(?i)(<img[^>]+src="https://img.shields.io/badge/Downloads-)([\d,\.km]+)(-[a-f\d]{6})'
+    downloads_str = f'{format_total(downloads).lower()}'
     for idx, line in enumerate(lines):
         shield_match = re.search(shield_re, line)
         if shield_match:
@@ -76,7 +75,7 @@ def main() -> None:
         downloads = get_downloads(pkg)
         grand_total_dls += downloads
         print(f'{pkg:30} {downloads:,}')
-        time.sleep(1)
+        sleep(1)
     print('-' *45)
     print(f"{'TOTAL DOWNLOADS':20} {grand_total_dls:,}\n")
     README_PATH = 'docs/README.md'
