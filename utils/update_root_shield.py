@@ -37,7 +37,7 @@ def get_downloads(pkg: str, max_retries: int = 5, get_delay: int = 1) -> int:
             sleep(get_delay)
             return result
         except Exception as err:
-            retry_delay = (idx + 1) * get_delay
+            retry_delay = (idx +1) * get_delay
             if isinstance(err, HTTPError):
                 if err.code == 429:
                     print(f'! {pkg}: Rate limited. Retrying in {retry_delay}s...')
