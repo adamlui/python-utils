@@ -1,6 +1,3 @@
-from time import sleep
-from typing import List
-
 PKGS = [
     'computer-languages',
     'data-languages',
@@ -25,34 +22,39 @@ def format_total(num: int) -> str:  # abbr ints to e.g. 1.5k, 2b
       else f'{num / 1000:.1f}K' if num >= 1000 \
       else str(num)
 
-def get_downloads(pkg: str, max_retries: int = 5, get_delay: int = 2) -> int:
+def get_downloads(pkg: str, max_retries: int = 5, get_delay: int = 1) -> int:
     import json
+    from time import sleep
     from urllib.request import urlopen
     from urllib.error import HTTPError
+
     url = STATS_API_URL.format(pkg=pkg)
+
     for idx in range(max_retries):
         try:
             with urlopen(url) as resp:
-                return sum(item['downloads'] for item in json.load(resp)['data'])
-        except HTTPError as err:
-            if err.code == 429: # rate limited
-                retry_delay = (idx +1) *2 # exponentially back off
-                print(f'! {pkg}: Rate limited. Retrying in {retry_delay}s...')
-                sleep(retry_delay)
-            else:
-                print(f'{pkg}: ERROR ({err.code})')
-                return 0
-        except Exception as err:
-            print(f'{pkg}: Exception: {err}')
+                result = sum(item['downloads'] for item in json.load(resp)['data'])
             sleep(get_delay)
+            return result
+        except Exception as err:
+            retry_delay = (idx + 1) * get_delay
+            if isinstance(err, HTTPError):
+                if err.code == 429:
+                    print(f'! {pkg}: Rate limited. Retrying in {retry_delay}s...')
+                else:
+                    print(f'{pkg}: HTTP ERROR ({err.code}). Retrying in {retry_delay}s...')
+            else:
+                print(f'{pkg}: Exception: {err}. Retrying in {retry_delay}s...')
+            sleep(retry_delay)
+
     print(f'{pkg}: Failed after {max_retries} retries')
     return 0
 
-def read_file(file_path: str) -> List[str]:
+def read_file(file_path: str) -> list[str]:
     with open(file_path, 'r', encoding='utf-8') as file:
         return file.readlines()
 
-def write_file(file_path: str, lines: List[str]) -> None:
+def write_file(file_path: str, lines: list[str]) -> None:
     with open(file_path, 'w', encoding='utf-8') as file:
         file.writelines(lines)
 
@@ -66,7 +68,7 @@ def update_downloads_shield(readme_path: str, downloads: int) -> None:
         if shield_match:
             new_line = re.sub(shield_match.group(2), downloads_str, line)
             lines[idx] = new_line
-            print(f'>>> {new_line.strip()}')
+            print(f'»»» {new_line.strip()}\n')
     write_file(readme_path, lines)
 
 def main() -> None:
@@ -75,11 +77,10 @@ def main() -> None:
         downloads = get_downloads(pkg)
         grand_total_dls += downloads
         print(f'{pkg:30} {downloads:,}')
-        sleep(1)
     print('-' *45)
     print(f"{'TOTAL DOWNLOADS':30} {grand_total_dls:,}\n")
     README_PATH = 'docs/README.md'
-    print(f'Updating {README_PATH}...')
+    print(f'Updating {README_PATH}...\n')
     update_downloads_shield(README_PATH, grand_total_dls)
     print('Done!')
 
