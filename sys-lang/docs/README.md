@@ -13,7 +13,7 @@
 
 > ### _Detect the system language._
 
-Returns ISO 639-1 (e.g. `en`) or ISO 3166-1 alpha-2-appended (`en_US`) code for user's preferred language. On Windows, queries `Get-Culture` via PowerShell. On *nix systems, reads `LC_ALL`, `LC_MESSAGES`, `LANG`, and `LANGUAGE`.
+Returns ISO 639-1 (e.g. `'en'`) or ISO 3166-1 alpha-2-appended (`'en_US'`) code for user's preferred language. On Windows, queries `Get-Culture` via PowerShell. On *nix systems, reads `LC_ALL`, `LC_MESSAGES`, `LANG`, and `LANGUAGE`.
 
 ## ⚡ Installation
 
