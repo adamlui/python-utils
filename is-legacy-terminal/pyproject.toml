@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "is-legacy-terminal"
-version = "1.0.2"
+version = "1.1.0"
 description = "Detect whether the terminal is legacy."
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
@@ -80,7 +80,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/is-legacy-terminal-1.0.2"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/is-legacy-terminal-1.1.0"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/is-legacy-terminal/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/is-legacy-terminal/#readme"
