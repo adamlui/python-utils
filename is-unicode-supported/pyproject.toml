@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "is-unicode-supported"
-version = "1.1.2"
+version = "1.2.0"
 description = "Detect whether the terminal supports advanced Unicode."
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
@@ -20,7 +20,7 @@ license-files = [
 dependencies = [
     "blessed>=1.33.0,<2",
     "colorama>=0.4.6,<1 ; platform_system == 'Windows'",
-    "is-legacy-terminal>=1.0.0,<2",
+    "is-legacy-terminal>=1.1.0,<2",
     "json5>=0.13.0,<1",
     "non-latin-locales>=1.0.1,<2",
     "sys-lang>=1.0.0,<2",
@@ -88,7 +88,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/is-unicode-supported-1.1.2"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/is-unicode-supported-1.2.0"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#readme"
