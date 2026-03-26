@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Seòrsa" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "airson na roghainnean a tha rim faotainn" },
+  "log_VERSION": { "message": "Tionndadh" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Airson tuilleadh fiosrachaidh, tadhail air:" },
+  "warn_NOT_FOUND": { "message": "Cha deach a lorg" },
+  "warn_CLI_OPTION": { "message": "Roghainn CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "chaidh a h - ath - nuadhachadh" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "agus bithidh e air a thilgeadh air falbh" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "chan eil buaidh sam bith aige tuilleadh" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Argamaid neo - aithnichte (s)" },
+  "help_NO_REGION": { "message": "Na bi a 'toirt a - steach an sgìre nuair a tha e ri fhaighinn" },
+  "help_HELP": { "message": "Seall sgrìn na cobhair" },
+  "help_VERSION": { "message": "Seall an tionndadh" },
+  "help_DOCS": { "message": "Open docs URL" },
+  "help_DEBUG": { "message": "Seall logaichean dì - bhugachaidh" }
+}

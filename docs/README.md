@@ -141,6 +141,15 @@
 [CLI usage](https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
+### <a href="https://github.com/adamlui/python-utils/tree/main/sys-lang/#readme">🗺 sys-lang</a>
+
+> Detect the system language.
+<br>[Install](https://github.com/adamlui/python-utils/tree/main/sys-lang/#-installation) /
+[Readme](https://github.com/adamlui/python-utils/tree/main/sys-lang/#readme) /
+[API usage](https://github.com/adamlui/python-utils/tree/main/sys-lang/#-api-usage) /
+[CLI usage](https://github.com/adamlui/python-utils/tree/main/sys-lang/-command-line-usage) /
+[Discuss](https://github.com/adamlui/python-utils/discussions)
+
 ### <a href="https://github.com/adamlui/python-utils/tree/main/translate-messages/#readme">🌍 translate-messages</a>
 
 > Translate `en/messages.json` (chrome.i18n format) to 100+ locales automatically.

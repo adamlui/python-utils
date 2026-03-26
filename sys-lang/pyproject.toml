@@ -1,0 +1,120 @@
+[build-system]
+requires = [
+    "setuptools>=82.0.0,<83",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sys-lang"
+version = "1.0.0"
+description = "Detect the system language."
+authors = [
+    { name = "Adam Lui", email = "adam@kudoai.com" },
+]
+readme = "docs/README.md"
+license = "MIT"
+license-files = [
+    "docs/LICENSE.md",
+]
+dependencies = [
+    "colorama>=0.4.6,<1 ; platform_system == 'Windows'",
+    "is_unicode_supported>=1.1.2,<2",
+    "json5>=0.13.0,<1",
+    "non-latin-locales>=1.0.1,<2",
+]
+requires-python = ">=3.8,<4"
+keywords = [
+    "api",
+    "cli",
+    "console",
+    "detect",
+    "detection",
+    "dev-tool",
+    "environment",
+    "language",
+    "locale",
+    "shell",
+    "system-language",
+    "system-locale",
+    "terminal",
+    "utility",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Localization",
+    "Topic :: System",
+    "Topic :: System :: Shells",
+    "Topic :: Terminals",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/sys-lang-1.0.0"
+Documentation = "https://github.com/adamlui/python-utils/tree/main/sys-lang/docs"
+Funding = "https://github.com/sponsors/adamlui"
+Homepage = "https://github.com/adamlui/python-utils/tree/main/sys-lang/#readme"
+Issues = "https://github.com/adamlui/python-utils/issues"
+"PyPI Stats" = "https://pepy.tech/projects/sys-lang"
+Releases = "https://github.com/adamlui/python-utils/releases"
+Repository = "https://github.com/adamlui/python-utils"
+
+[project.scripts]
+sys-lang = "sys_lang.cli.__main__:main"
+sys-language = "sys_lang.cli.__main__:main"
+system-lang = "sys_lang.cli.__main__:main"
+system-language = "sys_lang.cli.__main__:main"
+get-sys-lang = "sys_lang.cli.__main__:main"
+get-sys-language = "sys_lang.cli.__main__:main"
+get-system-lang = "sys_lang.cli.__main__:main"
+get-system-language = "sys_lang.cli.__main__:main"
+syslang = "sys_lang.cli.__main__:main"
+syslanguage = "sys_lang.cli.__main__:main"
+systemlang = "sys_lang.cli.__main__:main"
+systemlanguage = "sys_lang.cli.__main__:main"
+getsyslang = "sys_lang.cli.__main__:main"
+getsyslanguage = "sys_lang.cli.__main__:main"
+getsystemlang = "sys_lang.cli.__main__:main"
+getsystemlanguage = "sys_lang.cli.__main__:main"
+
+[project.optional-dependencies]
+dev = [
+    "nox>=2026.2.9",
+    "remove-json-keys>=1.9.2,<2",
+    "tomli>=2.4.0,<3",
+    "tomli-w>=1.2.0,<2",
+    "translate-messages>=1.9.1,<2",
+]
+
+[tool.setuptools.packages.find]
+where = [
+    "src",
+]
+
+[tool.setuptools.package-data]
+sys_lang = [
+    "data/*.json",
+    "data/_locales/en/messages.json",
+]

@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Ituaiga" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "mo filifiliga avanoa" },
+  "log_VERSION": { "message": "Faaliliuga" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Mo nisi fesoasoani, asiasi" },
+  "warn_NOT_FOUND": { "message": "E leʻi maua" },
+  "warn_CLI_OPTION": { "message": "Filifiliga CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ua suia e" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ma o le a aveesea" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "e leai se aafiaga" },
+  "err_UNRECOGNIZED_ARGS": { "message": "O se finauga e le o iloa (s)" },
+  "help_NO_REGION": { "message": "Aua le aofia ai le itulagi pe a avanoa" },
+  "help_HELP": { "message": "Faaali atu le lau fesoasoani" },
+  "help_VERSION": { "message": "Faaali atu le lomiga" },
+  "help_DOCS": { "message": "Tatala docs URL" },
+  "help_DEBUG": { "message": "Faaali atu logs debug" }
+}

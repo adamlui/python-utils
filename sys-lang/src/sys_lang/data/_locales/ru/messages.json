@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Тип" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "для доступных опций" },
+  "log_VERSION": { "message": "Версия" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Для получения дополнительной помощи посетите" },
+  "warn_NOT_FOUND": { "message": "Не найдено" },
+  "warn_CLI_OPTION": { "message": "Опция CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "был заменен на" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "и будет удален" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "больше не имеет никакого эффекта" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Нераспознанные аргументы" },
+  "help_NO_REGION": { "message": "Не указывайте регион, если он доступен" },
+  "help_HELP": { "message": "Показать экран справки" },
+  "help_VERSION": { "message": "Показать версию" },
+  "help_DOCS": { "message": "URL-адрес открытых документов" },
+  "help_DEBUG": { "message": "Показать журналы отладки" }
+}

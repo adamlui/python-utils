@@ -22,6 +22,7 @@ updates:
       - /project-markers
       - /prose-languages
       - /remove-json-keys
+      - /sys-lang
       - /translate-messages
     schedule:
       interval: daily

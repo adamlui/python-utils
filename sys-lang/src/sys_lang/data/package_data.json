@@ -1,0 +1,29 @@
+{
+  "name": "sys-lang",
+  "version": "1.0.0",
+  "description": "Detect the system language.",
+  "cmds": [
+    "sys-lang", "sys-language", "system-lang", "system-language",
+    "get-sys-lang", "get-sys-language", "get-system-lang", "get-system-language",
+    "syslang", "syslanguage", "systemlang", "systemlanguage",
+    "getsyslang", "getsyslanguage", "getsystemlang", "getsystemlanguage"
+  ],
+  "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
+  "urls": {
+    "docs": "https://github.com/adamlui/python-utils/tree/main/sys-lang/docs",
+    "funding": {
+      "cashapp": "https://cash.app/$adamlui",
+      "github": "https://github.com/sponsors/adamlui",
+      "kofi": "https://ko-fi.com/adamlui",
+      "paypal": "https://paypal.me/adamlui"
+    },
+    "github": "https://github.com/adamlui/python-utils",
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/python-utils",
+    "pypi": "https://pypi.org/project/sys-lang/",
+    "pypistats": "https://pypistats.org/packages/sys-lang",
+    "support": "https://github.com/adamlui/python-utils/issues"
+  },
+  "commit_hashes": {
+    "locales": "7e1b837"
+  }
+}

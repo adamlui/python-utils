@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Typ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "für verfügbare Optionen" },
+  "log_VERSION": { "message": "Version" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Weitere Hilfe finden Sie unter" },
+  "warn_NOT_FOUND": { "message": "Nicht gefunden" },
+  "warn_CLI_OPTION": { "message": "CLI-Option" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "wurde ersetzt durch" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "und wird entfernt" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "hat keine Wirkung mehr" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Nicht erkannte (s) Argument(e)" },
+  "help_NO_REGION": { "message": "Region nicht einschließen, wenn verfügbar" },
+  "help_HELP": { "message": "Hilfebildschirm anzeigen" },
+  "help_VERSION": { "message": "Version anzeigen" },
+  "help_DOCS": { "message": "Dokument-URL öffnen" },
+  "help_DEBUG": { "message": "Debug-Protokolle anzeigen" }
+}

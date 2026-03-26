@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Mota" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "eskuragarri dauden aukeretarako" },
+  "log_VERSION": { "message": "Bertsioa" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Laguntza gehiago behar baduzu, bisitatu" },
+  "warn_NOT_FOUND": { "message": "Ez da aurkitu" },
+  "warn_CLI_OPTION": { "message": "CLI aukera" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ordezkatu egin da" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "eta kendu egingo da" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "jada ez du inolako eraginik" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Argumentu ezezagunak" },
+  "help_NO_REGION": { "message": "Ez sartu eskualdea eskuragarri dagoenean" },
+  "help_HELP": { "message": "Erakutsi laguntza-pantaila" },
+  "help_VERSION": { "message": "Erakutsi bertsioa" },
+  "help_DOCS": { "message": "Ireki dokumentuen URLa" },
+  "help_DEBUG": { "message": "Erakutsi arazketa-erregistroak" }
+}

@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Вид" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "за достапните опции" },
+  "log_VERSION": { "message": "Верзија" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "За повеќе помош, посетете" },
+  "warn_NOT_FOUND": { "message": "Не е пронајдено" },
+  "warn_CLI_OPTION": { "message": "Опција за CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "е заменет со" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "и ќе бидат отстранети" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "веќе нема ефект" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Непрепознаени аргументи" },
+  "help_NO_REGION": { "message": "Не вклучувајте регион кога е достапен" },
+  "help_HELP": { "message": "Прикажи екран за помош" },
+  "help_VERSION": { "message": "Прикажи ја верзијата" },
+  "help_DOCS": { "message": "Отвори URL-адреса на документи" },
+  "help_DEBUG": { "message": "Прикажи дневници за отстранување грешки" }
+}

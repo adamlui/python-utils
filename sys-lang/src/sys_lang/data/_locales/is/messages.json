@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Tegund" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "fyrir tiltæka valkosti" },
+  "log_VERSION": { "message": "Útgáfa" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Frekari aðstoð er að finna á" },
+  "warn_NOT_FOUND": { "message": "Fannst ekki" },
+  "warn_CLI_OPTION": { "message": "CLI-valkostur" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "hefur verið skipt út fyrir" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "og verður fjarlægt" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "hefur ekki lengur nein áhrif" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Óþekkt frumbreyta eða frumbreytur" },
+  "help_NO_REGION": { "message": "Ekki gefa upp svæði þegar það er í boði" },
+  "help_HELP": { "message": "Sýna hjálparskjá" },
+  "help_VERSION": { "message": "Sýna útgáfu" },
+  "help_DOCS": { "message": "Opna vefslóð fyrir skjöl" },
+  "help_DEBUG": { "message": "Sýna aflúsunarannála" }
+}

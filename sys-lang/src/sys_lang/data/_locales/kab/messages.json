@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Amḍan" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "i yifran i d-yettunefken" },
+  "log_VERSION": { "message": "Asebtar" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "I ugar n tallelt, ẓer" },
+  "warn_NOT_FOUND": { "message": "Ulac-it" },
+  "warn_CLI_OPTION": { "message": "Tifranin CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "yettwabeddel s" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ad yettwakkes" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "no effect yet" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Confrontation (s)" },
+  "help_NO_REGION": { "message": "Ur ttaǧǧa ara tamurt mi ara d-tafeḍ" },
+  "help_HELP": { "message": "Sken allen n tallelt" },
+  "help_VERSION": { "message": "Sken asenfaṛ" },
+  "help_DOCS": { "message": "Ldi URL n docs" },
+  "help_DEBUG": { "message": "Sken ifuyla imezwura" }
+}

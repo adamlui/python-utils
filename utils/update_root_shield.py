@@ -12,6 +12,7 @@ PKGS = [
     'project-markers',
     'prose-languages',
     'remove-json-keys',
+    'sys-lang',
     'translate-messages'
 ]
 STATS_API_URL = 'https://pypistats.org/api/packages/{pkg}/overall'

@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Ტიპი" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ხელმისაწვდომი ვარიანტებისთვის" },
+  "log_VERSION": { "message": "Ვერსია" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Დამატებითი დახმარებისთვის ეწვიეთ" },
+  "warn_NOT_FOUND": { "message": "Ვერ მოიძებნა" },
+  "warn_CLI_OPTION": { "message": "CLI ვარიანტი" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "შეიცვალა" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "და წაიშლება" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "აღარ აქვს რაიმე ეფექტი" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Ამოუცნობი არგუმენტი(ები)" },
+  "help_NO_REGION": { "message": "Არ მიუთითოთ რეგიონი, როცა ხელმისაწვდომია" },
+  "help_HELP": { "message": "Დახმარების ეკრანის ჩვენება" },
+  "help_VERSION": { "message": "Ვერსიის ჩვენება" },
+  "help_DOCS": { "message": "Დოკუმენტების URL-ის გახსნა" },
+  "help_DEBUG": { "message": "Გამართვის ჟურნალების ჩვენება" }
+}

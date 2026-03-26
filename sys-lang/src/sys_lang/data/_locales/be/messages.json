@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Тып" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "для даступных варыянтаў" },
+  "log_VERSION": { "message": "Версія" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Для атрымання дадатковай дапамогі наведайце" },
+  "warn_NOT_FOUND": { "message": "Не знойдзена" },
+  "warn_CLI_OPTION": { "message": "Параметр CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "быў заменены" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "і будзе выдалены" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "больш не мае эфекту" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Непазнаны аргумент(ы)" },
+  "help_NO_REGION": { "message": "Не ўключаць рэгіён, калі ён даступны" },
+  "help_HELP": { "message": "Паказваць экран даведкі" },
+  "help_VERSION": { "message": "Паказаць версію" },
+  "help_DOCS": { "message": "Адчыніць URL дакументаў" },
+  "help_DEBUG": { "message": "Паказваць часопісы адладкі" }
+}

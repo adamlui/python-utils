@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Tipe" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "untuk opsi yang tersedia" },
+  "log_VERSION": { "message": "Versi" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Untuk bantuan lebih lanjut, kunjungi" },
+  "warn_NOT_FOUND": { "message": "Tidak ditemukan" },
+  "warn_CLI_OPTION": { "message": "Opsi CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "telah digantikan oleh" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "dan akan dihapus" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "tidak lagi berpengaruh" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Argumen tidak dikenal" },
+  "help_NO_REGION": { "message": "Jangan sertakan wilayah jika tersedia" },
+  "help_HELP": { "message": "Tampilkan layar bantuan" },
+  "help_VERSION": { "message": "Tampilkan versi" },
+  "help_DOCS": { "message": "Buka URL dokumen" },
+  "help_DEBUG": { "message": "Tampilkan log debug" }
+}

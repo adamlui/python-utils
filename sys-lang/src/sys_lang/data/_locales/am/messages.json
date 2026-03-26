@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "አይነት" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "የሚገኙ አማራጮችን ለማግኘት" },
+  "log_VERSION": { "message": "ስሪት" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "ተጨማሪ እርዳታ ለማግኘት, ይጎብኙ" },
+  "warn_NOT_FOUND": { "message": "አልተገኘም" },
+  "warn_CLI_OPTION": { "message": "CLI አማራጭ" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ተተክቷል" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "እና ይወገዳል" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ከአሁን በኋላ ምንም ውጤት የለውም" },
+  "err_UNRECOGNIZED_ARGS": { "message": "ያልተገነዘቡ ክርክሮች(ዎች)" },
+  "help_NO_REGION": { "message": "በሚገኝበት ጊዜ ክልልን አያካትቱ" },
+  "help_HELP": { "message": "የእገዛ ማያ ገጽ አሳይ" },
+  "help_VERSION": { "message": "ስሪት አሳይ" },
+  "help_DOCS": { "message": "የዶክ ዩአርኤል ይክፈቱ" },
+  "help_DEBUG": { "message": "የዴቡግ ምዝግብ ማስታወሻዎችን አሳይ" }
+}

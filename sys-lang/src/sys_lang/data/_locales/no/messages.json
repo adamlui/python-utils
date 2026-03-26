@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Type" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "for tilgjengelige alternativer" },
+  "log_VERSION": { "message": "Versjon" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "For mer hjelp, besøk" },
+  "warn_NOT_FOUND": { "message": "Ikke funnet" },
+  "warn_CLI_OPTION": { "message": "CLI-alternativ" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "har blitt erstattet av" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "og vil bli fjernet" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "har ikke lenger noen effekt" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Ukjent(e) argument(er)" },
+  "help_NO_REGION": { "message": "Ikke inkluder region når tilgjengelig" },
+  "help_HELP": { "message": "Vis hjelpeskjermen" },
+  "help_VERSION": { "message": "Vis versjon" },
+  "help_DOCS": { "message": "Åpne dokument-URL" },
+  "help_DEBUG": { "message": "Vis feilsøkingslogger" }
+}

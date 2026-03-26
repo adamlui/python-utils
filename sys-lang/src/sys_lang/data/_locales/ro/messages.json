@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Tip" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "pentru opțiunile disponibile" },
+  "log_VERSION": { "message": "Versiune" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Pentru mai mult ajutor, vizitează" },
+  "warn_NOT_FOUND": { "message": "Nu s-a găsit" },
+  "warn_CLI_OPTION": { "message": "Opțiune CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "a fost înlocuită cu" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "și vor fi eliminate" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "nu mai are niciun efect" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Argument(e) nerecunoscut (e)" },
+  "help_NO_REGION": { "message": "Nu include regiunea atunci când este disponibilă" },
+  "help_HELP": { "message": "Afișați ecranul de ajutor" },
+  "help_VERSION": { "message": "Afișează versiunea" },
+  "help_DOCS": { "message": "Deschideți adresa URL a documentelor" },
+  "help_DEBUG": { "message": "Afișează jurnalele de depanare" }
+}

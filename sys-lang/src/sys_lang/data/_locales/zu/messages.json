@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Uhlobo" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ongakhetha kukho okutholakalayo" },
+  "log_VERSION": { "message": "Uhlelo" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Ukuze uthole usizo olwengeziwe, vakashela" },
+  "warn_NOT_FOUND": { "message": "Akutholakali" },
+  "warn_CLI_OPTION": { "message": "Inketho ye-CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ithathelwe indawo yi-" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "futhi izokhishwa" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ayisekho imiphumela" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Impikiswano engaziwa" },
+  "help_NO_REGION": { "message": "Ungafaki isifunda lapho sitholakala" },
+  "help_HELP": { "message": "Bonisa isikrini sosizo" },
+  "help_VERSION": { "message": "Veza inguqulo" },
+  "help_DOCS": { "message": "Vula i-URL yamadokhumenti" },
+  "help_DEBUG": { "message": "Bonisa amarekhodi okulungisa iphutha" }
+}

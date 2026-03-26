@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Tipe" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "vir beskikbare opsies" },
+  "log_VERSION": { "message": "Weergawe" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Vir meer inligting, besoek" },
+  "warn_NOT_FOUND": { "message": "Nie gevind nie" },
+  "warn_CLI_OPTION": { "message": "CLI-opsie" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "se substituieste by" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "en sal verwyder word" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "geen effek meer" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Onherkenbare argument(s)" },
+  "help_NO_REGION": { "message": "Moenie die streek insluit wanneer dit beskikbaar is nie" },
+  "help_HELP": { "message": "Wys hulpskerm" },
+  "help_VERSION": { "message": "Vertoon weergawe" },
+  "help_DOCS": { "message": "Open dokumente-URL" },
+  "help_DEBUG": { "message": "Wys ontfoutlogboeke" }
+}
