@@ -108,7 +108,7 @@ isconsolelegacy = "is_legacy_terminal.cli.__main__:main"
 [project.optional-dependencies]
 dev = [
     "nox>=2026.2.9",
-    "remove-json-keys>=1.9.2,<2",
+    "remove-json-keys>=1.10.0,<2",
     "tomli>=2.4.0,<3",
     "tomli-w>=1.2.0,<2",
     "translate-messages>=1.10.0,<2",
