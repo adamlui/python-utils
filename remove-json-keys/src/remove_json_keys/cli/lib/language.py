@@ -84,20 +84,3 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
     get_msgs.cached_lang = lang_code
 
     return sn(**msgs)
-
-def get_sys_lang(cli: Optional[sn] = None) -> str:
-    import os, subprocess, sys
-    try:
-        if sys.platform == 'win32':
-            return subprocess.run(
-                ['powershell', '-Command', '(Get-Culture).TwoLetterISOLanguageName'],
-                capture_output=True, text=True, check=True
-            ).stdout.strip()
-        else: # macOS/Linux
-            for lang_env_var in ['LC_ALL', 'LC_MESSAGES', 'LANG', 'LANGUAGE']:
-                sys_lang = os.environ.get(lang_env_var)
-                if sys_lang : return sys_lang.split('.')[0]
-            return 'en'
-    except Exception as err:
-        if cli : log.error(f'{cli.msgs.err_FAILED_TO_FETCH_SYS_LANG}: {err}')
-        return 'en'
