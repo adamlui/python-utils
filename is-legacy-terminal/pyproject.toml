@@ -19,7 +19,7 @@ license-files = [
 ]
 dependencies = [
     "colorama>=0.4.6,<1 ; platform_system == 'Windows'",
-    "is-unicode-supported>=1.1.2,<2",
+    "is-unicode-supported>=1.2.0,<2",
     "json5>=0.13.0,<1",
     "non-latin-locales>=1.0.1,<2",
     "sys-lang>=1.0.0,<2",
