@@ -10,8 +10,6 @@ paths = sn(
 
 def session(func) : return nox.session(venv_backend='none', name=func.__name__.replace('_', '-'))(func)
 
-# SESSIONS
-
 @session
 def dev(session) : session.run('pip', 'install', '-e', '.')
 
