@@ -147,7 +147,7 @@
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/sys-lang/#-installation) /
 [Readme](https://github.com/adamlui/python-utils/tree/main/sys-lang/#readme) /
 [API usage](https://github.com/adamlui/python-utils/tree/main/sys-lang/#-api-usage) /
-[CLI usage](https://github.com/adamlui/python-utils/tree/main/sys-lang/-command-line-usage) /
+[CLI usage](https://github.com/adamlui/python-utils/tree/main/sys-lang/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/translate-messages/#readme">🌍 translate-messages</a>
