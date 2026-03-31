@@ -3,6 +3,8 @@ from types import SimpleNamespace as sn
 
 import nox
 
+py_cmd = 'py' if sys.platform.startswith('win') else 'python3'
+
 pkg = sn(dir=Path(__file__).parent.name)
 pkg.name = pkg.dir.replace('-', '_')
 paths = sn(utils=sn(bump='utils/bump.py', clean='utils/clean.py', publish='utils/publish.sh'))
@@ -17,7 +19,7 @@ def test_py26(session):
     src_dir = root / 'src'
     markers_dir = root.parent / 'project-markers/src'
     session.run(
-        'py', '-2.6', '-c',
+        py_cmd, '-2.6', '-c',
         f"import sys ; sys.path.extend([r'{src_dir}', r'{markers_dir}']) ;"
         f'import find_project_root ; print(find_project_root())'
     )
@@ -32,7 +34,7 @@ def lint_all(session): # all project files
     files = session.run('git', 'ls-files', '.', silent=True, log=False).splitlines()
     session.run('pre-commit', 'run', '--files', *files, *session.posargs)
 
-bump_cmd_args = ('py', paths.utils.bump)
+bump_cmd_args = (py_cmd, paths.utils.bump)
 @session
 def bump_patch(session, no_push=True):
     cmd_args = bump_cmd_args + ('--patch',)
@@ -53,7 +55,7 @@ def bump_major(session, no_push=True):
     session.run(*cmd_args, *session.posargs)
 
 @session
-def build(session) : clean(session) ; session.run('py', '-m', 'build') ; print('Build complete!')
+def build(session) : clean(session) ; session.run(py_cmd, '-m', 'build') ; print('Build complete!')
 @session
 def publish(session) : session.run('bash', paths.utils.publish, *session.posargs)
 
@@ -67,4 +69,4 @@ def deploy_feat(session) : deploy_minor(session)
 def deploy_major(session) : bump_major(session, no_push=False) ; build(session) ; publish(session)
 
 @session
-def clean(session, *args) : session.run('py', paths.utils.clean, *args)
+def clean(session, *args) : session.run(py_cmd, paths.utils.clean, *args)
