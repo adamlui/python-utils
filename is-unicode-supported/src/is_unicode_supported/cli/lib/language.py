@@ -85,4 +85,3 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
     get_msgs.cached_lang = lang_code
 
     return sn(**msgs)
-
