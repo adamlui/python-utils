@@ -1,8 +1,4 @@
 repos:
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.6
-    hooks:
-      - id: ruff
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
@@ -12,6 +8,21 @@ repos:
       - id: double-quote-string-fixer
       - id: end-of-file-fixer
       - id: trailing-whitespace
+      
+  - repo: https://github.com/jackdewinter/pymarkdown
+    rev: v0.9.35
+    hooks:
+      - id: pymarkdown
+        args: [
+          # disable heading-increment, line-length, single-h1, no-trailing-punctuation, no-inline-html, first-line-h1
+          -d, "md001,md013,md025,md026,md033,md041",
+          scan
+        ]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.6
+    hooks:
+      - id: ruff
 
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.38.0
