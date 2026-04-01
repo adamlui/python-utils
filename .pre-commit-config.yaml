@@ -4,6 +4,7 @@ repos:
     rev: v6.0.0
     hooks: # https://github.com/pre-commit/pre-commit-hooks/#hooks-available
       - id: check-json
+      - id: check-toml
       - id: double-quote-string-fixer
       - id: end-of-file-fixer
       - id: trailing-whitespace
@@ -21,16 +22,6 @@ repos:
     rev: v0.15.8
     hooks:
       - id: ruff
-        args: # https://docs.astral.sh/ruff/rules/
-          - --select=E     # enforce all pycodestyle error-level rules
-          - --select=F     # enforce all Pyflakes rules (logic)
-          - --select=W     # enforce all pycodestyle warning-level rules
-          - --ignore=E401  # allow multiple imports on one line
-          - --ignore=E402  # allow module level import at top of file
-          - --ignore=E701  # allow multiple statements on one line (colon)
-          - --ignore=E702  # allow multiple statements on one line (semicolon)
-          - --ignore=E722  # allow bare exceptions
-          - --line-length=120
 
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.38.0
