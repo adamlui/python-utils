@@ -30,6 +30,7 @@ remove-json-keys [options]  # or removejson
 ```
 
 If no options are passed, the CLI will:
+
 1. Prompt for keys to delete
 2. Auto-discover closest child `json_dir`
 3. Delete keys from found JSON files
