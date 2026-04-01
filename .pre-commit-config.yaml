@@ -28,4 +28,13 @@ repos:
     rev: v1.38.0
     hooks:
       - id: yamllint
-        args: [-c, .yamllint-config.yaml]
+        args: # https://yamllint.readthedocs.io/en/stable/rules.html
+          - --config-data
+          - |
+            extends: default
+            rules:
+              comments: disable
+              document-start: disable
+              truthy: disable
+              line-length:
+                max: 120
