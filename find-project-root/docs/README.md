@@ -59,16 +59,19 @@ root = find_project_root(path='assets/images')
 ```
 
 Limit search depth:
+
 ```py
 root = find_project_root(max_depth=3)
 ```
 
 Use custom markers:
+
 ```py
 root = find_project_root(markers=['.git', 'pyproject.toml', 'requirements.txt'])
 ```
 
 Combine options:
+
 ```py
 root = find_project_root(path='src', max_depth=5, markers=['manifest.json'])
 ```
