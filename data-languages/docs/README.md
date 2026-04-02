@@ -15,7 +15,7 @@
 
 > ### _File extensions for data languages._
 
-It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@data-languages-1.0.0/data-languages/src/data_languages/data_languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 145 data languages known to GitHub). Data is updated via script and released via new package version.
+It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@data-languages-1.0.0/data-languages/src/data_languages/data-languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 145 data languages known to GitHub). Data is updated via script and released via new package version.
 
 ## Installation
 

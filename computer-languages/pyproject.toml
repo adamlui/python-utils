@@ -124,5 +124,5 @@ where = [
 
 [tool.setuptools.package-data]
 computer_languages = [
-    "computer_languages.json",
+    "computer-languages.json",
 ]

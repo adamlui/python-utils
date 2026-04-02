@@ -105,5 +105,5 @@ where = [
 
 [tool.setuptools.package-data]
 prose_languages = [
-    "prose_languages.json",
+    "prose-languages.json",
 ]

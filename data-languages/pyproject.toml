@@ -96,5 +96,5 @@ where = [
 
 [tool.setuptools.package-data]
 data_languages = [
-    "data_languages.json",
+    "data-languages.json",
 ]

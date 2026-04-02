@@ -89,5 +89,5 @@ where = [
 
 [tool.setuptools.package-data]
 markup_languages = [
-    "markup_languages.json",
+    "markup-languages.json",
 ]

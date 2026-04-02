@@ -105,5 +105,5 @@ where = [
 
 [tool.setuptools.package-data]
 programming_languages = [
-    "programming_languages.json",
+    "programming-languages.json",
 ]

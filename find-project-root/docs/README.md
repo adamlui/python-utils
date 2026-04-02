@@ -91,4 +91,4 @@ Copyright © 2026 [Adam Lui](https://github.com/adamlui)
 <a href="#top">Back to top ↑</a>
 
 [project-markers-gh]: https://github.com/adamlui/python-utils/tree/main/project-markers/#readme
-[project-markers-json]: https://cdn.jsdelivr.net/gh/adamlui/python-utils/project-markers/src/project_markers/project_markers.json
+[project-markers-json]: https://cdn.jsdelivr.net/gh/adamlui/python-utils/project-markers/src/project_markers/project-markers.json

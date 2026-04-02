@@ -18,7 +18,7 @@ for lang_name, lang_info in yaml.safe_load(resp_data).items():
         lang_data[lang_name] = { 'extensions': sorted(lang_info['extensions'], key=str.lower) }
 lang_data = dict(sorted(lang_data.items(), key = lambda item: item[0].lower()))
 
-output_path = Path(__file__).parent.parent / 'src/prose_languages/prose_languages.json'
+output_path = Path(__file__).parent.parent / 'src/prose_languages/prose-languages.json'
 log.info(f'Saving {len(lang_data)} prose languages to {output_path}...')
 data.json.write(output_path, lang_data, style='compact')
 
