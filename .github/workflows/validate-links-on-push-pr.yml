@@ -20,3 +20,4 @@ jobs:
       - uses: JustinBeckwith/linkinator-action@v1
         with:
           paths: "**/*.md"
+          statusCodes: '{ "429": "skip" }'
