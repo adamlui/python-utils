@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "programming-languages"
-version = "2.0.0"
+version = "2.0.1"
 description = "File extensions for programming languages."
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
@@ -82,7 +82,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/programming-languages-2.0.0"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/programming-languages-2.0.1"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/programming-languages/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme"
