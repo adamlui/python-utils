@@ -2,7 +2,7 @@ from pathlib import Path
 from urllib.request import urlopen
 import yaml
 
-from lib import data, log
+from .lib import data, log
 
 gh_lang_yml_filename = 'languages.yml'
 

@@ -1,7 +1,7 @@
 from pathlib import Path
 from types import SimpleNamespace as sn
 
-from lib import data, log, toml
+from .lib import data, log, toml
 
 paths = sn(root=Path(__file__).parent.parent)
 paths.pyproject = paths.root / 'pyproject.toml'
@@ -76,7 +76,7 @@ def main():
     if args.no_commit:
         print(f'\n{msgs.log_SKIPPING_GIT_COMMIT}...')
     else:
-        from lib import git
+        from .lib import git
         git.init_kudo_sync_bot(msgs)
         log.info(f'{msgs.log_COMMITTING_CHANGES}...')
         git.commit([str(paths.pyproject), str(paths.readme)],
