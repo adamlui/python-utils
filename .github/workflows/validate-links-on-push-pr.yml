@@ -19,5 +19,6 @@ jobs:
       - uses: actions/checkout@v6.0.2
       - uses: JustinBeckwith/linkinator-action@v1
         with:
+          checkFragments: true
           paths: '**/*.md'
           statusCodes: '{ "429": "skip" }'
