@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "non-latin-locales"
-version = "1.0.2"
+version = "1.0.3"
 description = "ISO 639-1 (2-letter) codes for non-Latin locales requiring advanced Unicode support"
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
@@ -66,7 +66,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/non-latin-locales-1.0.2"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/non-latin-locales-1.0.3"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/non-latin-locales/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme"
