@@ -22,4 +22,4 @@ jobs:
           paths: '**/*.md'
           checkFragments: true
           statusCodes: '{ "429": "skip" }'
-          linksToSkip: '.*#(?:readme|L\d+(?:-L\d+)?)$'
+          linksToSkip: '#readme$'
