@@ -89,5 +89,5 @@ where = [
 
 [tool.setuptools.package-data]
 non_latin_locales = [
-    "non_latin-locales.json",
+    "non-latin-locales.json",
 ]
