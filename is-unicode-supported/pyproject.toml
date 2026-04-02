@@ -22,7 +22,7 @@ dependencies = [
     "colorama>=0.4.6,<1 ; platform_system == 'Windows'",
     "is-legacy-terminal>=1.1.0,<2",
     "json5>=0.13.0,<1",
-    "non-latin-locales>=1.0.1,<2",
+    "non-latin-locales>=1.0.2,<2",
     "sys-lang>=1.0.0,<2",
 ]
 requires-python = ">=3.8,<4"
