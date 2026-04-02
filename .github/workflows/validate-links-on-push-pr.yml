@@ -17,9 +17,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6.0.2
-      - uses: JustinBeckwith/linkinator-action@f62ba0c110a76effb2ee6022cc6ce4ab161085e3
+      - uses: JustinBeckwith/linkinator-action@v1
         with:
           paths: '**/*.md'
-          checkFragments: false
           statusCodes: '{ "429": "skip" }'
-          linksToSkip: "https://github.com/adamlui/python-utils/#readme"
