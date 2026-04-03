@@ -86,8 +86,6 @@ classifiers = [
     "Topic :: Database",
     "Topic :: Documentation",
     "Topic :: Education",
-    "Topic :: Internet",
-    "Topic :: Internet :: WWW/HTTP",
     "Topic :: Scientific/Engineering",
     "Topic :: Scientific/Engineering :: Information Analysis",
     "Topic :: Software Development",

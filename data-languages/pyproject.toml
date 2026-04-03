@@ -60,8 +60,6 @@ classifiers = [
     "Programming Language :: Python :: 3.15",
     "Topic :: Database",
     "Topic :: Education",
-    "Topic :: Internet",
-    "Topic :: Internet :: WWW/HTTP",
     "Topic :: Scientific/Engineering",
     "Topic :: Scientific/Engineering :: Information Analysis",
     "Topic :: Software Development",
