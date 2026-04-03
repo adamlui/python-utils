@@ -45,7 +45,7 @@ def get_lang(file_ext):
         if file_ext in data['extensions']:
             return lang
 
-print(get_lang('.gmi')) # => 'Gemini'
+print(get_lang('.gmi')) # => Gemini
 ```
 
 Get language from a file path:
@@ -58,8 +58,8 @@ def get_lang_from_path(filepath):
         if file_ext in data['extensions']:
             return lang
 
-print(get_lang_from_path('document.adoc')) # => 'AsciiDoc'
-print(get_lang_from_path('README.md')) # => 'Markdown'
+print(get_lang_from_path('document.adoc')) # => AsciiDoc
+print(get_lang_from_path('README.md')) # => Markdown
 print(get_lang_from_path('index.mdx')) # => None (use markup-languages pkg)
 ```
 

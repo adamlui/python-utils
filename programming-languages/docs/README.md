@@ -45,7 +45,7 @@ def get_lang(file_ext):
         if file_ext in data['extensions']:
             return lang
 
-print(get_lang('.al')) # => 'AL'
+print(get_lang('.al')) # => AL
 ```
 
 Get language from a file path:
@@ -58,8 +58,8 @@ def get_lang_from_path(filepath):
         if file_ext in data['extensions']:
             return lang
 
-print(get_lang_from_path('main.rs')) # => 'Rust'
-print(get_lang_from_path('script.kt')) # => 'Kotlin'
+print(get_lang_from_path('main.rs')) # => Rust
+print(get_lang_from_path('script.kt')) # => Kotlin
 print(get_lang_from_path('data.avsc')) # => None (use data-languages pkg)
 ```
 

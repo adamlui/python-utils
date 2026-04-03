@@ -47,7 +47,7 @@ CLI options:
 import get_min_py
 
 result = get_min_py('requests')
-print(result) # => '3.9'
+print(result) # => 3.9
 
 results = get_min_py(['numpy', 'pandas', 'flask'])
 print(results) # => ['3.11', '3.11', '3.9']

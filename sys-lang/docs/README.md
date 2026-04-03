@@ -42,8 +42,8 @@ CLI options:
 ```py
 from sys_lang import get_sys_lang
 
-print(get_sys_lang()) # e.g. => 'zh_HK'
-print(get_sys_lang(region=False)) # e.g. => 'zh'
+print(get_sys_lang()) # e.g. => zh_HK
+print(get_sys_lang(region=False)) # e.g. => zh
 ```
 
 ## MIT License

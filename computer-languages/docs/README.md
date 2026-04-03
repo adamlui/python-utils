@@ -30,7 +30,7 @@ import computer_languages
 
 py_lang_data = computer_languages['Python']
 
-print(py_lang_data['type']) # => 'programming'
+print(py_lang_data['type']) # => programming
 print(py_lang_data['extensions']) # => ['.cgi', '.fcgi', '.gyp', ...]
 ```
 
@@ -54,7 +54,7 @@ def get_lang(file_ext):
         if file_ext in data['extensions']:
             return lang
 
-print(get_lang('.rs')) # => 'Rust'
+print(get_lang('.rs')) # => Rust
 ```
 
 Filter by language type:
@@ -66,7 +66,7 @@ markup_langs = [
 ]
 
 print(markup_langs) # => ['Antlers', 'API Blueprint', 'Astro', 'BibTeX', ...]
-print(f'{len(markup_langs)} markup languages') # -> '69 markup languages'
+print(f'{len(markup_langs)} markup languages') # -> 69 markup languages
 ```
 
 ## MIT License

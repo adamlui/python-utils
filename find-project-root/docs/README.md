@@ -37,7 +37,7 @@ import find_project_root
 
 # Find from current dir
 root = find_project_root()
-print(root) # e.g. => '/home/user/projects/your-project'
+print(root) # e.g. => /home/user/projects/your-project
 ```
 
 _Note: Most type checkers will falsely warn_ `find_project_root` _is not a callable module because they are incapable of analyzing runtime behavior (where the module is replaced w/ a function for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.

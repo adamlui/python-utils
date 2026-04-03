@@ -45,7 +45,7 @@ def get_lang(file_ext):
         if file_ext in data['extensions']:
             return lang
 
-print(get_lang('.ical')) # => 'iCalendar'
+print(get_lang('.ical')) # => iCalendar
 ```
 
 Get language from a file path:
@@ -58,8 +58,8 @@ def get_lang_from_path(filepath):
         if file_ext in data['extensions']:
             return lang
 
-print(get_lang_from_path('steam.vdf')) # => 'Valve Data Format'
-print(get_lang_from_path('Sublime.sublime-snippet')) # => 'XML'
+print(get_lang_from_path('steam.vdf')) # => Valve Data Format
+print(get_lang_from_path('Sublime.sublime-snippet')) # => XML
 print(get_lang_from_path('README.md')) # => None (use prose-languages pkg)
 ```
 

@@ -45,7 +45,7 @@ def get_lang(file_ext):
         if file_ext in data['extensions']:
             return lang
 
-print(get_lang('.sss')) # => 'SugarSS'
+print(get_lang('.sss')) # => SugarSS
 ```
 
 Get language from a file path:
@@ -58,8 +58,8 @@ def get_lang_from_path(filepath):
         if file_ext in data['extensions']:
             return lang
 
-print(get_lang_from_path('index.html')) # => 'HTML'
-print(get_lang_from_path('style.css'))  # => 'CSS'
+print(get_lang_from_path('index.html')) # => HTML
+print(get_lang_from_path('style.css'))  # => CSS
 print(get_lang_from_path('script.js'))  # => None (use programming-languages pkg)
 ```
 
