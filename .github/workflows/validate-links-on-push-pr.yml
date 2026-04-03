@@ -22,3 +22,4 @@ jobs:
           paths: '**/*.md'
           checkFragments: true
           statusCodes: '{ "429": "skip" }'
+          linksToSkip: "https://github.com/adamlui/python-utils/#readme"
