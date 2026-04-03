@@ -8,6 +8,17 @@ def session(func) : return nox.session(venv_backend='none', name=func.__name__.r
 
 @session
 def dev(session) : session.run('pip', 'install', '-e', '.')
+@session
+def test_py26(session):
+    from pathlib import Path
+    src_dir = Path(__file__).parent / 'src'
+    mod_name = next(src_dir.iterdir()).name
+    session.run(
+        py_cmd, '-2.6', '-c',
+        f"import sys ; sys.path.insert(0, r'{src_dir}') ;" # allow import mod from src
+        f'import {mod_name} ; print({mod_name})'
+    )
+    clean(session, '--py2')
 
 @session
 def lint(session): # staged project files
