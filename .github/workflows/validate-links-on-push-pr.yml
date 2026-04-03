@@ -21,4 +21,4 @@ jobs:
         with:
           paths: '**/*.md'
           checkFragments: true
-          statusCodes: '{ "200": "error" }'
+          statusCodes: '{ "429": "skip" }'
