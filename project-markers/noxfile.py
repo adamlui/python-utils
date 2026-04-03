@@ -16,7 +16,7 @@ def test_py26(session):
     session.run(
         py_cmd, '-2.6', '-c',
         f"import sys ; sys.path.insert(0, r'{src_dir}') ;" # allow import mod from src
-        f'import {mod_name} ; print({mod_name})'
+        f'import {mod_name}, json ; print(json.dumps({mod_name}))'
     )
     clean(session, '--py2')
 
