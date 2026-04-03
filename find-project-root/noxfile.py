@@ -11,13 +11,12 @@ def dev(session) : session.run('pip', 'install', '-e', '.')
 @session
 def test_py26(session):
     from pathlib import Path
-    root = Path(__file__).parent
-    src_dir = root / 'src'
-    markers_dir = root.parent / 'project-markers/src'
+    src_dir = Path(__file__).parent / 'src'
+    mod_name = next(src_dir.iterdir()).name
     session.run(
         py_cmd, '-2.6', '-c',
-        f"import sys ; sys.path.extend([r'{src_dir}', r'{markers_dir}']) ;"
-        f'import find_project_root ; print(find_project_root())'
+        f"import sys ; sys.path.insert(0, r'{src_dir}') ;" # allow import mod from src
+        f'import {mod_name} ; print({mod_name}())'
     )
     clean(session, '--py2')
 
