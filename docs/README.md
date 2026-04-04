@@ -41,7 +41,7 @@
         Discuss</a>
 </blockquote>
 
-### <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme">⊕ computer-languages</a>
+### <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme">💻 computer-languages</a>
 
 > File extensions for computer languages.
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/computer-languages/#installation) /
