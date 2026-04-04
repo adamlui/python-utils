@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-# ⊕ computer-languages
+# 💻 computer-languages
 
 <a href="https://pepy.tech/projects/computer-languages?versions=*">
     <img height=31 src="https://img.shields.io/pepy/dt/computer-languages?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
