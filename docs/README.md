@@ -15,6 +15,32 @@
 
 <a href="#"><img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
+<!-- ai-personas -->
+
+<h3>
+    <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#readme">
+        🤖 ai-personas</a>
+</h3>
+
+<details>
+    <summary>1,000+ AI personas for LLMs and agents.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#readme">
+            <img width=750 src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@6247273/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/python-utils/discussions">
+        Discuss</a>
+</blockquote>
+
 ### <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme">⊕ computer-languages</a>
 
 > File extensions for computer languages.
