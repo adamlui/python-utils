@@ -15,7 +15,7 @@
 
 <a href="#"><img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
-<!-- ai-personas -->
+<!-- AI-PERSONAS -->
 
 <h3>
     <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#readme">
@@ -41,21 +41,57 @@
         Discuss</a>
 </blockquote>
 
-### <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme">💻 computer-languages</a>
+<!-- COMPUTER-LANGUAGES -->
 
-> File extensions for computer languages.
-<br>[Install](https://github.com/adamlui/python-utils/tree/main/computer-languages/#installation) /
-[Readme](https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme) /
-[API usage](https://github.com/adamlui/python-utils/tree/main/computer-languages/#usage) /
-[Discuss](https://github.com/adamlui/python-utils/discussions)
+<h3>
+    <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme">
+        💻 computer-languages</a>
+</h3>
 
-### <a href="https://github.com/adamlui/python-utils/tree/main/data-languages/#readme">{ } data-languages</a>
+<details>
+    <summary>File extensions for computer languages.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme">
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/computer-languages/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
 
-> File extensions for data languages.
-<br>[Install](https://github.com/adamlui/python-utils/tree/main/data-languages/#installation) /
-[Readme](https://github.com/adamlui/python-utils/tree/main/data-languages/#readme) /
-[API usage](https://github.com/adamlui/python-utils/tree/main/data-languages/#usage) /
-[Discuss](https://github.com/adamlui/python-utils/discussions)
+<blockquote>
+    <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/python-utils/discussions">
+        Discuss</a>
+</blockquote>
+
+<!-- DATA-LANGUAGES -->
+
+<h3>
+    <a href="https://github.com/adamlui/python-utils/tree/main/data-languages/#readme">
+        { } data-languages</a>
+</h3>
+
+<details>
+    <summary>File extensions for data languages.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/python-utils/tree/main/data-languages/#readme">
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/data-languages/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/python-utils/tree/main/data-languages/#installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/data-languages/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/data-languages/#usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/python-utils/discussions">
+        Discuss</a>
+</blockquote>
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/find-project-root/#readme">📂 find-project-root</a>
 
@@ -65,7 +101,7 @@
 [API usage](https://github.com/adamlui/python-utils/tree/main/find-project-root/#api-usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
-<!-- get-min-py -->
+<!-- GET-MIN-PY -->
 
 <h3>
     <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme">
@@ -76,7 +112,7 @@
     <summary>Get the minimum Python version required for a PyPI package.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme">
-            <img width=750 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@f133ea3/get-min-py/assets/images/cli-output.png"></a>
+            <img width=550 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@f133ea3/get-min-py/assets/images/cli-output.png"></a>
     </blockquote>
 </details>
 
@@ -111,53 +147,161 @@
 [CLI usage](https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
-### <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme">🇪🇸 latin-locales</a>
+<!-- LATIN-LOCALES -->
 
-> ISO 639-1 (2-letter) codes for Latin locales.
-<br>[Install](https://github.com/adamlui/python-utils/tree/main/latin-locales/#installation) /
-[Readme](https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme) /
-[API usage](https://github.com/adamlui/python-utils/tree/main/latin-locales/#usage) /
-[Discuss](https://github.com/adamlui/python-utils/discussions)
+<h3>
+    <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme">
+        🇪🇸 latin-locales</a>
+</h3>
 
-### <a href="https://github.com/adamlui/python-utils/tree/main/markup-languages/#readme"></> markup-languages</a>
+<details>
+    <summary>ISO 639-1 (2-letter) codes for Latin locales.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme">
+            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/latin-locales/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
 
-> File extensions for markup languages.
-<br>[Install](https://github.com/adamlui/python-utils/tree/main/markup-languages/#installation) /
-[Readme](https://github.com/adamlui/python-utils/tree/main/markup-languages/#readme) /
-[API usage](https://github.com/adamlui/python-utils/tree/main/markup-languages/#usage) /
-[Discuss](https://github.com/adamlui/python-utils/discussions)
+<blockquote>
+    <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/python-utils/discussions">
+        Discuss</a>
+</blockquote>
 
-### <a href="https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme">🇨🇳 non-latin-locales</a>
+<!-- MARKUP-LANGUAGES -->
 
-> ISO 639-1 (2-letter) codes for non-Latin locales.
-<br>[Install](https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#installation) /
-[Readme](https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme) /
-[API usage](https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#usage) /
-[Discuss](https://github.com/adamlui/python-utils/discussions)
+<h3>
+    <a href="https://github.com/adamlui/python-utils/tree/main/markup-languages/#readme">
+        { } markup-languages</a>
+</h3>
 
-### <a href="https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme">#! programming-languages</a>
+<details>
+    <summary>File extensions for markup languages.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/python-utils/tree/main/markup-languages/#readme">
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/markup-languages/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
 
-> File extensions for programming languages.
-<br>[Install](https://github.com/adamlui/python-utils/tree/main/programming-languages/#installation) /
-[Readme](https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme) /
-[API usage](https://github.com/adamlui/python-utils/tree/main/programming-languages/#usage) /
-[Discuss](https://github.com/adamlui/python-utils/discussions)
+<blockquote>
+    <a href="https://github.com/adamlui/python-utils/tree/main/markup-languages/#installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/markup-languages/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/markup-languages/#usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/python-utils/discussions">
+        Discuss</a>
+</blockquote>
 
-### <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#readme">🏷️ project-markers</a>
+<!-- NON-LATIN-LOCALES -->
 
-> Common project root markers.
-<br>[Install](https://github.com/adamlui/python-utils/tree/main/project-markers/#installation) /
-[Readme](https://github.com/adamlui/python-utils/tree/main/project-markers/#readme) /
-[API usage](https://github.com/adamlui/python-utils/tree/main/project-markers/#usage) /
-[Discuss](https://github.com/adamlui/python-utils/discussions)
+<h3>
+    <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme">
+        🇨🇳 non-latin-locales</a>
+</h3>
 
-### <a href="https://github.com/adamlui/python-utils/tree/main/prose-languages/#readme">## prose-languages</a>
+<details>
+    <summary>ISO 639-1 (2-letter) codes for non-Latin locales.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme">
+            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/non-latin-locales/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
 
-> File extensions for prose languages.
-<br>[Install](https://github.com/adamlui/python-utils/tree/main/prose-languages/#installation) /
-[Readme](https://github.com/adamlui/python-utils/tree/main/prose-languages/#readme) /
-[API usage](https://github.com/adamlui/python-utils/tree/main/prose-languages/#usage) /
-[Discuss](https://github.com/adamlui/python-utils/discussions)
+<blockquote>
+    <a href="https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/python-utils/discussions">
+        Discuss</a>
+</blockquote>
+
+<!-- PROGRAMMING-LANGUAGES -->
+
+<h3>
+    <a href="https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme">
+        { } programming-languages</a>
+</h3>
+
+<details>
+    <summary>File extensions for programming languages.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme">
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/programming-languages/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/python-utils/tree/main/programming-languages/#installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/programming-languages/#usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/python-utils/discussions">
+        Discuss</a>
+</blockquote>
+
+<!-- PROJECT-MARKERS -->
+
+<h3>
+    <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#readme">
+        🏷️ project-markers</a>
+</h3>
+
+<details>
+    <summary>Common project root markers.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#readme">
+            <img width=375 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/project-markers/assets/images/dataset-preview.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/python-utils/discussions">
+        Discuss</a>
+</blockquote>
+
+<!-- PROSE-LANGUAGES -->
+
+<h3>
+    <a href="https://github.com/adamlui/python-utils/tree/main/prose-languages/#readme">
+        ## prose-languages</a>
+</h3>
+
+<details>
+    <summary>File extensions for prose languages.</summary>
+    <br><blockquote>
+        <a href="https://github.com/adamlui/python-utils/tree/main/prose-languages/#readme">
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/prose-languages/assets/images/dataset.png"></a>
+    </blockquote>
+</details>
+
+<blockquote>
+    <a href="https://github.com/adamlui/python-utils/tree/main/prose-languages/#installation">
+        Install</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/prose-languages/#readme">
+        Readme</a> /
+    <a href="https://github.com/adamlui/python-utils/tree/main/prose-languages/#usage">
+        API usage</a> /
+    <a href="https://github.com/adamlui/python-utils/discussions">
+        Discuss</a>
+</blockquote>
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#readme">{ } remove-json-keys</a>
 
