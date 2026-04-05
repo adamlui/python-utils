@@ -2,7 +2,7 @@ name: Sync ai-personas releases to KudoAI/ai-personas
 
 on:
   release:
-    types: [published, edited, released]
+    types: [published, edited]
 
 jobs:
   sync-release:
