@@ -46,10 +46,12 @@ def get_downloads(pkg: str, max_retries: int = 5, get_delay: int = 1) -> int:
     return 0
 
 def format_total(num: int) -> str: # abbr ints to e.g. 1.5k, 2b
-    return f'{num / 1000000000:.1f}B' if num >= 1000000000 \
-      else f'{num / 1000000:.1f}M' if num >= 1000000 \
-      else f'{num / 1000:.1f}K' if num >= 1000 \
-      else str(num)
+    return (
+             f'{num / 1000000000:.1f}B' if num >= 1000000000
+        else f'{num / 1000000:.1f}M' if num >= 1000000
+        else f'{num / 1000:.1f}K' if num >= 1000
+        else str(num)
+    ).replace('.0', '')
 
 def read_file(file_path: str) -> list[str]:
     with open(file_path, 'r', encoding='utf-8') as file:
