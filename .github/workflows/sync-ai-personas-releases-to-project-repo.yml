@@ -83,4 +83,4 @@ jobs:
             upload_url=$(echo "$get_release_resp" | sed -nE 's|.*"upload_url": "(.*)".*|\1|p' | sed 's|{.*}||')
           fi
 
-          echo "Release synced to KudoAI/ai-personas ($TARGET_RELEASE_TAG)!" 
+          echo "Release synced to KudoAI/ai-personas ($TARGET_RELEASE_TAG)!"
