@@ -1,4 +1,5 @@
 PKGS = [
+    'ai-personas',
     'computer-languages',
     'data-languages',
     'find-project-root',
