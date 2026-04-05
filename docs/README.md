@@ -31,11 +31,11 @@
 </details>
 
 <blockquote>
-    <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#installation">
+    <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#-installation">
         Install</a> /
     <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#readme">
         Readme</a> /
-    <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#usage">
+    <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#-usage">
         API usage</a> /
     <a href="https://github.com/adamlui/python-utils/discussions">
         Discuss</a>
