@@ -23,8 +23,7 @@
 🌍 [Internationalization / Localization](#-internationalization--localization-) •
 📦 [Package](#-package-)
 
-<a href="#"><img height="30px" width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
-<a href="#"><img height=50px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
+<a href="#"><img style="height:30px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
 </div>
 
