@@ -1,11 +1,10 @@
-import re, sys
+import re
 from pathlib import Path
 from types import SimpleNamespace as sn
 
 from .lib import toml
 
-sys.path.insert(0, str(Path(__file__).parent.parent / 'src')) # to force use local mod
-from sys_lang.cli.lib import data, log
+from src.sys_lang.cli.lib import data, log
 
 paths = sn(root=Path(__file__).parent.parent)
 paths.pyproject = paths.root / 'pyproject.toml'

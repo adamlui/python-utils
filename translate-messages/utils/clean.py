@@ -2,8 +2,7 @@ from pathlib import Path
 import shutil, sys
 from types import SimpleNamespace as sn
 
-sys.path.insert(0, str(Path(__file__).parent.parent / 'src')) # to force use local mod
-from translate_messages.cli.lib import data, log
+from src.translate_messages.cli.lib import data, log
 
 def main():
     msgs_path = Path(__file__).parent / 'data/messages.json'
