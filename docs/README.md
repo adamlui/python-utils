@@ -23,7 +23,7 @@
 🌍 [Internationalization / Localization](#-internationalization--localization-) •
 📦 [Package](#-package-)
 
-<a href="#"><img height="10px" width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
+<a href="#"><img height=""10px"" width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
 </div>
 
@@ -41,7 +41,7 @@
 [CLI usage](https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
-<a href="#"><img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
+<a href="#"><img height="10px" width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
 
 ## 📊 Datasets <!-- CATEGORY -->
@@ -254,7 +254,7 @@
         Discuss</a>
 </blockquote>
 
-<a href="#"><img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
+<a href="#"><img height="10px" width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
 
 ## 🖥️ Environment <!-- CATEGORY -->
@@ -326,7 +326,7 @@
 [CLI usage](https://github.com/adamlui/python-utils/tree/main/sys-lang/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
-<a href="#"><img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
+<a href="#"><img height="10px" width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
 ## 🌍 Internationalization / Localization <!-- CATEGORY -->
 
@@ -409,7 +409,7 @@
 [CLI usage](https://github.com/adamlui/python-utils/tree/main/translate-messages/#usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
-<a href="#"><img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
+<a href="#"><img height="10px" width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
 
 ## 📦 Package <!-- CATEGORY -->
@@ -442,7 +442,7 @@
 
 <!-- FOOTER -->
 
-<a href="#"><img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
+<a href="#"><img height="10px" width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/python-utils@d6fae85/assets/images/icons/tag/white/icon16.svg"><img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@d6fae85/assets/images/icons/tag/dark-gray/icon16.svg"></picture>
 <a href="https://github.com/adamlui/python-utils/releases">**Latest releases**</a> /
