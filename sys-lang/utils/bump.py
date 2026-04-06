@@ -1,5 +1,5 @@
-import re
 from pathlib import Path
+import re
 from types import SimpleNamespace as sn
 
 from .lib import toml
