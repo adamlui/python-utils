@@ -315,7 +315,7 @@
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
 
-## Internationalization / Localization <!-- CATEGORY -->
+## 🌍 Internationalization / Localization <!-- CATEGORY -->
 
 
 <!-- IS-UNICODE-SUPPORTED -->
