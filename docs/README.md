@@ -27,7 +27,7 @@
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#readme">remove-json-keys</a>
 
-> Simply remove JSON keys via CLI command.
+> 🧹 Simply remove JSON keys via CLI command.
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#installation) /
 [Readme](https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#readme) /
 [CLI usage](https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#usage) /
@@ -42,7 +42,7 @@
 ### <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#readme">ai-personas</a>
 
 <details>
-    <summary>1,000+ AI personas for LLMs and agents.</summary>
+    <summary>🤖 1,000+ AI personas for LLMs and agents.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#readme">
             <img width=750 src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@6247273/assets/images/dataset-preview.png"></a>
@@ -65,7 +65,7 @@
 ### <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme">computer-languages</a>
 
 <details>
-    <summary>File extensions for computer languages.</summary>
+    <summary>💻 File extensions for computer languages.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme">
             <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/computer-languages/assets/images/dataset-preview.png"></a>
@@ -88,7 +88,7 @@
 ### <a href="https://github.com/adamlui/python-utils/tree/main/data-languages/#readme">data-languages</a>
 
 <details>
-    <summary>File extensions for data languages.</summary>
+    <summary>🧾 File extensions for data languages.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/data-languages/#readme">
             <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/data-languages/assets/images/dataset-preview.png"></a>
@@ -111,7 +111,7 @@
 ### <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme">latin-locales</a>
 
 <details>
-    <summary>ISO 639-1 (2-letter) codes for Latin locales.</summary>
+    <summary>🇪🇸 ISO 639-1 (2-letter) codes for Latin locales.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme">
             <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/latin-locales/assets/images/dataset-preview.png"></a>
@@ -134,7 +134,7 @@
 ### <a href="https://github.com/adamlui/python-utils/tree/main/markup-languages/#readme">markup-languages</a>
 
 <details>
-    <summary>File extensions for markup languages.</summary>
+    <summary>📄 File extensions for markup languages.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/markup-languages/#readme">
             <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/markup-languages/assets/images/dataset-preview.png"></a>
@@ -157,7 +157,7 @@
 ### <a href="https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme">non-latin-locales</a>
 
 <details>
-    <summary>ISO 639-1 (2-letter) codes for non-Latin locales.</summary>
+    <summary>🇨🇳 ISO 639-1 (2-letter) codes for non-Latin locales.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme">
             <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/non-latin-locales/assets/images/dataset-preview.png"></a>
@@ -180,7 +180,7 @@
 ### <a href="https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme">programming-languages</a>
 
 <details>
-    <summary>File extensions for programming languages.</summary>
+    <summary>⌨️ File extensions for programming languages.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme">
             <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/programming-languages/assets/images/dataset-preview.png"></a>
@@ -203,7 +203,7 @@
 ### <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#readme">project-markers</a>
 
 <details>
-    <summary>Common project root markers.</summary>
+    <summary>🏷️ Common project root markers.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#readme">
             <img width=375 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/project-markers/assets/images/dataset-preview.png"></a>
@@ -226,7 +226,7 @@
 ### <a href="https://github.com/adamlui/python-utils/tree/main/prose-languages/#readme">prose-languages</a>
 
 <details>
-    <summary>File extensions for prose languages.</summary>
+    <summary>📝 File extensions for prose languages.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/prose-languages/#readme">
             <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/prose-languages/assets/images/dataset.png"></a>
@@ -252,7 +252,7 @@
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/find-project-root/#readme">find-project-root</a>
 
-> Locate project root via custom markers.
+> 📂 Locate project root via custom markers.
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/find-project-root/#installation) /
 [Readme](https://github.com/adamlui/python-utils/tree/main/find-project-root/#readme) /
 [API usage](https://github.com/adamlui/python-utils/tree/main/find-project-root/#api-usage) /
@@ -262,7 +262,7 @@
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/is-legacy-terminal/#readme">is-legacy-terminal</a>
 
-> Detect whether the terminal is legacy.
+> 📟 Detect whether the terminal is legacy.
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/is-legacy-terminal/#-installation) /
 [Readme](https://github.com/adamlui/python-utils/tree/main/is-legacy-terminal/#readme) /
 [API usage](https://github.com/adamlui/python-utils/tree/main/is-legacy-terminal/#-api-usage) /
@@ -273,7 +273,7 @@
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#readme">is-unicode-supported</a>
 
-> Detect whether the terminal supports advanced Unicode.
+> 🈶 Detect whether the terminal supports advanced Unicode.
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#-installation) /
 [Readme](https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#readme) /
 [API usage](https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#-api-usage) /
@@ -285,7 +285,7 @@
 ### <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#readme">project-markers</a>
 
 <details>
-    <summary>Common project root markers.</summary>
+    <summary>🏷️ Common project root markers.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#readme">
             <img width=375 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/project-markers/assets/images/dataset-preview.png"></a>
@@ -307,7 +307,7 @@
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/sys-lang/#readme">sys-lang</a>
 
-> Detect the system language.
+> 🔤 Detect the system language.
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/sys-lang/#-installation) /
 [Readme](https://github.com/adamlui/python-utils/tree/main/sys-lang/#readme) /
 [API usage](https://github.com/adamlui/python-utils/tree/main/sys-lang/#-api-usage) /
@@ -322,7 +322,7 @@
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#readme">is-unicode-supported</a>
 
-> Detect whether the terminal supports advanced Unicode.
+> 🈶 Detect whether the terminal supports advanced Unicode.
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#-installation) /
 [Readme](https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#readme) /
 [API usage](https://github.com/adamlui/python-utils/tree/main/is-unicode-supported/#-api-usage) /
@@ -334,7 +334,7 @@
 ### <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme">latin-locales</a>
 
 <details>
-    <summary>ISO 639-1 (2-letter) codes for Latin locales.</summary>
+    <summary>🇪🇸 ISO 639-1 (2-letter) codes for Latin locales.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme">
             <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/latin-locales/assets/images/dataset-preview.png"></a>
@@ -357,7 +357,7 @@
 ### <a href="https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme">non-latin-locales</a>
 
 <details>
-    <summary>ISO 639-1 (2-letter) codes for non-Latin locales.</summary>
+    <summary>🇨🇳 ISO 639-1 (2-letter) codes for non-Latin locales.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme">
             <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/non-latin-locales/assets/images/dataset-preview.png"></a>
@@ -379,7 +379,7 @@
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/sys-lang/#readme">sys-lang</a>
 
-> Detect the system language.
+> 🈯 Detect the system language.
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/sys-lang/#-installation) /
 [Readme](https://github.com/adamlui/python-utils/tree/main/sys-lang/#readme) /
 [API usage](https://github.com/adamlui/python-utils/tree/main/sys-lang/#-api-usage) /
@@ -390,7 +390,7 @@
 
 ### <a href="https://github.com/adamlui/python-utils/tree/main/translate-messages/#readme">translate-messages</a>
 
-> Translate `en/messages.json` (chrome.i18n format) to 100+ locales automatically.
+> 🌍 Translate `en/messages.json` (chrome.i18n format) to 100+ locales automatically.
 <br>[Install](https://github.com/adamlui/python-utils/tree/main/translate-messages/#installation) /
 [Readme](https://github.com/adamlui/python-utils/tree/main/translate-messages/#readme) /
 [CLI usage](https://github.com/adamlui/python-utils/tree/main/translate-messages/#usage) /
@@ -405,7 +405,7 @@
 ### <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme">get-min-py</a>
 
 <details>
-    <summary>Get the minimum Python version required for a PyPI package.</summary>
+    <summary>📊 Get the minimum Python version required for a PyPI package.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme">
             <img width=550 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@f133ea3/get-min-py/assets/images/cli-output.png"></a>
