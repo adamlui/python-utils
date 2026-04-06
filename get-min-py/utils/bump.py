@@ -1,3 +1,4 @@
+import argparse, re, sys
 from pathlib import Path
 import re
 from types import SimpleNamespace as sn
@@ -15,7 +16,6 @@ paths.util_msgs = paths.root / 'utils/data/messages.json'
 msgs = sn(**{ key:val['message'] for key,val in data.json.read(paths.util_msgs)['bump'].items() })
 
 def parse_args():
-    import argparse
     argp = argparse.ArgumentParser(description=msgs.app_DESC, add_help=False)
     argp.add_argument('-M', '--major', action='store_true', help=msgs.help_MAJOR)
     argp.add_argument('-m', '--minor', action='store_true', help=msgs.help_MINOR)
@@ -68,7 +68,6 @@ def main():
     args = parse_args()
     bump_type = 'major' if args.major else 'minor' if args.minor else 'patch' if args.patch else None
     if not bump_type:
-        import sys
         log.error(msgs.err_MISSING_BUMP_TYPE_ARG)
         sys.exit(1)
 
