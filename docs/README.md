@@ -454,10 +454,6 @@
 
 <!-- FOOTER -->
 
-<div align="center">
-
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/python-utils@d6fae85/assets/images/icons/tag/white/icon16.svg"><img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@d6fae85/assets/images/icons/tag/dark-gray/icon16.svg"></picture>
 <a href="https://github.com/adamlui/python-utils/releases">**Latest releases**</a> /
 <a href="https://github.com/adamlui/python-utils/discussions">Discuss</a>
-
-</div>
