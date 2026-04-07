@@ -41,8 +41,6 @@
 [CLI usage](https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
-<div align="center"><a href="#top">Back to top ↑</a><br><br></div>
-
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
 
