@@ -41,6 +41,8 @@
 [CLI usage](https://github.com/adamlui/python-utils/tree/main/remove-json-keys/#usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
+<div align="center"><a href="#top">Back to top ↑</a><br><br></div>
+
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
 
@@ -254,6 +256,8 @@
         Discuss</a>
 </blockquote>
 
+<div align="center"><a href="#top">Back to top ↑</a></div><br>
+
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
 
@@ -325,6 +329,8 @@
 [API usage](https://github.com/adamlui/python-utils/tree/main/sys-lang/#-api-usage) /
 [CLI usage](https://github.com/adamlui/python-utils/tree/main/sys-lang/#-command-line-usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
+
+<div align="center"><a href="#top">Back to top ↑</a></div><br>
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
@@ -410,6 +416,8 @@
 [CLI usage](https://github.com/adamlui/python-utils/tree/main/translate-messages/#usage) /
 [Discuss](https://github.com/adamlui/python-utils/discussions)
 
+<div align="center"><a href="#top">Back to top ↑</a></div><br>
+
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
 
@@ -441,6 +449,8 @@
         Discuss</a>
 </blockquote>
 
+<div align="center"><a href="#top">Back to top ↑</a></div><br>
+
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
 
@@ -450,7 +460,6 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/python-utils@d6fae85/assets/images/icons/tag/white/icon16.svg"><img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@d6fae85/assets/images/icons/tag/dark-gray/icon16.svg"></picture>
 <a href="https://github.com/adamlui/python-utils/releases">**Latest releases**</a> /
-<a href="https://github.com/adamlui/python-utils/discussions">Discuss</a> /
-<a href="#top">Back to top ↑</a>
+<a href="https://github.com/adamlui/python-utils/discussions">Discuss</a>
 
 </div>
