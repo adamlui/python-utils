@@ -441,7 +441,7 @@
         Discuss</a>
 </blockquote>
 
-<hr>
+<a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
 
 <!-- FOOTER -->
