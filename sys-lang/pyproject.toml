@@ -102,6 +102,7 @@ getsystemlanguage = "sys_lang.cli.__main__:main"
 [project.optional-dependencies]
 dev = [
     "nox>=2026.2.9",
+    "pre-commit>=4.5.1,<5",
     "remove-json-keys>=1.10.0,<2",
     "tomli>=2.4.0,<3",
     "tomli-w>=1.2.0,<2",
