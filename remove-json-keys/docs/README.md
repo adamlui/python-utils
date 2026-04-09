@@ -102,4 +102,7 @@ Copyright © 2023–2026 [Adam Lui](https://github.com/adamlui).
 #
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/python-utils@760599e/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@760599e/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href=https://github.com/adamlui/python-utils/#readme>**More Python utilities**</a> /
+<a href="https://github.com/adamlui/python-utils/discussions">Discuss</a> /
+<a href="https://github.com/adamlui/python-utils/issues">Report bug</a> /
+<a href="mailto:security@tidelift.com">Report vulnerability</a> /
 <a href="#top">Back to top ↑</a>
