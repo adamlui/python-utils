@@ -21,7 +21,7 @@ dependencies = [
     "colorama>=0.4.6,<1 ; platform_system == 'Windows'",
     "find-project-root>=1.0.3,<2",
     "is-unicode-supported>=1.2.0,<2",
-    "json5>=0.13.0,<1",
+    "json5>=0.14.0,<1",
     "non-latin-locales>=1.0.4,<2",
     "sys-lang>=1.0.0,<2",
     "translate>=3.8.0,<4",
