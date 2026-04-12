@@ -26,6 +26,7 @@ jobs:
           RELEASE_TAG="${{ github.event.release.tag_name }}"
           echo "Source Title: $RELEASE_TITLE"
           echo "Source Tag: $RELEASE_TAG"
+          [[ "$RELEASE_TAG" == ai-personas* ]] || exit 0
 
           TARGET_REPO="KudoAI/ai-personas"
           RELEASE_JSON=$(curl -s "https://api.github.com/repos/adamlui/python-utils/releases/tags/$RELEASE_TAG")
