@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "prose-languages"
-version = "1.0.2"
+version = "1.0.3"
 description = "File extensions for prose languages."
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
@@ -82,7 +82,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/prose-languages-1.0.2"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/prose-languages-1.0.3"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/prose-languages/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/prose-languages/#readme"
