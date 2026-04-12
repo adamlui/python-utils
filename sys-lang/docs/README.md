@@ -2,6 +2,8 @@
 
 # > sys-lang
 
+<a href="https://pepy.tech/projects/sys-lang?versions=*">
+    <img height=31 src="https://img.shields.io/pepy/dt/sys-lang?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
 <a href="https://github.com/adamlui/python-utils/releases/tag/sys-lang-1.0.1">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/sys-lang/docs/LICENSE.md">
