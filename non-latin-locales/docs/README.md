@@ -2,8 +2,8 @@
 
 <a href="https://pepy.tech/projects/non-latin-locales?versions=*">
     <img height=31 src="https://img.shields.io/pepy/dt/non-latin-locales?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
-<a href="https://github.com/adamlui/python-utils/releases/tag/non-latin-locales-1.0.4">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.4-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/python-utils/releases/tag/non-latin-locales-1.0.5">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.5-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/non-latin-locales/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
@@ -13,7 +13,7 @@
 
 > ### _ISO 639-1 (2-letter) codes for non-Latin locales requiring advanced Unicode support._
 
-It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@non-latin-locales-1.0.4/non-latin-locales/src/non_latin_locales/non-latin-locales.json), so you can use it in any environment.
+It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@non-latin-locales-1.0.5/non-latin-locales/src/non_latin_locales/non-latin-locales.json), so you can use it in any environment.
 
 ## Installation
 
