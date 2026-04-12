@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "project-markers"
-version = "1.0.3"
+version = "1.0.4"
 description = "List of files that indicate a project root"
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
@@ -54,7 +54,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/project-markers-1.0.3"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/project-markers-1.0.4"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/project-markers/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/project-markers/#readme"

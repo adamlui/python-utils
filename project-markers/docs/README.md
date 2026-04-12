@@ -2,8 +2,8 @@
 
 <a href="https://pepy.tech/projects/project-markers?versions=*">
     <img height=31 src="https://img.shields.io/pepy/dt/project-markers?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
-<a href="https://github.com/adamlui/python-utils/releases/tag/project-markers-1.0.3">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.3-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/python-utils/releases/tag/project-markers-1.0.4">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.4-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/project-markers/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
@@ -13,7 +13,7 @@
 
 > ### _Common project root markers._
 
-It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@project-markers-1.0.3/project-markers/src/project_markers/project-markers.json), so you can use it in any environment.
+It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@project-markers-1.0.4/project-markers/src/project_markers/project-markers.json), so you can use it in any environment.
 
 ## Installation
 
