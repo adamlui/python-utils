@@ -31,7 +31,7 @@ jobs:
 
       - name: Sync ai-personas/ to KudoAI/ai-personas/python/
         run: |
-          rsync -avh --delete \
+          rsync -avhc --delete \
             ${{ github.workspace }}/adamlui/python-utils/ai-personas/ \
             ${{ github.workspace }}/KudoAI/ai-personas/python/
 
