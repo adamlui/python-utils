@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sys-lang"
-version = "1.0.0"
+version = "1.0.1"
 description = "Detect the system language."
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
@@ -72,7 +72,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/sys-lang-1.0.0"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/sys-lang-1.0.1"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/sys-lang/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/sys-lang/#readme"

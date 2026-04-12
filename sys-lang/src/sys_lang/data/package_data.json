@@ -1,6 +1,6 @@
 {
   "name": "sys-lang",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detect the system language.",
   "cmds": [
     "sys-lang", "sys-language", "system-lang", "system-language",
