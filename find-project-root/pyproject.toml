@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "find-project-root"
-version = "1.0.3"
+version = "1.0.4"
 description = "Locate project root via custom markers."
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
@@ -63,7 +63,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/find-project-root-1.0.3"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/find-project-root-1.0.4"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/find-project-root/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/find-project-root/#readme"
