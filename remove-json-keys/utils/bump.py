@@ -93,7 +93,9 @@ def main():
         from .lib import git
         KEY_ID = git.init_kudo_sync_bot(msgs)
         git.commit([str(paths.pyproject), str(paths.package_data), str(paths.readme)],
-            f'Bumped {project.name} versions to {new_ver}', '-n')
+            f'Bumped {project.name} versions to {new_ver}',
+            '-n', f'-S{KEY_ID}' if KEY_ID else ''
+        )
         if args.no_push:
             print(f'\n{msgs.log_SKIPPING_GIT_PUSH}...')
         else:
