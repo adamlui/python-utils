@@ -47,13 +47,30 @@ def get_downloads(pkg: str, max_retries: int = 5, get_delay: int = 1) -> int:
     print(f'{pkg}: Failed after {max_retries} retries')
     return 0
 
-def format_total(num: int) -> str: # abbr ints to e.g. 1.5k, 2b
-    return (
-             f'{num / 1000000000:.1f}B' if num >= 1000000000
-        else f'{num / 1000000:.1f}M' if num >= 1000000
-        else f'{num / 1000:.1f}K' if num >= 1000
-        else str(num)
-    ).replace('.0', '')
+def format_total(num: int) -> str:
+    first_digit = str(num)[0] if num else '0'
+    second_digit = str(num)[1] if num > 9 else '0'
+    second_digit_rounded = '0' if int(second_digit) < 5 else '5'
+    if num >= 1_000_000_000:
+        formatted = f'{num // 1_000_000_000}'
+        remainder = (num % 1_000_000_000) // 100_000_000
+        if remainder : formatted += f'.{remainder}'
+        return formatted + 'B+'
+    elif num >= 10_000_000:
+        return f'{(num // 1_000_000) * 1_000_000:,}+'
+    elif num >= 1_000_000:
+        return f'{first_digit},{second_digit}00,000+'
+    elif num >= 100_000:
+        return f'{first_digit}{second_digit_rounded}0,000+'
+    elif num >= 10_000:
+        return f'{first_digit}0,000+'
+    elif num >= 1_000:
+        formatted = f'{num // 1000}'
+        remainder = (num % 1000) // 100
+        if remainder : formatted += f'.{remainder}'
+        return formatted + 'K'
+    else:
+        return str(num)
 
 def read_file(file_path: str) -> list[str]:
     with open(file_path, 'r', encoding='utf-8') as file:
