@@ -28,7 +28,7 @@ jobs:
       - name: Update README shield
         id: update_shield
         run: |
-          python3 utils/update_root_shield.py
+          python3 utils/update_root_downloads_shield.py
           if [[ $? -eq 0 ]] ; then
             echo "Shield updated!"
             echo "SHIELD_UPDATED=true" >> $GITHUB_ENV
