@@ -80,18 +80,22 @@ def write_file(file_path: str, lines: list[str]) -> None:
     with open(file_path, 'w', encoding='utf-8') as file:
         file.writelines(lines)
 
-def update_downloads_shield(readme_path: str, downloads: int) -> None:
+def update_downloads_shield(readme_path: str, downloads: int) -> bool:
     import re
     lines = read_file(readme_path)
     shield_re = r'(?i)(<img[^>]+src="https://img.shields.io/badge/Downloads-)([\d,\.km]+)(-[a-f\d]{6})'
     downloads_str = f'{format_total(downloads).lower()}'
+    shield_updated = False
     for idx, line in enumerate(lines):
         shield_match = re.search(shield_re, line)
         if shield_match:
             new_line = re.sub(shield_match.group(2), downloads_str, line)
-            lines[idx] = new_line
-            print(f'»»» {new_line.strip()}\n')
-    write_file(readme_path, lines)
+            if new_line != line:
+                lines[idx] = new_line
+                shield_updated = True
+                print(f'»»» {new_line.strip()}\n')
+    if shield_updated : write_file(readme_path, lines)
+    return shield_updated
 
 def main() -> None:
     grand_total_dls = 0
@@ -102,7 +106,7 @@ def main() -> None:
     print('-' *45)
     print(f"{'TOTAL DOWNLOADS':30} {grand_total_dls:,}\n")
     print(f'Updating {README_PATH}...\n')
-    update_downloads_shield(README_PATH, grand_total_dls)
-    print('Done!')
+    shield_updated = update_downloads_shield(README_PATH, grand_total_dls)
+    print('Shield updated!' if shield_updated else 'No update needed.')
 
 if __name__ == '__main__' : main()
