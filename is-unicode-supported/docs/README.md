@@ -3,7 +3,7 @@
 # > is-unicode-supported
 
 <a href="https://pepy.tech/projects/is-unicode-supported?versions=*">
-    <img height=31 src="https://img.shields.io/pepy/dt/is-unicode-supported?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
+    <img height=31 src="https://img.shields.io/pepy/dt/is-unicode-supported?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/releases/tag/is-unicode-supported-1.2.1">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.2.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/is-unicode-supported/docs/LICENSE.md">
