@@ -16,6 +16,7 @@ PKGS = [
     'sys-lang',
     'translate-messages'
 ]
+README_PATH = 'docs/README.md'
 STATS_API_URL = 'https://pypistats.org/api/packages/{pkg}/overall'
 
 def get_downloads(pkg: str, max_retries: int = 5, get_delay: int = 1) -> int:
@@ -83,7 +84,6 @@ def main() -> None:
         print(f'{pkg:30} {downloads:,}')
     print('-' *45)
     print(f"{'TOTAL DOWNLOADS':30} {grand_total_dls:,}\n")
-    README_PATH = 'docs/README.md'
     print(f'Updating {README_PATH}...\n')
     update_downloads_shield(README_PATH, grand_total_dls)
     print('Done!')
