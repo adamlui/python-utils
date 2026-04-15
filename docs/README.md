@@ -55,7 +55,7 @@
     <summary>🤖 1,000+ AI personas for LLMs and agents.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#readme">
-            <img width=750 src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@6247273/assets/images/dataset-preview.png"></a>
+            <img width=750 src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@c77849c/assets/images/screenshots/dataset-preview.png"></a>
     </blockquote>
 </details>
 
