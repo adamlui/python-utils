@@ -26,7 +26,7 @@
 - Customizable markers — provide your own or use defaults
 - Multi-Python support — from Python 2.6 thru 3.15+
 
-<hr>
+<a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@7da7074/assets/images/separators/aqua-gradient.png"></a>
 
 ## Installation
 

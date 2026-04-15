@@ -17,7 +17,7 @@
 
 Checks if terminal supports advanced Unicode (CJK, emoji, etc.) by measuring the cursor position of a single, wide char (𠀀). Returns `False` for legacy consoles or `True` if the wide char renders as 2 columns.
 
-<hr>
+<a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@7da7074/assets/images/separators/aqua-gradient.png"></a>
 
 ## ⚡ Installation
 

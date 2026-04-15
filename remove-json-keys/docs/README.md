@@ -15,7 +15,7 @@
 
 > ### _Simply remove JSON keys via CLI command._
 
-<hr>
+<a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@7da7074/assets/images/separators/aqua-gradient.png"></a>
 
 ## Installation
 

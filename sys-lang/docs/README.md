@@ -17,7 +17,7 @@
 
 Returns ISO 639-1 (e.g. `'en'`) or ISO 3166-1 alpha-2-appended (`'en_US'`) code for user's preferred language. On Windows, queries `Get-Culture` via PowerShell. On *nix systems, reads `LC_ALL`, `LC_MESSAGES`, `LANG`, and `LANGUAGE`.
 
-<hr>
+<a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@7da7074/assets/images/separators/aqua-gradient.png"></a>
 
 ## ⚡ Installation
 
