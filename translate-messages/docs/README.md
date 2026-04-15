@@ -15,11 +15,15 @@
 
 > ### _Translate `en/messages.json` (chrome.i18n format) to 100+ locales automatically._
 
+<hr>
+
 ## Installation
 
 ```bash
 pip install translate-messages
 ```
+
+<hr>
 
 ## Usage
 
@@ -36,6 +40,8 @@ If no options are passed, the CLI will:
 3. Translate found `en/messages.json` to target languages
 
 _Note: Any messages.json in the [`chrome.i18n`](https://developer.chrome.com/docs/extensions/how-to/ui/localization-message-formats) format can be used as a source file._
+
+<hr>
 
 ## Options
 
@@ -58,6 +64,8 @@ Options can be set by using command-line arguments:
 | `-V`, `--debug [target_config_key]` | Show debug logs                                                                                           |
 | `--docs`                            | Open docs URL                                                                                             |
 
+<hr>
+
 ## Examples
 
 Translate all keys except `app_NAME` from `_locales/en/messages.json` to all [`stable_locales`][stable-locales]:
@@ -77,6 +85,8 @@ Translate `app_DESC` + `err_NOT_FOUND` keys from `_msgs/en/messages.json` to Spa
 ```bash
 translate-msgs -n -k app_DESC,err_NOT_FOUND -d _msgs -t es,hi  # no prompts
 ```
+
+<hr>
 
 ## Config file
 
@@ -98,9 +108,13 @@ Example defaults:
 
 _Note: CLI arguments always override config file._
 
+<hr>
+
 ## MIT License
 
 Copyright © 2023–2026 [Adam Lui](https://github.com/adamlui).
+
+<hr>
 
 ## Related
 

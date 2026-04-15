@@ -15,11 +15,15 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@project-markers-1.0.4/project-markers/src/project_markers/project-markers.json), so you can use it in any environment.
 
+<hr>
+
 ## Installation
 
 ```bash
 pip install project-markers
 ```
+
+<hr>
 
 ## Usage
 
@@ -40,9 +44,13 @@ The list includes hundreds of markers from many tools and ecosystems, including:
 - Docker/K8s (Dockerfile, docker-compose.yml)
 - CI/CD (.github, .gitlab-ci.yml, Jenkinsfile)
 
+<hr>
+
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui)
+
+<hr>
 
 ## Related
 

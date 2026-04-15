@@ -17,11 +17,15 @@
 
 Uses `python-requires`, or classifiers if not found.
 
+<hr>
+
 ## ⚡ Installation
 
 ```bash
 pip install get-min-py
 ```
+
+<hr>
 
 ## 💻 Command line usage
 
@@ -41,6 +45,8 @@ CLI options:
 | `-v`, `--version` | Show version
 | `--docs`          | Open docs URL
 
+<hr>
+
 ## 🔌 API usage
 
 ```py
@@ -55,9 +61,13 @@ print(results) # => ['3.11', '3.11', '3.9']
 
 _Note: Most type checkers will falsely warn_ `get_min_py` _is not a callable module because they are incapable of analyzing runtime behavior (where the module is replaced w/ a function for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
 
+<hr>
+
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui)
+
+<hr>
 
 ## Related
 

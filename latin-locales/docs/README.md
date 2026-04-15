@@ -15,11 +15,15 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@latin-locales-1.0.4/latin-locales/src/latin_locales/latin-locales.json), so you can use it in any environment.
 
+<hr>
+
 ## Installation
 
 ```bash
 pip install latin-locales
 ```
+
+<hr>
 
 ## Usage
 
@@ -32,9 +36,13 @@ print(latin_locales)
 
 _Note: Most type checkers will falsely warn_ `latin_locales` _is not iterable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a list for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
 
+<hr>
+
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui)
+
+<hr>
 
 ## Related
 

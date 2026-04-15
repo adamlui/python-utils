@@ -17,11 +17,15 @@
 
 Checks if terminal supports advanced Unicode (CJK, emoji, etc.) by measuring the cursor position of a single, wide char (𠀀). Returns `False` for legacy consoles or `True` if the wide char renders as 2 columns.
 
+<hr>
+
 ## ⚡ Installation
 
 ```bash
 pip install is-unicode-supported
 ```
+
+<hr>
 
 ## 💻 Command line usage
 
@@ -38,6 +42,8 @@ CLI options:
 | `-v`, `--version` | Show version
 | `--docs`          | Open docs URL
 
+<hr>
+
 ## 🔌 API usage
 
 ```py
@@ -51,9 +57,13 @@ else:
 
 _Note: Most type checkers will falsely warn_ `is_unicode_supported` _is not a callable module because they are incapable of analyzing runtime behavior (where the module is replaced w/ a function for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
 
+<hr>
+
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui)
+
+<hr>
 
 ## Related
 

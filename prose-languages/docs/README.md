@@ -17,11 +17,15 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@prose-languages-1.0.3/prose-languages/src/prose_languages/prose-languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 18 prose languages known to GitHub). Data is updated via script and released via new package version.
 
+<hr>
+
 ## Installation
 
 ```bash
 pip install prose-languages
 ```
+
+<hr>
 
 ## Usage
 
@@ -34,6 +38,8 @@ print(md_lang_data['extensions']) # => ['.livemd', '.markdown', '.md', ...]
 ```
 
 _Note: Most type checkers will falsely warn_ `prose_languages` _is not subscriptable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a dictionary for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
+
+<hr>
 
 ## Examples
 
@@ -63,9 +69,13 @@ print(get_lang_from_path('README.md')) # => Markdown
 print(get_lang_from_path('index.mdx')) # => None (use markup-languages pkg)
 ```
 
+<hr>
+
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui)
+
+<hr>
 
 ## Related
 

@@ -17,11 +17,15 @@
 
 Returns ISO 639-1 (e.g. `'en'`) or ISO 3166-1 alpha-2-appended (`'en_US'`) code for user's preferred language. On Windows, queries `Get-Culture` via PowerShell. On *nix systems, reads `LC_ALL`, `LC_MESSAGES`, `LANG`, and `LANGUAGE`.
 
+<hr>
+
 ## ⚡ Installation
 
 ```bash
 pip install sys-lang
 ```
+
+<hr>
 
 ## 💻 Command line usage
 
@@ -39,6 +43,8 @@ CLI options:
 | `-v`, `--version`   | Show version
 | `--docs`            | Open docs URL
 
+<hr>
+
 ## 🔌 API usage
 
 ```py
@@ -48,9 +54,13 @@ print(get_sys_lang()) # e.g. => zh_HK
 print(get_sys_lang(region=False)) # e.g. => zh
 ```
 
+<hr>
+
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui)
+
+<hr>
 
 ## Related
 

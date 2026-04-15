@@ -15,11 +15,15 @@
 
 > ### _Simply remove JSON keys via CLI command._
 
+<hr>
+
 ## Installation
 
 ```bash
 pip install remove-json-keys
 ```
+
+<hr>
 
 ## Usage
 
@@ -37,6 +41,8 @@ If no options are passed, the CLI will:
 
 _Note: Key/values can span multiple lines and have any amount of whitespace between symbols._
 
+<hr>
+
 ## Options
 
 Options can be set by using command-line arguments:
@@ -52,6 +58,8 @@ Options can be set by using command-line arguments:
 | `-v`, `--version`                   | Show version                                                                    |
 | `-V`, `--debug [target_config_key]` | Show debug logs                                                                 |
 | `--docs`                            | Open docs URL                                                                   |
+
+<hr>
 
 ## Examples
 
@@ -73,6 +81,8 @@ Remove `app_DESC` + `app_VER` keys from JSON files found in `data` dir:
 remove-json -n -k app_DESC,app_VER -d data  # no prompts
 ```
 
+<hr>
+
 ## Config file
 
 Run `remove-json init` to create `.remove-json.config.json5` in your project root to set default options.
@@ -90,9 +100,13 @@ Example defaults:
 
 _Note: CLI arguments always override config file._
 
+<hr>
+
 ## MIT License
 
 Copyright © 2023–2026 [Adam Lui](https://github.com/adamlui).
+
+<hr>
 
 ## Related
 

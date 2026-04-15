@@ -17,11 +17,15 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@computer-languages-1.0.3/computer-languages/src/computer_languages/computer-languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 700+ languages known to GitHub). Data is updated via script and released via new package version.
 
+<hr>
+
 ## Installation
 
 ```bash
 pip install computer-languages
 ```
+
+<hr>
 
 ## Usage
 
@@ -35,6 +39,8 @@ print(py_lang_data['extensions']) # => ['.cgi', '.fcgi', '.gyp', ...]
 ```
 
 _Note: Most type checkers will falsely warn_ `computer_languages` _is not subscriptable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a dictionary for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
+
+<hr>
 
 ## Examples
 
@@ -69,9 +75,13 @@ print(markup_langs) # => ['Antlers', 'API Blueprint', 'Astro', 'BibTeX', ...]
 print(f'{len(markup_langs)} markup languages') # -> 69 markup languages
 ```
 
+<hr>
+
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui)
+
+<hr>
 
 ## Related
 

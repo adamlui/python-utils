@@ -15,6 +15,8 @@
 
 > ### _Locate project root via custom markers._
 
+<hr>
+
 ## About
 
 **find-project-root** is a lightweight utility that traverses up from a given path until it finds a project marker.
@@ -24,11 +26,15 @@
 - Customizable markers — provide your own or use defaults
 - Multi-Python support — from Python 2.6 thru 3.15+
 
+<hr>
+
 ## Installation
 
 ```bash
 pip install find-project-root
 ```
+
+<hr>
 
 ## API usage
 
@@ -76,9 +82,13 @@ Combine options:
 root = find_project_root(path='src', max_depth=5, markers=['manifest.json'])
 ```
 
+<hr>
+
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui)
+
+<hr>
 
 ## Related
 

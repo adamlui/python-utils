@@ -17,11 +17,15 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@data-languages-1.0.3/data-languages/src/data_languages/data-languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 145 data languages known to GitHub). Data is updated via script and released via new package version.
 
+<hr>
+
 ## Installation
 
 ```bash
 pip install data-languages
 ```
+
+<hr>
 
 ## Usage
 
@@ -34,6 +38,8 @@ print(json_lang_data['extensions']) # => ['.4DForm', '.4DProject', '.avsc', ...]
 ```
 
 _Note: Most type checkers will falsely warn_ `data_languages` _is not subscriptable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a dictionary for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
+
+<hr>
 
 ## Examples
 
@@ -63,9 +69,13 @@ print(get_lang_from_path('Sublime.sublime-snippet')) # => XML
 print(get_lang_from_path('README.md')) # => None (use prose-languages pkg)
 ```
 
+<hr>
+
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui)
+
+<hr>
 
 ## Related
 

@@ -17,11 +17,15 @@
 
 Checks if terminal is legacy (limited rendering, flicker-prone on rapid redraws, etc.). On Windows, returns `True` if CMD or PowerShell ISE not hosted in modern shell. On *nix systems, returns `True` if `env.TERM` is `'dumb'` or `'unknown'` (indicating a very basic terminal).
 
+<hr>
+
 ## ⚡ Installation
 
 ```bash
 pip install is-legacy-terminal
 ```
+
+<hr>
 
 ## 💻 Command line usage
 
@@ -38,6 +42,8 @@ CLI options:
 | `-v`, `--version` | Show version
 | `--docs`          | Open docs URL
 
+<hr>
+
 ## 🔌 API usage
 
 ```py
@@ -51,9 +57,13 @@ else:
 
 _Note: Most type checkers will falsely warn_ `is_legacy_terminal` _is not a callable module because they are incapable of analyzing runtime behavior (where the module is replaced w/ a function for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
 
+<hr>
+
 ## MIT License
 
 Copyright © 2026 [Adam Lui](https://github.com/adamlui)
+
+<hr>
 
 ## Related
 
