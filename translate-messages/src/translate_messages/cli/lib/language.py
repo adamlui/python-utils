@@ -116,7 +116,6 @@ def get_msgs(cli: sn, lang_code: str = 'en') -> sn:
 
     return sn(**msgs)
 
-
 def write_translations(cli: sn) -> Tuple[List[str], List[str], List[str], List[str]]:
 
     langs_added, langs_skipped, langs_translated, langs_not_translated = [], [], [], []
