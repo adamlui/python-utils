@@ -38,7 +38,7 @@ def get_min_py(pkg_names: Union[str, List[str]]) -> Union[Optional[str], List[Op
             if versions: # append lowest
                 decimal_vers = [ver for ver in versions if '.' in ver]
                 if decimal_vers:
-                    decimal_vers.sort(key=lambda ver: [int(x) for x in ver.split('.')])
+                    decimal_vers.sort(key = lambda ver: [int(x) for x in ver.split('.')])
                     results.append(decimal_vers[0])
                 else:
                     results.append(min(versions, key=int))
