@@ -451,6 +451,16 @@
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 
+## 🧠 Contributors
+
+<a href="https://github.com/adamlui/python-utils/graphs/contributors">
+    <img height=45 width="auto" src="https://contrib.rocks/image?repo=adamlui/python-utils" /></a>
+<br><br>
+
+All contributions are very welcome!
+
+<a href="#"><img height=10px width="100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
+
 
 <!-- FOOTER -->
 
@@ -458,4 +468,5 @@
 <a href="https://github.com/adamlui/python-utils/releases">**Latest releases**</a> /
 <a href="https://github.com/adamlui/python-utils/discussions">Discuss</a> /
 <a href="https://github.com/adamlui/python-utils/issues">Report bug</a> /
-<a href="mailto:security@tidelift.com">Report vulnerability</a>
+<a href="mailto:security@tidelift.com">Report vulnerability</a> /
+<a href="#top">Back to top ↑</a>
