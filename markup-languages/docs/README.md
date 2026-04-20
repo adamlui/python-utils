@@ -68,7 +68,7 @@ def get_lang_from_path(filepath):
     ]
     return lang_matches[0] if len(matches) == 1 else lang_matches
 
-print(get_lang_from_path('index.html')) # => HTML
+print(get_lang_from_path('index.html')) # => ['Ecmarkup', 'HTML']
 print(get_lang_from_path('style.css'))  # => CSS
 print(get_lang_from_path('script.js'))  # => [] (use programming-languages pkg)
 ```
