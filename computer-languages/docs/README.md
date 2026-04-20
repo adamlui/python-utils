@@ -44,7 +44,7 @@ _Note: Most type checkers will falsely warn_ `computer_languages` _is not subscr
 
 ## Examples
 
-List all extensions for a language:
+Get extension(s) for a language:
 
 ```py
 js_exts = computer_languages['JavaScript']['extensions']
@@ -52,7 +52,7 @@ js_exts = computer_languages['JavaScript']['extensions']
 print(js_exts) # => ['._js', '.bones', '.cjs', '.es', ...]
 ```
 
-Get language from an extension:
+Get language(s) from an extension:
 
 ```py
 def get_lang(file_ext):

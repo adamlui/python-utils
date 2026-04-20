@@ -43,7 +43,7 @@ _Note: Most type checkers will falsely warn_ `prose_languages` _is not subscript
 
 ## Examples
 
-Get language from an extension:
+Get language(s) from an extension:
 
 ```py
 def get_lang(file_ext):
@@ -56,7 +56,7 @@ def get_lang(file_ext):
 print(get_lang('.gmi')) # => Gemini
 ```
 
-Get language from a file path:
+Get language(s) from a file path:
 
 ```py
 def get_lang_from_path(filepath):
