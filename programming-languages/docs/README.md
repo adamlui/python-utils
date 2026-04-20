@@ -68,7 +68,7 @@ def get_lang_from_path(filepath):
     ]
     return lang_matches[0] if len(matches) == 1 else lang_matches
 
-print(get_lang_from_path('main.rs')) # => [ 'RenderScript', 'Rust' ]
+print(get_lang_from_path('main.rs')) # => ['RenderScript', 'Rust']
 print(get_lang_from_path('script.kt')) # => Kotlin
 print(get_lang_from_path('data.avsc')) # => [] (use data-languages pkg)
 ```
