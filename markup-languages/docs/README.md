@@ -70,7 +70,7 @@ def get_lang_from_path(filepath):
 
 print(get_lang_from_path('index.html')) # => HTML
 print(get_lang_from_path('style.css'))  # => CSS
-print(get_lang_from_path('script.js'))  # => None (use programming-languages pkg)
+print(get_lang_from_path('script.js'))  # => [] (use programming-languages pkg)
 ```
 
 <hr>

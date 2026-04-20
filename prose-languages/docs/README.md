@@ -70,7 +70,7 @@ def get_lang_from_path(filepath):
 
 print(get_lang_from_path('document.adoc')) # => AsciiDoc
 print(get_lang_from_path('README.md')) # => Markdown
-print(get_lang_from_path('index.mdx')) # => None (use markup-languages pkg)
+print(get_lang_from_path('index.mdx')) # => [] (use markup-languages pkg)
 ```
 
 <hr>

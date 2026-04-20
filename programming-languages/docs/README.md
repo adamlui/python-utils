@@ -70,7 +70,7 @@ def get_lang_from_path(filepath):
 
 print(get_lang_from_path('main.rs')) # => Rust
 print(get_lang_from_path('script.kt')) # => Kotlin
-print(get_lang_from_path('data.avsc')) # => None (use data-languages pkg)
+print(get_lang_from_path('data.avsc')) # => [] (use data-languages pkg)
 ```
 
 <hr>
