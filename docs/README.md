@@ -55,7 +55,7 @@
     <summary>🤖 1,200+ AI personas for LLMs and agents.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/ai-personas/#readme">
-            <img width=750 src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@c77849c/assets/images/screenshots/dataset-preview.png"></a>
+            <img width=750 src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/screenshots/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -78,7 +78,7 @@
     <summary>💻 File extensions for computer languages.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme">
-            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/computer-languages/assets/images/dataset-preview.png"></a>
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@latest/computer-languages/assets/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -101,7 +101,7 @@
     <summary>🧾 File extensions for data languages.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/data-languages/#readme">
-            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/data-languages/assets/images/dataset-preview.png"></a>
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@latest/data-languages/assets/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -124,7 +124,7 @@
     <summary>🇪🇸 ISO 639-1 (2-letter) codes for Latin locales.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme">
-            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/latin-locales/assets/images/dataset-preview.png"></a>
+            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@latest/latin-locales/assets/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -147,7 +147,7 @@
     <summary>📄 File extensions for markup languages.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/markup-languages/#readme">
-            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/markup-languages/assets/images/dataset-preview.png"></a>
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@latest/markup-languages/assets/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -170,7 +170,7 @@
     <summary>🇨🇳 ISO 639-1 (2-letter) codes for non-Latin locales.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme">
-            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/non-latin-locales/assets/images/dataset-preview.png"></a>
+            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@latest/non-latin-locales/assets/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -193,7 +193,7 @@
     <summary>⌨️ File extensions for programming languages.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/programming-languages/#readme">
-            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/programming-languages/assets/images/dataset-preview.png"></a>
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@latest/programming-languages/assets/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -216,7 +216,7 @@
     <summary>🏷️ Common project root markers.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#readme">
-            <img width=375 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/project-markers/assets/images/dataset-preview.png"></a>
+            <img width=375 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@latest/project-markers/assets/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -302,7 +302,7 @@
     <summary>🏷️ Common project root markers.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/project-markers/#readme">
-            <img width=375 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/project-markers/assets/images/dataset-preview.png"></a>
+            <img width=375 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@latest/project-markers/assets/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -355,7 +355,7 @@
     <summary>🇪🇸 ISO 639-1 (2-letter) codes for Latin locales.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/latin-locales/#readme">
-            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/latin-locales/assets/images/dataset-preview.png"></a>
+            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@latest/latin-locales/assets/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -378,7 +378,7 @@
     <summary>🇨🇳 ISO 639-1 (2-letter) codes for non-Latin locales.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/non-latin-locales/#readme">
-            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/non-latin-locales/assets/images/dataset-preview.png"></a>
+            <img width=275 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@latest/non-latin-locales/assets/images/dataset-preview.png"></a>
     </blockquote>
 </details>
 
@@ -430,7 +430,7 @@
     <summary>📊 Get the minimum Python version required for a PyPI package.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/get-min-py/#readme">
-            <img width=550 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@f133ea3/get-min-py/assets/images/cli-output.png"></a>
+            <img width=550 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@latest/get-min-py/assets/images/cli-output.png"></a>
     </blockquote>
 </details>
 
