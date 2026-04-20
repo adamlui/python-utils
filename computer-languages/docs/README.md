@@ -56,11 +56,13 @@ Get language from an extension:
 
 ```py
 def get_lang(file_ext):
-    for lang, data in computer_languages.items():
-        if file_ext in data['extensions']:
-            return lang
+    lang_matches = [
+        lang for lang, data in computer_languages.items()
+            if file_ext in data['extensions']
+    ]
+    return lang_matches[0] if len(lang_matches) == 1 else lang_matches
 
-print(get_lang('.rs')) # => Rust
+print(get_lang('.rs')) # => ['RenderScript', 'Rust', 'XML']
 ```
 
 Filter by language type:

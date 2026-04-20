@@ -47,9 +47,11 @@ Get language from an extension:
 
 ```py
 def get_lang(file_ext):
-    for lang, data in programming_languages.items():
-        if file_ext in data['extensions']:
-            return lang
+    lang_matches = [
+        lang for lang, data in programming_languages.items()
+            if file_ext in data['extensions']
+    ]
+    return lang_matches[0] if len(lang_matches) == 1 else lang_matches
 
 print(get_lang('.al')) # => AL
 ```
@@ -60,9 +62,11 @@ Get language from a file path:
 def get_lang_from_path(filepath):
     from pathlib import Path
     file_ext = Path(filepath).suffix
-    for lang, data in programming_languages.items():
-        if file_ext in data['extensions']:
-            return lang
+    lang_matches = [
+        lang for lang, data in programming_languages.items()
+            if file_ext in data['extensions']
+    ]
+    return lang_matches[0] if len(matches) == 1 else lang_matches
 
 print(get_lang_from_path('main.rs')) # => Rust
 print(get_lang_from_path('script.kt')) # => Kotlin
