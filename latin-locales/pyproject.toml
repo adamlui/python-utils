@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "latin-locales"
 version = "1.0.4"
-description = "ISO 639-1 (2-letter) codes for Latin locales that don't require advanced Unicode support"
+description = "ISO 639-1 (2-letter) codes for Latin locales that don't require advanced Unicode support."
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
 ]

@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "project-markers"
 version = "1.0.4"
-description = "List of files that indicate a project root"
+description = "List of files that indicate a project root."
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
 ]
