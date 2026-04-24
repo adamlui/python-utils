@@ -17,6 +17,8 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@prose-languages-1.0.3/prose-languages/src/prose_languages/prose-languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 18 prose languages known to GitHub). Data is updated via script and released via new package version.
 
+<img height=275 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@prose-languages-1.0.3/prose-languages/assets/images/dataset.png">
+
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@7da7074/assets/images/separators/aqua-gradient.png"></a>
 
 ## Installation

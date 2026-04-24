@@ -15,6 +15,8 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@non-latin-locales-1.0.5/non-latin-locales/src/non_latin_locales/non-latin-locales.json), so you can use it in any environment.
 
+<img height=175 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@non-latin-locales-1.0.5/non-latin-locales/assets/images/dataset-preview.png"> 
+
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@7da7074/assets/images/separators/aqua-gradient.png"></a>
 
 ## Installation
