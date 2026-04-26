@@ -21,7 +21,7 @@ jobs:
         run: |
           TAG="${GITHUB_REF_NAME}"
           echo "The tag is: $TAG"
-          PROJECT=$(echo "$TAG" | sed -E 's/-[0-9].*$//') # e.g. computer-languages-1.2.3 -> computer-languages
+          PROJECT=$(echo "$TAG" | sed -E 's/-\d+(\.\d+)+$//') # e.g. sys-lang-1.0.4 -> sys-lang
           echo "PROJECT=$PROJECT" >> $GITHUB_ENV
           echo "Project directory is: $PROJECT"
       - run: pip install build
