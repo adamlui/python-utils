@@ -20,7 +20,7 @@ jobs:
       - id: project
         run: |
           git fetch --tags
-          TAG=$(git describe --tags --abbrev=0 --always)
+          TAG=$(git tag --sort=-v:refname | head -n 1)
           echo "The tag is: $TAG"
           PROJECT=$(echo "$TAG" | sed -E 's/-\d+(\.\d+)+$//') # e.g. sys-lang-1.0.4 -> sys-lang
           echo "PROJECT=$PROJECT" >> $GITHUB_ENV
