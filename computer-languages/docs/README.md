@@ -4,8 +4,8 @@
 
 <a href="https://pepy.tech/projects/computer-languages?versions=*">
     <img height=31 src="https://img.shields.io/pepy/dt/computer-languages?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/python-utils/releases/tag/computer-languages-1.0.3">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.3-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/python-utils/releases/tag/computer-languages-1.0.4">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.4-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/computer-languages/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
@@ -15,9 +15,9 @@
 
 > ### _File extensions for computer languages._
 
-It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@computer-languages-1.0.3/computer-languages/src/computer_languages/computer-languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 700+ languages known to GitHub). Data is updated via script and released via new package version.
+It's just a [JSON file](https://cdn.jsdelivr.net/gh/adamlui/python-utils@computer-languages-1.0.4/computer-languages/src/computer_languages/computer-languages.json), so you can use it in any environment. Sourced from GitHub's [Linguist](https://github.com/github-linguist/linguist) project (defines all 700+ languages known to GitHub). Data is updated via script and released via new package version.
 
-<img height=175 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@computer-languages-1.0.3/computer-languages/assets/images/dataset-preview.png">
+<img height=175 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@computer-languages-1.0.4/computer-languages/assets/images/dataset-preview.png">
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@7da7074/assets/images/separators/aqua-gradient.png"></a>
 

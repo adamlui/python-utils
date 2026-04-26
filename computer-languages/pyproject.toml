@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "computer-languages"
-version = "1.0.3"
+version = "1.0.4"
 description = "File extensions for computer languages."
 authors = [
     { name = "Adam Lui", email = "adam@kudoai.com" },
@@ -99,7 +99,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/adamlui/python-utils/releases/tag/computer-languages-1.0.3"
+Changelog = "https://github.com/adamlui/python-utils/releases/tag/computer-languages-1.0.4"
 Documentation = "https://github.com/adamlui/python-utils/tree/main/computer-languages/docs"
 Funding = "https://github.com/sponsors/adamlui"
 Homepage = "https://github.com/adamlui/python-utils/tree/main/computer-languages/#readme"
