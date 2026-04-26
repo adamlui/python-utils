@@ -12,15 +12,15 @@ jobs:
       id-token: write
       contents: read
     steps:
+      - run: |
+          TAG="${{ github.event.release.tag_name }}"
+          PROJECT="${TAG%-*}"
+          echo "PROJECT=$PROJECT" >> $GITHUB_ENV
       - uses: actions/checkout@v6.0.2
       - uses: actions/setup-python@v6.2.0
         with:
           python-version: 3.x
       - run: pip install build
-      - run: |
-          TAG="${{ github.event.release.tag_name }}"
-          PROJECT="${TAG%-*}"
-          echo "PROJECT=$PROJECT" >> $GITHUB_ENV
       - run: cd ${{ env.PROJECT }} && python -m build
       - uses: pypa/gh-action-pypi-publish@release/v1.14
         with:
