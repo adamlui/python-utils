@@ -30,22 +30,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - run: pip install build
-
-      - name: Extract project name
-        id: vars
+      - id: project
         run: |
           TAG="${GITHUB_REF_NAME}"
-          # computer-languages-1.2.3 → computer-languages
-          PROJECT=$(echo "$TAG" | sed -E 's/-[0-9].*$//')
-          echo "project=$PROJECT" >> $GITHUB_OUTPUT
+          PROJECT=$(echo "$TAG" | sed -E 's/-[0-9].*$//') # computer-languages-1.2.3 → computer-languages
+          echo "PROJECT=$PROJECT" >> $GITHUB_ENV 
 
-      - name: Build package
-        run: |
-          cd ${{ steps.vars.outputs.project }}
-          python -m build
-
+      - run: pip install build
+      - run: cd ${{ env.PROJECT }} && python -m build
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1.14
         with:
-          packages-dir: ${{ steps.vars.outputs.project }}/dist
+          packages-dir: ${{ env.PROJECT }}/dist
