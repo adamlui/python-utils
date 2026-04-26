@@ -19,7 +19,7 @@ jobs:
           python-version: 3.x
       - id: project
         run: |
-          TAG="${GITHUB_REF_NAME}"
+          TAG=$(git describe --tags --abbrev=0)
           echo "The tag is: $TAG"
           PROJECT=$(echo "$TAG" | sed -E 's/-\d+(\.\d+)+$//') # e.g. sys-lang-1.0.4 -> sys-lang
           echo "PROJECT=$PROJECT" >> $GITHUB_ENV
