@@ -1,6 +1,7 @@
 name: Publish to PyPI on new tag
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - "computer-languages*"
@@ -19,7 +20,7 @@ on:
       - "sys-lang*"
       - "translate-messages*"
 
-jobs:
+jobs:   
   publish:
     runs-on: ubuntu-24.04
     permissions:
