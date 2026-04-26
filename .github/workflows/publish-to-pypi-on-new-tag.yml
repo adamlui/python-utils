@@ -22,10 +22,7 @@ jobs:
           PROJECT="${TAG%-*}"
           echo "PROJECT=$PROJECT" >> $GITHUB_ENV
       - run: pip install build
-      - run: |
-          pwd
-          ls -la
-          cd ${{ env.PROJECT }} && python -m build
+      - run: pwd && ls -la && cd ${{ env.PROJECT }} && python -m build
       - uses: pypa/gh-action-pypi-publish@release/v1.14
         with:
           packages-dir: ${{ env.PROJECT }}/dist
