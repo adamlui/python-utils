@@ -20,7 +20,7 @@ on:
       - "sys-lang*"
       - "translate-messages*"
 
-jobs:   
+jobs:
   publish:
     runs-on: ubuntu-24.04
     permissions:
