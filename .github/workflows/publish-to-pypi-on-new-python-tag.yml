@@ -1,0 +1,51 @@
+name: Publish to PyPI on new tag
+
+on:
+  push:
+    tags:
+      - "computer-languages*"
+      - "data-languages*"
+      - "find-project-root*"
+      - "get-min-py*"
+      - "is-legacy-terminal*"
+      - "is-unicode-supported*"
+      - "latin-locales*"
+      - "markup-languages*"
+      - "non-latin-locales*"
+      - "programming-languages*"
+      - "project-markers*"
+      - "prose-languages*"
+      - "remove-json-keys*"
+      - "sys-lang*"
+      - "translate-messages*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: pip install build
+
+      - name: Extract project name
+        id: vars
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          # computer-languages-1.2.3 → computer-languages
+          PROJECT=$(echo "$TAG" | sed -E 's/-[0-9].*$//')
+          echo "project=$PROJECT" >> $GITHUB_OUTPUT
+
+      - name: Build package
+        run: |
+          cd ${{ steps.vars.outputs.project }}
+          python -m build
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1.14
+        with:
+          packages-dir: ${{ steps.vars.outputs.project }}/dist
