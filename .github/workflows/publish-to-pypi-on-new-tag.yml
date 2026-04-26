@@ -1,43 +1,35 @@
-name: Publish to PyPI on new tag
+name: Publish to PyPI on new release
 
 on:
-  workflow_dispatch:
-  push:
-    tags:
-      - "computer-languages*"
-      - "data-languages*"
-      - "find-project-root*"
-      - "get-min-py*"
-      - "is-legacy-terminal*"
-      - "is-unicode-supported*"
-      - "latin-locales*"
-      - "markup-languages*"
-      - "non-latin-locales*"
-      - "programming-languages*"
-      - "project-markers*"
-      - "prose-languages*"
-      - "remove-json-keys*"
-      - "sys-lang*"
-      - "translate-messages*"
+  release:
+    types: [published]
 
 jobs:
   publish:
+    if: ${{ startsWith(github.ref, 'refs/tags/ai-personas') == false }}
     runs-on: ubuntu-24.04
     permissions:
       id-token: write
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6.0.2
       - uses: actions/setup-python@v5
         with:
-          python-version: 3.x
+          python-version: 3.
       - id: project
         run: |
           TAG="${GITHUB_REF_NAME}"
-          PROJECT=$(echo "$TAG" | sed -E 's/-[0-9].*$//') # computer-languages-1.2.3 → computer-languages
+          echo "The tag is: $TAG"
+          PROJECT=$(echo "$TAG" | sed -E 's/-[0-9].*$//') # e.g. computer-languages-1.2.3 -> computer-languages
           echo "PROJECT=$PROJECT" >> $GITHUB_ENV
+          echo "Project directory is: $PROJECT"
       - run: pip install build
-      - run: cd ${{ env.PROJECT }} && python -m build
+      - run: |
+          echo "Current directory:"
+          pwd
+          echo "Listing contents of the directory"
+          ls -la
+          cd ${{ env.PROJECT }} && python -m build
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1.14
         with:
