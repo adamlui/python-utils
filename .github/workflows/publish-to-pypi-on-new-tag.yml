@@ -1,11 +1,12 @@
 name: Publish to PyPI on new release
 
 on:
-  workflow_dispatch:
+  release:
+    types: [published, edited]
 
 jobs:
   publish:
-    if: ${{ startsWith(github.ref, 'refs/tags/ai-personas') == false }}
+    if: ${{ startsWith(github.event.release.tag_name, 'ai-personas') == false }}
     runs-on: ubuntu-24.04
     permissions:
       id-token: write
@@ -15,22 +16,15 @@ jobs:
       - uses: actions/setup-python@v6.2.0
         with:
           python-version: 3.x
-      - id: project
-        run: |
-          git fetch --tags
-          TAG=$(git describe --tags --abbrev=0)
-          echo "The tag is: $TAG"
-          PROJECT=$(echo "$TAG" | sed -E 's/-[0-9]+(\.[0-9]+)+$//')
+      - run: |
+          TAG="${{ github.event.release.tag_name }}"
+          PROJECT="${TAG%-*}"
           echo "PROJECT=$PROJECT" >> $GITHUB_ENV
-          echo "Project directory is: $PROJECT"
       - run: pip install build
       - run: |
-          echo "Current directory:"
           pwd
-          echo "Listing contents of the directory"
           ls -la
           cd ${{ env.PROJECT }} && python -m build
-      - name: Publish to PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1.14
+      - uses: pypa/gh-action-pypi-publish@release/v1.14
         with:
           packages-dir: ${{ env.PROJECT }}/dist
