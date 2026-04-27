@@ -82,6 +82,7 @@ removejson = "remove_json_keys.cli.__main__:main"
 
 [project.optional-dependencies]
 dev = [
+    "find-project-root>=1.0.4,<2",
     "nox>=2026.4.10",
     "pre-commit>=4.5.1,<5",
     "tomli>=2.4.1,<3",

@@ -2,11 +2,12 @@ import argparse, re, sys
 from pathlib import Path
 from types import SimpleNamespace as sn
 
-from .lib import toml
+import find_project_root
 
+from .lib import toml
 from src.remove_json_keys.cli.lib import data, log
 
-paths = sn(root=Path(__file__).parent.parent)
+paths = sn(root=Path(find_project_root())) # type: ignore
 paths.pyproject = paths.root / 'pyproject.toml'
 paths.package_data = paths.root / 'src/remove_json_keys/data/package_data.json'
 paths.readme = paths.root / 'docs/README.md'
