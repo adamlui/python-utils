@@ -91,7 +91,7 @@ find-project-root  # or projectroot
 # e.g. => 'e:\python\utils\translate-messages'
 ```
 
-### CLI options:
+### Command line options:
 
 | Option              | Description
 | ------------------- | ------------------------------------
