@@ -10,6 +10,11 @@
   "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "a yeke sara ye na lege ni ape" },
   "err_UNRECOGNIZED_ARGS": { "message": "Mbeni tënë so a hinga ni pëpe (s)" },
   "help_NO_REGION": { "message": "Tongana a yeke dä, zia pëpe na yâ ni mbeni ndo so a yeke dä" },
+  "help_PATH": { "message": "Ti to nda ti gi ti bâ nda ti ye so ayeke na yâ ti projet ni (default: CWD)" },
+  "help_DEPTH": {
+    "message": "A yeke nzoni e sara kua na aye so e lingbi ti sara ti hon ndo ni (a yeke nzoni e sara ni pëpe: 9)"
+  },
+  "help_MARKERS": { "message": "A yeke na yâ ti ambeti so a yeke wara ni na yâ ti ambeti ti e" },
   "help_HELP": { "message": "A yeke mû maboko na azo ti bâ ndo" },
   "help_VERSION": { "message": "Mbeni ye so a sara na yâ ti Bible" },
   "help_DOCS": { "message": "A yeke wara a-URL na yâ ti ambeti ti e" },
