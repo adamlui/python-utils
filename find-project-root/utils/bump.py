@@ -2,9 +2,8 @@ import argparse, re, sys
 from pathlib import Path
 from types import SimpleNamespace as sn
 
-import find_project_root
-
 from .lib import toml
+from src.find_project_root.api import find_project_root
 from src.find_project_root.cli.lib import data, log
 
 paths = sn(root=Path(find_project_root())) # type: ignore
