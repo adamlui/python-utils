@@ -2,7 +2,7 @@ import argparse, re, sys
 from pathlib import Path
 from types import SimpleNamespace as sn
 
-import find_project_root
+from src.find_project_root.api import find_project_root
 
 from .lib import data, log, toml
 
