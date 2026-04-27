@@ -5,7 +5,6 @@ from .lib import init, settings
 
 def main():
     cli = init.cli()
-    settings.load(cli)
 
     # Process early-exit args (e.g. --help, --version)
     for ctrl_name, ctrl in vars(settings.controls).items():
