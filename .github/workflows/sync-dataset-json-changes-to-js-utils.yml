@@ -68,17 +68,16 @@ jobs:
         run: |
           dataset="${{ env.DATASET }}"
           echo "Syncing $dataset.json"
-          src_file=$(find "${GITHUB_WORKSPACE}/adamlui/python-utils" -name "$dataset.json" -type f | head -n 1)
-          if [[ -z "$src_file" ]] ; then echo "No source file found for $dataset" ; exit 1 ; fi
           snake_dataset=$(echo "$dataset" | tr '-' '_')
+          src_file="${GITHUB_WORKSPACE}/adamlui/python-utils/src/$snake_dataset/$dataset.json"
+          if [[ ! -f "$src_file" ]] ; then echo "No source file found for $dataset at $src_file" ; exit 1 ; fi
           dest_dir="${GITHUB_WORKSPACE}/adamlui/js-utils/$dataset"
           mkdir -p "$dest_dir"
           cp -f "$src_file" "$dest_dir/$dataset.json"
           COMMIT_MSG="${RAW_COMMIT_MSG:-Update $dataset.json} ↞ \
             [auto-sync from https://github.com/adamlui/python-utils/tree/main/$dataset]"
-          ESCAPED_MSG=$(printf '%q' "$COMMIT_MSG")
           cd "${GITHUB_WORKSPACE}/adamlui/js-utils"
-          git add "**/$dataset.json"
+          git add "$dataset/$dataset.json"
           git commit -n -m "$COMMIT_MSG" || echo "Nothing to commit"
           git pull --rebase
           git push
