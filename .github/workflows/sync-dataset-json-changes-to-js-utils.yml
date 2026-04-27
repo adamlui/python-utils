@@ -43,7 +43,10 @@ jobs:
         run: |
           SHA="${{ github.sha }}"
           REPO="${{ github.repository }}"
-          changed_file=$(gh api repos/$REPO/commits/$SHA | grep -oP '"filename":\s*"\K[^"]+' | grep '\.json$' | head -n 1)
+          changed_file=$(gh api repos/$REPO/commits/$SHA \
+            | grep -oP '"filename":\s*"\K[^"]+' \
+            | grep '\.json$' \
+            | head -n 1)
           changed_file="${changed_file//%2F//}"  # decode URL-encoded slashes (%2F → /)
           changed_file="${changed_file%%\?*}"    # remove any query string (?ref=...)
           dataset=$(basename "$changed_file" .json)
@@ -73,7 +76,8 @@ jobs:
           dest_dir="${GITHUB_WORKSPACE}/adamlui/js-utils/$dataset"
           mkdir -p "$dest_dir"
           cp -f "$src_file" "$dest_dir/$dataset.json"
-          COMMIT_MSG="${RAW_COMMIT_MSG:-Update $dataset.json} ↞ [auto-sync from https://github.com/adamlui/python-utils/tree/main/$dataset]"
+          COMMIT_MSG="${RAW_COMMIT_MSG:-Update $dataset.json} ↞ \
+            [auto-sync from https://github.com/adamlui/python-utils/tree/main/$dataset]"
           ESCAPED_MSG=$(printf '%q' "$COMMIT_MSG")
           cd "${GITHUB_WORKSPACE}/adamlui/js-utils"
           git add "$dataset/$dataset.json"
