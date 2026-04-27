@@ -1,0 +1,82 @@
+name: Sync <dataset>/**/<dataset>.json → adamlui/python-utils/<dataset>
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**/computer-languages.json"
+      - "**/data-languages.json"
+      - "**/latin-locales.json"
+      - "**/markup-languages.json"
+      - "**/non-latin-locales.json"
+      - "**/project-markers.json"
+      - "**/programming-languages.json"
+      - "**/prose-languages.json"
+
+jobs:
+  build:
+    if: (github.repository == 'adamlui/js-utils') && !contains(github.event.head_commit.message, '[auto-sync')
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    env:
+      TZ: PST8PDT
+
+    steps:
+      - name: Checkout adamlui/python-utils
+        uses: actions/checkout@v6.0.2
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          path: adamlui/python-utils
+          fetch-depth: 2
+
+      - name: Checkout adamlui/js-utils
+        uses: actions/checkout@v6.0.2
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/js-utils
+          path: adamlui/js-utils
+
+      - name: Determine changed dataset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          SHA="${{ github.sha }}"
+          REPO="${{ github.repository }}"
+          changed_file=$(gh api repos/$REPO/commits/$SHA | grep -oP '"filename":\s*"\K[^"]+' | grep '\.json$' | head -n 1)
+          changed_file="${changed_file//%2F//}"  # decode URL-encoded slashes (%2F → /)
+          changed_file="${changed_file%%\?*}"    # remove any query string (?ref=...)
+          dataset=$(basename "$changed_file" .json)
+          echo "DATASET=$dataset" >> $GITHUB_ENV
+          echo "Extracted dataset: $dataset"
+
+      - name: Config committer
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PRIVATE_ID: ${{ secrets.GPG_PRIVATE_ID }}
+        run: |
+          gpg --batch --import <(echo "$GPG_PRIVATE_KEY")
+          git config --global commit.gpgsign true
+          git config --global user.name "kudo-sync-bot"
+          git config --global user.email "auto-sync@kudoai.com"
+          git config --global user.signingkey "$GPG_PRIVATE_ID"
+
+      - name: Sync <dataset>.json → adamlui/js-utils/<dataset>
+        env:
+          RAW_COMMIT_MSG: ${{ github.event.head_commit.message }}
+        run: |
+          dataset="${{ env.DATASET }}"
+          echo "Syncing $dataset.json"
+          src_file=$(find "${GITHUB_WORKSPACE}/adamlui/js-utils" -name "$dataset.json" -type f | head -n 1)
+          if [[ -z "$src_file" ]] ; then echo "No source file found for $dataset" ; exit 1 ; fi
+          snake_dataset=$(echo "$dataset" | tr '-' '_')
+          dest_dir="${GITHUB_WORKSPACE}/adamlui/js-utils/$dataset"
+          mkdir -p "$dest_dir"
+          cp -f "$src_file" "$dest_dir/$dataset.json"
+          COMMIT_MSG="${RAW_COMMIT_MSG:-Update $dataset.json} ↞ [auto-sync from https://github.com/adamlui/python-utils/tree/main/$dataset]"
+          ESCAPED_MSG=$(printf '%q' "$COMMIT_MSG")
+          cd "${GITHUB_WORKSPACE}/adamlui/js-utils"
+          git add "$dataset/$dataset.json"
+          git commit -n -m "$COMMIT_MSG" || echo "Nothing to commit"
+          git pull --rebase
+          git push
