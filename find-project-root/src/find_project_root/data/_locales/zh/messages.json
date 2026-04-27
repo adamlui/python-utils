@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "类型" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "查看可用选项" },
+  "log_VERSION": { "message": "版本" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "如需更多帮助，请访问" },
+  "warn_NOT_FOUND": { "message": "未找到" },
+  "warn_CLI_OPTION": { "message": "CLI选项" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "已被替换为" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "并将被删除" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "不再有任何效果" },
+  "err_UNRECOGNIZED_ARGS": { "message": "无法识别的参数" },
+  "help_NO_REGION": { "message": "如果可用，请勿包含区域" },
+  "help_HELP": { "message": "显示帮助屏幕" },
+  "help_VERSION": { "message": "显示版本" },
+  "help_DOCS": { "message": "打开文档URL" },
+  "help_DEBUG": { "message": "显示调试日志" }
+}

@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "ʻAno" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "no nā koho i loaʻa" },
+  "log_VERSION": { "message": "Mana" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "No ke kōkua hou aku, e kipa aku iā" },
+  "warn_NOT_FOUND": { "message": "Loaʻa ʻole" },
+  "warn_CLI_OPTION": { "message": "Koho CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ua pani ʻia e" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "a e wehe ʻia aku" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ʻaʻohe hopena hou" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Nā hoʻopaʻapaʻa i ʻike ʻole ʻia" },
+  "help_NO_REGION": { "message": "Mai hoʻokomo i ka ʻāpana inā loaʻa" },
+  "help_HELP": { "message": "Hōʻike i ka pale kōkua" },
+  "help_VERSION": { "message": "Hōʻike i ka mana" },
+  "help_DOCS": { "message": "E wehe i ka URL o nā palapala" },
+  "help_DEBUG": { "message": "Hōʻike i nā moʻolelo debug" }
+}

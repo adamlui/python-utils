@@ -21,10 +21,10 @@
 
 **find-project-root** is a lightweight utility that traverses up from a given path until it finds a project marker.
 
-- Minimal dependencies — only uses [project-markers][project-markers-gh] (~4 KB module)
+- Lightweight — < 100 KB
 - Path flexibility — accepts strings, `Path` objects, or current working dir
 - Customizable markers — provide your own or use defaults
-- Multi-Python support — from Python 2.6 thru 3.15+
+- Multi-env support — use via [API](#api-usage) or [CLI](#command-line-usage)
 
 <hr>
 
@@ -83,6 +83,24 @@ root = find_project_root(path='src', max_depth=5, markers=['manifest.json'])
 ```
 
 <hr>
+
+## Command line usage
+
+```bash
+find-project-root  # or projectroot
+# e.g. => 'e:\python\utils\translate-messages'
+```
+
+CLI options:
+
+| Option              | Description
+| ------------------- | ------------------------------------
+| `-h`, `--help`      | Show help screen
+| `-v`, `--version`   | Show version
+| `--docs`            | Open docs URL
+
+<hr>
+
 
 ## MIT License
 

@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Tür" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "mevcut seçenekler için" },
+  "log_VERSION": { "message": "Versiyon" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Daha fazla yardım için şu adresi ziyaret edin:" },
+  "warn_NOT_FOUND": { "message": "Bulunamadı" },
+  "warn_CLI_OPTION": { "message": "CLI seçeneği" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "şununla değiştirildi:" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ve kaldırılacak" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "artık hiçbir etkisi yok" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Tanınmayan bağımsız değişken(ler)" },
+  "help_NO_REGION": { "message": "Uygun olduğunda bölgeyi dahil etmeyin" },
+  "help_HELP": { "message": "Yardım ekranını göster" },
+  "help_VERSION": { "message": "Sürümü göster" },
+  "help_DOCS": { "message": "Dokümanlar URL'sini aç" },
+  "help_DEBUG": { "message": "Hata ayıklama günlüklerini göster" }
+}

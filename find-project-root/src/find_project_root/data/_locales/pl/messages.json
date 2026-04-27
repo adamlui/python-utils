@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Typ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "dla dostępnych opcji" },
+  "log_VERSION": { "message": "Wersja" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Aby uzyskać więcej pomocy, odwiedź stronę" },
+  "warn_NOT_FOUND": { "message": "Nie znaleziono" },
+  "warn_CLI_OPTION": { "message": "Opcja CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "został zastąpiony przez" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "i zostaną usunięte" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "nie ma już żadnego wpływu" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Nierozpoznane argumenty" },
+  "help_NO_REGION": { "message": "Nie uwzględniaj regionu, jeśli jest dostępny" },
+  "help_HELP": { "message": "Pokaż ekran pomocy" },
+  "help_VERSION": { "message": "Pokaż wersję" },
+  "help_DOCS": { "message": "Otwórz adres URL dokumentów" },
+  "help_DEBUG": { "message": "Pokaż dzienniki debugowania" }
+}

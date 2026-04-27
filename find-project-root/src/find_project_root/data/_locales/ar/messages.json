@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "النوع" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "للخيارات المتاحة" },
+  "log_VERSION": { "message": "الإصدار" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "لمزيد من المساعدة، تفضل بزيارة" },
+  "warn_NOT_FOUND": { "message": "غير موجود" },
+  "warn_CLI_OPTION": { "message": "خيار واجهة سطر الأوامر" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "تم استبداله بـ" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "وستتم إزالته" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "لم يعد له أي تأثير" },
+  "err_UNRECOGNIZED_ARGS": { "message": "وسيطة(وسيطات) غير معروفة" },
+  "help_NO_REGION": { "message": "لا تقم بتضمين المنطقة عندما تكون متاحة" },
+  "help_HELP": { "message": "عرض شاشة المساعدة" },
+  "help_VERSION": { "message": "عرض الإصدار" },
+  "help_DOCS": { "message": "فتح عنوان URL للمستندات" },
+  "help_DEBUG": { "message": "عرض سجلات التصحيح" }
+}

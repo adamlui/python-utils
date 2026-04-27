@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "ዓይነት" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ንዝርከቡ ኣማራጺታት" },
+  "log_VERSION": { "message": "ቅጅል" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "ዝያዳ ሓገዝ እንተ ደሊኻ ፡ ምብጻሕ" },
+  "warn_NOT_FOUND": { "message": "ኣይተረኽበን ።" },
+  "warn_CLI_OPTION": { "message": "ኣማራጺ CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ተተኪኡ" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ክወጽእ እዩ" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ሕጂ ዝኾነ ሳዕቤን የብሉን" },
+  "err_UNRECOGNIZED_ARGS": { "message": "ዘይተፈልጠ ክርክር(ታት)" },
+  "help_NO_REGION": { "message": "ኣብ ዝርከቡሉ እዋን ዞባ ኣይትካተቱ" },
+  "help_HELP": { "message": "ናይ ሓገዝ ስክሪን ኣርኢ" },
+  "help_VERSION": { "message": "ቅጅል ኣርኢ" },
+  "help_DOCS": { "message": "URL docs ክፉት" },
+  "help_DEBUG": { "message": "ናይ ዲቡግ መዝገብ ኣርኢ" }
+}

@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "రకం" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "అందుబాటులో ఉన్న ఎంపికల కోసం" },
+  "log_VERSION": { "message": "వెర్షన్" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "మరింత సహాయం కోసం, సందర్శించండి" },
+  "warn_NOT_FOUND": { "message": "దొరకలేదు" },
+  "warn_CLI_OPTION": { "message": "CLI ఎంపిక" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ద్వారా భర్తీ చేయబడింది" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "మరియు తీసివేయబడుతుంది" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ఇకపై ఎటువంటి ప్రభావం ఉండదు" },
+  "err_UNRECOGNIZED_ARGS": { "message": "గుర్తించబడని వాదన(లు)" },
+  "help_NO_REGION": { "message": "అందుబాటులో ఉన్నప్పుడు ప్రాంతాన్ని చేర్చవద్దు" },
+  "help_HELP": { "message": "సహాయక స్క్రీన్ ‌ ను చూపించండి" },
+  "help_VERSION": { "message": "సంస్కరణను చూపించు" },
+  "help_DOCS": { "message": "డాక్యుమెంట్ ‌ ల URLని తెరవండి" },
+  "help_DEBUG": { "message": "డీబగ్ లాగ్ ‌ లను చూపించు" }
+}

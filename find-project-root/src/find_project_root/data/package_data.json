@@ -1,0 +1,26 @@
+{
+  "name": "find-project-root",
+  "version": "1.0.4",
+  "description": "Locate project root via custom markers.",
+  "cmds": [
+    "project-root", "get-project-root", "find-project-root", "projectroot", "getprojectroot", "findprojectroot"
+  ],
+  "author": { "name": "Adam Lui", "email": "adam@kudoai.com", "url": "https://github.com/adamlui" },
+  "urls": {
+    "docs": "https://github.com/adamlui/python-utils/tree/main/find-project-root/docs",
+    "funding": {
+      "cashapp": "https://cash.app/$adamlui",
+      "github": "https://github.com/sponsors/adamlui",
+      "kofi": "https://ko-fi.com/adamlui",
+      "paypal": "https://paypal.me/adamlui"
+    },
+    "github": "https://github.com/adamlui/python-utils",
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/adamlui/python-utils",
+    "pypi": "https://pypi.org/project/find-project-root/",
+    "pypistats": "https://pypistats.org/packages/find-project-root",
+    "support": "https://github.com/adamlui/python-utils/issues"
+  },
+  "commit_hashes": {
+    "locales": "a9d6e65"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Түрү" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "жеткиликтүү параметрлер үчүн" },
+  "log_VERSION": { "message": "Версиясы" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Көбүрөөк маалымат алуу үчүн, барыңыз" },
+  "warn_NOT_FOUND": { "message": "Табылган жок" },
+  "warn_CLI_OPTION": { "message": "CLI опциясы" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "менен алмаштырылды" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "жана алынып салынат" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "мындан ары эч кандай таасирин тийгизбейт" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Таанылбаган аргумент(лер)" },
+  "help_NO_REGION": { "message": "Мүмкүн болгондо аймакты кошпоңуз" },
+  "help_HELP": { "message": "Жардам экранын көрсөтүү" },
+  "help_VERSION": { "message": "Версияны көрсөтүү" },
+  "help_DOCS": { "message": "Docs-action" },
+  "help_DEBUG": { "message": "Dialogs-action" }
+}

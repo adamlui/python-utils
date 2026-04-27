@@ -18,9 +18,14 @@ license-files = [
     "docs/LICENSE.md",
 ]
 dependencies = [
+    "colorama>=0.4.6,<1 ; platform_system == 'Windows'",
+    "is-unicode-supported>=1.2.1,<2",
+    "json5>=0.14.0,<1",
+    "non-latin-locales>=1.0.5,<2",
     "project-markers>=1.0.4,<2",
+    "sys-lang>=1.0.1,<2",
 ]
-requires-python = ">=2.6,<4"
+requires-python = ">=3.8,<4"
 keywords = [
     "detect",
     "detection",
@@ -71,10 +76,20 @@ Issues = "https://github.com/adamlui/python-utils/issues"
 Releases = "https://github.com/adamlui/python-utils/releases"
 Repository = "https://github.com/adamlui/python-utils"
 
+[project.scripts]
+project-root = "find_project_root.cli.__main__:main"
+get-project-root = "find_project_root.cli.__main__:main"
+find-project-root = "find_project_root.cli.__main__:main"
+projectroot = "find_project_root.cli.__main__:main"
+getprojectroot = "find_project_root.cli.__main__:main"
+findprojectroot = "find_project_root.cli.__main__:main"
+
 [project.optional-dependencies]
 dev = [
     "nox>=2026.4.10",
     "pre-commit>=4.5.1,<5",
+    "remove-json-keys>=1.10.1,<2",
     "tomli>=2.4.1,<3",
     "tomli-w>=1.2.0,<2",
+    "translate-messages>=1.10.1,<2",
 ]

@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "قسم" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "دستیاب آپشنز کے لیے" },
+  "log_VERSION": { "message": "ورژن" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "مزید مدد کے لیے، ملاحظہ کریں" },
+  "warn_NOT_FOUND": { "message": "نہیں ملا" },
+  "warn_CLI_OPTION": { "message": "CLI آپشن" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "کی طرف سے تبدیل کر دیا گیا ہے" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "اور ہٹا دیا جائے گا" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "اب کوئی اثر نہیں پڑتا" },
+  "err_UNRECOGNIZED_ARGS": { "message": "غیر تسلیم شدہ دلیل(دلیلیں)" },
+  "help_NO_REGION": { "message": "دستیاب ہونے پر علاقہ شامل نہ کریں" },
+  "help_HELP": { "message": "مدد کی اسکرین دکھائیں" },
+  "help_VERSION": { "message": "ورژن دکھائیں" },
+  "help_DOCS": { "message": "دستاویزات کا URL کھولیں" },
+  "help_DEBUG": { "message": "ڈیبگ لاگز دکھائیں" }
+}

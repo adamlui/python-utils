@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Навъ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "para sa mga magagamit na pag" },
+  "log_VERSION": { "message": "Версия" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Para sa karagdagang tulong, bisit" },
+  "warn_NOT_FOUND": { "message": "Ёфт нашуд" },
+  "warn_CLI_OPTION": { "message": "Интихоби CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "иваз карда шуд бо" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ва аз миён бардошта шавад" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "дигар таъсир надорад" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Аргументи ношинохта" },
+  "help_NO_REGION": { "message": "Hindi maglagay ang lugar kapag magagamit" },
+  "help_HELP": { "message": "Намоиши экрани кӯмак" },
+  "help_VERSION": { "message": "Намоиши версия" },
+  "help_DOCS": { "message": "Кушодани суроғаи docs" },
+  "help_DEBUG": { "message": "Намоиши сабти хатогиҳо" }
+}

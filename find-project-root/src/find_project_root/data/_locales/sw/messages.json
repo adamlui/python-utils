@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Aina" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "kwa machaguo yanayopatikana" },
+  "log_VERSION": { "message": "Toleo" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Kwa msaada zaidi, tembelea" },
+  "warn_NOT_FOUND": { "message": "Haijapatikana" },
+  "warn_CLI_OPTION": { "message": "Chaguo la CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "imebadilishwa na" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "na itaondolewa" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "haina athari yoyote tena" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Hoja zisizotambuliwa" },
+  "help_NO_REGION": { "message": "Usijumuishe eneo unapopatikana" },
+  "help_HELP": { "message": "Onyesha skrini ya msaada" },
+  "help_VERSION": { "message": "Onyesha toleo" },
+  "help_DOCS": { "message": "Fungua URL ya hati" },
+  "help_DEBUG": { "message": "Onyesha kumbukumbu za hitilafu" }
+}

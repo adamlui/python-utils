@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "型" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "利用可能なオプションについて" },
+  "log_VERSION": { "message": "バージョン" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "さらにヘルプが必要な場合は、こちらをご覧ください" },
+  "warn_NOT_FOUND": { "message": "見つかりません" },
+  "warn_CLI_OPTION": { "message": "CLIオプション" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "に置き換えられました" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "削除されます" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "もはや何の効果もない" },
+  "err_UNRECOGNIZED_ARGS": { "message": "認識できない引数" },
+  "help_NO_REGION": { "message": "利用可能な場合は地域を含めないでください" },
+  "help_HELP": { "message": "ヘルプ画面を表示" },
+  "help_VERSION": { "message": "バージョンを表示" },
+  "help_DOCS": { "message": "ドキュメントのURLを開く" },
+  "help_DEBUG": { "message": "デバッグログを表示" }
+}

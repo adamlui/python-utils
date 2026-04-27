@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Tipo" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "para opcións dispoñibles" },
+  "log_VERSION": { "message": "Versión" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Para máis axuda, visita" },
+  "warn_NOT_FOUND": { "message": "Non atopado" },
+  "warn_CLI_OPTION": { "message": "Opción CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "foi substituído por" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "e será eliminado" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "xa non ten ningún efecto" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Argumento(s) non recoñecido (s)" },
+  "help_NO_REGION": { "message": "Non incluír a rexión cando estea dispoñible" },
+  "help_HELP": { "message": "Mostrar a pantalla de axuda" },
+  "help_VERSION": { "message": "Mostrar a versión" },
+  "help_DOCS": { "message": "Abrir o URL de docs" },
+  "help_DEBUG": { "message": "Mostrar os rexistros de depuración" }
+}

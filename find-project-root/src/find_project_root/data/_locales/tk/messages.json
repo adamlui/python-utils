@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Tip" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "mümkin saýlamalar" },
+  "log_VERSION": { "message": "VERSION" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Köpräk bilmek üçin, barlaň" },
+  "warn_NOT_FOUND": { "message": "Alymady" },
+  "warn_CLI_OPTION": { "message": "CLI seçimi" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ähli zat üýtgedildi" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "we çykarylar" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "indi hiç hili netije bermeýär" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Tanalmadyk jedel(lar)" },
+  "help_NO_REGION": { "message": "Mümkin bolanda, welaýaty içermäň" },
+  "help_HELP": { "message": "Yardam ekrany görkez" },
+  "help_VERSION": { "message": "Versiýany görkez" },
+  "help_DOCS": { "message": "Dokuzluň URL-ini aç" },
+  "help_DEBUG": { "message": "Hata loglaryny görkez" }
+}

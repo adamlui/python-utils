@@ -1,13 +1,19 @@
+from pathlib import Path
 import sys
+from types import SimpleNamespace as sn
 
 import nox
 
 py_cmd = 'py' if sys.platform.startswith('win') else 'python3'
+pkg = sn(dir=Path(__file__).parent.name)
+pkg.name = pkg.dir.replace('-', '_')
 
 def session(func) : return nox.session(venv_backend='none', name=func.__name__.replace('_', '-'))(func)
 
 @session
-def dev(session) : session.run('pip', 'install', '-e', '.')
+def dev(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg.dir, '--help', *session.posargs)
+@session
+def debug(session) : session.run(py_cmd, '-m', pkg.name, '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
 @session
 def test_py26(session):
     from pathlib import Path

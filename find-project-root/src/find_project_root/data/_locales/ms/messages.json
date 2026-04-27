@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "Jenis" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "untuk pilihan yang tersedia" },
+  "log_VERSION": { "message": "Versi" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "Untuk bantuan lanjut, lawati" },
+  "warn_NOT_FOUND": { "message": "Tidak ditemui" },
+  "warn_CLI_OPTION": { "message": "Pilihan CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "telah digantikan oleh" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "dan akan dibuang" },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "tidak lagi memberi kesan" },
+  "err_UNRECOGNIZED_ARGS": { "message": "Hujahyang tidak dikenali" },
+  "help_NO_REGION": { "message": "Jangan sertakan rantau apabila tersedia" },
+  "help_HELP": { "message": "Tunjukkan skrin bantuan" },
+  "help_VERSION": { "message": "Tunjukkan versi" },
+  "help_DOCS": { "message": "Buka URL dokumen" },
+  "help_DEBUG": { "message": "Tunjukkan log nyahpepijat" }
+}

@@ -1,0 +1,17 @@
+{
+  "log_TYPE": { "message": "ປະເພດ" },
+  "log_FOR_AVAIL_OPTIONS": { "message": "ສໍາ ລັບຕົວເລືອກທີ່ມີຢູ່" },
+  "log_VERSION": { "message": "ເວີຊັນ" },
+  "tip_FOR_MORE_HELP_VISIT": { "message": "ສໍາ ລັບຄວາມຊ່ວຍເຫລືອເພີ່ມເຕີມ, ຢ້ຽມຢາມ" },
+  "warn_NOT_FOUND": { "message": "ບໍ່ພົບ" },
+  "warn_CLI_OPTION": { "message": "ຕົວເລືອກ CLI" },
+  "warn_HAS_BEEN_REPLACED_BY": { "message": "ມັນຖືກທົດແທນໂດຍ" },
+  "warn_AND_WILL_BE_REMOVED": { "message": "ແລະຈະຖືກປະໄວ້ທັງ ຫມົດ ດ້ວຍຕົວເອງ." },
+  "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "ບໍ່ ມີ ຜົນ ກະທົບ ອີກ" },
+  "err_UNRECOGNIZED_ARGS": { "message": "ການໂຕ້ຖຽງທີ່ບໍ່ໄດ້ຮັບການຍອມຮັບ" },
+  "help_NO_REGION": { "message": "ບໍ່ລວມເອົາພາກພື້ນເມື່ອມີ" },
+  "help_HELP": { "message": "ສະແດງໜ້າຈໍຊ່ວຍເຫຼືອ" },
+  "help_VERSION": { "message": "ສະແດງເວີຊັນ" },
+  "help_DOCS": { "message": "ເປີດ docs URL" },
+  "help_DEBUG": { "message": "ສະແດງບັນທຶກການແກ້ໄຂ" }
+}
