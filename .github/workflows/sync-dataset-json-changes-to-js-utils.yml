@@ -15,7 +15,7 @@ on:
 
 jobs:
   build:
-    if: (github.repository == 'adamlui/js-utils') && !contains(github.event.head_commit.message, '[auto-sync')
+    if: (github.repository == 'adamlui/python-utils') && !contains(github.event.head_commit.message, '[auto-sync')
     runs-on: ubuntu-24.04
     permissions:
       contents: read
@@ -67,7 +67,7 @@ jobs:
         run: |
           dataset="${{ env.DATASET }}"
           echo "Syncing $dataset.json"
-          src_file=$(find "${GITHUB_WORKSPACE}/adamlui/js-utils" -name "$dataset.json" -type f | head -n 1)
+          src_file=$(find "${GITHUB_WORKSPACE}/adamlui/python-utils" -name "$dataset.json" -type f | head -n 1)
           if [[ -z "$src_file" ]] ; then echo "No source file found for $dataset" ; exit 1 ; fi
           snake_dataset=$(echo "$dataset" | tr '-' '_')
           dest_dir="${GITHUB_WORKSPACE}/adamlui/js-utils/$dataset"
