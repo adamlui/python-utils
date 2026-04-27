@@ -5,6 +5,12 @@ from typing import Optional
 from . import log, string, url
 
 controls = sn(
+    path=sn(
+       args=['-p', '--path'], action='store', metavar='DIR'),
+    depth=sn(
+        args=['-d', '--max-depth'], action='store', type=int, default=9, metavar='N'),
+    markers=sn(
+        args=['-m', '--markers'], metavar='MARKER', type=str, parser='csv'),
     help=sn(
         args=['-h', '--help'], action='help'),
     version=sn(

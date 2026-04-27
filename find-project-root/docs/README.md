@@ -95,9 +95,40 @@ CLI options:
 
 | Option              | Description
 | ------------------- | ------------------------------------
+| `-p`, `--path`      | Starting dir to search for  project root (default: CWD)
+| `-d`, `--max-depth` | Max levels to traverse up (default: 9)
+| `-m`, `--markers`   | Custom marker files to look for (default: [`project-markers`][project-markers-json] list)
 | `-h`, `--help`      | Show help screen
 | `-v`, `--version`   | Show version
 | `--docs`            | Open docs URL
+
+<hr>
+
+### Examples:
+
+Start from specific path:
+
+```bash
+find-project-root --path="assets/images"
+```
+
+Limit search depth:
+
+```bash
+find-project-root --max_depth=3
+```
+
+Use custom markers:
+
+```bash
+find-project-root --markers=.git,pyproject.toml,requirements.txt
+```
+
+Combine options:
+
+```bash
+find-project-root --path=src --max-depth=5 --markers=.manifest.json
+```
 
 <hr>
 
