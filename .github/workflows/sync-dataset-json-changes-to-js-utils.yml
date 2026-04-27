@@ -1,4 +1,4 @@
-name: Sync <dataset>/**/<dataset>.json → adamlui/python-utils/<dataset>
+name: Sync <dataset>/**/<dataset>.json → adamlui/js-utils/<dataset>
 
 on:
   push:
@@ -44,9 +44,11 @@ jobs:
           SHA="${{ github.sha }}"
           REPO="${{ github.repository }}"
           changed_file=$(gh api repos/$REPO/commits/$SHA \
-            | grep -oP '"filename":\s*"\K[^"]+' | grep '\.json$' | head -n 1)
-          changed_file="${changed_file//%2F//}"  # decode URL-encoded slashes (%2F → /)
-          changed_file="${changed_file%%\?*}"    # remove any query string (?ref=...)
+            | grep -oP '"filename":\s*"\K[^"]+' \
+            | grep '\.json$' \
+            | head -n 1)
+          changed_file="${changed_file//%2F//}"
+          changed_file="${changed_file%%\?*}"
           dataset=$(basename "$changed_file" .json)
           echo "DATASET=$dataset" >> $GITHUB_ENV
           echo "Extracted dataset: $dataset"
@@ -69,13 +71,13 @@ jobs:
           dataset="${{ env.DATASET }}"
           echo "Syncing $dataset.json"
           snake_dataset=$(echo "$dataset" | tr '-' '_')
-          src_file="${GITHUB_WORKSPACE}/adamlui/python-utils/src/$snake_dataset/$dataset.json"
+          src_file="${GITHUB_WORKSPACE}/adamlui/python-utils/$dataset/src/$snake_dataset/$dataset.json"
           if [[ ! -f "$src_file" ]] ; then echo "No source file found for $dataset at $src_file" ; exit 1 ; fi
           dest_dir="${GITHUB_WORKSPACE}/adamlui/js-utils/$dataset"
           mkdir -p "$dest_dir"
           cp -f "$src_file" "$dest_dir/$dataset.json"
-          COMMIT_MSG="${RAW_COMMIT_MSG:-Update $dataset.json} ↞ \
-            [auto-sync from https://github.com/adamlui/python-utils/tree/main/$dataset]"
+          COMMIT_MSG="${RAW_COMMIT_MSG:-Update $dataset.json} ↞ [auto-sync from \
+            https://github.com/adamlui/python-utils/tree/main/$dataset]"
           cd "${GITHUB_WORKSPACE}/adamlui/js-utils"
           git add "$dataset/$dataset.json"
           git commit -n -m "$COMMIT_MSG" || echo "Nothing to commit"
