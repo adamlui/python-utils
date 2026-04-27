@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Ismeretlen argumentum(ok)" },
   "help_NO_REGION": { "message": "Ne adja meg a régiót, ha elérhető" },
   "help_PATH": { "message": "Könyvtár indítása a projektgyökér kereséséhez (alapértelmezett: CWD)" },
-  "help_DEPTH": { "message": "Felfelé haladó maximális szintek (alapértelmezett: 9)" },
+  "help_MAX_DEPTH": { "message": "Felfelé haladó maximális szintek (alapértelmezett: 9)" },
   "help_MARKERS": { "message": "A keresendő egyéni jelölőfájlok" },
   "help_HELP": { "message": "Súgó képernyő megjelenítése" },
   "help_VERSION": { "message": "Verzió megjelenítése" },

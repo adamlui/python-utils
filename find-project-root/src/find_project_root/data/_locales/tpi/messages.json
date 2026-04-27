@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Toktok i no stret (s)" },
   "help_NO_REGION": { "message": "No ken putim wanpela hap taim ol i stap" },
   "help_PATH": { "message": "Start dir long painim rot bilong projek (default: CWD)" },
-  "help_DEPTH": { "message": "Maksim long go antap (default: 9)" },
+  "help_MAX_DEPTH": { "message": "Maksim long go antap (default: 9)" },
   "help_MARKERS": { "message": "Custom marker files long painim" },
   "help_HELP": { "message": "Skrin bilong helpim" },
   "help_VERSION": { "message": "Toksave long Baibel" },

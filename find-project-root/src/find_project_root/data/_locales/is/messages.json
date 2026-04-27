@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Óþekkt frumbreyta eða frumbreytur" },
   "help_NO_REGION": { "message": "Ekki gefa upp svæði þegar það er í boði" },
   "help_PATH": { "message": "Upphaf dir til að leita að verkefnisrót (sjálfgefið: CWD)" },
-  "help_DEPTH": { "message": "Hámarksgildi til að fara yfir (sjálfgefið: 9)" },
+  "help_MAX_DEPTH": { "message": "Hámarksgildi til að fara yfir (sjálfgefið: 9)" },
   "help_MARKERS": { "message": "Sérsniðnar merkjaskrár til að leita að" },
   "help_HELP": { "message": "Sýna hjálparskjá" },
   "help_VERSION": { "message": "Sýna útgáfu" },

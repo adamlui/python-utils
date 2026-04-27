@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Niet-herkende argument(en)" },
   "help_NO_REGION": { "message": "Regio niet opnemen indien beschikbaar" },
   "help_PATH": { "message": "Start dir om te zoeken naar projecthoofdmap (standaard: CWD)" },
-  "help_DEPTH": { "message": "Max. te doorkruisen niveaus (standaard: 9)" },
+  "help_MAX_DEPTH": { "message": "Max. te doorkruisen niveaus (standaard: 9)" },
   "help_MARKERS": { "message": "Aangepaste markeringsbestanden om naar te zoeken" },
   "help_HELP": { "message": "Helpscherm weergeven" },
   "help_VERSION": { "message": "Versie weergeven" },

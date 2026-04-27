@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Neprepoznati argumenti" },
   "help_NO_REGION": { "message": "Nemojte navoditi regiju ako je dostupna" },
   "help_PATH": { "message": "Pokretanje pretraživanja korijena projekta (zadano: CWD)" },
-  "help_DEPTH": { "message": "Maksimalne razine za kretanje prema gore (zadano: 9)" },
+  "help_MAX_DEPTH": { "message": "Maksimalne razine za kretanje prema gore (zadano: 9)" },
   "help_MARKERS": { "message": "Datoteke s prilagođenim oznakama za traženje" },
   "help_HELP": { "message": "Prikaži zaslon za pomoć" },
   "help_VERSION": { "message": "Prikaži verziju" },

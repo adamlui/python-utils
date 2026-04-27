@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Argument(e) nerecunoscut (e)" },
   "help_NO_REGION": { "message": "Nu include regiunea atunci când este disponibilă" },
   "help_PATH": { "message": "Pornirea dir pentru a căuta rădăcina proiectului (implicit: CWD)" },
-  "help_DEPTH": { "message": "Niveluri maxime pentru deplasare în sus (implicit: 9)" },
+  "help_MAX_DEPTH": { "message": "Niveluri maxime pentru deplasare în sus (implicit: 9)" },
   "help_MARKERS": { "message": "Fișiere de marcatori personalizate de căutat" },
   "help_HELP": { "message": "Afișați ecranul de ajutor" },
   "help_VERSION": { "message": "Afișează versiunea" },

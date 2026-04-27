@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Nerozpoznané argumenty" },
   "help_NO_REGION": { "message": "Nezahrnovat region, pokud je k dispozici" },
   "help_PATH": { "message": "Spuštění adresáře pro vyhledávání kořene projektu (výchozí: CWD)" },
-  "help_DEPTH": { "message": "Maximální úrovně pro posun nahoru (výchozí: 9)" },
+  "help_MAX_DEPTH": { "message": "Maximální úrovně pro posun nahoru (výchozí: 9)" },
   "help_MARKERS": { "message": "Vlastní soubory značek, které je třeba hledat" },
   "help_HELP": { "message": "Zobrazit obrazovku nápovědy" },
   "help_VERSION": { "message": "Zobrazit verzi" },

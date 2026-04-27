@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Таанылбаган аргумент(лер)" },
   "help_NO_REGION": { "message": "Мүмкүн болгондо аймакты кошпоңуз" },
   "help_PATH": { "message": "Долбоордун тамырын издөөнү баштоо (демейки: CWD)" },
-  "help_DEPTH": { "message": "Жогорулатуу үчүн Max денгээлдер (демейки: 9)" },
+  "help_MAX_DEPTH": { "message": "Жогорулатуу үчүн Max денгээлдер (демейки: 9)" },
   "help_MARKERS": { "message": "Издөө үчүн ылайыкташтырылган маркер файлдары" },
   "help_HELP": { "message": "Жардам экранын көрсөтүү" },
   "help_VERSION": { "message": "Версияны көрсөтүү" },

@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Okända argument" },
   "help_NO_REGION": { "message": "Inkludera inte region när den är tillgänglig" },
   "help_PATH": { "message": "Startar dir för att söka efter projektrot (standard: CWD)" },
-  "help_DEPTH": { "message": "Max. nivåer att gå upp (standard: 9)" },
+  "help_MAX_DEPTH": { "message": "Max. nivåer att gå upp (standard: 9)" },
   "help_MARKERS": { "message": "Anpassade markörfiler att leta efter" },
   "help_HELP": { "message": "Visa hjälpskärmen" },
   "help_VERSION": { "message": "Visa version" },

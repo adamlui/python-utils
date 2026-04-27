@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Nā hoʻopaʻapaʻa i ʻike ʻole ʻia" },
   "help_NO_REGION": { "message": "Mai hoʻokomo i ka ʻāpana inā loaʻa" },
   "help_PATH": { "message": "Ke hoʻomaka nei i ka dir e ʻimi ai i ke aʻa o ka papahana (paʻamau: CWD)" },
-  "help_DEPTH": { "message": "Nā pae kiʻekiʻe e piʻi ai (paʻamau: 9)" },
+  "help_MAX_DEPTH": { "message": "Nā pae kiʻekiʻe e piʻi ai (paʻamau: 9)" },
   "help_MARKERS": { "message": "Nā faila māka maʻamau e nānā ai" },
   "help_HELP": { "message": "Hōʻike i ka pale kōkua" },
   "help_VERSION": { "message": "Hōʻike i ka mana" },

@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "ያልተገነዘቡ ክርክሮች(ዎች)" },
   "help_NO_REGION": { "message": "በሚገኝበት ጊዜ ክልልን አያካትቱ" },
   "help_PATH": { "message": "የፕሮጀክት ሥር ለመፈለግ ቆሻሻ መጀመር (ነባሪ: CWD)" },
-  "help_DEPTH": { "message": "ወደ ላይ ለማለፍ ከፍተኛ ደረጃዎች (ነባሪ: 9)" },
+  "help_MAX_DEPTH": { "message": "ወደ ላይ ለማለፍ ከፍተኛ ደረጃዎች (ነባሪ: 9)" },
   "help_MARKERS": { "message": "ለመፈለግ ብጁ ምልክት ማድረጊያ ፋይሎች" },
   "help_HELP": { "message": "የእገዛ ማያ ገጽ አሳይ" },
   "help_VERSION": { "message": "ስሪት አሳይ" },

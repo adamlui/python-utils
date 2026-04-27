@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Kganetsano(dingangisano) e e sa lemogwang" },
   "help_NO_REGION": { "message": "Ga ke akaretse kgaolo fa e le teng" },
   "help_PATH": { "message": "Go simolola dir go batla modi wa porojeke (default: CWD)" },
-  "help_DEPTH": { "message": "Maemo a a kwa godimodimo a tshwanetse go tlhatlogela kwa godimo (thulaganyo: 9)" },
+  "help_MAX_DEPTH": { "message": "Maemo a a kwa godimodimo a tshwanetse go tlhatlogela kwa godimo (thulaganyo: 9)" },
   "help_MARKERS": { "message": "Difaele tsa matshwao a a tlwaelegileng tse o tshwanelang go di batla" },
   "help_HELP": { "message": "SHOW HELP SCREEN" },
   "help_VERSION": { "message": "SHOW VERSION" },

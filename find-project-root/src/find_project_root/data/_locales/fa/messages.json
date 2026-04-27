@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "آرگومان(های) ناشناخته" },
   "help_NO_REGION": { "message": "در صورت وجود، منطقه را لحاظ نکنید" },
   "help_PATH": { "message": "شروع dir برای جستجوی ریشه پروژه (پیش‌فرض: CWD)" },
-  "help_DEPTH": { "message": "حداکثر سطوح برای پیمایش به بالا (پیش‌فرض: ۹)" },
+  "help_MAX_DEPTH": { "message": "حداکثر سطوح برای پیمایش به بالا (پیش‌فرض: ۹)" },
   "help_MARKERS": { "message": "فایل‌های نشانگر سفارشی برای جستجو" },
   "help_HELP": { "message": "نمایش صفحه راهنما" },
   "help_VERSION": { "message": "نمایش نسخه" },

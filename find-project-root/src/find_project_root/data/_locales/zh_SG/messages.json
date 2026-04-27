@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "无法识别的参数" },
   "help_NO_REGION": { "message": "如果可用，请勿包含区域" },
   "help_PATH": { "message": "启动目录以搜索项目根目录（默认值： CWD ）" },
-  "help_DEPTH": { "message": "要向上遍历的最大电平（默认值： 9 ）" },
+  "help_MAX_DEPTH": { "message": "要向上遍历的最大电平（默认值： 9 ）" },
   "help_MARKERS": { "message": "要查找的自定义标记文件" },
   "help_HELP": { "message": "显示帮助屏幕" },
   "help_VERSION": { "message": "显示版本" },

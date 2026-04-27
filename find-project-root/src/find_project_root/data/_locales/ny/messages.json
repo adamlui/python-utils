@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Unrecognized kutsutsana(s)" },
   "help_NO_REGION": { "message": "Musaphatikize dera pamene likupezeka" },
   "help_PATH": { "message": "Kuyamba dir kufunafuna muzu wa polojekiti (kusakhulupirika: CWD)" },
-  "help_DEPTH": { "message": "Max mlingo traverse mmwamba (kusakhulupirika: 9)" },
+  "help_MAX_DEPTH": { "message": "Max mlingo traverse mmwamba (kusakhulupirika: 9)" },
   "help_MARKERS": { "message": "Mwambo chizindikiro owona kuyang 'ana" },
   "help_HELP": { "message": "Onetsani zenera lothandizira" },
   "help_VERSION": { "message": "Lumikizanani nafe" },

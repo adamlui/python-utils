@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Tanınmayan bağımsız değişken(ler)" },
   "help_NO_REGION": { "message": "Uygun olduğunda bölgeyi dahil etmeyin" },
   "help_PATH": { "message": "Proje kökünü aramak için dir başlatılıyor (varsayılan: CWD)" },
-  "help_DEPTH": { "message": "Yukarı geçilecek maksimum seviye (varsayılan: 9)" },
+  "help_MAX_DEPTH": { "message": "Yukarı geçilecek maksimum seviye (varsayılan: 9)" },
   "help_MARKERS": { "message": "Aranacak özel işaretçi dosyaları" },
   "help_HELP": { "message": "Yardım ekranını göster" },
   "help_VERSION": { "message": "Sürümü göster" },

@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Tan olinmagan argument(lar)" },
   "help_NO_REGION": { "message": "Mavjud bo'lganda mintaqani kiritmang" },
   "help_PATH": { "message": "Loyiha ildizini qidirish uchun dir ishga tushirilmoqda (standart: CWD)" },
-  "help_DEPTH": { "message": "Yuqoriga o'tish uchun maksimal darajalar (standart: 9)" },
+  "help_MAX_DEPTH": { "message": "Yuqoriga o'tish uchun maksimal darajalar (standart: 9)" },
   "help_MARKERS": { "message": "Qidiruv uchun maxsus marker fayllari" },
   "help_HELP": { "message": "Yordam ekranini ko'rsatish" },
   "help_VERSION": { "message": "Versiyani ko'rsatish" },

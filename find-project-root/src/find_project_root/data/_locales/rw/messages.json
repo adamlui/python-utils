@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "S" },
   "help_NO_REGION": { "message": "Kanda ahanditse Akarere niba bishoboka" },
   "help_PATH": { "message": "Kuri Gushaka kugirango Umushinga Imizi Mburabuzi" },
-  "help_DEPTH": { "message": "Intera Kuri Hejuru Mburabuzi 9" },
+  "help_MAX_DEPTH": { "message": "Intera Kuri Hejuru Mburabuzi 9" },
   "help_MARKERS": { "message": "Idosiye Kuri Gushaka kugirango" },
   "help_HELP": { "message": "Ifashayobora Mugaragaza" },
   "help_VERSION": { "message": "Verisiyo" },

@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Arguman(ên) nenaskirî" },
   "help_NO_REGION": { "message": "Dema ku peyda be, herêmê tê de nehêlin" },
   "help_PATH": { "message": "Destpêkirina pelrêça lêgerîna rootê projeyê (xwerû: CWD)" },
-  "help_DEPTH": { "message": "Asta herî zêde ji bo derbasbûnê (xwerû: 9)" },
+  "help_MAX_DEPTH": { "message": "Asta herî zêde ji bo derbasbûnê (xwerû: 9)" },
   "help_MARKERS": { "message": "Pelên nîşankerên xwerû yên ku lê bigerin" },
   "help_HELP": { "message": "Ekrana alîkariyê nîşan bide" },
   "help_VERSION": { "message": "Guhertoyê nîşan bide" },

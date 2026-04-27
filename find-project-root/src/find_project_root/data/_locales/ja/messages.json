@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "認識できない引数" },
   "help_NO_REGION": { "message": "利用可能な場合は地域を含めないでください" },
   "help_PATH": { "message": "プロジェクトルートを検索するためのディレクトリの開始（デフォルト： CWD ）" },
-  "help_DEPTH": { "message": "上に移動する最大レベル（デフォルト： 9 ）" },
+  "help_MAX_DEPTH": { "message": "上に移動する最大レベル（デフォルト： 9 ）" },
   "help_MARKERS": { "message": "検索するカスタムマーカーファイル" },
   "help_HELP": { "message": "ヘルプ画面を表示" },
   "help_VERSION": { "message": "バージョンを表示" },

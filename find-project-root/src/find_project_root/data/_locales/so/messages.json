@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Dood aan la aqoonsan (yada)" },
   "help_NO_REGION": { "message": "Ha ku darin gobolka marka la heli karo" },
   "help_PATH": { "message": "Bilaabida dir si aad u raadiso xididka mashruuca (default: CWD)" },
-  "help_DEPTH": { "message": "Heerarka Max si ay u gudbiyaan (default: 9)" },
+  "help_MAX_DEPTH": { "message": "Heerarka Max si ay u gudbiyaan (default: 9)" },
   "help_MARKERS": { "message": "Faylasha Calaamadaha Macaamiisha si aad u raadiso" },
   "help_HELP": { "message": "Muuji shaashadda caawinta" },
   "help_VERSION": { "message": "Muuji nooca" },

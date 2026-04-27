@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Arguments no reconeguts" },
   "help_NO_REGION": { "message": "No incloguis la regió quan estigui disponible" },
   "help_PATH": { "message": "Iniciar dir per cercar l'arrel del projecte (per defecte: CWD)" },
-  "help_DEPTH": { "message": "Nivells màxims a travessar (per defecte: 9)" },
+  "help_MAX_DEPTH": { "message": "Nivells màxims a travessar (per defecte: 9)" },
   "help_MARKERS": { "message": "Fitxers de marcadors personalitzats a cercar" },
   "help_HELP": { "message": "Mostra la pantalla d'ajuda" },
   "help_VERSION": { "message": "Mostra la versió" },

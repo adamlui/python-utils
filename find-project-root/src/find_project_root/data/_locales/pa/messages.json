@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "ਅਣਜਾਣ ਆਰਗੂਮੈਂਟ" },
   "help_NO_REGION": { "message": "ਜਦੋਂ ਉਪਲੱਬਧ ਹੋਵੇ ਤਾਂ ਖੇਤਰ ਸ਼ਾਮਲ ਨਾ ਕਰੋ" },
   "help_PATH": { "message": "ਪ੍ਰੋਜੈਕਟ ਰੂਟ ਲਈ ਖੋਜ ਕਰਨ ਲਈ dir ਸ਼ੁਰੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ (ਮੂਲਃ CWD)" },
-  "help_DEPTH": { "message": "ਵੱਧੋ-ਵੱਧ ਪੱਧਰ ਪਾਰ ਕਰਨ ਲਈ (ਡਿਫਾਲਟ: 9)" },
+  "help_MAX_DEPTH": { "message": "ਵੱਧੋ-ਵੱਧ ਪੱਧਰ ਪਾਰ ਕਰਨ ਲਈ (ਡਿਫਾਲਟ: 9)" },
   "help_MARKERS": { "message": "ਖੋਜਣ ਲਈ ਕਸਟਮ ਮਾਰਕਰ ਫਾਇਲਾਂ" },
   "help_HELP": { "message": "ਮੱਦਦ ਸਕਰੀਨ ਵੇਖੋ" },
   "help_VERSION": { "message": "ਵਰਜਨ ਵੇਖੋ" },

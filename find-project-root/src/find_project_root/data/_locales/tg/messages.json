@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Аргументи ношинохта" },
   "help_NO_REGION": { "message": "Hindi maglagay ang lugar kapag magagamit" },
   "help_PATH": { "message": "Оғозёбии dir барои ҷустуҷӯи решаи лоиҳа (пешфарз: CWD)" },
-  "help_DEPTH": { "message": "Сатҳи максималӣ барои гузаштан (пешфарз: 9)" },
+  "help_MAX_DEPTH": { "message": "Сатҳи максималӣ барои гузаштан (пешфарз: 9)" },
   "help_MARKERS": { "message": "Файлҳои тамғаи фармоишӣ барои ҷустуҷӯ" },
   "help_HELP": { "message": "Намоиши экрани кӯмак" },
   "help_VERSION": { "message": "Намоиши версия" },

@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Nicht erkannte (s) Argument(e)" },
   "help_NO_REGION": { "message": "Region nicht einschließen, wenn verfügbar" },
   "help_PATH": { "message": "Dir starten, um nach Projektstamm zu suchen (Standard: CWD)" },
-  "help_DEPTH": { "message": "Max. Level zum Hochfahren (Standard: 9)" },
+  "help_MAX_DEPTH": { "message": "Max. Level zum Hochfahren (Standard: 9)" },
   "help_MARKERS": { "message": "Benutzerdefinierte Markierungsdateien, nach denen gesucht werden soll" },
   "help_HELP": { "message": "Hilfebildschirm anzeigen" },
   "help_VERSION": { "message": "Version anzeigen" },

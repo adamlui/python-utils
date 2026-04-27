@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Argamaid neo - aithnichte (s)" },
   "help_NO_REGION": { "message": "Na bi a 'toirt a - steach an sgìre nuair a tha e ri fhaighinn" },
   "help_PATH": { "message": "A 'tòiseachadh air an eòlaire a lorg airson freumh a' phròiseict (default: CWD)" },
-  "help_DEPTH": { "message": "Ìrean as àirde airson a dhol suas (default: 9)" },
+  "help_MAX_DEPTH": { "message": "Ìrean as àirde airson a dhol suas (default: 9)" },
   "help_MARKERS": { "message": "Faidhlichean marcaiche gnàthaichte ri lorg" },
   "help_HELP": { "message": "Seall sgrìn na cobhair" },
   "help_VERSION": { "message": "Seall an tionndadh" },

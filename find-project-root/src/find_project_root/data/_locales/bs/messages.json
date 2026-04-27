@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Neprepoznat (i) argument(i)" },
   "help_NO_REGION": { "message": "Ne navodite regiju kada je dostupna" },
   "help_PATH": { "message": "Pokretanje pretraživanja korijena projekta (zadano: CWD)" },
-  "help_DEPTH": { "message": "Maksimalni nivoi za kretanje prema gore (zadano: 9)" },
+  "help_MAX_DEPTH": { "message": "Maksimalni nivoi za kretanje prema gore (zadano: 9)" },
   "help_MARKERS": { "message": "Prilagođene datoteke markera za traženje" },
   "help_HELP": { "message": "Prikaži ekran za pomoć" },
   "help_VERSION": { "message": "Prikaži verziju" },

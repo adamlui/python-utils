@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Neprepoznani argumenti" },
   "help_NO_REGION": { "message": "Ne navedite območja, ko je na voljo" },
   "help_PATH": { "message": "Zagon dir za iskanje korena projekta (privzeto: CWD)" },
-  "help_DEPTH": { "message": "Najv. ravni za prečkanje navzgor (privzeto: 9)" },
+  "help_MAX_DEPTH": { "message": "Najv. ravni za prečkanje navzgor (privzeto: 9)" },
   "help_MARKERS": { "message": "Datoteke z oznakami po meri, ki jih je treba poisk" },
   "help_HELP": { "message": "Prikaži zaslon za pomoč" },
   "help_VERSION": { "message": "Prikaži različico" },

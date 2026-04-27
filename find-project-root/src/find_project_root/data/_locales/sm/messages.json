@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "O se finauga e le o iloa (s)" },
   "help_NO_REGION": { "message": "Aua le aofia ai le itulagi pe a avanoa" },
   "help_PATH": { "message": "Amata dir e saili mo le aʻa o le galuega faatino (faaletonu: CWD)" },
-  "help_DEPTH": { "message": "Max tulaga e liliu i luga (faaletonu: 9)" },
+  "help_MAX_DEPTH": { "message": "Max tulaga e liliu i luga (faaletonu: 9)" },
   "help_MARKERS": { "message": "Faʻapitoa faʻailoga faila e suʻe" },
   "help_HELP": { "message": "Faaali atu le lau fesoasoani" },
   "help_VERSION": { "message": "Faaali atu le lomiga" },

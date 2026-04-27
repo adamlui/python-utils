@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "ארגומנטים לא מזוהים" },
   "help_NO_REGION": { "message": "אל תכלול אזור כאשר הוא זמין" },
   "help_PATH": { "message": "מתחיל לחפש את שורש הפרויקט (ברירת מחדל: CWD)" },
-  "help_DEPTH": { "message": "רמות מקסימליות למעבר למעלה (ברירת מחדל: 9)" },
+  "help_MAX_DEPTH": { "message": "רמות מקסימליות למעבר למעלה (ברירת מחדל: 9)" },
   "help_MARKERS": { "message": "קובצי סמן מותאמים אישית לחיפוש" },
   "help_HELP": { "message": "הצגת מסך עזרה" },
   "help_VERSION": { "message": "הצגת הגרסה" },

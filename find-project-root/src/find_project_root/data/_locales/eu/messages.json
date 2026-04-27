@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Argumentu ezezagunak" },
   "help_NO_REGION": { "message": "Ez sartu eskualdea eskuragarri dagoenean" },
   "help_PATH": { "message": "Proiektuaren erroa bilatzeko direktorioa abiarazten (lehenetsia: CWD)" },
-  "help_DEPTH": { "message": "Gora igotzeko gehienezko mailak (lehenetsia: 9)" },
+  "help_MAX_DEPTH": { "message": "Gora igotzeko gehienezko mailak (lehenetsia: 9)" },
   "help_MARKERS": { "message": "Bilatu beharreko markatzaile pertsonalizatuen fitxategiak" },
   "help_HELP": { "message": "Erakutsi laguntza-pantaila" },
   "help_VERSION": { "message": "Erakutsi bertsioa" },

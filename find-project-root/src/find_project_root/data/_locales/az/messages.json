@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Tanınmamış arqument(lər)" },
   "help_NO_REGION": { "message": "Mövcud olduqda regionu daxil etməyin" },
   "help_PATH": { "message": "Layihənin kökünü axtarmaq üçün CIR-dan başlayaraq (standart: CWD)" },
-  "help_DEPTH": { "message": "Yuxarı çıxmaq üçün maksimum səviyyə (standart: 9)" },
+  "help_MAX_DEPTH": { "message": "Yuxarı çıxmaq üçün maksimum səviyyə (standart: 9)" },
   "help_MARKERS": { "message": "Axtarmaq üçün xüsusi marker faylları" },
   "help_HELP": { "message": "Yardım ekranını göstər" },
   "help_VERSION": { "message": "Versiyanı göstər" },

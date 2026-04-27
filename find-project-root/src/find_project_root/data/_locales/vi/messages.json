@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "(Các) đối số không được công nhận" },
   "help_NO_REGION": { "message": "Không bao gồm khu vực khi có thể" },
   "help_PATH": { "message": "Bắt đầu dir để tìm kiếm gốc dự án (mặc định: CWD)" },
-  "help_DEPTH": { "message": "Mức tối đa để đi lên (mặc định: 9)" },
+  "help_MAX_DEPTH": { "message": "Mức tối đa để đi lên (mặc định: 9)" },
   "help_MARKERS": { "message": "Các tệp đánh dấu tùy chỉnh để tìm kiếm" },
   "help_HELP": { "message": "Hiển thị màn hình trợ giúp" },
   "help_VERSION": { "message": "Hiển thị phiên bản" },

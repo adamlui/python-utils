@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Argument(s) non reconnu (s)" },
   "help_NO_REGION": { "message": "N'incluez pas la région lorsqu'elle est disponible" },
   "help_PATH": { "message": "Démarrage du DIR pour rechercher la racine du projet (par défaut : CWD)" },
-  "help_DEPTH": { "message": "Niveaux max à parcourir vers le haut (par défaut : 9)" },
+  "help_MAX_DEPTH": { "message": "Niveaux max à parcourir vers le haut (par défaut : 9)" },
   "help_MARKERS": { "message": "Fichiers de marqueurs personnalisés à rechercher" },
   "help_HELP": { "message": "Afficher l'écran d'aide" },
   "help_VERSION": { "message": "Afficher la version" },

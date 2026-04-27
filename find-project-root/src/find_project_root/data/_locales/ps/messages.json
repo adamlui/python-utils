@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "ناپیژندلی ارزښتمنۍ" },
   "help_NO_REGION": { "message": "کله چې شتون ولري سیمه پکې شامل نه کړئ" },
   "help_PATH": { "message": "د پروژې ریښې لټون لپاره د قط پیل کول (ډیفالټ: CWD)" },
-  "help_DEPTH": { "message": "د تیریدو لپاره اعظمي کچې (ډیفالټ: 9)" },
+  "help_MAX_DEPTH": { "message": "د تیریدو لپاره اعظمي کچې (ډیفالټ: 9)" },
   "help_MARKERS": { "message": "د لټولو لپاره دوسیې مارکر" },
   "help_HELP": { "message": "د مرستې سکرین ښودل" },
   "help_VERSION": { "message": "دننه سيوری" },

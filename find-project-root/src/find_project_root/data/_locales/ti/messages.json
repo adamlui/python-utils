@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "ዘይተፈልጠ ክርክር(ታት)" },
   "help_NO_REGION": { "message": "ኣብ ዝርከቡሉ እዋን ዞባ ኣይትካተቱ" },
   "help_PATH": { "message": "ንፕሮጀክት ሱር ንምርካብ (ነባሪ: CWD) ምጅማር" },
-  "help_DEPTH": { "message": "ዝለዓለ ደረጃታት ንምስጋር (ነባሪ: 9)" },
+  "help_MAX_DEPTH": { "message": "ዝለዓለ ደረጃታት ንምስጋር (ነባሪ: 9)" },
   "help_MARKERS": { "message": "ናይ ምልክት ምልክት ፋይላት ንምርካብ" },
   "help_HELP": { "message": "ናይ ሓገዝ ስክሪን ኣርኢ" },
   "help_VERSION": { "message": "ቅጅል ኣርኢ" },

@@ -12,10 +12,6 @@ def main():
             if hasattr(ctrl, 'handler') : ctrl.handler(cli)
             sys.exit(0)
 
-    print(find_project_root(
-        path=getattr(cli.config, 'path', None),
-        max_depth=getattr(cli.config, 'max_depth', 9),
-        markers=getattr(cli.config, 'markers', None)
-     ))
+    print(find_project_root(path=cli.config.path, max_depth=cli.config.max_depth, markers=cli.config.markers))
 
 if __name__ == '__main__' : main()

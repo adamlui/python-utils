@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Ymresymiad(au) anhysbys" },
   "help_NO_REGION": { "message": "Peidiwch â chynnwys yr ardal pan fydd ar gael" },
   "help_PATH": { "message": "Dechrau cyfeiriadur i chwilio am wreiddyn y cywaith (rhagosodedig: CWD)" },
-  "help_DEPTH": { "message": "Lefelau uchaf i'w croesi i fyny (rhagosodedig: 9)" },
+  "help_MAX_DEPTH": { "message": "Lefelau uchaf i'w croesi i fyny (rhagosodedig: 9)" },
   "help_MARKERS": { "message": "Ffeiliau marciwr cyfaddas i chwilio amdanynt" },
   "help_HELP": { "message": "Dangos y sgrin gymorth" },
   "help_VERSION": { "message": "Dangos fersiwn" },

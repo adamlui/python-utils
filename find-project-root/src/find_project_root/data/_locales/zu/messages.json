@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Impikiswano engaziwa" },
   "help_NO_REGION": { "message": "Ungafaki isifunda lapho sitholakala" },
   "help_PATH": { "message": "Ukuqalisa i-dir ukusesha impande yephrojekthi (okuzenzakalelayo: CWD)" },
-  "help_DEPTH": { "message": "Amazinga aphezulu okufanele akhuphuke (okuzenzakalelayo: 9)" },
+  "help_MAX_DEPTH": { "message": "Amazinga aphezulu okufanele akhuphuke (okuzenzakalelayo: 9)" },
   "help_MARKERS": { "message": "Amafayela omaka aqokiwe okufanele uwafune" },
   "help_HELP": { "message": "Bonisa isikrini sosizo" },
   "help_VERSION": { "message": "Veza inguqulo" },

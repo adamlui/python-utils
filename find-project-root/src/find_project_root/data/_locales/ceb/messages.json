@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Unsaturated Argument(s)" },
   "help_NO_REGION": { "message": "Ayaw iapil ang rehiyon kung magamit" },
   "help_PATH": { "message": "Pagsugod dir sa pagpangita sa gamut sa proyekto (default: CWD)" },
-  "help_DEPTH": { "message": "Max nga lebel sa pagtabok (default: 9)" },
+  "help_MAX_DEPTH": { "message": "Max nga lebel sa pagtabok (default: 9)" },
   "help_MARKERS": { "message": "Pasadya nga mga file sa marker nga pangitaon" },
   "help_HELP": { "message": "Ipakita ang screen sa tabang" },
   "help_VERSION": { "message": "Ipakita ang bersyon" },

@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "अपरिचित तर्क(तर्क)" },
   "help_NO_REGION": { "message": "उपलब्ध होने पर क्षेत्र को शामिल न करें" },
   "help_PATH": { "message": "प्रोजेक्ट रूट की खोज के लिए dir शुरू करना (डिफ़ॉल्ट: CWD)" },
-  "help_DEPTH": { "message": "ऊपर की ओर जाने के लिए अधिकतम स्तर (डिफ़ॉल्ट: 9)" },
+  "help_MAX_DEPTH": { "message": "ऊपर की ओर जाने के लिए अधिकतम स्तर (डिफ़ॉल्ट: 9)" },
   "help_MARKERS": { "message": "देखने के लिए कस्टम मार्कर फ़ाइलें" },
   "help_HELP": { "message": "सहायता स्क्रीन दिखाएँ" },
   "help_VERSION": { "message": "संस्करण दिखाएँ" },

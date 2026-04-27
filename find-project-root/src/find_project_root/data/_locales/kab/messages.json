@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Confrontation (s)" },
   "help_NO_REGION": { "message": "Ur ttaǧǧa ara tamurt mi ara d-tafeḍ" },
   "help_PATH": { "message": "Affiner la recherche pour plan cul (default: CWD)" },
-  "help_DEPTH": { "message": "Isebtar i yellan ddaw-a sɛan aseɣwen ɣer [ẓreg_ẓreg aɣbalu]" },
+  "help_MAX_DEPTH": { "message": "Isebtar i yellan ddaw-a sɛan aseɣwen ɣer [ẓreg_ẓreg aɣbalu]" },
   "help_MARKERS": { "message": "Ifuyla n useqdac akken ad ttnadin" },
   "help_HELP": { "message": "Sken allen n tallelt" },
   "help_VERSION": { "message": "Sken asenfaṛ" },

@@ -11,7 +11,7 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Unrecognized argument(s)" },
   "help_NO_REGION": { "message": "Don't include region when available" },
   "help_PATH": { "message": "Starting dir to search for project root (default: CWD)" },
-  "help_DEPTH": { "message": "Max levels to traverse up (default: 9)" },
+  "help_MAX_DEPTH": { "message": "Max levels to traverse up (default: 9)" },
   "help_MARKERS": { "message": "Custom marker files to look for" },
   "help_HELP": { "message": "Show help screen" },
   "help_VERSION": { "message": "Show version" },
