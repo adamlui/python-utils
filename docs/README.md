@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 🐍 adamlui / python-utils
+# [<img height=25 width="auto" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/10906554?h=100&w=100&mask=circle&maxage=7d">](https://github.com/adamlui) adamlui / python-utils
 
 <a href="https://pypacktrends.com/?packages=ai-personas&packages=computer-languages&packages=data-languages&packages=find-project-root&packages=get-min-py&packages=is-legacy-terminal&packages=is-unicode-supported&packages=latin-locales&packages=markup-languages&packages=non-latin-locales&packages=programming-languages&packages=project-markers&packages=prose-languages&packages=remove-json-keys&packages=sys-lang&packages=translate-messages&time_range=allTimeCumulative&scheme=dark">
     <img height=31 src="https://img.shields.io/badge/Downloads-50,000+-af68ff.svg?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -12,8 +12,6 @@
     <img height=31 src="https://img.shields.io/codefactor/grade/github/adamlui/python-utils?label=Code+Quality&logo=codefactor&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
 <a href="https://sonarcloud.io/component_measures?metric=vulnerabilities&id=adamlui_python-utils">
     <img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dadamlui_python-utils%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonar&logoColor=white&labelColor=464646&label=Vulnerabilities&color=ffef00"></a>
-
-### A collection of useful Python utilities.
 
 <hr>
 
