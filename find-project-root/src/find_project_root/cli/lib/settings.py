@@ -17,6 +17,8 @@ controls = sn(
         args=['-i', '--init'],
         action='store_true', subcmd='true', exit=True, handler=lambda cli: init.config_file(cli)
     ),
+    force=sn(
+        args=['-f', '--force', '--overwrite'], action='store_true'),
     help=sn(
         args=['-h', '--help'], action='help'),
     version=sn(
