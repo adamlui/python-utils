@@ -4,8 +4,8 @@
 
 <a href="https://pepy.tech/projects/find-project-root?versions=*">
     <img height=31 src="https://img.shields.io/pepy/dt/find-project-root?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/adamlui/python-utils/releases/tag/find-project-root-2.1.2">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-2.1.2-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/adamlui/python-utils/releases/tag/find-project-root-2.2.0">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-2.2.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/adamlui/python-utils/blob/main/find-project-root/docs/LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">

@@ -1,7 +1,7 @@
 {
   "name": "find-project-root",
   "short_name": "project-root",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "Locate project root via custom markers.",
   "cmds": [
     "project-root", "get-project-root", "find-project-root", "projectroot", "getprojectroot", "findprojectroot"
