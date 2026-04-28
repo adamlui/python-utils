@@ -21,7 +21,7 @@
 
 **find-project-root** is a lightweight utility that traverses up from a given path until it finds a project marker.
 
-- Lightweight — < 100 KB
+- Super leightweight — < 100 KB
 - Path flexibility — accepts strings, `Path` objects, or current working dir
 - Customizable markers — provide your own or use defaults
 - Multi-env support — use via [API](#api-usage) or [CLI](#command-line-usage)
