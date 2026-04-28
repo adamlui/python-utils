@@ -16,7 +16,7 @@ def cli() -> sn:
 def config_file(cli: sn) -> None: # for --init
 
     # Init target_path
-    import find_project_root
+    from ...api import find_project_root
     project_root = find_project_root(max_depth=20) # type: ignore
     if project_root:
         config_dir, in_project_root = Path(project_root), True
