@@ -3,7 +3,6 @@ name: Publish to PyPI on new release
 on:
   release:
     types: [published]
-  workflow_dispatch:
 
 jobs:
   publish:
@@ -14,7 +13,7 @@ jobs:
       contents: read
     steps:
       - run: |
-          TAG="find-project-root-2.1.1"
+          TAG="${{ github.event.release.tag_name }}"
           PROJECT="${TAG%-*}"
           echo "PROJECT=$PROJECT" >> $GITHUB_ENV
       - uses: actions/checkout@v6.0.2
