@@ -1,4 +1,5 @@
 [
+  ".adam",
   ".ansible-lint",
   ".bazelrc",
   ".browserslistrc",
