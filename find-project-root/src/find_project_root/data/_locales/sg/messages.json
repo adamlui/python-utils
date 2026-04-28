@@ -1,20 +1,39 @@
 {
+  "prompt_INIT_CONFIG_HERE_ANYWAY": { "message": "A yeke nzoni e sara kua na mbeni ye so ayeke na lege ni ape." },
+  "log_SKIPPING": { "message": "Skiingbingo" },
+  "log_OVERWRITING_CONFIG_AT": { "message": "A yeke na yâ ti mbeni kota bungbi ti fango tënë ti Royaume ti Chine." },
+  "log_DEFAULT_CONFIG_CREATED_AT": { "message": "Default config so a leke ni na" },
   "log_TYPE": { "message": "Bango Bango Type" },
   "log_FOR_AVAIL_OPTIONS": { "message": "akpengba ye so mo lingbi ti sara" },
   "log_VERSION": { "message": "Yângâ tî kodoro" },
+  "log_TO_CREATE_DEFAULT_CONFIG": {
+    "message": "create article Delete article Get articles list Update article Get articles list Update article"
+  },
   "tip_FOR_MORE_HELP_VISIT": { "message": "Ti wara kota lege ti bâ ndo" },
+  "tip_PASS_FORCE_TO_OVERWRITE": { "message": "Pass - ngangu ti sû mbeti na ndo ni" },
+  "tip_MOVE_CONFIG_TO_ROOT": { "message": "Gbu li ti mo na ndo ti mbeni ye so mo ye ti sara kua na ni" },
+  "warn_CONFIG_EXISTS_AT": { "message": "Config ayeke dä awe" },
+  "warn_NO_PROJECT_ROOT_FOUND": { "message": "A wara mbeni zo oko pëpe" },
+  "warn_SPECIFIED_CONFIG": { "message": "A yeke sara tënë ti ambeni ye so ayeke na yâ ti Bible" },
   "warn_NOT_FOUND": { "message": "A wara lo pëpe" },
+  "warn_CONFIG_FILE_KEY": { "message": "Config faïl clé" },
   "warn_CLI_OPTION": { "message": "A yeke na lege ti kode ti CLI" },
   "warn_HAS_BEEN_REPLACED_BY": { "message": "a changé lo na" },
   "warn_AND_WILL_BE_REMOVED": { "message": "na fade a yeke zi ala" },
   "warn_NO_LONGER_HAS_ANY_EFFECT": { "message": "a yeke sara ye na lege ni ape" },
   "err_UNRECOGNIZED_ARGS": { "message": "Mbeni tënë so a hinga ni pëpe (s)" },
-  "help_NO_REGION": { "message": "Tongana a yeke dä, zia pëpe na yâ ni mbeni ndo so a yeke dä" },
+  "err_INVALID_KEY": { "message": "Mbeni clé so ayeke na lege ni ape" },
+  "err_FOUND_IN": { "message": "a wara lo na yâ ti" },
   "help_PATH": { "message": "Ti to nda ti gi ti bâ nda ti ye so ayeke na yâ ti projet ni (default: CWD)" },
   "help_MAX_DEPTH": {
     "message": "A yeke nzoni e sara kua na aye so e lingbi ti sara ti hon ndo ni (a yeke nzoni e sara ni pëpe: 9)"
   },
   "help_MARKERS": { "message": "A yeke na yâ ti ambeti so a yeke wara ni na yâ ti ambeti ti e" },
+  "help_CONFIG": { "message": "Use custom config file (e.g. \"path/to/file\")" },
+  "help_INIT": { "message": "Sara.project-root.config.json5 ti bata apendere ye so mo lingbi ti sara" },
+  "help_FORCE": {
+    "message": "Tongana mo yeke sara kua na mbeni ye so ayeke na lege ni ape, mo yeke sara kua na mbeni ye so ayeke na lege ni ape."
+  },
   "help_HELP": { "message": "A yeke mû maboko na azo ti bâ ndo" },
   "help_VERSION": { "message": "Mbeni ye so a sara na yâ ti Bible" },
   "help_DOCS": { "message": "A yeke wara a-URL na yâ ti ambeti ti e" },
