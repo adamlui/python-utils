@@ -85,7 +85,7 @@ remove-json -n -k app_DESC,app_VER -d data  # no prompts
 
 ## Config file
 
-Run `remove-json init` to create `.remove-json.config.json5` in your project root to set default options.
+Run `remove-json -- init` to create `.remove-json.config.json5` in your project root to set default options.
 
 Example defaults:
 
@@ -93,7 +93,7 @@ Example defaults:
 {
   "json_dir": "_locales", // name of the folder containing JSON files
   "keys": "",             // keys to remove (e.g. "app_NAME,author")
-  "force": false,         // force overwrite existing config file when using init
+  "force": false,         // force overwrite existing config file when using --init
   "no_wizard": false      // skip interactive prompts during start-up
 }
 ```

@@ -90,7 +90,7 @@ translate-msgs -n -k app_DESC,err_NOT_FOUND -d _msgs -t es,hi  # no prompts
 
 ## Config file
 
-Run `translate-msgs init` to create `.translate-msgs.config.json5` in your project root to set default options.
+Run `translate-msgs --init` to create `.translate-msgs.config.json5` in your project root to set default options.
 
 Example defaults:
 
@@ -101,7 +101,7 @@ Example defaults:
   "keys": "",                // keys to translate (e.g. "app_DESC,err_NOT_FOUND")
   "exclude_langs": "",       // languages to exclude (e.g. "en,es")
   "exclude_keys": "",        // keys to ignore (e.g. "app_NAME,author")
-  "force": false,            // force overwrite existing config file when using init
+  "force": false,            // force overwrite existing config file when using --init
   "no_wizard": false         // skip interactive prompts during start-up
 }
 ```
