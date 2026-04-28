@@ -3,7 +3,7 @@ import os
 import project_markers
 
 def find_project_root(path=None, max_depth=9, markers=None):
-    current_dir = os.getcwd() if path is None else str(path)
+    current_dir = os.getcwd() if not path else str(path)
     if not os.path.exists(current_dir):
         raise ValueError('Path does not exist: %s' % os.path.abspath(current_dir))
     if not markers : markers = project_markers
