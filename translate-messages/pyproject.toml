@@ -19,7 +19,7 @@ license-files = [
 ]
 dependencies = [
     "colorama>=0.4.6,<1 ; platform_system == 'Windows'",
-    "find-project-root>=2.0.0,<3",
+    "find-project-root>=2.2.0,<3",
     "is-unicode-supported>=1.2.1,<2",
     "json5>=0.14.0,<1",
     "non-latin-locales>=1.0.5,<2",
@@ -93,7 +93,7 @@ translatemsgs = "translate_messages.cli.__main__:main"
 
 [project.optional-dependencies]
 dev = [
-    "find-project-root>=2.0.0,<3",
+    "find-project-root>=2.2.0,<3",
     "nox>=2026.4.10",
     "pre-commit>=4.5.1,<5",
     "remove-json-keys>=1.10.1,<2",
