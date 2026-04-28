@@ -6,7 +6,7 @@ from .lib import init, language, log, settings, wizard
 def main():
     cli = init.cli()
 
-    # Process early-exit args (e.g. init, --version)
+    # Process early-exit args (e.g. --help, --version)
     for ctrl_name, ctrl in vars(settings.controls).items():
         if getattr(ctrl, 'exit', False) and getattr(cli.config, ctrl_name, False):
             if hasattr(ctrl, 'handler') : ctrl.handler(cli)
