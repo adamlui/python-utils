@@ -64,9 +64,16 @@ jobs:
           git config --global user.email "auto-sync@kudoai.com"
           git config --global user.signingkey "$GPG_PRIVATE_ID"
 
-      - name: Sync <dataset>.json → adamlui/js-utils/<dataset>
+      - name: Escape commit message
         env:
           RAW_COMMIT_MSG: ${{ github.event.head_commit.message }}
+        run: |
+          dataset="${{ env.DATASET }}"
+          msg="${RAW_COMMIT_MSG:-Update $dataset.json}"
+          printf '%s\n' "$msg" > commit_msg.txt
+          echo "↞ [auto-sync from https://github.com/adamlui/python-utils/tree/main/$dataset]" >> commit_msg.txt
+
+      - name: Sync <dataset>.json → adamlui/js-utils/<dataset>
         run: |
           dataset="${{ env.DATASET }}"
           echo "Syncing $dataset.json"
@@ -76,11 +83,8 @@ jobs:
           dest_dir="${GITHUB_WORKSPACE}/adamlui/js-utils/$dataset"
           mkdir -p "$dest_dir"
           cp -f "$src_file" "$dest_dir/$dataset.json"
-          COMMIT_MSG="${RAW_COMMIT_MSG:-Update $dataset.json} ↞ [auto-sync from \
-            https://github.com/adamlui/python-utils/tree/main/$dataset]"
-          ESCAPED_MSG=$(printf '%q' "$COMMIT_MSG")
           cd "${GITHUB_WORKSPACE}/adamlui/js-utils"
           git add "$dataset/$dataset.json"
-          git commit -n -m "$ESCAPED_MSG" || echo "Nothing to commit"
+          git commit -n -F "${GITHUB_WORKSPACE}/commit_msg.txt" || echo "Nothing to commit"
           git pull --rebase
           git push
