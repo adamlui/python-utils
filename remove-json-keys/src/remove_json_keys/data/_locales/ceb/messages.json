@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Unsaturated Argument(s)" },
   "err_INVALID_KEY": { "message": "Dili balido nga yawi" },
   "err_FOUND_IN": { "message": "nakit-an sa" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Pagkapakyas sa pag-instalar sa sinultian nga sistema" },
   "help_JSON_DIR": { "message": "Ngalan sa folder nga adunay mga file nga JSON (default: \"_locales\")" },
   "help_KEYS": { "message": "Mga yawi nga tangtangon (pananglitan \"APP_NAME,AUTHOR\")" },
   "help_CONFIG": { "message": "Paggamit custom config file (pananglitan \"path/to/file\")" },

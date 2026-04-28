@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "గుర్తించబడని వాదన(లు)" },
   "err_INVALID_KEY": { "message": "చెల్లని కీ" },
   "err_FOUND_IN": { "message": "లో కనుగొనబడింది" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "సిస్టమ్ భాషను పొందడంలో విఫలమైంది" },
   "help_JSON_DIR": { "message": "JSON ఫైళ్ళను కలిగి ఉన్న ఫోల్డర్ పేరు (అప్రమేయం: \"_locales\")" },
   "help_KEYS": { "message": "తీసివేయడానికి కీలు (ఉదా. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "కస్టమ్ కాన్ఫిగరేషన్ ఫైల్ ‌ ను ఉపయోగించండి (ఉదా. \"PATH/TO/FILE\")" },

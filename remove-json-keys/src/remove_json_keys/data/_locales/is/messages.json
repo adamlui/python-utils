@@ -35,7 +35,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Óþekkt frumbreyta eða frumbreytur" },
   "err_INVALID_KEY": { "message": "Ógildur lykill" },
   "err_FOUND_IN": { "message": "fannst í" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Ekki tókst að sækja tungumál kerfisins" },
   "help_JSON_DIR": { "message": "Heiti möppunnar sem inniheldur JSON skrár (sjálfgefið: \"_locales\")" },
   "help_KEYS": { "message": "Lyklar til að fjarlægja (t.d. „App_NAME,author“)" },
   "help_CONFIG": { "message": "Notaðu sérsniðna stilliskrá (t.d. „path/to/file“)" },

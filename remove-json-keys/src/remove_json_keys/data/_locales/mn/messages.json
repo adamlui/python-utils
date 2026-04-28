@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Тодорхойгүй аргумент(ууд)" },
   "err_INVALID_KEY": { "message": "Түлхүүр үг буруу байна" },
   "err_FOUND_IN": { "message": "олдсон" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Системийн хэлийг авч чадсангүй" },
   "help_JSON_DIR": { "message": "JSON файл бүхий хавтасны нэр (анхдагч: \"_locales\")" },
   "help_KEYS": { "message": "Устгах түлхүүрүүд (жишээ нь \"app_NAME,Author\")" },
   "help_CONFIG": { "message": "Тохируулсан тохиргооны файлыг ашигла (жишээ нь: \"зам/уруу/файл\")" },

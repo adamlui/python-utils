@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Ókennilig argument(s)" },
   "err_INVALID_KEY": { "message": "Ógildugt lykil" },
   "err_FOUND_IN": { "message": "eg fann tað í" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Miseydnaðist at fáa skipanarmál" },
   "help_JSON_DIR": { "message": "Navnið á faldaranum, sum hevur JSON-fílar (standard: \"_locales\")" },
   "help_KEYS": { "message": "Lyklar at taka burtur (t.d. \"APP_NAME,AUTHOR\")" },
   "help_CONFIG": { "message": "Brúka tilskilað konfiguratiónsfíli (t.d. \"path/to/file\")" },

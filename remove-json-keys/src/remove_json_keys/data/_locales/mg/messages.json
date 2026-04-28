@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Tondriky tsy fantatra" },
   "err_INVALID_KEY": { "message": "Kitendry diso" },
   "err_FOUND_IN": { "message": "hita ao" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Tsy afaka naka ny fitenin'ny rafitra" },
   "help_JSON_DIR": { "message": "Anaran'ilay laha-tahiry misy ny rakitra JSON (tsotra: \"_locales\")" },
   "help_KEYS": { "message": "Kitendry hofafana (ohatra: \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Mampiasà raki-kirakira safidy (ohatra: \"path/to/file\")" },

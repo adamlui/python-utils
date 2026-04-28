@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "अपरिचित तर्क(हरू)" },
   "err_INVALID_KEY": { "message": "अमान्य कुञ्जी" },
   "err_FOUND_IN": { "message": "मा फेला पर्यो" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "प्रणाली भाषा ल्याउन असफल भयो" },
   "help_JSON_DIR": { "message": "JSON फाइलहरू भएको फोल्डरको नाम (पूर्वनिर्धारित: \"_ locales \")" },
   "help_KEYS": { "message": "हटाउने कुञ्जीहरू (जस्तै \"APP_NAME,AUTHOR \")" },
   "help_CONFIG": { "message": "अनुकूलन कन्फिग फाइल प्रयोग गर्नुहोस् (जस्तै \"PATH/TO/FILE \")" },

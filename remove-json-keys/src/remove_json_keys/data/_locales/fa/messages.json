@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "آرگومان(های) ناشناخته" },
   "err_INVALID_KEY": { "message": "کلید نامعتبر" },
   "err_FOUND_IN": { "message": "یافت شده در" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "دریافت زبان سیستم ناموفق بود" },
   "help_JSON_DIR": { "message": "نام پوشه‌ای که فایل‌های JSON در آن قرار دارند (پیش‌فرض: '_locales')" },
   "help_KEYS": { "message": "کلیدهایی برای حذف (مثلاً 'app_NAME,author')" },
   "help_CONFIG": { "message": "از فایل پیکربندی سفارشی استفاده کنید (مثلاً 'path/to/file')" },

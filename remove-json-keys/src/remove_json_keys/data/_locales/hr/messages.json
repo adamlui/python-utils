@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Neprepoznati argumenti" },
   "err_INVALID_KEY": { "message": "Nevažeći ključ" },
   "err_FOUND_IN": { "message": "pronađeno u" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Dohvaćanje jezika sustava nije uspjelo" },
   "help_JSON_DIR": { "message": "Naziv mape koja sadrži JSON datoteke (zadano: \"_locales\")" },
   "help_KEYS": { "message": "Tipke za uklanjanje (npr. \"App_NAME,Author\")" },
   "help_CONFIG": { "message": "Upotrijebite prilagođenu konfiguracijsku datoteku (npr. \"putanja/do/datoteke\")" },

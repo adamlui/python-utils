@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "無法識別的引數" },
   "err_INVALID_KEY": { "message": "金鑰無效" },
   "err_FOUND_IN": { "message": "在找到" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "無法擷取系統語言" },
   "help_JSON_DIR": { "message": "包含JSON檔案的資料夾名稱（預設值： \"_locales\" ）" },
   "help_KEYS": { "message": "要移除的金鑰（例如「APP_NAME, AUTHOR」）" },
   "help_CONFIG": { "message": "使用自定義配置文件（例如“path/to/file” ）" },

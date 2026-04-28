@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "அடையாளம் காணப்படாத வாதம்(கள்)" },
   "err_INVALID_KEY": { "message": "செல்லுபடியாகாத விசை" },
   "err_FOUND_IN": { "message": "இல் காணப்படுகிறது" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "கணினி மொழியைப் பெற முடியவில்லை" },
   "help_JSON_DIR": { "message": "JSON கோப்புகளைக் கொண்ட கோப்புறையின் பெயர் (இயல்புநிலை: \"_locales\")" },
   "help_KEYS": { "message": "அகற்றுவதற்கான விசைகள் (எ.கா. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "தனிப்பயன் உள்ளமைவு கோப்பைப் பயன்படுத்தவும் (எ.கா. \"பாதை/க்கு/கோப்பு\")" },

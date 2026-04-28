@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "ארגומנטים לא מזוהים" },
   "err_INVALID_KEY": { "message": "מפתח לא חוקי" },
   "err_FOUND_IN": { "message": "נמצא ב -" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "טעינת שפת המערכת נכשלה" },
   "help_JSON_DIR": { "message": "שם התיקייה המכילה קבצי JSON (ברירת מחדל: \"_ locales \")" },
   "help_KEYS": { "message": "מפתחות להסרה (למשל \"APP_NAME,AUTHOR \")" },
   "help_CONFIG": { "message": "השתמש בקובץ תצורה מותאם אישית (למשל \"נתיב/אל/קובץ \")" },

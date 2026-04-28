@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Tan olinmagan argument(lar)" },
   "err_INVALID_KEY": { "message": "Noto'g'ri kalit" },
   "err_FOUND_IN": { "message": "topilgan" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Tizim tilini olishda xatolik yuz berdi" },
   "help_JSON_DIR": { "message": "JSON fayllarini o'z ichiga olgan papka nomi (standart: '_locales')" },
   "help_KEYS": { "message": "Olib tashlash uchun tugmalar (masalan, 'app_NAME,author')" },
   "help_CONFIG": { "message": "Maxsus konfiguratsiya faylidan foydalaning (masalan, 'path/to/file')" },

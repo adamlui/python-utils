@@ -35,7 +35,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Confrontation (s)" },
   "err_INVALID_KEY": { "message": "Tasarut ur yeddi ara" },
   "err_FOUND_IN": { "message": "ufiɣ deg" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Idioma deg xinag - Ur yezmir ara" },
   "help_JSON_DIR": { "message": "Isem n ufaylu yesɛan ifuyla JSON (default: \"_locales\")" },
   "help_KEYS": { "message": "Tags relatifs à \"app_NAME,author\"" },
   "help_CONFIG": { "message": "Seqdec afaylu yettwakelsen (m. \"way/to/file\")" },

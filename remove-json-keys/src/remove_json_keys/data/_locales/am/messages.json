@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "ያልተገነዘቡ ክርክሮች(ዎች)" },
   "err_INVALID_KEY": { "message": "ልክ ያልሆነ ቁልፍ" },
   "err_FOUND_IN": { "message": "ውስጥ ተገኝቷል" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "የስርዓት ቋንቋን ማንሳት አልተሳካም" },
   "help_JSON_DIR": { "message": "JSON ፋይሎች የያዘ አቃፊ ስም (ነባሪ: \"_አካባቢያዊ\")" },
   "help_KEYS": { "message": "ለማስወገድ ቁልፎች (ለምሳሌ \"app_NAME,ደራሲ\")" },
   "help_CONFIG": { "message": "ብጁ ውቅር ፋይል ይጠቀሙ (ለምሳሌ \"መንገድ/ወደ/ፋይል\")" },

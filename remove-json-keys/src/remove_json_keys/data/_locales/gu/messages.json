@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "અજાણ્યા આર્ગુમેન્ટ(ઓ)" },
   "err_INVALID_KEY": { "message": "અમાન્ય કી" },
   "err_FOUND_IN": { "message": "માં મળી" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "સિસ્ટમ ભાષા મેળવવામાં નિષ્ફળ" },
   "help_JSON_DIR": { "message": "JSON ફાઇલો ધરાવતા ફોલ્ડરનું નામ (ડિફૉલ્ટ: \"_LOCALES\")" },
   "help_KEYS": { "message": "દૂર કરવા માટેની કીઓ (દા .ત. \"APP_NAME,AUTHOR\")" },
   "help_CONFIG": { "message": "કસ્ટમ રૂપરેખાંકન ફાઇલનો ઉપયોગ કરો (દા .ત. \"PATH/TO/FILE\")" },

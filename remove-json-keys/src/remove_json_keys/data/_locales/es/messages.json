@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Argumento(s) no reconocido (s)" },
   "err_INVALID_KEY": { "message": "Clave no válida" },
   "err_FOUND_IN": { "message": "encontrado en" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Error al recuperar el idioma del sistema" },
   "help_JSON_DIR": { "message": "Nombre de la carpeta que contiene los archivos JSON (predeterminado: \"_locales\")" },
   "help_KEYS": { "message": "Claves para eliminar (por ejemplo, \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Usar archivo de configuración personalizado (por ejemplo, \"path/to/file\")" },

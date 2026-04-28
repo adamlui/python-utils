@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Hujahyang tidak dikenali" },
   "err_INVALID_KEY": { "message": "Kunci tidak sah" },
   "err_FOUND_IN": { "message": "ditemui dalam" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Gagal mendapatkan bahasa sistem" },
   "help_JSON_DIR": { "message": "Nama folder yang mengandungi fail JSON (lalai: \"_locales\")" },
   "help_KEYS": { "message": "Kunci untuk membuang (cth. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Gunakan fail konfigurasi tersuai (cth. \"laluan/ke/fail\")" },

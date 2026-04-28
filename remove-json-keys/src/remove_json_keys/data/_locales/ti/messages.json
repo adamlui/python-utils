@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "ዘይተፈልጠ ክርክር(ታት)" },
   "err_INVALID_KEY": { "message": "ዘይቕቡል ቁልፍ" },
   "err_FOUND_IN": { "message": "ኣብ" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "ናይ ስርዓት ቋንቋ ዘይምፍላጥ" },
   "help_JSON_DIR": { "message": "ስም እቲ JSON ፋይላት ዝሓዘ ፎልደር (ነባሪ ፦ \"_locales\")" },
   "help_KEYS": { "message": "ናይ ምውጻእ ቁልፊታት (ምሳሌ \"app_name,author\")" },
   "help_CONFIG": { "message": "ብግልጺ እተዳለወ ፋይል (ምሳሌ \"መገዲ/ናብ/ፋይል\") ተጠቐም" },

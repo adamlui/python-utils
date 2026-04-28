@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "अपरिचित तर्क(तर्क)" },
   "err_INVALID_KEY": { "message": "अमान्य कुंजी" },
   "err_FOUND_IN": { "message": "में मिला" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "सिस्टम की भाषा लाने में विफल" },
   "help_JSON_DIR": { "message": "JSON फ़ाइलों वाले फ़ोल्डर का नाम (डिफ़ॉल्ट: \"_ LOCALES \")" },
   "help_KEYS": { "message": "हटाने के लिए कुंजी (जैसे \"APP_NAME,AUTHOR \")" },
   "help_CONFIG": { "message": "कस्टम कॉन्फ़िगरेशन फ़ाइल का उपयोग करें (जैसे \"PATH/TO/FILE \")" },

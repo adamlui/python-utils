@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Toktok i no stret (s)" },
   "err_INVALID_KEY": { "message": "Ol samting i no gat as bilong en" },
   "err_FOUND_IN": { "message": "ol i painim long" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Ol i no inap painim tokples bilong sistem" },
   "help_JSON_DIR": { "message": "Nem bilong dispela folda i gat JSON file (default: \"_locales\")" },
   "help_KEYS": { "message": "Tok bilong rausim (i.e. \"APP_NAME,AUTHOR\")" },
   "help_CONFIG": { "message": "Use custom config file (e.g. \"path/to/file\")" },

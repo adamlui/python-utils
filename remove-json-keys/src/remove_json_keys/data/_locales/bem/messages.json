@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Ukukanasakamana (ukukanasakamana)" },
   "err_INVALID_KEY": { "message": "Icifungulo cabula amaka" },
   "err_FOUND_IN": { "message": "sangeni mu" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Ukulele Tabs System Language Ukulele Tabs" },
   "help_JSON_DIR": { "message": "JSON file (default: \"_locales\")" },
   "help_KEYS": { "message": "Fela Anikulapo Kuti (e.g. \"App_Name,Author\")" },
   "help_CONFIG": { "message": "Use Custom Config file (e.g. \"Ukulele/Ukulele/Ukulele/Ukulele\")" },

@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "အသိအမှတ်မပြုသော အငြင်းပွားမှု(များ)" },
   "err_INVALID_KEY": { "message": "မှားယွင်းသော ကီး" },
   "err_FOUND_IN": { "message": "တွင် တွေ့ရှိခဲ့သည်" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "စနစ်ဘာသာစကား ရယူရန် မအောင်မြင်ပါ" },
   "help_JSON_DIR": { "message": "JSON ဖိုင်များပါဝင်သော ဖိုင်တွဲအမည် (ပုံမှန်- \"_loces\")" },
   "help_KEYS": { "message": "ဖယ်ရှားရန်သော့ချက်များ (ဥပမာ \"APP_NAME ၊စာရေးသူ\")" },
   "help_CONFIG": { "message": "စိတ်ကြိုက် config ဖိုင်ကိုသုံးပါ (ဥပမာ \"လမ်းကြောင်း/သို့/ဖိုင်\")" },

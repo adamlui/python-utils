@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Tanalmadyk jedel(lar)" },
   "err_INVALID_KEY": { "message": "Ýalan Açar" },
   "err_FOUND_IN": { "message": "men ony tapdym" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Sistem dilini tapmakda başarnyksyz" },
   "help_JSON_DIR": { "message": "JSON faýlyny içeren kagyzyň ady (default: \"_locales\")" },
   "help_KEYS": { "message": "Çykarylýan açarlar (myсалы, \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Adatly konfigurasiýa faýlyny ulan (myсалы, \"path/to/file\")" },

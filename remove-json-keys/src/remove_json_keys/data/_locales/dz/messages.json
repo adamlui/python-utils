@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "མ་ཤེས་པའི་རྩོད་གཞི་ (s)" },
   "err_INVALID_KEY": { "message": "མ་བཏུབ་པའི་ལྡེ་མིག་" },
   "err_FOUND_IN": { "message": "ཁོང་ནང་མཐོང་ཚུགས་" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "ལམ་ལུགས་ཀྱི་སྐད་ཡིག་འཚོལ་མ་ཚུགས།" },
   "help_JSON_DIR": { "message": "JSON ཡིག་སྣོད་ཚུ་ཡོད་པའི་ ཕོལཌར་གི་མིང་ (default: \"_locales\")" },
   "help_KEYS": { "message": "སེལ་འཐུ་འབད་ནིའི་ལྡེ་མིག་ཚུ་ (དཔེར་ན་ \"app_name, author\")" },
   "help_CONFIG": { "message": "རང་ལུགས་ཀྱི་སྒྲིག་གཞི་ཡིག་སྣོད་ལག་ལེན་འཐབ་ (དཔེར་ན་ \"path/to/file\")" },

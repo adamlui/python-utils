@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Impikiswano(iimpikiswano) engaziwayo" },
   "err_INVALID_KEY": { "message": "Isitshixo asichananga" },
   "err_FOUND_IN": { "message": "ifunyenwe kwi" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Ayiphumelelanga ukukhangela ulwimi lwenkqubo" },
   "help_JSON_DIR": { "message": "Igama lesiqulathi seefayili esiqulethe iifayile ze-JSON (ngokuzenzekelayo: \"_locales\")" },
   "help_KEYS": { "message": "Izitshixo zokususa (umz. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Sebenzisa ifayile yokumisela eqhelekileyo (umz. \"indlela/ukuya/ifayile\")" },

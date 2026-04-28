@@ -35,7 +35,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "認識できない引数" },
   "err_INVALID_KEY": { "message": "無効なキー" },
   "err_FOUND_IN": { "message": "で見つかりました" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "システム言語の取得に失敗しました" },
   "help_JSON_DIR": { "message": "JSONファイルを含むフォルダーの名前(デフォルト: \"_ locales \")" },
   "help_KEYS": { "message": "削除するキー(例: \"APP_NAME, AUTHOR \")" },
   "help_CONFIG": { "message": "カスタム設定ファイルを使用する(例: \"path/to/file \")" },

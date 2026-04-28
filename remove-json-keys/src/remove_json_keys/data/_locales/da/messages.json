@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Argument( er), der ikke genkendes" },
   "err_INVALID_KEY": { "message": "Ugyldig nøgle" },
   "err_FOUND_IN": { "message": "fundet i" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Kunne ikke hente systemsprog" },
   "help_JSON_DIR": { "message": "Navn på mappen, der indeholder JSON-filer (standard: \"_locales\")" },
   "help_KEYS": { "message": "Nøgler, der skal fjernes (f.eks. \"APP_NAME,author\")" },
   "help_CONFIG": { "message": "Brug brugerdefineret konfigurationsfil (f.eks. \"sti/til/fil\")" },

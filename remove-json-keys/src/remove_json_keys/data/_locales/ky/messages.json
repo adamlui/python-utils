@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Таанылбаган аргумент(лер)" },
   "err_INVALID_KEY": { "message": "Ачкыч жараксыз" },
   "err_FOUND_IN": { "message": "табылган" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Система тилин алуу ишке ашпады" },
   "help_JSON_DIR": { "message": "JSON файлдарын камтыган папканын аталышы (демейки: \"_locales\")" },
   "help_KEYS": { "message": "Өчүрүү үчүн баскычтар (мисалы, \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Өзгөчө конфигурация файлын колдонуу (мисалы, \"path/to/file\")" },

@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "נישט דערקענטע אַרגומענטן" },
   "err_INVALID_KEY": { "message": "אומגילטיקער שליסל" },
   "err_FOUND_IN": { "message": "געפֿונען אין" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "נישט געקענט ברענגען סיסטעם שפראך" },
   "help_JSON_DIR": { "message": "נאמען פון דער טעקע וואס אנטהאלט JSON טעקעס (דעפאָלט: '_locales')" },
   "help_KEYS": { "message": "שליסלען צו אַראָפּנעמען (למשל 'app_NAME,author')" },
   "help_CONFIG": { "message": "ניצן אייגענע קאָנפיגאַציע טעקע (למשל 'וועג/צו/טעקע')" },

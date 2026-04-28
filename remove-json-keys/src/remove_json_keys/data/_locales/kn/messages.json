@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "ಗುರುತಿಸಲಾಗದ ಆರ್ಗ್ಯುಮೆಂಟ್(ಗಳು)" },
   "err_INVALID_KEY": { "message": "ಅಮಾನ್ಯ ಕೀಲಿ" },
   "err_FOUND_IN": { "message": "ರಲ್ಲಿ ಕಂಡುಬಂದಿದೆ" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "ಸಿಸ್ಟಮ್ ಭಾಷೆಯನ್ನು ಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ" },
   "help_JSON_DIR": { "message": "JSON ಫೈಲ್‌ಗಳನ್ನು ಹೊಂದಿರುವ ಫೋಲ್ಡರ್‌ನ ಹೆಸರು (ಡೀಫಾಲ್ಟ್: \"_locales\")" },
   "help_KEYS": { "message": "ತೆಗೆದುಹಾಕಬೇಕಾದ ಕೀಲಿಗಳು (ಉದಾ. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "ಕಸ್ಟಮ್ ಕಾನ್ಫಿಗರ್ ಫೈಲ್ ಬಳಸಿ (ಉದಾ. \"PATH/TO/FILE\")" },

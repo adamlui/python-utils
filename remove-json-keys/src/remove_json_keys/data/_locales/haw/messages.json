@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Nā hoʻopaʻapaʻa i ʻike ʻole ʻia" },
   "err_INVALID_KEY": { "message": "Kī kūpono ʻole" },
   "err_FOUND_IN": { "message": "loaʻa ma" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "ʻAʻole i hiki ke kiʻi i ka ʻōlelo ʻōnaehana" },
   "help_JSON_DIR": { "message": "Inoa o ka waihona me nā faila JSON (paʻamau: '_locales')" },
   "help_KEYS": { "message": "Nā kī e wehe ai (e laʻa me 'app_NAME, mea kākau')" },
   "help_CONFIG": { "message": "E hoʻohana i ka faila hoʻonohonoho maʻamau (e laʻa me 'ala/i/faila')" },

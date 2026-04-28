@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Hoja zisizotambuliwa" },
   "err_INVALID_KEY": { "message": "Ufunguo si sahihi" },
   "err_FOUND_IN": { "message": "hupatikana katika" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Imeshindwa kupata lugha ya mfumo" },
   "help_JSON_DIR": { "message": "Jina la folda iliyo na faili za JSON (chaguo-msingi: \"_locales\")" },
   "help_KEYS": { "message": "Funguo za kuondoa (k.m. \"App_NAME,author\")" },
   "help_CONFIG": { "message": "Tumia faili mahususi ya usanidi (k.m. \"PATH/to/file\")" },

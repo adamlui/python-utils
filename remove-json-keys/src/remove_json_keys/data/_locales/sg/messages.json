@@ -35,7 +35,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Mbeni tënë so a hinga ni pëpe (s)" },
   "err_INVALID_KEY": { "message": "Mbeni clé so ayeke na lege ni ape" },
   "err_FOUND_IN": { "message": "a wara lo na yâ ti" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "A yeke nzoni e sara kua na kode ti kode ni ape" },
   "help_JSON_DIR": { "message": "Iri ti fichier so ayeke na yâ ni a yeke wara a-fichier JSON (default: \"_locales\")" },
   "help_KEYS": { "message": "Akpengba ye so a lingbi a zi ni (so ti tene \"app_NAME, author\")" },
   "help_CONFIG": { "message": "Use custom config file (e.g. \"path/to/file\")" },

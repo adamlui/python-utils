@@ -35,7 +35,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "S" },
   "err_INVALID_KEY": { "message": "Urufunguzo" },
   "err_FOUND_IN": { "message": "byabonetse in" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Kuri Sisitemu Ururimi" },
   "help_JSON_DIR": { "message": "Bya Ububiko Idosiye Mburabuzi" },
   "help_KEYS": { "message": "Kuri Gukuraho... G. Umwanditsi:" },
   "help_CONFIG": { "message": "Guhanga IDOSIYE G. Inzira Kuri IDOSIYE" },

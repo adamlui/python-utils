@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Нерозпізнані аргументи" },
   "err_INVALID_KEY": { "message": "Недійсний ключ" },
   "err_FOUND_IN": { "message": "знайдено в" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Не вдалося отримати мову системи" },
   "help_JSON_DIR": { "message": "Ім 'я папки, що містить файли JSON (за замовчуванням: \"_locales\")" },
   "help_KEYS": { "message": "Ключі, які потрібно видалити (наприклад, \"APP_NAME,author\")" },
   "help_CONFIG": { "message": "Використовуйте користувацький файл конфігурації (наприклад, \"шлях/до/файлу\")" },

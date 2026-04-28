@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Okända argument" },
   "err_INVALID_KEY": { "message": "Ogiltig nyckel" },
   "err_FOUND_IN": { "message": "hittades i" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Det gick inte att hämta systemspråk" },
   "help_JSON_DIR": { "message": "Namn på mappen som innehåller JSON-filer (standard: \"_locales\")" },
   "help_KEYS": { "message": "Nycklar att ta bort (t.ex. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Använd anpassad konfigurationsfil (t.ex. \"sökväg/till/fil\")" },

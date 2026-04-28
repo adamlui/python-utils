@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Nierozpoznane argumenty" },
   "err_INVALID_KEY": { "message": "Nieprawidłowy klucz" },
   "err_FOUND_IN": { "message": "znalezione w" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Nie udało się pobrać języka systemu" },
   "help_JSON_DIR": { "message": "Nazwa folderu zawierającego pliki JSON (domyślnie: „_locales”)" },
   "help_KEYS": { "message": "Klucze do usunięcia (np. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Użyj niestandardowego pliku konfiguracyjnego (np. \"ścieżka/do/plik\")" },

@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "ການໂຕ້ຖຽງທີ່ບໍ່ໄດ້ຮັບການຍອມຮັບ" },
   "err_INVALID_KEY": { "message": "ປຸ່ມບໍ່ຖືກຕ້ອງ" },
   "err_FOUND_IN": { "message": "ພົບເຫັນຢູ່ໃນ" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "ການຮວບຮວມພາສາລະບົບບໍ່ສຳເລັດ" },
   "help_JSON_DIR": { "message": "ຊື່ແຟ້ມທີ່ມີໄຟລ໌ JSON (ຄ່າເລີ່ມຕົ້ນ: \"_locales\")" },
   "help_KEYS": { "message": "ປຸ່ມທີ່ຈະເອົາອອກ (ຕົວຢ່າງ \"app_NAME,author\")" },
   "help_CONFIG": { "message": "ໃຊ້ໄຟລ໌ການຕັ້ງຄ່າທີ່ກຳນົດເອງ (ຕົວຢ່າງ \"path/to/file\")" },

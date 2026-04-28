@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "អាគុយម៉ង់ដែលមិនបានទទួលស្គាល់" },
   "err_INVALID_KEY": { "message": "ឃីមិនត្រឹមត្រូវ" },
   "err_FOUND_IN": { "message": "បានរកឃើញនៅក្នុង" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "បាន បរាជ័យ ក្នុង ការ ទៅ ប្រមូល យក ភាសា ប្រព័ន្ធ" },
   "help_JSON_DIR": { "message": "ឈ្មោះ ថត ដែល មាន ឯកសារ JSON (លំនាំដើម & # 160; ៖ \"_locales\")" },
   "help_KEYS": { "message": "គន្លឹះដើម្បីយកចេញ (ឧ. \"app_name,author\")" },
   "help_CONFIG": { "message": "ប្រើ ឯកសារ កំណត់ រចនាសម្ព័ន្ធ ផ្ទាល់ខ្លួន (ឧ. \"path/to/file\")" },

@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "وسيطة(وسيطات) غير معروفة" },
   "err_INVALID_KEY": { "message": "مفتاح غير صالح" },
   "err_FOUND_IN": { "message": "وجدت في" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "تعذر جلب لغة النظام" },
   "help_JSON_DIR": { "message": "اسم المجلد الذي يحتوي على ملفات JSON (الافتراضي: \"_ locales \")" },
   "help_KEYS": { "message": "مفاتيح الإزالة (على سبيل المثال \"APP_NAME، AUTHOR \")" },
   "help_CONFIG": { "message": "استخدم ملف تكوين مخصص (على سبيل المثال \"PATH/TO/FILE \")" },

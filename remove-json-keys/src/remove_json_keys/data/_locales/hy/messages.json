@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Չճանաչված փաստարկ(ներ)" },
   "err_INVALID_KEY": { "message": "Անվավեր բանալի" },
   "err_FOUND_IN": { "message": "գտնվել է" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Չհաջողվեց ստանալ համակարգի լեզուն" },
   "help_JSON_DIR": { "message": "JSON ֆայլեր պարունակող թղթապանակի անվանումը (default: \"_locales \")" },
   "help_KEYS": { "message": "Հեռացման բանալիներ (օրինակ ՝ «APP_NAME,author »)" },
   "help_CONFIG": { "message": "Օգտագործեք անհատականացված կոնֆիգուրացիոն ֆայլ (օրինակ ՝ «path/to/file »)" },

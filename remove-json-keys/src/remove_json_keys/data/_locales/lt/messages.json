@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Neatpažintas (-i) argumentas(-ai)" },
   "err_INVALID_KEY": { "message": "Neteisingas raktas" },
   "err_FOUND_IN": { "message": "rasta" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Nepavyko gauti sistemos kalbos" },
   "help_JSON_DIR": { "message": "Aplanko, kuriame yra JSON failai, pavadinimas (numatytasis: \"_locales\")" },
   "help_KEYS": { "message": "Raktai, kuriuos reikia pašalinti (pvz., „APP_NAME,author“)" },
   "help_CONFIG": { "message": "Naudoti pasirinktinį konfigūracijos failą (pvz., „kelias/į/failą“)" },

@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Niet-herkende argument(en)" },
   "err_INVALID_KEY": { "message": "Ongeldige sleutel" },
   "err_FOUND_IN": { "message": "gevonden in" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Kan systeemtaal niet ophalen" },
   "help_JSON_DIR": { "message": "Naam van de map met JSON-bestanden (standaard: \"_LOCALES\")" },
   "help_KEYS": { "message": "Te verwijderen sleutels (bijv. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Gebruik aangepast configuratiebestand (bijv. \"pad/naar/bestand\")" },

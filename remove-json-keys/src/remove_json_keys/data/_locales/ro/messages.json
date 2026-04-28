@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Argument(e) nerecunoscut (e)" },
   "err_INVALID_KEY": { "message": "Cheie nevalidă" },
   "err_FOUND_IN": { "message": "găsite în" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Preluarea limbii sistemului a eșuat" },
   "help_JSON_DIR": { "message": "Numele folderului care conține fișiere JSON (implicit: \"_locales\")" },
   "help_KEYS": { "message": "Taste de eliminat (de exemplu, „APP_NAME,Author”)" },
   "help_CONFIG": { "message": "Utilizați un fișier de configurare personalizat (de exemplu, „cale/către/fișier”)" },

@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "অজানা আর্গুমেন্ট(গুলি)" },
   "err_INVALID_KEY": { "message": "অকার্যকর কী" },
   "err_FOUND_IN": { "message": "পাওয়া গেছে" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "সিস্টেম ভাষা আনতে ব্যর্থ হয়েছে" },
   "help_JSON_DIR": { "message": "JSON ফাইল ধারণকারী ফোল্ডারের নাম (ডিফল্ট: \"_LOCALES\")" },
   "help_KEYS": { "message": "কী অপসারণ করতে হবে (যেমন \"APP_NAME,লেখক\")" },
   "help_CONFIG": { "message": "কাস্টম কনফিগারেশন ফাইল ব্যবহার করুন (যেমন \"PATH/TO/FILE\")" },

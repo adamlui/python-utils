@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Agiman ki pa rekonèt (yo)" },
   "err_INVALID_KEY": { "message": "Kle ki pa valab" },
   "err_FOUND_IN": { "message": "yo te jwenn nan/trouv" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Pa t 'jwenn langaj sistèm" },
   "help_JSON_DIR": { "message": "Non katab ki gen dosye JSON (defo: \"_locales\")" },
   "help_KEYS": { "message": "Kle yo retire (egzanp \"app_NAME,otè\")" },
   "help_CONFIG": { "message": "Sèvi ak dosye konfigirasyon koutim (egzanp \"chemen/nan/dosye\")" },

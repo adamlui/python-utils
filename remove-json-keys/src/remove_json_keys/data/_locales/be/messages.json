@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Непазнаны аргумент(ы)" },
   "err_INVALID_KEY": { "message": "Няправільны ключ" },
   "err_FOUND_IN": { "message": "знойдзена ў" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Немагчыма атрымаць мову сістэмы" },
   "help_JSON_DIR": { "message": "Імя тэчкі, якая змяшчае файлы JSON (па змаўчанні: \"_LOCALES\")" },
   "help_KEYS": { "message": "Клавішы для выдалення (напрыклад, \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Выкарыстоўваць уласны файл канфігурацыі (напрыклад, \"шлях/да/файла\")" },

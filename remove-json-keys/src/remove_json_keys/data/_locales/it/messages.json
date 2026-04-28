@@ -35,7 +35,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Argomento/i non riconosciuto/i" },
   "err_INVALID_KEY": { "message": "Chiave non valida" },
   "err_FOUND_IN": { "message": "trovato in" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Impossibile recuperare la lingua del sistema" },
   "help_JSON_DIR": { "message": "Nome della cartella contenente i file JSON (default: \"_locales\")" },
   "help_KEYS": { "message": "Tasti da rimuovere (ad es. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Utilizza un file di configurazione personalizzato (ad es. \"path/to/file\")" },

@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Tunnistamattomat argumentit" },
   "err_INVALID_KEY": { "message": "Virheellinen avain" },
   "err_FOUND_IN": { "message": "löytyi kohteesta" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Järjestelmän kielen noutaminen epäonnistui" },
   "help_JSON_DIR": { "message": "JSON-tiedostoja sisältävän kansion nimi (oletus: \"_locales\")" },
   "help_KEYS": { "message": "Poistettavat avaimet (esim. \"APP_NAME,author\")" },
   "help_CONFIG": { "message": "Käytä mukautettua asetustiedostoa (esim. \"polku/kohteeseen/tiedosto\")" },

@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Nerekonita argumento(j)" },
   "err_INVALID_KEY": { "message": "Nevalida ŝlosilo" },
   "err_FOUND_IN": { "message": "troviĝis en" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "@ info: whatsthis" },
   "help_JSON_DIR": { "message": "Name of the folder containing JSON files (default: \"_LOCALES\")" },
   "help_KEYS": { "message": "Ŝlosiloj forigendaj (ekz. \"app_name,author\")" },
   "help_CONFIG": { "message": "Uzi propran agordodosieron (ekz. \"path/to/file\")" },

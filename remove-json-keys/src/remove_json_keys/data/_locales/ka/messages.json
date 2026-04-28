@@ -35,7 +35,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Ამოუცნობი არგუმენტი(ები)" },
   "err_INVALID_KEY": { "message": "Არასწორი გასაღები" },
   "err_FOUND_IN": { "message": "ნაპოვნია" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Სისტემის ენის გამოთხოვის შეცდომა" },
   "help_JSON_DIR": { "message": "JSON ფაილების შემცველი საქაღალდის სახელი (ნაგულისხმევი: \"_locales\")" },
   "help_KEYS": { "message": "Წასაშლელი ღილაკები (მაგ., „app_NAME,author“)" },
   "help_CONFIG": { "message": "Გამოიყენეთ მორგებული კონფიგურაციის ფაილი (მაგ. \"path/to/file\")" },

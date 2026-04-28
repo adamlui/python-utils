@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Tundmatu argument(tundmatud argumendid)" },
   "err_INVALID_KEY": { "message": "Kehtetu võti" },
   "err_FOUND_IN": { "message": "leitud asukohast" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Süsteemi keele toomine nurjus" },
   "help_JSON_DIR": { "message": "JSON-faile sisaldava kausta nimi (vaikimisi: \"_locales\")" },
   "help_KEYS": { "message": "Eemaldatavad võtmed (nt „APP_NAME,author“)" },
   "help_CONFIG": { "message": "Kasuta kohandatud konfiguratsioonifaili (nt \"tee/asukohta/fail\")" },

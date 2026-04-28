@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Непрепознаени аргументи" },
   "err_INVALID_KEY": { "message": "Неважечко копче" },
   "err_FOUND_IN": { "message": "пронајдено во" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Не успеа да се преземе јазикот на системот" },
   "help_JSON_DIR": { "message": "Име на папката што содржи JSON датотеки (стандардно: \"_locales\")" },
   "help_KEYS": { "message": "Клучеви за отстранување (на пр. „app_NAME,author“)" },
   "help_CONFIG": { "message": "Користи сопствена конфигурациска датотека (на пр. „патека/до/датотека“)" },

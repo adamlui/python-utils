@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Tanınmayan bağımsız değişken(ler)" },
   "err_INVALID_KEY": { "message": "Geçersiz anahtar" },
   "err_FOUND_IN": { "message": "şurada bulundu:" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Sistem dili alınamadı" },
   "help_JSON_DIR": { "message": "JSON dosyalarını içeren klasörün adı (varsayılan: \"_locales \")" },
   "help_KEYS": { "message": "Kaldırılacak anahtarlar (ör. \"app_name,author \")" },
   "help_CONFIG": { "message": "Özel yapılandırma dosyası kullan (örn. \"path/to/file \")" },

@@ -35,7 +35,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Нераспознанные аргументы" },
   "err_INVALID_KEY": { "message": "Неверный ключ" },
   "err_FOUND_IN": { "message": "найдено в" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Не удалось получить системный язык" },
   "help_JSON_DIR": { "message": "Имя папки, содержащей файлы JSON (по умолчанию: \"_locales\")" },
   "help_KEYS": { "message": "Ключи для удаления (например, \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Используйте пользовательский файл конфигурации (например, \"путь/к/файлу\")" },

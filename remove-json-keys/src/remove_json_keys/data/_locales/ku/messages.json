@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Arguman(ên) nenaskirî" },
   "err_INVALID_KEY": { "message": "Kilîta nederbasdar" },
   "err_FOUND_IN": { "message": "hat dîtin li" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Nekarî zimanê sîstemê bistîne" },
   "help_JSON_DIR": { "message": "Navê peldanka ku pelên JSON tê de hene (xwerû: '_locales')" },
   "help_KEYS": { "message": "Bişkojkên ji bo rakirinê (mînak 'app_NAME,author')" },
   "help_CONFIG": { "message": "Pelê mîhengê xwerû bikar bîne (mînak 'path/to/file')" },

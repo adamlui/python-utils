@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "无法识别的参数" },
   "err_INVALID_KEY": { "message": "无效密钥" },
   "err_FOUND_IN": { "message": "在中找到" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "获取系统语言失败" },
   "help_JSON_DIR": { "message": "包含JSON文件的文件夹的名称（默认值： \"_locales\" ）" },
   "help_KEYS": { "message": "要删除的密钥（例如“APP_NAME, AUTHOR” ）" },
   "help_CONFIG": { "message": "使用自定义配置文件（例如“路径/到/文件” ）" },

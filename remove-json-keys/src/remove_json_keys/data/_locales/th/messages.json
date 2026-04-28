@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "อาร์กิวเมนต์ที่ไม่รู้จัก" },
   "err_INVALID_KEY": { "message": "คีย์ไม่ถูกต้อง" },
   "err_FOUND_IN": { "message": "พบใน" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "การดึงข้อมูลภาษาของระบบล้มเหลว" },
   "help_JSON_DIR": { "message": "ชื่อของโฟลเดอร์ที่มีไฟล์ JSON (ค่าเริ่มต้น: \"_ LOCALES \")" },
   "help_KEYS": { "message": "คีย์ที่จะลบ (เช่น \"APP_NAME, AUTHOR \")" },
   "help_CONFIG": { "message": "ใช้ไฟล์การกำหนดค่าที่กำหนดเอง (เช่น \"พาธ/ไปยัง/ไฟล์ \")" },

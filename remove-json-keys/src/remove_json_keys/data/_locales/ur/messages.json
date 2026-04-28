@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "غیر تسلیم شدہ دلیل(دلیلیں)" },
   "err_INVALID_KEY": { "message": "غلط کلید" },
   "err_FOUND_IN": { "message": "میں پایا گیا" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "سسٹم کی زبان حاصل کرنے میں ناکامی" },
   "help_JSON_DIR": { "message": "JSON فائلوں پر مشتمل فولڈر کا نام (ڈیفالٹ: \"_ LOCALES \")" },
   "help_KEYS": { "message": "ہٹانے کی چابیاں (مثلاً \"APP_NAME،AUTHOR \")" },
   "help_CONFIG": { "message": "کسٹم کنفیگ فائل استعمال کریں (مثلاً \"PATH/TO/FILE \")" },

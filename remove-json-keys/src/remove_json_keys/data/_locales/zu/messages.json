@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Impikiswano engaziwa" },
   "err_INVALID_KEY": { "message": "Ukhiye ongavumelekile" },
   "err_FOUND_IN": { "message": "itholakale ku-" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Yehlulekile ukulanda ulimi lwesistimu" },
   "help_JSON_DIR": { "message": "Igama lefolda equkethe amafayela e-JSON (okuzenzakalelayo: \"_locales\")" },
   "help_KEYS": { "message": "Izihluthulelo zokususa (isb. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Sebenzisa ifayela lokulungisa eliqokiwe (isb. \"indlela/kuya/kufayela\")" },

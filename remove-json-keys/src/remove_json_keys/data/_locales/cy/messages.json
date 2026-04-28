@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Ymresymiad(au) anhysbys" },
   "err_INVALID_KEY": { "message": "Allwedd annilys" },
   "err_FOUND_IN": { "message": "dod o hyd yn" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Methwyd cyrchu iaith y system" },
   "help_JSON_DIR": { "message": "Enw'r blygell sy'n cynnwys ffeiliau JSON (rhagosodedig: \"_ locales \")" },
   "help_KEYS": { "message": "Bysellau i'w tynnu (e.e. \"ap_name,awdur \")" },
   "help_CONFIG": { "message": "Defnyddio ffeil cyfluniad cyfaddas (e.e. \"llwybr/i/ffeil \")" },

@@ -35,7 +35,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "හඳුනා නොගත් තර්ක(ය)" },
   "err_INVALID_KEY": { "message": "වලංගු නොවන යතුරකි" },
   "err_FOUND_IN": { "message": "තුළ හමු විය" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "පද්ධති භාෂාව ලබා ගැනීමට අසමත් විය" },
   "help_JSON_DIR": { "message": "JSON ගොනු අඩංගු ෆෝල්ඩරයේ නම (පෙරනිමි: \"_loces\")" },
   "help_KEYS": { "message": "ඉවත් කිරීමට යතුරු (උදා: \"APP_NAME,කතුවරයා\")" },
   "help_CONFIG": { "message": "අභිරුචි සැකසුම් ගොනුව භාවිතා කරන්න (උදා: \"path/to/file\")" },

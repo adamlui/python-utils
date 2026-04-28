@@ -35,7 +35,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Nerozpoznané argumenty" },
   "err_INVALID_KEY": { "message": "Neplatný kľúč" },
   "err_FOUND_IN": { "message": "nájdené v" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Nepodarilo sa načítať systémový jazyk" },
   "help_JSON_DIR": { "message": "Názov priečinka obsahujúceho súbory JSON (predvolené: \"_locales\")" },
   "help_KEYS": { "message": "Klávesy na odstránenie (napr. „APP_NAME,author“)" },
   "help_CONFIG": { "message": "Použiť vlastný konfiguračný súbor (napr. „cesta/k/súboru“)" },

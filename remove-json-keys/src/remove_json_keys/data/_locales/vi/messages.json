@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "(Các) đối số không được công nhận" },
   "err_INVALID_KEY": { "message": "Khóa không hợp lệ" },
   "err_FOUND_IN": { "message": "tìm thấy trong" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Không thể tìm nạp ngôn ngữ hệ thống" },
   "help_JSON_DIR": { "message": "Tên của thư mục chứa các tệp JSON (mặc định: \"_locales\")" },
   "help_KEYS": { "message": "Các phím để xóa (ví dụ: \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Sử dụng tệp cấu hình tùy chỉnh (ví dụ: \"đường dẫn/đến/tệp\")" },

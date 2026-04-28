@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Arguments no reconeguts" },
   "err_INVALID_KEY": { "message": "La clau no és vàlida" },
   "err_FOUND_IN": { "message": "trobat a" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "No s'ha pogut obtenir l'idioma del sistema" },
   "help_JSON_DIR": { "message": "Nom de la carpeta que conté els fitxers JSON (per defecte: \"_locales\")" },
   "help_KEYS": { "message": "Claus per eliminar (per exemple, «app_NAME,author»)" },
   "help_CONFIG": { "message": "Utilitza un fitxer de configuració personalitzat (per exemple, \"path/to/file\")" },

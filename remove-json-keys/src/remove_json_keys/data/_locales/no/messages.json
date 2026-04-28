@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Ukjent(e) argument(er)" },
   "err_INVALID_KEY": { "message": "Ugyldig nøkkel" },
   "err_FOUND_IN": { "message": "funnet i" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Klarte ikke å hente systemspråket" },
   "help_JSON_DIR": { "message": "Navnet på mappen som inneholder JSON-filer (standard: '_locales')" },
   "help_KEYS": { "message": "Nøkler som skal fjernes (f.eks. «app_NAME,author»)" },
   "help_CONFIG": { "message": "Bruk en tilpasset konfigurasjonsfil (f.eks. «sti/til/fil»)" },

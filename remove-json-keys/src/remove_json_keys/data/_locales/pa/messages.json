@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "ਅਣਜਾਣ ਆਰਗੂਮੈਂਟ" },
   "err_INVALID_KEY": { "message": "ਗਲਤ ਕੁੰਜੀ" },
   "err_FOUND_IN": { "message": "ਵਿਚ ਪਾਇਆ ਗਿਆ ਹੈ" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "ਸਿਸਟਮ ਭਾਸ਼ਾ ਲੈਣ ਲਈ ਫੇਲ੍ਹ ਹੈ" },
   "help_JSON_DIR": { "message": "JSON ਫਾਇਲਾਂ ਰੱਖਣ ਵਾਲੇ ਫੋਲਡਰ ਦਾ ਨਾਂ (ਮੂਲਃ \"_loces\")" },
   "help_KEYS": { "message": "ਹਟਾਉਣ ਲਈ ਕੁੰਜੀਆਂ (ਉਦਾਹਰਨ ਲਈ \"APP_NAME,ਲੇਖਕ\")" },
   "help_CONFIG": { "message": "ਪਸੰਦੀਦਾ ਸੰਰਚਨਾ ਫਾਇਲ ਵਰਤੋਂ (ਉਦਾਹਰਨ ਲਈ \"path/to/file\")" },

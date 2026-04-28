@@ -35,7 +35,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Neprepoznani argumenti" },
   "err_INVALID_KEY": { "message": "Neveljaven ključ" },
   "err_FOUND_IN": { "message": "najdeno v" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Sistemskega jezika ni bilo mogoče pridobiti" },
   "help_JSON_DIR": { "message": "Ime mape, ki vsebuje datoteke JSON (privzeto: \"_locales\")" },
   "help_KEYS": { "message": "Tipke za odstranitev (npr. »App_NAME,avtor«)" },
   "help_CONFIG": { "message": "Uporabite konfiguracijsko datoteko po meri (npr. \"pot/do/datoteke\")" },

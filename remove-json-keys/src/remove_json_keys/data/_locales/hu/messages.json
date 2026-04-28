@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Ismeretlen argumentum(ok)" },
   "err_INVALID_KEY": { "message": "Érvénytelen kulcs" },
   "err_FOUND_IN": { "message": "megtalálható itt:" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Nem sikerült lekérni a rendszer nyelvét" },
   "help_JSON_DIR": { "message": "A JSON-fájlokat tartalmazó mappa neve (alapértelmezett: \"_locales\")" },
   "help_KEYS": { "message": "Eltávolítandó kulcsok (pl. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Egyéni konfigurációs fájl használata (pl. \"elérési út/to/fájl\")" },

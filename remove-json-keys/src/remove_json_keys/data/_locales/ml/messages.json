@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "തിരിച്ചറിയാത്ത ആർഗ്യുമെന്റ്(കൾ)" },
   "err_INVALID_KEY": { "message": "അസാധുവായ കീ" },
   "err_FOUND_IN": { "message": "ൽ കണ്ടെത്തി" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "സിസ്റ്റം ഭാഷ ലഭ്യമാക്കുന്നതിൽ പരാജയപ്പെട്ടു" },
   "help_JSON_DIR": { "message": "JSON ഫയലുകൾ അടങ്ങിയ ഫോൾഡറിന്റെ പേര് (സ്ഥിരസ്ഥിതി: \"_ലോകങ്ങൾ \")" },
   "help_KEYS": { "message": "നീക്കംചെയ്യാനുള്ള കീകൾ (ഉദാ. \"APP_NAME,AUTHOR\")" },
   "help_CONFIG": { "message": "ഇഷ്ടാനുസൃത കോൺഫിഗറേഷൻ ഫയൽ ഉപയോഗിക്കുക (ഉദാ. \"പാത്ത്/ടു/ഫയൽ\")" },

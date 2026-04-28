@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Nicht erkannte (s) Argument(e)" },
   "err_INVALID_KEY": { "message": "Ungültiger Schlüssel" },
   "err_FOUND_IN": { "message": "gefunden in" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Systemsprache konnte nicht abgerufen werden" },
   "help_JSON_DIR": { "message": "Name des Ordners, der JSON-Dateien enthält (Standard: \"_locales\")" },
   "help_KEYS": { "message": "Zu entfernende Schlüssel (z. B. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Benutzerdefinierte Konfigurationsdatei verwenden (z. B. „Pfad/zu/Datei“)" },

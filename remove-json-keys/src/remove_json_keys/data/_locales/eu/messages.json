@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Argumentu ezezagunak" },
   "err_INVALID_KEY": { "message": "Giltza baliogabea" },
   "err_FOUND_IN": { "message": "aurkitua" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Sistemaren hizkuntza lortzea huts egin da" },
   "help_JSON_DIR": { "message": "JSON fitxategiak dituen karpetaren izena (lehenetsia: '_locales')" },
   "help_KEYS": { "message": "Kendu beharreko gakoak (adibidez, 'aplikazioaren_IZENA, egilea')" },
   "help_CONFIG": { "message": "Erabili konfigurazio fitxategi pertsonalizatua (adibidez, 'bidea/fitxategira')" },

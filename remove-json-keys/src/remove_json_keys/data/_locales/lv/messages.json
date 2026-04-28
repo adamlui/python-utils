@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Neatpazīti argumenti" },
   "err_INVALID_KEY": { "message": "Nederīga atslēga" },
   "err_FOUND_IN": { "message": "atrasts" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Neizdevās iegūt sistēmas valodu" },
   "help_JSON_DIR": { "message": "Mapes nosaukums, kas satur JSON failus (noklusējums: \"_locales\")" },
   "help_KEYS": { "message": "Noņemamie taustiņi (piemēram, \"APP_NAME,autors\")" },
   "help_CONFIG": { "message": "Izmantojiet pielāgotu konfigurācijas failu (piemēram, \"ceļš/uz/failu\")" },

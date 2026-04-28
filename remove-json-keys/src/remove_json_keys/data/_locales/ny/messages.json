@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Unrecognized kutsutsana(s)" },
   "err_INVALID_KEY": { "message": "Chinsinsi chopanda pake" },
   "err_FOUND_IN": { "message": "anapeza mu" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Analephera kutenga dongosolo chinenero" },
   "help_JSON_DIR": { "message": "Dzina la chikwatu chomwe chili ndi mafayilo a JSON (kusakhulupirika: \"_locales\")" },
   "help_KEYS": { "message": "Makiyi kuchotsa (mwachitsanzo \"APP_NAME,Wolemba\")" },
   "help_CONFIG": { "message": "Gwiritsani ntchito fayilo ya config (mwachitsanzo \"njira/kupita/fayilo\")" },

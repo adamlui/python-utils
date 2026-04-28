@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "ناپیژندلی ارزښتمنۍ" },
   "err_INVALID_KEY": { "message": "ناباوري کيلی" },
   "err_FOUND_IN": { "message": "وموندل شو" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "د سیسټم په ژبې ترلاسه کولو کې پاتې راغلی" },
   "help_JSON_DIR": { "message": "د هغه فولډر نوم چې د JSON دوتنې لري (تلواله: \"_ locales \")" },
   "help_KEYS": { "message": "د لرې کولو لپاره کلیدونه (د بیلګې په توګه \"app_NAME،لیکوال \")" },
   "help_CONFIG": { "message": "خپلخوښه سازونې دوتنه وکاروئ (د بېلګې په توګه \"path/to/file \")" },

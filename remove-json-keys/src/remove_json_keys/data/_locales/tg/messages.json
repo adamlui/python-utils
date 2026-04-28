@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Аргументи ношинохта" },
   "err_INVALID_KEY": { "message": "Калиди нодуруст" },
   "err_FOUND_IN": { "message": "mahanap sa" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Натавонистам забони системаро гирам" },
   "help_JSON_DIR": { "message": "Номи ҷузвдоне, ки дорои файлҳои JSON мебошад (пешфарз: \"_locales\")" },
   "help_KEYS": { "message": "Mga key upang tanggalin (hal. \"APP_NAME,author\")" },
   "help_CONFIG": { "message": "Gamitin ang pasadyang file ng config (hal. \"path/to/file\")" },

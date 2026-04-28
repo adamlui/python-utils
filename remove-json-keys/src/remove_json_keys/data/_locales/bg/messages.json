@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Неразпознати аргументи" },
   "err_INVALID_KEY": { "message": "Невалиден ключ" },
   "err_FOUND_IN": { "message": "намерено в" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Неуспешно извличане на системния език" },
   "help_JSON_DIR": { "message": "Име на папката, съдържаща JSON файлове (по подразбиране: \"_locales \")" },
   "help_KEYS": { "message": "Ключове за премахване (напр. „APP_NAME, AUTHOR “)" },
   "help_CONFIG": { "message": "Използване на персонализиран конфигурационен файл (напр. „път/към/файл “)" },

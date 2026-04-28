@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "인식할 수 없는 인수" },
   "err_INVALID_KEY": { "message": "유효하지 않은 키" },
   "err_FOUND_IN": { "message": "에서 찾음" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "시스템 언어를 가져오지 못했습니다" },
   "help_JSON_DIR": { "message": "JSON 파일이 포함된 폴더의 이름 (기본값: \"_locales\")" },
   "help_KEYS": { "message": "삭제할 키 (예: \"app_NAME, author\")" },
   "help_CONFIG": { "message": "사용자 지정 구성 파일 사용 (예: \"path/to/file\")" },

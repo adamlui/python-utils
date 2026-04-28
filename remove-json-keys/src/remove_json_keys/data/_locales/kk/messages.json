@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Танылмаған дәлел(дер) лер" },
   "err_INVALID_KEY": { "message": "Жарамсыз кілт" },
   "err_FOUND_IN": { "message": "табылды" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Жүйе тілін алу сәтсіз аяқталды" },
   "help_JSON_DIR": { "message": "JSON файлдары бар қалтаның атауы (әдепкі: \"_locales\")" },
   "help_KEYS": { "message": "Жою пернелері (мысалы, «app_NAME,author»)" },
   "help_CONFIG": { "message": "Теңшелетін конфигурация файлын пайдаланыңыз (мысалы, \"PATH/To/File\")" },

@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Argument (i) mhux rikonoxxut (i)" },
   "err_INVALID_KEY": { "message": "Ċavetta mhux tajba" },
   "err_FOUND_IN": { "message": "instab fi" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Ma rnexxilniex niksbu l-lingwa tas-sistema" },
   "help_JSON_DIR": { "message": "Isem il-folder li fih il-fajls JSON (prestabbilit: \"_locales\")" },
   "help_KEYS": { "message": "Ċwievet li għandek tneħħi (eż. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Uża fajl tal-konfig personalizzat (eż. \"mogħdija/sa/fajl\")" },

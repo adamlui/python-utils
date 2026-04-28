@@ -36,7 +36,6 @@
   "err_UNRECOGNIZED_ARGS": { "message": "Παράμετροι που δεν αναγνωρίζονται" },
   "err_INVALID_KEY": { "message": "Μη έγκυρο κλειδί" },
   "err_FOUND_IN": { "message": "βρέθηκε στο" },
-  "err_FAILED_TO_FETCH_SYS_LANG": { "message": "Αποτυχία λήψης γλώσσας συστήματος" },
   "help_JSON_DIR": { "message": "Όνομα του φακέλου που περιέχει αρχεία JSON (προεπιλογή: \"_locales\")" },
   "help_KEYS": { "message": "Κλειδιά για αφαίρεση (π.χ. \"app_NAME,author\")" },
   "help_CONFIG": { "message": "Χρήση προσαρμοσμένου αρχείου διαμόρφωσης (π.χ. \"Path/to/file\")" },
