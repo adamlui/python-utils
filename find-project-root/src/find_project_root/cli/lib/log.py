@@ -22,6 +22,8 @@ def error(msg: str, *args, **kwargs) -> None : print(f'\n{colors.br}ERROR: {msg.
 def help_cmd(cli: sn) -> None : info(f"{cli.msgs.log_TYPE} '{cli.cmds[0]} --help' {cli.msgs.log_FOR_AVAIL_OPTIONS}\n")
 def info(msg: str, *args, end: str = '', **kwargs) -> None:
     print(f'\n{colors.by}{msg.format(*args, **kwargs)}{colors.nc}', end=end)
+def init_cmd(cli: sn) -> None:
+    info(f"{cli.msgs.log_TYPE} '{cli.cmds[0]} --init' {cli.msgs.log_TO_CREATE_DEFAULT_CONFIG}\n")
 def line_break() : print()
 def overwrite_print(msg: str, *args, **kwargs) -> None:
     sys.stdout.write('\r' + msg.format(*args, **kwargs).ljust(terminal_width)[:terminal_width])

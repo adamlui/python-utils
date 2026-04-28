@@ -1,0 +1,5 @@
+{
+  "path": "",     // starting dir to search for project root (default: CWD)
+  "max_depth": 9, // max levels to traverse up
+  "markers": ""   // custom marker files to look for
+}

@@ -2,7 +2,7 @@ import sys
 from types import SimpleNamespace as sn
 from typing import Optional
 
-from . import log, string, url
+from . import init, log, string, url
 
 controls = sn(
     path=sn(
@@ -11,6 +11,12 @@ controls = sn(
         args=['-d', '--max-depth'], action='store', type=int, default_val=9, metavar='N'),
     markers=sn(
         args=['-m', '--markers'], metavar='MARKER', type=str, parser='csv'),
+    config=sn(
+        args=['--config'], type=str),
+    init=sn(
+        args=['-i', '--init'],
+        action='store_true', subcmd='true', exit=True, handler=lambda cli: init.config_file(cli)
+    ),
     help=sn(
         args=['-h', '--help'], action='help'),
     version=sn(
@@ -48,6 +54,28 @@ def load(cli: sn) -> None:
     for ctrl_key, ctrl in vars(controls).items():
         if ctrl_key.startswith('legacy_') : continue
         if not hasattr(ctrl, 'help') : ctrl.help = getattr(cli.msgs, f'help_{ctrl_key.upper()}')
+
+    # Load from config file
+    init.config_filepath(cli)
+    if getattr(cli, 'config_filepath', None):
+        config_data = data.json.read(cli.config_filepath)
+        for config_key in config_data:
+            if not get_canonical_key(config_key):
+                log.cmd_docs_url_exit(cli,
+                    f'{cli.msgs.err_INVALID_KEY} {config_key!r} {cli.msgs.err_FOUND_IN}'
+                    f'\n{log.colors.gry}{cli.config_filepath}',
+                    cmd='init')
+        for config_key, config_val in config_data.items():
+            canonical_key = get_canonical_key(config_key)
+            if canonical_key and config_key != canonical_key: # re-map config_key -> canonical_key
+                log.warn_legacy_option(cli, config_key, source='config')
+                if is_neg_key(config_key) != is_neg_key(canonical_key):
+                    config_val = not config_val # flip bool val of opposite keys first
+                config_key = canonical_key
+            setattr(cli.config, config_key, config_val)
+        log.debug(f'Config file loaded! {log.colors.dg}{len(config_data)} keys processed', cli)
+    else:
+        log.debug('No config file found.')
 
     # Parse CLI args (overriding config file loads)
     argp = argparse.ArgumentParser(description=cli.description, add_help=False)

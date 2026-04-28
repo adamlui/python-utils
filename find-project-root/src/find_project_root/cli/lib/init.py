@@ -3,7 +3,7 @@ from types import SimpleNamespace as sn
 
 from sys_lang import get_sys_lang
 
-from . import data
+from . import data, log
 
 def cli() -> sn:
     from . import env, language, settings
@@ -12,3 +12,62 @@ def cli() -> sn:
         language.generate_random_lang(excludes=['en']) if env.is_debug_mode() else get_sys_lang())
     settings.load(cli)
     return cli
+
+def config_file(cli: sn) -> None: # for --init
+
+    # Init target_path
+    import find_project_root
+    project_root = find_project_root(max_depth=20) # type: ignore
+    if project_root:
+        config_dir, in_project_root = Path(project_root), True
+    else:
+        log.warn(cli.msgs.warn_NO_PROJECT_ROOT_FOUND)
+        user_resp = input(f'{cli.msgs.prompt_INIT_CONFIG_HERE_ANYWAY}? (y/N): ').strip().lower()
+        if not user_resp.startswith('y') : return
+        config_dir, in_project_root = Path.cwd(), False
+    target_path = config_dir / f'.{ cli.short_name or cli.name }.config.json5'
+
+    # Handle existing file
+    if target_path.exists():
+        if cli.config.force:
+            log.info(f'{cli.msgs.log_OVERWRITING_CONFIG_AT} {target_path}...\n')
+        else:
+            log.warn(f'{cli.msgs.warn_CONFIG_EXISTS_AT} {target_path}. {cli.msgs.log_SKIPPING} init...')
+            log.tip(f'{cli.msgs.tip_PASS_FORCE_TO_OVERWRITE}.')
+            return
+
+    # Fetch/write from jsDelivr
+    if not getattr(config_file, 'cached_default', None):
+        from . import jsdelivr, url
+        jsd_url = f'{jsdelivr.create_pkg_ver_url(cli)}/{target_path.name}'
+        log.debug(f'{log.colors.bw}{jsd_url}')
+        config_file.cached_default = url.get(jsd_url)
+    data.file.write(str(target_path), config_file.cached_default)
+    log.success(f'{cli.msgs.log_DEFAULT_CONFIG_CREATED_AT} {target_path}')
+    if not in_project_root : log.tip(f'{cli.msgs.tip_MOVE_CONFIG_TO_ROOT}.')
+
+def config_filepath(cli: sn) -> None: # for settings.load()
+
+    # Check --config <path>
+    if getattr(cli.config, 'config', ''):
+        cli.config_filepath = Path(cli.config.config).resolve()
+        if cli.config_filepath.exists():
+            log.debug(f'Config file found: {cli.config_filepath}')
+            return
+        else:
+            log.warn(f'{cli.msgs.warn_SPECIFIED_CONFIG} {cli.config_filepath} {cli.msgs.warn_NOT_FOUND}')
+
+    # Search upwards
+    possible_config_filenames = [
+        f'{prefix}{name}.config.json{suffix}'
+            for prefix in ['.', ''] for name in [cli.short_name, cli.name] for suffix in ['5', '', 'c']
+    ]
+    current_dir = Path.cwd().resolve()
+    for parent in [current_dir, *current_dir.parents]:
+        for filename in possible_config_filenames:
+            possible_config_filepath = parent / filename
+            if possible_config_filepath.exists():
+                cli.config_filepath = possible_config_filepath
+                return
+
+    cli.config_filepath = None

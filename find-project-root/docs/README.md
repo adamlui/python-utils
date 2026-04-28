@@ -130,6 +130,24 @@ find-project-root --path=src --max-depth=5 --markers=.manifest.json
 
 <hr>
 
+## Config file
+
+Run `find-project-root --init` to create `.project-root.config.json5` in your project root to set default options.
+
+Example defaults:
+
+```json5
+{
+  "path": "",     // starting dir to search for project root (default: CWD)
+  "max_depth": 9, // max levels to traverse up
+  "markers": ""   // custom marker files to look for
+}
+```
+
+_Note: CLI arguments always override config file._
+
+<hr>
+
 
 ## MIT License
 
