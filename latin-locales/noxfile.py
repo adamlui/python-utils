@@ -31,37 +31,26 @@ def lint_all(session): # all project files
 
 bump_cmd_args = (py_cmd, '-m', 'utils.bump')
 @session
-def bump_patch(session, no_push=True):
+def bump_patch(session, no_push=False):
     cmd_args = bump_cmd_args + ('--patch',)
     if no_push : cmd_args += ('--no-push',)
     session.run(*cmd_args, *session.posargs)
 @session
-def bump_minor(session, no_push=True):
+def bump_minor(session, no_push=False):
     cmd_args = bump_cmd_args + ('--minor',)
     if no_push : cmd_args += ('--no-push',)
     session.run(*cmd_args, *session.posargs)
 @session
-def bump_feat(session, no_push=True):
+def bump_feat(session, no_push=False):
     bump_minor(session, no_push)
 @session
-def bump_major(session, no_push=True):
+def bump_major(session, no_push=False):
     cmd_args = bump_cmd_args + ('--major',)
     if no_push : cmd_args += ('--no-push',)
     session.run(*cmd_args, *session.posargs)
 
 @session
 def build(session) : clean(session) ; session.run(py_cmd, '-m', 'build') ; print('Build complete!')
-@session
-def publish(session) : session.run('bash', 'utils/publish.sh', *session.posargs)
-
-@session
-def deploy_patch(session) : bump_patch(session, no_push=False) ; build(session) ; publish(session)
-@session
-def deploy_minor(session) : bump_minor(session, no_push=False) ; build(session) ; publish(session)
-@session
-def deploy_feat(session) : deploy_minor(session)
-@session
-def deploy_major(session) : bump_major(session, no_push=False) ; build(session) ; publish(session)
 
 @session
 def clean(session, *args) : session.run(py_cmd, '-m', 'utils.clean', *args)
