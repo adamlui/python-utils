@@ -11,7 +11,10 @@ pkg.name = pkg.dir.replace('-', '_')
 def session(func) : return nox.session(venv_backend='none', name=func.__name__.replace('_', '-'))(func)
 
 @session
-def dev(session) : session.run('pip', 'install', '-e', '.') ; session.run(pkg.dir, '--help', *session.posargs)
+def dev(session):
+    session.run('uv', 'sync')
+    session.run('pip', 'install', '-e', '.')
+    session.run(pkg.dir, '--help', *session.posargs)
 @session
 def debug(session) : session.run(py_cmd, '-m', pkg.name, '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
 

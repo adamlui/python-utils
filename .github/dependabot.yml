@@ -30,6 +30,28 @@ updates:
     groups:
       prod-dependencies:
         dependency-type: production
+
+  - package-ecosystem: uv
+    directories:
+      - /ai-personas
+      - /computer-languages
+      - /data-languages
+      - /find-project-root
+      - /get-min-py
+      - /is-legacy-terminal
+      - /is-unicode-supported
+      - /latin-locales
+      - /markup-languages
+      - /non-latin-locales
+      - /programming-languages
+      - /project-markers
+      - /prose-languages
+      - /remove-json-keys
+      - /sys-lang
+      - /translate-messages
+    schedule:
+      interval: daily
+    groups:
       dev-dependencies:
         dependency-type: development
     versioning-strategy: increase
