@@ -23,7 +23,7 @@ dependencies = [
     "json5>=0.14.0,<1",
     "non-latin-locales>=1.0.5,<2",
 ]
-requires-python = ">=3.8,<4"
+requires-python = ">=3.8"
 keywords = [
     "api",
     "cli",

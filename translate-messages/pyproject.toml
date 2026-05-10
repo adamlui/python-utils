@@ -26,7 +26,7 @@ dependencies = [
     "sys-lang>=1.0.1,<2",
     "translate>=3.8.0,<4",
 ]
-requires-python = ">=3.8,<4"
+requires-python = ">=3.8"
 keywords = [
     "chrome",
     "cli",
