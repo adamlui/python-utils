@@ -17,7 +17,7 @@ jobs:
           TAG="${{ github.event.release.tag_name }}"
           PROJECT="${TAG%-*}"
           echo "PROJECT=$PROJECT" >> $GITHUB_ENV
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
       - uses: actions/setup-python@v6.2.0
         with:
           python-version: 3.x
