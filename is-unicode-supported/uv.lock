@@ -13,15 +13,15 @@ wheels = [
 
 [[package]]
 name = "blessed"
-version = "1.44.0"
+version = "1.45.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jinxed" },
     { name = "wcwidth" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7b/73/445c4ef32565d2f5af49f18c4163a32850c9328774ee0af74ed081d4ba15/blessed-1.44.0.tar.gz", hash = "sha256:d3b5037f0143eb7c80b2000be5bcdf86161af68aed231b91deadbce4e7379785", size = 14031337, upload-time = "2026-05-24T02:06:30.832Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/96/5b/ef31e677f49cce9699070c4c1a2f0ccc297d24f88aab6dfd1f5b4b17d92e/blessed-1.45.0.tar.gz", hash = "sha256:d12abbbcfb5fdd80bac33ea7e22f1a163ff462f5c05f312159e04c5fee460c72", size = 14032801, upload-time = "2026-06-29T18:47:09.661Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7e/c3/e8effb323af40a5d8e85ab557da2f0475f12a31f3266f28d91d0bf406963/blessed-1.44.0-py3-none-any.whl", hash = "sha256:e1d2ed93d3d90d0a1494a8b134d188c83fb89ae25590af638b921e8c1c8fa223", size = 130232, upload-time = "2026-05-24T02:06:26.458Z" },
+    { url = "https://files.pythonhosted.org/packages/75/50/23322f1484a90caec587d6d3734f9ef3a445b45104148201524a4ff70adb/blessed-1.45.0-py3-none-any.whl", hash = "sha256:afcc23a07e965534dd4669951d2397397dbece46e18998eee9d24d40ac503765", size = 130447, upload-time = "2026-06-29T18:47:07.373Z" },
 ]
 
 [[package]]
@@ -119,9 +119,9 @@ wheels = [
 
 [[package]]
 name = "wcwidth"
-version = "0.7.0"
+version = "0.8.2"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/2c/ee/afaf0f85a9a18fe47a67f1e4422ed6cf1fe642f0ae0a2f81166231303c52/wcwidth-0.7.0.tar.gz", hash = "sha256:90e3a7ea092341c44b99562e75d09e4d5160fe7a3974c6fb842a101a95e7eed0", size = 182132, upload-time = "2026-05-02T16:04:12.653Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/34/74/c6428f875774288bec1396f5bfcbc2d925700a4dad61727fd5f2b12f249d/wcwidth-0.8.2.tar.gz", hash = "sha256:91fbef97204b96a3d4d421609b80340b760cf33e26da123ff243d76b1fda8dda", size = 1466253, upload-time = "2026-06-29T18:11:11.601Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/41/52/e465037f5375f43533d1a80b6923955201596a99142ed524d77b571a1418/wcwidth-0.7.0-py3-none-any.whl", hash = "sha256:5d69154c429a82910e241c738cd0e2976fac8a2dd47a1a805f4afed1c0f136f2", size = 110825, upload-time = "2026-05-02T16:04:11.033Z" },
+    { url = "https://files.pythonhosted.org/packages/96/42/3e5985a0a7e57de470b320c6d6a1a67c844f6737a587f3d44dd13d1819e7/wcwidth-0.8.2-py3-none-any.whl", hash = "sha256:d63947694a0539a1d51e01eda7caf800c291020e6cdd7e28ad7b14dd33ad4f85", size = 323166, upload-time = "2026-06-29T18:11:09.888Z" },
 ]
