@@ -237,7 +237,7 @@
     <summary>📝 File extensions for prose languages.</summary>
     <br><blockquote>
         <a href="https://github.com/adamlui/python-utils/tree/main/prose-languages/#readme">
-            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@2066dc5/prose-languages/assets/images/dataset.png"></a>
+            <img width=475 src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@606b0cd/prose-languages/assets/images/dataset.png"></a>
     </blockquote>
 </details>
 
