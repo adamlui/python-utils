@@ -533,7 +533,7 @@ wheels = [
 
 [[package]]
 name = "translate"
-version = "3.8.0"
+version = "3.8.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click", version = "8.1.8", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10'" },
@@ -544,9 +544,9 @@ dependencies = [
     { name = "requests", version = "2.32.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.9.*'" },
     { name = "requests", version = "2.33.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/90/9e/48f58d4ebaf119677b393913e340796077f77b2e015d77a69735f19096dc/translate-3.8.0.tar.gz", hash = "sha256:b4c1ea5069c57c8dbd3ee3bb92a6d046d66f747171132e3a4639443e5dc190c7", size = 22616, upload-time = "2025-11-03T07:47:04.296Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d5/b6/0cb83531b7ef41d2ddab6c56b4579423c3949916789b9048565853fc0906/translate-3.8.1.tar.gz", hash = "sha256:b04d17a02b71266f25ce24fcbb99d04b96ac76a8954682ee2304d0697423c041", size = 23775, upload-time = "2026-07-06T06:19:22.349Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4b/02/e0abb16054ff26b5fca8be949fae1aa0df49c483ba74da3bae5c29ef95d6/translate-3.8.0-py2.py3-none-any.whl", hash = "sha256:44f85b51698ae1727476367efeb4ff58f863c0fdfc784df19201799a9489269f", size = 14627, upload-time = "2025-11-03T07:47:02.938Z" },
+    { url = "https://files.pythonhosted.org/packages/fc/13/2e0ff8eea201d44141592a469c7006716ff46f60db0d4879f9c199f1a48d/translate-3.8.1-py2.py3-none-any.whl", hash = "sha256:314511b7d1dc7bdec7685125e1155e29eacff4d8f88f8736d2942c5791da8c01", size = 14733, upload-time = "2026-07-06T06:19:20.981Z" },
 ]
 
 [[package]]
