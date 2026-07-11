@@ -83,13 +83,12 @@ def write_file(file_path: str, lines: list[str]) -> None:
 def update_downloads_shield(readme_path: str, downloads: int) -> bool:
     import re
     lines = read_file(readme_path)
-    shield_re = r'(?i)(<img[^>]+src="https://img.shields.io/badge/Downloads-)([\d,\.km\+]+)(-[a-f\d]{6})'
-    downloads_str = f'{format_total(downloads).lower()}'
+    downloads_str = format_total(downloads).lower()
+    shield_re = r'(?i)(?<=src="https://img.shields.io/badge/Downloads-)[\d,\.km]+\+?(?=-[a-f\d]{6})'
     shield_updated = False
     for idx, line in enumerate(lines):
-        shield_match = re.search(shield_re, line)
-        if shield_match:
-            new_line = re.sub(shield_match.group(2), downloads_str, line)
+        if re.search(shield_re, line):
+            new_line = re.sub(shield_re, downloads_str, line)
             if new_line != line:
                 lines[idx] = new_line
                 shield_updated = True
