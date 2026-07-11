@@ -5,7 +5,7 @@
 # [<img height=25 width="auto" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/10906554?h=100&w=100&mask=circle&maxage=7d">](https://github.com/adamlui) adamlui / python-utils
 
 <a href="https://pypacktrends.com/?packages=ai-personas&packages=computer-languages&packages=data-languages&packages=find-project-root&packages=get-min-py&packages=is-legacy-terminal&packages=is-unicode-supported&packages=latin-locales&packages=markup-languages&packages=non-latin-locales&packages=programming-languages&packages=project-markers&packages=prose-languages&packages=remove-json-keys&packages=sys-lang&packages=translate-messages&time_range=allTimeCumulative&scheme=dark">
-    <img height=31 src="https://img.shields.io/badge/Downloads-100,000++-af68ff.svg?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/badge/Downloads-100,000+-af68ff.svg?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="./LICENSE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/adamlui/python-utils">
