@@ -18,7 +18,7 @@ jobs:
           python-version: 3.x
 
       - name: Install dev dependencies
-        run: pip install -r requirements-dev.txt
+        run: "pip install --only-binary :all: -r requirements-dev.txt"
 
       - name: Lint all files
         run: nox -s lint-all
