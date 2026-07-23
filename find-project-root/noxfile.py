@@ -15,7 +15,8 @@ def dev(session):
     session.run('uv', 'pip', 'install', '--system', '--force-reinstall', '-e', '.')
     session.run(pkg.dir, '--help', *session.posargs)
 @session
-def debug(session) : session.run(py_cmd, '-m', pkg.name + '.cli', '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
+def debug(session):
+    session.run(py_cmd, '-m', pkg.name + '.cli', '--debug', *session.posargs, env={ 'PYTHONPATH': 'src' })
 @session
 def test_py26(session):
     from pathlib import Path
