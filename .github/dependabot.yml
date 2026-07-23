@@ -5,6 +5,8 @@ updates:
     directory: /
     schedule:
       interval: daily
+    cooldown:
+      default-days: 7
 
   - package-ecosystem: pip
     directories:
@@ -27,6 +29,8 @@ updates:
       - /translate-messages
     schedule:
       interval: daily
+    cooldown:
+      semver-minor-days: 7
     groups:
       prod-dependencies:
         dependency-type: production
@@ -51,6 +55,8 @@ updates:
       - /translate-messages
     schedule:
       interval: daily
+    cooldown:
+      semver-minor-days: 7
     groups:
       dev-dependencies:
         dependency-type: development
